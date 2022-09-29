@@ -1,0 +1,241 @@
+<!-- export interface Navbar {
+
+} -->
+<!-- const {} = Astro.props; -->
+
+	<div class='navbar'>
+	<div>
+		<div class='logo'>
+			<a href='/'><img src='/Logo.svg'></a>
+			<h2 class='interact-text'>
+				INTERACT <br> 2023
+			</h2>
+		</div>
+
+		<ul class='nav-items'>
+			<li><a href='/'>Home</a></li>
+			<li class='submissions-link'>
+				<a href='/cfp'>Submissions ></a>
+				<div class='dropdown-menu pos-1'>
+					<ul>
+						<li><a href='/cfp'>General</a></li>
+						<li>
+							<div class='submission-types'>
+								<a href='/submissions/0'>Submission Types ></a>
+								<div class='dropdown-menu pos-2'>
+									<ul>
+
+										<li><a href='/submissions/0' id='0'>Full Papers</a></li>
+										<li><a href='/submissions/1' id='1'>Short Papers</a></li>
+										<li><a href='/submissions/2' id='2'>Posters</a></li>
+										<li><a href='/submissions/3' id='3'>Panels</a></li>
+										<li><a href='/submissions/4' id='4'>Interactive Demos</a></li>
+										<li><a href='/submissions/5' id='5'>Courses</a></li>
+										<li><a href='/submissions/6' id='6'>Workshops</a></li>
+										<li><a href='/submissions/7' id='7'>Doctoral Consortium</a></li>
+										<li><a href='/submissions/8' id='8'>Industrial <br/> Experiences</a></li>
+										
+									</ul>
+								
+								</div>
+							</div>
+						</li>
+
+						<li><a href='/anonymity'>Anonymity</a></li>
+						<li><a href='/awards'>Awards</a></li>
+					</ul>
+				
+				</div>
+				
+				
+				
+			</li>
+			<li><a href=''>Programme</a></li>
+			<li><a href=''>Organisers</a></li>
+			<li><a href='/contact'>Contact</a></li>
+			<li><a href='/venue'>Venue</a></li>
+		</ul>
+		</div>
+
+		<div class="button-div">
+			<button class='navbar-button'>
+				Submit
+			</button>
+		</div>
+		
+
+	</div>
+
+
+<style>
+	:root {
+		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+
+	h1 {
+		margin: 2rem 0;
+	}
+
+	.logo h2{
+		margin: auto;
+		display: flex;
+		text-align: left;
+		margin-bottom: 0%;
+		/* padding-left: 10px; */
+	}
+
+	.logo{
+		justify-content: space-between;
+		display: flex;
+		align-content: stretch;
+		border-bottom: 1px solid #002C38;
+		padding: 2em 1em;
+	}
+
+	.logo img{
+		width: 3.5em;
+	}
+
+	.text-gradient {
+		font-weight: 900;
+		background-image: var(--astro-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 100% 200%;
+		background-position-y: 100%;
+		border-radius: 0.4rem;
+		animation: pulse 4s ease-in-out infinite;
+	}
+
+	.nav-items{
+		text-decoration: none;
+		list-style: none;
+		padding-left: 1em;
+		padding-top: 1em;
+	}
+
+	.nav-items *{
+		font-size: 1.1em;
+		padding: 0.5em;
+		padding-left: 0em;
+	}
+
+	.nav-items a{
+		color: #002C38;
+		text-decoration: none;
+	}
+
+	.nav-items a:hover{
+		text-decoration: underline;
+	}
+
+	
+
+	.navbar{
+        position: sticky;
+        top: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 14em;
+		/* padding: 1em; */
+		height: 100vh;
+		box-sizing: border-box;
+		list-style: none;
+		align-content: center;
+		border-right: 1px solid #002C38;
+		border-bottom: 1px solid #002C38;
+		font-family: 'AH-B';
+        margin: 0px;
+        margin-right: 0px;
+        z-index: 100;
+		/* overflow-y: scroll; */
+	}
+
+
+	.navbar-button{
+		width: 100%;
+		justify-self: flex-end;
+	}
+
+	.dropdown-menu{
+		box-sizing: none;
+		padding: 0%;
+		padding-right: 2em;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		display: none;
+		color: #FCF7EB;
+		font-family: 'AH-R';
+		/* margin-right: 2em; */
+	}
+
+	.pos-1{
+		left: 8em;
+		top: 10em;
+	}
+	.pos-2{
+		border-left: 1px solid #FCF7EB;;
+		left: 7.9em;
+		top: 0em;
+		
+		/* padding-right: 50px; */
+	}
+
+	.dropdown-menu ul{
+		padding: 0%;
+		line-height: 0.9em;
+	}
+
+	.dropdown-menu li{
+		background-color: #002C38;
+		font-size: 0.9em;
+		padding: 0.5em;
+		list-style: none;
+		
+	}
+
+	.dropdown-menu li a{
+        white-space: nowrap;
+		background-color: #002C38;
+		padding: 0%;
+		font-size: 0.9em;
+		color: #FCF7EB;
+	}
+
+	.dropdown-menu li div{
+		background-color: #002C38;
+		padding: 0em;
+		font-size: 1em;
+		color: #FCF7EB;
+	}
+
+	
+
+	.dropdown-menu a:hover{
+		
+		background-color: #002C38;
+		color: #FCF7EB;
+	}
+
+	.submissions-link:hover .pos-1, 
+	.submission-types:hover .pos-1,
+	.dropdown-menu:hover{
+		
+		display: flex;
+	}
+
+	.submission-types:hover .pos-2{
+		
+		display: flex;
+	}
+
+	.interact-text{
+		padding-left:0.5em;
+	}
+
+	.button-div{
+		padding: 1em;
+		/* width: 100%; */
+	}

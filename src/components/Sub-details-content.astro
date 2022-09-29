@@ -1,0 +1,307 @@
+---
+import NavbarSub from '../components/Navbar-sub.astro';
+import Footer from '../components/Footer.astro';
+import Prefooter from '../components/Pre-footer.astro';
+import { marked } from 'marked';
+// const mdit = markdownitModule('http');
+
+const response = await fetch('http://localhost:1337/api/submissions');
+const data = await response.json();
+const type = data.data;
+var num = 1;
+console.log(type[0].attributes.title);
+
+---
+
+
+		<content>
+			<section class='anonymity-content-1'>
+
+						<div class="top">
+							<h2 class="title">
+								{type[0].attributes.title}
+							</h2>
+	
+							<p class="description">
+								{type[0].attributes.descriptions}
+							</p>
+						</div>
+						
+						<div class="bottom">
+							<p set:html={marked.parse(type[0].attributes.details)}>
+							
+							</p>
+						</div>
+						
+							
+			</section>
+
+		</content>
+		
+
+<style>
+
+	:root {
+		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+
+	main{
+		display: flex;
+		flex-direction: row;
+		overscroll-behavior: none;
+		/* overflow-y: scroll */
+		/* height: 300vh;
+		padding-left: 14em; */
+		/* margin-left: 14em; */
+		/* position: absolute; */
+	}
+
+	label{
+		font-family: "AH-B";
+	}
+
+	content{
+		width: 100%;
+	}
+
+	.anonymity-content-1{
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		/* width: 100%; */
+		/* justify-content: space-between; */
+		min-height: 100vh;
+		/* width: 100%; */
+		/* padding: 2em; */
+		border-bottom: 1px solid #002C38;
+		/* padding-left: 16em; */
+	}
+
+	.center{
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.button-padding h2{
+		padding: 0.1em 1em;
+		border-radius: 50px;
+	}
+
+	.center *{
+		margin: auto;
+	}
+
+	.sub-types{
+		background-color: #002C38;
+		color: #FCF7EB;
+		border-radius: 30px;
+		padding: 0.5em 0em 0.5em 0em ;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		display: flex;
+		flex-direction: column;
+		/* width: max-content; */
+		/* height: 100%; */
+		/* width: 100%; */
+	}
+
+	.selection{
+		/* padding: 0.5em; */
+		display: flex;
+		/* flex-wrap: wrap; */
+	}
+
+	.sub-types h3{
+		margin: 0px;
+		padding: 0.2em;
+		padding-left: 1em;
+		padding-bottom: 0.5em;
+		font-family: 'AH-B'
+	}
+
+
+	.sub-details{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* padding-left: 1em; */
+	}
+
+	.submissions{
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.top{
+		padding: 2em;
+		border-bottom: 1px solid #002C38;
+	}
+
+	.bottom{
+		padding: 2em;
+	}
+
+	
+
+	.input-field{
+		padding-top: 1em;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.input-field input, .input-field textarea{
+		all: unset;
+		padding: 0.5em;
+		border-radius: 0.5em;
+		border: 2px solid #002C38;
+		font-family: sans-serif;
+	}
+
+	.input-field label{
+		padding-bottom: 0.2em;
+		
+	}
+
+	h2{
+		padding-top: 2em;
+	}
+
+	.contact-details h4{
+		margin: 0%;
+		font-family: 'AH-B';
+	}
+
+	.contact-details p{
+		margin-top: 0%;
+	}
+
+	.juries-details{
+		display: flex;
+	}
+
+	.juries-section{
+		display: flex;
+		display: block;
+		align-content: space-between;
+		padding-bottom: 4em;
+	}
+
+	.juries-section:last-child{
+		display: flex;
+		display: block;
+		align-content: space-between;
+		padding-bottom: 0%;
+	}
+
+	.text-details{
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	.nav-container{
+		width: 14em;
+	}
+
+	.img-mask{
+		max-height: 450px;
+		overflow: hidden;
+	}
+
+	.rch{
+		width: 100%;
+		/* max-height: 473px; */
+		object-fit: cover;
+	}
+
+	.stretch{
+		box-sizing: border-box;
+		display: flex;
+		width: 100%;
+		/* height: 100%; */
+	}
+
+	.pill{
+		font-family: 'AH-B';
+		font-size: 1em;
+		margin: 0px;
+		display: flex;
+		padding: 0.2em 0.5em 0.2em 0.5em ;
+		background-color: #002C38;
+		color: #FCF7EB;
+		border-radius: 50px;
+		align-items: center;
+		width: fit-content;
+	}
+
+	.pill img{
+		margin: 0%;
+		padding-right: 0.5em;
+		width: 1em;
+		height: 1em;
+	}
+
+	.location-detail{
+		align-items: flex-end;
+		margin-top: auto;
+		margin-bottom: 0%;
+		margin-left: 2em;
+		white-space: nowrap;
+		width: max-content;
+	}
+
+	.title{
+		font-family: 'AH-B';
+		font-size: 2.5em;
+		/* height: 50%; */
+		margin: 0%;
+		
+		/* overflow: hidden; */
+		/* width: 200%; */
+	}
+
+	
+
+	.contact-content-5 h1{
+		padding-top: 1em;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0%;
+		font-family: 'S-B';
+		font-size: 2.5em;
+	}
+
+	.contact-content-2 h3{
+		margin: 0%;
+		padding-top: 1em;
+		font-family: 'AH-B';
+		
+		/* font-size: 2.5em; */
+	}
+	
+	.conditions{
+		padding-top: 2em;
+	}
+
+
+	/* Presets */
+
+	.bold{
+		font-family: 'AH-B';
+	}
+
+	.thin{
+		font-family: 'S-R';
+	}
+
+
+	
+
+	
+
+</style>

@@ -1,0 +1,156 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'/>
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='generator' content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@font-face {
+  		font-family: AH-B;
+  		src: url(/public/AtkinsonHyperlegible-Bold.ttf);
+	}
+
+	@font-face {
+  		font-family: AH-R;
+  		src: url(/public/AtkinsonHyperlegible-Regular.ttf);
+	}
+
+	@font-face {
+  		font-family: S-B;
+  		src: url(/public/syncopate-bold.ttf);
+	}
+
+	@font-face {
+  		font-family: S-R;
+  		src: url(/public/SYNCOPATE-REGULAR.ttf);
+	}
+
+	*{
+		box-sizing: border-box;
+	}
+
+	:root {
+		--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+		--font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+		--color-text: #002C38;
+		--color-bg: hsl(10, 21%, 95%);
+		--color-border: hsl(17, 24%, 90%);
+	}
+
+	html {
+		font-family: 'AH-R', sans-serif;
+		font-size: var(--font-size-base);
+		color: var(--color-text);
+		background-color: var(--color-bg);
+		box-sizing: border-box;
+		max-width: 100vw;
+	}
+
+	body {
+		margin: 0;
+
+	}
+
+
+</style>
+
+<style is:global>
+	a{
+		all: unset;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	strong{
+		font-family: 'AH-B';
+		font-weight: 100;
+		font-size: 1.5em;
+		display: block;
+		padding-top: 1em;
+		padding-bottom: 0.5em;
+
+	}
+
+	em{
+		display: block;
+		font-family: 'AH-B';
+		font-style: normal;
+
+	}
+	
+	u{
+		font-family: 'AH-B';
+
+	}
+	
+	ul{
+		margin: 0%;
+	}
+
+	li{
+		padding: 0.5em;
+		/* list-style: none; */
+	}
+
+	h1 {
+		font-size: var(--font-size-xl);
+	}
+
+	h2 {
+		font-size: var(--font-size-lg);
+	}
+
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+
+	p{
+		line-height: 1.5em;
+		/* margin: 0%; */
+	}
+
+	button {
+		font-family: 'AH-B';
+		font-size: 1em;
+		border-radius: 50px;
+		border: 0px solid #002C38;
+		background-color: #002C38;
+		color: #FCF7EB;
+		padding: 0.5em;
+		cursor: pointer;
+	}
+
+	.dark-button{
+		background-color: #002C38;
+		/* padding: inherit; */
+	}
+
+	body{
+		display: block;
+		
+	}
+
+
+
+</style>
