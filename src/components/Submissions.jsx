@@ -3,9 +3,14 @@ import "../submissions.css";
 import Markdown from 'markdown-to-jsx';
 
 
-const response = await fetch('http://localhost:1337/api/submissions');
+// const response = await fetch('http://localhost:1337/api/submissions');
+// const data = await response.json();
+// const type = data.data;
+
+const response = await fetch('/public/content.json');
 const data = await response.json();
 const type = data.data;
+
 
 
 // console.log(type);
