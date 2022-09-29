@@ -29,7 +29,6 @@ export function SubNavbarJsx({id}) {
 
 	const [value, setValue] = useState(section);
 
-	
 
 	
 
