@@ -1,11 +1,8 @@
 import * as adapter from '@astrojs/netlify/netlify-functions.js';
-import * as React from 'react';
-import React__default, { createElement } from 'react';
+import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/server';
 import { escape } from 'html-escaper';
-/* empty css                        *//* empty css                                                                            *//* empty css                                                           *//* empty css                                   */import * as $$module1$1 from 'marked';
-import { marked } from 'marked';
-/* empty css                            *//* empty css                          *//* empty css                         *//* empty css                        *//* empty css                      */import 'mime';
+/* empty css                        *//* empty css                                                                            *//* empty css                                                           *//* empty css                                   *//* empty css                            *//* empty css                          *//* empty css                         *//* empty css                        *//* empty css                      */import 'mime';
 import 'kleur/colors';
 import 'string-width';
 import 'path-browserify';
@@ -57,7 +54,7 @@ async function check$1(Component, props, children) {
 	if (typeof Component !== 'function') return false;
 
 	if (Component.prototype != null && typeof Component.prototype.render === 'function') {
-		return React__default.Component.isPrototypeOf(Component) || React__default.PureComponent.isPrototypeOf(Component);
+		return React.Component.isPrototypeOf(Component) || React.PureComponent.isPrototypeOf(Component);
 	}
 
 	let error = null;
@@ -74,7 +71,7 @@ async function check$1(Component, props, children) {
 			}
 		}
 
-		return React__default.createElement('div');
+		return React.createElement('div');
 	}
 
 	await renderToStaticMarkup$1(Tester, props, children, {});
@@ -96,7 +93,7 @@ async function renderToStaticMarkup$1(Component, props, { default: children, ...
 	const slots = {};
 	for (const [key, value] of Object.entries(slotted)) {
 		const name = slotName$1(key);
-		slots[name] = React__default.createElement(StaticHtml, { value, name });
+		slots[name] = React.createElement(StaticHtml, { value, name });
 	}
 	// Note: create newProps to avoid mutating `props` before they are serialized
 	const newProps = {
@@ -104,9 +101,9 @@ async function renderToStaticMarkup$1(Component, props, { default: children, ...
 		...slots,
 	};
 	if (children != null) {
-		newProps.children = React__default.createElement(StaticHtml, { value: children });
+		newProps.children = React.createElement(StaticHtml, { value: children });
 	}
-	const vnode = React__default.createElement(Component, newProps);
+	const vnode = React.createElement(Component, newProps);
 	let html;
 	if (metadata && metadata.hydrate) {
 		html = ReactDOM.renderToString(vnode);
@@ -1451,10 +1448,10 @@ var server_default = {
   renderToStaticMarkup
 };
 
-const $$metadata$b = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/layouts/Layout.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$b = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/layouts/Layout.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$a = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/layouts/Layout.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$a = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/layouts/Layout.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Layout = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$Layout;
   const { title } = Astro2.props;
   const STYLES = [];
@@ -1476,21 +1473,21 @@ const $$Layout = createComponent(async ($$result, $$props, $$slots) => {
 </body></html>`;
 });
 
-const $$file$b = "D:/Interact-2023-local/my-astro-site/src/layouts/Layout.astro";
-const $$url$b = undefined;
+const $$file$a = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/layouts/Layout.astro";
+const $$url$a = undefined;
 
 const $$module1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$b,
+	$$metadata: $$metadata$a,
 	default: $$Layout,
-	file: $$file$b,
-	url: $$url$b
+	file: $$file$a,
+	url: $$url$a
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$a = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/components/Navbar.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$a = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/components/Navbar.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$9 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Navbar.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$9 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Navbar.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Navbar = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$Navbar;
   const STYLES = [];
   for (const STYLE of STYLES)
@@ -1561,21 +1558,21 @@ const $$Navbar = createComponent(async ($$result, $$props, $$slots) => {
 	</div>`;
 });
 
-const $$file$a = "D:/Interact-2023-local/my-astro-site/src/components/Navbar.astro";
-const $$url$a = undefined;
+const $$file$9 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Navbar.astro";
+const $$url$9 = undefined;
 
-const $$module2$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$a,
+	$$metadata: $$metadata$9,
 	default: $$Navbar,
-	file: $$file$a,
-	url: $$url$a
+	file: $$file$9,
+	url: $$url$9
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$9 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/components/Footer.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$9 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/components/Footer.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$8 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Footer.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$8 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Footer.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
   Astro2.self = $$Footer;
   const STYLES = [];
   for (const STYLE of STYLES)
@@ -1638,21 +1635,21 @@ const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
 </footer>`;
 });
 
-const $$file$9 = "D:/Interact-2023-local/my-astro-site/src/components/Footer.astro";
-const $$url$9 = undefined;
+const $$file$8 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Footer.astro";
+const $$url$8 = undefined;
 
 const $$module3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$9,
+	$$metadata: $$metadata$8,
 	default: $$Footer,
-	file: $$file$9,
-	url: $$url$9
+	file: $$file$8,
+	url: $$url$8
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$8 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/components/Pre-footer.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$8 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/components/Pre-footer.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$7 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Pre-footer.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$7 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Pre-footer.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$PreFooter = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
   Astro2.self = $$PreFooter;
   const STYLES = [];
   for (const STYLE of STYLES)
@@ -1673,21 +1670,21 @@ const $$PreFooter = createComponent(async ($$result, $$props, $$slots) => {
 </section>`;
 });
 
-const $$file$8 = "D:/Interact-2023-local/my-astro-site/src/components/Pre-footer.astro";
-const $$url$8 = undefined;
+const $$file$7 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/components/Pre-footer.astro";
+const $$url$7 = undefined;
 
 const $$module4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$8,
+	$$metadata: $$metadata$7,
 	default: $$PreFooter,
-	file: $$file$8,
-	url: $$url$8
+	file: $$file$7,
+	url: $$url$7
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$7 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/index.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$7 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/index.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$6 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/index.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$6 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/index.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
   Astro2.self = $$Index;
   const STYLES = [];
   for (const STYLE of STYLES)
@@ -1925,90 +1922,13 @@ const $$Index = createComponent(async ($$result, $$props, $$slots) => {
 	</main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-MDLO334D" })}` })}`;
 });
 
-const $$file$7 = "D:/Interact-2023-local/my-astro-site/src/pages/index.astro";
-const $$url$7 = "";
+const $$file$6 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/index.astro";
+const $$url$6 = "";
 
 const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	__proto__: null,
-	$$metadata: $$metadata$7,
-	default: $$Index,
-	file: $$file$7,
-	url: $$url$7
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const $$metadata$6 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/components/Navbar-sub.astro", { modules: [{ module: $$module1$1, specifier: "marked", assert: {} }, { module: React, specifier: "react", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$6 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/components/Navbar-sub.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
-const $$NavbarSub = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
-  Astro2.self = $$NavbarSub;
-  Astro2.props;
-  const response = await fetch("http://localhost:1337/api/submissions");
-  const data = await response.json();
-  const type = data.data;
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<main class="astro-2BJ57ZPW">
-<div class="navbar astro-2BJ57ZPW">
-	<div class="astro-2BJ57ZPW">
-		<div class="logo astro-2BJ57ZPW">
-			<a href="/" class="astro-2BJ57ZPW"><img src="/Logo.svg" class="astro-2BJ57ZPW"></a>
-			<h2 class="interact-text astro-2BJ57ZPW">
-				INTERACT <br class="astro-2BJ57ZPW"> 2023
-			</h2>
-		</div>
-
-		<div class="nav-items bottom-border go-back astro-2BJ57ZPW">
-			<a href="" id="0" class="astro-2BJ57ZPW"> Submissions</a>
-		</div>
-
-		<ul class="nav-items astro-2BJ57ZPW" id="nav-items">
-			
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="0">Full Papers</a></li>
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="1">Short Papers</a></li>
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="2">Courses</a></li>
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="3">Workshops</a></li>
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="4">Interactive Demos</a></li>
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="5">Posters</a></li>
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="6">Industrial Experiences</a></li>
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="7">Doctoral Consortium</a></li>
-			<li class="astro-2BJ57ZPW"><a class="section-change astro-2BJ57ZPW" id="8">Panels</a></li>
-		</ul>
-
-	</div>
-</div>
-<content class="astro-2BJ57ZPW">
-	<section class="anonymity-content-1 astro-2BJ57ZPW">
-
-				<div class="top astro-2BJ57ZPW">
-					<h2 class="title astro-2BJ57ZPW">
-						${type[0].attributes.title}
-					</h2>
-
-					<p class="description astro-2BJ57ZPW">
-						${type[0].attributes.descriptions}
-					</p>
-				</div>
-				
-				<div class="bottom astro-2BJ57ZPW">
-					<p class="astro-2BJ57ZPW">${markHTMLString(marked.parse(type[0].attributes.details))}</p>
-				</div>
-					
-	</section>
-
-</content>
-</main>
-
-`;
-});
-
-const $$file$6 = "D:/Interact-2023-local/my-astro-site/src/components/Navbar-sub.astro";
-const $$url$6 = undefined;
-
-const $$module2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-	__proto__: null,
 	$$metadata: $$metadata$6,
-	default: $$NavbarSub,
+	default: $$Index,
 	file: $$file$6,
 	url: $$url$6
 }, Symbol.toStringTag, { value: 'Module' }));
@@ -2017,8 +1937,8 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
 var _a;
-const $$metadata$5 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/submissions/[id].astro", { modules: [{ module: $$module1, specifier: "/src/layouts/Layout.astro", assert: {} }, { module: $$module2, specifier: "/src/components/Navbar-sub.astro", assert: {} }, { module: $$module3, specifier: "/src/components/Footer.astro", assert: {} }, { module: $$module4, specifier: "/src/components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: ["/src/components/Submissions.jsx"], hydrationDirectives: /* @__PURE__ */ new Set(["only"]), hoisted: [] });
-const $$Astro$5 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/submissions/[id].astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$5 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/submissions/[id].astro", { modules: [{ module: $$module1, specifier: "/src/layouts/Layout.astro", assert: {} }, { module: $$module3, specifier: "/src/components/Footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: ["/src/components/Submissions.jsx"], hydrationDirectives: /* @__PURE__ */ new Set(["only"]), hoisted: [] });
+const $$Astro$5 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/submissions/[id].astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 async function getStaticPaths() {
   return [
     { params: { id: "0" } },
@@ -2040,10 +1960,10 @@ const $$id = createComponent(async ($$result, $$props, $$slots) => {
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate(_a || (_a = __template(["", "\n\n\n\n<!-- <script>\n	const response = await fetch('http://localhost:1337/api/submissions');\n	const data = await response.json();\n	const type = data.data;\n\n	// document.addEventListener('click', (e) => {\n	// 	console.log(e.target.id);\n	// 	sectionNum = e.target.id;\n	// })\n<\/script> -->\n\n"])), renderComponent($$result, "Layout", $$Layout, { "title": "Interact 2023", "class": "astro-4F36RPUG" }, { "default": () => renderTemplate`${renderComponent($$result, "Submissions", null, { "id": id, "client:only": "react", "client:component-hydration": "only", "class": "astro-4F36RPUG", "client:component-path": $$metadata$5.resolvePath("/src/components/Submissions.jsx"), "client:component-export": "default" })}${renderComponent($$result, "Footer", $$Footer, { "class": "astro-4F36RPUG" })}` }));
+  return renderTemplate(_a || (_a = __template(["", "\n\n\n\n<!-- <script>\n	const response = await fetch('http://localhost:1337/api/submissions');\n	const data = await response.json();\n	const type = data.data;\n\n	// document.addEventListener('click', (e) => {\n	// 	console.log(e.target.id);\n	// 	sectionNum = e.target.id;\n	// })\n<\/script> -->\n\n"])), renderComponent($$result, "Layout", $$Layout, { "title": "Interact 2023", "class": "astro-C6K2PUKR" }, { "default": () => renderTemplate`${renderComponent($$result, "Submissions", null, { "id": id, "client:only": "react", "client:component-hydration": "only", "class": "astro-C6K2PUKR", "client:component-path": $$metadata$5.resolvePath("/src/components/Submissions.jsx"), "client:component-export": "default" })}${renderComponent($$result, "Footer", $$Footer, { "class": "astro-C6K2PUKR" })}` }));
 });
 
-const $$file$5 = "D:/Interact-2023-local/my-astro-site/src/pages/submissions/[id].astro";
+const $$file$5 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/submissions/[id].astro";
 const $$url$5 = "/submissions/[id]";
 
 const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2055,8 +1975,8 @@ const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$5
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$4 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/anonymity.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$4 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/anonymity.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$4 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/anonymity.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$4 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/anonymity.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Anonymity = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
   Astro2.self = $$Anonymity;
@@ -2105,7 +2025,7 @@ const $$Anonymity = createComponent(async ($$result, $$props, $$slots) => {
 	</main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-VM4YFKQE" })}` })}`;
 });
 
-const $$file$4 = "D:/Interact-2023-local/my-astro-site/src/pages/anonymity.astro";
+const $$file$4 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/anonymity.astro";
 const $$url$4 = "/anonymity";
 
 const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2116,8 +2036,8 @@ const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$4
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$3 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/contact.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$3 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/contact.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$3 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/contact.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$3 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/contact.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Contact = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$Contact;
@@ -2195,7 +2115,7 @@ const $$Contact = createComponent(async ($$result, $$props, $$slots) => {
 	</main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-42VMRNGF" })}` })}`;
 });
 
-const $$file$3 = "D:/Interact-2023-local/my-astro-site/src/pages/contact.astro";
+const $$file$3 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/contact.astro";
 const $$url$3 = "/contact";
 
 const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2206,8 +2126,8 @@ const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$3
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$2 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/awards.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$2 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/awards.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$2 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/awards.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$2 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/awards.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Awards = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Awards;
@@ -2349,7 +2269,7 @@ The selection of the TC13 IDID Award is organized by an ad-hoc committee of memb
 	</main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-E5WIEGKX" })}` })}`;
 });
 
-const $$file$2 = "D:/Interact-2023-local/my-astro-site/src/pages/awards.astro";
+const $$file$2 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/awards.astro";
 const $$url$2 = "/awards";
 
 const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2360,8 +2280,8 @@ const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$2
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$1 = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/venue.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$1 = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/venue.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata$1 = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/venue.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$1 = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/venue.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Venue = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Venue;
@@ -2468,7 +2388,7 @@ const $$Venue = createComponent(async ($$result, $$props, $$slots) => {
 	</main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-XRSOVNKG" })}` })}`;
 });
 
-const $$file$1 = "D:/Interact-2023-local/my-astro-site/src/pages/venue.astro";
+const $$file$1 = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/venue.astro";
 const $$url$1 = "/venue";
 
 const _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2479,8 +2399,8 @@ const _page5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 	url: $$url$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata = createMetadata("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/cfp.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2$1, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro = createAstro("/@fs/D:/Interact-2023-local/my-astro-site/src/pages/cfp.astro", "", "file:///D:/Interact-2023-local/my-astro-site/");
+const $$metadata = createMetadata("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/cfp.astro", { modules: [{ module: $$module1, specifier: "../layouts/Layout.astro", assert: {} }, { module: $$module2, specifier: "../components/Navbar.astro", assert: {} }, { module: $$module3, specifier: "../components/Footer.astro", assert: {} }, { module: $$module4, specifier: "../components/Pre-footer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro = createAstro("/@fs/D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/cfp.astro", "", "file:///D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/");
 const $$Cfp = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Cfp;
@@ -2812,7 +2732,7 @@ const $$Cfp = createComponent(async ($$result, $$props, $$slots) => {
 	</main>${renderComponent($$result, "Footer", $$Footer, { "class": "astro-NMOCCWWA" })}` })}`;
 });
 
-const $$file = "D:/Interact-2023-local/my-astro-site/src/pages/cfp.astro";
+const $$file = "D:/interact-2023-anew-fixed/my-astro-site/interact-2023-no-backend/src/pages/cfp.astro";
 const $$url = "/cfp";
 
 const _page6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -2895,7 +2815,7 @@ function deserializeManifest(serializedManifest) {
   };
 }
 
-const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/index.6dabcd8d.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.7cbbdae7.css","assets/anonymity-awards-cfp-contact-index-venue.30a97d38.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/submissions-_id_.e4e392f2.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.7cbbdae7.css"],"scripts":[],"routeData":{"route":"/submissions/[id]","type":"page","pattern":"^\\/submissions\\/([^/]+?)\\/?$","segments":[[{"content":"submissions","dynamic":false,"spread":false}],[{"content":"id","dynamic":true,"spread":false}]],"params":["id"],"component":"src/pages/submissions/[id].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/anonymity.bc01999d.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.7cbbdae7.css","assets/anonymity-awards-cfp-contact-index-venue.30a97d38.css"],"scripts":[],"routeData":{"route":"/anonymity","type":"page","pattern":"^\\/anonymity\\/?$","segments":[[{"content":"anonymity","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/anonymity.astro","pathname":"/anonymity","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/contact.71063c4c.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.7cbbdae7.css","assets/anonymity-awards-cfp-contact-index-venue.30a97d38.css"],"scripts":[],"routeData":{"route":"/contact","type":"page","pattern":"^\\/contact\\/?$","segments":[[{"content":"contact","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/contact.astro","pathname":"/contact","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/awards.3bb83d22.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.7cbbdae7.css","assets/anonymity-awards-cfp-contact-index-venue.30a97d38.css"],"scripts":[],"routeData":{"route":"/awards","type":"page","pattern":"^\\/awards\\/?$","segments":[[{"content":"awards","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/awards.astro","pathname":"/awards","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/venue.afb8839c.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.7cbbdae7.css","assets/anonymity-awards-cfp-contact-index-venue.30a97d38.css"],"scripts":[],"routeData":{"route":"/venue","type":"page","pattern":"^\\/venue\\/?$","segments":[[{"content":"venue","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/venue.astro","pathname":"/venue","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/cfp.04c5468f.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.7cbbdae7.css","assets/anonymity-awards-cfp-contact-index-venue.30a97d38.css"],"scripts":[],"routeData":{"route":"/cfp","type":"page","pattern":"^\\/cfp\\/?$","segments":[[{"content":"cfp","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/cfp.astro","pathname":"/cfp","_meta":{"trailingSlash":"ignore"}}}],"base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/src/components/Submissions":"Submissions.47a15c65.js","@astrojs/react/client.js":"client.a8ed44f5.js","astro:scripts/before-hydration.js":"data:text/javascript;charset=utf-8,//[no before-hydration script]"},"assets":["/assets/syncopate-bold.de482d4a.ttf","/assets/AtkinsonHyperlegible-Bold.1e4c7d45.ttf","/assets/AtkinsonHyperlegible-Regular.4025b07a.ttf","/assets/SYNCOPATE-REGULAR.45fb5635.ttf","/assets/anonymity.bc01999d.css","/assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.7cbbdae7.css","/assets/anonymity-awards-cfp-contact-index-venue.30a97d38.css","/assets/awards.3bb83d22.css","/assets/cfp.04c5468f.css","/assets/contact.71063c4c.css","/assets/index.6dabcd8d.css","/assets/submissions-_id_.e4e392f2.css","/assets/venue.afb8839c.css","/AtkinsonHyperlegible-Bold.ttf","/AtkinsonHyperlegible-BoldItalic.ttf","/AtkinsonHyperlegible-Italic.ttf","/AtkinsonHyperlegible-Regular.ttf","/client.a8ed44f5.js","/Courses.svg","/email 1.svg","/facebook 1.svg","/favicon.svg","/Full Papers.svg","/Industrial Experiences.svg","/Interact-2023-logo-full.svg","/Interactive Demos.svg","/linkedin 1.svg","/location.svg","/Logo.svg","/One-Planet.png","/Panels.svg","/PDF.png","/pdf.svg","/PhD.svg","/Polygon 1.svg","/Posters.svg","/RCH.jpg","/Short Papers.svg","/Submissions.47a15c65.js","/syncopate-bold.ttf","/SYNCOPATE-REGULAR.ttf","/uoy-logo.png","/Workshops.svg","/YHRC.png","/zero-emissions.svg","/assets/submissions.29e51ba1.css","/chunks/index.fdc5c268.js"]}), {
+const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/index.6dabcd8d.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.5df5fa32.css","assets/anonymity-awards-cfp-contact-index-venue.e74cbad0.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/submissions-_id_.66365d59.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.5df5fa32.css"],"scripts":[],"routeData":{"route":"/submissions/[id]","type":"page","pattern":"^\\/submissions\\/([^/]+?)\\/?$","segments":[[{"content":"submissions","dynamic":false,"spread":false}],[{"content":"id","dynamic":true,"spread":false}]],"params":["id"],"component":"src/pages/submissions/[id].astro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/anonymity.bc01999d.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.5df5fa32.css","assets/anonymity-awards-cfp-contact-index-venue.e74cbad0.css"],"scripts":[],"routeData":{"route":"/anonymity","type":"page","pattern":"^\\/anonymity\\/?$","segments":[[{"content":"anonymity","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/anonymity.astro","pathname":"/anonymity","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/contact.71063c4c.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.5df5fa32.css","assets/anonymity-awards-cfp-contact-index-venue.e74cbad0.css"],"scripts":[],"routeData":{"route":"/contact","type":"page","pattern":"^\\/contact\\/?$","segments":[[{"content":"contact","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/contact.astro","pathname":"/contact","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/awards.3bb83d22.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.5df5fa32.css","assets/anonymity-awards-cfp-contact-index-venue.e74cbad0.css"],"scripts":[],"routeData":{"route":"/awards","type":"page","pattern":"^\\/awards\\/?$","segments":[[{"content":"awards","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/awards.astro","pathname":"/awards","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/venue.afb8839c.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.5df5fa32.css","assets/anonymity-awards-cfp-contact-index-venue.e74cbad0.css"],"scripts":[],"routeData":{"route":"/venue","type":"page","pattern":"^\\/venue\\/?$","segments":[[{"content":"venue","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/venue.astro","pathname":"/venue","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/cfp.04c5468f.css","assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.5df5fa32.css","assets/anonymity-awards-cfp-contact-index-venue.e74cbad0.css"],"scripts":[],"routeData":{"route":"/cfp","type":"page","pattern":"^\\/cfp\\/?$","segments":[[{"content":"cfp","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/cfp.astro","pathname":"/cfp","_meta":{"trailingSlash":"ignore"}}}],"base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/src/components/Submissions":"Submissions.efc7fa93.js","@astrojs/react/client.js":"client.c1f8ef3f.js","astro:scripts/before-hydration.js":"data:text/javascript;charset=utf-8,//[no before-hydration script]"},"assets":["/assets/AtkinsonHyperlegible-Bold.1e4c7d45.ttf","/assets/syncopate-bold.de482d4a.ttf","/assets/AtkinsonHyperlegible-Regular.4025b07a.ttf","/assets/SYNCOPATE-REGULAR.45fb5635.ttf","/assets/anonymity.bc01999d.css","/assets/anonymity-awards-cfp-contact-index-submissions-_id_-venue.5df5fa32.css","/assets/anonymity-awards-cfp-contact-index-venue.e74cbad0.css","/assets/awards.3bb83d22.css","/assets/cfp.04c5468f.css","/assets/contact.71063c4c.css","/assets/index.6dabcd8d.css","/assets/submissions-_id_.66365d59.css","/assets/venue.afb8839c.css","/AtkinsonHyperlegible-Bold.ttf","/AtkinsonHyperlegible-BoldItalic.ttf","/AtkinsonHyperlegible-Italic.ttf","/AtkinsonHyperlegible-Regular.ttf","/client.c1f8ef3f.js","/Courses.svg","/email 1.svg","/facebook 1.svg","/favicon.svg","/Full Papers.svg","/Industrial Experiences.svg","/Interact-2023-logo-full.svg","/Interactive Demos.svg","/linkedin 1.svg","/location.svg","/Logo.svg","/One-Planet.png","/Panels.svg","/PDF.png","/pdf.svg","/PhD.svg","/Polygon 1.svg","/Posters.svg","/RCH.jpg","/Short Papers.svg","/Submissions.efc7fa93.js","/syncopate-bold.ttf","/SYNCOPATE-REGULAR.ttf","/uoy-logo.png","/Workshops.svg","/YHRC.png","/zero-emissions.svg","/assets/submissions.29e51ba1.css","/chunks/index.2843b2c3.js"]}), {
 	pageMap: pageMap,
 	renderers: renderers
 });
