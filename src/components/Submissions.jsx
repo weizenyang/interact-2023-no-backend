@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import "../submissions.css";
-import { marked } from "marked";
 import Markdown from 'markdown-to-jsx';
 
 
