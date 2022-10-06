@@ -3,6 +3,30 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Prefooter from '../components/Pre-footer.astro';
+// import Transport from './transport.json.js';
+
+const transports = await Astro.glob('./transports/*.md');
+
+var transport = transports.map(item => {
+
+	var wrapper = item.compiledContent();
+	
+	return wrapper;
+
+})
+
+
+console.log(transport);
+
+
+
+
+
+
+
+// const {Transport} = Astro.props.transport.;
+
+// const { Content } = Astro.props.post
 ---
 
 <Layout title='Interact 2023'>
@@ -15,13 +39,20 @@ import Prefooter from '../components/Pre-footer.astro';
 							VENUE
 						</h1>
 
+						<p class="thin-text">
+							The conference will be held on the newly developed Heslington East Campus of the
+							University of York, on the edge of the city of York. The venue is easily accessible from the
+							centre of York by bus, taxi or bicycle.
+						</p>
+
 						<div class="venue-card">
 							<div class="venue-details">
+								
 								<div class="top">
-									<img src="uoy-logo.png" alt="" width="180px">
-									<h2>
+									<img src="uoy-logo.webp" alt="" width="100%">
+									<h3>
 										Main Atrium @ <br> Ron Cooke Hub
-									</h2>
+									</h3>
 								</div>
 
 								<div class="bottom">
@@ -35,53 +66,129 @@ import Prefooter from '../components/Pre-footer.astro';
 										<br>York, YO10 5GE
 									</p>
 								</div>
+							</div>
+							<div class="venue-image">
+
+									<img src="/RCH.webp" alt="" width='400px'>
+								
+							</div>
+						</div>
+
+						<div class="venue-card">
+							<div class="venue-details">
+								<div class="top">
+									<img src="uoy-logo.webp" alt="" width="100%">
+									<h3 class="no-border">
+										Main Atrium @ <br> Piazza
+									</h3>
+								</div>
+
+								<div class="bottom">
+									<h4>
+										Address
+									</h4>
+									<p>
+										Ron Cooke Hub,
+										<br>133 Deramore Ln, 
+										<br>University of York,
+										<br>York, YO10 5GE
+									</p>
+								</div>
+
+								
 								
 							</div>
 							<div class="venue-image">
 
-									<img src="/RCH.jpg" alt="">
+									<img src="/Piazza.webp" alt="" height="350px">
 								
 							</div>
 						</div>
 			</section>
 
 			<section class='venue-content-2'>
-				<h1 class="thin-text">
-					About
-				</h1>
-				<h1 class="bold">
-					Ron Cooke Hub
-				</h1>
+				<!-- <div class="about-section"> -->
+					<h2 class="bold">
+						Accessibility of the facilities for disabled delegates
+					</h2>
+					
+					<p>
+						The facilities in the Ron Cooke Hub are fully accessible, with ramps to the lecture areas,
+						dedicated spaces for wheelchair users and hearing loops for hearing impaired delegates.
+						<br><br>
+						There is also a dedicated guide dog toilet just behind the Ron Cooke Hub. We will provide an
+						orientation session of the venue for any visually impaired delegates and student volunteers
+						will be available to assist visually impaired delegates if required.
+					</p>
 
-				<h2 class="thin-text">
-					The Hub is a £20 million, 7000 sq ft 'melting pot' for engagement. Its design encourages discussion and interaction, bringing people together across disciplines and sectors, from within and outside the university, providing space for new, value-adding ideas and partnerships to blossom.
-				</h2>
+					<h2 class="bold">
+						Accommodation
+					</h2>
+					
+					<p>
+						Accommodation for delegates will be available both on the university campus and in central
+						York.
+						<br><br>
+						For delegates who prefer to stay in central York, there are many options at all price points.
+						The University has discount arrangements with a number of hotels in York, so special
+						conference rates have been arranged details will follow soon.
+					</p>
+					
+				<!-- </div> -->
+				
 			</section>
 
 			<section class='venue-content-3'>
-				<h2 class="bold">
-					I'm travelling from:
-				</h2>
+				<h1 class="title">
+					AIRPORTS
+				</h1>
 
-				<div class="selection">
+				<div class="selections">
+
+					<button class="selector leftmost active" id="1">Leeds Bradford</button>
 					
-					<input id="railway" type="radio" name="type" value="railway">
-					<label id="railway-label" for="railway">Railway Station (Bus)</label>
+
+					<button class="selector" id="2">Manchester</button>
 					
-					<input id="airport" type="radio" name="type" value="airport">
-					<label id="airport-label" for="airport">Manchester Airport</label>
-					
-					<input id="london" type="radio" name="type" value="london">
-					<label id="london-label" for="london">London</label>
+
+					<button class="selector rightmost" id="3">London</button>
 				</div>
 
 				<div class="directions">
-
-
-
+					<div class="selection" id="selection-1" set:html={transport[0]} ></div>
+					<div class="selection" id="selection-2" set:html={transport[1]} ></div>
+					<div class="selection" id="selection-3" set:html={transport[2]}></div>
 				</div>
 				
+				
 			</section>
+
+			<section class='venue-content-3'>
+				<h1 class="title">
+					TRAINS
+				</h1>
+
+				<div class="selections">
+
+					<button class="selector-train leftmost active" id="4">London/Edinburgh</button>
+					
+
+					<button class="selector-train" id="5">Paris/Brussels</button>
+					
+
+					<button class="selector-train rightmost" id="6">Interepid</button>
+				</div>
+
+				<div class="directions">
+					<div class="selection-train" id="selection-4" set:html={transport[3]} ></div>
+					<div class="selection-train" id="selection-5" set:html={transport[4]} ></div>
+					<div class="selection-train" id="selection-6" set:html={transport[5]}></div>
+				</div>
+				
+				
+			</section>
+
+			
 
 			<section class='venue-content-4'>
 
@@ -92,7 +199,26 @@ import Prefooter from '../components/Pre-footer.astro';
 					</div>
 
 					<div class="direction-links">
-						<h2 class="bold">Get Directions</h2>
+						<h3><span class="bold">Ron Cooke Hub</span> - Get Directions</h3>
+						<button>Google Maps</button>
+						<button>Apple Maps</button>
+						<button>Waze Maps</button>
+					</div>
+					
+				</div>
+
+				<div class="content-container">
+
+					<div class='map-embed'>
+						
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.0944319255377!2d-1.0304154841880773!3d53.94783048010947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48792f9a1f8f4de7%3A0x40bc8641e730f783!2sPiazza%20Building!5e0!3m2!1sen!2suk!4v1664811795032!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
+					</div>
+
+					
+
+					<div class="direction-links">
+						<h3><span class="bold">Piazza</span> - Get Directions</h3>
 						<button>Google Maps</button>
 						<button>Apple Maps</button>
 						<button>Waze Maps</button>
@@ -109,6 +235,67 @@ import Prefooter from '../components/Pre-footer.astro';
 	<Footer/>
 	
 </Layout>
+
+<script is:inline>
+
+	document.addEventListener('click', changeSection)
+
+	function changeSection(e){
+
+		// Flight section
+		if(e.target.classList.contains('selector')){
+		document.querySelectorAll('.selection').forEach(element => {
+			element.style.display = "none";
+			
+		})
+
+		document.querySelectorAll('.selector').forEach(element => {
+			element.classList.remove("active");
+			console.log(e.targetid);
+			
+			
+		})
+
+				e.target.classList.add("active");
+				var string = "selection-"+e.target.id;
+				document.getElementById(string).style.display = "block";
+
+		
+		}
+
+		// Trains section
+		if(e.target.classList.contains('selector-train')){
+		document.querySelectorAll('.selection-train').forEach(element => {
+			element.style.display = "none";
+			
+		})
+
+		document.querySelectorAll('.selector-train').forEach(element => {
+			element.classList.remove("active");
+			console.log(e.targetid);
+			
+			
+		})
+
+				e.target.classList.add("active");
+				var string = "selection-"+e.target.id;
+				document.getElementById(string).style.display = "block";
+
+		
+		}
+		// console.log(document.getElementById(`"selection-${element.target.id}"`))
+		// document.getElementById(`selection-${document.getElementsByClassName("selection")}`).style.display = "block";
+		
+	
+
+	
+}
+		
+	
+		
+	
+	
+</script>
 
 <style>
 
@@ -136,9 +323,12 @@ import Prefooter from '../components/Pre-footer.astro';
 	.venue-card{
 		display: flex;
 		margin: auto;
+		background-color: #fff;
+		border-radius: 30px;
+		margin-top: 2em;
 		/* padding-top: 2em; */
 		/* width: 70%; */
-		height: 500px;
+		/* height: 500px; */
 	}
 
 	/* .image{
@@ -153,9 +343,9 @@ import Prefooter from '../components/Pre-footer.astro';
 		flex-direction: column;
 		/* width: 100%; */
 		/* justify-content: space-between; */
-		height: 100vh;
+		/* height: 100vh; */
 		/* width: 100%; */
-		padding: 4em;
+		padding: 3em;
 		border-bottom: 1px solid #002C38;
 		/* padding-left: 16em; */
 	}
@@ -167,25 +357,33 @@ import Prefooter from '../components/Pre-footer.astro';
 	.venue-content-2 h1{
 		margin: 0%;
 		padding: 0%;
-		font-size: 2.5em;
+		font-size: 2em;
+	}
+
+	.about-section{
+		padding: 2em;
 	}
 
 	.venue-details{
 		display: flex;
 		flex-direction: column;
-		/* width: 15em; */
-		padding: 1em;
+		min-width: 8em;
+		padding: 1.5em;
+		padding-right: 1em;
+		border-radius: 30px;
 		background-color: #fff;
 		justify-content: space-between;
 	}
 
 	.venue-details img{
 		padding-bottom: 0.5em;
+		max-width: 180px;
 		/* width: 300px; */
 	}
 
-	.venue-details h2{
-		
+	.venue-details h3{
+		font-family: 'AH-B';
+		font-weight: 100;
 		padding-top: 0.5em;
 		margin: 0%;
 		border-top: 2px solid #002C38;
@@ -198,6 +396,7 @@ import Prefooter from '../components/Pre-footer.astro';
 	.venue-image{
 		display: flex;
 		width: 80%;
+		padding: 1em;
 		/* max-width: 600px; */
 		/* overflow: hidden; */
 		/* background-image: url(/RCH.jpg); */
@@ -207,10 +406,12 @@ import Prefooter from '../components/Pre-footer.astro';
 	.venue-image img{
 		width: 100%;
 		object-fit: cover;
+		border-radius: 30px;
 	}
 
 	.bottom{
 		margin: 0%;
+		padding-top: 3em;
 	}
 
 	.center{
@@ -243,54 +444,133 @@ import Prefooter from '../components/Pre-footer.astro';
 	}
 
 
+
 	/* Click to select */
 
-	.selection{
+	.selections{
 		margin: auto;
 		margin-top: 0%;
-		width: 80%;
-		max-width: 1200px;
-		padding: 0.5em;
+		width: 100%;
+		max-width: 1000px;
 		display: flex;
 		justify-content: space-between;
+		
 		
 		/* flex-wrap: wrap; */
 	}
 
-	.selection input{
+	.selections input{
 		display: none;
 		/* flex-wrap: wrap; */
 	}
+	.selection{
+		text-align: left;
+	}
+
+	.selection-train{
+		text-align: left;
+	}
+
+	#selection-2, #selection-3, #selection-5, #selection-6{
+		display: none;
+	}
 	
-	label{
+	.selector{
+		background-color: var(--background-color);
+		color: #002C38;
 		caret-color: #ffffff00;
-		margin: 0.5em;
+		/* margin: 0.5em; */
 		width: 100%;
 		text-align: center;
 		align-content: center;
+		border-radius: 0%;
 		padding: 0.6em;
 		border: 2px solid #002C38;
-		border-radius: 50px;
+		/* border-radius: 50px; */
 		font-family: "AH-B";
+		
 	}
 
-	label:hover{
+	.selector:hover{
+		text-decoration: underline;
+		text-decoration-color: #002C38;
+		
+	}
+
+	.selector-train{
+		background-color: var(--background-color);
+		color: #002C38;
+		caret-color: #ffffff00;
+		/* margin: 0.5em; */
+		width: 100%;
+		text-align: center;
+		align-content: center;
+		border-radius: 0%;
+		padding: 0.6em;
+		border: 2px solid #002C38;
+		/* border-radius: 50px; */
+		font-family: "AH-B";
+		
+	}
+
+	.selector-train:hover{
+		text-decoration: underline;
+		text-decoration-color: #002C38;
+		
+	}
+
+	.active{
+		color: #FCF7EB !important;
+		background-color: #002C38 ;
+		text-decoration-color: #FCF7EB;
+	}
+
+	button:hover{
 		cursor: pointer;
 	}
 
-	#railway:checked ~ #railway-label{
+	.leftmost{
+		border-radius: 30px 0px 0px 0px;
+		border-right: 0px;
+	}
+
+	.rightmost{
+		border-radius: 0px 30px 0px 0px;
+		border-left: 0px;
+	}
+
+	.active{
 		color: #FCF7EB;
 		background-color: #002C38;
 	}
 
-	#airport:checked ~ #airport-label{
+	/* #selector-1:checked ~ #leeds-button{
 		color: #FCF7EB;
 		background-color: #002C38;
 	}
 
-	#london:checked ~ #london-label{
+	#selector-2:checked ~ #manchester-button{
 		color: #FCF7EB;
 		background-color: #002C38;
+	}
+
+	#selector-3:checked ~ #london-button{
+		color: #FCF7EB;
+		background-color: #002C38;
+	} */
+
+	.directions{
+		max-width: 1000px;
+		border: 2px solid #002C38;
+		border-top: #002C38;
+		border-radius: 0px 0px 30px 30px;
+		padding: 1.5em;
+		margin: auto;
+	}
+
+	.directions p{
+		align-items: flex-start;
+		text-align: left;
 	}
 
 	.sub-types h3{
@@ -327,19 +607,33 @@ import Prefooter from '../components/Pre-footer.astro';
 	}
 
 	.venue-content-2 h2{
-		padding-top: 1em;
+		padding-top: 2em;
+		margin: 0%;
 	}
 
+	.venue-content-2{
+		padding-right: 1em;
+	}
 
-	.venue-content-3, .venue-content-4{
+	.venue-content-3{
 		justify-content: center;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
-		padding: 4em;
+		padding: 2em;
+		border-bottom: 1px solid #002C38;
+		/* height: 100vh; */
+		/* padding-left: 16em; */
+	}
+
+	.venue-content-4{
+		justify-content: center;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		padding: 2em;
 		border-bottom: 1px solid #002C38;
 		height: 100vh;
-		/* padding-left: 16em; */
 	}
 
 
@@ -366,7 +660,7 @@ import Prefooter from '../components/Pre-footer.astro';
 		font-family: sans-serif;
 	}
 
-	.input-field label{
+	.input-field button{
 		padding-bottom: 0.2em;
 		
 	}
@@ -503,7 +797,10 @@ import Prefooter from '../components/Pre-footer.astro';
 
 	.content-container{
 		display: flex;
-		height: 60%;
+		flex-direction: column;
+		width: 100%;
+		margin: 2em;
+		/* height: 60%; */
 		border-radius: 30px;
 		border: solid 5px #002C38;
 		overflow: hidden;
@@ -511,22 +808,57 @@ import Prefooter from '../components/Pre-footer.astro';
 	}
 
 	.map-embed{
-		width: 65%;
-		justify-self: center;
+		width: 100%;
 		height: 100%;
-		border-right: 5px solid #002C38;
+		justify-self: center;
+		border-bottom: 5px solid #002C38;
 	}
 
 	.direction-links{
-		width: 35%;
+		width: 100%;
+		/* padding: 1em; */
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		
 	}
-	.direction-links *{
-		margin-bottom: 2em;
-		width: 80%;
+
+
+	.direction-links button{
+		margin: 0.5em;
+		width: 100%;
+		background-color: var(--color-bg);
+		border-radius: 0px;
+		color: #002C38;
+		font-size: 100;
+		font-family: 'AH-R';
+		caret-color: transparent;
+	}
+
+	.direction-links button:hover{
+		text-decoration: underline;
+		background-color: var(--color-bg);
+	}
+
+	.direction-links h3{
+		font-family: 'AH-R';
+		font-weight: 100;
+		/* padding: 100%; */
+		padding-top: 0.3em;
+		margin: auto;
+		height: 1em;
+	}
+
+	.direction-links :first-child{
+		background-color: #002C38;
+		color: #FCF7EB;
+		height: 2em;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		/* padding: 0%; */
+		/* margin: 0%; */
 	}
 
 
@@ -544,8 +876,9 @@ import Prefooter from '../components/Pre-footer.astro';
 		font-family: 'S-R';
 	}
 
-
-	
+	.no-border{
+		border: 0px solid #000;
+	}
 
 	
 

@@ -33,13 +33,27 @@ import Prefooter from '../components/Pre-footer.astro';
 				</div>
 
 				<div class='theme'>	
-					<div class='title'>
+					<div class='title not-mobile'>
 						<h1>
 							DESIGN FOR <span class='transparent'>EQUALITY AND JUSTICE DESIGN FOR</span>
 						</h1>
 						<h1>
 							EQUALITY AND JUSTICE <span class='transparent'>DESIGN FOR EQUALITY AND JUSTICE</span>
 						</h1>
+					</div>
+
+					<div class='title mobile'>
+						<h1>
+							<span class="less-emphasis"> DESIGN FOR </span><span class='transparent'>EQUALITY & JUSTICE DESIGN FOR</span>
+						</h1>
+
+						<h1>
+							EQUALITY <span class='transparent'>& JUSTICE DESIGN FOR EQUALITY AND JUSTICE</span>
+						</h1>
+						<h1>
+							& JUSTICE <span class='transparent'>DESIGN FOR EQUALITY AND JUSTICE</span>
+						</h1>
+						
 					</div>
 				
 
@@ -179,7 +193,7 @@ import Prefooter from '../components/Pre-footer.astro';
 				</div>
 
 				<button class='read-more'>
-					Read More >
+				<a href="/cfp">Read More</a>	
 				</button>
 
 			</section>
@@ -258,10 +272,11 @@ import Prefooter from '../components/Pre-footer.astro';
 	.home-content-1{
 		box-sizing: border-box;
 		display: flex;
+
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		height: 100vh;
-		padding: 4em;
+		padding: 2em;
 		border-bottom: 1px solid #002C38;
 		/* padding-left: 16em; */
 	}
@@ -279,12 +294,21 @@ import Prefooter from '../components/Pre-footer.astro';
 
 		box-sizing: border-box;
 		border-bottom: 1px solid #002C38;
-		height: 100vh;
+		height: min-content;
 		display: flex;
-		padding-left: 16em;
+		/* padding-left: 16em; */
 		padding: 4em;
 
 	}
+
+	.home-list h3{
+		padding-top: 1em;
+	}
+
+	.home-list{
+		padding-bottom: 2em;
+	}
+	
 
 	.home-content-4{
 
@@ -331,7 +355,7 @@ import Prefooter from '../components/Pre-footer.astro';
 	}
 
 	.img-mask{
-		max-height: 450px;
+		height: auto;
 		overflow: hidden;
 	}
 
@@ -385,7 +409,7 @@ import Prefooter from '../components/Pre-footer.astro';
 
 	.title h1{
 		font-family: 'S-B';
-		font-size: 2.5em;
+		font-size: 2em;
 		/* height: 50%; */
 		margin: 0%;
 	}
@@ -638,6 +662,163 @@ import Prefooter from '../components/Pre-footer.astro';
 
 	.bold{
 		font-family: 'AH-B';
+	}
+
+	.not-mobile{
+			display: block;
+		}
+
+		.mobile{
+			display: none;
+		}
+
+		@media screen and (min-width: 1921px){
+			.title{
+				font-size: 1em;
+			}
+		}
+
+	@media screen and (max-width: 1200px){
+		.home-content-1{
+			
+			padding: 2em;
+
+			padding-top :2em;
+			padding-bottom: 1em;
+			justify-content: center;
+		}
+
+		.home-content-2{
+			
+			padding: 2em;
+			padding-top :2em;
+			padding-bottom: 0px;
+			justify-content: center;
+		}
+
+		.theme{
+			/* padding-top: 2em; */
+			/* padding-left: 2em; */
+			margin: 1em;
+			margin-left: 0em;
+			margin-top: 0em;
+			margin-bottom: 0%;
+			align-self: flex-start;
+			order: 1;
+		}
+
+		.date{
+			
+			margin: auto;
+			margin-bottom: 0%;
+			margin-left: 0%;
+		}
+
+		.stretch{
+			display: flex;
+			height: max-content;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: center;
+			order: 2;
+		}
+
+		.location-detail{
+			align-self: flex-end;
+			padding: auto;
+			margin: 0%;
+		}
+
+		.title h1{
+			
+			width: 100vw;
+		}
+
+		.title{
+			width: 100vw;
+			font-size: 1em;
+		}
+
+		.img-mask img{
+			min-height: 100%;
+			/* min-width: 100%; */
+		}
+
+		.img-mask{
+			padding-top: 1em;
+			padding-bottom: 1em;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.home-content-3{
+			
+			padding: 3em;
+			justify-content: center;
+		}
+
+		.home-list h3{
+			padding-top: 2em;
+		}
+	}
+
+	@media screen and (max-width:500px){
+		.home-content-1{
+			/* padding-top: 5em; */
+			padding-left: 0em;
+			padding-right: 0em;
+			justify-content: space-evenly;
+		}
+
+		.theme{
+			font-size: 0.8em;
+			padding-left: 1em;
+			padding-right: 0.5em;
+			/* margin: auto; */
+		}
+
+		.not-mobile{
+			display: none;
+		}
+
+		.mobile{
+			display: flex;
+		}
+
+		.title{
+			font-size: 1.5em;
+			flex-direction: column;
+		}
+
+		.title h1{
+			/* padding-bottom: 0.1em; */
+			line-height: 1.1em;
+		}
+
+		.less-emphasis{
+			opacity: 70%;
+		}
+
+		.stretch{
+			justify-content:space-evenly;
+			height:max-content
+
+		}
+
+		.img-mask{
+			min-height: 50vh;
+		}
+		
+		.location-detail{
+			padding-top: 2em;
+		}
+
+		.home-content-4{
+			justify-content: center;
+			text-align: center;
+		}
+
+
 	}
 
 </style>

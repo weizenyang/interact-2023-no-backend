@@ -7,15 +7,12 @@ import Markdown from 'markdown-to-jsx';
 // const data = await response.json();
 // const type = data.data;
 
-const response = await fetch('/public/content.json');
+const response = await fetch('/content.json');
 const data = await response.json();
 const type = data.data;
 
 
-
-// console.log(type);
-
-
+console.log(type);
 
 export function SubNavbarJsx({id}) {
 
@@ -45,7 +42,7 @@ export function SubNavbarJsx({id}) {
 
 		<main>
 		<div className='navbar'>
-			<div>
+			
 				<div className='logo'>
 					<a href='/'>
 						<img src='/Logo.svg'></img>
@@ -55,7 +52,7 @@ export function SubNavbarJsx({id}) {
 					</h2>
 				</div>
 	
-				<div className="nav-items bottom-border">
+				<div className="bottom-border">
 					<a href='/cfp' class="go-back" id='0'><img src="/public/Polygon 1.svg" alt=""/>Submissions</a>
 				</div>
 	
@@ -72,7 +69,7 @@ export function SubNavbarJsx({id}) {
 					<li><a className="section-change" onClick={changeValue} id='8'>Industrial <br/> Experiences</a></li>
 					
 				</ul>
-			</div>
+			
 
 		</div>
 
@@ -87,7 +84,7 @@ export function SubNavbarJsx({id}) {
 	console.log(section);
 	var title = type[section].attributes.title;
 	var desc = type[section].attributes.descriptions;
-	var detail = marked.parse(type[section].attributes.details);           
+	var detail = type[section].attributes.details;           
 
 	return(
 		<div>

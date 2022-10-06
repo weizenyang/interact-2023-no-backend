@@ -2,10 +2,10 @@
 import Layout from '/src/layouts/Layout.astro';
 // import Content from '/src/components/Sub-details-content.astro';
 import Footer from '/src/components/Footer.astro';
-import Submissions from '/src/components/Submissions.jsx';
+import Submissions from '../Submissions.jsx';
 
 
-export async function getStaticPaths() {
+export async function get() {
   return [
  	{ params: { id: '0' } },
     { params: { id: '1' } },
