@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Prefooter from '../components/Pre-footer.astro';
+import Animated from '../components/Animated.astro';
 ---
 
 <Layout title='Interact 2023'>
@@ -11,7 +12,10 @@ import Prefooter from '../components/Pre-footer.astro';
 	
 	<main>
 		<Navbar/>
+		<!-- <Animated/> -->
 		<content>
+
+			
 
 			<section class='home-content-1'>
 				<div class='stretch'>
@@ -35,10 +39,10 @@ import Prefooter from '../components/Pre-footer.astro';
 				<div class='theme'>	
 					<div class='title not-mobile'>
 						<h1>
-							DESIGN FOR <span class='transparent'>EQUALITY AND JUSTICE DESIGN FOR</span>
+							DESIGN FOR <span class='transparent'>EQUALITY AND JUSTICE DESIGN FOR EQUALITY AND JUSTICE DESIGN FOR</span>
 						</h1>
 						<h1>
-							EQUALITY AND JUSTICE <span class='transparent'>DESIGN FOR EQUALITY AND JUSTICE</span>
+							EQUALITY AND JUSTICE <span class='transparent'>DESIGN FOR EQUALITY AND JUSTICE DESIGN FOR EQUALITY AND JUSTICE</span>
 						</h1>
 					</div>
 
@@ -193,7 +197,7 @@ import Prefooter from '../components/Pre-footer.astro';
 				</div>
 
 				<button class='read-more'>
-				<a href="/cfp">Read More</a>	
+				<a href="/cfp">Read More ></a>	
 				</button>
 
 			</section>
@@ -238,11 +242,11 @@ import Prefooter from '../components/Pre-footer.astro';
 
 				</div>
 
-				<a href="/cfp">
-					<button class='read-more'>
-						Read More >
+
+					<button class='read-more less-emphasis'>
+						Coming Soon
 					</button>
-				</a>
+
 				
 
 			</section>
@@ -355,20 +359,26 @@ import Prefooter from '../components/Pre-footer.astro';
 	}
 
 	.img-mask{
-		height: auto;
+		width: 100%;
 		overflow: hidden;
+		object-fit: cover;
+		object-position: center;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.rch{
 		width: 100%;
 		/* max-height: 473px; */
 		object-fit: cover;
+		
 	}
 
 	.stretch{
 		box-sizing: border-box;
 		display: flex;
 		width: 100%;
+		overflow: hidden;
 		/* height: 100%; */
 	}
 
@@ -672,9 +682,13 @@ import Prefooter from '../components/Pre-footer.astro';
 			display: none;
 		}
 
+		.less-emphasis{
+			opacity: 70%
+		}
+
 		@media screen and (min-width: 1921px){
 			.title{
-				font-size: 1em;
+				font-size: 1.4em;
 			}
 		}
 
@@ -762,11 +776,12 @@ import Prefooter from '../components/Pre-footer.astro';
 		}
 	}
 
-	@media screen and (max-width:500px){
+	@media screen and (max-width:830px){
+
+
 		.home-content-1{
-			/* padding-top: 5em; */
-			padding-left: 0em;
-			padding-right: 0em;
+			padding-left: 0%;
+			padding-right: 0%;
 			justify-content: space-evenly;
 		}
 
@@ -795,9 +810,7 @@ import Prefooter from '../components/Pre-footer.astro';
 			line-height: 1.1em;
 		}
 
-		.less-emphasis{
-			opacity: 70%;
-		}
+
 
 		.stretch{
 			justify-content:space-evenly;
@@ -813,9 +826,33 @@ import Prefooter from '../components/Pre-footer.astro';
 			padding-top: 2em;
 		}
 
+		.home-content-3{
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+
 		.home-content-4{
 			justify-content: center;
 			text-align: center;
+		}
+
+		.items{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.icon-container{
+			width: 100%;
+			border: 0px;
+		}
+
+		.item-description{
+			width: 100%;
+		}
+
+		.list-line{
+			margin-right: 1em;
 		}
 
 

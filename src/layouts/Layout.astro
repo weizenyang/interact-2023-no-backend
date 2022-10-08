@@ -1,7 +1,10 @@
 ---
+import Animated from '../components/Animated.astro';
 export interface Props {
 	title: string;
 }
+
+
 
 const { title } = Astro.props;
 ---
@@ -17,6 +20,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<Animated/>
 		<slot />
 	</body>
 </html>
@@ -149,10 +153,17 @@ const { title } = Astro.props;
 
 	body{
 		display: block;
-		
 	}
 
-	@media screen and (max-width:500px){
+	.less-emphasis{
+			opacity: 70%;
+	}
+
+	section{
+		z-index: 1;
+	}
+
+	@media screen and (max-width:830px){
 		
 		main{
 			display: flex;

@@ -1,0 +1,59 @@
+<div>
+	<img id="animated" src="/Logo-Yellow.svg" alt="" class="logo">
+</div>
+
+<style>
+	div{
+		position: fixed;
+		display: flex;
+		width: 100vw;
+		height: 100vh;
+		
+		justify-content: flex-end;
+		z-index: -100;
+		padding-right: 3em;
+	}
+
+	img{
+		height: 70vh;
+		left: 100%;
+		bottom: 300px;
+		margin-top: 30vh;
+		opacity: 7%;
+		/* padding: 2em; */
+		
+		
+	}
+
+	.logo path{
+		fill: #fff;
+	}
+
+</style>
+
+<script>
+	
+	var logoPosY = 0;
+	document.addEventListener('scroll', () => {
+		logoPosY = window.scrollY/document.querySelector('body').clientHeight;
+		document.querySelector('#animated').style.marginTop = (logoPosY*document.querySelector('body').clientHeight)*0.3;
+		
+	})
+
+	setInterval(updateLogo, 1)
+
+	function updateLogo(){
+		var item = document.querySelector('#animated');
+		// console.log(window.getComputedStyle(item).marginTop)
+		console.log((logoPosY*document.querySelector('body').clientHeight)*0.3)
+		item.style.marginTop += (logoPosY*document.querySelector('body').clientHeight)*0.3;
+	
+	}
+	
+
+	
+
+	
+
+	
+</script>

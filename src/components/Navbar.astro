@@ -11,18 +11,19 @@
 				INTERACT <br> 2023
 			</h2>
 		</div>
-
+		<input type="checkbox" id="navbar">
 		<ul class='nav-items'>
 			<li><a href='/'>Home</a></li>
 			<li class='submissions-link'>
-				<a href='/cfp'>Submissions ></a>
-				<div class='dropdown-menu pos-1'>
+				<a class="submissions-parent">Submissions ></a>
+				<div class='dropdown-menu pos-1 submissions-parent'>
 					<ul>
 						<li><a href='/cfp'>General</a></li>
 						<li>
 							<div class='submission-types'>
-								<a href='/submissions/0'>Submission Types ></a>
-								<div class='dropdown-menu pos-2'>
+								<a class="submissions-type-parent"> Submission Types > </a>
+								
+								<div class='dropdown-menu pos-2 submissions-type-parent'>
 									<ul>
 
 										<li><a href='/submissions/0' id='0'>Full Papers</a></li>
@@ -61,10 +62,11 @@
 			<button class='navbar-button'>
 				Submit
 			</button>
-			<div class="burger">
+			
+			<label class="burger" for="navbar">
 				<div class="line"></div>
 				<div class="line"></div>
-			</div>
+			</label>
 		</div>
 
 		
@@ -227,7 +229,8 @@
 
 	.submissions-link:hover .pos-1, 
 	.submission-types:hover .pos-1,
-	.dropdown-menu:hover{
+	.dropdown-menu:hover
+	{
 		
 		display: flex;
 	}
@@ -251,6 +254,12 @@
 	.burger{
 		display: none;
 	}
+
+	input{
+		display: none;
+	}
+
+	
 
 	@media screen and (max-width:1000px){
 		.logo{
@@ -279,7 +288,7 @@
 	}
 
 
-	@media screen and (max-width:500px){
+	@media screen and (max-width:830px){
 		.logo{
 			width: 100%;
 			max-height: 50px;
@@ -311,10 +320,21 @@
 			padding-bottom: 1em;
 			border: 0px solid #002C38;
 			background-color: var(--color-bg);
+			z-index: 1000;
+			overflow-y: scroll;
 		}
 
 		.nav-items{
 			display: none;
+		}
+
+		input:checked ~ .nav-items{
+			display: flex;
+			flex-direction: column;
+			position: fixed;
+			background-color: var(--color-bg);
+			height: 100%;
+			width: 100%;
 		}
 
 		.button-div{
@@ -349,6 +369,89 @@
 			background-color: #FFC223;
 		}
 
+		.nav-items{
+			margin: 0%;
+			padding: 0%;
+			
+		}
+
+		.nav-items li{
+			padding: 0.7em;
+			/* padding-left: 0em; */
+			font-size: 1.2em;
+		}
+
+		.pos-1{
+			
+			top: 0%;
+			font-size: 0.8em;
+		}
+
+		.dropdown-menu{
+			position: relative;
+			left: 0%;
+		}
+		.pos-2{
+			border: 0px;
+			padding: 2em;
+		}
+
+		.pos-2 ul{
+			padding-top: 1em;
+			/* background-color: var(--color-bg); */
+		}
+		.pos-2 li{
+			top: 0%;
+			font-size: 1em;
+			padding-left: 0%;
+			background-color: var(--color-bg);
+			color: #002C38;
+			padding-left: 1em;
+			border-bottom: solid 1px #002C38;
+		}
+
+		.pos-2 li a{
+			
+			background-color: var(--color-bg);
+			color: #002C38;
+		}
+
 	}
 
 	</style>
+
+	<script>
+		// function clickStay(){
+		// 	document.addEventListener('click', (e) => {
+		// 	console.log(e.target.id);
+		// 	if(e.target.classList.contains("submissions-parent")){
+		// 		document.querySelector('.pos-1').style.display = "flex";
+				
+		// 	} else if (e.target.classList.contains("submissions-type-parent")){
+		// 		document.querySelector('.pos-2').style.display = "flex";
+				
+		// 	} else {
+				
+		// 	}
+		// })
+		// }
+		
+
+		// document.addEventListener('mouseover', (e) => {
+		// 		console.log(e.target.id);
+		// 		if(e.target.classList.contains("submissions-parent")){
+		// 			document.querySelector('.pos-1').style.display = "flex";
+					
+		// 		} else if (e.target.classList.contains("submissions-type-parent")){
+		// 			document.querySelector('.pos-2').style.display = "flex";
+					
+		// 		} else {
+		// 			document.querySelector('.pos-1').style.display = "none";
+		// 			document.querySelector('.pos-2').style.display = "none";
+		// 			clickStay();
+		// 		}
+		// })
+
+		
+		// document.querySelector('.submission-link')
+	</script>

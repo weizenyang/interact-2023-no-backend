@@ -53,6 +53,9 @@ console.log(transport);
 									<h3>
 										Main Atrium @ <br> Ron Cooke Hub
 									</h3>
+									<tag class="less-emphasis">
+										Main Venue
+									</tag>
 								</div>
 
 								<div class="bottom">
@@ -88,10 +91,10 @@ console.log(transport);
 										Address
 									</h4>
 									<p>
-										Ron Cooke Hub,
-										<br>133 Deramore Ln, 
-										<br>University of York,
-										<br>York, YO10 5GE
+										Piazza Building, 
+										<br>Heslington, 
+										<br>York YO10 5GR
+										
 									</p>
 								</div>
 
@@ -326,6 +329,8 @@ console.log(transport);
 		background-color: #fff;
 		border-radius: 30px;
 		margin-top: 2em;
+		width: 100%;
+
 		/* padding-top: 2em; */
 		/* width: 70%; */
 		/* height: 500px; */
@@ -367,7 +372,7 @@ console.log(transport);
 	.venue-details{
 		display: flex;
 		flex-direction: column;
-		min-width: 8em;
+		min-width: 20%;
 		padding: 1.5em;
 		padding-right: 1em;
 		border-radius: 30px;
@@ -395,7 +400,7 @@ console.log(transport);
 
 	.venue-image{
 		display: flex;
-		width: 80%;
+		width: 100%;
 		padding: 1em;
 		/* max-width: 600px; */
 		/* overflow: hidden; */
@@ -407,6 +412,11 @@ console.log(transport);
 		width: 100%;
 		object-fit: cover;
 		border-radius: 30px;
+	}
+
+	.top{
+		display:flex;
+		flex-direction: column;
 	}
 
 	.bottom{
@@ -441,6 +451,16 @@ console.log(transport);
 		/* width: max-content; */
 		/* height: 100%; */
 		/* width: 100%; */
+	}
+
+	tag {
+		background-color: #002C38;
+		color: #FCF7EB;
+		margin-top: 0.5em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		border-radius: 5px;
+		width:fit-content
 	}
 
 
@@ -879,6 +899,53 @@ console.log(transport);
 	.no-border{
 		border: 0px solid #000;
 	}
+
+	@media screen and (max-width:830px){
+		.venue-content-1{
+			padding: 1em;
+		}
+		.venue-card{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.venue-details{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding-bottom: 0%;
+		}
+
+		.top{
+			display: flex;
+			flex-direction: column;
+			width: fit-content;
+		}
+
+		.bottom{
+			padding: 0%;
+		}
+
+		.top img{
+			padding-right: 0%;
+			padding-bottom: 1em;
+			width: 80%;
+		}
+
+		.venue-content-4{
+			display: flex;
+			flex-direction: column;
+			
+		}
+
+		.content-container{
+			margin: auto;
+		}
+
+
+
+	}
+
 
 	
 
