@@ -19,30 +19,30 @@ import Prefooter from '../components/Pre-footer.astro';
 							CONTACT FORM
 						</h1>
 						
-						<form name="contact" netlify>
+						<form action="POST" name="contact" netlify>
 
 							<div class="input-field">
-								<label>Name:
+								<label>Name:</label>
 								<input name="name" placeholder="John Doe">
-								</label>
+								
 							</div>
 							
 							<div class="input-field">
-								<label>Email:
+								<label>Email:</label>
 								<input type="email" name="email" placeholder="johndoe@gmail.com" required>
-								</label>
+								
 							</div>
 							
 							<div class="input-field">
-								<label>Message:
+								<label>Message:</label>
 								<textarea name="message" placeholder="Message Here"></textarea>
-							</label>
+							
 							</div>
 
 							<div class="input-field" data-netlify-recaptcha="true"></div>
 
 							
-							<button type="submit">Send</button>
+							<button type="submit" name="submit">Send</button>
 							
 							
 

@@ -4,7 +4,7 @@
 <!-- const {} = Astro.props; -->
 
 	<div class='navbar'>
-	<div>
+	<div class="container">
 		<div class='logo'>
 			<a href='/'><img src='/Logo.svg'></a>
 			<h2 class='interact-text'>
@@ -338,7 +338,7 @@
 			position: sticky;
 			background-color: var(--color-bg);
 			height: min-content;
-			width: 100%;
+			width: 150%;
 		}
 
 		.button-div{
@@ -390,11 +390,13 @@
 			
 			top: 0%;
 			font-size: 0.8em;
+
 		}
 
 		.dropdown-menu{
 			position: relative;
 			left: 0%;
+			width: 100%;
 		}
 		.pos-2{
 			border: 0px;
@@ -419,6 +421,11 @@
 			
 			background-color: var(--color-bg);
 			color: #002C38;
+		}
+
+		.container{
+			display: flex;
+			flex-direction: column;
 		}
 
 	}

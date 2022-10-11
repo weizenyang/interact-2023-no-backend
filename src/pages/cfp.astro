@@ -163,7 +163,7 @@ import Prefooter from '../components/Pre-footer.astro';
 
 					<div class="center">
 						<button class="sub-types button-padding" href="">
-							<h2>View All ></h2>
+							<a href="/submissions/0"><h2>View All ></h2></a> 
 						</button>
 					</div>
 				
@@ -221,7 +221,7 @@ import Prefooter from '../components/Pre-footer.astro';
 				</div>
 
 				<button class='read-more'>
-					Read More >
+					<a href="/submissions/0">Read More ></a>
 				</button>
 
 			</section>
@@ -898,12 +898,24 @@ import Prefooter from '../components/Pre-footer.astro';
 }
 
 .cfp-content-4, .cfp-content-3{
+	
 	padding: 2em;
+
 	justify-content: center;
+	min-height: 100vh;
+	height: auto;
+}
+
+.home-list-items h3{
+	padding-top: 1em;
 }
 
 .juries-details{
 	flex-wrap: wrap;
+}
+
+.read-more{
+	margin-top: 1em;
 }
 
 }
@@ -911,10 +923,16 @@ import Prefooter from '../components/Pre-footer.astro';
 	@media screen and (max-width:830px){
 
 		.sub-types{
-			padding-bottom: 0%;
+			
 			padding: 0.5em;
 			padding-left: 1em;
 			padding-right: 1em;
+			padding-bottom: 1em;
+		}
+
+		.sub-types:last-child{
+			padding-bottom: 0.5em;
+			
 		}
 		
 		.box{
@@ -936,6 +954,15 @@ import Prefooter from '../components/Pre-footer.astro';
 		.cfp-content-4, .cfp-content-3{
 			padding: 1em;
 			justify-content: center;
+			padding-top: 4em;
+			padding-bottom: 4em;
+			justify-content: center;
+			min-height: 100vh;
+			height: auto;
+		}
+
+		.read-more{
+			margin-top: 2em;
 		}
 
 		.cfp-content-1{

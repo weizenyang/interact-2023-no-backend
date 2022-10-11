@@ -107,10 +107,12 @@ export function SubNavbarJsx({id}) {
 										</h2>
 										<div className="downloads">
 											<a className="file">
+											<div class="info">
 												<img src="/pdf.png" alt="" />
 												<p>
 													The Permission and Release Form for Photography, Video and Broadcasting
 												</p>
+												</div>
 											</a>
 
 											<a className="file" href="https://www.springernature.com/gp/authors/campaigns/latex-author-support" target="_blank">

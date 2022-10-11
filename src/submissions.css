@@ -592,6 +592,7 @@
 			flex-direction: row;
 			justify-content: space-between;
 			padding: 0%;
+			align-items: center;
 		}
 
 		.right{
@@ -706,6 +707,11 @@
 			padding: 1em;
 			padding-bottom: 0.5em;
 			padding-top: 0.5em;
+		 }
+
+		 .left h2{
+			
+			font-size: 2em;
 		 }
 		 
 	}
