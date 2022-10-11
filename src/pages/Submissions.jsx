@@ -103,22 +103,27 @@ export function SubNavbarJsx({id}) {
 
 									<div className="right">
 										<h2>
-											Essential Documents
+											Essential Resources
 										</h2>
 										<div className="downloads">
-											<div className="file">
+											<a className="file">
 												<img src="/pdf.png" alt="" />
 												<p>
 													The Permission and Release Form for Photography, Video and Broadcasting
 												</p>
-											</div>
+											</a>
 
-											<div className="file">
-												<img src="/pdf.png" alt="" />
-												<p>
-													Copyright Form
-												</p>
-											</div>
+											<a className="file" href="https://www.springernature.com/gp/authors/campaigns/latex-author-support" target="_blank">
+
+												<div class="info">
+													<img src="/website.svg" alt="External Page" />
+													<p>
+														LaTeX Springer Template
+													</p>
+												</div>
+												
+												<img class="external" src="/external.svg" alt="External Page" />
+											</a>
 										</div>
 									</div>
 								</div>

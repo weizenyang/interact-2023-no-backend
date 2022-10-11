@@ -44,8 +44,9 @@ console.log(transport);
 							University of York, on the edge of the city of York. The venue is easily accessible from the
 							centre of York by bus, taxi or bicycle.
 						</p>
-
+						<a href="#rch-map">
 						<div class="venue-card">
+							
 							<div class="venue-details">
 								
 								<div class="top">
@@ -75,9 +76,12 @@ console.log(transport);
 									<img src="/RCH.webp" alt="" width='400px'>
 								
 							</div>
+							
 						</div>
-
+					</a>
+					<a href="#piazza-map">
 						<div class="venue-card">
+							
 							<div class="venue-details">
 								<div class="top">
 									<img src="uoy-logo.webp" alt="" width="100%">
@@ -106,7 +110,10 @@ console.log(transport);
 									<img src="/Piazza.webp" alt="" height="350px">
 								
 							</div>
+							
 						</div>
+
+					</a>
 			</section>
 
 			<section class='venue-content-2'>
@@ -173,10 +180,10 @@ console.log(transport);
 
 				<div class="selections">
 
-					<button class="selector-train leftmost active" id="4">London/Edinburgh</button>
+					<button class="selector-train leftmost active" id="4">London / Edinburgh</button>
 					
 
-					<button class="selector-train" id="5">Paris/Brussels</button>
+					<button class="selector-train" id="5">Paris / Brussels</button>
 					
 
 					<button class="selector-train rightmost" id="6">Interepid</button>
@@ -195,7 +202,7 @@ console.log(transport);
 
 			<section class='venue-content-4'>
 
-				<div class="content-container">
+				<div class="content-container" id="rch-map">
 
 					<div class='map-embed'>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.1262576267018!2d-1.0320876841881301!3d53.947265180109355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48792fd3ebc5bc65%3A0xacbab96a0b4b7a96!2sThe%20Ron%20Cooke%20Hub!5e0!3m2!1sen!2sfr!4v1664443801266!5m2!1sen!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -210,7 +217,7 @@ console.log(transport);
 					
 				</div>
 
-				<div class="content-container">
+				<div class="content-container" id="piazza-map">
 
 					<div class='map-embed'>
 						
@@ -355,6 +362,10 @@ console.log(transport);
 		/* padding-left: 16em; */
 	}
 
+	.venue-content-1 a .venue-card{
+		text-decoration: none;
+	}
+
 	h1{
 		font-weight: 100;
 	}
@@ -402,10 +413,6 @@ console.log(transport);
 		display: flex;
 		width: 100%;
 		padding: 1em;
-		/* max-width: 600px; */
-		/* overflow: hidden; */
-		/* background-image: url(/RCH.jpg); */
-		/* width: 300px; */
 	}
 
 	.venue-image img{
@@ -513,6 +520,8 @@ console.log(transport);
 
 	.selector:hover{
 		text-decoration: underline;
+		transition: all 0.2s;
+		/* box-shadow: inset 0px 0px 10px #002C3855; */
 		text-decoration-color: #002C38;
 		
 	}
@@ -530,6 +539,7 @@ console.log(transport);
 		border: 2px solid #002C38;
 		/* border-radius: 50px; */
 		font-family: "AH-B";
+		transition: all 0.2s;
 		
 	}
 
@@ -541,7 +551,9 @@ console.log(transport);
 
 	.active{
 		color: #FCF7EB !important;
-		background-color: #002C38 ;
+		/* background-color: var(--color-bg); */
+		background-color: #002C38;
+		/* box-shadow: inset 0px 0px 1000px #002C38; */
 		text-decoration-color: #FCF7EB;
 	}
 
@@ -559,10 +571,12 @@ console.log(transport);
 		border-left: 0px;
 	}
 
-	.active{
+	
+
+	/* .active{
 		color: #FCF7EB;
 		background-color: #002C38;
-	}
+	} */
 
 	/* #selector-1:checked ~ #leeds-button{
 		color: #FCF7EB;
@@ -622,7 +636,7 @@ console.log(transport);
 		flex-direction: column;
 		padding: 4em;
 		border-bottom: 1px solid #002C38;
-		height: 100vh;
+		height: max-content;
 		/* padding-left: 16em; */
 	}
 
@@ -807,8 +821,6 @@ console.log(transport);
 		margin: 0%;
 		padding-top: 1em;
 		font-family: 'AH-B';
-		
-		/* font-size: 2.5em; */
 	}
 	
 	.conditions{
@@ -881,6 +893,13 @@ console.log(transport);
 		/* margin: 0%; */
 	}
 
+	
+	a:hover{
+		all: unset;
+		text-decoration: none;
+	}
+	
+
 
 	/* Presets */
 
@@ -900,9 +919,66 @@ console.log(transport);
 		border: 0px solid #000;
 	}
 
+	@media screen and (max-width:1200px){
+	
+
+		.venue-content-4{
+			display: flex;
+			flex-direction: column;
+			height: max-content;
+		}
+
+		.content-container{
+			margin: auto;
+			margin-bottom: 2em ;
+		}
+
+		.venue-card{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.venue-details{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding-bottom: 0%;
+		}
+
+		.top{
+			display: flex;
+			flex-direction: column;
+			width: fit-content;
+		}
+
+		.bottom{
+			padding: 0%;
+		}
+
+		.top img{
+			padding-right: 0%;
+			padding-bottom: 1em;
+			width: 80%;
+		}
+
+	}
+
 	@media screen and (max-width:830px){
 		.venue-content-1{
 			padding: 1em;
+		}
+
+		.directions{
+			margin: 0%;
+			padding: 1em;
+		}
+
+		.directions p{
+			margin: 0%;
+		}
+
+		.venue-content-2{
+			padding: 2em;
 		}
 		.venue-card{
 			display: flex;
@@ -932,17 +1008,34 @@ console.log(transport);
 			width: 80%;
 		}
 
+		.venue-content-3{
+			padding: 1em;
+			padding-top: 3em;
+		}
+
 		.venue-content-4{
 			display: flex;
 			flex-direction: column;
-			
+			height: max-content;
+		}
+
+		.directions{
+			margin: 0%;
+			padding: 1em;
+		}
+
+		.directions p{
+			margin: 0%;
+		}
+
+		.selector-train{
+			word-wrap: break-word;
 		}
 
 		.content-container{
 			margin: auto;
+			margin-bottom: 2em ;
 		}
-
-
 
 	}
 

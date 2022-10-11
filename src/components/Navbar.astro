@@ -15,7 +15,7 @@
 		<ul class='nav-items'>
 			<li><a href='/'>Home</a></li>
 			<li class='submissions-link'>
-				<a class="submissions-parent">Submissions ></a>
+				<a class="submissions-parent">Call For Papers ></a>
 				<div class='dropdown-menu pos-1 submissions-parent'>
 					<ul>
 						<li><a href='/cfp'>General</a></li>
@@ -52,13 +52,13 @@
 				
 			</li>
 			<li><a href=''>Programme</a></li>
-			<li><a href=''>Organisers</a></li>
+			<li><a href='/organisers'>Organisers</a></li>
 			<li><a href='/contact'>Contact</a></li>
 			<li><a href='/venue'>Venue</a></li>
 		</ul>
 		</div>
 
-		<div class="button-div">
+		<!-- <div class="button-div">
 			<button class='navbar-button'>
 				Submit
 			</button>
@@ -67,7 +67,7 @@
 				<div class="line"></div>
 				<div class="line"></div>
 			</label>
-		</div>
+		</div> -->
 
 		
 		
@@ -157,6 +157,7 @@
         margin: 0px;
         margin-right: 0px;
         z-index: 100;
+		
 		/* overflow-y: scroll; */
 	}
 
@@ -180,7 +181,7 @@
 	}
 
 	.pos-1{
-		left: 8em;
+		left: 8.5em;
 		top: 10em;
 	}
 	.pos-2{
@@ -421,6 +422,12 @@
 	</style>
 
 	<script>
+
+	gsap.fromTo(".horizontal-list", 
+		{
+			// scrollTrigger: ".awards-content-1",
+			y: 100
+		});
 		// function clickStay(){
 		// 	document.addEventListener('click', (e) => {
 		// 	console.log(e.target.id);

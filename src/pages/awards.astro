@@ -11,6 +11,36 @@ import Prefooter from '../components/Pre-footer.astro';
 	
 	<main>
 		<Navbar/>
+
+		<div class='horizontal-list'>
+			<div class='horizontal-list-items'>
+				<h3><a href="#brian-shackel">
+					Brian Shackel Award
+				</a>
+					
+				</h3>
+
+				<h3><a href="#student">
+					Pioneers’ Award for Best Doctoral Student Paper
+				</a>
+					
+				</h3>
+
+				<h3><a href="#accessibility">
+					Accessibility Award
+				</a>
+					
+				</h3>
+
+				<h3><a href="#interaction">
+					Interaction Design for International Development Award
+				</a>
+					
+				</h3>
+
+			</div>
+		</div>
+
 		<content>
 			<section class='awards-content-1'>
 
@@ -24,20 +54,28 @@ import Prefooter from '../components/Pre-footer.astro';
 							<div class='list-line'></div>
 		
 							<div class='home-list-items'>
-								<h3>
+								<h3><a href="#brian-shackel">
 									Brian Shackel Award
+								</a>
+									
 								</h3>
 		
-								<h3>
+								<h3><a href="#student">
 									IFIP TC13 Pioneers’ Award for Best Doctoral Student Paper at INTERACT.
+								</a>
+									
 								</h3>
 		
-								<h3>
+								<h3><a href="#accessibility">
 									IFIP TC13 Accessibility Award.
+								</a>
+									
 								</h3>
 		
-								<h3>
+								<h3><a href="#interaction">
 									IFIP TC13 Interaction Design for International Development Award
+								</a>
+									
 								</h3>
 		
 							</div>
@@ -45,7 +83,7 @@ import Prefooter from '../components/Pre-footer.astro';
 				
 			</section>
 
-			<section class='awards-content-2'>
+			<section class='awards-content-2' id="brian-shackel">
 				<h2>
 					IFIP TC13 BRIAN SHACKEL AWARD
 				</h2>
@@ -67,7 +105,7 @@ import Prefooter from '../components/Pre-footer.astro';
 		
 			</section>
 
-			<section class='awards-content-2'>
+			<section class='awards-content-2' id="student">
 				<h2>
 					IFIP TC13 Pioneers’ Award 
 <span class="thin">for</span><br> Best Doctoral Student 
@@ -96,7 +134,7 @@ Paper at INTERACT
 		
 			</section>
 
-			<section class='awards-content-2'>
+			<section class='awards-content-2' id="accessibility">
 				<h2>
 					IFIP TC13 Accessibility award
 				</h2>
@@ -117,7 +155,7 @@ Paper at INTERACT
 		
 			</section>
 
-			<section class='awards-content-2'>
+			<section class='awards-content-2' id="interaction">
 				<h2>
 					IFIP TC13 interaction design
 					<span class="thin"> for </span>international development award
@@ -192,6 +230,10 @@ The selection of the TC13 IDID Award is organized by an ad-hoc committee of memb
 		border-radius: 50px;
 		width: 5px;
 		background-color: #002C38;
+	}
+
+	.horizontal-list{
+		display: none;
 	}
 
 	.home-list{
@@ -472,9 +514,70 @@ The selection of the TC13 IDID Award is organized by an ad-hoc committee of memb
 		font-family: 'S-R';
 	}
 
+	.horizontal-list-items{
+		/* border-top: 2px dotted #002C38cc; */
+		border-bottom: 2px dotted #002C38cc;
+		display: flex;
+		overflow-x: scroll;
+		width: 100%;
 
-	
+	}
 
-	
+	.horizontal-list{
+		display: flex;
+		overflow-x: scroll;
+		position: sticky;
+		background-color: var(--color-bg);
+		top: 80px;
+		opacity: 0%;
+		
+
+	}
+	.horizontal-list-items h3{
+		width: 100%;
+		white-space: nowrap;
+		padding: 0.5em 1em;
+		color: var(--color-bg);
+		background-color: #002C38;
+		border-radius: 30px;
+		margin-left: 1em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+
+	}
 
 </style>
+
+<script>
+	// 	var opacity = 0;
+	// 	window.addEventListener('scroll', function(e){
+	// var containerTop = document.querySelector('.awards-content-1').getBoundingClientRect().top;
+	// console.log(document.querySelector('.horizontal-list').getBoundingClientRect().top);
+	// if (containerTop <= 0) {
+	// 	opacity += 0.05;
+		
+	// 		document.querySelector(".horizontal-list").style.display = "flex";
+	// 		document.querySelector(".horizontal-list").style.opacity = 1;
+	// }
+	// if (containerTop > 0) {
+		
+	// 	document.querySelector(".horizontal-list").style.display = "none";
+		
+	// }
+	// });
+
+	// gsap.fromTo(".horizontal-list", {
+	// 	y: -100,
+
+	// },
+	// {
+	// 	scrollTrigger: ".awards-content-1",
+	// 	y: 0
+	// });
+
+	gsap.fromTo(".horizontal-list", 
+	{
+		// scrollTrigger: ".awards-content-1",
+		y: 100
+	});
+</script>

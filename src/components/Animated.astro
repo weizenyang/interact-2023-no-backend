@@ -1,21 +1,24 @@
-<div>
-	<img id="animated" src="/Logo-Yellow.svg" alt="" class="logo">
+<div id="animated">
+	<img src="/Logo-Yellow.svg" alt="" class="logo">
 </div>
 
 <style>
 	div{
 		position: fixed;
 		display: flex;
-		width: 100vw;
-		height: 100vh;
-		
+		/* width: 100vw;
+		height: 100vh; */
+		opacity: 1;
+		left: 50vw;
 		justify-content: flex-end;
 		z-index: -100;
 		padding-right: 3em;
+		transition: scale 0.2s;
+		transition-timing-function: ease-out;
 	}
 
 	img{
-		height: 70vh;
+		height: 90vh;
 		left: 100%;
 		bottom: 300px;
 		margin-top: 30vh;
@@ -32,28 +35,56 @@
 </style>
 
 <script>
-	
-	var logoPosY = 0;
-	document.addEventListener('scroll', () => {
-		logoPosY = window.scrollY/document.querySelector('body').clientHeight;
-		document.querySelector('#animated').style.marginTop = (logoPosY*document.querySelector('body').clientHeight)*0.3;
+	var item = document.getElementById('animated');
+		var x = (window.innerWidth/3);
+		var y = -250;
+		var targetX = item.getBoundingClientRect().left;
+		var targetY =  item.getBoundingClientRect().top;
+	// var logoPosY = 0;
+	// document.addEventListener('scroll', () => {
+	// 	logoPosY = window.scrollY/document.querySelector('body').clientHeight;
+	// 	document.querySelector('#animated').style.marginTop = (logoPosY*document.querySelector('body').clientHeight)*0.3;
 		
-	})
+	// })
 
-	setInterval(updateLogo, 1)
 
+		setInterval(updateLogo, 1);
 	function updateLogo(){
-		var item = document.querySelector('#animated');
-		// console.log(window.getComputedStyle(item).marginTop)
-		console.log((logoPosY*document.querySelector('body').clientHeight)*0.3)
-		item.style.marginTop += (logoPosY*document.querySelector('body').clientHeight)*0.3;
-	
+		if(x != targetX){
+			targetX = targetX + (x-targetX)*0.005;
+			console.log(targetX);
+		}
+
+		if(y != targetY){
+			targetY = targetY + (y-targetY)*0.005;
+		}
+		
+		item.style.left = `${targetX}px`;
+		item.style.top = `${targetY}px`;
+
+		
+		
 	}
-	
 
-	
+		
 
-	
+	addEventListener('mousemove', (e) => {
+		x = (((e.clientX)/window.innerWidth)*-300)+(window.innerWidth/2);
+		y = (((e.clientY)/window.innerHeight)*-200)-(window.innerHeight/6);
+		// item.style.left = `${x}px`;
+		// item.style.top = `${y}px`;
+		// console.log(x);	
 
+	});
+
+	addEventListener('mousedown', (e) => {
+		item.style.scale = "0.95";
+
+	});
+
+	addEventListener('mouseup', (e) => {
+		item.style.scale = "1";
+
+	});
 	
 </script>

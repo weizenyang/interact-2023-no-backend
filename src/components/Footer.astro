@@ -5,22 +5,25 @@
 				<h3>
 					DISCOVER
 				</h3>
-				<a>Call For Papers</a>
-				<a>Organisers</a>
-				<a>Programme</a>
-				<a>Venue</a>
+				<a href="/cfp">Call For Papers</a>
+				<a href="/organisers">Organisers</a>
+				<a href="">Programme</a>
+				<a href="/venue">Venue</a>
 
 			</div>
 			<div  class='footer-category'>
 				<h3>
 					CONTACT
 				</h3>
-				<a>Register</a>
-				<a>Contact Us</a>
+				<a href="/submissions/0">Submit</a>
+				<a href="/contact">Contact Us</a>
 			</div>
 			<div class='footer-category'>
 				<div class='interact-logo-items'>
-					<img src='/Interact-2023-logo-full.svg' alt=''>
+					<a href="/">
+						<img src='/Interact-2023-logo-full.svg' alt=''>
+					</a>
+					
 					<div class='social-media'>
 						<img src='/facebook 1.svg' alt=''>
 						<img src='/linkedin 1.svg' alt=''>
@@ -40,14 +43,18 @@
 					Sponsors:
 				</p>
 				<div class='logo-container'>
-					<div class='square'></div>
-					<div class='square'></div>
-					<div class='square'></div>
-					<div class='square'></div>
-					<div class='square'></div>
-					<div class='square'></div>
-					<div class='square'></div>
-					<div class='square'></div>
+					<div class="square">
+						<img src="/UOY.svg" alt="">
+					</div>
+
+					<div class="square">
+						<img src="/UWL.jpg" alt="">
+					</div>
+
+					<div class="square">
+						<img src="/IFIP low res.png" alt="">
+					</div>
+					
 				</div>
 			</div>
 			
@@ -133,10 +140,17 @@
 	}
 
 	.sponsors .square{
-		width: 4em;
-		height: 4em;
+		/* width: 4em;
+		height: 4em; */
+		display: flex;
+		justify-content: center;
 		margin-right: 1em;
-		background-color: #002C38;
+		/* background-color: #002C38; */
+	}
+
+	.square img{
+
+		margin: auto;
 	}
 
 	.logo-container{
