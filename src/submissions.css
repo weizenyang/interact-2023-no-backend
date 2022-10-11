@@ -571,9 +571,7 @@
 			font-size: 1.5em;
 		}
 
-		.sub-types{
-			padding: 2em;
-		}
+		.sub-types{}
 
 	}
 
@@ -638,10 +636,6 @@
 
 		.external{
 			opacity: 50%;
-		}
-
-		.sub-types{
-			padding: 2em;
 		}
 
 		
