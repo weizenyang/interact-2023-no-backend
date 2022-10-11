@@ -18,21 +18,25 @@ import Prefooter from '../components/Pre-footer.astro';
 						<h1 class="title">
 							CONTACT FORM
 						</h1>
+						
+						<form action="" name="contact" method="POST" data-netlify="true">
 
-						<div class="input-field">
-							<label>Name:</label>
-							<input name="Name" placeholder="John Doe">
-						</div>
-						
-						<div class="input-field">
-							<label>Email:</label>
-							<input name="Email" placeholder="johndoe@gmail.com">
-						</div>
-						
-						<div class="input-field">
-							<label>Message:</label>
-							<textarea name="Message" placeholder="Message Here"></textarea>
-						</div>
+							<div class="input-field">
+								<label>Name:</label>
+								<input name="Name" placeholder="John Doe">
+							</div>
+							
+							<div class="input-field">
+								<label>Email:</label>
+								<input name="Email" placeholder="johndoe@gmail.com">
+							</div>
+							
+							<div class="input-field">
+								<label>Message:</label>
+								<textarea name="Message" placeholder="Message Here"></textarea>
+							</div>
+
+						</form>
 
 						<h2>
 							Committee Contacts
@@ -354,7 +358,15 @@ import Prefooter from '../components/Pre-footer.astro';
 		/* font-size: 2.5em; */
 	}
 
+	@media screen and (max-width:830px){
+		.input-field{
+			width: 100%;
+		}
 
+		.title{
+			font-size: 2em;
+		}
+	}
 
 	
 
