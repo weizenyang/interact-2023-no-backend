@@ -287,6 +287,8 @@
 		align-content: stretch;
 		border-bottom: 1px solid #002C38;
 		padding: 1.5em 1em;
+		background: rgb(245,240,240);
+		background: linear-gradient(90deg, rgba(245,240,240,1) 23%, rgba(245,240,240,0) 100%);
 	}
 
 	.logo img{
@@ -693,6 +695,13 @@
 			border: 0px;
 			padding: 1em;
 		 }
+
+		 .left button{
+			padding: 1em;
+			padding-bottom: 0.5em;
+			padding-top: 0.5em;
+		 }
+		 
 	}
 	
 
