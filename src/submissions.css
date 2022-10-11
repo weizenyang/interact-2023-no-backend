@@ -310,9 +310,10 @@
 		padding: 1em;
 		display: flex;
 		flex-direction: column;
-		height: 100%;
+		/* height: 100%; */
 		justify-items: space-between;
 		justify-content: space-between;
+		align-items: center;
 		/* margin: auto; */
 		/* padding-top: 0.5em;
 		padding-bottom: 0.5em; */
@@ -361,7 +362,7 @@
 		height: 100vh;
 		box-sizing: border-box;
 		list-style: none;
-		align-content: center;
+		
 		border-right: 1px solid #002C38;
 		border-bottom: 1px solid #002C38;
 		font-family: 'AH-R';
@@ -642,16 +643,17 @@
 			width: 100%;
 			justify-content: space-evenly;
 			background-color: var(--color-bg);
-			
+			align-items: center;
+			border-right: 0px;
 		 }
 
 		 .nav-items{
 			display: flex;
 			width: 100%;
-			height: 100%;
+			height:max-content;
 			flex-direction: row;
 			overflow-x: scroll;
-			padding: 0%;
+			padding: 1em;
 			padding-left: 0%;
 		 }
 
