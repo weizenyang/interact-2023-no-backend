@@ -53,7 +53,7 @@ export function SubNavbarJsx({id}) {
 				</div>
 	
 				<div className="bottom-border">
-					<a href='/cfp' class="go-back" id='0'><img src="/public/Polygon 1.svg" alt=""/>Submissions</a>
+					<a href='/cfp' class="go-back" id='0'><img src="/public/Polygon 1.svg" alt=""/> Submissions</a>
 				</div>
 	
 				<ul className='nav-items' id="nav-items">
