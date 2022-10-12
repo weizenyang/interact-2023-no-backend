@@ -5,24 +5,95 @@ import Footer from '../components/Footer.astro';
 import Prefooter from '../components/Pre-footer.astro';
 ---
 
+<Layout title='Interact 2023'>
+	
+	
+	
+	<main>
+		<Navbar/>
+		<content>
+			<section class='contact-content-1'>
+
+
+						<h1 class="title">
+							CONTACT FORM
+						</h1>
 						
-						<form method="POST" action="/" name="contact" netlify>
+						<form action="POST" name="contact" netlify>
 
-							<input type="hidden" name="form-name" value="contact" />
-
+							<div class="input-field">
 								<label>Name:</label>
 								<input name="name" placeholder="John Doe">
-
+								
+							</div>
+							
+							<div class="input-field">
 								<label>Email:</label>
 								<input type="email" name="email" placeholder="johndoe@gmail.com" required>
-
+								
+							</div>
+							
+							<div class="input-field">
 								<label>Message:</label>
-								<textarea  name="message" placeholder="Message Here"></textarea>
+								<textarea name="message" placeholder="Message Here"></textarea>
+							
+							</div>
 
 							<div class="input-field" data-netlify-recaptcha="true"></div>
-							<button type="submit" name="submit">Send</button>
+
 							
+							<button type="submit" name="submit">Send</button>
 						</form>
+
+
+						<h2>
+							Committee Contacts
+						</h2>
+						
+						<div class="contact-details">
+							<h4>Paolo Buono</h4> 
+							<p> Dipartimento di Informatica, Università degli Studi di Bari Aldo Moro, Via Orabona, 4 - 70125 Bari, Italy 
+								<br>Phone: +39 080 544 2239 
+								<br>Fax: +39 080 544 3300 
+								<br>Email: paolo.buono@uniba.it
+								<br>
+							</p>
+
+							<h4>Paolo Buono</h4> 
+							<p> Dipartimento di Informatica, Università degli Studi di Bari Aldo Moro, Via Orabona, 4 - 70125 Bari, Italy 
+								<br>Phone: +39 080 544 2239 
+								<br>Fax: +39 080 544 3300 
+								<br>Email: paolo.buono@uniba.it
+								<br>
+							</p>
+
+							<h4>Paolo Buono</h4> 
+							<p> Dipartimento di Informatica, Università degli Studi di Bari Aldo Moro, Via Orabona, 4 - 70125 Bari, Italy 
+								<br>Phone: +39 080 544 2239 
+								<br>Fax: +39 080 544 3300 
+								<br>Email: paolo.buono@uniba.it
+								<br>
+							</p>
+
+							<h4>Paolo Buono</h4> 
+							<p> Dipartimento di Informatica, Università degli Studi di Bari Aldo Moro, Via Orabona, 4 - 70125 Bari, Italy 
+								<br>Phone: +39 080 544 2239 
+								<br>Fax: +39 080 544 3300 
+								<br>Email: paolo.buono@uniba.it
+								<br>
+							</p>
+
+						</div>
+				
+			</section>
+
+		</content>
+		
+	</main>
+
+	<Footer/>
+	
+</Layout>
 
 <style>
 
