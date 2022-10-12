@@ -96,8 +96,8 @@ export function SubNavbarJsx({id}) {
 										<h2 className="title">
 											{title}
 										</h2>
-										<button class="submit-button">
-											Submit
+										<button class="submit-button less-emphasis">
+											Submission opens soon
 										</button>
 									</div>
 
