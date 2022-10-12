@@ -507,8 +507,10 @@
 	.file p{
 		margin: 0%;
 		margin-left: 1em;
+		padding-right: 2em;
 		line-height: 1.3em;
 	}
+
 
 	.file img{
 		height: 3em;
