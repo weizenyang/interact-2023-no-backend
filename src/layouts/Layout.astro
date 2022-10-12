@@ -24,23 +24,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Animated/>
-		<form method="POST" action="/" name="contact" netlify>
-
-			<input type="hidden" name="form-name" value="contact" />
-
-				<label>Name:</label>
-				<input name="name" placeholder="John Doe">
-
-				<label>Email:</label>
-				<input type="email" name="email" placeholder="johndoe@gmail.com" required>
-
-				<label>Message:</label>
-				<textarea  name="message" placeholder="Message Here"></textarea>
-
-			<div class="input-field" data-netlify-recaptcha="true"></div>
-			<button type="submit" name="submit">Send</button>
-			
-		</form>
+		
 		
 		<slot />
 	</body>

@@ -5,7 +5,7 @@ import Footer from '/src/components/Footer.astro';
 import Submissions from '../Submissions.jsx';
 
 
-export async function get() {
+export async function getStaticPaths() {
   return [
  	{ params: { id: '0' } },
     { params: { id: '1' } },
