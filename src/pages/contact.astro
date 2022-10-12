@@ -5,29 +5,25 @@ import Footer from '../components/Footer.astro';
 import Prefooter from '../components/Pre-footer.astro';
 ---
 
-
-	
-	
-	
-	
 						
-						<form action="POST" name="contact" netlify>
+						<form action="POST" name="contact" data-netlify="true" netlify>
 
-							
+							<input type="hidden" name="form-name" value="contact" />
+
 								<label>Name:</label>
-								<input type="hidden" name="name" placeholder="John Doe">
+								<input name="name" placeholder="John Doe">
 								
 							
 							
 							
 								<label>Email:</label>
-								<input type="hidden" type="email" name="email" placeholder="johndoe@gmail.com" required>
+								<input type="email" name="email" placeholder="johndoe@gmail.com" required>
 								
 							
 							
 							
 								<label>Message:</label>
-								<textarea type="hidden" name="message" placeholder="Message Here"></textarea>
+								<textarea  name="message" placeholder="Message Here"></textarea>
 							
 							
 

@@ -1,42 +1,46 @@
----
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import Prefooter from '../components/Pre-footer.astro';
----
+<html lang='en'>
+	<head>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script> -->
+		<meta charset='UTF-8'/>
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='generator' content={Astro.generator} />
+		
+	</head>
+	<body>
+		<form action="POST" name="contact" type="hidden" netlify>
 
+							
+            <label>Name:</label>
+            <input name="name" placeholder="John Doe">
+            
+        
+        
+        
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="johndoe@gmail.com" required>
+            
+        
+        
+        
+            <label>Message:</label>
+            <textarea name="message" placeholder="Message Here"></textarea>
+        
+        
 
-	
-	
-	
-	
+        <div class="input-field" data-netlify-recaptcha="true"></div>
+
+        
+        <button type="submit" name="submit">Send</button>
+        
+        
+
+    </form>
+	</body>
+</html>
 						
-						<form action="POST" name="contact" netlify>
-
-							
-								<label>Name:</label>
-								<input type="hidden" name="name" placeholder="John Doe">
-								
-							
-							
-							
-								<label>Email:</label>
-								<input type="hidden" type="email" name="email" placeholder="johndoe@gmail.com" required>
-								
-							
-							
-							
-								<label>Message:</label>
-								<textarea type="hidden" name="message" placeholder="Message Here"></textarea>
-							
-							
-
-							<div class="input-field" data-netlify-recaptcha="true"></div>
-
-							
-							<button type="submit" name="submit">Send</button>
-							
-							
-
-						</form>
+						
 
