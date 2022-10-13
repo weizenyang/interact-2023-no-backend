@@ -30,7 +30,7 @@ import Prefooter from '../components/Pre-footer.astro';
 								<input type="email" name="email" placeholder="johndoe@gmail.com" required>
 								<label>Message:</label>
 								<textarea name="message" placeholder="Message Here"></textarea>
-								<div data-netlify-recaptcha="true"></div>
+								<div class="captcha" data-netlify-recaptcha="true"></div>
 								<button class="submit-button" type="submit" name="submit">Send</button>
 								
 							</div>
@@ -127,6 +127,11 @@ import Prefooter from '../components/Pre-footer.astro';
 		height: 100vh;
 		margin: auto;
 		max-width: 1200px;
+	}
+
+	.captcha{
+		padding-top: 1em;
+		
 	}
 
 	.center{
