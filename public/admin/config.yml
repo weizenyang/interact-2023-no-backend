@@ -9,7 +9,7 @@ collections:
   - label: Pages
     name: pages
     files:
-      label: submission-types
+    - label: submission-types
       name: submission-types
       file: /data/submissions-details.yml
       create: true
