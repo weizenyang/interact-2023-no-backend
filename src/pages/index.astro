@@ -316,7 +316,7 @@ import Animated from '../components/Animated.astro';
 
 	<Footer/>
 
-	<script>
+	<!-- <script>
 		declare global{
 			interface Window {
 				netlifyIdentity: any;
@@ -331,13 +331,17 @@ import Animated from '../components/Animated.astro';
 			}
 		  });
 		}
-	  </script>
+	  </script> -->
 
 	 
 </Layout>
 
-<!-- <script>
-		
+<script>
+		declare global{
+			interface Window {
+				netlifyIdentity: any;
+			}
+		}
 
 	if (window.netlifyIdentity) {
 	  window.netlifyIdentity.on("init", user => {
@@ -348,7 +352,7 @@ import Animated from '../components/Animated.astro';
 		}
 	  });
 	}
-  </script> -->
+  </script>
 
 <style>
 
