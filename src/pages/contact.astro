@@ -14,41 +14,35 @@ import Prefooter from '../components/Pre-footer.astro';
 		<content>
 			<section class='contact-content-1'>
 
-
-						<h1 class="title">
-							CONTACT FORM
-						</h1>
+				<h1 class="title">
+					CONTACT FORM
+				</h1>
 						
+						<div class="container">
 						<form action="POST" name="contact" netlify>
+
+							
 
 							<div class="input-field">
 								<label>Name:</label>
 								<input name="name" placeholder="John Doe">
-								
-							</div>
-							
-							<div class="input-field">
 								<label>Email:</label>
 								<input type="email" name="email" placeholder="johndoe@gmail.com" required>
+								<label>Message:</label>
+								<textarea name="message" placeholder="Message Here"></textarea>
+								<div data-netlify-recaptcha="true"></div>
+								<button class="submit-button" type="submit" name="submit">Send</button>
 								
 							</div>
 							
-							<div class="input-field">
-								<label>Message:</label>
-								<textarea name="message" placeholder="Message Here"></textarea>
-							</div>
-
-							<div class="input-field" data-netlify-recaptcha="true"></div>
-
-							<div class="input-field">
-								<button class="submit-button" type="submit" name="submit">Send</button>
-							</div>
 							
 						</form>
 
+					<div class="alt-contact">
+
 
 						<h2>
-							Committee Contacts
+							Alternative Contacts
 						</h2>
 						
 						<div class="contact-details">
@@ -68,23 +62,12 @@ import Prefooter from '../components/Pre-footer.astro';
 								<br>
 							</p>
 
-							<h4>Paolo Buono</h4> 
-							<p> Dipartimento di Informatica, Università degli Studi di Bari Aldo Moro, Via Orabona, 4 - 70125 Bari, Italy 
-								<br>Phone: +39 080 544 2239 
-								<br>Fax: +39 080 544 3300 
-								<br>Email: paolo.buono@uniba.it
-								<br>
-							</p>
-
-							<h4>Paolo Buono</h4> 
-							<p> Dipartimento di Informatica, Università degli Studi di Bari Aldo Moro, Via Orabona, 4 - 70125 Bari, Italy 
-								<br>Phone: +39 080 544 2239 
-								<br>Fax: +39 080 544 3300 
-								<br>Email: paolo.buono@uniba.it
-								<br>
-							</p>
+							
 
 						</div>
+					</div>
+
+				</div>
 				
 			</section>
 
@@ -115,6 +98,7 @@ import Prefooter from '../components/Pre-footer.astro';
 
 	label{
 		font-family: "AH-B";
+		padding-top: 1em;
 	}
 
 	content{
@@ -125,13 +109,24 @@ import Prefooter from '../components/Pre-footer.astro';
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		/* width: 100%; */
 		/* justify-content: space-between; */
 		/* height: 100vh; */
 		/* width: 100%; */
-		padding: 2em;
+		padding: 4em;
+		height: 100vh;
 		border-bottom: 1px solid #002C38;
 		/* padding-left: 16em; */
+	}
+
+	.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		margin: auto;
+		max-width: 1200px;
 	}
 
 	.center{
@@ -163,70 +158,37 @@ import Prefooter from '../components/Pre-footer.astro';
 		/* width: 100%; */
 	}
 
-	.selection{
-		padding: 0.5em;
-		display: flex;
-		/* flex-wrap: wrap; */
-	}
-
-	.sub-types h3{
-		margin: 0px;
-		padding: 0.2em;
-		padding-left: 1em;
-		padding-bottom: 0.5em;
-		font-family: 'AH-B'
-	}
-
-
-	.sub-details{
+	form{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		padding-left: 1em;
-	}
-
-	.submissions{
-		position: relative;
-		justify-content: center;
-		align-items: center;
+		width: 60%;
+		padding-right: 4em;
+		/* justify-content: space-between; */
 	}
 
 	.submit-button{
+		margin-top: 1em;
 		padding: 0.5em 1em;
 	}
 
-	.contact-content-3{
-
-		box-sizing: border-box;
-		border-bottom: 1px solid #002C38;
-		height: 100vh;
-		display: flex;
-		padding-left: 16em;
-		padding: 4em;
-
-	}
-
-	.contact-content-2, .contact-content-3, .contact-content-4{
+	.alt-contact{
+		align-self: center;
 		display: flex;
 		flex-direction: column;
-		padding: 4em;
-		border-bottom: 1px solid #002C38;
-		/* padding-left: 16em; */
-	}
-
-	.contact-content-2 h1, .contact-content-3 h1, .contact-content-4 h1{
-		/* padding-top: 1em; */
-		padding-bottom: 1em;
-		margin: 0%;
-		font-family: 'S-B';
-		font-size: 2.5em;
+		width: 40%;
 	}
 
 	.input-field{
+		border-radius: 0.2em;
+		box-shadow: 10px 10px 40px #002C3855;
+		padding: 1em;
+		/* margin-top: 20vh; */
+		background-color: #fff;
 		padding-top: 1em;
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		
+		/* width: 50%; */
 		
 		
 	}
@@ -244,10 +206,6 @@ import Prefooter from '../components/Pre-footer.astro';
 		
 	}
 
-	h2{
-		padding-top: 2em;
-	}
-
 	.contact-details h4{
 		margin: 0%;
 		font-family: 'AH-B';
@@ -257,23 +215,6 @@ import Prefooter from '../components/Pre-footer.astro';
 		margin-top: 0%;
 	}
 
-	.juries-details{
-		display: flex;
-	}
-
-	.juries-section{
-		display: flex;
-		display: block;
-		align-content: space-between;
-		padding-bottom: 4em;
-	}
-
-	.juries-section:last-child{
-		display: flex;
-		display: block;
-		align-content: space-between;
-		padding-bottom: 0%;
-	}
 
 	.text-details{
 		justify-content: center;
@@ -371,7 +312,11 @@ import Prefooter from '../components/Pre-footer.astro';
 		/* font-size: 2.5em; */
 	}
 
-	@media screen and (max-width:830px){
+	@media screen and (max-width:1200px){
+		.contact-content-1{
+			height: 100%;
+			padding: 2em;
+		}
 		.input-field{
 			width: 100%;
 		}
@@ -379,6 +324,48 @@ import Prefooter from '../components/Pre-footer.astro';
 		.title{
 			font-size: 2em;
 		}
+
+		form{
+
+		width: 100%;
+		padding-right: 0em;
+		/* justify-content: space-between; */
+	}
+
+	.container{
+		padding-top: 2em;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.submit-button{
+		margin-top: 1em;
+		padding: 0.5em 1em;
+	}
+
+	.alt-contact{
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		padding-top: 2em;
+		width: 100%;
+	}
+
+	.input-field input, .input-field textarea{
+		all: unset;
+		padding: 0.5em;
+		border-radius: 0.5em;
+		border: 2px solid #002C38;
+		font-family: sans-serif;
+	}
+
+	.input-field label{
+		padding-bottom: 0.2em;
+		
+	}
 	}
 
 	
