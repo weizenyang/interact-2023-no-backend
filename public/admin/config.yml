@@ -4,25 +4,37 @@ backend:
 publish_mode: editorial_workflow
 media_folder: /public
 public_folder: /public
+
 collections:
-  - name: blog
-    label: Blog
-    folder: /submissions-info
+  - label: "Pages"
+    name: "pages"
+    file: /data/submissions-details.yml
     create: true
     fields:
-      - label: Layout
-        name: layout
-        widget: hidden
-        default: blog
-      - label: Title
-        name: title
-        widget: string
-      - label: Publish Date
-        name: date
-        widget: datetime
-      - label: Description
-        name: desc
-        widget: markdown
-      - label: Body
-        name: body
-        widget: markdown
+          - {label: ID, name: id, widget: number}
+          - {label: Date, name: date, widget: date}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: desc, widget: markdown}
+          - {label: Details, name: details, widget: markdown}
+
+      # - label: Layout
+      #   name: layout
+      #   widget: hidden
+      #   default: blog
+      # - label: Title
+      #   name: title
+      #   widget: string
+      # - label: Title
+      #   name: title
+      #   widget: string
+      # - label: Publish Date
+      #   name: date
+      #   widget: datetime
+      # - label: Description
+      #   name: desc
+      #   widget: markdown
+      # - label: Body
+      #   name: body
+      #   widget: markdown
+
+       
