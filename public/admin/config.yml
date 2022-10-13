@@ -6,16 +6,20 @@ media_folder: /public
 public_folder: /public
 
 collections:
-  - label: "Pages"
-    name: "pages"
-    file: /data/submissions-details.yml
-    create: true
-    fields:
-          - {label: ID, name: id, widget: number}
-          - {label: Date, name: date, widget: date}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: desc, widget: markdown}
-          - {label: Details, name: details, widget: markdown}
+  - label: Pages
+    name: pages
+    files:
+      label: submission-types
+      name: submission-types
+      file: /data/submissions-details.yml
+      create: true
+      fields:
+            - {label: ID, name: id, widget: number}
+            - {label: Title, name: title, widget: string}
+            - {label: Description, name: desc, widget: markdown}
+            - {label: Date, name: date, widget: datetime}
+            - {label: Details, name: details, widget: markdown}
+
 
       # - label: Layout
       #   name: layout
