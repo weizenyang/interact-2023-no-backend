@@ -1,8 +1,6 @@
 backend:
   name: git-gateway
-  accept_roles: 
-    - admin
-  branch: master
+  branch: main
 publish_mode: editorial_workflow
 media_folder: /public
 public_folder: /public
