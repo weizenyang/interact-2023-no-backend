@@ -155,15 +155,28 @@ import Animated from '../components/Animated.astro';
 
 			<section class='home-content-3'>
 
-				<h1>
-					CALL FOR PAPERS
-				</h1>
+				
 
-				<p>
-					The INTERACT Conference welcomes submissions on all aspects of human-computer interaction, but for this conference will particularly welcome papers on issues related to justice and equality, for example:
-				</p>
+				
 
+				
+				<div class="responsive-container">
+					<div class="header-info">
+						<h1>
+							CALL FOR PAPERS
+						</h1>
+						<p>
+							The INTERACT Conference welcomes submissions on all aspects of human-computer interaction, but for this conference will particularly welcome papers on issues related to justice and equality, for example:
+						</p>
+						<button class='read-more desktop'>
+							<a href="/cfp">Visit Call For Papers ></a>
+						</button>
+					</div>
+					
+					
+					
 				<div class='home-list'>
+					
 
 					<div class='list-line'></div>
 
@@ -241,11 +254,14 @@ import Animated from '../components/Animated.astro';
 						</h3>
 					</div>
 				</div>
-
-				<button class='read-more'>
-				<a href="/cfp">Read More ></a>
+				<button class='read-more mobile'>
+					<a href="/cfp">Visit Call For Papers ></a>
 				</button>
+			</div>
 
+
+				
+			
 			</section>
 
 			<section class='home-content-4'>
@@ -382,7 +398,7 @@ import Animated from '../components/Animated.astro';
 	.home-content-3{
 		box-sizing: border-box;
 		border-bottom: 1px solid #002C38;
-		height: min-content;
+		height: max-content;
 		display: flex;
 		/* padding-left: 16em; */
 		padding: 4em;
@@ -393,9 +409,7 @@ import Animated from '../components/Animated.astro';
 		
 	}
 
-	.home-list{
-		padding-bottom: 2em;
-	}
+	
 	
 
 	.home-content-4{
@@ -616,22 +630,50 @@ import Animated from '../components/Animated.astro';
 	
 	.home-list{
 		display: flex;
-		height: 50%;
-		
-		margin: auto;
+		height: 100%;
+		padding: 2em;
+		padding-left: 2em;
+		/* margin-right: 2em; */
 		margin-left: 0%;
+		background-color: #fff;
+		border-radius: .2em;
+		box-shadow: 10px 10px 50px #002C3833;
+	}
+
+	.responsive-container{
+		display: flex;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.responsive-container p:first-child{
+		width: 40%;
+		font-size: 1.5em;
+	}
+
+	.header-info{
+		padding-right: 2em;
+		width: 50%;
+	}
+
+	.desc-list{
+		width: 60%;
 	}
 
 	.list-line{
-		margin-right: 1.2em;
+		margin-right: 1.5em;
 		border-radius: 50px;
 		width: 5px;
 		background-color: #002C38;
 	}
 
-	.home-list h3{
+	.home-list-items h3{
 		margin: 0px;
+		padding-top: 1.5em;
+		
 	}
+
+
 
 	.home-list-items{
 		display: flex;
@@ -643,6 +685,7 @@ import Animated from '../components/Animated.astro';
 	.read-more{
 		padding-left: 1em;
 		padding-right: 1em;
+		height: max-content;
 		width: max-content;
 	}
 
@@ -785,6 +828,14 @@ import Animated from '../components/Animated.astro';
 		.less-emphasis{
 			opacity: 70%
 		}
+	
+		.mobile{
+			display: none;
+		}
+
+		.desktop{
+			display: flex;
+		}
 
 		
 		
@@ -877,6 +928,32 @@ import Animated from '../components/Animated.astro';
 		.home-list h3{
 			padding-top: 2em;
 		}
+
+		.mobile{
+			display: flex;
+		}
+
+		.desktop{
+			display: none;
+		}
+		.responsive-container{
+		display: flex;
+		flex-direction: column;
+		/* justify-items: left; */
+		align-items: stretch;
+	}
+
+	.header-info{
+		width: 100%;
+	}
+
+	.home-list{
+		width: 100%;
+		margin-left: 0%;
+	}
+	.home-list h3{
+		padding-top: 1.5em;
+	}
 	}
 
 	@media screen and (max-width:830px){
@@ -1000,6 +1077,41 @@ import Animated from '../components/Animated.astro';
 
 		.list-line{
 			margin-right: 1em;
+		}
+
+	.responsive-container{
+		display: flex;
+		flex-direction: column;
+		/* justify-items: left; */
+		align-items: stretch;
+	}
+
+	.header-info{
+		width: 100%;
+	}
+
+	.home-list{
+		width: 100%;
+		margin-left: 0%;
+	}
+	.home-list h3{
+		padding-top: 1.5em;
+	}
+
+	.read-more{
+		align-self: center;
+		margin-top: 4em;
+		margin-bottom: 2em;
+	}
+
+	/* Presets */
+
+	.mobile{
+			display: flex;
+		}
+
+		.desktop{
+			display: none;
 		}
 
 
