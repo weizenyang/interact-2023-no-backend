@@ -210,9 +210,9 @@ console.log(transport);
 
 					<div class="direction-links">
 						<h3><span class="bold">Ron Cooke Hub</span> - Get Directions</h3>
-						<button>Google Maps</button>
-						<button>Apple Maps</button>
-						<button>Waze Maps</button>
+						<button> <a href="https://bit.ly/3VnP0gM" target="_blank"><img src="/google-maps.svg" alt=""> Google Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
+						<button> <a href="https://apple.co/3esDDDD" target="_blank"><img src="/apple-maps.webp" alt="">Apple Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
+						<button> <a href="https://bit.ly/3EFqEt0" target="_blank"><img src="/waze.svg" alt="">Waze Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
 					</div>
 					
 				</div>
@@ -229,9 +229,9 @@ console.log(transport);
 
 					<div class="direction-links">
 						<h3><span class="bold">Piazza</span> - Get Directions</h3>
-						<button>Google Maps</button>
-						<button>Apple Maps</button>
-						<button>Waze Maps</button>
+						<button> <a href="https://bit.ly/3rPP9vW" target="_blank"><img src="/google-maps.svg" alt=""> Google Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
+						<button> <a href="https://apple.co/3esDDDD" target="_blank"><img src="/apple-maps.webp" alt="">Apple Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
+						<button> <a target="_blank" href="https://maps.apple.com/?address=Ron%20Cooke%20Hub,%20Deramore%20Lane,%20Heslington,%20York,%20YO10%205GE,%20England&auid=11794211477278512551&ll=53.947470,-1.029582&lsp=9902&q=Piazza%20Building&_ext=CjMKBQgEEOEBCgQIBRADCgUIBhDfAQoECAoQAAoECFIQCAoECFUQEgoECFkQBgoFCKQBEAESJim8K3HEq/hKQDGwagUr/Znwvzk6AZcg0vlKQEEyXM0BeFvwv1AE&t=m"><img src="/waze.svg" alt="">Waze Maps<img class="external" src="/external.svg" alt="External Page" /></a></button>
 					</div>
 					
 				</div>
@@ -858,7 +858,9 @@ console.log(transport);
 
 
 	.direction-links button{
-		margin: 0.5em;
+		/* margin: 0.5em; */
+		display: flex;
+		padding: 1em;
 		width: 100%;
 		background-color: var(--color-bg);
 		border-radius: 0px;
@@ -866,11 +868,27 @@ console.log(transport);
 		font-size: 100;
 		font-family: 'AH-R';
 		caret-color: transparent;
+		transition: all 0.2s;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.direction-links button a{
+		all: inherit;
+		padding: 0%;
+		margin: 0%;
+	}
+
+	button img{
+		
+		height: 35px;
+		margin-right: 1em;
 	}
 
 	.direction-links button:hover{
 		text-decoration: underline;
-		background-color: var(--color-bg);
+		/* background-color: #002C38; */
+		/* color: #FCF7EB; */
 	}
 
 	.direction-links h3{
@@ -882,7 +900,7 @@ console.log(transport);
 		height: 1em;
 	}
 
-	.direction-links :first-child{
+	.direction-links h3{
 		background-color: #002C38;
 		color: #FCF7EB;
 		height: 2em;
@@ -917,6 +935,17 @@ console.log(transport);
 
 	.no-border{
 		border: 0px solid #000;
+	}
+
+	.external{
+		padding-left: 0.5em;
+		transition: opacity 0.5s;
+		max-width: 1.5em;
+		opacity: 10%;
+	}
+
+	.direction-links button:hover .external{
+		opacity: 100%
 	}
 
 	@media screen and (max-width:1200px){

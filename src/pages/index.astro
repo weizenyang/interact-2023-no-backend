@@ -68,8 +68,8 @@ import Animated from '../components/Animated.astro';
 					ABOUT THIS EVENT
 				</h1>
 				<p>
-					INTERACT 2023 is the <span class='underline'>19th International Conference of Technical Committee 13 (Human-
-						Computer Interaction)</span> of <span class='underline'>IFIP (International Federation for Information Processing)</span>. 
+					INTERACT 2023 is the <span class='underline'> <a href="http://ifip-tc13.org/"> 19th International Conference of Technical Committee 13 (Human-
+						Computer Interaction)</a></span> of <span class='underline'> <a href="https://ifip.org/"> IFIP (International Federation for Information Processing)</a></span>. 
 
 					<br>
 					<br>
@@ -116,8 +116,8 @@ import Animated from '../components/Animated.astro';
 						</div>
 
 							<p class='item-description'>
-								York continues to work for justice and equality to this day. It is the UK’s first Human Rights
-								City, encouraging organizations and citizens to
+								York continues to work for justice and equality to this day. It is the UK’s first <span class='underline'><a href="https://www.yorkhumanrights.org/"> Human Rights
+								City</a></span>, encouraging organizations and citizens to
 								“increasingly think about human rights, talk about human rights issues and stand up for
 								rights whether that’s at work, school or home”. 
 								 
@@ -131,7 +131,7 @@ import Animated from '../components/Animated.astro';
 						</div>
 
 						<p class='item-description'>
-							The City of York has also launched <span class='bold'>“One Planet York”</span> , a network of organisations
+							The City of York has also launched <span class='bold underline'> <a href="https://www.york.gov.uk/OnePlanetYork">“One Planet York”</a></span> , a network of organisations
  							working towards a more sustainable, resilient and collaborative “one planet” future. 
 							
 							</p>
@@ -637,6 +637,7 @@ import Animated from '../components/Animated.astro';
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		
 	}
 
 	.read-more{
@@ -785,6 +786,9 @@ import Animated from '../components/Animated.astro';
 			opacity: 70%
 		}
 
+		
+		
+
 		@media screen and (min-width: 1921px){
 			.title{
 				font-size: 1.4em;
@@ -877,6 +881,43 @@ import Animated from '../components/Animated.astro';
 
 	@media screen and (max-width:830px){
 
+		.home-list{
+		display: flex;
+		height: 50%;
+		
+		margin: auto;
+		margin-left: 1em;
+	}
+
+		.timeline-detail h3{
+		display: block;
+		justify-content:center;
+		text-align: left;
+		width: 100%;
+		margin: 0%;
+		/* padding: 1em; */
+	}
+
+	
+
+	.timeline-detail h3:first-child{
+		display: block;
+		justify-content:center;
+		text-align: right;
+		width: 100%;
+		margin: 0%;
+		
+		/* padding: 1em; */
+	}
+
+	.timeline-marker{
+		/* margin: 1em; */
+		width: 1em;
+		height: 0.5em;
+		border-radius: 50px;
+		background-color: #002C38;
+	}
+
 
 		.home-content-1{
 			padding-left: 0%;
@@ -926,8 +967,9 @@ import Animated from '../components/Animated.astro';
 		}
 
 		.home-content-3{
-			padding-left: 1em;
-			padding-right: 1em;
+			padding-left: 2em;
+			padding-right: 2em;
+			
 		}
 
 		.home-content-4{
