@@ -12,36 +12,37 @@ import Prefooter from '../components/Pre-footer.astro';
 	<main>
 		<Navbar/>
 
-		<div class='horizontal-list'>
-			<div class='horizontal-list-items'>
-				<h3><a href="#brian-shackel">
-					Brian Shackel Award
-				</a>
-					
-				</h3>
-
-				<h3><a href="#student">
-					Pioneers’ Award for Best Doctoral Student Paper
-				</a>
-					
-				</h3>
-
-				<h3><a href="#accessibility">
-					Accessibility Award
-				</a>
-					
-				</h3>
-
-				<h3><a href="#interaction">
-					Interaction Design for International Development Award
-				</a>
-					
-				</h3>
-
-			</div>
-		</div>
+		
 
 		<content>
+			<div class='horizontal-list'>
+				<div class='horizontal-list-items'>
+					<h3><a href="#brian-shackel">
+						Brian Shackel Award
+					</a>
+						
+					</h3>
+	
+					<h3><a href="#student">
+						Pioneers’ Award for Best Doctoral Student Paper
+					</a>
+						
+					</h3>
+	
+					<h3><a href="#accessibility">
+						Accessibility Award
+					</a>
+						
+					</h3>
+	
+					<h3><a href="#interaction">
+						Interaction Design for International Development Award
+					</a>
+						
+					</h3>
+	
+				</div>
+			</div>
 			<section class='awards-content-1'>
 
 
@@ -524,12 +525,12 @@ The selection of the TC13 IDID Award is organized by an ad-hoc committee of memb
 	}
 
 	.horizontal-list{
-		display: flex;
+		display: none;
 		overflow-x: scroll;
 		position: sticky;
 		background-color: var(--color-bg);
 		top: 80px;
-		opacity: 0%;
+		/* opacity: 0%; */
 		
 
 	}
@@ -549,22 +550,22 @@ The selection of the TC13 IDID Award is organized by an ad-hoc committee of memb
 </style>
 
 <script>
-	// 	var opacity = 0;
-	// 	window.addEventListener('scroll', function(e){
-	// var containerTop = document.querySelector('.awards-content-1').getBoundingClientRect().top;
-	// console.log(document.querySelector('.horizontal-list').getBoundingClientRect().top);
-	// if (containerTop <= 0) {
-	// 	opacity += 0.05;
+
+		setInterval(function(){
+	var containerTop = document.querySelector('.awards-content-1').getBoundingClientRect().top;
+	console.log(window.innerWidth);
+	if (containerTop <= 0 && window.innerWidth < 830) {
+
+		console.log("this should be displayed");
+			document.querySelector(".horizontal-list").style.display = "flex";
+
+	}
+	if (containerTop > 0 || window.innerWidth > 830) {
+		console.log("this should be hidden");
+		document.querySelector(".horizontal-list").style.display = "none";
 		
-	// 		document.querySelector(".horizontal-list").style.display = "flex";
-	// 		document.querySelector(".horizontal-list").style.opacity = 1;
-	// }
-	// if (containerTop > 0) {
-		
-	// 	document.querySelector(".horizontal-list").style.display = "none";
-		
-	// }
-	// });
+	}
+	}, 1);
 
 	// gsap.fromTo(".horizontal-list", {
 	// 	y: -100,
@@ -575,9 +576,9 @@ The selection of the TC13 IDID Award is organized by an ad-hoc committee of memb
 	// 	y: 0
 	// });
 
-	gsap.fromTo(".horizontal-list", 
-	{
-		// scrollTrigger: ".awards-content-1",
-		y: 100
-	});
+	// gsap.fromTo(".horizontal-list", 
+	// {
+	// 	// scrollTrigger: ".awards-content-1",
+	// 	y: 100
+	// });
 </script>

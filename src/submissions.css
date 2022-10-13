@@ -292,6 +292,18 @@
 		/* background: linear-gradient(90deg, rgba(245,240,240,1) 23%, rgba(245,240,240,0) 100%); */
 	}
 
+	.logo a{
+		all: inherit;
+		padding: 0%;
+		text-decoration: none;
+		border: 0px;
+		cursor: pointer;
+	}
+
+	.logo a:hover{
+		text-decoration: underline;
+	}
+
 	.logo img{
 		max-height: 4em;
 	}
@@ -427,7 +439,10 @@
 	.go-back{
 		padding: 0%;
 		display: flex;
+		text-decoration: none;
 	}
+
+
 
 	.go-back img{
 		padding-right: 1em;
@@ -524,6 +539,7 @@
 		padding-left: 1.2em;
 		padding-right: 1.2em;
 		width: min-content;
+		cursor: not-allowed;
 		
 	}
 
@@ -678,6 +694,7 @@
 			padding: 1em;
 			padding-left: 0%;
 			align-items: center;
+			justify-content: flex-start;
 		 }
 
 		 .bottom-border{

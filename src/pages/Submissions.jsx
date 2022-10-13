@@ -46,14 +46,16 @@ export function SubNavbarJsx({id}) {
 				<div className='logo'>
 					<a href='/'>
 						<img src='/Logo.svg'></img>
-					</a>
+					
 					<h2 className='interact-text'>
 						INTERACT <br/> 2023
 					</h2>
+
+					</a>
 				</div>
-	
+			
 				<div className="bottom-border">
-					<a href='/cfp' class="go-back" id='0'><img src="/public/Polygon 1.svg" alt=""/> Submissions</a>
+					<a href='/cfp' class="go-back" id='0'><img src="/Polygon 1.svg" alt=""/> Submissions</a>
 				</div>
 	
 				<ul className='nav-items' id="nav-items">
@@ -97,7 +99,7 @@ export function SubNavbarJsx({id}) {
 											{title}
 										</h2>
 										<button class="submit-button less-emphasis">
-											Submission opens soon
+											Submit
 										</button>
 									</div>
 

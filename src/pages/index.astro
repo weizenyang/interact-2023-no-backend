@@ -168,7 +168,7 @@ import Animated from '../components/Animated.astro';
 					<div class='list-line'></div>
 
 					<div class='home-list-items'>
-						<h3>
+						<!-- <h3>
 							HCI to support sustainable development 
 						</h3>
 
@@ -190,6 +190,54 @@ import Animated from '../components/Animated.astro';
 
 						<h3>
 							HCI countering adversity
+						</h3> -->
+
+						<h3>
+							Accessibility and assistive technologies
+						</h3>
+
+						<h3>
+							Design for business and safety/critical interactive systems
+						</h3>
+
+						<h3>
+							Design of interactive entertainment systems 
+						</h3>
+
+						<h3>
+							HCI Education and Curriculum
+						</h3>
+
+						<h3>
+							Human-AI Interaction
+						</h3>
+
+						<h3>
+							Information visualization
+						</h3>
+
+						<h3>
+							Interaction design for culture and development
+						</h3>
+
+						<h3>
+							Interactive Systems Technologies and Engineering
+						</h3>
+
+						<h3>
+							Methodologies for HCI
+						</h3>
+
+						<h3>
+							Social and Ubiquitous Interaction
+						</h3>
+
+						<h3>
+							HCI for Justice and Equality
+						</h3>
+
+						<h3>
+							Understanding users and human behaviour
 						</h3>
 					</div>
 				</div>
@@ -207,42 +255,50 @@ import Animated from '../components/Animated.astro';
 				</h1>
 
 				<p>
-					The INTERACT Conference welcomes submissions on all aspects of human-computer interaction, but for this conference will particularly welcome papers on issues related to justice and equality, for example:
+					The list of programmes hosted during the conference will be released nearing the conference day in 2023. 
 				</p>
 
 				
 				<div class='timeline'>
 					<div class='line'></div>
 					<div class='timeline-detail p1'>
-						<h3>September 21</h3>
+						<h3>28 August</h3>
 						<div class='timeline-marker '></div>
-						<h3>Programme 1</h3>
+						<h3>Workshops & Courses</h3>
+					</div>
+
+					<div class='timeline-detail p2'>
+						<h3>29 August</h3>
+						<div class='timeline-marker '></div>
+						<h3>Workshops & Courses</h3>
 					</div>
 					
-					<div class='timeline-detail p2'>
-						<h3>September 21</h3>
+					<div class='timeline-detail p3'>
+						<h3>30 August</h3>
 						<div class='timeline-marker'></div>
-						<h3>Programme 1</h3>
+						<h3>Main Conference sessions <br>
+							Drinks reception</h3>
 					</div>
 						
 
-					<div class='timeline-detail p3'>
-						<h3>September 23</h3>
-						<div class='timeline-marker'></div>
-						<h3>Programme 1</h3>
-					</div>
-
 					<div class='timeline-detail p4'>
-						<h3>September 21</h3>
+						<h3>31 August</h3>
 						<div class='timeline-marker'></div>
-						<h3>Programme 1</h3>
+						<h3>Main conference sessions <br>
+							Conference dinner</h3>
 					</div>
 
-				</div>
+					<div class='timeline-detail p5'>
+						<h3>1 September</h3>
+						<div class='timeline-marker'></div>
+						<h3>Main conference sessions</h3>
+					</div>
+
+				
 
 
 					<button class='read-more less-emphasis'>
-						Coming Soon
+						Coming Next Year
 					</button>
 
 				
@@ -260,6 +316,17 @@ import Animated from '../components/Animated.astro';
 
 	<Footer/>
 	
+	<script>
+		if (window.netlifyIdentity) {
+		  window.netlifyIdentity.on("init", user => {
+			if (!user) {
+			  window.netlifyIdentity.on("login", () => {
+				document.location.href = "/admin/";
+			  });
+			}
+		  });
+		}
+	  </script>
 </Layout>
 
 <style>
@@ -268,7 +335,7 @@ import Animated from '../components/Animated.astro';
 		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
 	}
 
-
+	
 
 	.home-content-1{
 		box-sizing: border-box;
@@ -299,6 +366,7 @@ import Animated from '../components/Animated.astro';
 
 	.home-list h3{
 		padding-top: 1em;
+		
 	}
 
 	.home-list{
@@ -315,6 +383,7 @@ import Animated from '../components/Animated.astro';
 		align-items: center;
 		padding-left: 16em;
 		padding: 4em;
+		text-align: center;
 
 	}
 
@@ -615,9 +684,19 @@ import Animated from '../components/Animated.astro';
 	.timeline-detail h3{
 		display: block;
 		justify-content:center;
-		text-align: center;
-		width: 8em;
+		text-align: left;
+		width: 14em;
 		margin: 0%;
+		/* padding: 1em; */
+	}
+
+	.timeline-detail h3:first-child{
+		display: block;
+		justify-content:center;
+		text-align: right;
+		width: 14em;
+		margin: 0%;
+		
 		/* padding: 1em; */
 	}
 
@@ -626,26 +705,30 @@ import Animated from '../components/Animated.astro';
 	}
 
 	.p2{
-		top: 25%;
+		top: 20%;
 	}
 
 	.p3{
-		top: 50%;
+		top: 40%;
 	}
 
 	.p4{
-		top: 75%;
+		top: 60%;
+	}
+
+	.p5{
+		top: 80%;
 	}
 
 	.timeline{
 		position: relative;
-		height: 300px;
+		height: 70%;
 		width: 100%;
 		justify-content: space-between;
 		align-items: center;
 		display: flex;
 		flex-direction: column;
-		margin: 2em;
+		/* margin: 2em; */
 	}
 
 	.line{
@@ -824,8 +907,14 @@ import Animated from '../components/Animated.astro';
 		}
 
 		.home-content-4{
+			padding: 2em;
 			justify-content: center;
 			text-align: center;
+		}
+
+		.home-content-4 p{
+			padding-left: 1em;
+			padding-right: 1em;
 		}
 
 		.items{

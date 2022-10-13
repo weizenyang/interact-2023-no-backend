@@ -36,13 +36,14 @@ import Prefooter from '../components/Pre-footer.astro';
 							<div class="input-field">
 								<label>Message:</label>
 								<textarea name="message" placeholder="Message Here"></textarea>
-							
 							</div>
 
 							<div class="input-field" data-netlify-recaptcha="true"></div>
 
+							<div class="input-field">
+								<button class="submit-button" type="submit" name="submit">Send</button>
+							</div>
 							
-							<button type="submit" name="submit">Send</button>
 						</form>
 
 
@@ -188,6 +189,10 @@ import Prefooter from '../components/Pre-footer.astro';
 		position: relative;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.submit-button{
+		padding: 0.5em 1em;
 	}
 
 	.contact-content-3{
