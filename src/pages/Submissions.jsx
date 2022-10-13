@@ -3,16 +3,16 @@ import "../submissions.css";
 import Markdown from 'markdown-to-jsx';
 
 
-// const response = await fetch('http://localhost:1337/api/submissions');
-// const data = await response.json();
-// const type = data.data;
+await fetch('/data/submission-details.yml')
+.then(r => console.log(r));
+
 
 const response = await fetch('/content.json');
 const data = await response.json();
 const type = data.data;
 
 
-console.log(type);
+// console.log(type);
 
 export function SubNavbarJsx({id}) {
 
@@ -35,6 +35,10 @@ export function SubNavbarJsx({id}) {
 		section = e.target.id;
 		setValue(section);
 		console.log(value);
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		  });
 	}
 	
 

@@ -329,6 +329,7 @@
 		justify-items: space-between;
 		justify-content: space-evenly;
 		align-items: left;
+		max-height: 720px;
 		/* margin: auto; */
 		/* padding-top: 0.5em;
 		padding-bottom: 0.5em; */
@@ -341,7 +342,8 @@
 		padding: auto;
 		padding-left: 0em;
 		
-		justify-items: space-evenly;
+		
+		/* justify-items: space-evenly; */
 	}
 
 	.nav-items a{
