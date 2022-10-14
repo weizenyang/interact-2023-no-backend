@@ -168,7 +168,7 @@ import Animated from '../components/Animated.astro';
 						<p>
 							The INTERACT Conference welcomes submissions on all aspects of human-computer interaction, but for this conference will particularly welcome papers on issues related to justice and equality, for example:
 						</p>
-						<button class='read-more desktop'>
+						<button class='read-more not-mobile'>
 							<a href="/cfp">Visit Call For Papers ></a>
 						</button>
 					</div>
@@ -310,13 +310,10 @@ import Animated from '../components/Animated.astro';
 						<h3>Main conference sessions</h3>
 					</div>
 
-				
-
-
-					<button class='read-more less-emphasis'>
-						Coming Next Year
-					</button>
-
+				</div>
+				<button class='read-more less-emphasis'>
+					Coming Next Year
+				</button>
 				
 
 			</section>
@@ -751,10 +748,11 @@ import Animated from '../components/Animated.astro';
 
 	.timeline-detail h3{
 		display: block;
-		justify-content:center;
+		justify-content: center;
 		text-align: left;
 		width: 14em;
 		margin: 0%;
+		font-weight: 100;
 		/* padding: 1em; */
 	}
 
@@ -764,6 +762,7 @@ import Animated from '../components/Animated.astro';
 		text-align: right;
 		width: 14em;
 		margin: 0%;
+		font-weight: 1000;
 		
 		/* padding: 1em; */
 	}
@@ -851,7 +850,7 @@ import Animated from '../components/Animated.astro';
 			
 			padding: 2em;
 
-			padding-top :2em;
+			padding-top: 0em;
 			padding-bottom: 1em;
 			justify-content: center;
 		}
@@ -931,10 +930,12 @@ import Animated from '../components/Animated.astro';
 
 		.mobile{
 			display: flex;
+			/* flex-direction: column; */
 		}
 
-		.desktop{
+		.not-mobile{
 			display: none;
+			
 		}
 		.responsive-container{
 		display: flex;
@@ -953,6 +954,12 @@ import Animated from '../components/Animated.astro';
 	}
 	.home-list h3{
 		padding-top: 1.5em;
+	}
+
+	.read-more{
+		align-self: center;
+		margin-top: 4em;
+		margin-bottom: 2em;
 	}
 	}
 
@@ -1110,7 +1117,7 @@ import Animated from '../components/Animated.astro';
 			display: flex;
 		}
 
-		.desktop{
+		.not-mobile{
 			display: none;
 		}
 

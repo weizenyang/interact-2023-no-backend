@@ -4,6 +4,7 @@
 <!-- const {} = Astro.props; -->
 
 	<div class='navbar'>
+		<input type="checkbox" id="navbar">
 	<div class="container">
 		<div class='logo'>
 			<a href='/'><img src='/Logo.svg'>
@@ -12,7 +13,7 @@
 			</h2>
 			</a>
 		</div>
-		<input type="checkbox" id="navbar">
+		
 		<ul class='nav-items'>
 			<li><a href='/'>Home</a></li>
 			<li class='submissions-link'>
@@ -342,22 +343,23 @@
 		}
 
 		.nav-items{
-			display: none;
-			margin: 0%;
-			padding: 0%;
-			overflow-y: scroll;
-			top: -2000px;
-			
-		}
-
-		input:checked ~ .nav-items{
 			display: flex;
 			flex-direction: column;
 			top: 70px;
+			left: -1000px;
 			position: fixed;
 			background-color: var(--color-bg);
-			height: min-content;
+			height: 100vh;
 			width: 100%;
+			overflow-y: scroll;
+			transition: left 0.4s ease-in-out;
+			padding-bottom: 50%;
+			
+		}
+
+		input:checked ~ .container .nav-items{
+			left: 0px;
+			position: fixed;
 			
 		}
 
@@ -366,9 +368,10 @@
 			display: flex;
 			flex-direction: row;
 			padding: 0%;
-			height: min-content;
-			width: auto;
+			/* height: 100%; */
+			width: 50px;
 			align-items: center;
+			justify-content: center;
 			/* justify-items: flex-start; */
 		}
 
@@ -376,22 +379,60 @@
 			align-self: center;
 		}
 
+		input:checked ~ .button-div .burger .line{
+			position: absolute;
+			rotate: 225deg;
+			top: 50%;
+			
+		}
+
+		input:checked ~ .button-div .burger .line:first-child{
+			rotate: 315deg;
+			
+			
+		}
+
 		.burger{
 			display: flex;
 			flex-direction: column;
+			position: relative;
 			width: auto;
-			height: 36px;
+			height: 15px;
 			overflow: visible;
 			justify-content: space-evenly;
+			width: 100%;
 			padding-left: 0.7em;
 			/* background-color: #002C38; */
 		}
 
+
 		.line{
+			position: absolute;
 			display: flex;
 			width: 30px;
 			height: 6px;
 			background-color: #FFC223;
+			transition: all 0.5s ease;
+			caret-color: transparent;
+		}
+
+		.line:first-child{
+			display: flex;
+			width: 30px;
+			height: 6px;
+			background-color: #FFC223;
+			top: 0px;
+			/* rotate: 45deg; */
+		}
+
+		.line:last-child{
+			display: flex;
+			width: 30px;
+			height: 6px;
+			background-color: #FFC223;
+			top: 100%;
+			transition: all 0.5s;
+			/* rotate: -45deg; */
 		}
 
 		.nav-items li{

@@ -18,10 +18,8 @@ import Prefooter from '../components/Pre-footer.astro';
 					CONTACT FORM
 				</h1>
 						
-						<div class="container">
+				<div class="container">
 						<form action="POST" name="contact" netlify>
-
-							
 
 							<div class="input-field">
 								<label>Name:</label>
@@ -32,14 +30,12 @@ import Prefooter from '../components/Pre-footer.astro';
 								<textarea name="message" placeholder="Message Here"></textarea>
 								<div class="captcha" data-netlify-recaptcha="true"></div>
 								<button class="submit-button" type="submit" name="submit">Send</button>
-								
 							</div>
 							
 							
 						</form>
 
 					<div class="alt-contact">
-
 
 						<h2>
 							Alternative Contacts
@@ -115,7 +111,7 @@ import Prefooter from '../components/Pre-footer.astro';
 		/* height: 100vh; */
 		/* width: 100%; */
 		padding: 4em;
-		height: 100vh;
+		height: 100%;
 		border-bottom: 1px solid #002C38;
 		/* padding-left: 16em; */
 	}
@@ -124,13 +120,14 @@ import Prefooter from '../components/Pre-footer.astro';
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		height: 100%;
 		margin: auto;
 		max-width: 1200px;
 	}
 
 	.captcha{
 		padding-top: 1em;
+		height: 150px;
 		
 	}
 
@@ -319,7 +316,7 @@ import Prefooter from '../components/Pre-footer.astro';
 
 	@media screen and (max-width:1200px){
 		.contact-content-1{
-			height: 100%;
+			min-height: 100%;
 			padding: 2em;
 		}
 		.input-field{
@@ -372,6 +369,17 @@ import Prefooter from '../components/Pre-footer.astro';
 		padding-bottom: 0.2em;
 		
 	}
+	}
+
+	@media screen and (max-height:800px){
+		.contact-content-1{
+			padding: 2em;
+		}
+
+		form{
+			scale: 0.9;
+		}
+
 	}
 
 	
