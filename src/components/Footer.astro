@@ -25,9 +25,9 @@
 					</a>
 					
 					<div class='social-media'>
-						<img src='/facebook 1.svg' alt=''>
-						<img src='/linkedin 1.svg' alt=''>
-						<img src='/email 1.svg' alt=''>
+						<a href="https://www.facebook.com/groups/672185614120721" target="_blank"><img src='/facebook 1.svg' alt=''></a> 
+						<a href="https://www.linkedin.com/groups/12722583/" target="_blank"><img src='/linkedin 1.svg' alt=''></a>
+						<a ><input hidden id="general-email" value="helen.petrie@york.ac.uk"> <img id="email" src='/email 1.svg' alt=''></a>
 					</div>
 				</div>
 				<p>
@@ -163,6 +163,10 @@
 		display: flex;
 	}
 
+	.email button{
+			all: unset;
+		}
+
 	@media screen and (max-width:830px){
 		footer{
 			padding: 0%;
@@ -187,6 +191,31 @@
 			flex-wrap: wrap;
 		}
 
+		
+
 
 	}
 </style>
+
+<script>
+	document.addEventListener('click', e => {
+
+		// console.log(e.target);
+
+		if(e.target.id == "email"){
+			// Get the text field
+		var copyText = document.getElementById("general-email").value;
+  
+  
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText);
+		}
+
+		
+	})
+	
+  
+</script>
