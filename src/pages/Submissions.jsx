@@ -132,6 +132,30 @@ export function SubNavbarJsx({id}) {
 												
 												<img class="external" src="/external.svg" alt="External Page" />
 											</a>
+
+											<a className="file" href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">
+
+												<div class="info">
+													<img src="/website.svg" alt="External Page" />
+													<p>
+														Springer LNCS Template
+													</p>
+												</div>
+												
+												<img class="external" src="/external.svg" alt="External Page" />
+											</a>
+
+											<a className="file" href="https://www.interact2021.org/templates/splnproc1703.zip" target="_blank">
+
+												<div class="info">
+													<img src="/PDF.svg" alt="External Page" />
+													<p>
+														Word Format and Template
+													</p>
+												</div>
+												
+												<img class="external" src="/download.svg" alt="External Page" />
+											</a>
 										</div>
 									</div>
 								</div>
