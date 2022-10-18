@@ -14,6 +14,10 @@ const type = data.data;
 
 // console.log(type);
 
+export function Navbar(){
+	console.log(type.length)
+}
+
 export function SubNavbarJsx({id}) {
 
 	var section = 0;
@@ -39,6 +43,7 @@ export function SubNavbarJsx({id}) {
 			top: 0,
 			behavior: 'smooth'
 		  });
+		  
 	}
 	
 
@@ -90,7 +95,9 @@ export function SubNavbarJsx({id}) {
 	console.log(section);
 	var title = type[section].attributes.title;
 	var desc = type[section].attributes.descriptions;
-	var detail = type[section].attributes.details;           
+	var detail = type[section].attributes.details;
+	var imgLocation = "/" + title + ".svg";
+	      console.log(imgLocation)  ;
 
 	return(
 		<div>
@@ -99,9 +106,15 @@ export function SubNavbarJsx({id}) {
 							<div className="top">
 								<div className="flex">
 									<div className="left">
-										<h2 className="title">
-											{title}
-										</h2>
+										<div class="title">
+										<img class="icon" src={imgLocation} alt="" />
+											<h2>
+												{title}
+											</h2>
+
+											
+										</div>
+										
 										<button class="submit-button less-emphasis">
 											Submit
 										</button>
