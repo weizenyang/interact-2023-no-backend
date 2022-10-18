@@ -134,19 +134,9 @@ export function SubNavbarJsx({id}) {
 												</div>
 											</a> */}
 
-											<a className="file" href="https://www.springernature.com/gp/authors/campaigns/latex-author-support" target="_blank">
+											
 
-												<div class="info">
-													<img src="/website.svg" alt="External Page" />
-													<p>
-														LaTeX Springer Template
-													</p>
-												</div>
-												
-												<img class="external" src="/external.svg" alt="External Page" />
-											</a>
-
-											<a className="file" href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">
+											<a className="file" href="https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf" target="_blank">
 
 												<div class="info">
 													<img src="/website.svg" alt="External Page" />
@@ -161,7 +151,7 @@ export function SubNavbarJsx({id}) {
 											<a className="file" href="https://www.interact2021.org/templates/splnproc1703.zip" target="_blank">
 
 												<div class="info">
-													<img src="/PDF.svg" alt="External Page" />
+													<img src="/zip.svg" alt="External Page" />
 													<p>
 														Word Format and Template
 													</p>
@@ -169,6 +159,19 @@ export function SubNavbarJsx({id}) {
 												
 												<img class="external" src="/download.svg" alt="External Page" />
 											</a>
+
+											<a className="file" href="https://www.springernature.com/gp/authors/campaigns/latex-author-support" target="_blank">
+
+												<div class="info">
+													<img src="/website.svg" alt="External Page" />
+													<p>
+														LaTeX Springer Template
+													</p>
+												</div>
+												
+												<img class="external" src="/external.svg" alt="External Page" />
+											</a>
+
 										</div>
 									</div>
 								</div>
