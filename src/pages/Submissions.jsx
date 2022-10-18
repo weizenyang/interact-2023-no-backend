@@ -176,7 +176,7 @@ export function SubNavbarJsx({id}) {
 									</div>
 								</div>
 								<p className="description">
-								{desc}
+								<Markdown>{desc}</Markdown>
 								</p>
 							</div>
 							
