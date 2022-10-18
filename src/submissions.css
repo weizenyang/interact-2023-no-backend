@@ -605,7 +605,7 @@
 	
 	@media screen and (max-width:1200px){
 
-		.flex{
+		/* .flex{
 			flex-direction: flex;
 		}
 
@@ -620,6 +620,72 @@
 			min-width: 50%;
 			height: max-content;
 			font-size: 0.8em;
+		} */
+
+		.flex{
+			height: 100%;
+			flex-direction: flex;
+			flex-direction: column;
+			padding-bottom: 2em;
+		}
+
+		.left{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 0%;
+			align-items: center;
+		}
+
+		.right{
+			display: flex;
+			flex-direction: column;
+			max-width: 100%;
+			height: max-content;
+			font-size: 0.8em;
+			color: #002C38;
+			background-color: var(--color-bg);
+			border: 2px solid #002C38;
+			margin-top: 2em;
+			align-self: stretch;
+			
+		}
+
+
+
+		
+
+		/* .top{
+			padding: 2em;
+		}
+
+		.right h2{
+			font-size: 1.5em;
+		} */
+
+
+		.file{
+			background-color: var(--color-bg);
+			border: 2px solid #002C38;
+			/* width: 100%; */
+		}
+
+		.file:first-child{
+			border-radius: 30px 30px 5px 5px;
+		}
+	
+		.file:last-child{
+			border-radius: 5px 5px 30px 30px ;
+		}
+	
+		.file:hover{
+			box-shadow: inset 0 0 100px #FFC223;
+			cursor: pointer;
+		}
+	
+
+		.right h2{
+			color: #002C38;
 		}
 
 		.top{
@@ -630,7 +696,7 @@
 			font-size: 1.5em;
 		}
 
-		.sub-types{}
+
 
 	}
 
@@ -803,8 +869,8 @@
 		 }
 
 		 .title{
-			display: flex;
-			flex-direction: column;
+			/* display: flex;
+			flex-direction: column; */
 			font-size: 1em;
 			align-items: center;
 			
