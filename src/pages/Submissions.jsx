@@ -141,7 +141,7 @@ export function SubNavbarJsx({id}) {
 												<div class="info">
 													<img src="/website.svg" alt="External Page" />
 													<p>
-														Springer LNCS Template
+														Springer Author Guidelines
 													</p>
 												</div>
 												
@@ -153,7 +153,7 @@ export function SubNavbarJsx({id}) {
 												<div class="info">
 													<img src="/zip.svg" alt="External Page" />
 													<p>
-														Word Format and Template
+														Springer Word Templates
 													</p>
 												</div>
 												
@@ -165,7 +165,7 @@ export function SubNavbarJsx({id}) {
 												<div class="info">
 													<img src="/website.svg" alt="External Page" />
 													<p>
-														LaTeX Springer Template
+														Springer LaTeX Template
 													</p>
 												</div>
 												
