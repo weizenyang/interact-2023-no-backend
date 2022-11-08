@@ -153,7 +153,7 @@ export function SubNavbarJsx({id}) {
 												<div class="info">
 													<img src="/zip.svg" alt="External Page" />
 													<p>
-														Springer Word Templates
+														Springer Format
 													</p>
 												</div>
 												
