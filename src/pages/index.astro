@@ -20,17 +20,22 @@ import Animated from '../components/Animated.astro';
 					</div>
 					
 						<aside class='location-detail'>
-							<a href="/venue">
+
+							<a href="https://goo.gl/maps/iQtpm2kFD9hs8FUu9">
 							<div class='pill'>
 								<img src='/location.svg'>
-								Location
+								Location >
 							</div>
 							Ron Cooke Hub <br>
 							University Of York
 							</a>
+
+
+							
 						</aside>
 					
 				</div>
+				
 
 				<div class='theme'>	
 					<div class='title not-mobile tablet'>
@@ -58,10 +63,17 @@ import Animated from '../components/Animated.astro';
 				
 
 					<h3 class='date'>
-						28 August - 1 September 2023
+						28 August - 1 September 2023.<br>
+						York, UK and Online.
 					</h3>
+
+					
 				</div>
+
+				
 			</section>
+
+			
 
 			<section class='home-content-2'>
 				<h1>
@@ -75,7 +87,7 @@ import Animated from '../components/Animated.astro';
 					<br>
 
 					The INTERACT Conference is held every two years. <span class='underline'><a href="http://ifip-tc13.org/interact/">It started in 1984</a></span>, making it one 
-					of the longest running conferences on human-computer interaction.
+					of the longest running conferences on human-computer interaction. <br><br> The INTERACT 2023 will be both in-person and online.
 				</p>
 
 				<h3>
@@ -875,7 +887,7 @@ import Animated from '../components/Animated.astro';
 		}
 
 		.date{
-			
+			/* padding-top: 0.3em; */
 			margin: auto;
 			margin-bottom: 0%;
 			margin-left: 0%;
@@ -891,9 +903,15 @@ import Animated from '../components/Animated.astro';
 		}
 
 		.location-detail{
+			display: flex;
+			flex-direction: row;
+			/* align-items: flex-end; */
+			justify-content: flex-end;
 			align-self: flex-end;
-			padding: auto;
+			width: 100%;
+			padding-left: 1em;
 			margin: 0%;
+			text-align: left;
 		}
 
 		.title h1{
@@ -1073,9 +1091,9 @@ import Animated from '../components/Animated.astro';
 			min-height: 50vh;
 		}
 		
-		.location-detail{
+		/* .location-detail{
 			padding-top: 2em;
-		}
+		} */
 
 		.home-content-3{
 			padding-left: 2em;
@@ -1137,6 +1155,13 @@ import Animated from '../components/Animated.astro';
 		margin-top: 4em;
 		margin-bottom: 2em;
 	}
+
+	.pill{
+		/* margin: auto; */
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+	}
+
 
 	/* Presets */
 
