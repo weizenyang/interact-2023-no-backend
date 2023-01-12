@@ -69,6 +69,22 @@ export function SubNavbarJsx({id}) {
 	
 				<ul className='nav-items' id="nav-items">
 					
+						{/* <h2><span class="large-pill">Submissions Open:</span></h2>
+						<li><a className="section-change highlight" onClick={changeValue} id='0'>Full Papers</a></li>
+						<li><a className="section-change highlight" onClick={changeValue} id='6'>Workshops</a></li>
+					<div className="bottom-border go-back"></div>
+						
+		
+					
+
+					<li><a className="section-change" onClick={changeValue} id='1'>Short Papers</a></li>
+					<li><a className="section-change" onClick={changeValue} id='2'>Posters</a></li>
+					<li><a className="section-change" onClick={changeValue} id='3'>Panels</a></li>
+					<li><a className="section-change" onClick={changeValue} id='4'>Interactive Demos</a></li>
+					<li><a className="section-change" onClick={changeValue} id='5'>Courses</a></li>
+					<li><a className="section-change" onClick={changeValue} id='7'>Doctoral Consortium</a></li>
+					<li><a className="section-change" onClick={changeValue} id='8'>Industrial <br/> Experiences</a></li> */}
+
 					<li><a className="section-change" onClick={changeValue} id='0'>Full Papers</a></li>
 					<li><a className="section-change" onClick={changeValue} id='1'>Short Papers</a></li>
 					<li><a className="section-change" onClick={changeValue} id='2'>Posters</a></li>
@@ -96,6 +112,18 @@ export function SubNavbarJsx({id}) {
 	var title = type[section].attributes.title;
 	var desc = type[section].attributes.descriptions;
 	var detail = type[section].attributes.details;
+	var link = type[section].attributes.link;
+	var buttonClassName;
+	var anchorTagClassName;
+
+	if(link != ""){
+		buttonClassName = "submit-button"
+		anchorTagClassName = ""
+	} else {
+		buttonClassName = "submit-button less-emphasis not-allowed"
+		anchorTagClassName = "unclickable"
+	}
+
 	var imgLocation = "/" + title + ".svg";
 	      console.log(imgLocation)  ;
 
@@ -114,10 +142,12 @@ export function SubNavbarJsx({id}) {
 
 											
 										</div>
+										<a href={link} className={anchorTagClassName}>
+											<button className={buttonClassName}>
+												Submit
+											</button>
+										</a>
 										
-										<button class="submit-button less-emphasis">
-											Submit
-										</button>
 									</div>
 
 									<div className="right">

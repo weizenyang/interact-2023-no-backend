@@ -9,7 +9,7 @@ const { href, title, body } = Astro.props;
 ---
 
 <li class="link-card">
-	<a href={href}>
+	<a class="inner-div-gradient" href={href}>
 		<h2>
 			{title}
 			<span>&rarr;</span>
@@ -21,34 +21,47 @@ const { href, title, body } = Astro.props;
 </li>
 <style>
 	:root {
-		--link-gradient: linear-gradient(45deg, #4f39fa, #da62c4 30%, var(--color-border) 60%);
+		--link-gradient: linear-gradient(45deg, #FFC22300, #FFC22344 30%, var(--color-bg) 60%);
+		--link-gradient-1: linear-gradient(45deg, #002C3833, #002C38cc 30%, var(--color-border) 100%);
 	}
 
 	.link-card {
 		list-style: none;
 		display: flex;
-		padding: 0.15rem;
+		margin: 0.5em;
+		padding: 2px;
+		background-image: var(--link-gradient-1);
+		background-size: 400%;
+		border-radius: 0.5rem;
+		background-position: 100%;
+		transition: background-position 0.3s cubic-bezier(0.22, 0.5, 0.36, 0.5);
+		
+	}
+
+	.inner-div-gradient{
 		background-image: var(--link-gradient);
 		background-size: 400%;
 		border-radius: 0.5rem;
 		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: background-position 0.3s cubic-bezier(0.22, 0.5, 0.36, 0.5);
+		
 	}
 
 	.link-card > a {
-		width: 100%;
+		width: max-content;
 		text-decoration: none;
 		line-height: 1.4;
 		padding: 1em 1.3em;
 		border-radius: 0.35rem;
 		color: var(--text-color);
-		background-color: white;
-		opacity: 0.8;
+		background-image: var(--link-gradient);
+		background-color: hsl(10, 21%, 95%);
+		/* opacity: 0.9; */
 	}
 
 	h2 {
 		margin: 0;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		/* transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1); */
 	}
 
 	p {
@@ -58,15 +71,19 @@ const { href, title, body } = Astro.props;
 
 	h2 span {
 		display: inline-block;
-		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+		/* transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1); */
 	}
 
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
 	}
 
+	.inner-div-gradient:is(:hover, :focus-within){
+		background-position: 0;
+	}
+
 	.link-card:is(:hover, :focus-within) h2 {
-		color: #4f39fa;
+		text-decoration: underline;
 	}
 
 	.link-card:is(:hover, :focus-within) h2 span {
