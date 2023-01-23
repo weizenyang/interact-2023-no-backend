@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Prefooter from '../components/Pre-footer.astro';
 import Animated from '../components/Animated.astro';
+import Banner from '../components/Banner.astro';
 ---
 
 <Layout title='Interact 2023'>
@@ -12,6 +13,17 @@ import Animated from '../components/Animated.astro';
 		<Navbar/>
 		
 		<content>
+
+			<Banner/>
+
+			<!-- <section class='banner'>
+				<a href="#updates-section">
+					<p>
+						UPDATES: Extension of Full Papers and Workshops Submission Deadlines
+					</p>
+				</a>
+			</section> -->
+			
 		
 			<section class='home-content-1'>
 				<div class='stretch'>
@@ -73,7 +85,7 @@ import Animated from '../components/Animated.astro';
 				
 			</section>
 
-			<section class='home-content-updates'>
+			<section class='home-content-updates' id="updates-section">
 				<h1>
 					LATEST UPDATES
 				</h1>
@@ -401,7 +413,7 @@ import Animated from '../components/Animated.astro';
 		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
 	}
 
-	
+
 
 	.home-content-1{
 		box-sizing: border-box;
@@ -421,6 +433,8 @@ import Animated from '../components/Animated.astro';
 		padding: 4em;
 	
 	}
+
+
 
 	.home-content-updates h1{
 		padding-bottom: 1em;
@@ -478,6 +492,16 @@ import Animated from '../components/Animated.astro';
 		padding: 4em;
 		/* padding-left: 16em; */
 
+	}
+
+	.home-content-updates {
+		display: flex;
+		flex-direction: column;
+		padding: 2em 4em;
+		border-bottom: 1px solid #002C38;
+		background-color: #002C38;
+		color: #FCF7EB;
+		
 	}
 
 	content{
@@ -575,15 +599,7 @@ import Animated from '../components/Animated.astro';
 		
 	}
 
-	.home-content-updates {
-		display: flex;
-		flex-direction: column;
-		padding: 2em 4em;
-		border-bottom: 1px solid #002C38;
-		background-color: #002C38;
-		color: #FCF7EB;
-		
-	}
+
 
 	.home-content-updates .date{
 		font-size: 0.8em;
