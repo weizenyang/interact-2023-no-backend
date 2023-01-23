@@ -73,6 +73,23 @@ import Animated from '../components/Animated.astro';
 				
 			</section>
 
+			<section class='home-content-updates'>
+				<h1>
+					LATEST UPDATES
+				</h1>
+				<p class="bold">
+					Full Papers and Workshops Submission Deadlines
+				</p>
+				<p class="date">
+					23-January-2023
+				</p>
+				<p>
+					Due to numerous requests, the deadline for Full Papers is extended until Wednesday 1 February (midnight, anywhere on earth).  If you can submit an abstract by 25 January, that would be greatly appreciated (it will help allocate papers for reviewing).
+					<br><br>
+					There has been some confusion about the deadline for Workshop submissions.  So we will accept submissions for Workshops up until February 27 2023.  Proposers will be notified within two weeks of submission, so they can start advertising their workshop.
+				</p>
+			</section>
+
 			
 
 			<section class='home-content-2'>
@@ -392,8 +409,9 @@ import Animated from '../components/Animated.astro';
 
 		flex-direction: column;
 		justify-content: space-evenly;
-		height: 100vh;
-		padding: 4em;
+		height: 90vh;
+		padding: 3em 4em;
+		padding-bottom: 1em;
 		border-bottom: 1px solid #002C38;
 		/* padding-left: 16em; */
 	}
@@ -402,6 +420,22 @@ import Animated from '../components/Animated.astro';
 		padding-left: 16em;
 		padding: 4em;
 	
+	}
+
+	.home-content-updates h1{
+		padding-bottom: 1em;
+		margin: 0%;
+		font-family: 'S-B';
+		font-size: 1.5em;
+		opacity: 1;
+	}
+
+	.home-content-updates p {
+		margin: 0px;
+	}
+
+	.home-content-updates .bold {
+		font-size: 1.2em;
 	}
 
 	.home-content-3{
@@ -538,6 +572,25 @@ import Animated from '../components/Animated.astro';
 		padding: 4em;
 		border-bottom: 1px solid #002C38;
 		/* padding-left: 16em; */
+		
+	}
+
+	.home-content-updates {
+		display: flex;
+		flex-direction: column;
+		padding: 2em 4em;
+		border-bottom: 1px solid #002C38;
+		background-color: #002C38;
+		color: #FCF7EB;
+		
+	}
+
+	.home-content-updates .date{
+		font-size: 0.8em;
+	}
+
+	.home-content-updates *{
+		opacity: 0.7;
 		
 	}
 
@@ -868,10 +921,14 @@ import Animated from '../components/Animated.astro';
 		}
 
 		.home-content-2{
-			
 			padding: 2em;
 			padding-top :2em;
 			padding-bottom: 0px;
+			justify-content: center;
+		}
+
+		.home-content-updates{
+			padding: 2em 1em;
 			justify-content: center;
 		}
 
