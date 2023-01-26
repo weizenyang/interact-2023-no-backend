@@ -199,7 +199,7 @@ export function SubNavbarJsx({id}) {
 													</p>
 												</div>
 												
-												<img class="external" src="/external.svg" alt="External Page" />
+												<img class="external" src="/download.svg" alt="External Page" />
 											</a>
 
 										</div>
