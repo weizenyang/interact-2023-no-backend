@@ -16,7 +16,6 @@ collections:
       create: true
       fields:
             - {label: ID, name: id, widget: number}
-            - {label: Attributes, name: attributes}
             - {label: Title, name: title, widget: string}
             - {label: Description, name: desc, widget: markdown}
             - {label: Date, name: date, widget: datetime}
