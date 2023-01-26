@@ -190,10 +190,10 @@ export function SubNavbarJsx({id}) {
 												<img class="external" src="/download.svg" alt="External Page" />
 											</a>
 
-											<a className="file" href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">
+											<a className="file" href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v6" target="_blank">
 
 												<div class="info">
-													<img src="/website.svg" alt="External Page" />
+													<img src="/zip.svg" alt="External Page" />
 													<p>
 														Springer LaTeX Template
 													</p>
