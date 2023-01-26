@@ -8,10 +8,11 @@ public_folder: /public
 collections:
   - label: Pages
     name: pages
+    extension: json
     files:
     - label: submission-types
       name: submission-types
-      file: /data/submissions-details.yml
+      file: /data/submissions-details.json
       create: true
       fields:
             - {label: ID, name: id, widget: number}

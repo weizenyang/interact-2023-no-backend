@@ -3,11 +3,11 @@ import "../submissions.css";
 import Markdown from 'markdown-to-jsx';
 
 
-await fetch('/data/submission-details.yml')
-.then(r => console.log(r));
+// await fetch('/data/submission-details.yml')
+// .then(r => console.log(r));
 
 //Receives data from /public/content.json
-const response = await fetch('/content.json');
+const response = await fetch('/submissions-details.json');
 const data = await response.json();
 const type = data.data;
 
@@ -190,16 +190,16 @@ export function SubNavbarJsx({id}) {
 												<img class="external" src="/download.svg" alt="External Page" />
 											</a>
 
-											<a className="file" href="https://resource-cms.springernature.com/springer-cms/rest/v1/content/19238648/data/v6" target="_blank">
+											<a className="file" href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">
 
 												<div class="info">
-													<img src="/zip.svg" alt="External Page" />
+													<img src="/website.svg" alt="External Page" />
 													<p>
 														Springer LaTeX Template
 													</p>
 												</div>
 												
-												<img class="external" src="/download.svg" alt="External Page" />
+												<img class="external" src="/external.svg" alt="External Page" />
 											</a>
 
 										</div>
