@@ -16,10 +16,11 @@ collections:
       create: true
       fields:
             - {label: ID, name: id, widget: number}
-            - {label: Title, name: title, widget: string}
-            - {label: Description, name: desc, widget: markdown}
-            - {label: Date, name: date, widget: datetime}
-            - {label: Details, name: details, widget: markdown}
+            - {label: Attributes, name: attributes}
+              {label: Title, name: title, widget: string}
+              {label: Description, name: desc, widget: markdown}
+              {label: Date, name: date, widget: datetime}
+              {label: Details, name: details, widget: markdown}
 
 
       # - label: Layout
