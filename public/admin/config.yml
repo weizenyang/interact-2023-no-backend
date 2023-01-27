@@ -8,7 +8,7 @@ public_folder: /public
 collections:
   - name: "submissions" # Used in routes, e.g., /admin/collections/blog
     label: "Submissions" # Used in the UI
-    folder: "./data/submissions-details" # The path to the folder where the documents are stored
+    folder: "/public/data/submissions-details" # The path to the folder where the documents are stored
     extension: json
     format: json
     create: true # Allow users to create new documents in this collection
@@ -24,7 +24,7 @@ collections:
       
   - name: "programmes" # Used in routes, e.g., /admin/collections/blog
     label: "Programmes" # Used in the UI
-    folder: "./data/programmes-data" # The path to the folder where the documents are stored
+    folder: "/public/data/programmes-data" # The path to the folder where the documents are stored
     extension: json
     format: json
     create: true # Allow users to create new documents in this collection
