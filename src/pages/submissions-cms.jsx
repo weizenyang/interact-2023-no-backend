@@ -126,7 +126,6 @@ export function SubNavbarJsx({id}) {
 
 	var imgLocation = "/" + title + ".svg";
 	      console.log(imgLocation)  ;
-
 	return(
 		<div>
 				<section className='anonymity-content-1' id="ac1">
