@@ -12,7 +12,7 @@ collections:
   editor:
     preview: false
   files:
-    - file: "src/data/navigation.json"
+    - file: "/data/submissions-details.json"
       label: "File"
       name: "file"
       fields:
