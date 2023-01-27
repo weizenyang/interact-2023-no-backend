@@ -6,8 +6,8 @@ media_folder: /public
 public_folder: /public
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+  - name: "submissions" # Used in routes, e.g., /admin/collections/blog
+    label: "Submissions" # Used in the UI
     folder: "/data/submissions-data" # The path to the folder where the documents are stored
     extension: json
     format: json
@@ -22,7 +22,21 @@ collections:
       - {label: "Details", name: "details", widget: "markdown"}
       - {label: "Link", name: "link", widget: "string", required: false}
       
-      
+  - name: "programmes" # Used in routes, e.g., /admin/collections/blog
+    label: "Programmes" # Used in the UI
+    folder: "/data/programmes-data" # The path to the folder where the documents are stored
+    extension: json
+    format: json
+    create: true # Allow users to create new documents in this collection
+    slug: "{title}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "ID", name: "id", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Details", name: "details", widget: "markdown"}
+      - {label: "Link", name: "link", widget: "string", required: false}
 
       
 
