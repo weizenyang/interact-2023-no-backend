@@ -11,6 +11,8 @@ collections:
     extension: "json"
     files:
     - file: "/data/submissions-details.json"
+      label: "File"
+      name: "file"
       fields:
         - { name: body, label: Body, widget: code }
       
