@@ -6,19 +6,17 @@ media_folder: /public
 public_folder: /public
 
 collections:
-  - label: Pages
-    name: pages
-    extension: json
-    create: true
-    file: /data/submissions-details.json
-    identifier-field: title
-    fields:
-            - {label: ID, name: id, widget: number}
-            - {label: Title, name: title, widget: string}
-            - {label: Description, name: description, widget: markdown}
-            - {label: Date, name: date, widget: datetime}
-            - {label: Details, name: details, widget: markdown}
-            - {label: Link, name: link, widget: string}
+  - name: "pages"
+  label: "Pages"
+  extension: "json"
+  editor:
+    preview: false
+  files:
+    - file: "src/data/navigation.json"
+      label: "File"
+      name: "file"
+      fields:
+        - { name: body, label: Body, widget: code }
       
       
 
