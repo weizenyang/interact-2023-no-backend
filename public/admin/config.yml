@@ -7,14 +7,10 @@ public_folder: /public
 
 collections:
   - name: "pages"
-  label: "Pages"
-  extension: "json"
-  editor:
-    preview: false
-  files:
+    label: "Pages"
+    extension: "json"
+    files:
     - file: "/data/submissions-details.json"
-      label: "File"
-      name: "file"
       fields:
         - { name: body, label: Body, widget: code }
       
