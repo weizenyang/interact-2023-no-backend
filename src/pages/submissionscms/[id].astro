@@ -2,7 +2,7 @@
 import Layout from '/src/layouts/Layout.astro';
 // import Content from '/src/components/Sub-details-content.astro';
 import Footer from '/src/components/Footer.astro';
-import Submissions from '../Submissions.jsx';
+import SubmissionsCMS from '/src/pages/SubmissionsCMS.jsx';
 
 
 export async function getStaticPaths() {
@@ -26,7 +26,7 @@ const { id } = Astro.params;
 
 <Layout title='Interact 2023'>
 
-	<Submissions id={id} client:only="react"/>
+	<SubmissionsCMS id={id} client:only="react"/>
 
 	<Footer/>
 	
