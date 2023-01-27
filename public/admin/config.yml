@@ -17,7 +17,7 @@ collections:
       fields:
             - {label: ID, name: id, widget: number}
             - {label: Title, name: title, widget: string}
-            - {label: Description, name: desc, widget: markdown}
+            - {label: Description, name: description, widget: markdown}
             - {label: Date, name: date, widget: datetime}
             - {label: Details, name: details, widget: markdown}
             - {label: Link, name: link, widget: string}
