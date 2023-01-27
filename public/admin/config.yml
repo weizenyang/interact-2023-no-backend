@@ -9,12 +9,12 @@ collections:
   - label: Pages
     name: pages
     extension: json
+    create: true
     files:
     - label: submission-types
       name: submission-types
       file: /data/submissions-details.json
       identifier-field: title
-      create: true
       fields:
             - {label: ID, name: id, widget: number}
             - {label: Title, name: title, widget: string}
