@@ -10,11 +10,9 @@ collections:
     name: pages
     extension: json
     create: true
-    
-    files:
-    - file: /data/submissions-details.json
+    file: /data/submissions-details.json
     identifier-field: title
-      fields:
+    fields:
             - {label: ID, name: id, widget: number}
             - {label: Title, name: title, widget: string}
             - {label: Description, name: description, widget: markdown}
