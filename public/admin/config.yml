@@ -10,11 +10,8 @@ collections:
     name: pages
     extension: json
     create: true
-    files:
-    - label: submission-types
-      name: submission-types
-      file: /data/submissions-details.json
-      identifier-field: title
+    file: /data/submissions-details.json
+    identifier-field: title
       fields:
             - {label: ID, name: id, widget: number}
             - {label: Title, name: title, widget: string}
@@ -22,7 +19,8 @@ collections:
             - {label: Date, name: date, widget: datetime}
             - {label: Details, name: details, widget: markdown}
             - {label: Link, name: link, widget: string}
-
+      
+      
 
       # - label: Layout
       #   name: layout
