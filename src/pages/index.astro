@@ -5,12 +5,6 @@ import Footer from '../components/Footer.astro';
 import Prefooter from '../components/Pre-footer.astro';
 import Animated from '../components/Animated.astro';
 import Banner from '../components/Banner.astro';
-
-if(window.location.href.includes("invite_token")){
-	// window.location.get("invite_token")
-	var invite_token = new URLSearchParams(window.location.search).get('invite_token');
-	console.log(invite_token);
-}
 ---
 
 <Layout title='Interact 2023'>
@@ -407,6 +401,13 @@ if(window.location.href.includes("invite_token")){
 			}
 		  });
 		}
+
+		console.log(window.location);
+if(window.location.href.includes("invite_token")){
+	// window.location.get("invite_token")
+	var invite_token = new URLSearchParams(window.location.href).get('invite_token');
+	console.log("Invite Token: " + invite_token);
+}
 	  </script>
 	 
 </Layout>
