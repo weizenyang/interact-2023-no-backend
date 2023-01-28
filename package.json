@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
+    "dev": "node public/mergeData.js && astro dev",
     "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
+    "build": "node public/mergeData.js && astro build",
+    "preview": "node public/mergeData.js && astro preview",
     "astro": "astro"
   },
   "dependencies": {
