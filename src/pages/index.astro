@@ -405,9 +405,11 @@ import Banner from '../components/Banner.astro';
 if(window.location.hash != ""){
 	// window.location.get("invite_token")
 	// var invite_token = new URLSearchParams(window.location.href).get('invite_token');
-	var invite_token = window.location.hash;
-	console.log("Invite Token: " + invite_token);
-	document.location.href = `/admin/${invite_token}`;
+	if(window.location.hash.includes("invite")){
+		var invite_token = window.location.hash;
+		console.log("Invite Token: " + invite_token);
+		document.location.href = `/admin/${invite_token}`;
+	}
 }
 	  </script>
 	 
