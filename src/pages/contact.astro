@@ -24,8 +24,8 @@ import Prefooter from '../components/Pre-footer.astro';
 							<div class="input-field">
 								<label>Name:</label>
 								<input name="name" placeholder="John Doe">
-								<label>Email:</label>
-								<input type="email" name="email" placeholder="johndoe@gmail.com" required>
+								<label>E-mail:</label>
+								<input type="E-mail" name="E-mail" placeholder="johndoe@gmail.com" required>
 								<label>Message:</label>
 								<textarea name="message" placeholder="Message Here"></textarea>
 								<div class="captcha" data-netlify-recaptcha="true"></div>
@@ -37,29 +37,34 @@ import Prefooter from '../components/Pre-footer.astro';
 
 					<div class="alt-contact">
 
-						<h2>
-							General Co-Chairs
-						</h2>
 						
-						<div class="contact-details">
 						
+					
 
-							<h4>Helen Petrie</h4> 
-							<p> Department of Computer Science, University of York
-								Deramore Lane, Heslington East, 
-								<br>York YO10 5GH United Kingdom
-								<br>Email: Helen.petrie@york.ac.uk
-								<br>
-							</p>
+							<h2>
+								General Inquiries
+							</h2>
+							
+							<div class="contact-details">
+							
+								<h4>Helen Petrie</h4> 
+								<p> Department of Computer Science, University of York
+									Deramore Lane, Heslington East, 
+									<br>York YO10 5GH United Kingdom
+									<br>E-mail: Helen.petrie@york.ac.uk
+									<br>
+								</p>
+	
+								<h4>Jose Abdelnour-Nocera</h4> 
+								<p> University of West London, UK and ITI/ Larsys, 
+								Portugal
+									
+									<br>St Mary’s Road, Ealing, London W5 5RF
+									<br>E-mail: Jose.Abdelnour-Nocera@uwl.ac.uk
+									<br>
+								</p>
 
-							<h4>Jose Abdelnour-Nocera</h4> 
-							<p> University of West London, UK and ITI/ Larsys, 
-							 Portugal
-								
-								<br>St Mary’s Road, Ealing, London W5 5RF
-								<br>Email: Jose.Abdelnour-Nocera@uwl.ac.uk
-								<br>
-							</p>
+							
 
 							
 
@@ -67,10 +72,75 @@ import Prefooter from '../components/Pre-footer.astro';
 					</div>
 
 				</div>
+
+				<!-- <div class="container full-width">
+
+
+
+						
+						
+						<div class="contact-details full-width">
+
+							<h2>
+								Please contact the relevant chairs for specific inquiries:
+							</h2>
+						
+							<h4>Full Papers</h4> 
+							<p> 
+								<a href="mailto:fullpapers@interact2023.org">E-mail: fullpapers@interact2023.org</a>
+							</p>
+
+							<h4>Short Papers</h4> 
+							<p> 
+								<a href="mailto:shortpapers@interact2023.org">E-mail: shortpapers@interact2023.org</a>
+							</p>
+
+							<h4>Posters</h4> 
+							<p> 
+								<a href="mailto:posters@interact2023.org">E-mail: posters@interact2023.org</a>
+							</p>
+
+							<h4>Panels</h4> 
+							<p> 
+								<a href="mailto:panels@interact2023.org">E-mail: panels@interact2023.org</a>
+							</p>
+
+							<h4>Interactive Demonstrations</h4> 
+							<p> 
+								<a href="mailto:interactivedemos@interact2023.org">E-mail: interactivedemos@interact2023.org</a>
+							</p>
+
+							<h4>Courses</h4> 
+							<p> 
+								<a href="mailto:courses@interact2023.org">E-mail: courses@interact2023.org</a>
+							</p>
+
+							<h4>Workshops</h4> 
+							<p> 
+								<a href="mailto:workshops@interact2023.org">E-mail: workshops@interact2023.org</a>
+							</p>
+
+							<h4>Doctoral Consortium</h4> 
+							<p> 
+								<a href="mailto:dc@interact2023.org">E-mail: industrial-experiences@interact2023.org</a>
+							</p>
+
+							<h4>Industrial Experiences</h4> 
+							<p> 
+								<a href="mailto:industrial-experiences@interact2023.org">E-mail: industrial-experiences@interact2023.org</a>
+							</p>
+
+							
+
+						</div>
+
+
+			</div> -->
 				
 			</section>
-
 		</content>
+
+		
 		
 	</main>
 
@@ -119,6 +189,16 @@ import Prefooter from '../components/Pre-footer.astro';
 		/* padding-left: 16em; */
 	}
 
+	.contact-content-1 h1{
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 1em;
+		height: 100%;
+
+	}
+
 	.container{
 		display: flex;
 		justify-content: center;
@@ -126,6 +206,8 @@ import Prefooter from '../components/Pre-footer.astro';
 		height: 100%;
 		margin: auto;
 		max-width: 1200px;
+		padding-top: 2em;
+		padding-bottom: 4em;
 	}
 
 	.captcha{
@@ -220,6 +302,20 @@ import Prefooter from '../components/Pre-footer.astro';
 
 	.contact-details p{
 		margin-top: 0%;
+	}
+
+	.full-width{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0px;
+		padding-left: 2em;
+
+	}
+
+	.container.full-width{
+		
+		border-top: solid 2px #002C38;
 	}
 
 
