@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@sindresorhus/slugify": "^2.2.0",
     "astro": "^1.2.3",
     "markdown-to-jsx": "^7.1.7"
   },
