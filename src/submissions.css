@@ -768,11 +768,24 @@
 
 		.left{
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: space-between;
-			padding: 0%;
-			align-items: center;
+			padding: 0px;
+			align-items: flex-start;
 		}
+
+		.left .title{
+			padding-bottom: 0.5em;
+		}
+
+		.left a{
+			width: 100%;
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+
+		
+		
 
 		.right{
 			display: flex;
