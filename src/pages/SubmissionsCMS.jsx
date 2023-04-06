@@ -222,12 +222,12 @@ const Content = ({ section }) => {
 					<div className="details">
 					{coursesItem && (
 					<div>
-					<a className="inline-file" href="/INTERACT2023-SNCS_ProceedingsPaper_LTP_ST_SN_Switzerland-1.docx" target="_blank">
+					<a className="inline-file" href="/INTERACT2023-broadcasting authorisation.pdf" target="_blank">
 
 							<div className="info">
-								<img src="/docx.svg" alt="External Page" />
+								<img src="/pdf.svg" alt="External Page" />
 								<p>
-									Copyright Form [.docx]
+									Copyright Form [.pdf]
 								</p>
 							</div>
 
