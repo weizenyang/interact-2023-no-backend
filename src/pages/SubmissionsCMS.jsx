@@ -222,7 +222,7 @@ const Content = ({ section }) => {
 					<div className="details">
 					{fpItem && (
 					<div>
-					<a className="inline-file" href="/INTERACT2023-broadcasting authorisation.pdf" target="_blank">
+					<a className="inline-file" href="/INTERACT2023-Contract_Book_Contributor_Consent_to_Publish_IFIP_SIP.pdf" target="_blank">
 
 							<div className="info">
 								<img src="/pdf.svg" alt="External Page" />
