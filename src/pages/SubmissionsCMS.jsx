@@ -120,7 +120,7 @@ const Content = ({ section }) => {
 	var desc = type.submissions_data[section].description;
 	var detail = type.submissions_data[section].details;
 	var link = type.submissions_data[section].link;
-	var coursesItem = title.includes("Courses")
+	var fpItem = title.includes("Full Papers")
 	var buttonClassName;
 	var anchorTagClassName;
 
@@ -220,7 +220,7 @@ const Content = ({ section }) => {
 
 				<div className="bottom">
 					<div className="details">
-					{coursesItem && (
+					{fpItem && (
 					<div>
 					<a className="inline-file" href="/INTERACT2023-broadcasting authorisation.pdf" target="_blank">
 
