@@ -90,25 +90,33 @@ import Banner from '../components/Banner.astro';
 					LATEST UPDATES
 				</h1>
 
-				<p class="bold">
+				<p class="bold" style="color: #FFC223">
 					New Submission Deadlines
 				</p>
+				<br>
 				<p class="date">
 					16-April-2023
 				</p>
-				<p>
-					Due to numerous requests, the deadline for Full Papers is extended until Wednesday 1 February (23:59, anywhere on earth).  If you can submit an abstract by 25 January, that would be greatly appreciated (it will help allocate papers for reviewing).
-					<br><br>
-					There has been some confusion about the deadline for Workshop submissions.  So we will accept submissions for Workshops up until February 27 2023.  Proposers will be notified within two weeks of submission, so they can start advertising their workshop.
-				</p>
 				<br>
+				<p>
+					Due to a number of requests, we are extending the deadline for the next round of submissions (Short Papers etc) for INTERACT 2023 from April 19 to April 26.  
+					<br><br>
+					In addition, Posters can have four pages of text for the extended abstract PLUS one page for references.
+					<br><br>
+					Check out <a href="/cfp">Call For Papers</a> for more updates.
+
+				</p>
+				
+				<br><br>
 				<div id="prevNews">
 					<p class="bold">
 						Full Papers and Workshops Submission Deadlines
 					</p>
+					<br>
 					<p class="date">
 						23-January-2023
 					</p>
+					<br>
 					<p>
 						Due to numerous requests, the deadline for Full Papers is extended until Wednesday 1 February (23:59, anywhere on earth).  If you can submit an abstract by 25 January, that would be greatly appreciated (it will help allocate papers for reviewing).
 						<br><br>
@@ -943,7 +951,13 @@ if(window.location.hash != ""){
 		}
 
 	#prevNews{
+		padding-top: 1em;
+		border-top: solid 1px hsl(10, 21%, 95%);
 		font-size: medium;
+	}
+
+	#updates-section a{
+		text-decoration: underline;
 	}
 
 		
