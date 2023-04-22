@@ -28,15 +28,17 @@ collections:
     extension: json
     format: json
     create: true # Allow users to create new documents in this collection
-    slug: "{title}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: {title} # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "ID", name: "id", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Details", name: "details", widget: "markdown"}
-      - {label: "Link", name: "link", widget: "string", required: false}
+      - {label: "Website", name: "website", widget: "string", required: false}
+      - {label: "Contacts", name: "contacts", widget: "markdown"}
+      - {label: "Event period", name: "event-period", widget: "markdown"}
+      - {label: "Mode", name: "mode", widget: "markdown"}
+
 
       
 
