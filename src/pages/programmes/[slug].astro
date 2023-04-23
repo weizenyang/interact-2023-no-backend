@@ -7,19 +7,18 @@ import Footer from '/src/components/Footer.astro';
 import ProgrammeCard from '/src/components/ProgrammeCard.astro';
 import Card from '/src/components/Card.astro';
 import Navbar from '/src/components/Navbar.astro';
-import Markdown from 'markdown-to-jsx';
-console.log("stuff");
-// const programmes = await Astro.glob('/src/data/programme_data/*.json');
-// export async function getStaticPaths() {
-// 	const files = await Astro.glob('/src/data/programme_data/*.json');
-//   return files.map((file) => {
-// 	console.log(file.title);
-//     const slug = file.id;
-//     return { params: { slug }, props: {file} };
-//   });
-// }
+// console.log("stuff");
+const programmes = await Astro.glob('/src/data/programme_data/*.json');
+export async function getStaticPaths() {
+	const files = await Astro.glob('/src/data/programme_data/*.json');
+  return files.map((file) => {
+	console.log(file.title);
+    const slug = file.id;
+    return { params: { slug }, props: {file} };
+  });
+}
 
-// const {file: {title, description, contacts, date, event_period, website, mode}} = Astro.props;
+const {file: {title, description, contacts, date, event_period, website, mode}} = Astro.props;
 
 // export async function getStaticProps({ params }) {
 //   const post = await Astro.fetchContent(`/src/data/posts/${params.slug}.md`);
@@ -41,7 +40,7 @@ console.log("stuff");
 				</div>
 	
 				<div class="selection-grid">
-					<!-- {programmes.map((programme) => <Card title={programme.title}/>)} -->
+					{programmes.map((programme) => <Card title={programme.title}/>)}
 				</div>
 
 			</section>
@@ -51,11 +50,11 @@ console.log("stuff");
 						Workshop:
 					</h2>
 					<h1>
-						<!-- {title} -->
+						{title}
 					</h1>
 					<hr class="solid-line">
 					<p>
-						<!-- {description} -->
+						{description}
 					</p>
 				</div>
 			</section>
