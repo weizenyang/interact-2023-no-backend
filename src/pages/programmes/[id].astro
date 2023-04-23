@@ -14,9 +14,9 @@ const programmes = await Astro.glob('/src/data/programme_data/*.json')
 export async function getStaticPaths() {
 const files = await Astro.glob('/src/data/programme_data/*.json');
   return files.map((file) => {
-    const slug = encodeURIComponent(file.title)
+    const id = encodeURIComponent(file.id)
 	console.log(files)
-    return { params: { slug }, props: {file} }
+    return { params: { id }, props: {file} }
   });
   
 }
@@ -44,7 +44,8 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 				</div>
 	
 				<div class="selection-grid">
-					{programmes.map((programme) => <Card title={programme.title} description={programme.description} 
+					{programmes.map((programme) => <Card title={programme.title} 
+					description={programme.description} 
 					contacts={programme.contacts} 
 					title={programme.title} 
 					event_period={programme.event_period} 
@@ -146,6 +147,11 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 			document.querySelector('#workshop-enquiries').style.opacity = e.getAttribute('data-contacts');
 			document.querySelector('#workshop-period').style.opacity = e.getAttribute('data-event_period');
 			document.querySelector('#workshop-mode').style.opacity = e.getAttribute('data-mode');
+			setTimeout(() => {
+				popupEl.querySelectorAll('a').forEach((e) => {
+					e.style.textDecoration = 'underline';
+				})
+			}, 100);
 		
 		})
 	})
@@ -163,6 +169,10 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 </script> -->
 
 <style>
+
+	p a{
+		text-decoration: underline !important;
+	}
 
 	#details::-webkit-scrollbar {
 		width: 5px;
@@ -259,6 +269,7 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 
 	#workshop-description{
 		display: flex;
+		flex-direction: column;
 		/* margin-right: 1em; */
 		padding-right: 1em;
 	}

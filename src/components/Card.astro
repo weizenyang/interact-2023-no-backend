@@ -1,5 +1,11 @@
 ---
 import type { MarkdownContent } from 'astro';
+// import matter from 'gray-matter';
+import showdown from 'showdown';
+const converter = new showdown.Converter();
+
+// const markdownContent = `# Hello World!`;
+// const htmlContent = converter.makeHtml(markdownContent);
 
 export interface Props {
 	title: string;
@@ -12,7 +18,10 @@ export interface Props {
 	mode: string;
 }
 
-const { href, title, body, description, website, contacts, mode, event_period } = Astro.props;
+
+
+const { href, title, body, website, contacts, mode, event_period } = Astro.props;
+const description = converter.makeHtml(Astro.props.description)
 ---
 
 <li class="link-card" 
