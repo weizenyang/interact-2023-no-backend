@@ -36,7 +36,7 @@ collections:
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Website", name: "website", widget: "string", required: false}
       - {label: "Contacts", name: "contacts", widget: "markdown"}
-      - {label: "Event period", name: "event-period", widget: "markdown"}
+      - {label: "Event period", name: "event_period", widget: "markdown"}
       - {label: "Mode", name: "mode", widget: "markdown"}
 
 

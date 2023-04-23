@@ -2,25 +2,19 @@
 import Layout from '/src/layouts/Layout.astro';
 // import Content from '/src/components/Sub-details-content.astro';
 import Footer from '/src/components/Footer.astro';
-import Submissions from '../Submissions.jsx';
+import type { Programme } from "/src/data/programme_data";
+// import Submissions from '../Submissions.jsx';
 
 
 export async function getStaticPaths() {
-  return [
- 	{ params: { id: '0' } },
-    { params: { id: '1' } },
-    { params: { id: '2' } },
-    { params: { id: '3' } },
-    { params: { id: '4' } },
-    { params: { id: '5' } },
-	{ params: { id: '6' } },
-    { params: { id: '7' } },
-    { params: { id: '8' } },
-	{ params: { id: '9' } }
-  ];
+	const programmes = await Astro.glob('/src/data/programme_data/*.json');
+
+	return programmes.map(programme => ({
+		params: {slug: programme.slug}, props: {programme}
+	}))
 }
 
-const { id } = Astro.params;
+const { programme: {title, } } = Astro.props;
 
 ---
 
