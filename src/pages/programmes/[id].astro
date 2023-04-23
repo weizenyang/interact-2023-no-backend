@@ -75,7 +75,7 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 						
 						<div class="items">
 							<strong>Website:</strong>
-							<a class="no-margin" id="workshop-website">
+							<a class="no-margin" id="workshop-website" target="_blank">
 								 
 								<!-- {website} -->
 							</a>
@@ -157,6 +157,7 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 			// document.querySelector('.popup').style.opacity = '1';
 			document.querySelector('.popup').classList.add('popup-show');
 			document.querySelector('.info-card').classList.add('info-card-show');
+			document.querySelector('.details').scrollTop = 0;
 			document.querySelector('#workshop-title').innerHTML = e.getAttribute('data-title');
 			document.querySelector('#workshop-description').innerHTML = e.getAttribute('data-description');
 			document.querySelector('#workshop-website').innerHTML = e.getAttribute('data-website');
