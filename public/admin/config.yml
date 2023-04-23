@@ -25,8 +25,8 @@ collections:
   - name: "programmes" # Used in routes, e.g., /admin/collections/blog
     label: "Programmes" # Used in the UI
     folder: "/src/data/programme_data" # The path to the folder where the documents are stored
-    extension: md
-    format: md
+    extension: json
+    format: json
     create: true # Allow users to create new documents in this collection
     slug: "programmes" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
