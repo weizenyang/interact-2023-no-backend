@@ -20,8 +20,11 @@ export interface Props {
 
 
 
-const { href, title, body, website, contacts, mode, event_period } = Astro.props;
+const { href, title, body, mode, event_period } = Astro.props;
 const description = converter.makeHtml(Astro.props.description)
+const website = converter.makeHtml(Astro.props.website)
+const contacts = converter.makeHtml(Astro.props.contacts)
+
 ---
 
 <li class="link-card" 
@@ -32,10 +35,11 @@ data-date={event_period}
 data-website={website} 
 data-mode={mode}>
 	<a class="inner-div-gradient" href={href}>
-		<p>
+		<h3 class="card-title">
 			<strong>{title}</strong>
 			<span>&rarr;</span>
-		</p>
+		</h3>
+
 		<p class="pill">
 			{event_period}
 		</p>
@@ -139,5 +143,10 @@ data-mode={mode}>
 	}
 	p{
 		display: flex;
+	}
+
+	.card-title{
+		display: flex;
+		
 	}
 </style>
