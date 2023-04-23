@@ -39,10 +39,12 @@ data-mode={mode}>
 			{title}
 			<span>&rarr;</span>
 		</h3>
+		<div class="pill">
+			<p>
+				{event_period}
+			</p>
+		</div>
 
-		<p class="pill">
-			{event_period}
-		</p>
 	</a>
 </li>
 <style>
@@ -62,6 +64,7 @@ data-mode={mode}>
 		border-radius: 0.5rem;
 		background-position: 100%;
 		min-height: 160px;
+		justify-content: space-between;
 		transition: background-position 0.2s cubic-bezier(0.22, 0.5, 0.36, 0.5);
 		
 	}
@@ -98,7 +101,8 @@ data-mode={mode}>
 		border-radius: 1em;
 		font-size: 0.8em;
 		padding: 0.1em 0.6em;
-		width: max-content;
+		width: fit-content;
+		/* max-width: max-content; */
 	}
 
 	h2 {
@@ -107,8 +111,9 @@ data-mode={mode}>
 	}
 
 	p {
-		margin-top: 0.75rem;
+		margin-top: 0em;
 		margin-bottom: 0;
+		
 	}
 
 	h2 span {
@@ -135,18 +140,18 @@ data-mode={mode}>
 		transform: translateX(2px);
 	}
 
-	strong{
-		font-size: 1em;
-		display: flex; 
-		padding: 0px;
-		padding-right: 0.5em;
-	}
 	p{
 		display: flex;
 	}
 
 	.card-title{
 		display: flex;
+		justify-content: space-between;
+	}
+
+	
+	@media screen and (max-width:1200px){
+		
 
 	}
 </style>
