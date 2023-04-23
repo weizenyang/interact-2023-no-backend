@@ -20,9 +20,9 @@ export interface Props {
 
 
 
-const { href, title, body, mode, event_period } = Astro.props;
+const { href, title, body, mode, event_period, website } = Astro.props;
 const description = converter.makeHtml(Astro.props.description)
-const website = converter.makeHtml(Astro.props.website)
+// const website = converter.makeHtml(Astro.props.website)
 const contacts = converter.makeHtml(Astro.props.contacts)
 
 ---
@@ -76,7 +76,7 @@ data-mode={mode}>
 		background-position: 100%;
 		transition: background-position 0.2s cubic-bezier(0.22, 0.5, 0.36, 0.5);
 		/* align-items: center; */
-		justify-content: center;
+		justify-content: space-between;
 		display: flex;
 		flex-direction: column;
 		
@@ -146,7 +146,23 @@ data-mode={mode}>
 
 	.card-title{
 		display: flex;
+		padding-right: 0.5em;
 		justify-content: space-between;
+	}
+
+	.card-title span{
+		padding-left: 1em;
+	}
+
+	.inner-div-gradient span{
+		padding-left: 1em;
+		transform: translateX(0px);
+		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.inner-div-gradient:hover span{
+		padding-left: 1em;
+		transform: translateX(10px);
 	}
 
 	

@@ -68,24 +68,40 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 						<button class="exit" id="exit">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 						</button>
-						<p id="workshop-description">{description}</p>
+						<p class="no-margin" id="workshop-description">
+							<!-- {description} -->
+						</p>
 						<hr class="solid-line">
-	
-						<p class="items"  id="workshop-website">
-							<strong>Website:</strong> {website}
-						</p>
-	
-						<p class="items"  id="workshop-enquiries">
-							<strong>Enquiries to:</strong> {contacts}
-						</p>
-	
-						<p class="items"  id="workshop-period">
-							<strong>Date:</strong> {event_period}
-						</p>
-	
-						<p class="items"  id="workshop-mode">
-							<strong>Mode:</strong> {mode}
-						</p>
+						
+						<div class="items">
+							<strong>Website:</strong>
+							<a class="no-margin" id="workshop-website">
+								 
+								<!-- {website} -->
+							</a>
+						</div>
+
+						<div class="items">
+							<strong>Enquiries to:</strong>
+							<div class="no-margin" id="workshop-enquiries">
+								 <!-- {contacts} -->
+							</div>
+						</div>
+
+						<div class="items">
+							<strong>Date:</strong>
+							<div id="workshop-period">
+								<!-- {event_period} -->
+							</div>
+						</div>
+						
+						<div class="items">
+							<strong>Mode:</strong> 
+							<p id="workshop-mode">
+								<!-- {mode} -->
+							</p>
+						</div>
+
 					</article>
 				</div>
 			</section>
@@ -143,13 +159,19 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 			document.querySelector('.info-card').classList.add('info-card-show');
 			document.querySelector('#workshop-title').innerHTML = e.getAttribute('data-title');
 			document.querySelector('#workshop-description').innerHTML = e.getAttribute('data-description');
-			document.querySelector('#workshop-website').style.opacity = e.getAttribute('data-website');
-			document.querySelector('#workshop-enquiries').style.opacity = e.getAttribute('data-contacts');
-			document.querySelector('#workshop-period').style.opacity = e.getAttribute('data-event_period');
-			document.querySelector('#workshop-mode').style.opacity = e.getAttribute('data-mode');
+			document.querySelector('#workshop-website').innerHTML = e.getAttribute('data-website');
+			document.querySelector('#workshop-website').href = e.getAttribute('data-website');
+			document.querySelector('#workshop-enquiries').innerHTML = e.getAttribute('data-contacts');
+			document.querySelector('#workshop-period').innerHTML = e.getAttribute('data-date');
+			document.querySelector('#workshop-mode').innerHTML = e.getAttribute('data-mode');
 			setTimeout(() => {
 				popupEl.querySelectorAll('a').forEach((e) => {
 					e.style.textDecoration = 'underline';
+				})
+				document.querySelectorAll('.items').forEach((e) => {
+					e.querySelectorAll('p').forEach((e) => {
+					e.style.margin = '0px';
+				})
 				})
 			}, 100);
 		
@@ -367,7 +389,22 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 	}
 
 	.items{
-		display: flex;
+		display: block;
+	}
+
+	.items p{
+		/* display: flex; */
+		margin: 0px;
+	}
+
+	.no-margin{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.no-margin *{
+		margin: 0px !important; 
+		padding: 0px;
 	}
 
 	p strong{
@@ -436,9 +473,9 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 		padding-top: 2em;
 	}
 
-	p{
+	/* p{
 		display: inline;
-	}
+	} */
 
 	.contact-details h4{
 		margin: 0%;
