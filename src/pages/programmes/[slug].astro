@@ -1,26 +1,70 @@
 ---
+// src/pages/posts/[slug].astro
+// import { Astro } from 'astro';
 import Layout from '/src/layouts/Layout.astro';
 // import Content from '/src/components/Sub-details-content.astro';
 import Footer from '/src/components/Footer.astro';
-import type { Programme } from "/src/data/programme_data";
-// import Submissions from '../Submissions.jsx';
-
-
+import ProgrammeCard from '/src/components/ProgrammeCard.astro';
+import Card from '/src/components/Card.astro';
+import Navbar from '/src/components/Navbar.astro';
+console.log("stuff");
+const programmes = await Astro.glob('/src/data/programme_data/*.json');
 export async function getStaticPaths() {
-	const programmes = await Astro.glob('/src/data/programme_data/*.json');
-
-	return programmes.map(programme => ({
-		params: {slug: programme.slug}, props: {programme}
-	}))
+	const files = await Astro.glob('/src/data/programme_data/*.json');
+  return files.map((file) => {
+	console.log(file.title);
+    const slug = file.id;
+    return { params: { slug }, props: {file} };
+  });
 }
 
-const { programme: {title, } } = Astro.props;
+const {file: {title, description, contacts, date, event_period, website, mode}} = Astro.props;
 
+// export async function getStaticProps({ params }) {
+//   const post = await Astro.fetchContent(`/src/data/posts/${params.slug}.md`);
+//   return { props: { post } };
+// }
+
+// const { post } = Astro.props;
 ---
 
 <Layout title='Interact 2023'>
+	<main>
+		<Navbar/>
+		<content>
+			<section class="programmes-section">
+				<div class='title'>
+					<h1>
+						PROGRAMMES
+					</h1>
+				</div>
+	
+				<div class="selection-grid">
+					{programmes.map((programme) => <Card title={programme.title}/>)}
+				</div>
 
-	<Submissions id={id} client:only="react"/>
+			</section>
+			<section class="popup">
+				<div class="info-card">
+					<h2>
+						Workshop:
+					</h2>
+					<h1>
+						{title}
+					</h1>
+					<hr class="solid-line">
+					<p>
+						{description}
+					</p>
+				</div>
+			</section>
+		</content>
+		
+	</main>
+
+
+
+	
 
 	<Footer/>
 	
@@ -59,6 +103,54 @@ const { programme: {title, } } = Astro.props;
 		width: 100%;
 	}
 
+	.solid-line{
+		width: 100%;
+		border-top: 2px solid #002C38;
+	}
+
+	.popup{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1em 0em;
+		background: #002C38;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: flex;
+		z-index: 100;
+		/* padding-top: 30vh; */
+		/* align-items: center; */
+		justify-content: center;
+	}
+
+	.info-card{
+		width: 100%;
+		padding: 2em;
+		max-width: 700px;
+		background-color: #FCF7EB;
+		display: flex;
+		flex-direction: column;
+		max-height: max-content;
+		border-radius: 1em;
+	}
+
+	.info-card h1{
+		padding-bottom: 0.5em;
+		margin: 0px;
+		font-size: 2em;
+		height: min-content;
+	}
+
+	.info-card h2{
+		padding: 0em;
+		padding-bottom: 0.2em;
+		margin: 0px;
+		font-size: 1.3em;
+		height: min-content;
+		font-weight: 100;
+	}
+
 	.anonymity-content-1{
 		box-sizing: border-box;
 		display: flex;
@@ -83,6 +175,7 @@ const { programme: {title, } } = Astro.props;
 		border-radius: 50px;
 	}
 
+
 	.center *{
 		margin: auto;
 	}
@@ -101,10 +194,13 @@ const { programme: {title, } } = Astro.props;
 		/* width: 100%; */
 	}
 
-	.selection{
-		/* padding: 0.5em; */
-		display: flex;
-		/* flex-wrap: wrap; */
+	.selection-grid{
+		display: grid;
+		width: 100%;
+		gap: 1em;
+		grid-template-columns: 1fr 1fr;
+		padding: 1em;
+		flex-wrap: wrap;
 	}
 
 	.sub-types h3{
@@ -249,13 +345,19 @@ const { programme: {title, } } = Astro.props;
 	}
 
 	.title{
-		font-family: 'AH-B';
-		font-size: 2.5em;
+		font-family: 'SYNCOPATE';
 		/* height: 50%; */
+		padding: 3em 1em;
 		margin: 0%;
-		
+		font-size: 1em;
 		/* overflow: hidden; */
 		/* width: 200%; */
+	}
+
+	.title h1{
+		margin: 0%;
+		padding: 0%;
+		font-size: 2.5em;
 	}
 
 	
