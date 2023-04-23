@@ -1,21 +1,34 @@
 ---
+import type { MarkdownContent } from 'astro';
+
 export interface Props {
 	title: string;
 	body: string;
 	href: string;
+	description: MarkdownContent;
+	event_period: MarkdownContent;
+	contacts: MarkdownContent;
+	website: string;
+	mode: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, description, website, contacts, mode, event_period } = Astro.props;
 ---
 
-<li class="link-card">
+<li class="link-card" 
+data-description={description} 
+data-contacts={contacts} 
+data-title={title} 
+data-date={event_period} 
+data-website={website} 
+data-mode={mode}>
 	<a class="inner-div-gradient" href={href}>
 		<p>
-			{title}
+			<strong>{title}</strong>
 			<span>&rarr;</span>
 		</p>
-		<p>
-			{body}
+		<p class="pill">
+			{event_period}
 		</p>
 	</a>
 </li>
@@ -35,6 +48,7 @@ const { href, title, body } = Astro.props;
 		background-size: 400%;
 		border-radius: 0.5rem;
 		background-position: 100%;
+		min-height: 160px;
 		transition: background-position 0.2s cubic-bezier(0.22, 0.5, 0.36, 0.5);
 		
 	}
@@ -45,6 +59,10 @@ const { href, title, body } = Astro.props;
 		border-radius: 0.5rem;
 		background-position: 100%;
 		transition: background-position 0.2s cubic-bezier(0.22, 0.5, 0.36, 0.5);
+		/* align-items: center; */
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
 		
 	}
 
@@ -57,7 +75,17 @@ const { href, title, body } = Astro.props;
 		color: var(--text-color);
 		background-image: var(--link-gradient);
 		background-color: hsl(10, 21%, 95%);
+
 		/* opacity: 0.9; */
+	}
+
+	.pill{
+		background-color: #002C38;
+		color: #ffffff;
+		border-radius: 1em;
+		font-size: 0.8em;
+		padding: 0.1em 0.6em;
+		width: max-content;
 	}
 
 	h2 {
@@ -92,5 +120,15 @@ const { href, title, body } = Astro.props;
 	.link-card:is(:hover, :focus-within) h2 span {
 		will-change: transform;
 		transform: translateX(2px);
+	}
+
+	strong{
+		font-size: 1em;
+		display: flex; 
+		padding: 0px;
+		padding-right: 0.5em;
+	}
+	p{
+		display: flex;
 	}
 </style>

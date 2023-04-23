@@ -2,23 +2,27 @@
 // src/pages/posts/[slug].astro
 // import { Astro } from 'astro';
 import Layout from '/src/layouts/Layout.astro';
-// import Content from '/src/components/Sub-details-content.astro';
+// import type { File } from '/src/data/programme_data/programme_data';
 import Footer from '/src/components/Footer.astro';
 import ProgrammeCard from '/src/components/ProgrammeCard.astro';
 import Card from '/src/components/Card.astro';
 import Navbar from '/src/components/Navbar.astro';
-// console.log("stuff");
-// const programmes = await Astro.glob('/src/data/programme_data/*.json');
-// export async function getStaticPaths() {
-// 	const files = await Astro.glob('/src/data/programme_data/*.json');
-//   return files.map((file) => {
-// 	console.log(file.title);
-//     const slug = file.id;
-//     return { params: { slug }, props: {file} };
-//   });
-// }
+import matter from 'gray-matter';
 
-// const {file: {title, description, contacts, date, event_period, website, mode}} = Astro.props;
+
+const programmes = await Astro.glob('/src/data/programme_data/*.json')
+export async function getStaticPaths() {
+const files = await Astro.glob('/src/data/programme_data/*.json');
+  return files.map((file) => {
+    const slug = encodeURIComponent(file.title)
+	console.log(files)
+    return { params: { slug }, props: {file} }
+  });
+  
+}
+
+const {file: {title, description, contacts, date, event_period, website, mode}} = Astro.props;
+
 
 // export async function getStaticProps({ params }) {
 //   const post = await Astro.fetchContent(`/src/data/posts/${params.slug}.md`);
@@ -40,22 +44,48 @@ import Navbar from '/src/components/Navbar.astro';
 				</div>
 	
 				<div class="selection-grid">
-					{programmes.map((programme) => <Card title={programme.title}/>)}
+					{programmes.map((programme) => <Card title={programme.title} description={programme.description} 
+					contacts={programme.contacts} 
+					title={programme.title} 
+					event_period={programme.event_period} 
+					website={programme.website} 
+					mode={programme.mode}/>)}
 				</div>
+
+
 
 			</section>
 			<section class="popup">
 				<div class="info-card">
-					<h2>
-						Workshop:
-					</h2>
-					<h1>
-						{title}
-					</h1>
-					<hr class="solid-line">
-					<p>
-						{description}
-					</p>
+					<article class="details" id="details">
+						<h2>
+							<span style="opacity: 0.6">Workshop:</span>
+						</h2>
+						<h1 id="workshop-title">
+							{title}
+						</h1>
+						<button class="exit" id="exit">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+						</button>
+						<p id="workshop-description">{description}</p>
+						<hr class="solid-line">
+	
+						<p class="items"  id="workshop-website">
+							<strong>Website:</strong> {website}
+						</p>
+	
+						<p class="items"  id="workshop-enquiries">
+							<strong>Enquiries to:</strong> {contacts}
+						</p>
+	
+						<p class="items"  id="workshop-period">
+							<strong>Date:</strong> {event_period}
+						</p>
+	
+						<p class="items"  id="workshop-mode">
+							<strong>Mode:</strong> {mode}
+						</p>
+					</article>
 				</div>
 			</section>
 		</content>
@@ -70,7 +100,56 @@ import Navbar from '/src/components/Navbar.astro';
 	
 </Layout>
 
+<script>
+	const popupEl = document.querySelector('.popup');
+	document.getElementById('exit').addEventListener('click', () => {
+		//document.querySelector('.popup').style.display = 'none';
+		// document.querySelector('.popup').style.opacity = '0';
+		// document.querySelector('.popup').style.pointerEvents = 'none';
+		// document.querySelector('.popup').style.top = '10%';
+		document.querySelector('.popup').classList.remove('popup-show');
+		document.querySelector('.info-card').classList.remove('info-card-show');
+	})
 
+	document.querySelector('.popup').addEventListener('click', (e) => {
+		// document.querySelector('.popup').style.display = 'none';
+		// document.querySelector('.popup').style.opacity = '0';
+		// document.querySelector('.popup').style.pointerEvents = 'none';
+		// document.querySelector('.popup').style.top = '10%';
+		document.querySelector('.popup').classList.remove('popup-show');
+		document.querySelector('.info-card').classList.remove('info-card-show');
+		e.stopPropagation();
+	})
+
+	document.querySelector('.popup').addEventListener('scroll', (e) => {
+
+		e.stopPropagation();
+	})
+
+	document.querySelector('.info-card').addEventListener('click', (e) => {
+		e.stopPropagation();
+	})
+
+	document.querySelectorAll('.link-card').forEach((e) => {
+		
+		e.addEventListener('click', () => {
+			console.log(e.getAttribute('data-title'));
+			// document.querySelector('.popup').style.top = '0%';
+			// popupEl.style.display = 'flex';
+			// document.querySelector('.popup').style.pointerEvents = 'auto';
+			// document.querySelector('.popup').style.opacity = '1';
+			document.querySelector('.popup').classList.add('popup-show');
+			document.querySelector('.info-card').classList.add('info-card-show');
+			document.querySelector('#workshop-title').innerHTML = e.getAttribute('data-title');
+			document.querySelector('#workshop-description').innerHTML = e.getAttribute('data-description');
+			document.querySelector('#workshop-website').style.opacity = e.getAttribute('data-website');
+			document.querySelector('#workshop-enquiries').style.opacity = e.getAttribute('data-contacts');
+			document.querySelector('#workshop-period').style.opacity = e.getAttribute('data-event_period');
+			document.querySelector('#workshop-mode').style.opacity = e.getAttribute('data-mode');
+		
+		})
+	})
+</script>
 
 <!-- <script>
 	const response = await fetch('http://localhost:1337/api/submissions');
@@ -84,6 +163,32 @@ import Navbar from '/src/components/Navbar.astro';
 </script> -->
 
 <style>
+
+	#details::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Track */
+	#details::-webkit-scrollbar-track {
+	background: #002C3844;
+	border-radius: 10px;
+	}
+
+	/* #details::-webkit-scrollbar-track:hover{
+	background: #ffffff33;
+	} */
+
+	/* Handle */
+	#details::-webkit-scrollbar-thumb {
+	background-color: #002C38;
+	border-radius: 10px;
+	}
+
+	/* Handle on hover */
+	#details::-webkit-scrollbar-thumb:hover {
+	background: #555;
+	}
+
 	main{
 		display: flex;
 		flex-direction: row;
@@ -119,10 +224,23 @@ import Navbar from '/src/components/Navbar.astro';
 		background-color: rgba(0, 0, 0, 0.5);
 		display: flex;
 		z-index: 100;
-		/* padding-top: 30vh; */
-		/* align-items: center; */
+		pointer-events: none;
+		top: 0%;
+		scale: 1;
+		opacity: 0;
+		transition: opacity 0.5s, top 0.5s ease-in-out, scale 0.2s ease-out;
 		justify-content: center;
 	}
+
+	.popup-show {
+		top: 0%;
+		scale: 1;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+
+	
 
 	.info-card{
 		width: 100%;
@@ -130,9 +248,27 @@ import Navbar from '/src/components/Navbar.astro';
 		max-width: 700px;
 		background-color: #FCF7EB;
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		max-height: max-content;
 		border-radius: 1em;
+		top: 100%;
+		scale: 0.8;
+		transition: top 0.5s ease-in-out, scale 0.2s ease-out;
+	}
+
+	#workshop-description{
+		display: flex;
+		/* margin-right: 1em; */
+		padding-right: 1em;
+	}
+
+	
+	.info-card-show {
+		top: 0%;
+		scale: 1;
+		opacity: 1;
+		pointer-events: all;
 	}
 
 	.info-card h1{
@@ -151,6 +287,11 @@ import Navbar from '/src/components/Navbar.astro';
 		font-weight: 100;
 	}
 
+	.details{
+		overflow-y: scroll;
+		height: 100%
+	}
+
 	.anonymity-content-1{
 		box-sizing: border-box;
 		display: flex;
@@ -162,6 +303,16 @@ import Navbar from '/src/components/Navbar.astro';
 		/* padding: 2em; */
 		border-bottom: 1px solid #002C38;
 		/* padding-left: 16em; */
+	}
+
+	.exit{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+		padding: 0.5em;
+
 	}
 
 	.center{
@@ -201,6 +352,19 @@ import Navbar from '/src/components/Navbar.astro';
 		grid-template-columns: 1fr 1fr;
 		padding: 1em;
 		flex-wrap: wrap;
+	}
+
+	.items{
+		display: flex;
+	}
+
+	p strong{
+		/* all: unset; */
+		display: flex;
+		width: max-content;
+		padding: 0px;
+		padding-right: 0.4em;
+		font-size: 1em;
 	}
 
 	.sub-types h3{
@@ -258,6 +422,10 @@ import Navbar from '/src/components/Navbar.astro';
 
 	h2{
 		padding-top: 2em;
+	}
+
+	p{
+		display: inline;
 	}
 
 	.contact-details h4{
@@ -394,6 +562,29 @@ import Navbar from '/src/components/Navbar.astro';
 
 	.thin{
 		font-family: 'S-R';
+	}
+
+	
+	@media screen and (max-width:830px){
+		.popup{
+			padding: 0%;
+			position: fixed;
+			border-radius: 0px;
+			z-index: 10000;
+		}
+
+		.info-card{
+			border-radius: 0px;
+		}
+
+		.selection-grid{
+			display: grid;
+			width: 100%;
+			gap: 1em;
+			grid-template-columns: 1fr;
+			padding: 1em;
+			flex-wrap: wrap;
+		}
 	}
 
 </style>
