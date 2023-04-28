@@ -15,13 +15,13 @@ export async function getStaticPaths() {
 const files = await Astro.glob('/src/data/programme_data/*.json');
   return files.map((file) => {
     const id = encodeURIComponent(file.id)
-	console.log(files)
+	// console.log(files)
     return { params: { id }, props: {file} }
   });
   
 }
 
-const {file: {title, description, contacts, date, event_period, website, mode}} = Astro.props;
+const {file: {title, description, contacts, date, date_widget, event_period, website, mode}} = Astro.props;
 
 
 // export async function getStaticProps({ params }) {
@@ -39,7 +39,7 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 			<section class="programmes-section">
 				<div class='title'>
 					<h1>
-						PROGRAMMES
+						WORKSHOPS
 					</h1>
 				</div>
 	
@@ -50,7 +50,8 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 					title={programme.title} 
 					event_period={programme.event_period} 
 					website={programme.website} 
-					mode={programme.mode}/>)}
+					mode={programme.mode}
+					date_widget={programme.date_widget}/>)}
 				</div>
 
 
@@ -192,6 +193,10 @@ const {file: {title, description, contacts, date, event_period, website, mode}} 
 </script> -->
 
 <style>
+
+	content{
+		border-bottom: 1px solid #002C38;
+	}
 
 	p a{
 		text-decoration: underline !important;

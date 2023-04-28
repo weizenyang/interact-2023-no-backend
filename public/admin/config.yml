@@ -22,8 +22,8 @@ collections:
       - {label: "Details", name: "details", widget: "markdown"}
       - {label: "Link", name: "link", widget: "string", required: false}
       
-  - name: "programmes" # Used in routes, e.g., /admin/collections/blog
-    label: "Programmes" # Used in the UI
+  - name: "workshops" # Used in routes, e.g., /admin/collections/blog
+    label: "Workshops" # Used in the UI
     folder: "/src/data/programme_data" # The path to the folder where the documents are stored
     extension: json
     format: json
@@ -34,7 +34,7 @@ collections:
       - {label: "ID (set to 0)", name: "id", widget: "string", default: 0}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Title", name: "title", widget: "string"}
-      # - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Date", name: "date_widget", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Website", name: "website", widget: "string", required: false}
       - {label: "Contacts", name: "contacts", widget: "markdown"}

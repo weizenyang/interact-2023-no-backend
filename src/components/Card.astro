@@ -24,6 +24,16 @@ const { href, title, body, mode, event_period, website } = Astro.props;
 const description = converter.makeHtml(Astro.props.description)
 // const website = converter.makeHtml(Astro.props.website)
 const contacts = converter.makeHtml(Astro.props.contacts)
+const date_widget = Astro.props.date_widget ?? null;
+const dateWidgetPresent = date_widget != null;
+// if(date_widget == null){
+// 	dateWidgetPresent = false;
+// 	console.log(date_widget + " Null Detected")
+// 	console.log(dateWidgetPresent)
+// } else {
+// 	console.log(date_widget.keys)
+// 	console.log(dateWidgetPresent)
+// }
 
 ---
 
@@ -41,7 +51,7 @@ data-mode={mode}>
 		</h3>
 		<div class="pill">
 			<p>
-				{event_period}
+				{dateWidgetPresent ? Astro.props.event_period : event_period}
 			</p>
 		</div>
 
