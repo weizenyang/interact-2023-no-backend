@@ -1,0 +1,11 @@
+{
+  "mode": "Hybrid mode",
+  "event_period": "Full day, Monday 28th or Tuesday 29th August (To be confirmed)",
+  "layout": "blog",
+  "date": "2023-04-23T14:48:36.046Z",
+  "contacts": "Tilo Mentler, [mentler@hochschule-trier.de](mailto:mentler@hochschule-trier.de),",
+  "title": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
+  "website": "https://www.hochschule-trier.de/en/computer-science/tilo-mentler/hci4safety",
+  "id": "0",
+  "description": "In many areas, successfully deploying interfaces with high usability and user experience (UX) is crucial for people’s safety and well- being. These include, for example, control rooms for emergency services and energy suppliers, aircraft cockpits, ship bridges, surgery rooms, and intensive care units. Information and cooperation needs are not limited to the users’ immediate environment but often involve numerous actors in other places (regulators, field workers, shift supervisors, remote assis- tance, etc.). The specific aspects of Human-Computer Interaction (HCI) in such spaces of control are the subject of this workshop. This includes understanding and modeling routine and emergency operations, alarm management, human-machine task allocation and automation concepts, interaction design beyond graphical user interfaces, laboratory and field evaluations, and training approaches. In addition to addressing domain-specific issues (e.g., in healthcare, in aviation), cross-domain challenges and solutions will be identified and discussed (e.g., more flexible and cooperative ways of working with the aid of wearable and mobile devices). This workshop is organized by the IFIP WG 13.5 on Human Error, Resilience, Reliability and Safety in System Development."
+}
