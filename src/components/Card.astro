@@ -8,7 +8,7 @@ const converter = new showdown.Converter();
 // const htmlContent = converter.makeHtml(markdownContent);
 
 export interface Props {
-	title: string;
+	title: MarkdownContent;
 	body: string;
 	href: string;
 	description: MarkdownContent;
@@ -21,6 +21,7 @@ export interface Props {
 
 
 const { href, title, body, mode, event_period, website } = Astro.props;
+// const title = converter.makeHtml(Astro.props.title)
 const description = converter.makeHtml(Astro.props.description)
 // const website = converter.makeHtml(Astro.props.website)
 const contacts = converter.makeHtml(Astro.props.contacts)
@@ -45,10 +46,11 @@ data-date={event_period}
 data-website={website} 
 data-mode={mode}>
 	<a class="inner-div-gradient" href={href}>
-		<h3 class="card-title">
-			{title}
+		<div class="title-section">
+			<h3 class="card-title" set:html={title}></h3>
 			<span>&rarr;</span>
-		</h3>
+		</div>
+
 		<div class="pill">
 			<p>
 				{dateWidgetPresent ? date_widget : event_period}
@@ -123,7 +125,8 @@ data-mode={mode}>
 	p {
 		margin-top: 0em;
 		margin-bottom: 0;
-		
+		margin: 0%;
+		display: flex;
 	}
 
 	h2 span {
@@ -150,28 +153,34 @@ data-mode={mode}>
 		transform: translateX(2px);
 	}
 
-	p{
-		display: flex;
-	}
+
 
 	.card-title{
 		display: flex;
-		padding-right: 0.5em;
 		justify-content: space-between;
+		display: inline-block;
 	}
 
-	.card-title span{
+	/* .card-title span{
 		padding-left: 1em;
+	} */
+
+	.title-section{
+		display: flex;
 	}
 
 	.inner-div-gradient span{
-		padding-left: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-right: 0.5em;
+		justify-items: center;
 		transform: translateX(0px);
 		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
 	.inner-div-gradient:hover span{
-		padding-left: 1em;
+		padding-right: 0.5em;
 		transform: translateX(10px);
 	}
 
