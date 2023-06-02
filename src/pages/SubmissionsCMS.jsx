@@ -120,7 +120,7 @@ const Content = ({ section }) => {
 	var desc = type.submissions_data[section].description;
 	var detail = type.submissions_data[section].details;
 	var link = type.submissions_data[section].link;
-	var fpItem = title.includes("Full Papers")
+	var fpItem = title.includes("Doctoral Consortium")
 	var buttonClassName;
 	var anchorTagClassName;
 
@@ -210,6 +210,43 @@ const Content = ({ section }) => {
 									<img className="external" src="/download.svg" alt="External Page" />
 								</a>
 
+								{!fpItem && (
+
+									<a className="file" href="/INTERACT2023-Contract_Book_Contributor_Consent_to_Publish_IFIP_SIP.pdf" target="_blank">
+
+										<div className="info">
+											<img src="/pdf.svg" alt="External Page" />
+											<p>
+												Copyright Form [.pdf]
+											</p>
+										</div>
+
+										<img className="external" src="/download.svg" alt="External Page" />
+									</a>
+
+								)}
+
+								{!fpItem && (
+
+									<a className="file" href="/INTERACT2023-broadcasting authorisation.pdf" target="_blank">
+
+										<div className="info">
+											<img src="/pdf.svg" alt="External Page" />
+											<p>
+												Photography, Video and Broadcasting Permission [.pdf]
+											</p>
+										</div>
+
+										<img className="external" src="/download.svg" alt="External Page" />
+									</a>
+
+								)}
+
+
+
+
+
+
 							</div>
 						</div>
 					</div>
@@ -220,7 +257,9 @@ const Content = ({ section }) => {
 
 				<div className="bottom">
 					<div className="details">
-					{fpItem && (
+
+
+						{/* {!fpItem && (
 					<div>
 					<a className="inline-file" href="/INTERACT2023-Contract_Book_Contributor_Consent_to_Publish_IFIP_SIP.pdf" target="_blank">
 
@@ -246,9 +285,7 @@ const Content = ({ section }) => {
 
 								<img className="external" src="/download.svg" alt="External Page" />
 							</a>
-							</div>)}
-
-							
+							</div>)} */}
 
 						<Markdown>{detail}</Markdown>
 					</div>

@@ -524,10 +524,11 @@
 
 	.right{
 		max-width: 50%;
-		padding: 1em;
+		padding: 0.5em;
 		background-color: #002C38;
-		border-radius: 50px;
+		border-radius: 30px;
 		align-self: center;
+		
 	}
 	.right *{
 		margin-bottom: 1em;
@@ -549,11 +550,12 @@
 		padding-left: 1em;
 		padding-top: 0em;
 		margin: 0%;
+		font-size: 1em;
 		color: #FCF7EB;
 	}
 
 	.file{
-		padding: 0.7em 1em;
+		padding: 0.5em 0.7em;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -584,11 +586,11 @@
 	}
 
 	.file:first-child{
-		border-radius: 30px 30px 5px 5px;
+		border-radius: 20px 20px 5px 5px;
 	}
 
 	.file:last-child{
-		border-radius: 5px 5px 30px 30px ;
+		border-radius: 5px 5px 20px 20px ;
 	}
 
 	.inline-file:hover, .file:hover{
@@ -599,13 +601,13 @@
 	.inline-file p, .file p{
 		margin: 0%;
 		margin-left: 1em;
+		font-size: 1em;
 		padding-right: 2em;
 		line-height: 1.3em;
 	}
 
-
 	.inline-file img, .file img{
-		height: 3em;
+		height: 35px;
 		margin: 0%;
 		background-blend-mode: difference;
 		/* mix-blend-mode: exclusion; */
@@ -643,6 +645,10 @@
 		margin: 0%;
 	}
 
+	.info p{
+		font-size: 0.8em;
+	}
+
 	a{
 		text-decoration: underline;
 	}
@@ -657,23 +663,9 @@
 
 	
 	@media screen and (max-width:1200px){
-
-		/* .flex{
-			flex-direction: flex;
+		.info p{
+			font-size: 1em;
 		}
-
-		.left{
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-			padding: 0%;
-		}
-
-		.right{
-			min-width: 50%;
-			height: max-content;
-			font-size: 0.8em;
-		} */
 
 		.flex{
 			height: 100%;
@@ -697,12 +689,14 @@
 			height: max-content;
 			font-size: 0.8em;
 			color: #002C38;
-			background-color: var(--color-bg);
+			/* background-color: var(--color-bg); */
 			border: 2px solid #002C38;
 			margin-top: 2em;
 			align-self: stretch;
 			
 		}
+
+
 
 
 
@@ -724,11 +718,11 @@
 		}
 
 		.file:first-child{
-			border-radius: 30px 30px 5px 5px;
+			border-radius: 20px 20px 5px 5px;
 		}
 	
 		.file:last-child{
-			border-radius: 5px 5px 30px 30px ;
+			border-radius: 5px 5px 20px 20px ;
 		}
 	
 		.file:hover{
@@ -736,10 +730,6 @@
 			cursor: pointer;
 		}
 	
-
-		.right h2{
-			color: #002C38;
-		}
 
 		.top{
 			padding: 2em;
@@ -787,19 +777,7 @@
 		
 		
 
-		.right{
-			display: flex;
-			flex-direction: column;
-			max-width: 100%;
-			height: max-content;
-			font-size: 0.8em;
-			color: #002C38;
-			background-color: var(--color-bg);
-			border: 2px solid #002C38;
-			margin-top: 2em;
-			align-self: stretch;
-			
-		}
+
 		.downloads{
 			flex-direction: column;
 		}
@@ -811,11 +789,11 @@
 		}
 
 		.file:first-child{
-			border-radius: 30px 30px 5px 5px;
+			border-radius: 20px 20px 5px 5px;
 		}
 	
 		.file:last-child{
-			border-radius: 5px 5px 30px 30px ;
+			border-radius: 5px 5px 20px 20px ;
 		}
 	
 		.file:hover{
@@ -824,15 +802,13 @@
 		}
 	
 
-		.right h2{
-			color: #002C38;
-		}
 
 		.top{
 			padding: 2em;
 		}
 
 		.right h2{
+			text-align: center;
 			font-size: 1.5em;
 		}
 

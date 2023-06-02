@@ -89,9 +89,8 @@ import Banner from '../components/Banner.astro';
 				<h1>
 					LATEST UPDATES
 				</h1>
-
-				<p class="bold" style="color: hsl(10, 21%, 95%); opacity: 0.7">
-					New Submission Deadlines
+				<p class="bold" style="color: hsl(10, 21%, 95%);">
+					Delay in opening registration
 				</p>
 				<br>
 				<p class="date">
@@ -99,16 +98,28 @@ import Banner from '../components/Banner.astro';
 				</p>
 				<br>
 				<p>
-					Due to a number of requests, we are extending the deadline for the next round of submissions (Short Papers etc) for INTERACT 2023 from April 19 to April 26.  
-					<br><br>
-					In addition, Posters can have four pages of text for the extended abstract PLUS one page for references.
-					<br><br>
-					Check out <a href="/cfp">Call For Papers</a> for more updates.
-
+					Apologies for the delay in opening registration, this will be available early next week.
 				</p>
 				
 				<br><br>
 				<div id="prevNews">
+					<p class="bold" style="color: hsl(10, 21%, 95%);">
+						New Submission Deadlines
+					</p>
+					<br>
+					<p class="date">
+						16-April-2023
+					</p>
+					<br>
+					<p>
+						Due to a number of requests, we are extending the deadline for the next round of submissions (Short Papers etc) for INTERACT 2023 from April 19 to April 26.  
+						<br><br>
+						In addition, Posters can have four pages of text for the extended abstract PLUS one page for references.
+						<br><br>
+						Check out <a href="/cfp">Call For Papers</a> for more updates.
+	
+					</p>
+					<br><br>
 					<p class="bold">
 						Full Papers and Workshops Submission Deadlines
 					</p>
@@ -335,45 +346,42 @@ import Banner from '../components/Banner.astro';
 				</h1>
 
 				<p>
-					The list of programmes hosted during the conference will be released nearing the conference day in 2023. 
+					The detailed programme will be released nearer the
+					conference.
 				</p>
 
 				
-				<div class='timeline'>
-					<div class='line'></div>
-					<div class='timeline-detail p1'>
+				<div class="timeline">
+					<div class="line"></div>
+					<div class="timeline-detail p1">
 						<h3>28 August</h3>
-						<div class='timeline-marker '></div>
-						<h3>Workshops & Courses</h3>
+						<div class="timeline-marker"></div>
+						<h3>BCS HCI Conference</h3>
 					</div>
 
-					<div class='timeline-detail p2'>
+					<div class="timeline-detail p2">
 						<h3>29 August</h3>
-						<div class='timeline-marker '></div>
-						<h3>Workshops & Courses</h3>
+						<div class="timeline-marker"></div>
+						<h3>BCS HCI Conference</h3>
 					</div>
-					
-					<div class='timeline-detail p3'>
+
+					<div class="timeline-detail p3">
 						<h3>30 August</h3>
-						<div class='timeline-marker'></div>
-						<h3>Main Conference sessions <br>
-							Drinks reception</h3>
+						<div class="timeline-marker"></div>
+						<h3>INTERACT Conference</h3>
 					</div>
-						
 
-					<div class='timeline-detail p4'>
+					<div class="timeline-detail p4">
 						<h3>31 August</h3>
-						<div class='timeline-marker'></div>
-						<h3>Main conference sessions <br>
-							Conference dinner</h3>
+						<div class="timeline-marker"></div>
+						<h3>INTERACT Conference</h3>
 					</div>
 
-					<div class='timeline-detail p5'>
+					<div class="timeline-detail p5">
 						<h3>1 September</h3>
-						<div class='timeline-marker'></div>
-						<h3>Main conference sessions</h3>
+						<div class="timeline-marker"></div>
+						<h3>INTERACT Conference</h3>
 					</div>
-
 				</div>
 				<button class='read-more less-emphasis'>
 					Coming Soon
@@ -474,7 +482,8 @@ if(window.location.hash != ""){
 		margin: 0%;
 		font-family: 'S-B';
 		font-size: 1.5em;
-		opacity: 1;
+		opacity: 0.7;
+		color: var(--color-bg);
 	}
 
 	.home-content-updates p {
@@ -636,11 +645,15 @@ if(window.location.hash != ""){
 
 	.home-content-updates .date{
 		font-size: 0.8em;
+		opacity: 0.8;
 	}
 
 	.home-content-updates *{
+		opacity: 1;
+	}
+
+	#prevNews{
 		opacity: 0.7;
-		
 	}
 
 	
