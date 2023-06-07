@@ -23,62 +23,77 @@ import Prefooter from '../components/Pre-footer.astro';
 							REGISTRATION
 						</h1>
 						
-						<div class='home-list'>
-
-							<div class='list-line'></div>
-		
-							<div class='home-list-items'>
-								<h3><a href="#brian-shackel">
-									Pre-requisites
-								</a>
-									
-								</h3>
-		
-							</div>
-						</div>
+					<h3>1. Check Prices below</h3>
 						
-					<p>Prices for</p>
-
 						<div class='home-list'>
 
 							<div class='list-line'></div>
 		
 							<div class='home-list-items'>
-								<h3><a href="#brian-shackel">
+								
+								
+								<div class='home-list-items'>
+								<p><a href="#on-site">
 									On-Site Participation
 								</a>
 									
-								</h3>
+								</p>
 		
-								<h3><a href="#student">
+								<p><a href="#remote">
 									Remote Participation
 								</a>
 									
-								</h3>
+								</p>
 		
-								<h3><a href="#interaction">
+								<p><a href="#workshops">
 									Workshops
 								</a>
 									
-								</h3>
+								</p>
 								
-								<h3><a href="#interaction">
+								<p><a href="#courses">
 									Courses
 								</a>
 									
-								</h3>
-		
+								</p>
+								
+								<p><a href="#doctoral">
+									Doctoral Consortium
+								</a>
+									
+								</p>
+								</div>
+								
+								</div>
+								
+								
 							</div>
-						</div>
+					
+					<br><br>
+					
+<h3>2. Start your registration process here:</h3>
+								<div>
+								<a href="https://store.york.ac.uk/product-catalogue/computer-science/interact-2023">
+			<button>
+						Begin your registration >
+					</button>
+						<a/>
+			<p/>or visit <br><a class="underline" href="https://store.york.ac.uk/product-catalogue/computer-science/interact-2023">https://store.york.ac.uk/product-catalogue/computer-science/interact-2023<a/><p/>
+			<br><br>
+			<h3>3. If you faced any issues:</h3>
+			<p>Contact us from the <a class="underline" href="/contact">Contact</a> page or email us at <a class="underline" href="mailto:generalchairs@interact2023.org">
+			generalchairs@interact2023.org
+			</a>	</p>
+		
 				
 			</section>
 
-			<section class='registration-content-2' id="brian-shackel">
-				<h2>Pre-Requisites</h2>
+		<section class='registration-content-2'>
+				<h1 class="title">NOTES</h1>
 				
 	
 
-				<div class='home-list'>
+				<div class='home-list-items'>
 						<p>
 							<strong>Member</strong>
 							
@@ -98,17 +113,11 @@ import Prefooter from '../components/Pre-footer.astro';
 					</p>
 					
 					<br>
-			<a href="https://store.york.ac.uk/product-catalogue/computer-science/interact-2023">
-			<button>
-						Begin your registration here!
-					</button>
-						<a/>
-			<p/>or visit <a class="underline" href="https://store.york.ac.uk/product-catalogue/computer-science/interact-2023">https://store.york.ac.uk/product-catalogue/computer-science/interact-2023<a/><p/>
 				</div>
 		
 			</section>
 
-			<section class='registration-content-2' id="accessibility">
+			<section class='registration-content-2' id="on-site">
 				<h2>
 				On-Site Participation
 				</h2>
@@ -168,7 +177,7 @@ import Prefooter from '../components/Pre-footer.astro';
 			</section>
 			
 
-	<section class='registration-content-2' id="accessibility">
+	<section class='registration-content-2' id="remote">
 				<h2>
 				Remote Participation
 				</h2>
@@ -228,7 +237,7 @@ import Prefooter from '../components/Pre-footer.astro';
 
 			</section>
 			
-			<section class='registration-content-2' id="accessibility">
+			<section class='registration-content-2' id="workshops">
 				<h2 class="no-margin no-padding">
 				Workshops
 				</h2>
@@ -285,7 +294,7 @@ import Prefooter from '../components/Pre-footer.astro';
 			</section>
 			
 			
-			<section class='registration-content-2' id="accessibility">
+			<section class='registration-content-2'>
 				<h2 class="no-margin no-padding">
 				Workshops
 				</h2>
@@ -341,7 +350,7 @@ import Prefooter from '../components/Pre-footer.astro';
 
 			</section>
 			
-			<section class='registration-content-2' id="accessibility">
+			<section class='registration-content-2' id="courses">
 				<h2>
 				Courses (Full Day)
 				</h2>
@@ -395,8 +404,8 @@ import Prefooter from '../components/Pre-footer.astro';
 
 			</section>
 			
-			<section class='registration-content-2' id="accessibility">
-				<h2 class="no-margin no-padding">
+			<section class='registration-content-2'>
+				<h2>
 				Courses (Half Day)
 				</h2>
 			
@@ -450,12 +459,10 @@ import Prefooter from '../components/Pre-footer.astro';
 
 			</section>
 			
-			<section class='registration-content-2' id="accessibility">
-				<h2 class="no-margin no-padding">
-				Doctoral Consortium
+			<section class='registration-content-2' id="doctoral">
+				<h2>
+					Doctoral Consortium
 				</h2>
-			
-				
 				
 				
 				Prices are shown in Pounds (£)
@@ -533,7 +540,7 @@ import Prefooter from '../components/Pre-footer.astro';
 	
 	.item{
 		width: 40%;
-		
+			font-size: 1em;
 	}
 	
 	.price{
@@ -581,7 +588,7 @@ import Prefooter from '../components/Pre-footer.astro';
 
 	.home-list{
 display: flex;
-flex-direction: column;
+flex-direction: row;
 		height: 50%;
 		
 		margin: auto;
@@ -659,18 +666,15 @@ flex-direction: column;
 		align-items: center;
 	}
 
-	.registration-content-3{
-
-		box-sizing: border-box;
-		border-bottom: 1px solid #002C38;
-		height: 100vh;
+	.registration-content-3, .registration-content-4{
 		display: flex;
-		padding-left: 16em;
+		flex-direction: column;
 		padding: 4em;
-
+		border-bottom: 1px solid #002C38;
+		/* padding-left: 16em; */
 	}
-
-	.registration-content-2, .registration-content-3, .registration-content-4{
+	
+	.registration-content-1, .registration-content-2 {
 		display: flex;
 		flex-direction: column;
 		padding: 4em;
@@ -889,6 +893,21 @@ flex-direction: column;
 		margin-bottom: 0.5em;
 
 	}
+	
+	@media only screen and (max-width: 1200px){
+.registration-content-1, .registration-content-2, .registration-content-3{
+			padding-top: 3em;
+			padding-bottom: 3em;
+			padding: 1em;
+		
+		}
+		
+		.item{
+	width: 15%
+		}
+	}
+	
+
 
 </style>
 
