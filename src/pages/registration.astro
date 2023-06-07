@@ -276,7 +276,7 @@ import Prefooter from '../components/Pre-footer.astro';
 				
 			<div class="table">
 			
-			<div class="table-items">
+			<div class="table-items border-bottom">
 			
 			<h3 class="item"></h3>
 			<p class="price">Early Bird <br> Registration (until 14/6)</p>
@@ -286,7 +286,7 @@ import Prefooter from '../components/Pre-footer.astro';
 			
 			<div class="table-items">
 			
-			<h3 class="item">Member</h3>
+		<h3 class="item">Member</h3>
 			<p class="price">535</p>
 			<p class="price">535</p>
 			<p class="price">535</p>
@@ -372,14 +372,26 @@ import Prefooter from '../components/Pre-footer.astro';
 		display: flex;
 		justify-items: space-evenly;
 		justify-content: space-around;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		padding-top: 0px;
 	}
 	
 	.item{
 		width: 40%;
+		
 	}
 	
 	.price{
 		width: 20%;
+		padding: 0.5em;
+		border-left: 1px solid #002C385;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	.border-bottom{
+		border-bottom: 1px solid #002C38cc;
 	}
 	.registration-content-1{
 		box-sizing: border-box;
