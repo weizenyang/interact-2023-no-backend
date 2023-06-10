@@ -28,9 +28,6 @@ function getSubFolder() {
         getFileNames()
 
     })
-
-    
-    
 }
 
 function getFileNames(){
