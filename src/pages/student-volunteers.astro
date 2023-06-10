@@ -155,6 +155,7 @@ import Prefooter from "../components/Pre-footer.astro";
 					Applications are open until <b>03/07/2023 (23:59, Anywhere on Earth)</b> and we will aim to be in
 					touch by 14/07/2023.
 				</p>
+				<br>
 				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeiR0tHRBTaTT2urpprC4Y7obfKeXKlVJIa0euaeHPlte8Lyg/viewform">
 					<button>
 						Apply to be a SV >
@@ -516,23 +517,34 @@ import Prefooter from "../components/Pre-footer.astro";
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
 	}
+
+	@media (max-width: 800px){
+		.sv-content-1 {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			padding: 1em;
+			border-bottom: 1px solid #002c38;
+			/* padding-left: 16em; */
+		}
+	}
 </style>
 
 <script>
-	setInterval(function () {
-		var containerTop = document
-			.querySelector(".sv-content-1")
-			.getBoundingClientRect().top;
-		console.log(window.innerWidth);
-		if (containerTop <= 0 && window.innerWidth < 830) {
-			console.log("this should be displayed");
-			document.querySelector(".horizontal-list").style.display = "flex";
-		}
-		if (containerTop > 0 || window.innerWidth > 830) {
-			console.log("this should be hidden");
-			document.querySelector(".horizontal-list").style.display = "none";
-		}
-	}, 1);
+	// setInterval(function () {
+	// 	var containerTop = document
+	// 		.querySelector(".sv-content-1")
+	// 		.getBoundingClientRect().top;
+	// 	console.log(window.innerWidth);
+	// 	if (containerTop <= 0 && window.innerWidth < 830) {
+	// 		console.log("this should be displayed");
+	// 		document.querySelector(".horizontal-list").style.display = "flex";
+	// 	}
+	// 	if (containerTop > 0 || window.innerWidth > 830) {
+	// 		console.log("this should be hidden");
+	// 		document.querySelector(".horizontal-list").style.display = "none";
+	// 	}
+	// }, 1);
 
 	// gsap.fromTo(".horizontal-list", {
 	// 	y: -100,

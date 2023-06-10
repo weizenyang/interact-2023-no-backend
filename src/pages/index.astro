@@ -8,21 +8,22 @@ import Banner from '../components/Banner.astro';
 ---
 
 <Layout title='Interact 2023'>
-	
+	<Banner/>
 	<main>
+		<!-- <section class='banner'>
+			<a href="/student-volunteers">
+				<p>
+					<span>Apply to be an Interact 2023 Student Volunteer</span> <b>></b>
+				</p>
+			</a>
+		</section> -->
 		<Navbar/>
 		
 		<content>
 
-			<Banner/>
+			
 
-			<!-- <section class='banner'>
-				<a href="#updates-section">
-					<p>
-						UPDATES: Extension of Full Papers and Workshops Submission Deadlines
-					</p>
-				</a>
-			</section> -->
+			
 			
 		
 			<section class='home-content-1'>
@@ -469,6 +470,39 @@ if(window.location.hash != ""){
 		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
 	}
 
+	.banner{
+		background-color: #002C38;
+		color: #FCF7EB;
+		padding: 0.5em 2em;
+		text-decoration: none;
+	}
+
+	.banner a{
+		text-decoration: none;
+	}
+
+	.banner a:hover{
+		text-decoration: none;
+	}
+
+	.banner b{
+		margin-left: 0%;
+		transition: all 0.3s;
+		text-decoration: none;
+	}
+
+	.banner:hover b{
+		margin-left: 1em;
+	}
+
+	.banner:hover span{
+		text-decoration: underline;
+	}
+
+	.banner p{
+		margin: 0%;
+		text-decoration: none;
+	}
 
 
 	.home-content-1{
