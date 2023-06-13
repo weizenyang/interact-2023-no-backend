@@ -52,8 +52,8 @@ console.log(hotelData)
 						{e.travelInfo}
 					</p>
 
-					<p>
-						{e.description}
+					<p set:html={e.description}>
+						
 					</p>
 					
 					{e.link && <a href={e.link} target="_blank">

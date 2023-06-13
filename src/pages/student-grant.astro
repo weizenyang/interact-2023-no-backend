@@ -1,0 +1,532 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Prefooter from "../components/Pre-footer.astro";
+---
+
+<Layout title="Interact 2023">
+	<main>
+		<Navbar />
+
+		<content>
+			<section class="sv-content-1">
+				<div class="image-bar">
+					<img src="interact-2023.webp" alt="interact-logo">
+					<img src="IFIP-TC13.png" alt="interact-logo">
+				</div>
+				<h2>Grants for Masters and PhD students and early-stage
+					researchers from developing countries to attend
+					INTERACT 2023<br/><br/>
+					York, UK (28 August - 1 September 2023)</h2>
+				</section>
+
+				<section class="sv-content-1">
+					<h2>Overview:</h2>
+					<p>
+						The 19th edition of the INTERACT Conference on Human Computer Interaction,
+	organised by IFIP Technical Committee 13 (TC13, Human Computer Interaction),
+	will take place in York, UK, from August 28 to September 1, 2023.
+	<br/><br/>
+	TC13 and the IFIP Digital Equity Committee will partially support Masters and PhD
+	students and early-stage researchers from developing countries to attend the
+	conference (either in person or remotely) if they are (co)authoring and presenting a
+	paper.
+					</p>
+
+				<h2>Grant eligibility:</h2>
+
+				<ul>
+					<li>Be registered as a Masters or PhD student or be an early stage researcher
+						(early-stage researchers are individuals currently involved in research who
+						received their PhD after 01 September 2020 and who do have not a
+						permanent contract with a company)
+					</li>
+					<li>Be from and currently live and study/research in a developing country as per
+						this list.
+					</li>
+					<li>(co)author and present a contribution at INTERACT 2023
+					</li>
+				</ul>
+
+				<h2>What the Grant will cover:</h2>
+				<ul>
+					<li>Free student registration for the conference and participation in workshops
+						and/or tutorials at no cost</li>
+					<li>The grantees attending INTERACT 2023 in person will be reimbursed for the
+						trip expenses to York to a maximum of €750 (depending on distance to be
+						travelled, please check with the Grants Committee), and accommodation to a
+						maximum of €400</li>
+					<li>No other expenses will be reimbursed</li>
+				</ul>
+
+				<h2>Application Procedure:</h2>
+				<p>
+					Applications should be sent to the Grants Committee (<a href="mailto:grant@ifip-tc13.org" class="underline">grant@ifip-tc13.org</a>) by July 1, 2023.
+				</p>
+				<p>
+					<b>They must include:</b>				
+				</p>
+				<ul>
+					<li>A one-page CV of the candidate</li>
+					<li>A copy of the acceptance of a contribution to INTERACT 2023 (co)authored
+						by the candidate</li>
+					<li>A letter of support from the doctoral supervisor (for students) or the head of
+						the research group (for early-stage researchers), indicating whether or not
+						the candidate will receive any other funds to attend the conference and the
+						amount (note that these grants are compatible with partial support from other
+						institutions). This letter must specify the type of contract/scholarship that links
+						the student/early-stage researcher with the institution, and must be sent
+						directly by the signatory to the IFIP TC13 Grants Committee (grant@ifip-
+						tc13.org)</li>
+				</ul>
+				<h2>
+					Important dates:				
+				</h2>
+				<ul>
+					<li>Applications must be submitted by July 1, 2023.</li>
+					<li>Notification of results: July 8, 2023</li>
+				</ul>
+				<h2>
+					Selection Criteria:				
+				</h2>
+				<p>
+					The travel grants will be allocated to Masters and PhD students and early-stage
+					researchers, with accepted contributions, coming from and living in developing
+					countries, on a needs basis. In similar situations, priority will be given to women,
+					people with disabilities and minority groups.
+				</p>
+				<h2>
+					Payment of Grants			
+				</h2>
+				<p>
+					Due to administrative restrictions, all grants will be paid after the conference in
+York by bank transfer. Grantees will need to present receipts for travel and
+lodging. Grantees will be required to provide an account number valid for
+international bank transfer. No cash payments will be made. Therefore, grantees will
+be responsible for arranging and paying their full costs of the travel to and
+accommodation in York in advance.
+<br/><br/>
+If you have any queries, please contact the Grants Committee (<a href="mailto:grant@ifip-tc13.org" class="underline">grant@ifip-tc13.org</a>).
+				</p>
+
+				
+
+				
+			</section>
+		</content>
+	</main>
+</Layout>
+
+<Footer />
+
+<style>
+	:root {
+		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+
+	main {
+		display: flex;
+		flex-direction: row;
+		overscroll-behavior: none;
+		/* overflow-y: scroll */
+		/* height: 300vh;
+		padding-left: 14em; */
+		/* margin-left: 14em; */
+		/* position: absolute; */
+	}
+
+	label {
+		font-family: "AH-B";
+	}
+
+	content {
+		width: 100%;
+	}
+
+	.image-bar{
+		background-color: #fff;
+		border-radius: 15px;
+		padding: 1em;
+		width: auto;
+		display: flex;
+		
+	}
+
+	.image-bar img{
+		padding: 1em;
+		width: 250px;
+		height: auto;
+		margin: auto;
+	}
+
+	.sv-content-1 {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		max-width: 1200px;
+		/* width: 100%; */
+		/* justify-content: space-between; */
+		/* height: 100vh; */
+		/* width: 100%; */
+		padding: 3em;
+		border-bottom: 1px solid #002c38;
+		/* padding-left: 16em; */
+	}
+
+	/* FOR LIST */
+
+	.list-line {
+		margin-right: 1.2em;
+		border-radius: 50px;
+		width: 5px;
+		background-color: #002c38;
+	}
+
+	.horizontal-list {
+		display: none;
+	}
+
+	.home-list {
+		display: flex;
+		height: 50%;
+
+		margin: auto;
+		margin-left: 0%;
+	}
+
+	.home-list-items {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.home-list-items h3:first-child {
+		margin-top: 0%;
+	}
+
+	.home-list-items h3:last-child {
+		margin-bottom: 0%;
+	}
+
+	.center {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.button-padding h2 {
+		padding: 0.1em 1em;
+		border-radius: 50px;
+	}
+
+	.center * {
+		margin: auto;
+	}
+
+	.sub-types {
+		background-color: #002c38;
+		color: #fcf7eb;
+		border-radius: 30px;
+		padding: 0.5em 0em 0.5em 0em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		display: flex;
+		flex-direction: column;
+		/* width: max-content; */
+		/* height: 100%; */
+		/* width: 100%; */
+	}
+
+	.selection {
+		padding: 0.5em;
+		display: flex;
+		/* flex-wrap: wrap; */
+	}
+
+	.sub-types h3 {
+		margin: 0px;
+		padding: 0.2em;
+		padding-left: 1em;
+		padding-bottom: 0.5em;
+		font-family: "AH-B";
+	}
+
+	.sub-details {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 1em;
+	}
+
+	.submissions {
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sv-content-3 {
+		box-sizing: border-box;
+		border-bottom: 1px solid #002c38;
+		height: 100vh;
+		display: flex;
+		padding-left: 16em;
+		padding: 4em;
+	}
+
+	.sv-content-2,
+	.sv-content-3,
+	.sv-content-4 {
+		display: flex;
+		flex-direction: column;
+		padding: 4em;
+		border-bottom: 1px solid #002c38;
+		/* padding-left: 16em; */
+	}
+
+	.sv-content-2{
+		padding-top: 0em;
+	}
+
+	.sv-content-2 h1,
+	.sv-content-3 h1,
+	.sv-content-4 h1 {
+		/* padding-top: 1em; */
+		padding-bottom: 1em;
+		margin: 0%;
+		font-family: "S-B";
+		font-size: 2.5em;
+	}
+
+
+	.input-field {
+		padding-top: 1em;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.input-field input,
+	.input-field textarea {
+		all: unset;
+		padding: 0.5em;
+		border-radius: 0.5em;
+		border: 2px solid #002c38;
+		font-family: sans-serif;
+	}
+
+	.input-field label {
+		padding-bottom: 0.2em;
+	}
+
+	h2 {
+		padding-top: 2em;
+	}
+
+	.contact-details h4 {
+		margin: 0%;
+		font-family: "AH-B";
+	}
+
+	.contact-details p {
+		margin-top: 0%;
+	}
+
+	.juries-details {
+		display: flex;
+	}
+
+	.juries-section {
+		display: flex;
+		display: block;
+		align-content: space-between;
+		padding-bottom: 4em;
+	}
+
+	.juries-section:last-child {
+		display: flex;
+		display: block;
+		align-content: space-between;
+		padding-bottom: 0%;
+	}
+
+	.text-details {
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	.nav-container {
+		width: 14em;
+	}
+
+	.img-mask {
+		max-height: 450px;
+		overflow: hidden;
+	}
+
+	.rch {
+		width: 100%;
+		/* max-height: 473px; */
+		object-fit: cover;
+	}
+
+	.stretch {
+		box-sizing: border-box;
+		display: flex;
+		width: 100%;
+		/* height: 100%; */
+	}
+
+	.pill {
+		font-family: "AH-B";
+		font-size: 1em;
+		margin: 0px;
+		display: flex;
+		padding: 0.2em 0.5em 0.2em 0.5em;
+		background-color: #002c38;
+		color: #fcf7eb;
+		border-radius: 50px;
+		align-items: center;
+		width: fit-content;
+	}
+
+	.pill img {
+		margin: 0%;
+		padding-right: 0.5em;
+		width: 1em;
+		height: 1em;
+	}
+
+	.location-detail {
+		align-items: flex-end;
+		margin-top: auto;
+		margin-bottom: 0%;
+		margin-left: 2em;
+		white-space: nowrap;
+		width: max-content;
+	}
+
+	.title {
+		font-family: "S-B";
+		font-size: 2.5em;
+		padding-bottom: 1em;
+		/* height: 50%; */
+		margin: 0%;
+
+		overflow: hidden;
+		/* width: 200%; */
+	}
+
+	.title h3 {
+		font-family: "S-B";
+		font-size: 1.2em;
+		padding-bottom: 0.2em;
+		/* height: 50%; */
+		margin: 0%;
+	}
+
+	.sv-content-5 h1 {
+		padding-top: 1em;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0%;
+		font-family: "S-B";
+		font-size: 2.5em;
+	}
+
+	.sv-content-2 h3 {
+		margin: 0%;
+		padding-top: 1em;
+		font-family: "AH-B";
+
+		/* font-size: 2.5em; */
+	}
+
+	.conditions {
+		padding-top: 2em;
+	}
+
+	/* Presets */
+
+	.bold {
+		font-family: "AH-B";
+	}
+
+	.thin {
+		font-family: "S-R";
+	}
+
+	.horizontal-list-items {
+		/* border-top: 2px dotted #002C38cc; */
+		border-bottom: 2px dotted #002c38cc;
+		display: flex;
+		overflow-x: scroll;
+		width: 100%;
+	}
+
+	.horizontal-list {
+		display: none;
+		overflow-x: scroll;
+		position: sticky;
+		background-color: var(--color-bg);
+		top: 80px;
+		/* opacity: 0%; */
+	}
+	.horizontal-list-items h3 {
+		width: 100%;
+		white-space: nowrap;
+		padding: 0.5em 1em;
+		color: var(--color-bg);
+		background-color: #002c38;
+		border-radius: 30px;
+		margin-left: 1em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	@media (max-width: 800px){
+		.sv-content-1 {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			padding: 1em;
+			border-bottom: 1px solid #002c38;
+			/* padding-left: 16em; */
+		}
+	}
+</style>
+
+<script>
+	// setInterval(function () {
+	// 	var containerTop = document
+	// 		.querySelector(".sv-content-1")
+	// 		.getBoundingClientRect().top;
+	// 	console.log(window.innerWidth);
+	// 	if (containerTop <= 0 && window.innerWidth < 830) {
+	// 		console.log("this should be displayed");
+	// 		document.querySelector(".horizontal-list").style.display = "flex";
+	// 	}
+	// 	if (containerTop > 0 || window.innerWidth > 830) {
+	// 		console.log("this should be hidden");
+	// 		document.querySelector(".horizontal-list").style.display = "none";
+	// 	}
+	// }, 1);
+
+	// gsap.fromTo(".horizontal-list", {
+	// 	y: -100,
+
+	// },
+	// {
+	// 	scrollTrigger: ".sv-content-1",
+	// 	y: 0
+	// });
+
+	// gsap.fromTo(".horizontal-list",
+	// {
+	// 	// scrollTrigger: ".sv-content-1",
+	// 	y: 100
+	// });
+</script>
