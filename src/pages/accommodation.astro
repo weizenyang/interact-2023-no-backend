@@ -3,20 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Prefooter from '../components/Pre-footer.astro';
-// import Transport from './transport.json.js';
-
-const transports = await Astro.glob('./transports/*.md');
-
-var transport = transports.map(item => {
-
-	var wrapper = item.compiledContent();
-	
-	return wrapper;
-
-})
+import NavbarModular from '../components/NavbarModular.astro';
 
 
-console.log(transport);
+const hotelData = await Astro.glob('/src/data/hotel_data/*.json')
+
+console.log(hotelData)
+
+// const {file: {title, description, contacts, date, date_widget, event_period, website, mode}} = Astro.props;
 
 
 
@@ -32,231 +26,48 @@ console.log(transport);
 <Layout title='Interact 2023'>
 	
 	<main>
-		<Navbar/>
+		<NavbarModular/>
 		<content>
+			
 			<section class='venue-content-1'>
-						<h1 class="title">
-							VENUE
+						<h1>
+							ACCOMMODATION
 						</h1>
 
 						<p class="thin-text">
-							The conference will be held on the newly developed Heslington East Campus of the
-							University of York, on the edge of the city of York. The venue is easily accessible from the
-							centre of York by bus, taxi or bicycle.
+							List of discounted accomodation provided for attendees of the conference.
 						</p>
-						<a href="#rch-map">
-						<div class="venue-card">
-							
-							<div class="venue-details">
-								
-								<div class="top">
-									<img src="/uoy-logo.webp" alt="" width="100%">
-									<h3>
-										Main Atrium @ <br> Ron Cooke Hub
-									</h3>
-									<tag class="less-emphasis">
-										Main Venue
-									</tag>
-								</div>
 
-								<div class="bottom">
-									<h4>
-										Address
-									</h4>
-									<p>
-										Ron Cooke Hub,
-										<br>133 Deramore Ln, 
-										<br>University of York,
-										<br>York, YO10 5GE
-									</p>
-								</div>
-							</div>
-							<div class="venue-image">
-
-									<img src="/RCH.webp" alt="" width='400px'>
-								
-							</div>
-							
-						</div>
-					</a>
-					<!-- <a href="#piazza-map">
-						<div class="venue-card">
-							
-							<div class="venue-details">
-								<div class="top">
-									<img src="/uoy-logo.webp" alt="" width="100%">
-									<h3 class="no-border">
-										Main Atrium @ <br> Piazza
-									</h3>
-								</div>
-
-								<div class="bottom">
-									<h4>
-										Address
-									</h4>
-									<p>
-										Piazza Building, 
-										<br>Heslington, 
-										<br>York YO10 5GR
-										
-									</p>
-								</div>
-
-								
-								
-							</div>
-							<div class="venue-image">
-
-									<img src="/Piazza.webp" alt="" height="350px">
-								
-							</div>
-							
-						</div>
-
-					</a> -->
-			</section>
-
-			<section class='venue-content-2'>
-				<!-- <div class="about-section"> -->
-					<h2 class="bold">
-						Accessibility of the facilities for disabled delegates
-					</h2>
-					
-					<p>
-						The facilities in the Ron Cooke Hub are fully accessible, with ramps to the lecture areas,
-						dedicated spaces for wheelchair users and hearing loops for hearing impaired delegates.
-						<br><br>
-						There is also a dedicated guide dog toilet just behind the Ron Cooke Hub. We will provide an
-						orientation session of the venue for any visually impaired delegates and student volunteers
-						will be available to assist visually impaired delegates if required.
-					</p>
-
-					<h2 class="bold">
-						Accommodation
-					</h2>
-					
-					<p>
-						Accommodation for delegates will be available both on the university campus and in central
-						York.
-						<br><br>
-						For delegates who prefer to stay in central York, there are many options at all price points.
-						The University has discount arrangements with a number of hotels in York.
-						<br><br>
-						Information about discounted hotel accommodation and accommodation at the university is available <a class="underline" href="/accommodation">here</a>.
-						<br><br>
-						<a href="/accommodation">
-						<button>
-							Book Here >
-						</button>
-						</a>
-					</p>
-
-					<h2 class="bold">
-						Visa Information
-					</h2>
-					
-					<p>
-						Delegates from some countries will need a visa to visit the UK. You can attend a conference on a “Standard Visitor” visa. <span class="bold"> <a href="https://www.gov.uk/standard-visitor" target="_blank"> (https://www.gov.uk/standard-visitor)</a></span> <br><br> EU, EEA and Swiss citizens do not need a visa for a short stay.
-						<br><br>
-						Time to organize a visa seems very long in many countries at the moment, so please apply very early. If you need a letter of invitation please contact Helen.Petrie@york.ac.uk as early as possible.
-					</p>
-
-					
-					
-				<!-- </div> -->
-				
-			</section>
-
-			<section class='venue-content-3'>
-				<h1 class="title">
-					AIRPORTS
-				</h1>
-
-				<div class="selections">
-
-					<button class="selector leftmost active" id="1">Leeds Bradford</button>
-					
-
-					<button class="selector" id="2">Manchester</button>
-					
-
-					<button class="selector rightmost" id="3">London</button>
-				</div>
-
-				<div class="directions">
-					<div class="selection" id="selection-1" set:html={transport[0]} ></div>
-					<div class="selection" id="selection-2" set:html={transport[1]} ></div>
-					<div class="selection" id="selection-3" set:html={transport[2]}></div>
-				</div>
-				
-				
-			</section>
-
-			<section class='venue-content-3'>
-				<h1 class="title">
-					TRAINS
-				</h1>
-
-				<div class="selections">
-
-					<button class="selector-train leftmost active" id="4">London / Edinburgh</button>
-					
-
-					<button class="selector-train" id="5">Paris / Brussels</button>
-					
-
-					<button class="selector-train rightmost" id="6">Interepid</button>
-				</div>
-
-				<div class="directions">
-					<div class="selection-train" id="selection-4" set:html={transport[3]} ></div>
-					<div class="selection-train" id="selection-5" set:html={transport[4]} ></div>
-					<div class="selection-train" id="selection-6" set:html={transport[5]}></div>
-				</div>
-				
-				
 			</section>
 
 			
+				{
+					hotelData.map((e) => 
+					<section class='venue-content-2'>	
+					<div>
+					<h1 class="bold">
+						{e.title}
+					</h1>
+					<p class="bold">
+						{e.travelInfo}
+					</p>
 
-			<section class='venue-content-4'>
-
-				<div class="content-container" id="rch-map">
-
-					<div class='map-embed'>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.1262576267018!2d-1.0320876841881301!3d53.947265180109355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48792fd3ebc5bc65%3A0xacbab96a0b4b7a96!2sThe%20Ron%20Cooke%20Hub!5e0!3m2!1sen!2sfr!4v1664443801266!5m2!1sen!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-
-					<div class="direction-links">
-						<h3><span class="bold">Ron Cooke Hub</span> - Get Directions</h3>
-						<button> <a href="https://maps.app.goo.gl/4AQzqAby5peRDMM18" target="_blank"><img src="/google-maps.svg" alt=""> Google Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
-						<button> <a href="https://apple.co/3esDDDD" target="_blank"><img src="/apple-maps.webp" alt="">Apple Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
-						<button> <a href="https://bit.ly/3EFqEt0" target="_blank"><img src="/waze.svg" alt="">Waze Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
-					</div>
+					<p>
+						{e.description}
+					</p>
 					
+					{e.link && <a href={e.link} target="_blank">
+						<button>
+							Book here >
+						</button>
+					
+					</a>
+				}
 				</div>
-<!-- 
-				<div class="content-container" id="piazza-map">
-
-					<div class='map-embed'>
-						
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.0944319255377!2d-1.0304154841880773!3d53.94783048010947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48792f9a1f8f4de7%3A0x40bc8641e730f783!2sPiazza%20Building!5e0!3m2!1sen!2suk!4v1664811795032!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					
-					</div>
-
-					
-
-					<div class="direction-links">
-						<h3><span class="bold">Piazza</span> - Get Directions</h3>
-						<button> <a href="https://maps.app.goo.gl/tbkS4L2agaZ8UkdU9" target="_blank"><img src="/google-maps.svg" alt=""> Google Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
-						<button> <a href="https://apple.co/3esDDDD" target="_blank"><img src="/apple-maps.webp" alt="">Apple Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
-						<button> <a target="_blank" href="https://maps.apple.com/?address=Ron%20Cooke%20Hub,%20Deramore%20Lane,%20Heslington,%20York,%20YO10%205GE,%20England&auid=11794211477278512551&ll=53.947470,-1.029582&lsp=9902&q=Piazza%20Building&_ext=CjMKBQgEEOEBCgQIBRADCgUIBhDfAQoECAoQAAoECFIQCAoECFUQEgoECFkQBgoFCKQBEAESJim8K3HEq/hKQDGwagUr/Znwvzk6AZcg0vlKQEEyXM0BeFvwv1AE&t=m"><img src="/waze.svg" alt="">Waze Maps<img class="external" src="/external.svg" alt="External Page" /></a></button>
-					</div>
-					
-				</div> -->
-				
 			</section>
-
+					)
+				}
+				
 		</content>
 		
 	</main>
@@ -264,67 +75,6 @@ console.log(transport);
 	<Footer/>
 	
 </Layout>
-
-<script is:inline>
-
-	document.addEventListener('click', changeSection)
-
-	function changeSection(e){
-
-		// Flight section
-		if(e.target.classList.contains('selector')){
-		document.querySelectorAll('.selection').forEach(element => {
-			element.style.display = "none";
-			
-		})
-
-		document.querySelectorAll('.selector').forEach(element => {
-			element.classList.remove("active");
-			console.log(e.targetid);
-			
-			
-		})
-
-				e.target.classList.add("active");
-				var string = "selection-"+e.target.id;
-				document.getElementById(string).style.display = "block";
-
-		
-		}
-
-		// Trains section
-		if(e.target.classList.contains('selector-train')){
-		document.querySelectorAll('.selection-train').forEach(element => {
-			element.style.display = "none";
-			
-		})
-
-		document.querySelectorAll('.selector-train').forEach(element => {
-			element.classList.remove("active");
-			console.log(e.targetid);
-			
-			
-		})
-
-				e.target.classList.add("active");
-				var string = "selection-"+e.target.id;
-				document.getElementById(string).style.display = "block";
-
-		
-		}
-		// console.log(document.getElementById(`"selection-${element.target.id}"`))
-		// document.getElementById(`selection-${document.getElementsByClassName("selection")}`).style.display = "block";
-		
-	
-
-	
-}
-		
-	
-		
-	
-	
-</script>
 
 <style>
 
@@ -343,8 +93,6 @@ console.log(transport);
 		/* position: absolute; */
 	}
 
-	
-
 	content{
 		width: 100%;
 	}
@@ -362,13 +110,10 @@ console.log(transport);
 		/* height: 500px; */
 	}
 
-	/* .image{
-		width: 300px;
-	} */
-
 	button:hover{
 		text-decoration: underline;
 	}
+
 	
 
 	.venue-content-1{
@@ -470,7 +215,7 @@ console.log(transport);
 
 	.sub-types{
 		background-color: #002C38;
-		color: #FCF7EB;
+		color: var(--color-text-light);
 		border-radius: 30px;
 		padding: 0.5em 0em 0.5em 0em ;
 		margin-bottom: 1em;
@@ -484,7 +229,7 @@ console.log(transport);
 
 	tag {
 		background-color: #002C38;
-		color: #FCF7EB;
+		color: var(--color-text-light);
 		margin-top: 0.5em;
 		padding-left: 0.5em;
 		padding-right: 0.5em;
@@ -572,11 +317,11 @@ console.log(transport);
 	}
 
 	.active{
-		color: #FCF7EB !important;
+		color: var(--color-text-light) !important;
 		/* background-color: var(--color-bg); */
 		background-color: #002C38;
 		/* box-shadow: inset 0px 0px 1000px #002C38; */
-		text-decoration-color: #FCF7EB;
+		text-decoration-color: var(--color-text-light) !important;
 	}
 
 	button:hover{
@@ -596,22 +341,22 @@ console.log(transport);
 	
 
 	/* .active{
-		color: #FCF7EB;
+		color: var(--color-text-light);
 		background-color: #002C38;
 	} */
 
 	/* #selector-1:checked ~ #leeds-button{
-		color: #FCF7EB;
+		color: var(--color-text-light);
 		background-color: #002C38;
 	}
 
 	#selector-2:checked ~ #manchester-button{
-		color: #FCF7EB;
+		color: var(--color-text-light);
 		background-color: #002C38;
 	}
 
 	#selector-3:checked ~ #london-button{
-		color: #FCF7EB;
+		color: var(--color-text-light);
 		background-color: #002C38;
 	} */
 
@@ -788,7 +533,7 @@ console.log(transport);
 		display: flex;
 		padding: 0.2em 0.5em 0.2em 0.5em ;
 		background-color: #002C38;
-		color: #FCF7EB;
+		color: var(--color-text-light);
 		border-radius: 50px;
 		align-items: center;
 		width: fit-content;
@@ -910,7 +655,7 @@ console.log(transport);
 	.direction-links button:hover{
 		text-decoration: underline;
 		/* background-color: #002C38; */
-		/* color: #FCF7EB; */
+		/* color: var(--color-text-light); */
 	}
 
 	.direction-links h3{
@@ -924,7 +669,7 @@ console.log(transport);
 
 	.direction-links h3{
 		background-color: #002C38;
-		color: #FCF7EB;
+		color: var(--color-text-light);
 		height: 2em;
 		width: 100%;
 		align-items: center;
