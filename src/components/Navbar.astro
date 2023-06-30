@@ -53,7 +53,25 @@
 				
 				
 			</li>
-			<li><a href='/workshops/0'>Workshops</a></li>
+
+			<li class='submissions-link'>
+				<a href='/programmes' class="submissions-parent">Programmes ></a>
+				<div class='dropdown-menu pos-3 submissions-parent'>
+					<ul>
+						<li><a href='/programmes/#day-1'>Day 1</a></li>
+						<li><a href='/programmes/#day-2'>Day 2</a></li>
+						<li><a href='/programmes/#day-3'>Day 3</a></li>
+						<li><a href='/programmes/#day-4'>Day 4</a></li>
+						<li><a href='/programmes/#day-5'>Day 5</a></li>
+						<li><a href='/workshops/0'>Workshops</a></li>
+					</ul>
+				
+				</div>
+				
+				
+				
+			</li>
+			<!-- <li><a href='/workshops/0'>Workshops</a></li> -->
 			<!-- <li><a href=''>Programme</a></li> -->
 			
 				<li><a href='/organisers'>Organisers</a></li>
@@ -212,12 +230,17 @@
 		left: 8.5em;
 		top: 10em;
 	}
+
+	.pos-3{
+		position: absolute;
+		left: 7em;
+		top: 12em;
+	}
+
 	.pos-2{
 		border-left: 1px solid #FCF7EB;;
 		left: 7.9em;
 		top: 0em;
-		
-		/* padding-right: 50px; */
 	}
 
 	.dropdown-menu ul{
@@ -258,6 +281,8 @@
 
 	.submissions-link:hover .pos-1, 
 	.submission-types:hover .pos-1,
+	.submissions-link:hover .pos-3, 
+	.submission-types:hover .pos-3,
 	.dropdown-menu:hover
 	{
 		

@@ -1,40 +1,160 @@
 ---
-export interface Props{
-    time: string,
-    name: string,
-    hasInfo? : boolean
+import type { MarkdownContent } from "astro";
+export interface Props {
+    time: string;
+    or?: boolean;
+    name?: {
+        text: string;
+        hasInfo?: boolean;
+        author?: string;
+        location?: string;
+    }[];
 }
 
-const {time, name, hasInfo} = Astro.props
+const { time, name, hasInfo, or } = Astro.props;
 ---
 
+<div class="timetable-row">
+    <p class="time">{time}</p>
 
-    <div class="timetable-row">
-        <p class="time">{time}</p>
-        <p class=`timetable-item bold ${hasInfo && "hasInfo"}`>{name}</p>
+    <div class="timetable-item">
+        {
+            name.map((e) =>
+                e.hasInfo ? (
+                    <div class="timetable-text hasInfo">
+                        {e.text && <p class="bold">{e.text}</p>}
+                        {e.location && (
+                            <p
+                                style="margin-top: 0em; font-size: 0.8em; width: 100%"
+                                set:html={e.location}
+                            />
+                        )}
+                        {e.author && (
+                            <p
+                                style="margin-top: 1em; font-size: 0.8em; width: 100%"
+                                set:html={e.author}
+                            />
+                        )}
+                    </div>
+                ) : (
+                    <p class="timetable-text bold">{e.text}</p>
+                )
+            )
+        }
+    </div>
+
+    <div class="everything-centered">
+        {or && <p class="bold or">OR</p>}
     </div>
 
     <style>
-        
-    .timetable-row{
-        position: relative;
-        display: flex;
-        width: 100%;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-    }
+        .or {
+            padding: 1em;
+            height: calc(100% - 1em);
+            display: flex;
+            align-items: center;
+            margin: 0px;
+            margin-left: 0.4em;
+            padding: 0.625em;
+            padding-right: 0.4em;
+            padding-top: 0em;
+            font-size: 1.1em;
+            /* border-radius: 15px; */
+            border-radius: 0px 10px 10px 0px;
+            border: solid 3px #002C3899;
+            border-left: solid 0px #000000;
+            /* background-color: #002C38; */
+            /* color: #FCF7EB */
+        }
 
-    .time{
-        margin: 0%;
-        justify-content: center;
-    }
+        .everything-centered{
+            display: flex;
+        flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
 
-    .timetable-item{
-        padding-left: 2em;
-        margin: 0%;
-    }
+        .timetable-row {
+            position: relative;
+            display: flex;
+            width: 100%;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid #00000033;
+        }
 
-    .bold{
-        font-weight: bold;
-    }
+        .timetable-row:last-child{
+            border: 0px;
+        }
+
+        .hasInfo {
+            background-color: #FFC22333;
+            padding: 1em;
+            border-radius: 15px;
+            margin-bottom: 1em !important;
+            border: 2px solid #00000000;
+            transition: all 0.2s;
+            padding: 0.7em !important;
+            cursor: pointer;
+        }
+
+        .hasInfo:last-child{
+            margin-bottom: 0em !important;
+        }
+
+        .hasInfo:hover {
+            background-color: #ffffffdd;
+            border-color: #00000033;
+        }
+
+        .time {
+            width: 65px;
+            margin: 0%;
+            line-height: 1.1em;
+            font-size: 0.9em;
+            display: flex;
+            height: auto;
+            padding: 0.5em;
+            padding-left: 2em;
+            padding-right: 2em;
+            border-right: 1px solid #002C3822;
+            align-items: center;
+            justify-content: center;
+            /* border-radius: 0px 10px 10px 0px;
+            background-color: #002C38;
+            color: #FCF7EB */
+        }
+
+        .timetable-item {
+            display: flex;
+            height: auto;
+            padding-left: 1em;
+
+            /* justify-items: center; */
+            /* align-items: center; */
+            flex-direction: column;
+        }
+
+        .timetable-text {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: auto;
+            align-items: left;
+            width: 100%;
+            justify-content: center;
+            /* padding-bottom: 0.7em; */
+            padding-top: 0%;
+            line-break: strict;
+        }
+
+        .timetable-text p {
+            margin: 0%;
+            word-wrap: normal;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
     </style>
+</div>

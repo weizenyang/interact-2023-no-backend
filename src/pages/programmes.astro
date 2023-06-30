@@ -11,27 +11,154 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 		<content>
 			<section class="programmes-section-1">
 				<div class='title'>
-					<h1>
+					<h1 id="programmes-nav-trigger">
 						PROGRAMMES
 					</h1>
 				</div>
-
 			</section>
+            <div class="programmes-nav" id="programmes-nav">
+                <p>Jump to:</p>
+                <a href="#day-1" class="programmes-nav-button">Day 1</a>
+                <a href="#day-2" class="programmes-nav-button">Day 2</a>
+                <a href="#day-3" class="programmes-nav-button">Day 3</a>
+                <a href="#day-4" class="programmes-nav-button">Day 4</a>
+                <a href="#day-5" class="programmes-nav-button">Day 5</a>
+            </div>
             <section class="programmes-section-2">
-                
+                <div class="nav-offset" id="day-1"></div>
                 <div class="timetable">
-                    <h2 class="date">28 August</h2>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                    <div class="top">
+                        <h2 class="date">Day 1: 28th August</h2>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <div class="item-container">
+                            <TimelineItem time="8:30 - 9:30" name={[{text: "Registration"}]}/>
+                            <TimelineItem time="9:30 - 11:00" name={[{text: "Opening Welcome / Awards / Poster Madness"}]}/>
+                            <TimelineItem time="11:00 - 11:30" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="11:30 - 12:30" name={[{text: "Opening Keynote", author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden", location: "Large lecture theatre (PZA/103)", hasInfo: true}]}/>
+                            <TimelineItem time="12:30 - 13:45" name={[{text: "Lunch"}]}/>
+                            <TimelineItem time="13:45 - 15:15" or=true name={[{text: "Session A1: User Studies", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session A2: Accessibility", location: "CSE/102X", hasInfo: true},
+                            {text: "Session A3: Model-Based UI Design and Testing", location: "LMB/002", hasInfo: true},
+                            {text: "Session A4: Interaction with Conversational Agents", location: "LMB/002A", hasInfo: true},
+                            {text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint", location: "LMB/037", hasInfo: true},
+                            {text: "Panel 2: Ethical Value Exchange in HCI", location: "Large Lecture Theatre, PZA/103", hasInfo: true}]}/>
+                            <TimelineItem time="15:15 - 15:45" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="9:30 - 11:00" or=true name={[{text: "Session B1: Data Physicalisation and Cross-device", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session B2: Interacting with children", location: "CSE/102X", hasInfo: true},
+                            {text: "Session B3: Information Visualization", location: "LMB/002", hasInfo: true},
+                            {text: "Session B4: Natural Language Processing and AI Explainability", location: "LMB/002A", hasInfo: true}]}/>
+                        </div>
+                    </div>
                 </div>
                 <div class="timetable">
-                    <h2 class="date">28 August</h2>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                    <div class="nav-offset" id="day-2"></div>
+                    <div class="top">
+                        <h2 class="date">Day 2: 29th August</h2>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <div class="item-container">
+                            <TimelineItem time="8:30 - 9:30" name={[{text: "Registration"}]}/>
+                            <TimelineItem time="9:30 - 11:00" name={[{text: "Opening Welcome / Awards / Poster Madness"}]}/>
+                            <TimelineItem time="11:00 - 11:30" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="11:30 - 12:30" name={[{text: "Opening Keynote", author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden", location: "Large lecture theatre (PZA/103)", hasInfo: true}]}/>
+                            <TimelineItem time="12:30 - 13:45" name={[{text: "Lunch"}]}/>
+                            <TimelineItem time="13:45 - 15:15" or=true name={[{text: "Session A1: User Studies", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session A2: Accessibility", location: "CSE/102X", hasInfo: true},
+                            {text: "Session A3: Model-Based UI Design and Testing", location: "LMB/002", hasInfo: true},
+                            {text: "Session A4: Interaction with Conversational Agents", location: "LMB/002A", hasInfo: true},
+                            {text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint", location: "LMB/037", hasInfo: true},
+                            {text: "Panel 2: Ethical Value Exchange in HCI", location: "Large Lecture Theatre, PZA/103", hasInfo: true}]}/>
+                            <TimelineItem time="15:15 - 15:45" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="9:30 - 11:00" or=true name={[{text: "Session B1: Data Physicalisation and Cross-device", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session B2: Interacting with children", location: "CSE/102X", hasInfo: true},
+                            {text: "Session B3: Information Visualization", location: "LMB/002", hasInfo: true},
+                            {text: "Session B4: Natural Language Processing and AI Explainability", location: "LMB/002A", hasInfo: true}]}/>
+                        </div>
+                    </div>
+                </div>
+                <div class="timetable">
+                    <div class="nav-offset" id="day-3"></div>
+                    <div class="top">
+                        <h2 class="date">Day 3: 30th August</h2>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <div class="item-container">
+                            <TimelineItem time="8:30 - 9:30" name={[{text: "Registration"}]}/>
+                            <TimelineItem time="9:30 - 11:00" name={[{text: "Opening Welcome / Awards / Poster Madness"}]}/>
+                            <TimelineItem time="11:00 - 11:30" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="11:30 - 12:30" name={[{text: "Opening Keynote", author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden", location: "Large lecture theatre (PZA/103)", hasInfo: true}]}/>
+                            <TimelineItem time="12:30 - 13:45" name={[{text: "Lunch"}]}/>
+                            <TimelineItem time="13:45 - 15:15" or=true name={[{text: "Session A1: User Studies", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session A2: Accessibility", location: "CSE/102X", hasInfo: true},
+                            {text: "Session A3: Model-Based UI Design and Testing", location: "LMB/002", hasInfo: true},
+                            {text: "Session A4: Interaction with Conversational Agents", location: "LMB/002A", hasInfo: true},
+                            {text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint", location: "LMB/037", hasInfo: true},
+                            {text: "Panel 2: Ethical Value Exchange in HCI", location: "Large Lecture Theatre, PZA/103", hasInfo: true}]}/>
+                            <TimelineItem time="15:15 - 15:45" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="9:30 - 11:00" or=true name={[{text: "Session B1: Data Physicalisation and Cross-device", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session B2: Interacting with children", location: "CSE/102X", hasInfo: true},
+                            {text: "Session B3: Information Visualization", location: "LMB/002", hasInfo: true},
+                            {text: "Session B4: Natural Language Processing and AI Explainability", location: "LMB/002A", hasInfo: true}]}/>
+                        </div>
+                    </div>
+                </div>
+                <div class="timetable">
+                    <div class="nav-offset" id="day-4"></div>
+                    <div class="top">
+                        <h2 class="date">Day 4: 31st August</h2>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <div class="item-container">
+                            <TimelineItem time="8:30 - 9:30" name={[{text: "Registration"}]}/>
+                            <TimelineItem time="9:30 - 11:00" name={[{text: "Opening Welcome / Awards / Poster Madness"}]}/>
+                            <TimelineItem time="11:00 - 11:30" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="11:30 - 12:30" name={[{text: "Opening Keynote", author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden", location: "Large lecture theatre (PZA/103)", hasInfo: true}]}/>
+                            <TimelineItem time="12:30 - 13:45" name={[{text: "Lunch"}]}/>
+                            <TimelineItem time="13:45 - 15:15" or=true name={[{text: "Session A1: User Studies", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session A2: Accessibility", location: "CSE/102X", hasInfo: true},
+                            {text: "Session A3: Model-Based UI Design and Testing", location: "LMB/002", hasInfo: true},
+                            {text: "Session A4: Interaction with Conversational Agents", location: "LMB/002A", hasInfo: true},
+                            {text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint", location: "LMB/037", hasInfo: true},
+                            {text: "Panel 2: Ethical Value Exchange in HCI", location: "Large Lecture Theatre, PZA/103", hasInfo: true}]}/>
+                            <TimelineItem time="15:15 - 15:45" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="9:30 - 11:00" or=true name={[{text: "Session B1: Data Physicalisation and Cross-device", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session B2: Interacting with children", location: "CSE/102X", hasInfo: true},
+                            {text: "Session B3: Information Visualization", location: "LMB/002", hasInfo: true},
+                            {text: "Session B4: Natural Language Processing and AI Explainability", location: "LMB/002A", hasInfo: true}]}/>
+                        </div>
+                    </div>
+                </div>
+                <div class="timetable">
+                    <div class="nav-offset" id="day-5"></div>
+                    <div class="top">
+                        <h2 class="date">Day 5: 1st September</h2>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <div class="item-container">
+                            <TimelineItem time="8:30 - 9:30" name={[{text: "Registration"}]}/>
+                            <TimelineItem time="9:30 - 11:00" name={[{text: "Opening Welcome / Awards / Poster Madness"}]}/>
+                            <TimelineItem time="11:00 - 11:30" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="11:30 - 12:30" name={[{text: "Opening Keynote", author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden", location: "Large lecture theatre (PZA/103)", hasInfo: true}]}/>
+                            <TimelineItem time="12:30 - 13:45" name={[{text: "Lunch"}]}/>
+                            <TimelineItem time="13:45 - 15:15" or=true name={[{text: "Session A1: User Studies", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session A2: Accessibility", location: "CSE/102X", hasInfo: true},
+                            {text: "Session A3: Model-Based UI Design and Testing", location: "LMB/002", hasInfo: true},
+                            {text: "Session A4: Interaction with Conversational Agents", location: "LMB/002A", hasInfo: true},
+                            {text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint", location: "LMB/037", hasInfo: true},
+                            {text: "Panel 2: Ethical Value Exchange in HCI", location: "Large Lecture Theatre, PZA/103", hasInfo: true}]}/>
+                            <TimelineItem time="15:15 - 15:45" name={[{text: "Coffee Break"}]}/>
+                            <TimelineItem time="9:30 - 11:00" or=true name={[{text: "Session B1: Data Physicalisation and Cross-device", location: "CSE/082X", hasInfo: true}, 
+                            {text: "Session B2: Interacting with children", location: "CSE/102X", hasInfo: true},
+                            {text: "Session B3: Information Visualization", location: "LMB/002", hasInfo: true},
+                            {text: "Session B4: Natural Language Processing and AI Explainability", location: "LMB/002A", hasInfo: true}]}/>
+                        </div>
+                    </div>
                 </div>
             </section>
 			<!-- <section class="popup">
@@ -94,6 +221,33 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 </Layout>
 
 <script>
+    
+    const quickNav = document.getElementById("programmes-nav")
+    const quickNavTrigger = document.getElementById("programmes-nav-trigger")
+    window.addEventListener('scroll', (e) => {
+        if(quickNav && quickNavTrigger){
+            if(window.innerWidth > 830){
+                if(quickNavTrigger.getBoundingClientRect().bottom <= 1){
+                    quickNav.classList.add('detach')
+                    quickNavTrigger.classList.add('programmes-nav-trigger')
+
+                } else {
+                    quickNav.classList.remove('detach')
+                    quickNavTrigger.classList.remove('programmes-nav-trigger')
+                }
+            } else {
+                if(quickNavTrigger.getBoundingClientRect().bottom <= 70){
+                    quickNav.classList.add('detach')
+                    quickNavTrigger.classList.add('programmes-nav-trigger')
+                } else {
+                    quickNav.classList.remove('detach')
+                    quickNavTrigger.classList.remove('programmes-nav-trigger')
+                }
+            }
+            
+        }
+    })
+
 	const popupEl = document.querySelector('.popup');
 	document.getElementById('exit').addEventListener('click', () => {
 		//document.querySelector('.popup').style.display = 'none';
@@ -154,6 +308,9 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 		
 		})
 	})
+
+    
+    
 </script>
 
 <style>
@@ -161,15 +318,98 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 		margin: 0%;
 	}
 
-    .timetable{
-        margin-top: 2em;
+    .nav-offset{
         position: relative;
-        width: 50%;
+        top: -150px;
+    }
+
+    .programmes-nav-trigger{
+        margin-bottom: 80px !important;
+    }
+
+    .programmes-nav{
+        position: relative;
+        display: flex;
+        background-color: var(--color-bg);
+        width: calc(100vw - 14em);
+        margin: 0%;
+        padding: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        z-index: 100;
+    }
+
+    .programmes-nav p{
+        width: 100%;
+        max-width: 100px;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .programmes-nav-button{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 100px;
+        align-items: center;
+        justify-content: center;
+        margin: 0em 0.3em;
+        padding: 0.5em;
+        font-weight: bold;
+        font-size: 0.9em;
+        border-radius: 10px;
+        border: 2px solid #002C38
+    }
+    
+    .programmes-nav-button:focus{
+        background-color: #002C3844;
+    }
+
+    .detach{
+        position: fixed;
+        top: 0px;
+        border-bottom: 1px solid #002C38;
+    }
+
+    .line{
+        width: 5px;
+        border-left: solid 5px #002C38;
+        border-radius: 5px;
+        margin-top: 1em;
+        margin-right: 0.5em;
+        margin-bottom: 3em  ;
+    }
+
+    .timetable{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 15px;
+        padding: 1em;
+        position: relative;
+        width: calc(50% - 2em);
         display: flex;
         flex-direction: column;
+        background-color: #fffcf9aa;
+        box-shadow: 0px 0px 50px #00000011;
+        
+    }
+
+    .timetable:nth-child(odd){
+        margin-left: 2em;
+    }
+    .timetable:nth-child(even){
+        margin-right: 2em;
+    }
+
+    .bottom{
+        display: flex;
     }
 
     .date{
+        font-weight: ;
         margin-bottom: 0.5em;
     }
 
@@ -319,6 +559,7 @@ import TimelineItem from "@source/components/TimelineItem.astro";
         display: flex;
 		padding: 2em;
         flex-wrap: wrap;
+        max-width: 1800px;
 	}
 
 	.exit{
@@ -419,15 +660,6 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 		position: relative;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.top{
-		padding: 2em;
-		border-bottom: 1px solid #002C38;
-	}
-
-	.bottom{
-		padding: 2em;
 	}
 
 	
@@ -572,9 +804,8 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 		font-family: 'S-R';
 	}
 
-
 	
-	@media screen and (max-width:830px){
+	@media (max-width:1300px){
 		.popup{
 			padding: 0%;
 			position: fixed;
@@ -595,16 +826,62 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 			flex-wrap: wrap;
 		}
         .programmes-section-1{
-		    padding: 1em;
+		    padding: 2em;
 	    }
 
         .timetable{
             width: 100%
         }
+
+        .timetable:nth-child(odd){
+            margin-left: 0em;
+        }
+        .timetable:nth-child(even){
+            margin-right: 0em;
+        }
+
+
 	}
 
+    @media (max-width: 829px){
+        .programmes-nav{
+        position: relative;
+        display: flex;
+        background-color: var(--color-bg);
+        width: 100%;
+        margin: 0%;
+        padding: 1em 0em;
+        z-index: 100;
+    }
 
-    
-    
+    .programmes-nav p{
+        padding-left: 1em;
+        width: 100%;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: left;
+    }
 
+    .programmes-nav-button{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0em 0.3em;
+        padding: 0.5em;
+        font-weight: bold;
+        font-size: 0.9em;
+        border-radius: 10px;
+        border: 2px solid #002C38
+    }
+
+    .detach{
+        padding-top: 0.2em;
+        position: fixed;
+        top: 79px;
+    }
+    }
 </style>
