@@ -11,17 +11,23 @@ import matter from 'gray-matter';
 
 
 const programmes = await Astro.glob('/src/data/programme_data/*.json')
+const sortedProgrammes = programmes.sort(({event_period : a}, {event_period : b}) => 
+	a.match(/\d+/g)[0] === b.match(/\d+/g)[0] ? 0 : a.match(/\d+/g)[0] < b.match(/\d+/g)[0] ? -1 : 1
+);
+sortedProgrammes.map(e =>
+	console.log(e.event_period)
+)
 export async function getStaticPaths() {
 const files = await Astro.glob('/src/data/programme_data/*.json');
+
   return files.map((file) => {
     const id = encodeURIComponent(file.id)
-	// console.log(files)
     return { params: { id }, props: {file} }
   });
-  
 }
 
 const {file: {title, description, contacts, date, date_widget, event_period, website, mode}} = Astro.props;
+
 
 
 // export async function getStaticProps({ params }) {
@@ -44,7 +50,7 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 				</div>
 	
 				<div class="selection-grid">
-					{programmes.map((programme) => <Card title={programme.title} 
+					{sortedProgrammes.map((programme) => <Card title={programme.title} 
 					description={programme.description} 
 					contacts={programme.contacts} 
 					title={programme.title} 
