@@ -805,7 +805,8 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 	}
 
 	
-	@media (max-width:1300px){
+	@media screen and (max-width:1300px){
+        
 		.popup{
 			padding: 0%;
 			position: fixed;
@@ -856,6 +857,12 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 	}
 
     @media (max-width: 829px){
+        .time{
+            padding: 0.5em;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+        
     .programmes-nav{
         position: relative;
         display: flex;
@@ -896,6 +903,7 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 
     .detach{
         padding-top: 0.2em;
+        padding-bottom: 0.4em;
         position: fixed;
         top: 79px;
     }
