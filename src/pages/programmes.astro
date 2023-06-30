@@ -1,0 +1,610 @@
+---
+import Navbar from "@source/components/Navbar.astro";
+import Layout from "@source/layouts/Layout.astro";
+import Footer from "@source/components/Footer.astro";
+import TimelineItem from "@source/components/TimelineItem.astro";
+---
+
+<Layout title='Interact 2023'>
+	<main>
+		<Navbar/>
+		<content>
+			<section class="programmes-section-1">
+				<div class='title'>
+					<h1>
+						PROGRAMMES
+					</h1>
+				</div>
+
+			</section>
+            <section class="programmes-section-2">
+                
+                <div class="timetable">
+                    <h2 class="date">28 August</h2>
+                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                </div>
+                <div class="timetable">
+                    <h2 class="date">28 August</h2>
+                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
+                </div>
+            </section>
+			<!-- <section class="popup">
+				<div class="info-card">
+					<article class="details" id="details">
+						<h2>
+							<span style="opacity: 0.6">Workshop:</span>
+						</h2>
+						<h1 id="workshop-title">
+							{title}
+						</h1>
+						<button class="exit" id="exit">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+						</button>
+						<p class="no-margin" id="workshop-description">
+
+						</p>
+						<hr class="solid-line">
+						
+						<div class="items">
+							<strong>Website:</strong>
+							<a class="no-margin" id="workshop-website" target="_blank">
+
+							</a>
+						</div>
+
+						<div class="items">
+							<strong>Enquiries to:</strong>
+							<div class="no-margin" id="workshop-enquiries">
+
+							</div>
+						</div>
+
+						<div class="items">
+							<strong>Date:</strong>
+							<div id="workshop-period">
+							</div>
+						</div>
+						
+						<div class="items">
+							<strong>Mode:</strong> 
+							<p id="workshop-mode">
+								
+							</p>
+						</div>
+
+					</article>
+				</div>
+			</section> -->
+		</content>
+		
+	</main>
+
+
+
+	
+
+	<Footer/>
+	
+</Layout>
+
+<script>
+	const popupEl = document.querySelector('.popup');
+	document.getElementById('exit').addEventListener('click', () => {
+		//document.querySelector('.popup').style.display = 'none';
+		// document.querySelector('.popup').style.opacity = '0';
+		// document.querySelector('.popup').style.pointerEvents = 'none';
+		// document.querySelector('.popup').style.top = '10%';
+		document.querySelector('.popup').classList.remove('popup-show');
+		document.querySelector('.info-card').classList.remove('info-card-show');
+	})
+
+	document.querySelector('.popup').addEventListener('click', (e) => {
+		// document.querySelector('.popup').style.display = 'none';
+		// document.querySelector('.popup').style.opacity = '0';
+		// document.querySelector('.popup').style.pointerEvents = 'none';
+		// document.querySelector('.popup').style.top = '10%';
+		document.querySelector('.popup').classList.remove('popup-show');
+		document.querySelector('.info-card').classList.remove('info-card-show');
+		e.stopPropagation();
+	})
+
+	document.querySelector('.popup').addEventListener('scroll', (e) => {
+
+		e.stopPropagation();
+	})
+
+	document.querySelector('.info-card').addEventListener('click', (e) => {
+		e.stopPropagation();
+	})
+
+	document.querySelectorAll('.link-card').forEach((e) => {
+		
+		e.addEventListener('click', () => {
+			console.log(e.getAttribute('data-title'));
+			// document.querySelector('.popup').style.top = '0%';
+			// popupEl.style.display = 'flex';
+			// document.querySelector('.popup').style.pointerEvents = 'auto';
+			// document.querySelector('.popup').style.opacity = '1';
+			document.querySelector('.popup').classList.add('popup-show');
+			document.querySelector('.info-card').classList.add('info-card-show');
+			document.querySelector('.details').scrollTop = 0;
+			document.querySelector('#workshop-title').innerHTML = e.getAttribute('data-title');
+			document.querySelector('#workshop-description').innerHTML = e.getAttribute('data-description');
+			document.querySelector('#workshop-website').innerHTML = e.getAttribute('data-website');
+			document.querySelector('#workshop-website').href = e.getAttribute('data-website');
+			document.querySelector('#workshop-enquiries').innerHTML = e.getAttribute('data-contacts');
+			document.querySelector('#workshop-period').innerHTML = e.getAttribute('data-date');
+			document.querySelector('#workshop-mode').innerHTML = e.getAttribute('data-mode');
+			setTimeout(() => {
+				popupEl.querySelectorAll('a').forEach((e) => {
+					e.style.textDecoration = 'underline';
+				})
+				document.querySelectorAll('.items').forEach((e) => {
+					e.querySelectorAll('p').forEach((e) => {
+					e.style.margin = '0px';
+				})
+				})
+			}, 100);
+		
+		})
+	})
+</script>
+
+<style>
+	*{
+		margin: 0%;
+	}
+
+    .timetable{
+        margin-top: 2em;
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date{
+        margin-bottom: 0.5em;
+    }
+
+
+	content{
+		border-bottom: 1px solid #002C38;
+	}
+
+	p a{
+		text-decoration: underline !important;
+	}
+
+	#details::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Track */
+	#details::-webkit-scrollbar-track {
+	background: #002C3844;
+	border-radius: 10px;
+	}
+
+	/* #details::-webkit-scrollbar-track:hover{
+	background: #ffffff33;
+	} */
+
+	/* Handle */
+	#details::-webkit-scrollbar-thumb {
+	background-color: #002C38;
+	border-radius: 10px;
+	}
+
+	/* Handle on hover */
+	#details::-webkit-scrollbar-thumb:hover {
+	background: #555;
+	}
+
+	main{
+		display: flex;
+		flex-direction: row;
+		overscroll-behavior: none;
+		/* overflow-y: scroll */
+		/* height: 300vh;
+		padding-left: 14em; */
+		/* margin-left: 14em; */
+		/* position: absolute; */
+	}
+
+	label{
+		font-family: "AH-B";
+	}
+
+	content{
+		width: 100%;
+	}
+
+	.solid-line{
+		width: 100%;
+		border-top: 2px solid #002C38;
+	}
+
+	.popup{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1em 0em;
+		background: #002C38;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: flex;
+		z-index: 100;
+		pointer-events: none;
+		top: 0%;
+		scale: 1;
+		opacity: 0;
+		transition: opacity 0.5s, top 0.5s ease-in-out, scale 0.2s ease-out;
+		justify-content: center;
+	}
+
+	.popup-show {
+		top: 0%;
+		scale: 1;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+
+	
+
+	.info-card{
+		width: 100%;
+		padding: 2em;
+		max-width: 700px;
+		background-color: #FCF7EB;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		max-height: max-content;
+		border-radius: 1em;
+		top: 100%;
+		scale: 0.8;
+		transition: top 0.5s ease-in-out, scale 0.2s ease-out;
+	}
+
+	#workshop-description{
+		display: flex;
+		flex-direction: column;
+		/* margin-right: 1em; */
+		padding-right: 1em;
+	}
+
+	
+	.info-card-show {
+		top: 0%;
+		scale: 1;
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	.info-card h1{
+		padding-bottom: 0.5em;
+		margin: 0px;
+		font-size: 2em;
+		height: min-content;
+	}
+
+	.info-card h2{
+		padding: 0em;
+		padding-bottom: 0.2em;
+		margin: 0px;
+		font-size: 1.3em;
+		height: min-content;
+		font-weight: 100;
+	}
+
+	.details{
+		overflow-y: scroll;
+		height: 100%
+	}
+
+	.programmes-section-1{
+		padding: 2em;
+	}
+
+    .programmes-section-2{
+        display: flex;
+		padding: 2em;
+        flex-wrap: wrap;
+	}
+
+	.exit{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+		padding: 0.5em;
+
+	}
+
+	.center{
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.button-padding h2{
+		padding: 0.1em 1em;
+		border-radius: 50px;
+	}
+
+
+	.center *{
+		margin: auto;
+	}
+
+	.sub-types{
+		background-color: #002C38;
+		color: #FCF7EB;
+		border-radius: 30px;
+		padding: 0.5em 0em 0.5em 0em ;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		display: flex;
+		flex-direction: column;
+		/* width: max-content; */
+		/* height: 100%; */
+		/* width: 100%; */
+	}
+
+	.selection-grid{
+		display: grid;
+		width: 100%;
+		gap: 1em;
+		max-width: 1200px;
+		grid-template-columns: 1fr 1fr;
+		padding: 1em;
+		flex-wrap: wrap;
+	}
+
+	.items{
+		display: block;
+	}
+
+	.items p{
+		/* display: flex; */
+		margin: 0px;
+	}
+
+	.no-margin{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.no-margin *{
+		margin: 0px !important; 
+		padding: 0px;
+	}
+
+	p strong{
+		/* all: unset; */
+		display: flex;
+		width: max-content;
+		padding: 0px;
+		padding-right: 0.4em;
+		font-size: 1em;
+	}
+
+	.sub-types h3{
+		margin: 0px;
+		padding: 0.2em;
+		padding-left: 1em;
+		padding-bottom: 0.5em;
+		font-family: 'AH-B'
+	}
+
+
+	.sub-details{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* padding-left: 1em; */
+	}
+
+	.submissions{
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.top{
+		padding: 2em;
+		border-bottom: 1px solid #002C38;
+	}
+
+	.bottom{
+		padding: 2em;
+	}
+
+	
+
+	.input-field{
+		padding-top: 1em;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.input-field input, .input-field textarea{
+		all: unset;
+		padding: 0.5em;
+		border-radius: 0.5em;
+		border: 2px solid #002C38;
+		font-family: sans-serif;
+	}
+
+	.input-field label{
+		padding-bottom: 0.2em;
+		
+	}
+
+	.link-card p{
+		margin: 0%;
+	}
+
+	.contact-details h4{
+		margin: 0%;
+		font-family: 'AH-B';
+	}
+
+	.contact-details p{
+		margin-top: 0%;
+	}
+
+	.juries-details{
+		display: flex;
+	}
+
+	.juries-section{
+		display: flex;
+		display: block;
+		align-content: space-between;
+		padding-bottom: 4em;
+	}
+
+	.juries-section:last-child{
+		display: flex;
+		display: block;
+		align-content: space-between;
+		padding-bottom: 0%;
+	}
+
+	.text-details{
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	.nav-container{
+		width: 14em;
+	}
+
+	.img-mask{
+		max-height: 450px;
+		overflow: hidden;
+	}
+
+	.rch{
+		width: 100%;
+		/* max-height: 473px; */
+		object-fit: cover;
+	}
+
+	.stretch{
+		box-sizing: border-box;
+		display: flex;
+		width: 100%;
+		/* height: 100%; */
+	}
+
+	.pill{
+		font-family: 'AH-B';
+		font-size: 1em;
+		margin: 0px;
+		display: flex;
+		padding: 0.2em 0.5em 0.2em 0.5em ;
+		background-color: #002C38;
+		color: #FCF7EB;
+		border-radius: 50px;
+		align-items: center;
+		width: fit-content;
+	}
+
+	.pill img{
+		margin: 0%;
+		padding-right: 0.5em;
+		width: 1em;
+		height: 1em;
+	}
+
+	.location-detail{
+		align-items: flex-end;
+		margin-top: auto;
+		margin-bottom: 0%;
+		margin-left: 2em;
+		white-space: nowrap;
+		width: max-content;
+	}
+
+	.title{
+		font-family: 'SYNCOPATE';
+		/* height: 50%; */
+        padding: 0em;
+		/* padding-bottom: 3em; */
+		margin: 0%;
+		font-size: 1em;
+		/* overflow: hidden; */
+		/* width: 200%; */
+	}
+
+	.title h1{
+		margin: 0%;
+		padding: 0%;
+		font-size: 2.5em;
+	}
+	
+	.conditions{
+		padding-top: 2em;
+	}
+
+
+	/* Presets */
+
+	.bold{
+		font-family: 'AH-B';
+	}
+
+	.thin{
+		font-family: 'S-R';
+	}
+
+
+	
+	@media screen and (max-width:830px){
+		.popup{
+			padding: 0%;
+			position: fixed;
+			border-radius: 0px;
+			z-index: 10000;
+		}
+
+		.info-card{
+			border-radius: 0px;
+		}
+
+		.selection-grid{
+			display: grid;
+			width: 100%;
+			gap: 1em;
+			grid-template-columns: 1fr;
+			padding: 1em;
+			flex-wrap: wrap;
+		}
+        .programmes-section-1{
+		    padding: 1em;
+	    }
+
+        .timetable{
+            width: 100%
+        }
+	}
+
+
+    
+    
+
+</style>

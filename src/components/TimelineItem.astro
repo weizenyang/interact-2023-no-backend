@@ -1,0 +1,40 @@
+---
+export interface Props{
+    time: string,
+    name: string,
+    hasInfo? : boolean
+}
+
+const {time, name, hasInfo} = Astro.props
+---
+
+
+    <div class="timetable-row">
+        <p class="time">{time}</p>
+        <p class=`timetable-item bold ${hasInfo && "hasInfo"}`>{name}</p>
+    </div>
+
+    <style>
+        
+    .timetable-row{
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .time{
+        margin: 0%;
+        justify-content: center;
+    }
+
+    .timetable-item{
+        padding-left: 2em;
+        margin: 0%;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+    </style>
