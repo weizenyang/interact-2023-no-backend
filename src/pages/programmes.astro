@@ -3,6 +3,7 @@ import Navbar from "@source/components/Navbar.astro";
 import Layout from "@source/layouts/Layout.astro";
 import Footer from "@source/components/Footer.astro";
 import TimelineItem from "@source/components/TimelineItem.astro";
+import PreFooterModular from "@source/components/PreFooterModular.astro";
 ---
 
 <Layout title='Interact 2023'>
@@ -161,6 +162,9 @@ import TimelineItem from "@source/components/TimelineItem.astro";
                     </div>
                 </div>
             </section>
+            <section class="programmes-section-2">
+                <PreFooterModular title="CHECK OUT:" buttons={[{text: "All Workshops", href: "/workshops"}, {text: "All Keynotes", href: "/keynotes"}]}/>
+            </section>
 			<!-- <section class="popup">
 				<div class="info-card">
 					<article class="details" id="details">
@@ -317,6 +321,8 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 	*{
 		margin: 0%;
 	}
+
+
 
     .nav-offset{
         position: relative;
@@ -560,6 +566,11 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 		padding: 2em;
         flex-wrap: wrap;
         max-width: 1800px;
+        border-bottom: 1px solid #002C38;
+	}
+
+    .programmes-section-2:last-child{
+        border-bottom: 0px solid #002C38;
 	}
 
 	.exit{

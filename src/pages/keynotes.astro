@@ -1,140 +1,56 @@
 ---
-// src/pages/posts/[slug].astro
-// import { Astro } from 'astro';
-import Layout from '/src/layouts/Layout.astro';
-// import type { File } from '/src/data/programme_data/programme_data';
-import Footer from '/src/components/Footer.astro';
-import ProgrammeCard from '/src/components/ProgrammeCard.astro';
-import Card from '/src/components/Card.astro';
-import Navbar from '/src/components/Navbar.astro';
-import matter from 'gray-matter';
-import PreFooterModular from '@source/components/PreFooterModular.astro';
+import Navbar from "@source/components/Navbar.astro";
+import Layout from "@source/layouts/Layout.astro";
+import Footer from "@source/components/Footer.astro";
+import TimelineItem from "@source/components/TimelineItem.astro";
+import KeynoteCard from "@source/components/KeynoteCard.astro";
+import PreFooterModular from "@source/components/PreFooterModular.astro";
 
-
-const programmes = await Astro.glob('/src/data/programme_data/*.json')
-const sortedProgrammes = programmes.sort(({event_period : a}, {event_period : b}) => 
-	a.match(/\d+/g)[0] === b.match(/\d+/g)[0] ? 0 : a.match(/\d+/g)[0] < b.match(/\d+/g)[0] ? -1 : 1
-);
-sortedProgrammes.map(e =>
-	console.log(e.event_period)
-)
-export async function getStaticPaths() {
-const files = await Astro.glob('/src/data/programme_data/*.json');
-
-  return files.map((file) => {
-    const id = encodeURIComponent(file.id)
-    return { params: { id }, props: {file} }
-  });
-}
-
-const {file: {title, description, contacts, date, date_widget, event_period, website, mode}} = Astro.props;
-
-
-
-// export async function getStaticProps({ params }) {
-//   const post = await Astro.fetchContent(`/src/data/posts/${params.slug}.md`);
-//   return { props: { post } };
-// }
-
-// const { post } = Astro.props;
 ---
 
 <Layout title='Interact 2023'>
 	<main>
 		<Navbar/>
 		<content>
-			<section class="programmes-section">
+			<section class="programmes-section-1">
 				<div class='title'>
 					<h1>
-						WORKSHOPS
+						KEYNOTES
 					</h1>
 				</div>
-	
-				<div class="selection-grid">
-					{sortedProgrammes.map((programme) => <Card title={programme.title} 
-					description={programme.description} 
-					contacts={programme.contacts} 
-					title={programme.title} 
-					event_period={programme.event_period} 
-					website={programme.website} 
-					mode={programme.mode}
-					date_widget={programme.date_widget}/>)}
-				</div>
-
-
-
-			</section>
-			<section class="popup">
-				<div class="info-card">
-					<article class="details" id="details">
-						<h2>
-							<span style="opacity: 0.6">Workshop:</span>
-						</h2>
-						<h1 id="workshop-title">
-							{title}
-						</h1>
-						<button class="exit" id="exit">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-						</button>
-						<p class="no-margin" id="workshop-description">
-							<!-- {description} -->
-						</p>
-						<hr class="solid-line">
-						
-						<div class="items">
-							<strong>Website:</strong>
-							<a class="no-margin" id="workshop-website" target="_blank">
-								 
-								<!-- {website} -->
-							</a>
-						</div>
-
-						<div class="items">
-							<strong>Enquiries to:</strong>
-							<div class="no-margin" id="workshop-enquiries">
-								 <!-- {contacts} -->
-							</div>
-						</div>
-
-						<div class="items">
-							<strong>Date:</strong>
-							<div id="workshop-period">
-								<!-- {event_period} -->
-							</div>
-						</div>
-						
-						<div class="items">
-							<strong>Mode:</strong> 
-							<p id="workshop-mode">
-								<!-- {mode} -->
-							</p>
-						</div>
-
-					</article>
+				<div class="keynote-container">
+					<KeynoteCard image="" 
+					time="28th August"
+					title="Interactive healthcare technologies for complex contexts"
+					name="Ann Blandford"
+					association="Professor of Human–Computer Interaction, University College London, UK"/>
+					<KeynoteCard image="" 
+					title="A framework for born-accessible development of software and digital content"
+					name="Jonathan Lazar"
+					association="Professor, College of Information Studies, University of Maryland and Executive Director, Maryland Initiative for Digital Accessibility (MIDA), USA"/>
+					<KeynoteCard image="" 
+					title="Why we do what we do – HCI and societal impact"
+					name="Jan Gulliksen"
+					association="Professor of Human-Computer Interaction, KTH Royal Institute of Technology, Stockholm, Sweden"/>
+					<KeynoteCard image="" 
+					title="TBC"
+					name="Mike Evans"
+					association="Audience Research Lead, BBC Research and Development, London, UK"/>
 				</div>
 			</section>
-			<section class="programmes-section">
+			<section class="programmes-section-2">
 				<PreFooterModular title="CHECK OUT:" buttons={[{text: "All Workshops", href: "/workshops"}, {text: "All Keynotes", href: "/keynotes"}]}/>
 			</section>
 		</content>
 		
 	</main>
-
-
-
-	
-
 	<Footer/>
 	
 </Layout>
 
 <script>
 	const popupEl = document.querySelector('.popup');
-	document.getElementById('exit').addEventListener('click', () => {
-		//document.querySelector('.popup').style.display = 'none';
-		// document.querySelector('.popup').style.opacity = '0';
-		// document.querySelector('.popup').style.pointerEvents = 'none';
-		// document.querySelector('.popup').style.top = '10%';
+		document.getElementById('exit').addEventListener('click', () => {
 		document.querySelector('.popup').classList.remove('popup-show');
 		document.querySelector('.info-card').classList.remove('info-card-show');
 	})
@@ -191,21 +107,30 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 	})
 </script>
 
-<!-- <script>
-	const response = await fetch('http://localhost:1337/api/submissions');
-	const data = await response.json();
-	const type = data.data;
-
-	// document.addEventListener('click', (e) => {
-	// 	console.log(e.target.id);
-	// 	sectionNum = e.target.id;
-	// })
-</script> -->
-
 <style>
 	*{
 		margin: 0%;
 	}
+
+	
+
+	
+	.keynote-container{
+		margin-top: 2em;
+		flex-wrap: wrap;
+	}
+
+    .timetable{
+        margin-top: 2em;
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .date{
+        margin-bottom: 0.5em;
+    }
+
 
 	content{
 		border-bottom: 1px solid #002C38;
@@ -344,15 +269,15 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 		height: 100%
 	}
 
-	.programmes-section{
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
+	.programmes-section-1{
+		padding: 2em;
 		border-bottom: 1px solid #002C38;
 	}
 
-	.programmes-section:last-child{
-		border-bottom: 0px;
+    .programmes-section-2{
+        display: flex;
+		padding: 2em;
+        flex-wrap: wrap;
 	}
 
 	.exit{
@@ -477,17 +402,13 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 		all: unset;
 		padding: 0.5em;
 		border-radius: 0.5em;
-		border: 1px solid #002C38;
+		border: 2px solid #002C38;
 		font-family: sans-serif;
 	}
 
 	.input-field label{
 		padding-bottom: 0.2em;
 		
-	}
-
-	h2{
-		padding-top: 2em;
 	}
 
 	.link-card p{
@@ -581,7 +502,8 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 	.title{
 		font-family: 'SYNCOPATE';
 		/* height: 50%; */
-		padding: 3em 1em;
+        padding: 0em;
+		/* padding-bottom: 3em; */
 		margin: 0%;
 		font-size: 1em;
 		/* overflow: hidden; */
@@ -592,27 +514,6 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 		margin: 0%;
 		padding: 0%;
 		font-size: 2.5em;
-	}
-
-	
-
-	.contact-content-5 h1{
-		padding-top: 1em;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0%;
-		font-family: 'S-B';
-		font-size: 2.5em;
-	}
-
-	.contact-content-2 h3{
-		margin: 0%;
-		padding-top: 1em;
-		font-family: 'AH-B';
-		
-		/* font-size: 2.5em; */
 	}
 	
 	.conditions{
@@ -631,28 +532,8 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 	}
 
 
-	
-	@media screen and (max-width:830px){
-		.popup{
-			padding: 0%;
-			position: fixed;
-			border-radius: 0px;
-			z-index: 10000;
-		}
 
-		.info-card{
-			border-radius: 0px;
-		}
-
-		.selection-grid{
-			display: grid;
-			width: 100%;
-			gap: 1em;
-			grid-template-columns: 1fr;
-			padding: 1em;
-			flex-wrap: wrap;
-		}
-	}
+    
+    
 
 </style>
-

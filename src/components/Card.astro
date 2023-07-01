@@ -61,14 +61,14 @@ data-mode={mode}>
 </li>
 <style>
 	:root {
-		--link-gradient: linear-gradient(45deg, #FFC22300, #FFC22344 30%, var(--color-bg) 60%);
-		--link-gradient-1: linear-gradient(45deg, hsl(10, 21%, 95%), hsl(10, 21%, 95%) 30%, #002C38 100%);
+		--link-gradient: linear-gradient(45deg, #FFC22300, #FFC22322 30%, #FCF7EB11 60%);
+		--link-gradient-1: linear-gradient(45deg, #002C38DD, #002C38DD 30%, #002C3844 100%);
 	}
 
 	.link-card {
 		list-style: none;
 		display: flex;
-		/* margin: 0.5em; */
+		text-decoration: none;
 		padding: 2px;
 		background: #ffffff;
 		background-image: var(--link-gradient-1);
@@ -79,6 +79,10 @@ data-mode={mode}>
 		justify-content: space-between;
 		transition: background-position 0.2s cubic-bezier(0.22, 0.5, 0.36, 0.5);
 		
+	}
+
+	.link-card:hover{
+		text-decoration: none !important;
 	}
 
 	.inner-div-gradient{

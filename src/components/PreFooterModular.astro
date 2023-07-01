@@ -1,0 +1,50 @@
+---
+export interface Props{
+    title: string,
+    buttons?: {
+        text: string,
+        href?: string
+    }[]
+}
+
+const {title, buttons} = Astro.props
+buttons.map((e) => {
+    console.log(e.text)
+})
+---
+
+    <div class="check-this-out">
+        <h2 style="font-family: S-B">
+            {title}
+        </h2>
+        <div class="check-this-out-button">
+            {
+                buttons.map((e) => 
+                    <a href={e.href}>
+                        <button>{e.text}</button>    
+                    </a>
+                )
+            }
+        </div>
+    </div>
+
+
+<style>
+    a, a:hover{
+        text-decoration: none;
+    }
+    .check-this-out{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .check-this-out-button button{
+        margin: 0.5em;
+        width: 200px;
+    }
+</style>

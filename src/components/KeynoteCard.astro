@@ -1,0 +1,91 @@
+---
+interface Props extends HTML{
+    image: string;
+    title: string;
+    name: string;
+    association: string;
+    time?: string;
+    href?: string;
+}
+
+const { image, title, name, association, time, href } = Astro.props;
+---
+
+<div class="keynote-card">
+    <img class="author-image" src={image ? image : "/UOY.svg"} alt="" />
+    <div class="keynote-info">
+        {
+            time && (
+                <a class="keynote-time-container">
+                    <p class="keynote-time">{time}</p>
+                </a>
+            )
+        }
+        <h2 class="project-title">{title}</h2>
+        <h3 class="author-name">{name}</h3>
+        <p>{association}</p>
+    </div>
+</div>
+
+<style>
+    * {
+        margin: 0%;
+    }
+
+    .keynote-time-container {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-left: 0%;
+    }
+
+    .keynote-time {
+        padding: 0.1em 0.6em;
+        color: var(--color-bg);
+        background-color: #002c38;
+        margin: auto;
+        margin-bottom: 0.4em;
+        font-size: 0.8em;
+        margin-left: 0%;
+        border-radius: 15px;
+    }
+
+    .author-name {
+        margin-top: 2em;
+    }
+
+    .keynote-card {
+        display: flex;
+        padding: 1em;
+        border: 1px solid #002c38;
+        border-radius: 10px;
+        margin-bottom: 1em;
+    }
+
+    .keynote-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .author-name {
+        margin-bottom: 0.5em;
+    }
+
+    .author-image {
+        object-fit: cover;
+        position: relative;
+        width: 150px;
+        height: auto;
+        background-color: #ffffff;
+        border-radius: 9px;
+        margin-right: 1.5em;
+    }
+
+    @media screen and (min-width: 1400px) {
+        .keynote-container {
+            width: 50%;
+        }
+    }
+</style>
