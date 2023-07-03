@@ -12,7 +12,15 @@ const { image, title, name, association, time, href } = Astro.props;
 ---
 
 <div class="keynote-card">
-    <img class="author-image" src={image ? image : "/UOY.svg"} alt="" />
+    <img class="author-image desktop-author-info" src={image ? image : "/UOY.svg"} alt="" />
+    <div class="author-section">
+        <img class="author-image" src={image ? image : "/UOY.svg"} alt="" />
+        <div class="author-info">
+            <h3 class="author-name">{name}</h3>
+        <p>{association}</p>
+        </div>
+    </div>
+    
     <div class="keynote-info">
         <div class="top">
             {
@@ -24,9 +32,13 @@ const { image, title, name, association, time, href } = Astro.props;
             }
             <h2 class="project-title">{title}</h2>
         </div>
+
+        <div class="desktop-author-info">
+            <h3 class="author-name">{name}</h3>
+            <p>{association}</p>
+        </div>
         
-        <h3 class="author-name">{name}</h3>
-        <p>{association}</p>
+        
     </div>
 </div>
 
@@ -67,10 +79,6 @@ const { image, title, name, association, time, href } = Astro.props;
         border-radius: 15px;
     }
 
-    .author-name {
-        margin-top: 2em;
-    }
-
 
 
     .keynote-info {
@@ -78,6 +86,11 @@ const { image, title, name, association, time, href } = Astro.props;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    
+    .author-name {
+        margin-top: 2em;
     }
 
     .author-name {
@@ -95,6 +108,12 @@ const { image, title, name, association, time, href } = Astro.props;
         margin-right: 1.5em;
     }
 
+    .author-section{
+            padding-top: 2em;
+            display: none;
+        }
+
+
     @media screen and (min-width: 1400px) {
         .keynote-container {
             width: 50%;
@@ -105,6 +124,61 @@ const { image, title, name, association, time, href } = Astro.props;
         .keynote-card{
             width: 100%;
         }
+    }
+
+    @media screen and (max-width: 830px) {
+        .keynote-card{
+            flex-direction: column-reverse;
+        }
+        .keynote-card:nth-child(odd){
+            margin-right: 0em;
+        }
+        .programmes-section-1{
+            padding: 0.5em;
+        }
+
+        .desktop-author-info{
+            display: none;
+        }
+
+        .author-image {
+            object-fit: cover;
+            position: relative;
+            aspect-ratio: 1/1;
+            max-width: 150px;
+            height: auto;
+            background-color: #ffffff;
+            border-radius: 9px;
+            margin-right: 1.5em;
+        }
+
+        .author-name{
+            margin-top: 1em;
+        }
+
+        .author-section{
+            padding-top: 2em;
+            display: flex;
+        }
+
+        .author-info{
+            display: block;
+        }
+
+    }
+
+    @media screen and (max-width: 430px) {
+        .author-image {
+            object-fit: cover;
+            position: relative;
+            aspect-ratio: 1/1;
+            max-width: 100px;
+            height: auto;
+            background-color: #ffffff;
+            border-radius: 9px;
+            margin-right: 1.5em;
+        }
+
     }
     
     
