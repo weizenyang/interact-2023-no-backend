@@ -19,23 +19,36 @@ import PreFooterModular from "@source/components/PreFooterModular.astro";
 					</h1>
 				</div>
 				<div class="keynote-container">
-					<KeynoteCard image="" 
-					time="28th August"
+
+					<KeynoteCard image="/MikeEvans.jpg" 
+					time="29th August"
+					title="Festivals, human values, & turning designers into newspapers: \n Lessons learnt doing people-centred research in the future of media"
+					name="Mike Evans"
+					association="Audience Research Lead, BBC Research and Development, London, UK"
+					href="/programme#Mike-Evans"
+					/>
+
+					<KeynoteCard image="/AnnBlandford.jpg" 
+					time="1st Sept"
 					title="Interactive healthcare technologies for complex contexts"
 					name="Ann Blandford"
-					association="Professor of Human–Computer Interaction, University College London, UK"/>
-					<KeynoteCard image="" 
-					title="A framework for born-accessible development of software and digital content"
-					name="Jonathan Lazar"
-					association="Professor, College of Information Studies, University of Maryland and Executive Director, Maryland Initiative for Digital Accessibility (MIDA), USA"/>
-					<KeynoteCard image="" 
+					association="Professor of Human–Computer Interaction, University College London, UK"
+					href="/programme#Ann-Blandford"/>
+					
+					<KeynoteCard image="/JanGulliksen.jpg"
+					time="30th August"
 					title="Why we do what we do – HCI and societal impact"
 					name="Jan Gulliksen"
-					association="Professor of Human-Computer Interaction, KTH Royal Institute of Technology, Stockholm, Sweden"/>
-					<KeynoteCard image="" 
-					title="TBC"
-					name="Mike Evans"
-					association="Audience Research Lead, BBC Research and Development, London, UK"/>
+					association="Professor of Human-Computer Interaction, KTH Royal Institute of Technology, Stockholm, Sweden"
+					href="/programme#Jan-Gulliksen"/>
+					
+					<KeynoteCard image="/JonathanLazar.jpg" 
+					time="31th August"
+					title="A framework for born-accessible development of software and digital content"
+					name="Jonathan Lazar"
+					association="Professor, College of Information Studies, University of Maryland and Executive Director, Maryland Initiative for Digital Accessibility (MIDA), USA"
+					href="/programme#Jonathan-Lazar"/>
+					
 				</div>
 			</section>
 			<section class="programmes-section-2">
@@ -116,8 +129,11 @@ import PreFooterModular from "@source/components/PreFooterModular.astro";
 
 	
 	.keynote-container{
+		display: flex;
 		margin-top: 2em;
 		flex-wrap: wrap;
+		
+		max-width: 2000px;
 	}
 
     .timetable{

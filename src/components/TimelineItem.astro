@@ -2,6 +2,7 @@
 import type { MarkdownContent } from "astro";
 export interface Props {
     time: string;
+    id?: string;
     or?: boolean;
     name?: {
         text: string;
@@ -11,13 +12,13 @@ export interface Props {
     }[];
 }
 
-const { time, name, hasInfo, or } = Astro.props;
+const { time, name, hasInfo, or, id } = Astro.props;
 ---
 
 <div class="timetable-row">
     <p class="time">{time}</p>
 
-    <div class="timetable-item">
+    <div class="timetable-item" id={id}>
         {
             name.map((e) =>
                 e.hasInfo ? (

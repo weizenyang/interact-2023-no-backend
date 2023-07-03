@@ -14,14 +14,17 @@ const { image, title, name, association, time, href } = Astro.props;
 <div class="keynote-card">
     <img class="author-image" src={image ? image : "/UOY.svg"} alt="" />
     <div class="keynote-info">
-        {
-            time && (
-                <a class="keynote-time-container">
-                    <p class="keynote-time">{time}</p>
-                </a>
-            )
-        }
-        <h2 class="project-title">{title}</h2>
+        <div class="top">
+            {
+                time && (
+                    <a class="keynote-time-container" href={href}>
+                        <p class="keynote-time">{time}</p>
+                    </a>
+                )
+            }
+            <h2 class="project-title">{title}</h2>
+        </div>
+        
         <h3 class="author-name">{name}</h3>
         <p>{association}</p>
     </div>
@@ -30,6 +33,20 @@ const { image, title, name, association, time, href } = Astro.props;
 <style>
     * {
         margin: 0%;
+    }
+
+    .keynote-card {
+        display: flex;
+        padding: 1em;
+        border: 1px solid #002c38;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        width: 49%;
+        max-width: 900px;
+    }
+
+    .keynote-card:nth-child(odd){
+        margin-right: 1em;
     }
 
     .keynote-time-container {
@@ -54,13 +71,7 @@ const { image, title, name, association, time, href } = Astro.props;
         margin-top: 2em;
     }
 
-    .keynote-card {
-        display: flex;
-        padding: 1em;
-        border: 1px solid #002c38;
-        border-radius: 10px;
-        margin-bottom: 1em;
-    }
+
 
     .keynote-info {
         width: 100%;
@@ -76,7 +87,8 @@ const { image, title, name, association, time, href } = Astro.props;
     .author-image {
         object-fit: cover;
         position: relative;
-        width: 150px;
+        aspect-ratio: 1/1;
+        max-width: 250px;
         height: auto;
         background-color: #ffffff;
         border-radius: 9px;
@@ -88,4 +100,12 @@ const { image, title, name, association, time, href } = Astro.props;
             width: 50%;
         }
     }
+
+    @media screen and (max-width: 1399px) {
+        .keynote-card{
+            width: 100%;
+        }
+    }
+    
+    
 </style>
