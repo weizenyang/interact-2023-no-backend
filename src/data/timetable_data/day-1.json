@@ -1,0 +1,41 @@
+{
+    "day": 1,
+    "date": "28th August",
+    "data": [
+        {
+            "time": "8:30 - 9:30",
+            "item": [
+                {
+                    "text": "Registration"
+                }
+            ]
+        },
+        {
+            "time": "9:30 - 11:00",
+            "item": [
+                {
+                    "text": "Coffee Break"
+                }
+            ]
+        },
+        {
+            "time": "11:00 - 11:30",
+            "item": [
+                {
+                    "text": "Coffee Break"
+                }
+            ]
+        },
+        {
+            "time": "11:30 - 12:30",
+            "item": [
+                {
+                    "text": "Opening Keynote",
+                    "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+                    "location": "Large lecture theatre (PZA/103)",
+                    "hasInfo": true
+                }
+            ]
+        }
+    ]
+}

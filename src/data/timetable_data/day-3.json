@@ -1,0 +1,75 @@
+{
+    "day": 3,
+    "date": "30th August",
+    "data": [
+        {
+            "time": "8:30 - 9:30",
+            "item": [
+                {
+                    "text": "Registration"
+                }
+            ]
+        },
+        {
+            "time": "9:30 - 11:00",
+            "item": [
+                {
+                    "text": "Opening Welcome / Awards"
+                }
+            ]
+        },
+        {
+            "time": "11:00 - 11:30",
+            "item": [
+                {
+                    "text": "Coffee Break"
+                }
+            ]
+        },
+        {
+            "time": "11:30 - 12:30",
+            "item": [
+                {
+                    "text": "Opening Keynote",
+                    "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+                    "location": "Large lecture theatre (PZA/103)",
+                    "hasInfo": true
+                }
+            ]
+        },
+        {
+            "time": "12:30 - 13:45",
+            "item": [
+                {
+                    "text": "Lunch"
+                }
+            ]
+        },
+        {
+            "time": "13:45 - 15:15",
+            "or" : true,
+            "item": [
+                {
+                    "text": "Session A1: User Studies",
+                    "location": "CSE/082X",
+                    "hasInfo": true
+                },
+                {
+                    "text": "Session A1: User Studies",
+                    "location": "CSE/082X",
+                    "hasInfo": true
+                },
+                {
+                    "text": "Session A1: User Studies",
+                    "location": "CSE/082X",
+                    "hasInfo": true
+                },
+                {
+                    "text": "Session A1: User Studies",
+                    "location": "CSE/082X",
+                    "hasInfo": true
+                }
+            ]
+        }
+    ]
+}

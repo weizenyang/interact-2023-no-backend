@@ -1,0 +1,1361 @@
+---
+import Navbar from "@source/components/Navbar.astro";
+import Layout from "@source/layouts/Layout.astro";
+import Footer from "@source/components/Footer.astro";
+import TimelineItem from "@source/components/TimelineItem.astro";
+import PreFooterModular from "@source/components/PreFooterModular.astro";
+
+const files = await Astro.glob("/src/data/timetable_data/*.json");
+---
+
+<Layout title="Interact 2023">
+	<main>
+		<Navbar />
+		<content>
+			<section class="programmes-section-1">
+				<div class="title">
+					<h1 id="programmes-nav-trigger">PROGRAMMES</h1>
+				</div>
+			</section>
+
+			<div class="programmes-nav" id="programmes-nav">
+				<a href="#day-1" class="programmes-nav-button">Day 1</a>
+				<a href="#day-2" class="programmes-nav-button">Day 2</a>
+				<a href="#day-3" class="programmes-nav-button">Day 3</a>
+				<a href="#day-4" class="programmes-nav-button">Day 4</a>
+				<a href="#day-5" class="programmes-nav-button">Day 5</a>
+			</div>
+			<section class="programmes-section-2">
+				{
+					files.map((e) => (
+						<div class="timetable">
+							<div class="top">
+								<h2 class="date">
+									Day {e.day}: {e.date}
+								</h2>
+							</div>
+							<div class="bottom">
+								<div class="item-container">
+									{e.data.map(
+										(timeslot) => 
+											<TimelineItem or={timeslot.or} time={timeslot.time} name={timeslot.item.map(data => ({text: data.text, author: data.author, location: data.location, hasInfo: data.hasInfo}))}/>
+											
+										
+									)}
+								</div>
+							</div>
+						</div>
+					))
+				}
+
+				<div class="nav-offset" id="day-1"></div>
+				<div class="timetable">
+					<div class="top">
+						<h2 class="date">Day 1: 28th August</h2>
+					</div>
+					<div class="bottom">
+						<div class="line"></div>
+						<div class="item-container">
+							<TimelineItem
+								time="8:30 - 9:30"
+								name={[{ text: "Registration" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								name={[
+									{
+										text: "Opening Welcome / Awards / Poster Madness",
+									},
+								]}
+							/>
+							<TimelineItem
+								time="11:00 - 11:30"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								time="11:30 - 12:30"
+								name={[
+									{
+										text: "Opening Keynote",
+										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+										location:
+											"Large lecture theatre (PZA/103)",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="12:30 - 13:45"
+								name={[{ text: "Lunch" }]}
+							/>
+							<TimelineItem
+								time="13:45 - 15:15"
+								or="true"
+								name={[
+									{
+										text: "Session A1: User Studies",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A2: Accessibility",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A3: Model-Based UI Design and Testing",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session A4: Interaction with Conversational Agents",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+									{
+										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
+										location: "LMB/037",
+										hasInfo: true,
+									},
+									{
+										text: "Panel 2: Ethical Value Exchange in HCI",
+										location:
+											"Large Lecture Theatre, PZA/103",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="15:15 - 15:45"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								or="true"
+								name={[
+									{
+										text: "Session B1: Data Physicalisation and Cross-device",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B2: Interacting with children",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B3: Information Visualization",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session B4: Natural Language Processing and AI Explainability",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+								]}
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="timetable">
+					<div class="nav-offset" id="day-2"></div>
+					<div class="top">
+						<h2 class="date">Day 2: 29th August</h2>
+					</div>
+					<div class="bottom">
+						<div class="line"></div>
+						<div class="item-container">
+							<TimelineItem
+								time="8:30 - 9:30"
+								name={[{ text: "Registration" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								name={[
+									{
+										text: "Opening Welcome / Awards / Poster Madness",
+									},
+								]}
+							/>
+							<TimelineItem
+								time="11:00 - 11:30"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								id="Mike-Evans"
+								time="11:30 - 12:30"
+								name={[
+									{
+										text: "Opening Keynote",
+										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+										location:
+											"Large lecture theatre (PZA/103)",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="12:30 - 13:45"
+								name={[{ text: "Lunch" }]}
+							/>
+							<TimelineItem
+								time="13:45 - 15:15"
+								or="true"
+								name={[
+									{
+										text: "Session A1: User Studies",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A2: Accessibility",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A3: Model-Based UI Design and Testing",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session A4: Interaction with Conversational Agents",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+									{
+										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
+										location: "LMB/037",
+										hasInfo: true,
+									},
+									{
+										text: "Panel 2: Ethical Value Exchange in HCI",
+										location:
+											"Large Lecture Theatre, PZA/103",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="15:15 - 15:45"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								or="true"
+								name={[
+									{
+										text: "Session B1: Data Physicalisation and Cross-device",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B2: Interacting with children",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B3: Information Visualization",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session B4: Natural Language Processing and AI Explainability",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+								]}
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="timetable">
+					<div class="nav-offset" id="day-3"></div>
+					<div class="top">
+						<h2 class="date">Day 3: 30th August</h2>
+					</div>
+					<div class="bottom">
+						<div class="line"></div>
+						<div class="item-container">
+							<TimelineItem
+								time="8:30 - 9:30"
+								name={[{ text: "Registration" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								name={[
+									{
+										text: "Opening Welcome / Awards / Poster Madness",
+									},
+								]}
+							/>
+							<TimelineItem
+								time="11:00 - 11:30"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								id="Jan-Gulliksen"
+								time="11:30 - 12:30"
+								name={[
+									{
+										text: "Opening Keynote",
+										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+										location:
+											"Large lecture theatre (PZA/103)",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="12:30 - 13:45"
+								name={[{ text: "Lunch" }]}
+							/>
+							<TimelineItem
+								time="13:45 - 15:15"
+								or="true"
+								name={[
+									{
+										text: "Session A1: User Studies",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A2: Accessibility",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A3: Model-Based UI Design and Testing",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session A4: Interaction with Conversational Agents",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+									{
+										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
+										location: "LMB/037",
+										hasInfo: true,
+									},
+									{
+										text: "Panel 2: Ethical Value Exchange in HCI",
+										location:
+											"Large Lecture Theatre, PZA/103",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="15:15 - 15:45"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								or="true"
+								name={[
+									{
+										text: "Session B1: Data Physicalisation and Cross-device",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B2: Interacting with children",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B3: Information Visualization",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session B4: Natural Language Processing and AI Explainability",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+								]}
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="timetable">
+					<div class="nav-offset" id="day-4"></div>
+					<div class="top">
+						<h2 class="date">Day 4: 31st August</h2>
+					</div>
+					<div class="bottom">
+						<div class="line"></div>
+						<div class="item-container">
+							<TimelineItem
+								time="8:30 - 9:30"
+								name={[{ text: "Registration" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								name={[
+									{
+										text: "Opening Welcome / Awards / Poster Madness",
+									},
+								]}
+							/>
+							<TimelineItem
+								time="11:00 - 11:30"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								id="Ann-Blandford"
+								time="11:30 - 12:30"
+								name={[
+									{
+										text: "Opening Keynote",
+										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+										location:
+											"Large lecture theatre (PZA/103)",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="12:30 - 13:45"
+								name={[{ text: "Lunch" }]}
+							/>
+							<TimelineItem
+								time="13:45 - 15:15"
+								or="true"
+								name={[
+									{
+										text: "Session A1: User Studies",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A2: Accessibility",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A3: Model-Based UI Design and Testing",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session A4: Interaction with Conversational Agents",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+									{
+										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
+										location: "LMB/037",
+										hasInfo: true,
+									},
+									{
+										text: "Panel 2: Ethical Value Exchange in HCI",
+										location:
+											"Large Lecture Theatre, PZA/103",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="15:15 - 15:45"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								or="true"
+								name={[
+									{
+										text: "Session B1: Data Physicalisation and Cross-device",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B2: Interacting with children",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B3: Information Visualization",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session B4: Natural Language Processing and AI Explainability",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+								]}
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="timetable">
+					<div class="nav-offset" id="day-5"></div>
+					<div class="top">
+						<h2 class="date">Day 5: 1st September</h2>
+					</div>
+					<div class="bottom">
+						<div class="line"></div>
+						<div class="item-container">
+							<TimelineItem
+								time="8:30 - 9:30"
+								name={[{ text: "Registration" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								name={[
+									{
+										text: "Opening Welcome / Awards / Poster Madness",
+									},
+								]}
+							/>
+							<TimelineItem
+								time="11:00 - 11:30"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								time="11:30 - 12:30"
+								name={[
+									{
+										text: "Opening Keynote",
+										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+										location:
+											"Large lecture theatre (PZA/103)",
+										hasInfo: true,
+										id: "Jonathan-Lazar",
+									},
+								]}
+							/>
+							<TimelineItem
+								time="12:30 - 13:45"
+								name={[{ text: "Lunch" }]}
+							/>
+							<TimelineItem
+								time="13:45 - 15:15"
+								or="true"
+								name={[
+									{
+										text: "Session A1: User Studies",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A2: Accessibility",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session A3: Model-Based UI Design and Testing",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session 4: Interaction with Conversational Agents",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+									{
+										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
+										location: "LMB/037",
+										hasInfo: true,
+									},
+									{
+										text: "Panel 2: Ethical Value Exchange in HCI",
+										location:
+											"Large Lecture Theatre, PZA/103",
+										hasInfo: true,
+									},
+								]}
+							/>
+							<TimelineItem
+								time="15:15 - 15:45"
+								name={[{ text: "Coffee Break" }]}
+							/>
+							<TimelineItem
+								time="9:30 - 11:00"
+								or="true"
+								name={[
+									{
+										text: "Session B1: Data Physicalisation and Cross-device",
+										location: "CSE/082X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B2: Interacting with children",
+										location: "CSE/102X",
+										hasInfo: true,
+									},
+									{
+										text: "Session B3: Information Visualization",
+										location: "LMB/002",
+										hasInfo: true,
+									},
+									{
+										text: "Session B4: Natural Language Processing and AI Explainability",
+										location: "LMB/002A",
+										hasInfo: true,
+									},
+								]}
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="programmes-section-2">
+				<PreFooterModular
+					title="CHECK OUT:"
+					buttons={[
+						{ text: "All Workshops", href: "/workshops/0" },
+						{ text: "All Keynotes", href: "/keynotes" },
+					]}
+				/>
+			</section>
+			<!-- <section class="popup">
+				<div class="info-card">
+					<article class="details" id="details">
+						<h2>
+							<span style="opacity: 0.6">Workshop:</span>
+						</h2>
+						<h1 id="workshop-title">
+							{title}
+						</h1>
+						<button class="exit" id="exit">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+						</button>
+						<p class="no-margin" id="workshop-description">
+
+						</p>
+						<hr class="solid-line">
+						
+						<div class="items">
+							<strong>Website:</strong>
+							<a class="no-margin" id="workshop-website" target="_blank">
+
+							</a>
+						</div>
+
+						<div class="items">
+							<strong>Enquiries to:</strong>
+							<div class="no-margin" id="workshop-enquiries">
+
+							</div>
+						</div>
+
+						<div class="items">
+							<strong>Date:</strong>
+							<div id="workshop-period">
+							</div>
+						</div>
+						
+						<div class="items">
+							<strong>Mode:</strong> 
+							<p id="workshop-mode">
+								
+							</p>
+						</div>
+
+					</article>
+				</div>
+			</section> -->
+		</content>
+	</main>
+
+	<Footer />
+</Layout>
+
+<script>
+	var currentTimeout;
+	function highlight() {
+		document.querySelectorAll(".animate-highlight").forEach((e) => {
+			e.classList.remove("animate-highlight");
+		});
+		let url = window.location.href;
+		let getID = url.split("#")[1];
+		if (document.getElementById(getID) != null) {
+			document.getElementById(getID).classList.add("animate-highlight");
+			console.log(document.getElementById(getID));
+			// currentTimeout = setTimeout(() => {
+			// 	document.querySelectorAll(".animate-highlight").forEach((e) => {
+			// 		e.classList.remove("animate-highlight")
+			// 	})
+			// }, 3000)
+		}
+	}
+	highlight();
+	window.addEventListener("hashchange", (e) => {
+		highlight();
+	});
+
+	const quickNav = document.getElementById("programmes-nav");
+	const quickNavTrigger = document.getElementById("programmes-nav-trigger");
+	window.addEventListener("scroll", (e) => {
+		if (quickNav && quickNavTrigger) {
+			if (window.innerWidth > 830) {
+				if (quickNavTrigger.getBoundingClientRect().bottom <= 1) {
+					quickNav.classList.add("detach");
+					quickNavTrigger.classList.add("programmes-nav-trigger");
+				} else {
+					quickNav.classList.remove("detach");
+					quickNavTrigger.classList.remove("programmes-nav-trigger");
+				}
+			} else {
+				if (quickNavTrigger.getBoundingClientRect().bottom <= 70) {
+					quickNav.classList.add("detach");
+					quickNavTrigger.classList.add("programmes-nav-trigger");
+				} else {
+					quickNav.classList.remove("detach");
+					quickNavTrigger.classList.remove("programmes-nav-trigger");
+				}
+			}
+		}
+	});
+
+	// const popupEl = document.querySelector('.popup');
+	// document.getElementById('exit').addEventListener('click', () => {
+	// 	//document.querySelector('.popup').style.display = 'none';
+	// 	// document.querySelector('.popup').style.opacity = '0';
+	// 	// document.querySelector('.popup').style.pointerEvents = 'none';
+	// 	// document.querySelector('.popup').style.top = '10%';
+	// 	document.querySelector('.popup').classList.remove('popup-show');
+	// 	document.querySelector('.info-card').classList.remove('info-card-show');
+	// })
+
+	// document.querySelector('.popup').addEventListener('click', (e) => {
+	// 	// document.querySelector('.popup').style.display = 'none';
+	// 	// document.querySelector('.popup').style.opacity = '0';
+	// 	// document.querySelector('.popup').style.pointerEvents = 'none';
+	// 	// document.querySelector('.popup').style.top = '10%';
+	// 	document.querySelector('.popup').classList.remove('popup-show');
+	// 	document.querySelector('.info-card').classList.remove('info-card-show');
+	// 	e.stopPropagation();
+	// })
+
+	// document.querySelector('.popup').addEventListener('scroll', (e) => {
+
+	// 	e.stopPropagation();
+	// })
+
+	// document.querySelector('.info-card').addEventListener('click', (e) => {
+	// 	e.stopPropagation();
+	// })
+
+	// document.querySelectorAll('.link-card').forEach((e) => {
+
+	// 	e.addEventListener('click', () => {
+	// 		console.log(e.getAttribute('data-title'));
+	// 		// document.querySelector('.popup').style.top = '0%';
+	// 		// popupEl.style.display = 'flex';
+	// 		// document.querySelector('.popup').style.pointerEvents = 'auto';
+	// 		// document.querySelector('.popup').style.opacity = '1';
+	// 		document.querySelector('.popup').classList.add('popup-show');
+	// 		document.querySelector('.info-card').classList.add('info-card-show');
+	// 		document.querySelector('.details').scrollTop = 0;
+	// 		document.querySelector('#workshop-title').innerHTML = e.getAttribute('data-title');
+	// 		document.querySelector('#workshop-description').innerHTML = e.getAttribute('data-description');
+	// 		document.querySelector('#workshop-website').innerHTML = e.getAttribute('data-website');
+	// 		document.querySelector('#workshop-website').href = e.getAttribute('data-website');
+	// 		document.querySelector('#workshop-enquiries').innerHTML = e.getAttribute('data-contacts');
+	// 		document.querySelector('#workshop-period').innerHTML = e.getAttribute('data-date');
+	// 		document.querySelector('#workshop-mode').innerHTML = e.getAttribute('data-mode');
+	// 		setTimeout(() => {
+	// 			popupEl.querySelectorAll('a').forEach((e) => {
+	// 				e.style.textDecoration = 'underline';
+	// 			})
+	// 			document.querySelectorAll('.items').forEach((e) => {
+	// 				e.querySelectorAll('p').forEach((e) => {
+	// 				e.style.margin = '0px';
+	// 			})
+	// 			})
+	// 		}, 100);
+
+	// 	})
+	// })
+</script>
+
+<style>
+	* {
+		margin: 0%;
+	}
+
+	.nav-offset {
+		position: relative;
+		top: -150px;
+	}
+
+	.programmes-nav-trigger {
+		margin-bottom: 80px !important;
+	}
+
+	.programmes-nav {
+		position: relative;
+		display: flex;
+		background-color: var(--color-bg);
+		width: calc(100vw - 14em);
+		margin: 0%;
+		padding: 1em;
+		padding-left: 2em;
+		padding-right: 2em;
+		z-index: 100;
+	}
+
+	.programmes-nav p {
+		width: 100%;
+		max-width: 100px;
+		display: flex;
+		text-align: left;
+		align-items: center;
+		justify-content: left;
+	}
+
+	.programmes-nav-button {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		max-width: 100px;
+		align-items: center;
+		justify-content: center;
+		margin: 0em 0.3em;
+		padding: 0.5em;
+		font-weight: bold;
+		font-size: 0.9em;
+		border-radius: 10px;
+		border: 2px solid #002c38;
+	}
+
+	.programmes-nav-button:focus {
+		background-color: #002c3844;
+	}
+
+	.detach {
+		position: fixed;
+		top: 0px;
+		border-bottom: 1px solid #002c38;
+	}
+
+	.line {
+		width: 5px;
+		border-left: solid 5px #002c38;
+		border-radius: 5px;
+		margin-top: 1em;
+		margin-right: 0.5em;
+		margin-bottom: 3em;
+	}
+
+	.timetable {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		border-radius: 15px;
+		padding: 1em;
+		position: relative;
+		width: calc(50% - 2em);
+		display: flex;
+		flex-direction: column;
+		background-color: #fffcf9aa;
+		box-shadow: 0px 0px 50px #00000011;
+	}
+
+	.timetable:nth-child(odd) {
+		margin-left: 2em;
+	}
+	.timetable:nth-child(even) {
+		margin-right: 2em;
+	}
+
+	.bottom {
+		display: flex;
+	}
+
+	.date {
+		font-weight: ;
+		margin-bottom: 0.5em;
+	}
+
+	content {
+		border-bottom: 1px solid #002c38;
+	}
+
+	p a {
+		text-decoration: underline !important;
+	}
+
+	#details::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Track */
+	#details::-webkit-scrollbar-track {
+		background: #002c3844;
+		border-radius: 10px;
+	}
+
+	/* #details::-webkit-scrollbar-track:hover{
+	background: #ffffff33;
+	} */
+
+	/* Handle */
+	#details::-webkit-scrollbar-thumb {
+		background-color: #002c38;
+		border-radius: 10px;
+	}
+
+	/* Handle on hover */
+	#details::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+
+	main {
+		display: flex;
+		flex-direction: row;
+		overscroll-behavior: none;
+		/* overflow-y: scroll */
+		/* height: 300vh;
+		padding-left: 14em; */
+		/* margin-left: 14em; */
+		/* position: absolute; */
+	}
+
+	label {
+		font-family: "AH-B";
+	}
+
+	content {
+		width: 100%;
+	}
+
+	.solid-line {
+		width: 100%;
+		border-top: 2px solid #002c38;
+	}
+
+	.popup {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1em 0em;
+		background: #002c38;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: flex;
+		z-index: 100;
+		pointer-events: none;
+		top: 0%;
+		scale: 1;
+		opacity: 0;
+		transition: opacity 0.5s, top 0.5s ease-in-out, scale 0.2s ease-out;
+		justify-content: center;
+	}
+
+	.popup-show {
+		top: 0%;
+		scale: 1;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.info-card {
+		width: 100%;
+		padding: 2em;
+		max-width: 700px;
+		background-color: #fcf7eb;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		max-height: max-content;
+		border-radius: 1em;
+		top: 100%;
+		scale: 0.8;
+		transition: top 0.5s ease-in-out, scale 0.2s ease-out;
+	}
+
+	#workshop-description {
+		display: flex;
+		flex-direction: column;
+		/* margin-right: 1em; */
+		padding-right: 1em;
+	}
+
+	.info-card-show {
+		top: 0%;
+		scale: 1;
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	.info-card h1 {
+		padding-bottom: 0.5em;
+		margin: 0px;
+		font-size: 2em;
+		height: min-content;
+	}
+
+	.info-card h2 {
+		padding: 0em;
+		padding-bottom: 0.2em;
+		margin: 0px;
+		font-size: 1.3em;
+		height: min-content;
+		font-weight: 100;
+	}
+
+	.details {
+		overflow-y: scroll;
+		height: 100%;
+	}
+
+	.programmes-section-1 {
+		padding: 2em;
+	}
+
+	.programmes-section-2 {
+		display: flex;
+		padding: 2em;
+		flex-wrap: wrap;
+		max-width: 1800px;
+		border-bottom: 1px solid #002c38;
+	}
+
+	.programmes-section-2:last-child {
+		border-bottom: 0px solid #002c38;
+	}
+
+	.exit {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+		padding: 0.5em;
+	}
+
+	.center {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.button-padding h2 {
+		padding: 0.1em 1em;
+		border-radius: 50px;
+	}
+
+	.center * {
+		margin: auto;
+	}
+
+	.sub-types {
+		background-color: #002c38;
+		color: #fcf7eb;
+		border-radius: 30px;
+		padding: 0.5em 0em 0.5em 0em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		display: flex;
+		flex-direction: column;
+		/* width: max-content; */
+		/* height: 100%; */
+		/* width: 100%; */
+	}
+
+	.selection-grid {
+		display: grid;
+		width: 100%;
+		gap: 1em;
+		max-width: 1200px;
+		grid-template-columns: 1fr 1fr;
+		padding: 1em;
+		flex-wrap: wrap;
+	}
+
+	.items {
+		display: block;
+	}
+
+	.items p {
+		/* display: flex; */
+		margin: 0px;
+	}
+
+	.no-margin {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.no-margin * {
+		margin: 0px !important;
+		padding: 0px;
+	}
+
+	p strong {
+		/* all: unset; */
+		display: flex;
+		width: max-content;
+		padding: 0px;
+		padding-right: 0.4em;
+		font-size: 1em;
+	}
+
+	.sub-types h3 {
+		margin: 0px;
+		padding: 0.2em;
+		padding-left: 1em;
+		padding-bottom: 0.5em;
+		font-family: "AH-B";
+	}
+
+	.sub-details {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* padding-left: 1em; */
+	}
+
+	.submissions {
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.input-field {
+		padding-top: 1em;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.input-field input,
+	.input-field textarea {
+		all: unset;
+		padding: 0.5em;
+		border-radius: 0.5em;
+		border: 2px solid #002c38;
+		font-family: sans-serif;
+	}
+
+	.input-field label {
+		padding-bottom: 0.2em;
+	}
+
+	.link-card p {
+		margin: 0%;
+	}
+
+	.contact-details h4 {
+		margin: 0%;
+		font-family: "AH-B";
+	}
+
+	.contact-details p {
+		margin-top: 0%;
+	}
+
+	.juries-details {
+		display: flex;
+	}
+
+	.juries-section {
+		display: flex;
+		display: block;
+		align-content: space-between;
+		padding-bottom: 4em;
+	}
+
+	.juries-section:last-child {
+		display: flex;
+		display: block;
+		align-content: space-between;
+		padding-bottom: 0%;
+	}
+
+	.text-details {
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+
+	.nav-container {
+		width: 14em;
+	}
+
+	.img-mask {
+		max-height: 450px;
+		overflow: hidden;
+	}
+
+	.rch {
+		width: 100%;
+		/* max-height: 473px; */
+		object-fit: cover;
+	}
+
+	.stretch {
+		box-sizing: border-box;
+		display: flex;
+		width: 100%;
+		/* height: 100%; */
+	}
+
+	.pill {
+		font-family: "AH-B";
+		font-size: 1em;
+		margin: 0px;
+		display: flex;
+		padding: 0.2em 0.5em 0.2em 0.5em;
+		background-color: #002c38;
+		color: #fcf7eb;
+		border-radius: 50px;
+		align-items: center;
+		width: fit-content;
+	}
+
+	.pill img {
+		margin: 0%;
+		padding-right: 0.5em;
+		width: 1em;
+		height: 1em;
+	}
+
+	.location-detail {
+		align-items: flex-end;
+		margin-top: auto;
+		margin-bottom: 0%;
+		margin-left: 2em;
+		white-space: nowrap;
+		width: max-content;
+	}
+
+	.title {
+		font-family: "SYNCOPATE";
+		/* height: 50%; */
+		padding: 0em;
+		/* padding-bottom: 3em; */
+		margin: 0%;
+		font-size: 1em;
+		/* overflow: hidden; */
+		/* width: 200%; */
+	}
+
+	.title h1 {
+		margin: 0%;
+		padding: 0%;
+		font-size: 2.5em;
+	}
+
+	.conditions {
+		padding-top: 2em;
+	}
+
+	/* Presets */
+
+	.bold {
+		font-family: "AH-B";
+	}
+
+	.thin {
+		font-family: "S-R";
+	}
+
+	@media screen and (max-width: 1300px) {
+		.popup {
+			padding: 0%;
+			position: fixed;
+			border-radius: 0px;
+			z-index: 10000;
+		}
+
+		.programmes-nav {
+			padding: 1em;
+		}
+
+		.info-card {
+			border-radius: 0px;
+		}
+
+		.selection-grid {
+			display: grid;
+			width: 100%;
+			gap: 1em;
+			grid-template-columns: 1fr;
+			padding: 1em;
+			flex-wrap: wrap;
+		}
+		.programmes-section-1 {
+			padding: 1em;
+		}
+
+		.title {
+			font-size: 0.8em;
+		}
+
+		.programmes-section-2 {
+			padding: 1em;
+		}
+
+		.timetable {
+			width: 100%;
+		}
+
+		.timetable:nth-child(odd) {
+			margin-left: 0em;
+		}
+		.timetable:nth-child(even) {
+			margin-right: 0em;
+		}
+	}
+
+	@media (max-width: 829px) {
+		.time {
+			padding: 0.5em;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
+		}
+
+		.programmes-nav {
+			position: relative;
+			display: flex;
+			background-color: var(--color-bg);
+			width: 100%;
+			margin: 0%;
+			padding: 0em 1em;
+			z-index: 100;
+		}
+
+		.programmes-nav p {
+			padding-left: 1em;
+			width: 100%;
+			display: flex;
+			text-align: left;
+			align-items: center;
+			justify-content: left;
+		}
+
+		.title {
+			font-size: 0.8em;
+		}
+
+		.programmes-nav-button {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			margin: 0em 0.3em;
+			padding: 0.5em 0.3em;
+			font-weight: bold;
+			font-size: 0.9em;
+			border-radius: 10px;
+			border: 1px solid #002c38;
+		}
+
+		.detach {
+			padding-top: 0.2em;
+			padding-bottom: 1em;
+			position: fixed;
+			top: 76px;
+		}
+	}
+</style>

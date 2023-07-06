@@ -5,24 +5,27 @@ export interface Props {
     id?: string;
     or?: boolean;
     name?: {
-        text: string;
+        text?: string;
         hasInfo?: boolean;
         author?: string;
         location?: string;
+        id?: string;
     }[];
 }
 
 const { time, name, hasInfo, or, id } = Astro.props;
+console.log(name)
 ---
 
 <div class="timetable-row">
     <p class="time">{time}</p>
 
-    <div class="timetable-item" id={id}>
+    <div class="timetable-item">
+        <!-- {id && <div class="offset" id={id}></div>} -->
         {
             name.map((e) =>
                 e.hasInfo ? (
-                    <div class="timetable-text hasInfo">
+                    <div class="timetable-text hasInfo" id={e.id}>
                         {e.text && <p class="bold">{e.text}</p>}
                         {e.location && (
                             <p
@@ -49,6 +52,31 @@ const { time, name, hasInfo, or, id } = Astro.props;
     </div>
 
     <style>
+        
+	@keyframes highlight{
+		0% {
+			background-color: #FFC223ff;
+		} 20% {
+			background-color: #FFC22333;
+		} 40% {
+			background-color: #FFC223ff;
+		} 60% {
+			background-color: #FFC22333;
+		} 80% {
+			background-color: #FFC223ff;
+		} 100% {
+			background-color: #FFC22333;
+		}
+	}
+
+	.animate-highlight{
+		/* background-color: #00000011; */
+        scroll-margin-top: 30vh;
+		animation-name: highlight;
+  		animation-duration: 3s;
+        animation-timing-function: linear;
+	}
+
         .or {
             padding: 1em;
             height: calc(100% - 1em);
@@ -68,9 +96,14 @@ const { time, name, hasInfo, or, id } = Astro.props;
             /* color: #FCF7EB */
         }
 
+        .offset{
+            position: absolute;
+            top: -20px;
+        }
+
         .everything-centered{
             display: flex;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
             align-content: center;
             justify-content: center;
         }
