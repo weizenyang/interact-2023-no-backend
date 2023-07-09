@@ -51,8 +51,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "day" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: [
-      {
-        - label: "Day",
+      - {
+          label: "Day",
           name: "day",
           widget: "number",
           default: "0",
