@@ -1,5 +1,5 @@
 
-local_bakend: true
+local_backend: true
 backend:
   name: git-gateway
   branch: main
@@ -43,71 +43,71 @@ collections:
       - {label: "Event period", name: "event_period", widget: "markdown"}
       - {label: "Mode", name: "mode", widget: "markdown"}
 
-  - name: "timetable" # Used in routes, e.g., /admin/collections/blog
-    label: "Timetable" # Used in the UI
-    folder: "/src/data/timetable_data" # The path to the folder where the documents are stored
-    extension: json
-    format: json
-    create: true # Allow users to create new documents in this collection
-    slug: "day" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Day",
-        name: "day",
-        widget: "number",
-        default: "0",
-        required: true}
+  # - name: "timetable" 
+  #   label: "Timetable" 
+  #   folder: "/src/data/timetable_data" 
+  #   extension: json
+  #   format: json
+  #   create: true 
+  #   slug: "day"
+  #   fields: 
+  #     - {label: "Day",
+  #       name: "day",
+  #       widget: "number",
+  #       default: "0",
+  #       required: true}
 
-      - {label: "Date",
-        name: "date",
-        widget: "date",
-        default: "2023-08-30",
-        required: true}
+  #     - {label: "Date",
+  #       name: "date",
+  #       widget: "date",
+  #       default: "2023-08-30",
+  #       required: true}
 
-      - {label: "Data",
-        name: "data",
-        widget: "list",
-        default: "00:00 - 00:00",
-        required: true,
-        field: [
-            {label: "Time",
-            name: "time",
-            widget: "string",
-            default: "00:00 - 00:00",
-            required: true},
+  #     - {label: "Data",
+  #       name: "data",
+  #       widget: "list",
+  #       default: "00:00 - 00:00",
+  #       required: true,
+  #       field: [
+  #           {label: "Time",
+  #           name: "time",
+  #           widget: "string",
+  #           default: "00:00 - 00:00",
+  #           required: true},
 
-           {label: "Or",
-            name: "or",
-            widget: "boolean",
-            default: "false",
-            required: true},
+  #          {label: "Or",
+  #           name: "or",
+  #           widget: "boolean",
+  #           default: "false",
+  #           required: true},
 
-            {label: "Item",
-            name: "item",
-            widget: "list",
-            required: true,
-            field: [
-                {label: "Text",
-                name: "text",
-                widget: "string",
-                default: "Session XX: XXXX",
-                required: true},
+  #           {label: "Item",
+  #           name: "item",
+  #           widget: "list",
+  #           required: true,
+  #           field: [
+  #               {label: "Text",
+  #               name: "text",
+  #               widget: "string",
+  #               default: "Session XX: XXXX",
+  #               required: true},
 
-                {label: "Location",
-                name: "location",
-                widget: "string",
-                default: "ABC123/123",
-                required: false},
+  #               {label: "Location",
+  #               name: "location",
+  #               widget: "string",
+  #               default: "ABC123/123",
+  #               required: false},
                 
-                {label: "Has Info",
-                name: "hasInfo",
-                widget: "boolean",
-                default: "false",
-                required: true}
-            ] 
+  #               {label: "Has Info",
+  #               name: "hasInfo",
+  #               widget: "boolean",
+  #               default: "false",
+  #               required: true}
+  #           ] 
               
-            }
-        ]
-       }
+  #           }
+  #       ]
+  #      }
             
             
           
