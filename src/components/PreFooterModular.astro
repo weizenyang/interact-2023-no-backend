@@ -42,9 +42,18 @@ buttons.map((e) => {
         align-items: center;
         justify-content: space-between;
     }
+    
 
     .check-this-out-button button{
         margin: 0.5em;
         width: 200px;
     }
+
+    @media screen and (max-width: 830px) {
+        .check-this-out-button{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
 </style>
