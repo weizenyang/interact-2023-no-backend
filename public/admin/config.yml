@@ -68,17 +68,44 @@ collections:
         widget: "list"
         default: "00:00 - 00:00"
         required: true
-        field: {
-          - {label: "Time", name: "time", widget: "string", default: "00:00 - 00:00", required: true}
-          - {label: "Or", name: "or", widget: "boolean", default: "false", required: true}
-          - {label: "Item", name: "item", widget: "list", required: true, 
-        field: {
-          - {label: "Text", name: "text", widget: "string", default: "Session XX: XXXX", required: true}
-          - {label: "Location", name: "location", widget: "string", default: "ABC123/123", required: false}
-          - {label: "Has Info", name: "hasInfo", widget: "boolean", default: "false", required: true}
-        }}
-      }
-        
+        field: 
+          - label: "Time" 
+            name: "time"
+            widget: "string"
+            default: "00:00 - 00:00"
+            required: true
+
+          - label: "Or" 
+            name: "or"
+            widget: "boolean"
+            default: "false"
+            required: true
+
+          - label: "Item"
+            name: "item"
+            widget: "list"
+            required: true
+            field: 
+              - label: "Text"
+                name: "text"
+                widget: "string"
+                default: "Session XX: XXXX"
+                required: true
+
+              - label: "Location"
+                name: "location"
+                widget: "string"
+                default: "ABC123/123"
+                required: false
+                
+              - label: "Has Info"
+                name: "hasInfo"
+                widget: "boolean"
+                default: "false"
+                required: true
+            
+          
+          
 
 # "day": 3,
 #   "date": "30th August",
