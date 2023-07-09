@@ -10,23 +10,39 @@ export interface Props {
         author?: string;
         location?: string;
         id?: string;
+        info: {
+            title?: string;
+            authors?: string;
+            presenters?: string;
+            contact?: {
+                name?: string;
+                email?: string;
+            }[]
+        }[]
     }[];
 }
 
-const { time, name, hasInfo, or, id } = Astro.props;
-console.log(name)
+const { time, name, hasInfo, or, id, info, contact} = Astro.props;
+name.map((e) => {
+    // console.log(e)
+    if(e.hasInfo){
+        e.info.map((i) => {
+            console.log(i)
+        })
+    }
+})
 ---
 
 <div class="timetable-row">
     <p class="time">{time}</p>
-
     <div class="timetable-item">
         <!-- {id && <div class="offset" id={id}></div>} -->
         {
             name.map((e) =>
                 e.hasInfo ? (
                     <div class="timetable-text hasInfo" id={e.id}>
-                        {e.text && <p class="bold">{e.text}</p>}
+                        
+                        {e.text && <p class="session-name bold">{e.text}</p>}
                         {e.location && (
                             <p
                                 style="margin-top: 0em; font-size: 0.8em; width: 100%"
@@ -39,8 +55,27 @@ console.log(name)
                                 set:html={e.author}
                             />
                         )}
+                        {e.info.length > 0 && <template data-session={e.text} data-time={time}>
+                            {e.info.map((i) => 
+                                    <div class="subject">
+                                        <p class="info-card-id">{i.id}</p>
+                                        <h2 class="info-card-title">{i.title}</h2>
+                                        <p class="info-card-authors">Authors: {i.authors}</p>
+                                        <p class="info-card-presenters">Presenters: {i.presenters}</p>
+
+                                        {i.contact != undefined && i.contact.map((contact) => 
+                                            <a href={"mailto:" + contact.email}>Contact: {contact.email}</a>
+                                        )}
+                                        
+                                    </div>
+                                    
+                         )}
+                        </template>}
+                        
+                        
                     </div>
-                ) : (
+                    )
+                 : (
                     <p class="timetable-text bold">{e.text}</p>
                 )
             )
@@ -177,7 +212,7 @@ console.log(name)
             align-items: left;
             width: 100%;
             justify-content: center;
-            /* padding-bottom: 0.7em; */
+            scroll-margin-top: 30vh;
             padding-top: 0%;
             line-break: strict;
         }
@@ -189,6 +224,22 @@ console.log(name)
 
         .bold {
             font-weight: bold;
+        }
+
+        .info-card-title{
+            margin-top: 0em;
+        }
+
+        .info-card-id{
+            background-color: #002C38;
+            color: #FFC223;
+            padding: 0.5em;
+            margin-top: 2em;
+        }
+
+        .subject{
+            padding-bottom: 2em;
+            border-bottom: 1px #002C38 solid;
         }
 
         @media screen and (max-width:829px){

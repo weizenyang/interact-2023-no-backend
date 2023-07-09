@@ -28,7 +28,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			<section class="programmes-section-2">
 				{
 					files.map((e) => (
-						<div class="timetable">
+						<div class="timetable" id={"day-" + e.day}>
 							<div class="top">
 								<h2 class="date">
 									Day {e.day}: {e.date}
@@ -36,572 +36,25 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 							</div>
 							<div class="bottom">
 								<div class="item-container">
-									{e.data.map(
-										(timeslot) => 
-											<TimelineItem or={timeslot.or} time={timeslot.time} name={timeslot.item.map(data => ({text: data.text, author: data.author, location: data.location, hasInfo: data.hasInfo}))}/>
-											
-										
-									)}
+									{e.data.map((timeslot) => (
+										<TimelineItem
+											or={timeslot.or}
+											time={timeslot.time}
+											name={timeslot.item.map((data) => ({
+												text: data.text,
+												author: data.author,
+												location: data.location,
+												hasInfo: data.hasInfo,
+												info: data.info,
+												contact: data.contact
+											}))}
+										/>
+									))}
 								</div>
 							</div>
 						</div>
 					))
 				}
-
-				<div class="nav-offset" id="day-1"></div>
-				<div class="timetable">
-					<div class="top">
-						<h2 class="date">Day 1: 28th August</h2>
-					</div>
-					<div class="bottom">
-						<div class="line"></div>
-						<div class="item-container">
-							<TimelineItem
-								time="8:30 - 9:30"
-								name={[{ text: "Registration" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								name={[
-									{
-										text: "Opening Welcome / Awards / Poster Madness",
-									},
-								]}
-							/>
-							<TimelineItem
-								time="11:00 - 11:30"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								time="11:30 - 12:30"
-								name={[
-									{
-										text: "Opening Keynote",
-										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
-										location:
-											"Large lecture theatre (PZA/103)",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="12:30 - 13:45"
-								name={[{ text: "Lunch" }]}
-							/>
-							<TimelineItem
-								time="13:45 - 15:15"
-								or="true"
-								name={[
-									{
-										text: "Session A1: User Studies",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A2: Accessibility",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A3: Model-Based UI Design and Testing",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session A4: Interaction with Conversational Agents",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-									{
-										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
-										location: "LMB/037",
-										hasInfo: true,
-									},
-									{
-										text: "Panel 2: Ethical Value Exchange in HCI",
-										location:
-											"Large Lecture Theatre, PZA/103",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="15:15 - 15:45"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								or="true"
-								name={[
-									{
-										text: "Session B1: Data Physicalisation and Cross-device",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B2: Interacting with children",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B3: Information Visualization",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session B4: Natural Language Processing and AI Explainability",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-								]}
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="timetable">
-					<div class="nav-offset" id="day-2"></div>
-					<div class="top">
-						<h2 class="date">Day 2: 29th August</h2>
-					</div>
-					<div class="bottom">
-						<div class="line"></div>
-						<div class="item-container">
-							<TimelineItem
-								time="8:30 - 9:30"
-								name={[{ text: "Registration" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								name={[
-									{
-										text: "Opening Welcome / Awards / Poster Madness",
-									},
-								]}
-							/>
-							<TimelineItem
-								time="11:00 - 11:30"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								id="Mike-Evans"
-								time="11:30 - 12:30"
-								name={[
-									{
-										text: "Opening Keynote",
-										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
-										location:
-											"Large lecture theatre (PZA/103)",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="12:30 - 13:45"
-								name={[{ text: "Lunch" }]}
-							/>
-							<TimelineItem
-								time="13:45 - 15:15"
-								or="true"
-								name={[
-									{
-										text: "Session A1: User Studies",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A2: Accessibility",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A3: Model-Based UI Design and Testing",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session A4: Interaction with Conversational Agents",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-									{
-										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
-										location: "LMB/037",
-										hasInfo: true,
-									},
-									{
-										text: "Panel 2: Ethical Value Exchange in HCI",
-										location:
-											"Large Lecture Theatre, PZA/103",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="15:15 - 15:45"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								or="true"
-								name={[
-									{
-										text: "Session B1: Data Physicalisation and Cross-device",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B2: Interacting with children",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B3: Information Visualization",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session B4: Natural Language Processing and AI Explainability",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-								]}
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="timetable">
-					<div class="nav-offset" id="day-3"></div>
-					<div class="top">
-						<h2 class="date">Day 3: 30th August</h2>
-					</div>
-					<div class="bottom">
-						<div class="line"></div>
-						<div class="item-container">
-							<TimelineItem
-								time="8:30 - 9:30"
-								name={[{ text: "Registration" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								name={[
-									{
-										text: "Opening Welcome / Awards / Poster Madness",
-									},
-								]}
-							/>
-							<TimelineItem
-								time="11:00 - 11:30"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								id="Jan-Gulliksen"
-								time="11:30 - 12:30"
-								name={[
-									{
-										text: "Opening Keynote",
-										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
-										location:
-											"Large lecture theatre (PZA/103)",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="12:30 - 13:45"
-								name={[{ text: "Lunch" }]}
-							/>
-							<TimelineItem
-								time="13:45 - 15:15"
-								or="true"
-								name={[
-									{
-										text: "Session A1: User Studies",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A2: Accessibility",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A3: Model-Based UI Design and Testing",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session A4: Interaction with Conversational Agents",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-									{
-										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
-										location: "LMB/037",
-										hasInfo: true,
-									},
-									{
-										text: "Panel 2: Ethical Value Exchange in HCI",
-										location:
-											"Large Lecture Theatre, PZA/103",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="15:15 - 15:45"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								or="true"
-								name={[
-									{
-										text: "Session B1: Data Physicalisation and Cross-device",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B2: Interacting with children",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B3: Information Visualization",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session B4: Natural Language Processing and AI Explainability",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-								]}
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="timetable">
-					<div class="nav-offset" id="day-4"></div>
-					<div class="top">
-						<h2 class="date">Day 4: 31st August</h2>
-					</div>
-					<div class="bottom">
-						<div class="line"></div>
-						<div class="item-container">
-							<TimelineItem
-								time="8:30 - 9:30"
-								name={[{ text: "Registration" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								name={[
-									{
-										text: "Opening Welcome / Awards / Poster Madness",
-									},
-								]}
-							/>
-							<TimelineItem
-								time="11:00 - 11:30"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								id="Ann-Blandford"
-								time="11:30 - 12:30"
-								name={[
-									{
-										text: "Opening Keynote",
-										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
-										location:
-											"Large lecture theatre (PZA/103)",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="12:30 - 13:45"
-								name={[{ text: "Lunch" }]}
-							/>
-							<TimelineItem
-								time="13:45 - 15:15"
-								or="true"
-								name={[
-									{
-										text: "Session A1: User Studies",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A2: Accessibility",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A3: Model-Based UI Design and Testing",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session A4: Interaction with Conversational Agents",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-									{
-										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
-										location: "LMB/037",
-										hasInfo: true,
-									},
-									{
-										text: "Panel 2: Ethical Value Exchange in HCI",
-										location:
-											"Large Lecture Theatre, PZA/103",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="15:15 - 15:45"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								or="true"
-								name={[
-									{
-										text: "Session B1: Data Physicalisation and Cross-device",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B2: Interacting with children",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B3: Information Visualization",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session B4: Natural Language Processing and AI Explainability",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-								]}
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="timetable">
-					<div class="nav-offset" id="day-5"></div>
-					<div class="top">
-						<h2 class="date">Day 5: 1st September</h2>
-					</div>
-					<div class="bottom">
-						<div class="line"></div>
-						<div class="item-container">
-							<TimelineItem
-								time="8:30 - 9:30"
-								name={[{ text: "Registration" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								name={[
-									{
-										text: "Opening Welcome / Awards / Poster Madness",
-									},
-								]}
-							/>
-							<TimelineItem
-								time="11:00 - 11:30"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								time="11:30 - 12:30"
-								name={[
-									{
-										text: "Opening Keynote",
-										author: "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
-										location:
-											"Large lecture theatre (PZA/103)",
-										hasInfo: true,
-										id: "Jonathan-Lazar",
-									},
-								]}
-							/>
-							<TimelineItem
-								time="12:30 - 13:45"
-								name={[{ text: "Lunch" }]}
-							/>
-							<TimelineItem
-								time="13:45 - 15:15"
-								or="true"
-								name={[
-									{
-										text: "Session A1: User Studies",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A2: Accessibility",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session A3: Model-Based UI Design and Testing",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session 4: Interaction with Conversational Agents",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-									{
-										text: "Courses A [Part 1]: The UCD Sprint: Bringing Users Along to Sprint",
-										location: "LMB/037",
-										hasInfo: true,
-									},
-									{
-										text: "Panel 2: Ethical Value Exchange in HCI",
-										location:
-											"Large Lecture Theatre, PZA/103",
-										hasInfo: true,
-									},
-								]}
-							/>
-							<TimelineItem
-								time="15:15 - 15:45"
-								name={[{ text: "Coffee Break" }]}
-							/>
-							<TimelineItem
-								time="9:30 - 11:00"
-								or="true"
-								name={[
-									{
-										text: "Session B1: Data Physicalisation and Cross-device",
-										location: "CSE/082X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B2: Interacting with children",
-										location: "CSE/102X",
-										hasInfo: true,
-									},
-									{
-										text: "Session B3: Information Visualization",
-										location: "LMB/002",
-										hasInfo: true,
-									},
-									{
-										text: "Session B4: Natural Language Processing and AI Explainability",
-										location: "LMB/002A",
-										hasInfo: true,
-									},
-								]}
-							/>
-						</div>
-					</div>
-				</div>
 			</section>
 			<section class="programmes-section-2">
 				<PreFooterModular
@@ -612,53 +65,70 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 					]}
 				/>
 			</section>
-			<!-- <section class="popup">
+
+			<section class="popup">
 				<div class="info-card">
+					<div class="info-card-top">
+						<button class="info-card-button prev-button"> < </button>
+						<div class="session-info">
+							<p class="session-title">
+								Some Text Here: Here Too
+							</p>
+							<p class="session-time">
+								Some Text Here: Here Too
+							</p>
+						</div>
+						<button class="exit" id="exit">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="#000000"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="feather feather-x"
+								><line x1="18" y1="6" x2="6" y2="18"
+								></line><line x1="6" y1="6" x2="18" y2="18"
+								></line></svg
+							>
+						</button>
+						<button class="info-card-button next-button"> ></button>
+					</div>
+					<article class="details">
+						<div class="content-1 sc" id="details">
+							<button class="exit" id="exit">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="#000000"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="feather feather-x"
+									><line x1="18" y1="6" x2="6" y2="18"
+									></line><line x1="6" y1="6" x2="18" y2="18"
+									></line></svg
+								>
+							</button>
+						</div>
+					</article>
+				</div>
+
+				<!-- <div class="info-card">
 					<article class="details" id="details">
-						<h2>
-							<span style="opacity: 0.6">Workshop:</span>
-						</h2>
-						<h1 id="workshop-title">
-							{title}
-						</h1>
+						<h1>Some Title</h1>
 						<button class="exit" id="exit">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 						</button>
-						<p class="no-margin" id="workshop-description">
-
-						</p>
-						<hr class="solid-line">
-						
-						<div class="items">
-							<strong>Website:</strong>
-							<a class="no-margin" id="workshop-website" target="_blank">
-
-							</a>
-						</div>
-
-						<div class="items">
-							<strong>Enquiries to:</strong>
-							<div class="no-margin" id="workshop-enquiries">
-
-							</div>
-						</div>
-
-						<div class="items">
-							<strong>Date:</strong>
-							<div id="workshop-period">
-							</div>
-						</div>
-						
-						<div class="items">
-							<strong>Mode:</strong> 
-							<p id="workshop-mode">
-								
-							</p>
-						</div>
-
 					</article>
-				</div>
-			</section> -->
+				</div> -->
+			</section>
 		</content>
 	</main>
 
@@ -666,21 +136,38 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 </Layout>
 
 <script>
-	var currentTimeout;
-	function highlight() {
+	var currentIndex = 0;
+	//Lookup system to get elements with templates
+	var templates = {};
+	var elements = [];
+	var key = 0;
+	document.querySelectorAll(".hasInfo").forEach((e) => {
+		if (e.querySelector("template")) {
+			templates[key] = e;
+			key++;
+		}
+	});
+	console.log(templates);
+
+	function highlight(target) {
+		
 		document.querySelectorAll(".animate-highlight").forEach((e) => {
 			e.classList.remove("animate-highlight");
 		});
-		let url = window.location.href;
-		let getID = url.split("#")[1];
-		if (document.getElementById(getID) != null) {
-			document.getElementById(getID).classList.add("animate-highlight");
-			console.log(document.getElementById(getID));
-			// currentTimeout = setTimeout(() => {
-			// 	document.querySelectorAll(".animate-highlight").forEach((e) => {
-			// 		e.classList.remove("animate-highlight")
-			// 	})
-			// }, 3000)
+		if (target != 'a') {
+			console.log("Highlight")
+			let url = window.location.href;
+			let getID = url.split("#")[1];
+			if (document.getElementById(getID) != null) {
+				document
+					.getElementById(getID)
+					.classList.add("animate-highlight");
+				console.log("Get ID " + document.getElementById(getID));
+			}
+		} else {
+			document
+				.querySelector("[scroll-target]")
+				.classList.add("animate-highlight");
 		}
 	}
 	highlight();
@@ -712,72 +199,339 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		}
 	});
 
-	// const popupEl = document.querySelector('.popup');
-	// document.getElementById('exit').addEventListener('click', () => {
-	// 	//document.querySelector('.popup').style.display = 'none';
-	// 	// document.querySelector('.popup').style.opacity = '0';
-	// 	// document.querySelector('.popup').style.pointerEvents = 'none';
-	// 	// document.querySelector('.popup').style.top = '10%';
-	// 	document.querySelector('.popup').classList.remove('popup-show');
-	// 	document.querySelector('.info-card').classList.remove('info-card-show');
-	// })
-
-	// document.querySelector('.popup').addEventListener('click', (e) => {
-	// 	// document.querySelector('.popup').style.display = 'none';
-	// 	// document.querySelector('.popup').style.opacity = '0';
-	// 	// document.querySelector('.popup').style.pointerEvents = 'none';
-	// 	// document.querySelector('.popup').style.top = '10%';
-	// 	document.querySelector('.popup').classList.remove('popup-show');
-	// 	document.querySelector('.info-card').classList.remove('info-card-show');
-	// 	e.stopPropagation();
-	// })
-
-	// document.querySelector('.popup').addEventListener('scroll', (e) => {
-
-	// 	e.stopPropagation();
-	// })
-
-	// document.querySelector('.info-card').addEventListener('click', (e) => {
-	// 	e.stopPropagation();
-	// })
-
-	// document.querySelectorAll('.link-card').forEach((e) => {
-
-	// 	e.addEventListener('click', () => {
-	// 		console.log(e.getAttribute('data-title'));
-	// 		// document.querySelector('.popup').style.top = '0%';
-	// 		// popupEl.style.display = 'flex';
-	// 		// document.querySelector('.popup').style.pointerEvents = 'auto';
-	// 		// document.querySelector('.popup').style.opacity = '1';
-	// 		document.querySelector('.popup').classList.add('popup-show');
-	// 		document.querySelector('.info-card').classList.add('info-card-show');
-	// 		document.querySelector('.details').scrollTop = 0;
-	// 		document.querySelector('#workshop-title').innerHTML = e.getAttribute('data-title');
-	// 		document.querySelector('#workshop-description').innerHTML = e.getAttribute('data-description');
-	// 		document.querySelector('#workshop-website').innerHTML = e.getAttribute('data-website');
-	// 		document.querySelector('#workshop-website').href = e.getAttribute('data-website');
-	// 		document.querySelector('#workshop-enquiries').innerHTML = e.getAttribute('data-contacts');
-	// 		document.querySelector('#workshop-period').innerHTML = e.getAttribute('data-date');
-	// 		document.querySelector('#workshop-mode').innerHTML = e.getAttribute('data-mode');
-	// 		setTimeout(() => {
-	// 			popupEl.querySelectorAll('a').forEach((e) => {
-	// 				e.style.textDecoration = 'underline';
-	// 			})
-	// 			document.querySelectorAll('.items').forEach((e) => {
-	// 				e.querySelectorAll('p').forEach((e) => {
-	// 				e.style.margin = '0px';
-	// 			})
-	// 			})
-	// 		}, 100);
-
+	// document.querySelectorAll(".info-card-button").forEach((e) => {
+	// 	e.addEventListener('click', (e) => {
+	// 		e.stopPropagation()
 	// 	})
 	// })
+
+	document.getElementById("exit").addEventListener("click", () => {
+		document.querySelector(".popup").classList.remove("popup-show");
+		document.querySelector(".info-card").classList.remove("info-card-show");
+		highlight("a");
+	});
+
+	document.querySelector(".session-title").addEventListener("click", () => {
+		document.querySelector(".popup").classList.remove("popup-show");
+		document.querySelector(".info-card").classList.remove("info-card-show");
+	});
+
+	document.querySelectorAll(".hasInfo").forEach((e) => {
+		const template = e.querySelector("template");
+		if (template) {
+			//Enable popup
+			e.addEventListener("click", () => {
+				document.querySelector(".session-title").innerText =
+					e.querySelector(".session-name").innerText;
+
+				document.querySelector(".session-time").innerText =
+					template.getAttribute('data-time');
+
+				//Get Keys to update index
+				const findKey = Object.keys(templates).find(
+					(thiskey) => 
+						templates[thiskey].querySelector("template").dataset.session === e.querySelector(".session-name").innerText
+				);
+
+				console.log(e.querySelector(".session-name").innerText)
+
+				currentIndex = parseInt(findKey);
+				console.log(currentIndex)
+				
+
+				scrollToTarget(e.querySelector(".session-name").innerText);
+				document.querySelector(".popup").classList.add("popup-show");
+				document
+					.querySelector(".info-card")
+					.classList.add("info-card-show");
+				document.querySelector(".details").scrollTop = 0;
+
+				//Append template content to popup
+				const content = template.content.cloneNode(true);
+				console.log("Content " + content);
+				document.querySelector(".content-1").innerHTML = "";
+				document.querySelector(".content-1").appendChild(content);
+
+				updateButtons();
+			});
+		}
+	});
+
+	document.querySelectorAll(".next-button").forEach((e) => {
+		e.addEventListener("click", () => {
+			console.log(currentIndex)
+			if (templates[currentIndex + 1] != undefined) {
+				
+				currentIndex++
+				console.log(currentIndex)
+				const template = templates[currentIndex].querySelector("template");
+
+				document.querySelector(".session-title").innerText =
+					template.getAttribute("data-session");
+				document.querySelector(".session-time").innerText =
+					template.getAttribute('data-time');
+				scrollToTarget(template.getAttribute("data-session"));
+				const content = template.content.cloneNode(true);
+				console.log(content);
+				document.querySelector(".content-1").innerHTML = "";
+				document.querySelector(".content-1").appendChild(content);
+				updateButtons();
+			} else {
+				console.log("Fail")
+				console.log(templates[currentIndex + 1]);
+			}
+		});
+	});
+
+	document.querySelectorAll(".prev-button").forEach((e) => {
+		e.addEventListener("click", () => {
+			if (templates[currentIndex - 1] != undefined) {
+				console.log("Prev")
+				currentIndex--;
+				const template =
+					templates[currentIndex].querySelector("template");
+				document.querySelector(".session-title").innerText =
+					template.getAttribute("data-session");
+				document.querySelector(".session-time").innerText =
+					template.getAttribute('data-time');
+				scrollToTarget(template.getAttribute("data-session"));
+				const content = template.content.cloneNode(true);
+				console.log(content);
+				document.querySelector(".content-1").innerHTML = "";
+				document.querySelector(".content-1").appendChild(content);
+				updateButtons();
+			} else {
+				console.log("Fail")
+				console.log(currentIndex);
+			}
+		});
+	});
+
+	let timeoutId;
+	let intervalId;
+	document.querySelectorAll(".prev-button").forEach((e) => {
+			//Click and hold to cycle
+
+	element.addEventListener('mousedown', () => {
+	timeoutId = setTimeout(() => 
+		intervalId = setInterval(() => {
+			if (templates[currentIndex - 1] != undefined) {
+				console.log("Prev")
+				currentIndex--;
+				const template =
+					templates[currentIndex].querySelector("template");
+				document.querySelector(".session-title").innerText =
+					template.getAttribute("data-session");
+				document.querySelector(".session-time").innerText =
+					template.getAttribute('data-time');
+				scrollToTarget(template.getAttribute("data-session"));
+				const content = template.content.cloneNode(true);
+				console.log(content);
+				document.querySelector(".content-1").innerHTML = "";
+				document.querySelector(".content-1").appendChild(content);
+				updateButtons();
+			} else {
+				console.log("Fail")
+				console.log(currentIndex);
+			}
+		}, 200)
+	, 1000);
+	});
+
+	element.addEventListener('mouseup', () => {
+	clearTimeout(timeoutId);
+	});
+
+	});
+
+
+
+	function updateButtons() {
+		//Lookup system
+		const findKey = Object.keys(templates).find(
+			(key) =>
+				templates[key].querySelector("template").dataset.session ===
+				document.querySelector(".session-title").innerText
+		);
+
+		if (findKey < 1) {
+			document.querySelectorAll(".prev-button").forEach((e) => {
+				if (!e.classList.contains("clamp")) {
+					e.classList.add("clamp");
+				}
+			});
+
+			document.querySelectorAll(".next-button").forEach((e) => {
+				if (e.classList.contains("clamp")) {
+					e.classList.remove("clamp");
+				}
+			});
+		} else if (findKey >= Object.keys(templates).length - 1) {
+			document.querySelectorAll(".prev-button").forEach((e) => {
+				if (e.classList.contains("clamp")) {
+					e.classList.remove("clamp");
+				}
+			});
+			document.querySelectorAll(".next-button").forEach((e) => {
+				if (!e.classList.contains("clamp")) {
+					e.classList.add("clamp");
+				}
+			});
+		} else {
+			document.querySelectorAll(".next-button").forEach((e) => {
+				if (e.classList.contains("clamp")) {
+					e.classList.remove("clamp");
+				}
+			});
+			document.querySelectorAll(".prev-button").forEach((e) => {
+				if (e.classList.contains("clamp")) {
+					e.classList.remove("clamp");
+				}
+			});
+		}
+	}
+
+	function scrollToTarget(data) {
+		document.querySelectorAll("template").forEach((e) => {
+			if (e.getAttribute("data-session") == data) {
+				document.querySelectorAll("[scroll-target]").forEach((e) => {
+					e.removeAttribute("scroll-target");
+				});
+				e.parentElement.setAttribute("scroll-target", "");
+				document.querySelector("[scroll-target]").scrollIntoView();
+			}
+		});
+	}
 </script>
 
 <style>
 	* {
 		margin: 0%;
 	}
+
+	.popup {
+		position: fixed;
+		display: flex;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1em 0em;
+		background: #002c38;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: flex;
+		z-index: 100;
+		pointer-events: none;
+		top: 0%;
+		scale: 1;
+		opacity: 0;
+		transition: opacity 0.5s, top 0.5s ease-in-out, scale 0.2s ease-out;
+		justify-content: center;
+	}
+
+	.popup-show {
+		top: 0%;
+		scale: 1;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+		.clamp {
+			color: #002c3822 !important;
+			pointer-events: none;
+		}
+
+
+		.info-card {
+			position: fixed;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			display: flex;
+			flex-direction: column;
+			background-color: #fcf7eb;
+			max-width: 700px;
+			width: 100%;
+			height: 85%;
+			max-height: 1100px;
+			transition: opacity 0.1s, top 0.4s;
+			border-radius: 30px;
+			
+		}
+
+		.info-card {
+			padding: 0em;
+		}
+
+		.info-card-top {
+			display: flex;
+			width: 100%;
+			/* border: 1px solid #002c38; */
+		}
+
+		.info-card-button {
+			padding: 1em;
+			color: #002c38;
+			/* border: #002c38 1px solid; */
+			border-radius: 2px;
+			background-color: #00000000;
+		}
+
+		.info-card-show {
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			scale: 1;
+			opacity: 1;
+			pointer-events: all;
+		}
+
+		.info-card-button:first-child {
+			border-right: 1px solid #002c38;
+			border-bottom: 1px solid #002c38;
+		}
+		.info-card-button:nth-child(4) {
+			border-left: 1px solid #002c38;
+			border-bottom: 1px solid #002c38;
+		}
+
+		.session-info{
+			display: flex;
+			flex-direction: column;
+			padding: 0.5em;
+			width: 100%;
+			border-left: 0px;
+			border-right: 0px;
+			align-items: center;
+			border-bottom: 1px solid #002c38;
+
+		}
+
+		.session-title {
+			width: 100%;
+			display: flex;
+			font-weight: 1000;
+			align-items: center;
+		}
+
+		.session-time{
+			width: 100%;
+			font-size: medium;
+		}
+
+		.exit{
+			border-bottom: 1px solid #002c38;
+			border-radius: 0px;
+		}
+
+		.content-1 {
+			padding: 2em;
+			padding-top: 0%;
+			overflow-y: scroll;
+			height: 100%;
+			/* border: #002c38 1px solid; */
+			border-top: 0px;
+		}
 
 	.nav-offset {
 		position: relative;
@@ -829,6 +583,8 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		background-color: #002c3844;
 	}
 
+	
+
 	.detach {
 		position: fixed;
 		top: 0px;
@@ -844,13 +600,22 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		margin-bottom: 3em;
 	}
 
+	.left {
+		left: -100%;
+	}
+
+	.right {
+		right: 100%;
+	}
+
 	.timetable {
 		margin-top: 1em;
 		margin-bottom: 1em;
+		scroll-margin-top: 15vh;
 		border-radius: 15px;
 		padding: 1em;
 		position: relative;
-		width: calc(50% - 2em);
+		width: calc(50% - 1em);
 		display: flex;
 		flex-direction: column;
 		background-color: #fffcf9aa;
@@ -858,10 +623,10 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	}
 
 	.timetable:nth-child(odd) {
-		margin-left: 2em;
+		margin-right: 1em;
 	}
 	.timetable:nth-child(even) {
-		margin-right: 2em;
+		margin-left: 1em;
 	}
 
 	.bottom {
@@ -930,6 +695,25 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		border-top: 2px solid #002c38;
 	}
 
+	.hover-popup {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1em 0em;
+		background: #002c38;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: flex;
+		z-index: 100;
+		pointer-events: none;
+		top: 0%;
+		scale: 1;
+		opacity: 0;
+		transition: opacity 0.5s, top 0.5s ease-in-out, scale 0.2s ease-out;
+		justify-content: center;
+	}
+
 	.popup {
 		position: fixed;
 		top: 0;
@@ -956,33 +740,13 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		pointer-events: auto;
 	}
 
-	.info-card {
-		width: 100%;
-		padding: 2em;
-		max-width: 700px;
-		background-color: #fcf7eb;
-		display: flex;
-		position: relative;
-		flex-direction: column;
-		max-height: max-content;
-		border-radius: 1em;
-		top: 100%;
-		scale: 0.8;
-		transition: top 0.5s ease-in-out, scale 0.2s ease-out;
-	}
+
 
 	#workshop-description {
 		display: flex;
 		flex-direction: column;
 		/* margin-right: 1em; */
 		padding-right: 1em;
-	}
-
-	.info-card-show {
-		top: 0%;
-		scale: 1;
-		opacity: 1;
-		pointer-events: all;
 	}
 
 	.info-card h1 {
@@ -1002,7 +766,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	}
 
 	.details {
-		overflow-y: scroll;
+		overflow-y: hidden;
 		height: 100%;
 	}
 
@@ -1023,12 +787,11 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	}
 
 	.exit {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		width: 40px;
-		height: 40px;
-		padding: 0.5em;
+		display: flex;
+		position: relative;
+		background-color: #00000000;
+		color: #002c38;
+		align-items: center;
 	}
 
 	.center {
@@ -1271,7 +1034,8 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		}
 
 		.info-card {
-			border-radius: 0px;
+			width: 100%;
+			border-radius: 30px;
 		}
 
 		.selection-grid {
@@ -1299,14 +1063,67 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		}
 
 		.timetable:nth-child(odd) {
-			margin-left: 0em;
-		}
-		.timetable:nth-child(even) {
 			margin-right: 0em;
 		}
+		.timetable:nth-child(even) {
+			margin-left: 0em;
+		}
+		.content-1 {
+			padding: 2em;
+			padding-top: 0em;
+			overflow-y: scroll;
+			height: 100%;
+			/* border: #002c38 1px solid; */
+			border-top: 0px;
+		}
+		
 	}
 
 	@media (max-width: 829px) {
+		.info-card {
+			padding: 0em;
+			border-radius: 0px;
+			height: 100%;
+			max-height: 100vh;
+		}
+
+		.info-card-top {
+			display: flex;
+			width: 100%;
+			border: 1px solid #002c38;
+		}
+
+		.info-card-button {
+			padding: 1em;
+			color: #002c38;
+			/* border: #002c38 1px solid; */
+			border-radius: 2px;
+			background-color: #00000000;
+		}
+
+		.info-card-button:first-child {
+			border-right: 1px solid #002c38;
+		}
+		.info-card-button:nth-child(4) {
+			border-left: 1px solid #002c38;
+		}
+		.session-title {
+			display: flex;
+			align-items: center;
+			padding: 0.5em;
+			width: 100%;
+			border-left: 0px;
+			border-right: 0px;
+			border-bottom: 0px;
+		}
+		.content-1 {
+			padding: 2em;
+			padding-top: 0%;
+			overflow-y: scroll;
+			height: 100%;
+			border: #002c38 1px solid;
+			border-top: 0px;
+		}
 		.time {
 			padding: 0.5em;
 			padding-left: 0.5em;
@@ -1348,7 +1165,12 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			font-weight: bold;
 			font-size: 0.9em;
 			border-radius: 10px;
-			border: 1px solid #002c38;
+			border-right: 1px solid #002c38;
+		}
+
+		.clamp {
+			color: #002c3855;
+			pointer-events: none;
 		}
 
 		.detach {
@@ -1356,6 +1178,22 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			padding-bottom: 1em;
 			position: fixed;
 			top: 76px;
+		}
+
+		.timetable:nth-child(odd) {
+			margin-right: 0em;
+		}
+		.timetable:nth-child(even) {
+			margin-left: 0em;
+		}
+
+		.content-1 {
+			padding: 2em;
+			padding-top: 0%;
+			overflow-y: scroll;
+			height: 100%;
+			border: #002c38 1px solid;
+			border-top: 0px;
 		}
 	}
 </style>

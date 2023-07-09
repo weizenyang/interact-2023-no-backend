@@ -1,75 +1,296 @@
 {
-    "day": 3,
-    "date": "30th August",
-    "data": [
+  "day": 3,
+  "date": "30th August",
+  "data": [
+    {
+      "time": "8:30 - 9:30",
+      "item": [
         {
-            "time": "8:30 - 9:30",
-            "item": [
-                {
-                    "text": "Registration"
-                }
-            ]
-        },
-        {
-            "time": "9:30 - 11:00",
-            "item": [
-                {
-                    "text": "Opening Welcome / Awards"
-                }
-            ]
-        },
-        {
-            "time": "11:00 - 11:30",
-            "item": [
-                {
-                    "text": "Coffee Break"
-                }
-            ]
-        },
-        {
-            "time": "11:30 - 12:30",
-            "item": [
-                {
-                    "text": "Opening Keynote",
-                    "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
-                    "location": "Large lecture theatre (PZA/103)",
-                    "hasInfo": true
-                }
-            ]
-        },
-        {
-            "time": "12:30 - 13:45",
-            "item": [
-                {
-                    "text": "Lunch"
-                }
-            ]
-        },
-        {
-            "time": "13:45 - 15:15",
-            "or" : true,
-            "item": [
-                {
-                    "text": "Session A1: User Studies",
-                    "location": "CSE/082X",
-                    "hasInfo": true
-                },
-                {
-                    "text": "Session A1: User Studies",
-                    "location": "CSE/082X",
-                    "hasInfo": true
-                },
-                {
-                    "text": "Session A1: User Studies",
-                    "location": "CSE/082X",
-                    "hasInfo": true
-                },
-                {
-                    "text": "Session A1: User Studies",
-                    "location": "CSE/082X",
-                    "hasInfo": true
-                }
-            ]
+          "text": "Registration"
         }
-    ]
+      ]
+    },
+    {
+      "time": "9:30 - 11:00",
+      "item": [
+        {
+          "text": "Opening Welcome / Awards"
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 11:30",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "11:30 - 12:30",
+      "item": [
+        {
+          "text": "Opening Keynote",
+          "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:45",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session A1: User Studies",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+                "id" : "FP1114",
+                "title" : "Brilliance and Resilience: A New Perspective to the Challenges, Practices and Needs of University Students with Visual Impairments in India",
+                "authors" : "Tigmanshu Bhatnagar, Vikas Upadhyay, PV Madhusudhan Rao, Nicolai Marquardt, Mark Mio-downik, and Catherine Holloway",
+                "presenters": "Tigmanshu Bhatnagar",
+                "contact": [
+                    {
+                        "name" : "Bhatnagar, Tigmanshu",
+                        "email" : "t.bhatnagar.18@ucl.ac.uk"
+                    }
+                ]
+            },
+            {
+                "id" : "SP1120",
+                "title" : "Mapping Virtual Reality Controls to Inform Design of Accessible User Experiences",
+                "authors" : "Christopher Power, Paul Cairns, and Triskal DeHaven",
+                "presenters": "Christopher Power",
+                "contact": [
+                    {
+                        "name" : "Power, Christopher",
+                        "email" : "cdspower@upei.ca"
+                    }
+                ]
+            },
+            {
+                "id" : "SP1180",
+                "title" : "WAM-Studio: A Web-based Digital Audio Workstation To Empower Cochlear Implant Users",
+                "authors" : "Michel Buffa, Antoine Vidal-Mazuy, Lloyd May, and Marco Winckler",
+                "presenters": "Marco Winckler",
+                "contact": [
+                    {
+                        "name" : "Buffa, Michel",
+                        "email" : "michel.buffa@univ-cotedazur.fr"
+                    }
+                ]
+            },
+            {
+                "id" : "SP1160",
+                "title" : "Web Accessibility in Higher Education in Norway: To What Extent are University Websites Accessible?",
+                "authors" : "Yavuz Inal and Anne Britt Torkildsby",
+                "presenters": "Anne Britt Torkildsby",
+                "contact": [
+                    {
+                        "name" : "Inal, Yavuz",
+                        "email" : "yavuz.inal@ntnu.no"
+                    }
+                ]
+            },
+            {
+                "id" : "SP1114",
+                "title" : "Wesee: Digital Cultural Heritage Interpretation for Blind and Low Vision People",
+                "authors" : "Yalan Luo, Weiyue Lin, Yuhan Liu, Xiaomei Nie, Xiang Qian, and Hanyu Guo",
+                "presenters": "Yalan Luo",
+                "contact": [
+                    {	
+                        "name" : "Luo, Yalan",
+                        "email" : "luoyl20@mails.tsinghua.edu.cn"
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "text": "Session A2: Accessibility",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [{
+            "id" : "SP1074",
+            "title" : "I miss going to that place”: The impact of watching nature videos on the well-being of informal caregivers",
+            "authors" : "Beatriz Peres, Hildegardo Noronha, Daniel S. Lopes, Joaquim Jorge, and Pedro F. Campos",
+            "presenters": "Beatriz Peres",
+            "contact": [
+                {
+                    "name" : "Peres, Beatriz",
+                    "email" : "beatriz.peres@iti.larsys.pt"
+                }
+            ]
+        },
+        {
+            "id" : "FP1082",
+            "title" : "Comparing Perceived Restorativeness and Stress Reduction in Virtual Reality Environments using Abstract Fractal Geometries versus Realistic Natural Landscapes",
+            "authors" : "Diana C. G. Mendes, and Mónica S Cameirão",
+            "presenters": "Diana Carolina Gonçalves Mendes",
+            "contact": [
+                {
+                    "name" : "Mendes, Diana",
+                    "email" : "diana.mendes@nlincs.uma.pt"
+                }
+            ]
+        },
+        {
+            "id" : "SP1119",
+            "title" : "Our Nudges, Our Selves: Tailoring Mobile User Engagement Using Personality",
+            "authors" : "Nima Jamalian, Marios Constantinides, Sagar Joglekar, Xueni Pan, and Daniele Quercia",
+            "presenters": "Marios Constantinides",
+            "contact": [
+                {
+                    "name" : "Constantinides, Marios",
+                    "email" : "marios.constantinides@nokia-bell-labs.com"
+                }
+            ]
+        },
+        {
+            "id" : "SP1091",
+            "title" : "Turn & Slide: Designing a Puzzle Game to Elicit the Visualizer-Verbalizer Cognitive Style",
+            "authors" : "Sotirios Petsas, George E. Raptis, and Christos Katsanos",
+            "presenters": "-",
+            "contact": [
+                {
+                    "name" : "Raptis, George",
+                    "email" : "graptis.ho@gmail.com"
+                }
+            ]
+        },
+        {
+            "id" : "industrial-1000",
+            "title" : "How to Bring Diversity into Industry: Industrial Experiences in Public Transport Repair & Maintenance",
+            "authors" : "Rafael Vrecar, Markus Steinlechner, Patrick Rupprecht, Aaron Wedral, Marlies Negele, Maciej Palucki, Brigitte Ratzer, and Astrid Weiss",
+            "presenters": "Rafael Vrecar, Markus Steinlechner, Patrick Rupprecht, Aaron Wedral, Marlies Negele, Maciej Palucki, Brigitte Ratzer, and Astrid Weiss",
+            "contact": [
+                {
+                    "name" : "Vrecar, Rafael",
+                    "email" : "rafael@vrecar.eu"
+                }
+            ]
+        }]
+        },
+        {
+          "text": "Session A3: Model-Based UI Design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session A4: Interaction with Conversational agents I",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session A5: 3D Interaction",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses A - Part 1: Introduction to Information Visualisation",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session B1: User Studies",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session B2: Accessibility",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session B3: Model-Based UI Design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session B4: Interaction with Conversational agents I",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session B5: 3D Interaction",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses A - Part 2: Introduction to Information Visualisation",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses F - Part 2: The UCD Sprint: Bringing Users Along to Sprint",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Panel 2: Ethical Value Exchange in HCI",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "17:15 - 18:15",
+      "item": [
+        {
+          "text": "Posters and Demonstrations"
+        }
+      ]
+    },
+    {
+      "time": "18:15 - 19:15",
+      "item": [
+        {
+          "text": "Welcome Reception"
+        }
+      ]
+    }
+  ]
 }
