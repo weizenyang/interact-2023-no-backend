@@ -212,7 +212,12 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		highlight("a");
 	});
 
-	document.querySelector(".session-title").addEventListener("click", () => {
+	document.querySelector(".session-info").addEventListener("click", () => {
+		document.querySelector(".popup").classList.remove("popup-show");
+		document.querySelector(".info-card").classList.remove("info-card-show");
+	});
+
+	document.querySelector(".session-time").addEventListener("click", () => {
 		document.querySelector(".popup").classList.remove("popup-show");
 		document.querySelector(".info-card").classList.remove("info-card-show");
 	});
@@ -456,7 +461,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			height: 85%;
 			max-height: 1100px;
 			transition: opacity 0.1s, top 0.4s;
-			border-radius: 30px;
+			border-radius: 5px;
 			
 		}
 
@@ -505,6 +510,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			border-right: 0px;
 			align-items: center;
 			border-bottom: 1px solid #002c38;
+			pointer-events: all;
 
 		}
 
@@ -769,6 +775,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	.details {
 		overflow-y: hidden;
 		height: 100%;
+		/* padding-right: 1em; */
 	}
 
 	.programmes-section-1 {
@@ -832,6 +839,10 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		grid-template-columns: 1fr 1fr;
 		padding: 1em;
 		flex-wrap: wrap;
+	}
+
+	.item-container{
+		width: 100%;
 	}
 
 	.items {
@@ -1036,7 +1047,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 
 		.info-card {
 			width: 100%;
-			border-radius: 30px;
+			border-radius: 5px;
 		}
 
 		.selection-grid {
