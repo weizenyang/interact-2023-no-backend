@@ -63,11 +63,11 @@ collections:
         default: "2023-08-30",
         required: true}
 
-      - {label: "Data"
-        name: "data"
-        widget: "list"
-        default: "00:00 - 00:00"
-        required: true
+      - {label: "Data",
+        name: "data",
+        widget: "list",
+        default: "00:00 - 00:00",
+        required: true,
         field: [
           - {label: "Time",
             name: "time",
