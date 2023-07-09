@@ -1,3 +1,5 @@
+
+local_bakend: true
 backend:
   name: git-gateway
   branch: main
@@ -41,7 +43,104 @@ collections:
       - {label: "Event period", name: "event_period", widget: "markdown"}
       - {label: "Mode", name: "mode", widget: "markdown"}
 
+  - name: "timetable" # Used in routes, e.g., /admin/collections/blog
+    label: "Timetable" # Used in the UI
+    folder: "/src/data/timetable_data" # The path to the folder where the documents are stored
+    extension: json
+    format: json
+    create: true # Allow users to create new documents in this collection
+    slug: "day" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Day", name: "day", widget: "number", default: "0", required: true}
+      - {label: "Date", name: "date", widget: "date", default: "2023-08-30", required: true}
+      - {label: "Data", name: "data", widget: "list", default: "00:00 - 00:00", required: true, 
+      field: {
+        - {label: "Time", name: "time", widget: "string", default: "00:00 - 00:00", required: true}
+        - {label: "Or", name: "or", widget: "boolean", default: "false", required: true}
+        - {label: "Item", name: "item", widget: "list", required: true, 
+        field: {
+          - {label: "Text", name: "text", widget: "string", default: "Session XX: XXXX", required: true}
+          - {label: "Location", name: "location", widget: "string", default: "ABC123/123", required: false}
+          - {label: "Has Info", name: "hasInfo", widget: "boolean", default: "false", required: true}
+        }}
+      }}
+        
 
+# "day": 3,
+#   "date": "30th August",
+#   "data" : [],
+
+# {
+#       "time": "13:45 - 15:15",
+#       "or": true,
+#       "item": [
+#         {
+#           "text": "Session A1: User Studies",
+#           "location": "CSE/082X",
+#           "hasInfo": true,
+#           "info": [
+#             {
+#                 "id" : "FP1114",
+#                 "title" : "Brilliance and Resilience: A New Perspective to the Challenges, Practices and Needs of University Students with Visual Impairments in India",
+#                 "authors" : "Tigmanshu Bhatnagar, Vikas Upadhyay, PV Madhusudhan Rao, Nicolai Marquardt, Mark Mio-downik, and Catherine Holloway",
+#                 "presenters": "Tigmanshu Bhatnagar",
+#                 "contact": [
+#                     {
+#                         "name" : "Bhatnagar, Tigmanshu",
+#                         "email" : "t.bhatnagar.18@ucl.ac.uk"
+#                     }
+#                 ]
+#             },
+#             {
+#                 "id" : "SP1120",
+#                 "title" : "Mapping Virtual Reality Controls to Inform Design of Accessible User Experiences",
+#                 "authors" : "Christopher Power, Paul Cairns, and Triskal DeHaven",
+#                 "presenters": "Christopher Power",
+#                 "contact": [
+#                     {
+#                         "name" : "Power, Christopher",
+#                         "email" : "cdspower@upei.ca"
+#                     }
+#                 ]
+#             },
+#             {
+#                 "id" : "SP1180",
+#                 "title" : "WAM-Studio: A Web-based Digital Audio Workstation To Empower Cochlear Implant Users",
+#                 "authors" : "Michel Buffa, Antoine Vidal-Mazuy, Lloyd May, and Marco Winckler",
+#                 "presenters": "Marco Winckler",
+#                 "contact": [
+#                     {
+#                         "name" : "Buffa, Michel",
+#                         "email" : "michel.buffa@univ-cotedazur.fr"
+#                     }
+#                 ]
+#             },
+#             {
+#                 "id" : "SP1160",
+#                 "title" : "Web Accessibility in Higher Education in Norway: To What Extent are University Websites Accessible?",
+#                 "authors" : "Yavuz Inal and Anne Britt Torkildsby",
+#                 "presenters": "Anne Britt Torkildsby",
+#                 "contact": [
+#                     {
+#                         "name" : "Inal, Yavuz",
+#                         "email" : "yavuz.inal@ntnu.no"
+#                     }
+#                 ]
+#             },
+#             {
+#                 "id" : "SP1114",
+#                 "title" : "Wesee: Digital Cultural Heritage Interpretation for Blind and Low Vision People",
+#                 "authors" : "Yalan Luo, Weiyue Lin, Yuhan Liu, Xiaomei Nie, Xiang Qian, and Hanyu Guo",
+#                 "presenters": "Yalan Luo",
+#                 "contact": [
+#                     {	
+#                         "name" : "Luo, Yalan",
+#                         "email" : "luoyl20@mails.tsinghua.edu.cn"
+#                     }
+#                 ]
+#             }
+#           ]
+#         }
       
 
       #       {
