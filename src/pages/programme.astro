@@ -40,6 +40,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 										<TimelineItem
 											or={timeslot.or}
 											time={timeslot.time}
+											day={e.day}
 											name={timeslot.item.map((data) => ({
 												text: data.text,
 												author: data.author,

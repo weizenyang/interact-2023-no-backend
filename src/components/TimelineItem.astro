@@ -2,6 +2,7 @@
 import type { MarkdownContent } from "astro";
 export interface Props {
     time: string;
+    day: string;
     id?: string;
     or?: boolean;
     name?: {
@@ -22,7 +23,7 @@ export interface Props {
     }[];
 }
 
-const { time, name, hasInfo, or, id, info, contact} = Astro.props;
+const {day, time, name, hasInfo, or, id, info, contact} = Astro.props;
 name.map((e) => {
     // console.log(e)
     if(e.hasInfo){
@@ -55,7 +56,7 @@ name.map((e) => {
                                 set:html={e.author}
                             />
                         )}
-                        {e.info.length > 0 && <template data-session={e.text} data-time={time}>
+                        {e.info.length > 0 && <template data-session={e.text} data-time={"Day " + day + ", " + time}>
                             {e.info.map((i) => 
                                     <div class="subject">
                                         <p class="info-card-id">{i.id}</p>
