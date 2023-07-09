@@ -73,13 +73,13 @@ collections:
             name: "time",
             widget: "string",
             default: "00:00 - 00:00",
-            required: true}
+            required: true},
 
            {label: "Or",
             name: "or",
             widget: "boolean",
             default: "false",
-            required: true}
+            required: true},
 
             {label: "Item",
             name: "item",
@@ -90,13 +90,13 @@ collections:
                 name: "text",
                 widget: "string",
                 default: "Session XX: XXXX",
-                required: true}
+                required: true},
 
                 {label: "Location",
                 name: "location",
                 widget: "string",
                 default: "ABC123/123",
-                required: false}
+                required: false},
                 
                 {label: "Has Info",
                 name: "hasInfo",
