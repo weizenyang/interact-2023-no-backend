@@ -50,63 +50,63 @@ collections:
     format: json
     create: true # Allow users to create new documents in this collection
     slug: "day" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: [
-      - {
-          label: "Day",
-          name: "day",
-          widget: "number",
-          default: "0",
-          required: true
-      }
-    ]
-      
+    fields: # The fields for each document, usually in front matter
+      - {label: "Day",
+        name: "day",
+        widget: "number",
+        default: "0",
+        required: true}
 
-      # - label: "Date"
-      #   name: "date"
-      #   widget: "date"
-      #   default: "2023-08-30"
-      #   required: true
+      - {label: "Date",
+        name: "date",
+        widget: "date",
+        default: "2023-08-30",
+        required: true}
 
-      # - label: "Data"
-      #   name: "data"
-      #   widget: "list"
-      #   default: "00:00 - 00:00"
-      #   required: true
-      #   field: 
-      #     - label: "Time" 
-      #       name: "time"
-      #       widget: "string"
-      #       default: "00:00 - 00:00"
-      #       required: true
+      - {label: "Data"
+        name: "data"
+        widget: "list"
+        default: "00:00 - 00:00"
+        required: true
+        field: [
+          - {label: "Time",
+            name: "time",
+            widget: "string",
+            default: "00:00 - 00:00",
+            required: true}
 
-      #     - label: "Or" 
-      #       name: "or"
-      #       widget: "boolean"
-      #       default: "false"
-      #       required: true
+          - {label: "Or",
+            name: "or",
+            widget: "boolean",
+            default: "false",
+            required: true}
 
-      #     - label: "Item"
-      #       name: "item"
-      #       widget: "list"
-      #       required: true
-      #       field: 
-      #         - label: "Text"
-      #           name: "text"
-      #           widget: "string"
-      #           default: "Session XX: XXXX"
-      #           required: true
+          - {label: "Item",
+            name: "item",
+            widget: "list",
+            required: true,
+            field: 
+              - {label: "Text"
+                name: "text"
+                widget: "string"
+                default: "Session XX: XXXX"
+                required: true}
 
-      #         - label: "Location"
-      #           name: "location"
-      #           widget: "string"
-      #           default: "ABC123/123"
-      #           required: false
-
-      #         - label: "Has Info"
-      #           name: "hasInfo"
-      #           widget: "boolean"
-      #           default: "false"
-      #           required: true
+              - {label: "Location"
+                name: "location"
+                widget: "string"
+                default: "ABC123/123"
+                required: false}
+                
+              - {label: "Has Info"
+                name: "hasInfo"
+                widget: "boolean"
+                default: "false"
+                required: true}
+            }
+        ]
+       }
+            
             
           
           
