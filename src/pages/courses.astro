@@ -2,63 +2,41 @@
 // src/pages/posts/[slug].astro
 // import { Astro } from 'astro';
 import Layout from '/src/layouts/Layout.astro';
-// import type { File } from '/src/data/programme_data/programme_data';
+// import type { File } from '/src/data/course_data/course_data';
 import Footer from '/src/components/Footer.astro';
-import ProgrammeCard from '/src/components/ProgrammeCard.astro';
+import courseCard from '/src/components/ProgrammeCard.astro';
 import Card from '/src/components/Card.astro';
 import Navbar from '/src/components/Navbar.astro';
 import matter from 'gray-matter';
 import PreFooterModular from '@source/components/PreFooterModular.astro';
 
 
-const programmes = await Astro.glob('/src/data/programme_data/*.json')
-const sortedProgrammes = programmes.sort(({event_period : a}, {event_period : b}) => 
-	a.match(/\d+/g)[0] === b.match(/\d+/g)[0] ? 0 : a.match(/\d+/g)[0] < b.match(/\d+/g)[0] ? -1 : 1
-);
-sortedProgrammes.map(e =>
-	console.log(e.event_period)
-)
-export async function getStaticPaths() {
-const files = await Astro.glob('/src/data/programme_data/*.json');
-
-  return files.map((file) => {
-    const id = encodeURIComponent(file.id)
-    return { params: { id }, props: {file} }
-  });
-}
-
-const {file: {title, description, contacts, date, date_widget, event_period, website, mode}} = Astro.props;
-
-
-
-// export async function getStaticProps({ params }) {
-//   const post = await Astro.fetchContent(`/src/data/posts/${params.slug}.md`);
-//   return { props: { post } };
-// }
-
-// const { post } = Astro.props;
+const courses = await Astro.glob('/src/data/courses_data/*.json')
+courses.map((e) => {
+	console.log(e.contacts)
+})
 ---
 
 <Layout title='Interact 2023'>
 	<main>
 		<Navbar/>
 		<content>
-			<section class="programmes-section">
+			<section class="courses-section">
 				<div class='title'>
 					<h1>
-						WORKSHOPS
+						COURSES
 					</h1>
 				</div>
 	
 				<div class="selection-grid">
-					{sortedProgrammes.map((programme) => <Card title={programme.title} 
-					description={programme.description} 
-					contacts={programme.contacts} 
-					title={programme.title} 
-					event_period={programme.event_period} 
-					website={programme.website} 
-					mode={programme.mode}
-					date_widget={programme.date_widget}/>)}
+					{courses.map((course) => <Card title={course.title} 
+					description={course.description} 
+					title={course.title} 
+					event_period={course.event_period.split("|")[0]}
+					time={course.event_period.split("|")[1]}
+					mode={course.type}
+					contacts={course.contacts}
+					authors={course.authors}/>)}
 				</div>
 
 
@@ -67,11 +45,17 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 			<section class="popup">
 				<div class="info-card">
 					<article class="details" id="details">
+						<div id="back" style="display: none"> 
+							<button>
+								< Back
+							</button>
+						</div>
+						
 						<h2>
-							<span style="opacity: 0.6">Workshop:</span>
+							<span style="opacity: 0.6">Course:</span>
 						</h2>
 						<h1 id="workshop-title">
-							{title}
+							<!-- {title} -->
 						</h1>
 						<button class="exit" id="exit">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -81,12 +65,37 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 						</p>
 						<hr class="solid-line">
 						
-						<div class="items">
+						<!-- <div class="items">
 							<strong>Website:</strong>
 							<a class="no-margin" id="workshop-website" target="_blank">
-								 
-								<!-- {website} -->
 							</a>
+						</div> -->
+						
+												
+						<div class="items">
+							<strong>Type:</strong> 
+							<p id="workshop-mode">
+								<!-- {mode} -->
+							</p>
+						</div>
+						<div class="items">
+							<strong>Date:</strong>
+							<div id="workshop-period">
+								<!-- {event_period} -->
+							</div>
+						</div>
+						<div class="items">
+							<strong>Time:</strong>
+							<div id="workshop-time">
+								<!-- {event_period} -->
+							</div>
+						</div>
+
+						<div class="items">
+							<strong>Authors:</strong>
+							<div class="no-margin" id="workshop-authors">
+								 <!-- {contacts} -->
+							</div>
 						</div>
 
 						<div class="items">
@@ -96,24 +105,13 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 							</div>
 						</div>
 
-						<div class="items">
-							<strong>Date:</strong>
-							<div id="workshop-period">
-								<!-- {event_period} -->
-							</div>
-						</div>
 						
-						<div class="items">
-							<strong>Mode:</strong> 
-							<p id="workshop-mode">
-								<!-- {mode} -->
-							</p>
-						</div>
+
 
 					</article>
 				</div>
 			</section>
-			<section class="programmes-section">
+			<section class="courses-section">
 				<PreFooterModular title="CHECK OUT:" buttons={[{text: "All Workshops", href: "/workshops/0"}, {text: "All Keynotes", href: "/keynotes"}]}/>
 			</section>
 		</content>
@@ -129,13 +127,30 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 </Layout>
 
 <script>
-	window.addEventListener('popstate', (e) => {
-		document.querySelector('.popup').classList.remove('popup-show');
-		document.querySelector('.info-card').classList.remove('info-card-show');
+	let params = new URLSearchParams(window.location.search);
+	let course = params.get('q');
+	const wTitle = document.querySelectorAll(`[data-title]`)
+
+	wTitle.forEach((e) => {
+		console.log(e.getAttribute('data-title').toLowerCase().replace(/\s/g, ''))
+		console.log(course.toLowerCase().replace(/\s/g, ''))
+		if(e.getAttribute('data-title').toLowerCase().replace(/\s/g, '') == course.toLowerCase().replace(/\s/g, '')){
+			showPopup(e)
+			document.querySelector('#back').style.display = 'flex';
+		}
+	})
+
+	document.querySelector('#back').addEventListener('click', (e) => {
+		window.history.back();
 	})
 	
+
 	const popupEl = document.querySelector('.popup');
 	document.getElementById('exit').addEventListener('click', () => {
+		//document.querySelector('.popup').style.display = 'none';
+		// document.querySelector('.popup').style.opacity = '0';
+		// document.querySelector('.popup').style.pointerEvents = 'none';
+		document.querySelector('#back').style.display = 'none';
 		document.querySelector('.popup').classList.remove('popup-show');
 		document.querySelector('.info-card').classList.remove('info-card-show');
 	})
@@ -151,12 +166,11 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 	})
 
 	document.querySelector('.popup').addEventListener('scroll', (e) => {
-		
+
 		e.stopPropagation();
 	})
 
 	document.querySelector('.info-card').addEventListener('click', (e) => {
-		
 		e.stopPropagation();
 	})
 
@@ -167,21 +181,43 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 			const url = new URL(location);
 			url.searchParams.set("q", encodeURI(e.getAttribute('data-title')));
 			history.pushState({}, "", url)
-
+			showPopup(e)
 			// document.querySelector('.popup').style.top = '0%';
 			// popupEl.style.display = 'flex';
 			// document.querySelector('.popup').style.pointerEvents = 'auto';
 			// document.querySelector('.popup').style.opacity = '1';
-			document.querySelector('.popup').classList.add('popup-show');
+
+		
+		})
+	})
+
+	function showPopup(e){
+		document.querySelector('.popup').classList.add('popup-show');
 			document.querySelector('.info-card').classList.add('info-card-show');
 			document.querySelector('.details').scrollTop = 0;
 			document.querySelector('#workshop-title').innerHTML = e.getAttribute('data-title');
 			document.querySelector('#workshop-description').innerHTML = e.getAttribute('data-description');
-			document.querySelector('#workshop-website').innerHTML = e.getAttribute('data-website');
-			document.querySelector('#workshop-website').href = e.getAttribute('data-website');
+			// document.querySelector('#workshop-website').innerHTML = e.getAttribute('data-website');
+			document.querySelector('#workshop-time').innerHTML = e.getAttribute('data-time');
+			var authors = e.getAttribute('data-authors').split("|")
+			console.log(authors)
 			document.querySelector('#workshop-enquiries').innerHTML = e.getAttribute('data-contacts');
 			document.querySelector('#workshop-period').innerHTML = e.getAttribute('data-date');
 			document.querySelector('#workshop-mode').innerHTML = e.getAttribute('data-mode');
+			document.querySelector('#workshop-authors').innerHTML = ""
+			authors.forEach((e) => {
+				const paragraph = document.createElement('p')
+				const text = e
+				if(text[0] == ","){
+					console.log(", True")
+					
+					paragraph.innerHTML = text.slice(1)
+				} else {
+					paragraph.innerHTML = text
+				}
+				
+				document.querySelector('#workshop-authors').appendChild(paragraph)
+			});
 			setTimeout(() => {
 				popupEl.querySelectorAll('a').forEach((e) => {
 					e.style.textDecoration = 'underline';
@@ -192,9 +228,7 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 				})
 				})
 			}, 100);
-		
-		})
-	})
+	}
 </script>
 
 <!-- <script>
@@ -223,6 +257,9 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 
 	#details::-webkit-scrollbar {
 		width: 5px;
+	}
+	.session-time{
+		padding: 0%;
 	}
 
 	/* Track */
@@ -255,6 +292,10 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 		padding-left: 14em; */
 		/* margin-left: 14em; */
 		/* position: absolute; */
+	}
+
+	#back{
+		padding-bottom: 1em;
 	}
 
 	label{
@@ -350,14 +391,14 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 		height: 100%
 	}
 
-	.programmes-section{
+	.courses-section{
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 		border-bottom: 1px solid #002C38;
 	}
 
-	.programmes-section:last-child{
+	.courses-section:last-child{
 		border-bottom: 0px;
 	}
 
@@ -438,6 +479,8 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 		padding-right: 0.4em;
 		font-size: 1em;
 	}
+
+	
 
 	.sub-types h3{
 		margin: 0px;

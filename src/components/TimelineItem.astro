@@ -1,40 +1,275 @@
 ---
-export interface Props{
-    time: string,
-    name: string,
-    hasInfo? : boolean
+import type { MarkdownContent } from "astro";
+export interface Props {
+    time: string;
+    day: string;
+    id?: string;
+    or?: boolean;
+    name?: {
+        text?: string;
+        hasInfo?: boolean;
+        author?: string;
+        location?: string;
+        id?: string;
+        href? : string;
+        info: {
+            title?: string;
+            authors?: string;
+            presenters?: string;
+            contact?: {
+                name?: string;
+                email?: string;
+            }[]
+        }[]
+    }[];
 }
 
-const {time, name, hasInfo} = Astro.props
+const {day, time, name, hasInfo, or, id, info, contact} = Astro.props;
+name.map((e) => {
+    // console.log(e)
+    if(e.hasInfo){
+        e.info.map((i) => {
+            console.log(i)
+        })
+    }
+})
 ---
 
+<div class="timetable-row">
+    <p class="time">{time}</p>
+    <div class="timetable-item">
+        <!-- {id && <div class="offset" id={id}></div>} -->
+        {
+            name.map((e) =>
+                e.hasInfo ? (
+                    <div class={e.info.length < 1 ? "timetable-text hasInfo butNoInfo" : "timetable-text hasInfo"} id={e.id}>
+                        {e.text && <p class="session-name bold">{e.text}</p>}
+                        {e.location && (
+                            <p
+                                style="margin-top: 0em; font-size: 0.8em; width: 100%"
+                                set:html={e.location}
+                            />
+                        )}
+                        {e.author && (
+                            <p
+                                style="margin-top: 1em; font-size: 0.8em; width: 100%"
+                                set:html={e.author}
+                            />
+                        )}
+                        {e.info.length > 0 && <template data-session={e.text} data-time={"Day " + day + ", " + time}>
+                            {e.info.map((i) => 
+                                    <div class="subject">
+                                        <p class="info-card-id">{i.id}</p>
+                                        <h2 class="info-card-title">{i.title}</h2>
+                                        <p class="info-card-authors">Authors: {i.authors}</p>
+                                        <p class="info-card-presenters">Presenters: {i.presenters}</p>
 
-    <div class="timetable-row">
-        <p class="time">{time}</p>
-        <p class=`timetable-item bold ${hasInfo && "hasInfo"}`>{name}</p>
+                                        {i.contact != undefined && i.contact.map((contact) => 
+                                            <a href={"mailto:" + contact.email}>Contact: {contact.email}</a>
+                                        )}
+                                        {i.href == 'courses' && <p>
+                                            <button class="bold">
+                                                <a href={`/courses?q=${encodeURI(i.title.split(":").length > 0 ? i.title.split(":")[1] : i.title)}`}>Read More ></a>
+                                            </button>
+                                        </p>}
+                                        
+                                        
+                                    </div>
+                                    
+                         )}
+                         
+                        </template>}
+                        
+                        
+                    </div>
+                    )
+                 : (
+                    <p class="timetable-text bold">{e.text}</p>
+                )
+            )
+        }
+    </div>
+
+    <div class="everything-centered">
+        {or && <p class="bold or">OR</p>}
     </div>
 
     <style>
         
-    .timetable-row{
-        position: relative;
-        display: flex;
-        width: 100%;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-    }
+	@keyframes highlight{
+		0% {
+			background-color: #FFC223ff;
+		} 20% {
+			background-color: #FFC22333;
+		} 40% {
+			background-color: #FFC223ff;
+		} 60% {
+			background-color: #FFC22333;
+		} 80% {
+			background-color: #FFC223ff;
+		} 100% {
+			background-color: #FFC22333;
+		}
+	}
 
-    .time{
-        margin: 0%;
-        justify-content: center;
-    }
+	.animate-highlight{
+		/* background-color: #00000011; */
+        scroll-margin-top: 30vh;
+		animation-name: highlight;
+  		animation-duration: 3s;
+        animation-timing-function: linear;
+	}
 
-    .timetable-item{
-        padding-left: 2em;
-        margin: 0%;
-    }
+        .or {
+            padding: 1em;
+            height: calc(100% - 1em);
+            display: flex;
+            align-items: center;
+            margin: 0px;
+            margin-left: 0.4em;
+            padding: 0.625em;
+            padding-right: 0.4em;
+            padding-top: 0em;
+            font-size: 1.1em;
+            /* border-radius: 15px; */
+            border-radius: 0px 10px 10px 0px;
+            border: solid 3px #002C3899;
+            border-left: solid 0px #000000;
+            /* background-color: #002C38; */
+            /* color: #FCF7EB */
+        }
 
-    .bold{
-        font-weight: bold;
-    }
+        .offset{
+            position: absolute;
+            top: -20px;
+        }
+        
+
+        .everything-centered{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .timetable-row {
+            position: relative;
+            display: flex;
+            width: 100%;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid #00000033;
+        }
+
+        .timetable-row:last-child{
+            border: 0px;
+        }
+
+        .hasInfo {
+            background-color: #FFC22333;
+            padding: 1em;
+            border-radius: 15px;
+            margin-bottom: 1em !important;
+            border: 2px solid #00000000;
+            transition: all 0.2s;
+            padding: 0.7em !important;
+            cursor: pointer;
+        }
+
+        .hasInfo:last-child{
+            margin-bottom: 0em !important;
+        }
+
+        .hasInfo:hover {
+            background-color: #ffffffdd;
+            border-color: #00000033;
+        }
+
+        .butNoInfo{
+            background-color: #FFC22315;
+            pointer-events: none;
+            /* border-color: #00000033; */
+        }
+
+        .butNoInfo:hover{
+            background-color: #FFC223;
+            border-color: #00000000;
+        }
+
+        .time {
+            width: 60px;
+            margin: 0%;
+            line-height: 1.1em;
+            font-size: 0.9em;
+            display: flex;
+            height: auto;
+            padding: 0.5em;
+            padding-left: 0em;
+            padding-right: 1em;
+            border-right: 1px solid #002C3822;
+            align-items: center;
+            justify-content: center;
+            /* border-radius: 0px 10px 10px 0px;
+            background-color: #002C38;
+            color: #FCF7EB */
+        }
+
+        .timetable-item {
+            display: flex;
+            height: auto;
+            padding-left: 1em;
+
+            /* justify-items: center; */
+            /* align-items: center; */
+            flex-direction: column;
+        }
+
+        .timetable-text {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: auto;
+            align-items: left;
+            width: 100%;
+            justify-content: center;
+            scroll-margin-top: 30vh;
+            padding-top: 0%;
+            line-break: strict;
+        }
+
+        .timetable-text p {
+            margin: 0%;
+            word-wrap: normal;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .info-card-title{
+            margin-top: 0em;
+        }
+
+        .info-card-id{
+            background-color: #002C38;
+            color: #FFC223;
+            padding: 0.5em;
+            margin-top: 2em;
+        }
+
+        .subject{
+            padding-bottom: 2em;
+            border-bottom: 1px #002C38 solid;
+        }
+
+        @media screen and (max-width:829px){
+            .time{
+                width: 55px;
+                padding: 0.5em;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+		
+	    }
     </style>
+</div>

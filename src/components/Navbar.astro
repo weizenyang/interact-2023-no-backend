@@ -17,7 +17,7 @@
 		<ul class='nav-items'>
 			<li><a href='/'>Home</a></li>
 			<li class='submissions-link'>
-				<a href='/cfp'class="submissions-parent">Call For Papers ></a>
+				<a class="submissions-parent">Call For Papers ></a>
 				<div class='dropdown-menu pos-1 submissions-parent'>
 					<ul>
 						<li><a href='/cfp'>General</a></li>
@@ -53,13 +53,29 @@
 				
 				
 			</li>
-			<li><a href='/workshops/0'>Workshops</a></li>
+
+			<li class='submissions-link'>
+				<a class="submissions-parent">Programme ></a>
+				<div class='dropdown-menu pos-3 submissions-parent'>
+					<ul>
+						<li><a href='/programme'>Programme</a></li>
+						<li><a href='/workshops/0'>Workshops</a></li>
+						<li><a href='/keynotes'>Keynotes</a></li>
+						<li><a href='/courses'>Courses</a></li>
+					</ul>
+				
+				</div>
+				
+				
+				
+			</li>
+			<!-- <li><a href='/workshops/0'>Workshops</a></li> -->
 			<!-- <li><a href=''>Programme</a></li> -->
 			
 				<li><a href='/organisers'>Organisers</a></li>
 			<li><a href='/contact'>Contact</a></li>
 			<li><a href='/venue'>Venue</a></li>
-			<li><a href='/student-volunteers'>Student Volunteers</a></li>
+			<!-- <li><a href='/student-volunteers'>Student Volunteers</a></li> -->
 			
 		</ul>
 		</div>
@@ -212,12 +228,17 @@
 		left: 8.5em;
 		top: 10em;
 	}
+
+	.pos-3{
+		position: absolute;
+		left: 7em;
+		top: 12em;
+	}
+
 	.pos-2{
 		border-left: 1px solid #FCF7EB;;
 		left: 7.9em;
 		top: 0em;
-		
-		/* padding-right: 50px; */
 	}
 
 	.dropdown-menu ul{
@@ -258,6 +279,8 @@
 
 	.submissions-link:hover .pos-1, 
 	.submission-types:hover .pos-1,
+	.submissions-link:hover .pos-3, 
+	.submission-types:hover .pos-3,
 	.dropdown-menu:hover
 	{
 		
@@ -411,7 +434,7 @@
 			display: flex;
 			flex-direction: column;
 			position: relative;
-			width: 30px;
+			width: 40px;
 			height: 15px;
 			overflow: visible;
 			justify-content: space-evenly;
@@ -458,7 +481,7 @@
 			font-size: 1.2em;
 		}
 
-		.pos-1{
+		.pos-1, .pos-3{
 			top: 0%;
 			font-size: 0.8em;
 			padding-right: 0%;
@@ -466,7 +489,7 @@
 
 		}
 
-		.pos-1 ul{
+		.pos-1 ul, .pos-3 ul{
 			width: 100%;
 
 		}

@@ -1,0 +1,13 @@
+{
+  "event_period": "Thursday, 31st August | 13:45 – 15:15 and 15:45 – 17:15 (3 hours)",
+  "authors": [
+    {
+      "name": "Keith Andrews, Graz Univerity of Technology, Austria"
+    }
+  ],
+  "type": "Long course",
+  "contacts": "Keith Andrews [kandrews@tugraz.at](mailto:kandrews@tugraz.at)",
+  "title": "Introduction to Information visualisation",
+  "website": " https://matthiasbaldauf.com/smartconv23/",
+  "description": "This course will give participants will an understanding of the principles and methods of information visualisation. The course will start with some basic concepts and a look at human visual perception. Then, it will survey various methods and techniques from information visualisation according to data type. The course will conclude with an overview of tools and toolkits which can be used to produce one's own visualisations.","keywords": "information visualisation, introduction"
+}

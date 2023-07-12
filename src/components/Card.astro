@@ -8,19 +8,22 @@ const converter = new showdown.Converter();
 // const htmlContent = converter.makeHtml(markdownContent);
 
 export interface Props {
-	title: MarkdownContent;
-	body: string;
-	href: string;
-	description: MarkdownContent;
-	event_period: MarkdownContent;
-	contacts: MarkdownContent;
-	website: string;
-	mode: string;
+	title?: MarkdownContent;
+	body?: string;
+	href?: string;
+	description?: MarkdownContent;
+	event_period?: MarkdownContent;
+	contacts?: MarkdownContent;
+	website?: string;
+	mode?: string;
+	keywords? : string;
+	time? : string;
+	authors?: {
+		name? : string;
+	};
 }
-
-
-
-const { href, title, body, mode, event_period, website } = Astro.props;
+console.log(Astro.props.contacts)
+const { href, title, body, mode, event_period, website, type, keywords, time, authors } = Astro.props;
 // const title = converter.makeHtml(Astro.props.title)
 const description = converter.makeHtml(Astro.props.description)
 // const website = converter.makeHtml(Astro.props.website)
@@ -44,7 +47,11 @@ data-contacts={contacts}
 data-title={title} 
 data-date={event_period} 
 data-website={website} 
-data-mode={mode}>
+data-mode={mode}
+data-type={type}
+data-authors={authors && authors.map((e) => (e.name + "|"))}
+data-keywords={keywords}
+data-time={time}>
 	<a class="inner-div-gradient" href={href}>
 		<div class="title-section">
 			<h3 class="card-title" set:html={title}></h3>
@@ -61,14 +68,14 @@ data-mode={mode}>
 </li>
 <style>
 	:root {
-		--link-gradient: linear-gradient(45deg, #FFC22300, #FFC22344 30%, var(--color-bg) 60%);
-		--link-gradient-1: linear-gradient(45deg, hsl(10, 21%, 95%), hsl(10, 21%, 95%) 30%, #002C38 100%);
+		--link-gradient: linear-gradient(45deg, #FFC22300, #FFC22322 30%, #FCF7EB11 60%);
+		--link-gradient-1: linear-gradient(45deg, #002C38DD, #002C38DD 30%, #002C3844 100%);
 	}
 
 	.link-card {
 		list-style: none;
 		display: flex;
-		/* margin: 0.5em; */
+		text-decoration: none;
 		padding: 2px;
 		background: #ffffff;
 		background-image: var(--link-gradient-1);
@@ -79,6 +86,10 @@ data-mode={mode}>
 		justify-content: space-between;
 		transition: background-position 0.2s cubic-bezier(0.22, 0.5, 0.36, 0.5);
 		
+	}
+
+	.link-card:hover{
+		text-decoration: none !important;
 	}
 
 	.inner-div-gradient{

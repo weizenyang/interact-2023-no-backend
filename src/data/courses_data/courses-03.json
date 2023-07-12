@@ -1,0 +1,20 @@
+{
+  "event_period": "Thursday, 31th August | 09:30 – 11:00 and 11:30 – 13:00 (3 hours)",
+  "authors": [
+    {
+      "name": "Chiara Natali, University of Milan-Bicocca, Italy"
+    },
+    {
+      "name" : "Andrea Campagner, IRCCS Ospedale Galeazzi, Italy"
+    },
+    {
+      "name" : "Federico Cabitza, University of Milan-Bicocca, Italy"
+    }
+  ],
+  "type" : "Long course",
+  "contacts": "Chiara Natali, [chiara.natali@unimib.it](mailto:chiara.natali@unimib.it)",
+  "title": "How to assess human reliance on artificial intelligence in hybrid decision-making",
+  "website": " https://matthiasbaldauf.com/smartconv23/",
+  "description": "The adoption of AI systems for decision support in sensitive domains has become increasingly normalized and of interest. However, it often relies on the unstated assumption that the level of accuracy of a Decision Support System is the only element to be considered ensure a positive impact of AI on human decision-making. This assumption is appealing due to its simplifying consequences, as it allows for the evaluation of an AI system’s performance in isolation or by comparing it with the average performance of human decision-makers in the same task. However, this approach neglects the complex socio-technical context in which the system will be embedded after deployment and the emergent phenomena arising from the continuous interaction between humans, machines, and tasks. In this course, we will learn that while this dogma may be appealing in theory, it has limited applicability in real-world scenarios. It is only reasonable in cases where humans willingly adopt a fully automated decision-making setting and completely delegate decision-making to machines, which is still relatively rare. Instead, in most cases, the automation of classifying tasks is partial and intended as support for human decision-making, for which the human is solely responsible. Therefore, the primary learning objective of this course is to enable participants to evaluate AI systems by factoring in both cognitive and socio-psychological determinants and effects.",
+  "keywords" : "Decision Support Systems, Human-AI Interaction, AI Assessment, Hybrid Decision-Making"
+}

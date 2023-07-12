@@ -52,8 +52,6 @@ export function SubNavbarJsx({ id }) {
 		});
 
 	}
-
-
 	return (
 
 		<main>
@@ -75,22 +73,6 @@ export function SubNavbarJsx({ id }) {
 				</div>
 
 				<ul className='nav-items' id="nav-items">
-
-					{/* <h2><span className="large-pill">Submissions Open:</span></h2>
-						<li><a className="section-change highlight" onClick={changeValue} id='0'>Full Papers</a></li>
-						<li><a className="section-change highlight" onClick={changeValue} id='6'>Workshops</a></li>
-					<div className="bottom-border go-back"></div>
-						
-		
-					
-
-					<li><a className="section-change" onClick={changeValue} id='1'>Short Papers</a></li>
-					<li><a className="section-change" onClick={changeValue} id='2'>Posters</a></li>
-					<li><a className="section-change" onClick={changeValue} id='3'>Panels</a></li>
-					<li><a className="section-change" onClick={changeValue} id='4'>Interactive Demos</a></li>
-					<li><a className="section-change" onClick={changeValue} id='5'>Courses</a></li>
-					<li><a className="section-change" onClick={changeValue} id='7'>Doctoral Consortium</a></li>
-					<li><a className="section-change" onClick={changeValue} id='8'>Industrial <br/> Experiences</a></li> */}
 
 					<li><a className="section-change" onClick={changeValue} id='1'>Full Papers</a></li>
 					<li><a className="section-change" onClick={changeValue} id='2'>Short Papers</a></li>

@@ -1,13 +1,852 @@
-{"submissions_data":[ {
-  "publishedAt": "2022-09-28T15:16:00.840Z",
-  "details": "**Key Dates**\n\n* Submission: 26 April 2023 23:59 (anywhere on earth) Note new date!\n* Notification: 24 May 2023\n\n**Summary of Publication Process**\n\n* Reviewing process: juried\n* Anonymous submission: No\n* Length: 4 pages in Springer format (see below, Preparing a Doctoral Consortium Contribution)\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/submissions)\n* Proceedings: No.\n  Consortium attendees are encouraged to submit a paper or contribution to any of the other tracks at INTERACT 2023 on content similar to that in the proposal for the Doctoral Consortium.\n\n**Preparing a Doctoral Consortium Contribution**\nEach prospective PhD student participant must submit a package of materials, consisting of two parts for consideration by the Doctoral Consortium Committee.\n\n*Part 1: Extended Research Abstract*\nThe research description should be in PDF format, up to four (4) pages long, formatted according to the Springer format. It must include:\n\n* The title of the work\n* The student’s name, university, address and e-mail address\n* Name and e-mail address of the dissertation advisor/supervisor\n* The research area or sub-area of the work (ten words or less)\n* A brief description of the research topic (25 words or less)\n* A description of the research problem to be solved, why it is important and a justification that prior research has not solved the problem\n* The research hypothesis (claim)\n* The methods used or proposed to use to carry out the research; it is important to describe a plan for evaluating the work and presenting credible evidence of the results to the research community\n* A sketch of the proposed solution\n* The expected contributions of the PhD research\n* A statement of work to date and open questions/issues for discussion at the DC\n\nExtended Abstracts for the Doctoral Consortium are not included in the conference proceedings. Nevertheless, they must be formatted according to [Springer LNCS format](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0). Authors should consult Springer’s [authors’ guidelines](https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to prepare their papers. Springer’s proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\n\n*Part 2: Letter of Recommendation*\nThe letter of recommendation should come from the student’s PhD advisor/supervisor, or head of school, or equivalent, supporting the student’s nomination for the Consortium. This letter should include the student’s name, a short assessment of the current status of the PhD research, an expected date for dissertation submission, an assessment of what the student would bring to the Consortium, and how the student would benefit from attendance. The letter should be in PDF format, and must be e-mailed to the Doctoral Consortium co-chairs [dc@interact2023.org](mailto:dc@interact2023.org).\n\nTo protect the intellectual property of students, Extended Abstracts will only be made available to participants of the Doctoral Consortium and will not be available or published.\n\n**Guidelines**\nDoctoral Consortium candidates should have chosen a research focus and also have selected theoretical and methodological approaches and begun to conduct their research.\nTo benefit from the Consortium students should have at least 6-12 months of work remaining before the expected completion of their theses.\nThe number of participants in the Consortium will be limited. Selection for the Consortium will be based on the quality of the submission, its relevance to HCI, the relevance of the student’s contribution to the Consortium, and the potential benefit of the Consortium to the student’s research.\n\n**At the Conference**\nStudents selected to attend the Doctoral Consortium will be asked to present their work to get feedback for future directions. Those students who cannot travel will be allowed to present and participate remotely in the conference.\n\n**Further Information**\nIf you require any further information please contact the Doctoral Consortium CoChairs:\nDavid Lamas, Geraldine Fitzpatrick, and Tariq Zaman \n\nE-mail: [dc@interact2023.org](mailto:dc@interact2023.org)",
-  "updatedAt": "2022-10-13T03:39:19.977Z",
-  "date": "2023-02-10T17:58:20.188Z",
-  "title": "Doctoral Consortium",
+{"timetable_data":[ {
+  "day": 4,
+  "date": "31th August",
+  "data": [
+    {
+      "time": "8:00 - 8:30",
+      "item": [
+        {
+          "text": "Registration"
+        }
+      ]
+    },
+    {
+      "time": "8:00 - 9:30",
+      "item": [
+        {
+          "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
+          "author": "Prof. Jonathan Lazar, University of Maryland, USA",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "11:30 - 14:1 5",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session C1: User Studies",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "title": "title",
+              "authors": "authors",
+              "presenters": "presenters"
+            }
+          ]
+        },
+        {
+          "text": "Session C2: Accessibility",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "title": "title2",
+              "authors": "authors2",
+              "presenters": "presenters2"
+            }
+          ]
+        },
+        {
+          "text": "Session C3: Model-Based UI Design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "title": "title3",
+              "authors": "authors3",
+              "presenters": "presenters3"
+            }
+          ]
+        },
+        {
+          "text": "Session C4: Interaction with Conversational agents I",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session C5: 3D Interaction",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses D - Practical Ethics: Respecting Participants Contributions in HCI Research and Design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses E: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session D1: User Studies, Eye-Tracking and Physiological data",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session D2: Eye-Free, Gesture Interaction and Sign Language",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session D3: Co-design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session D4: Social AI",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses B - Part 1: Disability, Design and Innovation for a Fairer World - Part 1",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "13:30 - 14:15",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session E1: Social Media and Digital Learning",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session E2: Healthcare applications and Self-Monitoring",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session E3: Information Visualization and 3D Interaction",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session E4: Social and Ubiquitous Computing I",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session E5: Virtual Reality and Training",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses B - Part 2: Disability, Design and Innovation for a Fairer World - Part 2",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Panel 1: A Multi-Perspective Panel on User-centred Transparency, Explainability, and Controllability in Automations",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "13:30 - 14:15",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "16:15 - 17:15",
+      "item": [
+        {
+          "text": "Keynote",
+          "author": "Rochelle Gold",
+          "location": "Large lecture theatre (PZA/103)"
+        }
+      ]
+    },
+    {
+      "time": "19:00",
+      "item": [
+        {
+          "text": "Conference Dinner"
+        }
+      ]
+    }
+  ]
+},{
+    "day": 2,
+    "date": "29th August",
+    "data": [
+      {
+        "time": "8:00 - 9:00",
+        "item": [
+          {
+            "text": "Registration"
+          }
+        ]
+      },
+      {
+        "time": "9:00 - 10:30",
+        "item": [
+          {
+            "text": "Workshops"
+          }
+        ]
+      },
+      {
+        "time": "10:30 - 11:00",
+        "item": [
+          {
+            "text": "Coffee / Tea Break"
+          }
+        ]
+      },
+      {
+        "time": "11:00 - 12:30",
+        "item": [
+          {
+            "text": "Workshops"
+          }
+        ]
+      },
+      {
+        "time": "12:30 - 13:30",
+        "item": [
+          {
+            "text": "Lunch Break"
+          }
+        ]
+      },
+      {
+        "time": "13:30 - 15:00",
+        "item": [
+          {
+            "text": "Workshops"
+          }
+        ]
+      },
+      {
+        "time": "15:00 - 15:30",
+        "item": [
+          {
+            "text": "Coffee / Tea Break"
+          }
+        ]
+      },
+      {
+        "time": "15:30 - 17:00",
+        "item": [
+          {
+            "text": "Workshops"
+          }
+        ]
+      }
+    ]
+  },{
+  "day": 1,
+  "date": "28th August",
+  "data": [
+    {
+      "time": "8:00 - 9:00",
+      "item": [
+        {
+          "text": "Registration"
+        }
+      ]
+    },
+    {
+      "time": "9:00 - 10:30",
+      "item": [
+        {
+          "text": "Workshops"
+        }
+      ]
+    },
+    {
+      "time": "10:30 - 11:00",
+      "item": [
+        {
+          "text": "Coffee / Tea Break"
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 12:30",
+      "item": [
+        {
+          "text": "Workshops"
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:30",
+      "item": [
+        {
+          "text": "Lunch Break"
+        }
+      ]
+    },
+    {
+      "time": "13:30 - 15:00",
+      "item": [
+        {
+          "text": "Workshops"
+        }
+      ]
+    },
+    {
+      "time": "15:00 - 15:30",
+      "item": [
+        {
+          "text": "Coffee / Tea Break"
+        }
+      ]
+    },
+    {
+      "time": "15:30 - 17:00",
+      "item": [
+        {
+          "text": "Workshops"
+        }
+      ]
+    }
+  ]
+},{
+  "day": 3,
+  "date": "30th August",
+  "data": [
+    {
+      "time": "8:30 - 9:30",
+      "item": [
+        {
+          "text": "Registration"
+        }
+      ]
+    },
+    {
+      "time": "9:30 - 11:00",
+      "item": [
+        {
+          "text": "Opening Welcome / Awards"
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 11:30",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "11:30 - 12:30",
+      "item": [
+        {
+          "text": "Opening Keynote",
+          "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:45",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session A1: User Studies",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+                "id" : "FP1114",
+                "title" : "Brilliance and Resilience: A New Perspective to the Challenges, Practices and Needs of University Students with Visual Impairments in India",
+                "authors" : "Tigmanshu Bhatnagar, Vikas Upadhyay, PV Madhusudhan Rao, Nicolai Marquardt, Mark Mio-downik, and Catherine Holloway",
+                "presenters": "Tigmanshu Bhatnagar",
+                "contact": [
+                    {
+                        "name" : "Bhatnagar, Tigmanshu",
+                        "email" : "t.bhatnagar.18@ucl.ac.uk"
+                    }
+                ]
+            },
+            {
+                "id" : "SP1120",
+                "title" : "Mapping Virtual Reality Controls to Inform Design of Accessible User Experiences",
+                "authors" : "Christopher Power, Paul Cairns, and Triskal DeHaven",
+                "presenters": "Christopher Power",
+                "contact": [
+                    {
+                        "name" : "Power, Christopher",
+                        "email" : "cdspower@upei.ca"
+                    }
+                ]
+            },
+            {
+                "id" : "SP1180",
+                "title" : "WAM-Studio: A Web-based Digital Audio Workstation To Empower Cochlear Implant Users",
+                "authors" : "Michel Buffa, Antoine Vidal-Mazuy, Lloyd May, and Marco Winckler",
+                "presenters": "Marco Winckler",
+                "contact": [
+                    {
+                        "name" : "Buffa, Michel",
+                        "email" : "michel.buffa@univ-cotedazur.fr"
+                    }
+                ]
+            },
+            {
+                "id" : "SP1160",
+                "title" : "Web Accessibility in Higher Education in Norway: To What Extent are University Websites Accessible?",
+                "authors" : "Yavuz Inal and Anne Britt Torkildsby",
+                "presenters": "Anne Britt Torkildsby",
+                "contact": [
+                    {
+                        "name" : "Inal, Yavuz",
+                        "email" : "yavuz.inal@ntnu.no"
+                    }
+                ]
+            },
+            {
+                "id" : "SP1114",
+                "title" : "Wesee: Digital Cultural Heritage Interpretation for Blind and Low Vision People",
+                "authors" : "Yalan Luo, Weiyue Lin, Yuhan Liu, Xiaomei Nie, Xiang Qian, and Hanyu Guo",
+                "presenters": "Yalan Luo",
+                "contact": [
+                    {	
+                        "name" : "Luo, Yalan",
+                        "email" : "luoyl20@mails.tsinghua.edu.cn"
+                    }
+                ]
+            }
+          ]
+        },
+        {
+          "text": "Session A2: Accessibility",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [{
+            "id" : "SP1074",
+            "title" : "I miss going to that place”: The impact of watching nature videos on the well-being of informal caregivers",
+            "authors" : "Beatriz Peres, Hildegardo Noronha, Daniel S. Lopes, Joaquim Jorge, and Pedro F. Campos",
+            "presenters": "Beatriz Peres",
+            "contact": [
+                {
+                    "name" : "Peres, Beatriz",
+                    "email" : "beatriz.peres@iti.larsys.pt"
+                }
+            ]
+        },
+        {
+            "id" : "FP1082",
+            "title" : "Comparing Perceived Restorativeness and Stress Reduction in Virtual Reality Environments using Abstract Fractal Geometries versus Realistic Natural Landscapes",
+            "authors" : "Diana C. G. Mendes, and Mónica S Cameirão",
+            "presenters": "Diana Carolina Gonçalves Mendes",
+            "contact": [
+                {
+                    "name" : "Mendes, Diana",
+                    "email" : "diana.mendes@nlincs.uma.pt"
+                }
+            ]
+        },
+        {
+            "id" : "SP1119",
+            "title" : "Our Nudges, Our Selves: Tailoring Mobile User Engagement Using Personality",
+            "authors" : "Nima Jamalian, Marios Constantinides, Sagar Joglekar, Xueni Pan, and Daniele Quercia",
+            "presenters": "Marios Constantinides",
+            "contact": [
+                {
+                    "name" : "Constantinides, Marios",
+                    "email" : "marios.constantinides@nokia-bell-labs.com"
+                }
+            ]
+        },
+        {
+            "id" : "SP1091",
+            "title" : "Turn & Slide: Designing a Puzzle Game to Elicit the Visualizer-Verbalizer Cognitive Style",
+            "authors" : "Sotirios Petsas, George E. Raptis, and Christos Katsanos",
+            "presenters": "-",
+            "contact": [
+                {
+                    "name" : "Raptis, George",
+                    "email" : "graptis.ho@gmail.com"
+                }
+            ]
+        },
+        {
+            "id" : "industrial-1000",
+            "title" : "How to Bring Diversity into Industry: Industrial Experiences in Public Transport Repair & Maintenance",
+            "authors" : "Rafael Vrecar, Markus Steinlechner, Patrick Rupprecht, Aaron Wedral, Marlies Negele, Maciej Palucki, Brigitte Ratzer, and Astrid Weiss",
+            "presenters": "Rafael Vrecar, Markus Steinlechner, Patrick Rupprecht, Aaron Wedral, Marlies Negele, Maciej Palucki, Brigitte Ratzer, and Astrid Weiss",
+            "contact": [
+                {
+                    "name" : "Vrecar, Rafael",
+                    "email" : "rafael@vrecar.eu"
+                }
+            ]
+        }]
+        },
+        {
+          "text": "Session A3: Model-Based UI Design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session A4: Interaction with Conversational agents I",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session A5: 3D Interaction",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses A - Part 1: Introduction to Information Visualisation",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session B1: User Studies",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session B2: Accessibility",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session B3: Model-Based UI Design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session B4: Interaction with Conversational agents I",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session B5: 3D Interaction",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses A - Part 2: Introduction to Information Visualisation",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses F - Part 2: The UCD Sprint: Bringing Users Along to Sprint",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Panel 2: Ethical Value Exchange in HCI",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "17:15 - 18:15",
+      "item": [
+        {
+          "text": "Posters and Demonstrations"
+        }
+      ]
+    },
+    {
+      "time": "18:15 - 19:15",
+      "item": [
+        {
+          "text": "Welcome Reception"
+        }
+      ]
+    }
+  ]
+},{
+  "day": 5,
+  "date": "1st Sept",
+  "data": [
+    {
+      "time": "8:00 - 8:30",
+      "item": [
+        {
+          "text": "Registration"
+        }
+      ]
+    },
+    {
+      "time": "8:30 - 9:30",
+      "item": [
+        {
+          "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
+          "author": "Ann Blandford, University College London, UK",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "9:30 - 11:00",
+      "or": true,
+      "item": [
+        {
+          "text": "Session F1: Understanding users and privacy issues",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session F2: Accessibility for Auditory / Hearing disabilities",
+          "location": "CSE/102X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session F3: Multisensory interaction and VR experiences",
+          "location": "LMB/002",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session F4: Social and Ubiquitous Computing II",
+          "location": "LMB/002A",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session F5: Human-Robot Interaction",
+          "location": "LMB/030",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses C - Part 1: Hacking the Brain: the risks and challenges of Cognitive Augmentation - Part 1",
+          "location": "LMB/036",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Course C - Part 2: Hacking the Brain: the risks and challenges of Cognitive Augmentation - Part 2",
+          "location": "LMB/036",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 11:30",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "11:30 - 12:30",
+      "item": [
+        {
+          "text": "Posters and Demonstrations"
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:45",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "14:15 - 15:45",
+      "or": true,
+      "item": [
+        {
+          "text": "Session G1: User Self-Report",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session G2: Cybersecurity and Trust",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session G3: Online collaboration and Cooperative work",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session G4: --",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Session G5: Hacking the Brain: the risks and challenges of Cognitive Augmentation - Part 2",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Courses C - Part 2: Hacking the Brain: the risks and challenges of Cognitive Augmentation - Part 2",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "15:15 - 15:45",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 16:45",
+      "item": [
+        {
+          "text": "Closing keynote: Prof. Mike Evans, UX Research Lead, BBC Research and Development, UK"
+        }
+      ]
+    },
+    {
+      "time": "16:45 - 17:30",
+      "item": [
+        {
+          "text": "Closing remarks - announcement of INTERACT 2025"
+        }
+      ]
+    },
+    {
+      "time": "19:00",
+      "item": [
+        {
+          "text": "Conference Dinner"
+        }
+      ]
+    }
+  ]
+}], "submissions_data":[ {
+  "publishedAt": "2022-09-28T15:14:40.450Z",
+  "details": "**Key Dates**\n\n* Submission: 26 April 2023 23:59 (anywhere on earth). N﻿ote new date!\n* Notification of acceptance: 24 May 2023\n* Camera-Ready: 14 June 2023, 23:59 (anywhere on earth)\n\n**Submission and Publication Summary**\n\n* Reviewing process: curated by the CoChairs\n* Anonymous submission: No\n* Length: 4 page Course Abstract, + 2 pages addition information (see section Preparing a Course Submission)\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/submissions)\n* Proceedings: Springer LNCS Series\n\n**Proposer Guidelines**\nThe course proposal shall include:\n\n* A four-page abstract for the advanced programme including title of the course, learning objectives of the course, content of the course, duration of the course (3 hours max – 2 sessions), intended audience, and reading list (literature) that is suggested for the course. This abstract will be published in the conference proceedings in Springer LNCS Series.\n* A two-page document on additional information including the background of the tutor(s), description of the pedagogical concept, etc. This means:\n\nSelection Criteria\n\n* Range of topics covered (contemporary HCI to more localized topics)\n* Balancing of courses for all audiences (beginners, advanced, research-oriented, practitioner-oriented, etc.)\n* Courses focusing on all stages of the (user-centred) design and development process\n* Quality of the submission\n\nThe Conference Organisers will provide projectors and projection screens in each room. If any additional resources are required, this must be indicated in the proposal.\n\nCourse Abstracts should be formatted according to [Springer LNCS](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0) format. Authors should consult [Springer’s authors’ guidelines](https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to prepare their papers. Springer’s proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\n\nFurther Information\nIf you require any further information please contact the Courses CoChairs: Nikos Avouris and Andre Freire \n\nE-mail: [courses@interact2023.org](mailto:courses@interact2023.org)",
+  "updatedAt": "2022-10-13T03:38:51.111Z",
+  "date": "2023-01-28T10:53:13.042Z",
+  "title": "Courses",
   "link": "https://new.precisionconference.com/submissions",
-  "id": 8,
-  "createdAt": "2022-09-28T15:15:53.188Z",
-  "description": "The INTERACT 2023 Doctoral Consortium (DC) is a forum for PhD students working on HCI topics to discuss their research goals, methods, and results at an early stage in their research. It aims to provide useful guidance for completion of the doctoral research and the initiation of a research career in a friendly and constructive atmosphere. The DC provides an opportunity for student participants to interact with other students, established researchers, and the broader HCI community.\n\nThe Doctoral Consortium will be held on 27 August 2023. The Consortium will be a closed event, open only to the selected participants and other invited attendees."
+  "id": 6,
+  "createdAt": "2022-09-28T15:14:39.604Z",
+  "description": "Experienced researchers and practitioners will have the opportunity to present courses during the INTERACT 2023 conference. Courses may cover any aspect of human-computer Interaction. Courses reflective of local needs and perspectives are encouraged.\n\nCourses are invited on any of the conference theme and topics (please consult the lists on the [Full Paper](http://interact2023.org/submissions/0) and [Short Paper](http://interact2023.org/submissions/1) pages)"
+},{
+  "publishedAt": "2022-09-28T15:14:44.914Z",
+  "details": "**Key Dates**\n\n* Submission: 26 April 2023, 23:59 (anywhere on earth). Note new date!\n* Notification of acceptance: 24 May 2023\n* Camera-Ready: 14 June 2023, (anywhere on earth)\n\n**Submission and Publication Summary**\n\n* Reviewing process: curated by the CoChairs\n* Anonymous submission: No\n* Length: 4 page Interactive Demonstration Extended Abstract, + 1 page for references in [Springer Format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines) + 1 page with technical details to run the demo, the latter will not be published)\n* Video: Optional but highly recommended, 30MB max\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/interact)\n* Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact) \n\n**Author Guidelines** \nInteractive Demonstration Extended Abstracts should be formatted according to the Springer LNCS format. Authors should consult Springer’s authors’ guidelines and use their proceedings templates, either for LaTeX or for Word, to prepare their papers. Springer’s proceedings LaTeX templates are also available in Overleaf.\nSubmissions may be accompanied by videos of any length up to 30 MB.\n\n**At the Conference**\nAccepted Interactive Demonstrations will be displayed during the conference. Authors will be expected to attend the conference and will be assigned a time and location to demonstrate their system to conference attendees. Those authors who cannot travel to the conference will be able to present and participate remotely in the conference.\n\n**Further Information**\nIf you require any further information please contact the Interactive Demonstration CoChairs: Barbara Rita Barricelli and Jainendra Shukla \n\nE-mail: [interactivedemos@interact2023.org](mailto:interactivedemos@interact2023.org)",
+  "updatedAt": "2022-10-13T03:38:41.747Z",
+  "date": "2023-04-04T10:18:16.614Z",
+  "title": "Interactive Demonstrations",
+  "link": "https://new.precisionconference.com/submissions",
+  "id": 5,
+  "createdAt": "2022-09-28T15:14:02.982Z",
+  "description": "The Interactive Demonstrations track is looking for examples of technological advances that can make human activities easier, faster, more accurate and less costly. We encourage demonstrations of new and emerging tools and technical solutions and innovations based on current solutions.\n\nWe are interested in demonstrations in the full range of HCI-related topics, especially related to the conference theme and topics (please consult the lists on the Full Paper and Short Paper pages).\n\nAn Interacitve Demonstration is a live presentation of a running system. Interactive Demos are curated. Submissions do not need to be anonymous.\n\nInteractive Demonstrations should be accompanied by an Extended Abstract which will be published in the INTERACT 2023 Conference proceedings.\n"
 },{
   "publishedAt": "2022-09-23T08:03:24.609Z",
   "details": "* Permissions and Copyright forms have been moved into the Essential Resources section above.\n**Key Dates**\n- Full Paper Submission: 1 February 2023, 23:59 (anywhere on earth)\n- Reviews to authors: 15 March 2023\n- Rebuttals due (requested only for borderline papers): 22 March 2023, 23:59 (anywhere on earth)\n- Notification of acceptance: 5 April 2023\n- Camera-Ready: 14 June 2023, 23:59 (anywhere on earth)\n\n\n\n**Submission and Publication Summary**\n- Reviewing process: Peer-reviewed\n- Anonymous submission: Yes. [Read about the INTERACT anonymity policy](http://interact2023.org/anonymity)\n- Length: [Springer format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines), 18 pages + 4 pages for references\n- Video: Optional, 30MB max\n- Online Submission: [PCS Submissions System](https://new.precisionconference.com/submissions)\n- Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact)\n\nFull papers are considered for the IFIP TC13 Awards. Read about [Awards](http://interact2023.org/awards).\n\nAt least one author for each accepted submission must register for the conference to be\nincluded in the proceedings.\n\n\n**Author Guidelines**\nPapers should be formatted using the [Springer LNCS format](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0). Authors should consult the\n[Springer Authors’ guidelines](https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to\nprepare their papers. Springer proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\n\nAccepted full papers must be presented at the conference and will be published in Springer [LNCS\nSeries.](https://link.springer.com/conference/interact)\n\nAuthors should guarantee the anonymity of their submissions. [Read about Anonymity.](http://interact2023.org/anonymity)\nFull papers may optionally be accompanied by a video not exceeding 30 MB in size. Video stills will\nbe published online and may be used for publicity.\n\n\n**Further Information**\nIf you require any further information please contact the Full Paper CoChairs: Antonio Piccinno and Marta Kristín Lárusdóttir \n\nEmail: [fullpapers@interact2023.org](mailto:fullpapers@interact2023.org)\n\n\n**Interact Programme Committee Sub-Committees**\n\n_Accessibility and assistive technologies_\nExample topics: accessibility of mainstream technologies; HCI for an aging population;  accessibility for people\n with cognitive disabilities; accessibility of virtual and augmented reality systems; implementing the EU Web\n Accessibility Directive; digital companions for older people.\n\n_Design for business and safety/critical interactive systems_\nExample topics: automation; critical interactive systems; healthcare; human error; human work interaction\ndesign; safety; training; transportation; usable security.\n\n_Design of interactive entertainment systems_\nExample topics: educational games; edutainment applications; games and gameful design; playful interactions;\nserious games and toys; TVx.\n\n_HCI Education and Curriculum_\nExample topics: Building an HCI curriculum in a continuously changing technology and application landscape;\ninnovative methods for teaching HCI; approaches to life-long learning; ; continuous development for HCI\npractitioners and researchers; the impact of culture and cognitive style of HCI teaching and learning.\n\n_Human-AI Interaction_\nExample topics: Human-centred design of intelligent systems; personalization; interactive recommender\nsystems; human control of intelligent systems; user trust; controls in automation; ethical aspects of intelligent\nsystems; user-centric explainable AI; human-robot interaction.\n\n_Information visualization_\nExample topics: data representations and interaction techniques; evaluation methods for information\nvisualization techniques; methods for elicitation of user constraints; priorities &amp; processes for visualizing data;\n methods for describing user interaction with visualization tools; visual analytics including human discourse and\n knowledge; visualization techniques and tools.\n\n_Interaction design for culture and development_\nExample topics: cultural differences in interaction design; interaction design in developing countries; cross-\ncultural interactive systems for cultural heritage; sustainability and HCI;\n\n_Interactive Systems Technologies and Engineering_\nExample topics: 3D interaction and human architecture for interactive systems; interactive technologies;\nmodel-based approaches for engineering interactive systems; multimodality; robot development (building and\ndesigning robots); wearable interaction.\n\n_Methodologies for HCI_\nExample topics: user-centred design; participatory design; design and development processes methods,\ntechniques and tools for evaluating interactive systems,; methods for identifying end-user requirements for\ninteractive systems,; design rationale and traceability of design choices; requirements and needs analysis; task\n analysis and task modelling; usability; methods for studying user experience.\n\n_Social and Ubiquitous Interaction_\nExample topics: Computer-Supported Cooperative Work; HCI for mobile interactions; interaction on the move;\nsocial media; social aspects of HCI, mobility.\n\n_HCI for Justice and Equality_\nExample topics: HCI to support sustainable development; HCI to support reduction in food waste, water and\nenergy use; HCI to support freedom of expression; Consideration of gender, sexuality and ethnic diversity in\nHCI; HCI and the digital divide; HCI and inclusion of disabled and older people; HCI countering adversity.\n\n_Understanding users and human behaviour_\nExample topics: affective HCI and emotion; ethnographic studies; field reports and user studies; human\nperception; cognition and behaviour; interaction design and children.\n",
@@ -19,25 +858,15 @@
   "createdAt": "2022-09-23T00:12:02.711Z",
   "description": "Full paper submissions to INTERACT may address any area of human-computer interaction. Each paper will be handled by one of the INTERACT SubCommittees listed below. \n\nOn submission you\nwill be asked to nominate the most appropriate SubCommittee, so please consider the list carefully."
 },{
-  "publishedAt": "2022-09-28T15:16:27.681Z",
-  "details": "**Key Dates**\n\n* Submission: 26 April 2023, 23:59 (anywhere on earth). Note new date!\n* Notification: 24 May 2023\n* Camera-Ready: 14 June 2023\n\n**Submission and Publication Summary**\n\n* Reviewing process: curated\n* Anonymous submission: No\n* Submission length: 4 pages + 1 page for references\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/interact)\n* Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact)\n\n**Author Guidelines**\nIndustrial Experience papers should be formatted according to [Springer LNCS](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0)  format. Authors should consult [Springer’s authors’ guidelines](https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to prepare their papers. Springer’s proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\nAccepted Industrial Experience papers papers must be presented at the conference. They will be published in [Springer LNCS Series](https://link.springer.com/conference/interact) if they are between 4-5 pages long.\nIndustrial Experience papers may optionally be accompanied by a video not exceeding 30 MB in size. Video figures will be published online and may be used for publicity.\n\n**Upon Acceptance of your submission**\nIf a submission is accepted to appear at the conference, the contact person will receive further instructions regarding the inclusion of their paper in the conference proceedings, as well as instructions for the Industrial Experience presentation at the conference.\n\n**At the Conference**\nAccepted Industrial Experiences will be presented during the conference. Authors will be expected to attend the conference and will be assigned a time and location to present their Industrial Experience to conference attendees. Those authors who cannot travel will be able to present and participate remotely in the conference.\n\n**Further Information**\nIf you require any further information please contact the Industrial Experiences track Chair: Helen Petrie and Jose Abdelnour-Nocera \n\nE-mail: [industrial-experiences@interact2023.org](mailto:industrial-experiences@interact2023.org)",
-  "updatedAt": "2022-10-13T03:39:31.363Z",
-  "date": "2023-02-10T17:59:31.021Z",
-  "title": "Industrial Experiences",
+  "publishedAt": "2022-09-28T15:16:00.840Z",
+  "details": "**Key Dates**\n\n* Submission: 26 April 2023 23:59 (anywhere on earth) Note new date!\n* Notification: 24 May 2023\n\n**Summary of Publication Process**\n\n* Reviewing process: juried\n* Anonymous submission: No\n* Length: 4 pages in Springer format (see below, Preparing a Doctoral Consortium Contribution)\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/submissions)\n* Proceedings: No.\n  Consortium attendees are encouraged to submit a paper or contribution to any of the other tracks at INTERACT 2023 on content similar to that in the proposal for the Doctoral Consortium.\n\n**Preparing a Doctoral Consortium Contribution**\nEach prospective PhD student participant must submit a package of materials, consisting of two parts for consideration by the Doctoral Consortium Committee.\n\n*Part 1: Extended Research Abstract*\nThe research description should be in PDF format, up to four (4) pages long, formatted according to the Springer format. It must include:\n\n* The title of the work\n* The student’s name, university, address and e-mail address\n* Name and e-mail address of the dissertation advisor/supervisor\n* The research area or sub-area of the work (ten words or less)\n* A brief description of the research topic (25 words or less)\n* A description of the research problem to be solved, why it is important and a justification that prior research has not solved the problem\n* The research hypothesis (claim)\n* The methods used or proposed to use to carry out the research; it is important to describe a plan for evaluating the work and presenting credible evidence of the results to the research community\n* A sketch of the proposed solution\n* The expected contributions of the PhD research\n* A statement of work to date and open questions/issues for discussion at the DC\n\nExtended Abstracts for the Doctoral Consortium are not included in the conference proceedings. Nevertheless, they must be formatted according to [Springer LNCS format](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0). Authors should consult Springer’s [authors’ guidelines](https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to prepare their papers. Springer’s proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\n\n*Part 2: Letter of Recommendation*\nThe letter of recommendation should come from the student’s PhD advisor/supervisor, or head of school, or equivalent, supporting the student’s nomination for the Consortium. This letter should include the student’s name, a short assessment of the current status of the PhD research, an expected date for dissertation submission, an assessment of what the student would bring to the Consortium, and how the student would benefit from attendance. The letter should be in PDF format, and must be e-mailed to the Doctoral Consortium co-chairs [dc@interact2023.org](mailto:dc@interact2023.org).\n\nTo protect the intellectual property of students, Extended Abstracts will only be made available to participants of the Doctoral Consortium and will not be available or published.\n\n**Guidelines**\nDoctoral Consortium candidates should have chosen a research focus and also have selected theoretical and methodological approaches and begun to conduct their research.\nTo benefit from the Consortium students should have at least 6-12 months of work remaining before the expected completion of their theses.\nThe number of participants in the Consortium will be limited. Selection for the Consortium will be based on the quality of the submission, its relevance to HCI, the relevance of the student’s contribution to the Consortium, and the potential benefit of the Consortium to the student’s research.\n\n**At the Conference**\nStudents selected to attend the Doctoral Consortium will be asked to present their work to get feedback for future directions. Those students who cannot travel will be allowed to present and participate remotely in the conference.\n\n**Further Information**\nIf you require any further information please contact the Doctoral Consortium CoChairs:\nDavid Lamas, Geraldine Fitzpatrick, and Tariq Zaman \n\nE-mail: [dc@interact2023.org](mailto:dc@interact2023.org)",
+  "updatedAt": "2022-10-13T03:39:19.977Z",
+  "date": "2023-02-10T17:58:20.188Z",
+  "title": "Doctoral Consortium",
   "link": "https://new.precisionconference.com/submissions",
-  "id": 9,
-  "createdAt": "2022-09-28T15:16:26.542Z",
-  "description": "The Industrial Experiences track caters for work being done in industry where HCI-related area such as Interaction Design and User Experience plays a role. The track is aimed at professionals who want to share their experiences and highlight their work to the international community. We welcome submissions from individuals from research groups, corporations and government institutions.\n\nIn the previous INTERACT editions, Industrial Experience track papers addressed the following topics:\nBest Practices in Research and Development\nNew work methodologies\nCase Studies\nCollaboration Paradigms\nRisk, Law and Ethics\nSmart Phone & Tablets to wearables UI evolution (Health, Sports and personal productivity)\nInnovative Voice Interfaces\nGesture Interactions\nInteraction for Internet of Things\nRobotics in Human Interactions\nVirtual Reality/Mixed Reality Worlds\nNew Interaction Paradigms\nInteraction Innovation in Automotive Industry\nData Visualization Techniques and Solutions\n"
-},{
-  "publishedAt": "2022-09-28T15:14:40.450Z",
-  "details": "**Key Dates**\n\n* Submission: 26 April 2023 23:59 (anywhere on earth). N﻿ote new date!\n* Notification of acceptance: 24 May 2023\n* Camera-Ready: 14 June 2023, 23:59 (anywhere on earth)\n\n**Submission and Publication Summary**\n\n* Reviewing process: curated by the CoChairs\n* Anonymous submission: No\n* Length: 4 page Course Abstract, + 2 pages addition information (see section Preparing a Course Submission)\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/submissions)\n* Proceedings: Springer LNCS Series\n\n**Proposer Guidelines**\nThe course proposal shall include:\n\n* A four-page abstract for the advanced programme including title of the course, learning objectives of the course, content of the course, duration of the course (3 hours max – 2 sessions), intended audience, and reading list (literature) that is suggested for the course. This abstract will be published in the conference proceedings in Springer LNCS Series.\n* A two-page document on additional information including the background of the tutor(s), description of the pedagogical concept, etc. This means:\n\nSelection Criteria\n\n* Range of topics covered (contemporary HCI to more localized topics)\n* Balancing of courses for all audiences (beginners, advanced, research-oriented, practitioner-oriented, etc.)\n* Courses focusing on all stages of the (user-centred) design and development process\n* Quality of the submission\n\nThe Conference Organisers will provide projectors and projection screens in each room. If any additional resources are required, this must be indicated in the proposal.\n\nCourse Abstracts should be formatted according to [Springer LNCS](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0) format. Authors should consult [Springer’s authors’ guidelines](https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to prepare their papers. Springer’s proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\n\nFurther Information\nIf you require any further information please contact the Courses CoChairs: Nikos Avouris and Andre Freire \n\nE-mail: [courses@interact2023.org](mailto:courses@interact2023.org)",
-  "updatedAt": "2022-10-13T03:38:51.111Z",
-  "date": "2023-01-28T10:53:13.042Z",
-  "title": "Courses",
-  "link": "https://new.precisionconference.com/submissions",
-  "id": 6,
-  "createdAt": "2022-09-28T15:14:39.604Z",
-  "description": "Experienced researchers and practitioners will have the opportunity to present courses during the INTERACT 2023 conference. Courses may cover any aspect of human-computer Interaction. Courses reflective of local needs and perspectives are encouraged.\n\nCourses are invited on any of the conference theme and topics (please consult the lists on the [Full Paper](http://interact2023.org/submissions/0) and [Short Paper](http://interact2023.org/submissions/1) pages)"
+  "id": 8,
+  "createdAt": "2022-09-28T15:15:53.188Z",
+  "description": "The INTERACT 2023 Doctoral Consortium (DC) is a forum for PhD students working on HCI topics to discuss their research goals, methods, and results at an early stage in their research. It aims to provide useful guidance for completion of the doctoral research and the initiation of a research career in a friendly and constructive atmosphere. The DC provides an opportunity for student participants to interact with other students, established researchers, and the broader HCI community.\n\nThe Doctoral Consortium will be held on 27 August 2023. The Consortium will be a closed event, open only to the selected participants and other invited attendees."
 },{
   "publishedAt": "2022-09-28T15:10:46.527Z",
   "details": "**Key Dates**\n\n* Submission: 26 April 2023, 23:59 (anywhere on earth). Note new date!\n* Notification of acceptance: 24 May 2023\n* Camera-Ready: 14 June 2023, 23:59 (anywhere on earth) - \n\n**Submission and Publication Process**\n\n* Reviewing process: Curated by the CoChairs\n* Anonymous submission: No\n* Length: 4 page Panel Extended Abstract + 1 page for references\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/interact)\n* Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact) \n\n**Proposer Guidelines**\n\n* Panels should be planned for a slot of 1hr 30mins.\n* There is no fixed number for the number of participants in the panel, but we suggest that 4 - 6 is a good number.\n* The Panel Extended Abstract should include:\n* A short description of the topics to be discussed.\n* Motivating case studies that describe why these topics are worthy to be discussed during the conference are much appreciated.\n* Examples of instigating questions that might prompt the audience to interact with the panelists.\n* Short biography of the panelists, these should not be anonymous.\n\nSubmissions to the Panel track are curated by the Track CoChairs so don’t hesitate to contact them to discuss your proposal before submitting.\n\nPanel Extended Abstracts should be formatted according to the [Springer LNCS](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0)  format. Authors should consult the [Springer authors’ guidelines](https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to prepare their papers. Springer’s proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\n\nPanel submissions may optionally be accompanied by a video not exceeding 30 MB in size. Video figures will be published online and may be used for publicity.\n\n*Upon Acceptance of your submission*\nIf a submission is accepted to appear at the conference, the contact person will receive further instructions regarding the organization of the Panel and inclusion of the Extended Abstract in the conference proceedings.\n\n*At the Conference*\nPanels will be held during the conference. If panellists who cannot travel to the conference, there will an opportunity to participate remotely in the conference.\n\n**Further Information**\nIf you require any further information please contact the Panels CoChairs: Effie Lai-Chong Law and Massimo Zancanaro \n\nE-mail: [panels@interact2023.org](mailto:panels@interact2023.org)",
@@ -49,15 +878,15 @@
   "createdAt": "2022-09-28T15:10:34.797Z",
   "description": "Panel discussions are discussions on current topics of interest among experts which then stimulate discussion with the audience. Individuals interested in organizing and chairing a panel on a topic that intrigues them may propose a Panel session. Topics that raise forward-looking or contentious issues and that will promote debate among panel members as well as audience involvement are strongly encouraged.\n\nAll suggestions will be assessed for topicality and ability to generate stimulating debate. Panels that include representatives of industry and academia are highly encouraged."
 },{
-  "publishedAt": "2022-09-23T12:34:56.510Z",
-  "details": "**Key Dates**\n\n* Short paper Submission: 26 April 2023, 23:59 (anywhere on earth)\n* Notification of acceptance: 24 May 2023\n* Camera-Ready: 14 June 2023, 23:59 (anywhere on earth)\n\n**Submission and Publication Summary**\n\n* Reviewing process: Peer-reviewed\n* Anonymous submission: Yes. [Read about the INTERACT anonymity policy.](http://interact2023.org/anonymity)\n* Length: [Springer Format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines), 8 pages + 2 pages for references\n* Video: Optional, 30MB max\n* Online Submission: [PCS Submissions System](https://new.precisionconference.com/interact)\n* Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact)\n\n**Author Guidelines**\nPapers should be formatted using the [Springer LNCS](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0) format. Authors should consult the\nSpringer Authors’ guidelines and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to\nprepare their papers. Springer proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\nAccepted short papers must be presented at the conference and will be published in [Springer LNCS\nSeries.](https://link.springer.com/conference/interact)\n\nAuthors should guarantee the anonymity of their submissions. [Read about the INTERACT anonymity policy.](http://interact2023.org/anonymity)\n\nShort papers may optionally be accompanied by a video not exceeding 30 MB in size. Video stills\nwill be published online and may be used for publicity.\n\n**Further Information**\nIf you require any further information please contact the Short Paper CoChairs: Marta Rey and Frode Eika Sandnes. \n\n Email: [shortpapers@interact2023.org](mailto:shortpapers@interact2023.org) \n\n **Example topics for Short Papers** (Short papers may address any area of HCI, these are only\nindicative):\n\n *Methods and Tools for Interface and Interaction Design, Modelling, and Evaluation including:* \n\n* Accessibility\n* Affective HCI, Emotion, Motivational Aspects\n* Evaluation Methods / Usability Evaluation\n* Human Error and Safety\n* Human Factors and HCI\n* Methodologies for HCI\n* Mobility / Mobile Accessibility / Mobile Devices\n* Model-Based Design of Interactive Systems\n* Personalization\n* Tools for Design, Modelling, Evaluation\n* Usability\n* User Experience-Based Approaches\n* User Modelling\n* Visualisation Techniques\n\n*Cross-Cultural and Social Issues including:*\n\n* Developing Local Content or Interaction Design Capacity\n* Ethical aspects of Interaction\n* HCI for an aging population\n* HCI for cultural heritage\n* HCI for culture\n* HCI for Offshore Software Development\n* HCI for sustainability\n* ICT in Social Development – Interaction Design for Developing Regions\n* International and Cultural Aspects of HCI\n\n*Specific Application Areas including:*\n\n* Adaptive Interfaces\n* Aesthetics in HCI\n* Augmented Reality and Tangible User Interfaces\n* Child-Computer Interaction \n* Computer-Supported Cooperative Work\n* Context-Dependent Systems\n* End-User Development and Adaptation\n* Exertion Interfaces and Exergames\n* HCI and Web 2.0\n* HCI Education and Curriculum\n* HCI in Healthcare and Wellbeing\n* HCI in Software / Enterprise Engineering\n* HCI in the pandemic\n* Human-Robot Interaction\n* Human-Work Interaction Design\n* Interaction with Small or Large Displays\n* Interactive Recommender Systems\n* Interactive Surfaces and Tabletops\n* Multimedia Interaction\n* Multi-Modal Interfaces\n* Multi-User Interaction / Cooperation\n* Novel User Interfaces and Interaction Techniques\n* Social Media / Social Networks\n* Ubiquitous and Context-Aware Computing\n* Usable Privacy and Security\n* User Interfaces for e-Government\n* User Interfaces for Safety Critical Systems\n* User Interfaces for Web Applications \n* User-centric Explainable AI",
-  "updatedAt": "2022-10-13T03:36:08.262Z",
-  "date": "2023-04-04T10:19:47.673Z",
-  "title": "Short Papers",
+  "publishedAt": "2022-09-28T15:16:27.681Z",
+  "details": "**Key Dates**\n\n* Submission: 26 April 2023, 23:59 (anywhere on earth). Note new date!\n* Notification: 24 May 2023\n* Camera-Ready: 14 June 2023\n\n**Submission and Publication Summary**\n\n* Reviewing process: curated\n* Anonymous submission: No\n* Submission length: 4 pages + 1 page for references\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/interact)\n* Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact)\n\n**Author Guidelines**\nIndustrial Experience papers should be formatted according to [Springer LNCS](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0)  format. Authors should consult [Springer’s authors’ guidelines](https://www.interact2021.org/templates/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to prepare their papers. Springer’s proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\nAccepted Industrial Experience papers papers must be presented at the conference. They will be published in [Springer LNCS Series](https://link.springer.com/conference/interact) if they are between 4-5 pages long.\nIndustrial Experience papers may optionally be accompanied by a video not exceeding 30 MB in size. Video figures will be published online and may be used for publicity.\n\n**Upon Acceptance of your submission**\nIf a submission is accepted to appear at the conference, the contact person will receive further instructions regarding the inclusion of their paper in the conference proceedings, as well as instructions for the Industrial Experience presentation at the conference.\n\n**At the Conference**\nAccepted Industrial Experiences will be presented during the conference. Authors will be expected to attend the conference and will be assigned a time and location to present their Industrial Experience to conference attendees. Those authors who cannot travel will be able to present and participate remotely in the conference.\n\n**Further Information**\nIf you require any further information please contact the Industrial Experiences track Chair: Helen Petrie and Jose Abdelnour-Nocera \n\nE-mail: [industrial-experiences@interact2023.org](mailto:industrial-experiences@interact2023.org)",
+  "updatedAt": "2022-10-13T03:39:31.363Z",
+  "date": "2023-02-10T17:59:31.021Z",
+  "title": "Industrial Experiences",
   "link": "https://new.precisionconference.com/submissions",
-  "id": 2,
-  "createdAt": "2022-09-23T08:08:14.353Z",
-  "description": "Short paper submissions to INTERACT may address any area of HCI, including but not limited to the\nlist provided below."
+  "id": 9,
+  "createdAt": "2022-09-28T15:16:26.542Z",
+  "description": "The Industrial Experiences track caters for work being done in industry where HCI-related area such as Interaction Design and User Experience plays a role. The track is aimed at professionals who want to share their experiences and highlight their work to the international community. We welcome submissions from individuals from research groups, corporations and government institutions.\n\nIn the previous INTERACT editions, Industrial Experience track papers addressed the following topics:\nBest Practices in Research and Development\nNew work methodologies\nCase Studies\nCollaboration Paradigms\nRisk, Law and Ethics\nSmart Phone & Tablets to wearables UI evolution (Health, Sports and personal productivity)\nInnovative Voice Interfaces\nGesture Interactions\nInteraction for Internet of Things\nRobotics in Human Interactions\nVirtual Reality/Mixed Reality Worlds\nNew Interaction Paradigms\nInteraction Innovation in Automotive Industry\nData Visualization Techniques and Solutions\n"
 },{
   "publishedAt": "2022-09-28T15:10:49.523Z",
   "details": "**Key Dates**\n\n* Submission: 26 April 2023, 23:59 (anywhere on earth). Note new date!\n* Notification: 28 May 2023\n* Camera-Ready: 14 June 2023 \n\n  **Submission and Publication Process**\n* Reviewing process: Juried\n* Anonymous submission: No\n* Length: **5 pages** extended abstract (4 pages text + 1 page references) + a visual poster draft resized to one A4 page \n* Video: Optional, 30MB max\n* Online Submission: [PCS Submissions System](https://new.precisionconference.com/interact)\n* Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact)\n\n**Further Information**\nIf you require any further information please contact the Poster CoChairs: Alena Denisova and Burak Merdenyan \n\nEmail: [posters@interact2023.org](mailto:posters@interact2023.org)\n\n Preparing and Submitting a Poster\nPoster submissions must consist of two related documents:\n\n* A Poster extended abstract, submitted as a PDF file, formatted according to Springer LNCS format. Authors should consult the Springer Authors’ guidelines and use their proceedings templates, either for LaTeX or for Word, to prepare their papers. Springer proceedings LaTeX templates are also available in Overleaf. Poster extended abstracts should be camera-ready and thoroughly copy-edited. Poster submissions need not be anonymous. Accepted Poster extended abstracts will be published in Springer LNCS Series.\n* An electronic version of the poster that you will present at the conference. For the review process, your poster should be reduced to one A4 page in size and submitted as a PDF file. Please note that the physical posters presented at the conference may not be larger than A1 format.\n* Posters may optionally be accompanied by a video not exceeding 30 MB in size.\n\nDue to the short review cycle, there should be no changes between your submission and the camera-ready final document, except in rare circumstances.\n\nBoth the Poster extended abstract and the poster should communicate:\n\nA concise description of the work\nImplications of the work for the INTERACT community\nRecommendations for further investigation and/or incorporation into practice\n\n**Selection Process**\n\nPoster submissions will be selected by an anonymous jury. The process has been designed to acknowledge the early-stage nature of the work. All submissions are considered confidential during the review process.\n\n**Review Criteria**\n\nEach submission will be reviewed on the following criteria:\n\nSignificance: How important is the problem or question that this submission addresses? How important is the output of this work in contributing to the identified problem or question? How greatly can others benefit from this work?\n\nOriginality: How novel is the contribution? How clearly does the submission communicate the ways that it differs from and goes beyond the most relevant previous work in this area? (Note that for a poster submission, full literature searches are not expected, although the most relevant citations should be included).\n\nValidity: How appropriate are the chosen methods for the work being undertaken? How well are the submission’s claims and conclusions supported by the results?\n\nWritten Presentation: How clear and understandable is the writing in the poster abstract? To what extent does the poster abstract conform to conference formatting requirements and the 4-page limit?\n\nVisual Presentation (The Poster): How well does the design of the poster effectively communicate the most important facets of the work? To what degree is the design of the poster likely to draw in an audience?\n\nAbility of the Work to Engender Discussion: To what degree will the presentation of this work stimulate interesting conversation among researchers or practitioners? To what extent will the presenters benefit from being able to discuss their work and receive feedback at this stage?\n\n**Upon Acceptance of your submission**\n\nIf a submission is accepted to appear at the conference, the contact person will receive further instructions regarding the inclusion of their poster abstract in the conference proceedings, as well as instructions for the poster presentation at the conference.\n\n**At the Conference**\n\nAccepted Posters will be displayed during the conference. Authors will be expected to attend the conference and will be assigned a time and location to present their poster to conference attendees. Authors will be required to set up beforehand and stand with their posters during the assigned time. Those authors attending remotely will be given an opportunity to present their poster in a remote poster session.",
@@ -69,6 +898,16 @@
   "createdAt": "2022-09-28T15:09:38.136Z",
   "description": "Posters provide a unique opportunity to share valuable new ideas, eliciting useful feedback on early stage work, and foster discussions and collaborations among colleagues.\n\nA Poster is a concise report of recent findings or other types of innovative or thought-provoking work relevant to the INTERACT community.\n\nThe difference between Posters and other contribution types (e.g. Full or Short papers) is that Poster submissions represent work that has not reached a level of completion that would warrant the full refereed selection process. That said, appropriate submissions should contribute to the body of HCI knowledge, whether realized or promised.\n\nSummaries of completed work or reduced versions of short or full paper submissions are inappropriate as a Poster submission.\n\nSubmissions may include, but are not limited to, the following types of work:\n\n\n- Evaluations of systems, techniques, practices or other phenomena relevant to HCI.\n\n\n- description of new methods, processes, techniques, or tools for use in interactive system design, development or deployment.\n\n\n- Reflections from practice, including lessons learned or principles derived from real-world experiences and backed by thought-provoking and well-substantiated analyses.\n\n\n- Accounts of the design (rationale, process, outcomes and/or evaluation) of innovative applications, user interfaces, or systems.\n\nSubmissions for Posters are invited on any of the conference topics, please consult the examples provided in the Full and Short Paper submission details.\n\nPoster submissions should report original work and must not be under consideration for any other publication or have been published previously. \n"
 },{
+  "publishedAt": "2022-09-23T12:34:56.510Z",
+  "details": "**Key Dates**\n\n* Short paper Submission: 26 April 2023, 23:59 (anywhere on earth)\n* Notification of acceptance: 24 May 2023\n* Camera-Ready: 14 June 2023, 23:59 (anywhere on earth)\n\n**Submission and Publication Summary**\n\n* Reviewing process: Peer-reviewed\n* Anonymous submission: Yes. [Read about the INTERACT anonymity policy.](http://interact2023.org/anonymity)\n* Length: [Springer Format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines), 8 pages + 2 pages for references\n* Video: Optional, 30MB max\n* Online Submission: [PCS Submissions System](https://new.precisionconference.com/interact)\n* Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact)\n\n**Author Guidelines**\nPapers should be formatted using the [Springer LNCS](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0) format. Authors should consult the\nSpringer Authors’ guidelines and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), to\nprepare their papers. Springer proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\nAccepted short papers must be presented at the conference and will be published in [Springer LNCS\nSeries.](https://link.springer.com/conference/interact)\n\nAuthors should guarantee the anonymity of their submissions. [Read about the INTERACT anonymity policy.](http://interact2023.org/anonymity)\n\nShort papers may optionally be accompanied by a video not exceeding 30 MB in size. Video stills\nwill be published online and may be used for publicity.\n\n**Further Information**\nIf you require any further information please contact the Short Paper CoChairs: Marta Rey and Frode Eika Sandnes. \n\n Email: [shortpapers@interact2023.org](mailto:shortpapers@interact2023.org) \n\n **Example topics for Short Papers** (Short papers may address any area of HCI, these are only\nindicative):\n\n *Methods and Tools for Interface and Interaction Design, Modelling, and Evaluation including:* \n\n* Accessibility\n* Affective HCI, Emotion, Motivational Aspects\n* Evaluation Methods / Usability Evaluation\n* Human Error and Safety\n* Human Factors and HCI\n* Methodologies for HCI\n* Mobility / Mobile Accessibility / Mobile Devices\n* Model-Based Design of Interactive Systems\n* Personalization\n* Tools for Design, Modelling, Evaluation\n* Usability\n* User Experience-Based Approaches\n* User Modelling\n* Visualisation Techniques\n\n*Cross-Cultural and Social Issues including:*\n\n* Developing Local Content or Interaction Design Capacity\n* Ethical aspects of Interaction\n* HCI for an aging population\n* HCI for cultural heritage\n* HCI for culture\n* HCI for Offshore Software Development\n* HCI for sustainability\n* ICT in Social Development – Interaction Design for Developing Regions\n* International and Cultural Aspects of HCI\n\n*Specific Application Areas including:*\n\n* Adaptive Interfaces\n* Aesthetics in HCI\n* Augmented Reality and Tangible User Interfaces\n* Child-Computer Interaction \n* Computer-Supported Cooperative Work\n* Context-Dependent Systems\n* End-User Development and Adaptation\n* Exertion Interfaces and Exergames\n* HCI and Web 2.0\n* HCI Education and Curriculum\n* HCI in Healthcare and Wellbeing\n* HCI in Software / Enterprise Engineering\n* HCI in the pandemic\n* Human-Robot Interaction\n* Human-Work Interaction Design\n* Interaction with Small or Large Displays\n* Interactive Recommender Systems\n* Interactive Surfaces and Tabletops\n* Multimedia Interaction\n* Multi-Modal Interfaces\n* Multi-User Interaction / Cooperation\n* Novel User Interfaces and Interaction Techniques\n* Social Media / Social Networks\n* Ubiquitous and Context-Aware Computing\n* Usable Privacy and Security\n* User Interfaces for e-Government\n* User Interfaces for Safety Critical Systems\n* User Interfaces for Web Applications \n* User-centric Explainable AI",
+  "updatedAt": "2022-10-13T03:36:08.262Z",
+  "date": "2023-04-04T10:19:47.673Z",
+  "title": "Short Papers",
+  "link": "https://new.precisionconference.com/submissions",
+  "id": 2,
+  "createdAt": "2022-09-23T08:08:14.353Z",
+  "description": "Short paper submissions to INTERACT may address any area of HCI, including but not limited to the\nlist provided below."
+},{
   "publishedAt": "2022-09-28T15:15:12.035Z",
   "details": "**Key dates**\n- Submission: Up to 27 February, 23:59 (anywhere on earth)\n- Notification of acceptance: within 2 weeks of submission\n- Camera-Ready: 14 June 2023, 23:59 (anywhere on earth)\n\n**Submission and Publishing process**\n- Reviewing process: juried\n- Anonymous: No\n- Length: Workshop Extended Abstract (up to 6 pages, in [Springer format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines)) + 1 page additional information (any format, see Author guidelines)\n- Online Submission: [PCS Submission System](https://new.precisionconference.com/submissions)\n- Proceedings (for workshop proposal summary): Springer LNCS Series\n\n\n**Proposer Guidelines**\nThe proposed format of the workshop should be innovative and interesting to the participants. Following are some examples of what may happen in workshops:\n\n\n- A traditional workshop with paper presentations, followed by forum discussions and a shared poster for presentation during the Workshops session in the main conference \n\n\n- An interactive event, where participants work together on experimenting with or evaluating an artifact, and make a video of the design or evaluation work highlights for presentation during the Workshops session in the main conference \n\n\n- A design workshop with focus on artefacts, with a gallery / showroom exhibition in the main conference \n\nOther, innovative formats of the workshop will also be of interest.\n\nWorkshops should have a minimum of 8 participants and a maximum of 30 participants. Workshops that do not reach the minimum number of participants may be subject to cancellation.\n\nA free workshop registration is granted to one of the workshop organizers if more than 10 participants are duly registered to the workshop.\nWorkshops will take place on 28 and 29 August 2023, immediately before the main conference.\n\nWorkshop Extended Abstract proposals should be formatted according to [Springer LNCS format](https://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0). Authors should consult [Springer’s authors’ guidelines](ftp://ftp.springernature.com/cs-proceeding/svproc/guidelines/Springer_Guidelines_for_Authors_of_Proceedings_CS.pdf) and use their proceedings templates, either for [LaTeX](https://www.interact2021.org/templates/llncs2e.zip) or for [Word](https://www.interact2021.org/templates/splnproc1703.zip), for the preparation of their papers. Springer’s proceedings LaTeX templates are also available in [Overleaf](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WsdHOy5uZpg).\n\nPlease submit your proposal by February 27 (23:59, anywhere on earth) using the conference submission system as one PDF document, with two separate sections:\n\nWorkshop Extended Abstract (6 pages in Springer format): this will be used for reviewing, for the programme and be published in the official conference proceedings. It should cover the overall concept of the workshop including key organisers, objectives, theme/topic, target audience, and expected outcomes.\n\nWorkshop organization (1 page in any format): this will be internal for the reviewing process. It should cover the workshop duration and organisation (i.e. how will the organisers facilitate the workshop).\n\n\n**Publicising and Participating in a Workshop**\nEach accepted workshop will have its own call for participation and website.\nA schedule for paper submissions to each specific workshop will be advertised on due time.\nHow to submit a paper to a workshop will be decided by the workshop organizers (submission deadline will be no later than 1st June 2023).\n\nThe publication of papers accepted to the workshop will be decided, managed and edited by the workshop organisers.\n\n**Further Information**\nIf you require any further information please contact the Workshops CoChairs: Jan Stage and Anna Bramwell-Dicks\n\nE-mail: [workshops@interact2023.org](mailto:workshops@interact2023.org)",
   "updatedAt": "2022-10-13T03:39:04.681Z",
@@ -78,14 +917,2393 @@
   "id": 7,
   "createdAt": "2022-09-28T15:15:11.286Z",
   "description": "INTERACT Workshops provide a one or two day forum for participants to compare their experiences and explore research issues or topics of special interest to the HCI community.\n\nWorkshops should have specific objectives and address stimulating topics. See for example workshops at [INTERACT 2021](https://www.interact2021.org/workshops.php), [INTERACT 2015](http://interact2015.org/program/workshops.html), and [INTERACT 2013](http://www.interact2013.org/Programme/Workshops).\n\nWorkshop organisers will get an opportunity to present a summary of outcomes in a session during the conference.\n"
+}], "timetable_data copy":[ {
+  "day": 1,
+  "date": "28th August",
+  "data": [
+    {
+      "time": "8:00 - 9:00",
+      "item": [
+        {
+          "text": "Registration"
+        }
+      ]
+    },
+    {
+      "time": "9:00 - 10:30",
+      "item": [
+        {
+          "text": "Workshops"
+        }
+      ]
+    },
+    {
+      "time": "10:30 - 11:00",
+      "item": [
+        {
+          "text": "Coffee / Tea Break"
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 12:30",
+      "item": [
+        {
+          "text": "Workshops"
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:30",
+      "item": [
+        {
+          "text": "Lunch Break"
+        }
+      ]
+    },
+    {
+      "time": "13:30 - 15:00",
+      "item": [
+        {
+          "text": "Workshops"
+        }
+      ]
+    },
+    {
+      "time": "15:00 - 15:30",
+      "item": [
+        {
+          "text": "Coffee / Tea Break"
+        }
+      ]
+    },
+    {
+      "time": "15:30 - 17:00",
+      "item": [
+        {
+          "text": "Workshops"
+        }
+      ]
+    }
+  ]
 },{
-  "publishedAt": "2022-09-28T15:14:44.914Z",
-  "details": "**Key Dates**\n\n* Submission: 26 April 2023, 23:59 (anywhere on earth). Note new date!\n* Notification of acceptance: 24 May 2023\n* Camera-Ready: 14 June 2023, (anywhere on earth)\n\n**Submission and Publication Summary**\n\n* Reviewing process: curated by the CoChairs\n* Anonymous submission: No\n* Length: 4 page Interactive Demonstration Extended Abstract, + 1 page for references in [Springer Format](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines) + 1 page with technical details to run the demo, the latter will not be published)\n* Video: Optional but highly recommended, 30MB max\n* Online Submission: [PCS Submission System](https://new.precisionconference.com/interact)\n* Proceedings: [Springer LNCS Series](https://link.springer.com/conference/interact) \n\n**Author Guidelines** \nInteractive Demonstration Extended Abstracts should be formatted according to the Springer LNCS format. Authors should consult Springer’s authors’ guidelines and use their proceedings templates, either for LaTeX or for Word, to prepare their papers. Springer’s proceedings LaTeX templates are also available in Overleaf.\nSubmissions may be accompanied by videos of any length up to 30 MB.\n\n**At the Conference**\nAccepted Interactive Demonstrations will be displayed during the conference. Authors will be expected to attend the conference and will be assigned a time and location to demonstrate their system to conference attendees. Those authors who cannot travel to the conference will be able to present and participate remotely in the conference.\n\n**Further Information**\nIf you require any further information please contact the Interactive Demonstration CoChairs: Barbara Rita Barricelli and Jainendra Shukla \n\nE-mail: [interactivedemos@interact2023.org](mailto:interactivedemos@interact2023.org)",
-  "updatedAt": "2022-10-13T03:38:41.747Z",
-  "date": "2023-04-04T10:18:16.614Z",
-  "title": "Interactive Demonstrations",
-  "link": "https://new.precisionconference.com/submissions",
-  "id": 5,
-  "createdAt": "2022-09-28T15:14:02.982Z",
-  "description": "The Interactive Demonstrations track is looking for examples of technological advances that can make human activities easier, faster, more accurate and less costly. We encourage demonstrations of new and emerging tools and technical solutions and innovations based on current solutions.\n\nWe are interested in demonstrations in the full range of HCI-related topics, especially related to the conference theme and topics (please consult the lists on the Full Paper and Short Paper pages).\n\nAn Interacitve Demonstration is a live presentation of a running system. Interactive Demos are curated. Submissions do not need to be anonymous.\n\nInteractive Demonstrations should be accompanied by an Extended Abstract which will be published in the INTERACT 2023 Conference proceedings.\n"
+    "day": 2,
+    "date": "29th August",
+    "data": [
+      {
+        "time": "8:00 - 9:00",
+        "item": [
+          {
+            "text": "Registration"
+          }
+        ]
+      },
+      {
+        "time": "9:00 - 10:30",
+        "item": [
+          {
+            "text": "Workshops"
+          }
+        ]
+      },
+      {
+        "time": "10:30 - 11:00",
+        "item": [
+          {
+            "text": "Coffee / Tea Break"
+          }
+        ]
+      },
+      {
+        "time": "11:00 - 12:30",
+        "item": [
+          {
+            "text": "Workshops"
+          }
+        ]
+      },
+      {
+        "time": "12:30 - 13:30",
+        "item": [
+          {
+            "text": "Lunch Break"
+          }
+        ]
+      },
+      {
+        "time": "13:30 - 15:00",
+        "item": [
+          {
+            "text": "Workshops"
+          }
+        ]
+      },
+      {
+        "time": "15:00 - 15:30",
+        "item": [
+          {
+            "text": "Coffee / Tea Break"
+          }
+        ]
+      },
+      {
+        "time": "15:30 - 17:00",
+        "item": [
+          {
+            "text": "Workshops"
+          }
+        ]
+      }
+    ]
+  },{
+  "day": 3,
+  "date": "30th August",
+  "data": [
+    {
+      "time": "8:30 - 9:30",
+      "item": [
+        {
+          "text": "Registration"
+        }
+      ]
+    },
+    {
+      "time": "9:30 - 11:00",
+      "item": [
+        {
+          "text": "Opening Welcome / Awards"
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 11:30",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "11:30 - 12:30",
+      "item": [
+        {
+          "text": "Opening Keynote",
+          "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": [],
+          "href": ""
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:45",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session A1: User Studies",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1074",
+              "title": "“I miss going to that place”: The impact of watching nature videos on the well-being of informal caregivers",
+              "authors": "Beatriz Peres, Hildegardo Noronha, Daniel S. Lopes, Joaquim Jorge, and Pedro F. Campos",
+              "presenters": "Beatriz Peres",
+              "contact": [
+                {
+                  "name": "Peres, Beatriz",
+                  "email": "beatriz.peres@iti.larsys.pt"
+                }
+              ]
+            },
+            {
+              "id": "FP1082",
+              "title": "Comparing Perceived Restorativeness and Stress Reduction in Virtual Reality Environments using Abstract Fractal Geometries versus Realistic Natural Landscapes",
+              "authors": "Diana C. G. Mendes, and Mónica S Cameirão",
+              "presenters": "Diana Carolina Gonçalves Mendes",
+              "contact": [
+                {
+                  "name": "Mendes, Diana",
+                  "email": "diana.mendes@nlincs.uma.pt"
+                }
+              ]
+            },
+            {
+              "id": "SP1119",
+              "title": "Our Nudges, Our Selves: Tailoring Mobile User Engagement Using Personality",
+              "authors": "Nima Jamalian, Marios Constantinides, Sagar Joglekar, Xueni Pan, and Daniele Quercia",
+              "presenters": "Marios Constantinides",
+              "contact": [
+                {
+                  "name": "Constantinides, Marios",
+                  "email": "marios.constantinides@nokia-bell-labs.com"
+                }
+              ]
+            },
+            {
+              "id": "SP1091",
+              "title": "Turn & Slide: Designing a Puzzle Game to Elicit the Visualizer-Verbalizer Cognitive Style",
+              "authors": "Sotirios Petsas, George E. Raptis, and Christos Katsanos",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Raptis, George",
+                  "email": "graptis.ho@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "industrial-1000",
+              "title": "How to Bring Diversity into Industry: Industrial Experiences in Public Transport Repair & Maintenance",
+              "authors": "Rafael Vrecar, Markus Steinlechner, Patrick Rupprecht, Aaron Wedral, Marlies Negele, Maciej Palucki, Brigitte Ratzer, and Astrid Weiss1",
+              "presenters": "",
+              "contact": [
+                {
+                  "name": "Vrecar, Rafael",
+                  "email": "rafael@vrecar.eu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session A2: Accessibility",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1114",
+              "title": "Brilliance and Resilience: A New Perspective to the Challenges, Practices and Needs of University Students with Visual Impairments in India",
+              "authors": "Tigmanshu Bhatnagar, Vikas Upadhyay, PV Madhusudhan Rao, Nicolai Marquardt, Mark Mio-downik, and Catherine Holloway",
+              "presenters": "Tigmanshu Bhatnagar",
+              "contact": [
+                {
+                  "name": "Bhatnagar, Tigmanshu",
+                  "email": "t.bhatnagar.18@ucl.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1120",
+              "title": "Mapping Virtual Reality Controls to Inform Design of Accessible User Experiences",
+              "authors": "Christopher Power, Paul Cairns, and Triskal DeHaven",
+              "presenters": "Christopher Power",
+              "contact": [
+                {
+                  "name": "Power, Christopher",
+                  "email": "cdspower@upei.ca"
+                }
+              ]
+            },
+            {
+              "id": "SP1180",
+              "title": "WAM-Studio: A Web-based Digital Audio Workstation To Empower Cochlear Implant Users",
+              "authors": "Michel Buffa, Antoine Vidal-Mazuy, Lloyd May, and Marco Winckler",
+              "presenters": "Marco Winckler",
+              "contact": [
+                {
+                  "name": "Buffa, Michel",
+                  "email": "michel.buffa@univ-cotedazur.fr"
+                }
+              ]
+            },
+            {
+              "id": "SP1160",
+              "title": "Web Accessibility in Higher Education in Norway: To What Extent are University Websites Accessible?",
+              "authors": "Yavuz Inal and Anne Britt Torkildsby",
+              "presenters": "Anne Britt Torkildsby",
+              "contact": [
+                {
+                  "name": "Inal, Yavuz",
+                  "email": "yavuz.inal@ntnu.no"
+                }
+              ]
+            },
+            {
+              "id": "SP1114",
+              "title": "Wesee: Digital Cultural Heritage Interpretation for Blind and Low Vision People",
+              "authors": "Yalan Luo, Weiyue Lin, Yuhan Liu, Xiaomei Nie, Xiang Qian, and Hanyu Guo",
+              "presenters": "Yalan Luo",
+              "contact": [
+                {
+                  "name": "Luo, Yalan",
+                  "email": "luoyl20@mails.tsinghua.edu.cn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session A3: Model-Based UI Design",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1012",
+              "title": "Common Objects for Programming Workshops in Non-Formal Learning Contexts",
+              "authors": "Nathalie Bressa, Susanne Bødker, Clemens N. Klokmose, and Eva Eriksson",
+              "presenters": "Nathalie Bressa",
+              "contact": [
+                {
+                  "name": "Bressa, Nathalie",
+                  "email": "nathalie.bressa@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "SP1211",
+              "title": "Engaging a project consortium in ethics-aware design and research",
+              "authors": "Päivi Heikkilä, Hanna Lammi, and Susanna Aromaa",
+              "presenters": "Päivi Heikkilä and Hanna Lammi",
+              "contact": [
+                {
+                  "name": "HeikkilÃ¤, PÃ¤ivi",
+                  "email": "paivi.heikkila@vtt.fi"
+                }
+              ]
+            },
+            {
+              "id": "SP1256",
+              "title": "Exploring Emotions: Study of Five Design Workshops for Generating Ideas for Emotional Self-Report Interfaces",
+              "authors": "Carla Nave, Francisco Nunes, Teresa Romão, and Nuno Correia",
+              "presenters": "Carla Nave",
+              "contact": [
+                {
+                  "name": "Nave, Carla",
+                  "email": "cd.saraiva@campus.fct.unl.pt"
+                }
+              ]
+            },
+            {
+              "id": "FP1153",
+              "title": "Moving Away from the Blocks: Evaluating the Usability of EduBlocks for Supporting Children to Transition from Block-Based Programming",
+              "authors": "Gavin Sim, Mark Lochrie, Misbahu S Zubair, Oliver Kerr, and Matthew Bates",
+              "presenters": "Gavin Sim",
+              "contact": [
+                {
+                  "name": "Sim, Gavin",
+                  "email": "grsim@uclan.ac.uk"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session A4: Interaction with Conversational agents I",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1039",
+              "title": "Beyond Browser Online Shopping: Experience Attitude Towards Online 3D Shopping with Conversational Agents",
+              "authors": "Pedro Valente, Tiago Fornelos, Rafael Ferreira, Diog Silva, Diogo Tavares, Nuno Correia, João Magalhães, and Rui Nóbrega",
+              "presenters": "Pedro Valente",
+              "contact": [
+                {
+                  "name": "Valente, Pedro",
+                  "email": "pm.valente@campus.fct.unl.pt"
+                }
+              ]
+            },
+            {
+              "id": "FP1053",
+              "title": "Effects of Prior Experience, Gender, and Age on Trust in a Banking Chatbot with(out) Breakdown and Repair",
+              "authors": "Effie Lai-Chong Law, Nena van As, and Asbjørn Følstad",
+              "presenters": "Effie Lai-Chong Law",
+              "contact": [
+                {
+                  "name": "Law, Effie",
+                  "email": "lai-chong.law@durham.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1121",
+              "title": "EaseOut: A Cross-Cultural Study of the Impact of a Conversation Agent on Leaving Video Meetings Early",
+              "authors": "Eureka Foong, Jack Jamieson, Hideaki Kuzuoka, Naomi Yamashita, and Tomoki Nishida",
+              "presenters": "Eureka Foong",
+              "contact": [
+                {
+                  "name": "Jamieson, Jack",
+                  "email": "jack@jackjamieson.net"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session A5: 3D Interaction",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1034",
+              "title": "AHO-Guide: Automatically Guiding the Head Orientation of a Local User in Augmented Reality to Realign the Field of View With Remote Users",
+              "authors": "Lucas Pometti, Charles Bailly, and Julien Castet",
+              "presenters": "Lucas Pometti",
+              "contact": [
+                {
+                  "name": "Pometti, Lucas",
+                  "email": "lucas.pometti@immersion.fr"
+                }
+              ]
+            },
+            {
+              "id": "FP1010",
+              "title": "Point- and Volume-based Multi-Object Acquisition in VR",
+              "authors": "Zhiqing Wu, Difeng Yu, and Jorge Goncalves",
+              "presenters": "Zhiqing Wu",
+              "contact": [
+                {
+                  "name": "Yu, Difeng",
+                  "email": "diyu@di.ku.dk"
+                }
+              ]
+            },
+            {
+              "id": "FP1096",
+              "title": "Using Mid-Air Haptics to Guide Mid-Air Interactions",
+              "authors": "Timothy Neate, Sergio Alvares Maffra, William Frier, Zihao You, and Stephanie Wilson",
+              "presenters": "Timothy Neate",
+              "contact": [
+                {
+                  "name": "Neate, Timothy",
+                  "email": "tdjneate@gmail.com"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Course A - Part 1: Introduction to Information Visualisation",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+            "id": "Course A",
+            "title": "Part 1: Introduction to Information Visualisation",
+            "authors": "Keith Andrews",
+            "presenters": "Keith Andrews",
+            "contact": [
+              {
+                "name": "Andrews, Keith",
+                "email": "kandrews@tugraz.at"
+              }
+            ],
+            "href" : "title"
+          }
+        ]
+        },
+        {
+          "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+            "id": "Course F",
+            "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+            "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "contact": [
+              {
+                "name": "Marta Larusdottir",
+                "email": "marta@ru.is"
+              }
+            ],
+            "href" : "title"
+          }
+        ]
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session B1: User Studies",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1103",
+              "title": "Comparing Screen-based Version Control to Augmented Artifact Version Control for Physical Objects",
+              "authors": "Maximilian Letter, Marco Kurzweg, and Katrin Wolf",
+              "presenters": "Maximilian Letter",
+              "contact": [
+                {
+                  "name": "Letter, Maximilian",
+                  "email": "maximilian.letter@beuth-hochschule.de"
+                }
+              ]
+            },
+            {
+              "id": "SP1200",
+              "title": "EmoClock: Communicating Real-Time Emotional States through Data Physicalizations",
+              "authors": "Dennis Peeters, Champika Ranasinghe, Auriol Degbelo, and Faizan Ahmed",
+              "presenters": "Champika Ranasinghe",
+              "contact": [
+                {
+                  "name": "Ranasinghe, Champika",
+                  "email": "c.m.eparanasinghe@utwente.nl"
+                }
+              ]
+            },
+            {
+              "id": "SP1186",
+              "title": "Extending User Interaction with Mixed Reality through a Smartphone-based Controller",
+              "authors": "Georgios Papadoulis, Christos Sintoris, Christos Fidas, and Nikolaos Avouris",
+              "presenters": "Georgios Papadoulis",
+              "contact": [
+                {
+                  "name": "Papadoulis, Georgios",
+                  "email": "g.papadoulis@upnet.gr"
+                }
+              ]
+            },
+            {
+              "id": "FP1098",
+              "title": "Fitts’ Throughput vs Empirical Throughput: A comparative study",
+              "authors": "Khyati Priya and Anirudha Joshi",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Priya, Khyati",
+                  "email": "khyatipriya@iitb.ac.in"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session B2: Accessibility",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1143",
+              "title": "Awayvirus: A Playful and Tangible Approach to Improve Children’s Hygiene Habits in Family Education",
+              "authors": "Xiang Qi, Yaxiong Lei, Shijing He, and Shuxin Cheng",
+              "presenters": "Yaxiong Lei, Shijing He",
+              "contact": [
+                {
+                  "name": "Lei, Yaxiong",
+                  "email": "yl212@st-andrews.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1057",
+              "title": "“Money from the Queen”: Exploring Children’s Ideas for Monetization in Free-to-Play Mobile Games",
+              "authors": "Dan Fitton and Janet C Read",
+              "presenters": "Dan Fitton",
+              "contact": [
+                {
+                  "name": "Fitton, Dan",
+                  "email": "dbfitton@uclan.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1123",
+              "title": "Motivating Children’s Engagement with Sleep Diaries through Storytelling",
+              "authors": "Hannah C. van Iterson, Panos Markopoulos, and Leonardo E. Gerritsen",
+              "presenters": "Hannah van Iterson",
+              "contact": [
+                {
+                  "name": "van Iterson, Hannah",
+                  "email": "h.c.v.iterson@student.tue.nl"
+                }
+              ]
+            },
+            {
+              "id": "SP1251",
+              "title": "The Peer Data Labelling System (PDLS). A Participatory Approach to Classifying Engagement in the Classroom",
+              "authors": "Graham Parsonage, Matthew Horton, and Janet Read",
+              "presenters": "Graham Parsonage",
+              "contact": [
+                {
+                  "name": "Parsonage, Graham",
+                  "email": "gbparsonage1@uclan.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1140",
+              "title": "WashWall: an Interactive Smart Mirror for Motivating Handwashing Among Primary School Children",
+              "authors": "Dees B.W. Postma, Champika M. Ranasinghe, Christos Constantinou, Vincent P.G. Diks, Younghun Rhee, Willem H.P. van Dijk, Amir Sassanian, and Dennis Reidsma",
+              "presenters": "Dees Postma",
+              "contact": [
+                {
+                  "name": "Postma, Dees",
+                  "email": "d.b.w.postma@utwente.nl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session B3: Model-Based UI Design",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1219",
+              "title": "BiVis: Interactive and Progressive Visualization of Billions (and Counting) Items",
+              "authors": "Renaud Blanch",
+              "presenters": "Renaud Blanch",
+              "contact": [
+                {
+                  "name": "Blanch, Renaud",
+                  "email": "blanch@imag.fr"
+                }
+              ]
+            },
+            {
+              "id": "FP1097",
+              "title": "Modeling and Assessing User Interaction in Big Data Visualization Systems",
+              "authors": "Dario Benvenuti, Matteo Filosa, Tiziana Catarci, and Marco Angelini",
+              "presenters": "Dario Benvenuti",
+              "contact": [
+                {
+                  "name": "Benvenuti, Dario",
+                  "email": "d.benvenuti@diag.uniroma1.it"
+                }
+              ]
+            },
+            {
+              "id": "SP1097",
+              "title": "The Effect of Teleporting versus Room-scale Walking for Interacting with Immersive Visualizations",
+              "authors": "Alejandro Rey, Andrea Bellucci, Paloma Díaz, and Ignacio Aedo",
+              "presenters": "Alejandro Rey",
+              "contact": [
+                {
+                  "name": "Rey, Alejandro",
+                  "email": "alejandro.rey@uc3m.es"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session B4: Interaction with Conversational agents I",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1167",
+              "title": "Exploring Natural Language Processing Methods for Interactive Behaviour Modelling",
+              "authors": "Guanhua Zhang, Matteo Bortoletto, Zhiming Hu, Lei Shi, Mihai Bâce, and Andreas Bulling",
+              "presenters": "Guanhua Zhang",
+              "contact": [
+                {
+                  "name": "Zhang, Guanhua",
+                  "email": "guanhua.zhang@vis.uni-stuttgart.de"
+                }
+              ]
+            },
+            {
+              "id": "FP1065",
+              "title": "“Garbage In, Garbage Out”: Mitigating Human Biases in Data Entry by Means of Artificial Intelligence",
+              "authors": "Sven Eckhardt, Merlin Knaeble, Andreas Bucher, Dario Staehelin, Mateusz Dolata, Doris Agotai, and Gerhard Schwabe",
+              "presenters": "Sven Eckhardt",
+              "contact": [
+                {
+                  "name": "Eckhardt, Sven",
+                  "email": "eckhardt@ifi.uzh.ch"
+                }
+              ]
+            },
+            {
+              "id": "SP1068",
+              "title": "Is Overreliance on AI Provoked by Study Design?",
+              "authors": "Zelun Tony Zhang, Sven Tong, Yuanting Liu, and Andreas Butz",
+              "presenters": "Sven Tong",
+              "contact": [
+                {
+                  "name": "Zhang, Zelun Tony",
+                  "email": "zhang@fortiss.org"
+                }
+              ]
+            },
+            {
+              "id": "SP1080",
+              "title": "RePaLM: A Data-driven AI Assistant for Making Stronger Pattern Choices",
+              "authors": "Christina Milousi, George E. Raptis, Christina Katsini, and Christos Katsanos",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Raptis, George",
+                  "email": "graptis.ho@gmail.com"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session B5: 3D Interaction",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1203",
+              "title": "“Do I Run Away?”: Proximity, Stress and Discomfort in Human-Drone Interaction in Real and Virtual Environments",
+              "authors": "Robin Bretin, Mohamed Khamis, and Emily Cross",
+              "presenters": "Robin Bretin",
+              "contact": [
+                {
+                  "name": "Bretin, Robin",
+                  "email": "r.bretin.1@research.gla.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1199",
+              "title": "Sick in the Car, Sick in VR? Understanding how Real-World Susceptibility to Dizziness, Nausea, and Eye Strain Influences VR Motion Sickness",
+              "authors": "Oliver Hein, Philipp Rauschnabel, Mariam Hassib, and Florian Alt",
+              "presenters": "Oliver Hein",
+              "contact": [
+                {
+                  "name": "Hein, Oliver",
+                  "email": "oliver.hein@unibw.de"
+                }
+              ]
+            },
+            {
+              "id": "FP1139",
+              "title": "Spatial Augmented Reality in the Factory: Can In-Situ Projections Be Used to Communicate Dangers and Health Risks?",
+              "authors": "Aaron Wedral, Rafael Vrecar, Gerhard Ebenhofer, Thomas Pönitz, Paul H. Wührer, Astrid Weiss, and Gernot Stübl",
+              "presenters": "Aaron Wedral, Rafael Vrecar",
+              "contact": [
+                {
+                  "name": "Wedral, Aaron",
+                  "email": "e1633070@student.tuwien.ac.at"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Course A - Part 2: Introduction to Information Visualisation",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course A",
+              "title": "Part 2: Introduction to Information Visualisation",
+              "authors": "Keith Andrews",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Andrews, Keith",
+                  "email": "kandrews@tugraz.at"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
+        },
+        {
+          "text": "Course F - Part 2: The UCD Sprint - Bringing Users Along to Sprint",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course F",
+              "title": "Part 2: The UCD Sprint - Bringing Users Along to Sprint",
+              "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+              "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+              "contact": [
+                {
+                  "name": "Marta Larusdottir",
+                  "email": "marta@ru.is"
+                }
+              ],
+              "href" : "title"
+            }
+          ],
+          "href" : "title"
+        },
+        {
+          "text": "Panel 2: Ethical Value Exchange in HCI",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "17:15 - 18:30",
+      "item": [
+        {
+          "text": "Keynote",
+          "author": "Rochelle Gold, User Research, NHS England",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "18:30 - 19:15",
+      "item": [
+        {
+          "text": "Welcome Reception"
+        }
+      ]
+    }
+  ]
+},{
+  "day": 5,
+  "date": "1st Sept",
+  "data": [
+    {
+      "time": "8:00 - 8:30",
+      "item": [
+        {
+          "text": "Registration"
+        }
+      ]
+    },
+    {
+      "time": "8:30 - 9:30",
+      "item": [
+        {
+          "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
+          "author": "Ann Blandford, University College London, UK",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "9:30 - 11:00",
+      "or": true,
+      "item": [
+        {
+          "text": "Session F1: Understanding users and privacy issues",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1171",
+              "title": "Concerns of Saudi higher education students about security and privacy of online digital technologies during the coronavirus pandemic",
+              "authors": "Basmah Almekhled and Helen Petrie",
+              "presenters": "Basmah Almekhled",
+              "contact": [
+                {
+                  "name": "Petrie, Helen",
+                  "email": "helen.petrie@york.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1215",
+              "title": "Exploring the Experiences of People who Inherited Digital Assets from Deceased Users: a Search for Better Computing Solutions",
+              "authors": "Maria Fernanda Lira, Cristiano Maciel, Daniele Trevisan, Vinicius Carvalho Pereira, Simone Barbosa, and Flavia Beppu",
+              "presenters": "Simone Barbosa",
+              "contact": [
+                {
+                  "name": "Lira, Maria Fernanda",
+                  "email": "nandalira57@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "FP1061",
+              "title": "“Hello, Fellow Villager!”: Perceptions and Impact of Displaying Users’ Locations on Weibo",
+              "authors": "Ying Ma, Qiushi Zhou, Benjamin Tag, Zhanna Sarsenbayeva, Jarrod Knibbe, and Jorge Goncalves",
+              "presenters": "Ying Ma",
+              "contact": [
+                {
+                  "name": "MA, YING",
+                  "email": "yima3@student.unimelb.edu.au"
+                }
+              ]
+            },
+            {
+              "id": "SP1063",
+              "title": "Intimate Data: Exploring Perceptions of Privacy and Privacy-Seeking Behaviors through the Story Completion Method",
+              "authors": "Diana P. Moniz, Maryam Mehrnezhad, and Teresa Almeida",
+              "presenters": "Diana P. Moniz",
+              "contact": [
+                {
+                  "name": "Almeida, Teresa",
+                  "email": "teresa.almeida@umu.se"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session F2: Accessibility for Auditory / Hearing disabilities",
+          "location": "CSE/102X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1087",
+              "title": "Challenges faced by the Employed Indian DHH Community",
+              "authors": "Advaith Sridhar, Roshni Poddar, Mohit Jain, and Pratyush Kumar",
+              "presenters": "Roshni Poddar",
+              "contact": [
+                {
+                  "name": "Poddar, Roshni",
+                  "email": "roshni.poddar28@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "FP1040",
+              "title": "Haptic Auditory Feedback for Enhanced Image Description: A Study of User Preferences and Performance",
+              "authors": "Mallak Alkhathlan, M. L. Tlachac, and Elke A Rundensteiner",
+              "presenters": "Mallak Alkhathlan",
+              "contact": [
+                {
+                  "name": "Alkhathlan, Mallak",
+                  "email": "malkhathlan@wpi.edu"
+                }
+              ]
+            },
+            {
+              "id": "FP1047",
+              "title": "Using Colour and Brightness for Sound Zone Feedback",
+              "authors": "Stine S. Johansen, Peter Axel Nielsen, Kashmiri Stec, and Jesper Kjeldskov",
+              "presenters": "Stine S. Johansen",
+              "contact": [
+                {
+                  "name": "Johansen, Stine",
+                  "email": "stinesl@cs.aau.dk"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session F3: Multisensory interaction and VR experiences",
+          "location": "LMB/002",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1018",
+              "title": "Augmenting Indigenous S´ami Exhibition - Interactive Digital Heritage in Museum Context",
+              "authors": "Siiri Paananen, Joo Chan Kim, Emma Kirjavainen, Matilda Kalving, Karan Mitra, and Jonna Häkkilä",
+              "presenters": "Siiri Paananen",
+              "contact": [
+                {
+                  "name": "Paananen, Siiri",
+                  "email": "siiri.paananen@ulapland.fi"
+                }
+              ]
+            },
+            {
+              "id": "SP1070",
+              "title": "Design Paradigms of 3D User Interfaces for VR Exhibitions",
+              "authors": "Yunzhan Zhou, Lei Shi, Zexi He, Zhaoxing Li, and Jindi Wang",
+              "presenters": "Yunzhan Zhou",
+              "contact": [
+                {
+                  "name": "Zhou, Yunzhan",
+                  "email": "yunzhan.zhou@durham.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1189",
+              "title": "Multisensory Diorama: Enhancing Accessibility and Engagement in Museums",
+              "authors": "Leandro S. Guedes, Irene Zanardi, Stefania Span, and Monica Landoni",
+              "presenters": "Leandro S. Guedes",
+              "contact": [
+                {
+                  "name": "S. Guedes, Leandro",
+                  "email": "leandro.soares.guedes@usi.ch"
+                }
+              ]
+            },
+            {
+              "id": "SP1149",
+              "title": "Museum Visitor Experiences based on Hyperspectral Image Data",
+              "authors": "Markus Löchtefeld, Eleftherios Papachristos, and Hilda Deborah",
+              "presenters": "Markus Löchtefeld",
+              "contact": [
+                {
+                  "name": "LÃ¶chtefeld, Markus",
+                  "email": "mloc@create.aau.dk"
+                }
+              ]
+            },
+            {
+              "id": "industrial-1004",
+              "title": "Whose responsibility is accessibility in games anyway? Everyone",
+              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
+              "presenters": "",
+              "contact": [
+                {
+                  "name": "Power, Christopher",
+                  "email": "cdspower@upei.ca"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session F4: Social and Ubiquitous Computing II",
+          "location": "LMB/002A",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1066",
+              "title": "A Survey of Computer-Supported Remote Collaboration on Physical Objects",
+              "authors": "Maximilian Letter, Ceenu George, and Katrin Wolf",
+              "presenters": "Maximilian Letter",
+              "contact": [
+                {
+                  "name": "Letter, Maximilian",
+                  "email": "maximilian.letter@beuth-hochschule.de"
+                }
+              ]
+            },
+            {
+              "id": "FP1084",
+              "title": "Collaborative TV Control: Towards Co-Experience and Social Connectedness",
+              "authors": "Melanie Berger, Rutger Verstegen, Bahareh Barati, Harm van Essen, and Regina Bernhaupt",
+              "presenters": "Melanie Berger",
+              "contact": [
+                {
+                  "name": "Berger, Melanie",
+                  "email": "m.berger@tue.nl"
+                }
+              ]
+            },
+            {
+              "id": "FP1083",
+              "title": "Introducing Sharemote: A Tangible Interface for Collaborative TV Control",
+              "authors": "Melanie Berger, Rutger Verstegen, Harm van Essen, and Regina Bernhaupt",
+              "presenters": "Melanie Berger and/or Rutger Verstegen",
+              "contact": [
+                {
+                  "name": "Berger, Melanie",
+                  "email": "m.berger@tue.nl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session F5: Human-Robot Interaction",
+          "location": "LMB/030",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1195",
+              "title": "Pedestrian Interaction with a Snow Clearing Robot",
+              "authors": "Ashley Colley, Marko Tiitto, Bastian Pfleging, and Jonna Häkkilä",
+              "presenters": "Ashley Colley",
+              "contact": [
+                {
+                  "name": "Colley, Ashley",
+                  "email": "ashley.colley@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "FP1100",
+              "title": "Robot Collaboration and Model Reliance Based on its Trust in Human-Robot Interaction",
+              "authors": "Basel Alhaji, Michael Prilla, and Andreas Rausch",
+              "presenters": "Michael Prilla",
+              "contact": [
+                {
+                  "name": "Alhaji, Basel",
+                  "email": "basel.alhaji@uni-due.de"
+                }
+              ]
+            },
+            {
+              "id": "FP1196",
+              "title": "User Experience in Large-Scale Robot Development: A Case Study of Mechanical and Software Teams",
+              "authors": "Sara Nielsen, Mikael B. Skov, and Anders Bruun",
+              "presenters": "Sara Nielsen",
+              "contact": [
+                {
+                  "name": "Nielsen, Sara",
+                  "email": "saranielsen0711@gmail.com"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Course C - Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+          "location": "LMB/036",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course C",
+              "title": "Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Chiara Natali",
+                  "email": "chiara.natali@unimib.it"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 11:30",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "11:30 - 12:30",
+      "item": [
+        {
+          "text": "Posters and Demonstrations"
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:45",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session G1: User Self-Report",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1002",
+              "title": "A Longitudinal Analysis of Real-World Self-Report Data",
+              "authors": "Niels van Berkel, Sujay Shalawadi, Madeleine R Evans, Aku Visuri, and Simo Hosio",
+              "presenters": "Niels van Berkel",
+              "contact": [
+                {
+                  "name": "van Berkel, Niels",
+                  "email": "nielsvanberkel@cs.aau.dk"
+                }
+              ]
+            },
+            {
+              "id": "SP1253",
+              "title": "Awareness, Control and Impact in Digital Wellbeing - Results from Explorative Self-Experiments",
+              "authors": "Yavuz Inal, Frode Guribye, Lee Taber, and Steve Whittaker",
+              "presenters": "Yavuz Inal",
+              "contact": [
+                {
+                  "name": "Inal, Yavuz",
+                  "email": "yavuz.inal@ntnu.no"
+                }
+              ]
+            },
+            {
+              "id": "FP1020",
+              "title": "Eliciting Meaningful Collaboration Metrics: Design Implications for Self-Tracking Technologies at Work",
+              "authors": "Alina Lushnikova, Kerstin Bongard-Blanchy, Vincent Koenig, and Carine Lallemand",
+              "presenters": "Alina Lushnikova",
+              "contact": [
+                {
+                  "name": "Lushnikova, Alina",
+                  "email": "alina.lushnikova@uni.lu"
+                }
+              ]
+            },
+            {
+              "id": "SP1173",
+              "title": "Perception versus Reality: How User Self-Reflections Compare to Actual Data",
+              "authors": "Hannah R. Nolasco, Andrew Vargo, Yusuke Komatsu, Motoi Iwata, and Koichi Kise",
+              "presenters": "Hannah R. Nolasco",
+              "contact": [
+                {
+                  "name": "Nolasco, Hannah",
+                  "email": "df104001@st.osakafu-u.ac.jp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session G2: Cybersecurity and Trust",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1213",
+              "title": "Dark Finance: Exploring Deceptive Design in Investment Apps",
+              "authors": "Ivana Rakovic and Yavuz Inal",
+              "presenters": "Yavuz Inal",
+              "contact": [
+                {
+                  "name": "Inal, Yavuz",
+                  "email": "yavuz.inal@ntnu.no"
+                }
+              ]
+            },
+            {
+              "id": "SP1207",
+              "title": "Elements that Influence Transparency in Artificial Intelligent Systems - A survey",
+              "authors": "Deepa Muralidhar, Rafik Belloum, Kathia Marçal de Oliveira, and Ashwin Ashok",
+              "presenters": "Deepa Muralidhar",
+              "contact": [
+                {
+                  "name": "Muralidhar, Deepa",
+                  "email": "deepa.muralidhar@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "SP1098",
+              "title": "Empowering Users: Leveraging Interface Cues to Enhance Password Security",
+              "authors": "Yasmeen Abdrabou, Marco Asbeck, Ken Pfeuffer, Yomna Abdelrahman, Mariam Hassib, and Florian Alt",
+              "presenters": "Yasmeen Abdrabou",
+              "contact": [
+                {
+                  "name": "Abdrabou, Yasmeen",
+                  "email": "yasmeen.e.mahmoud@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "SP1198",
+              "title": "Friendly Folk Advice: Exploring Cybersecurity Information Sharing in Nigeria",
+              "authors": "James Nicholson, Opeyemi Dele Ajayi, Kemi Fasae, abdBoniface Kayode Alese",
+              "presenters": "James Nicholson",
+              "contact": [
+                {
+                  "name": "Nicholson, James",
+                  "email": "james.nicholson@northumbria.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1078",
+              "title": "Trust in Facial Recognition Systems: A Perspective From the Users",
+              "authors": "Gabriela Beltrao, Sonia Sousa, and David Lamas",
+              "presenters": "Gabriela Beltrão",
+              "contact": [
+                {
+                  "name": "Beltrão, Gabriela",
+                  "email": "gbeltrao@tlu.ee"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session G3: Online collaboration and Cooperative work",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1016",
+              "title": "A Systematic Literature Review of Online Collaborative Story Writing",
+              "authors": "Stefano Montanelli and Martin Ruskov",
+              "presenters": "Martin Ruskov",
+              "contact": [
+                {
+                  "name": "Ruskov, Martin",
+                  "email": "martin.ruskov@unimi.it"
+                }
+              ]
+            },
+            {
+              "id": "FP1249",
+              "title": "Algorithmic Management for Community Health Worker in Sub-Saharan Africa: Curse or Blessing?",
+              "authors": "Dario Staehelin, Mateusz Dolata, Nicolas Peyer, Felix Gerber, Gerhard Schwabe",
+              "presenters": "Dario Staehelin",
+              "contact": [
+                {
+                  "name": "Staehelin, Dario",
+                  "email": "staehelin@ifi.uzh.ch"
+                }
+              ]
+            },
+            {
+              "id": "FP1064",
+              "title": "Explorative Study of Perceived Social Loafing in VR Group Discussion: A Comparison between The Poster Presentation Environment and The Typical Conference Environment",
+              "authors": "Koutaro Kamada, Ryuya Watarai, Tzu-Yang Wang, Kentaro Takashima, Yasuyuki Sumi, and Takaya Yuizono",
+              "presenters": "Koutaro Kamada",
+              "contact": [
+                {
+                  "name": "Kamada, Koutaro",
+                  "email": "kamada@jaist.ac.jp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session G4: Interaction with Conversational agents II",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1124",
+              "title": "An AI chat-based solution aimed to screen Postpartum Depression",
+              "authors": "Bakhtawar Ahtisham, Seemal Tausif, Zoha Hayat Bhatti, Ayesha Masood, and Suleman Shahid",
+              "presenters": "Bakhtawar Ahtisham",
+              "contact": [
+                {
+                  "name": "Ahtisham, Bakhtawar",
+                  "email": "24100301@lums.edu.pk"
+                }
+              ]
+            },
+            {
+              "id": "FP1128",
+              "title": "The Impact of Gender and Personality in Human-AI Teaming: the Case of Collaborative Question Answering",
+              "authors": "Frida Milella, Chiara Natali, Teresa Scantamburlo, Andrea Campagner, and Federico Cabitza",
+              "presenters": "Chiara Natali",
+              "contact": [
+                {
+                  "name": "Milella, Frida",
+                  "email": "frida.milella@unimib.it"
+                }
+              ]
+            },
+            {
+              "id": "FP1132",
+              "title": "Empirical Grounding for the Interpretations of Natural User Interface: A Case Study on Smartpen",
+              "authors": "Baraa Alabdulwahab and Effie Lai-Chong Law",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "ALABDULWAHAB, BARAA",
+                  "email": "ba184@leicester.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1157",
+              "title": "Methods for Evaluating Conversational Agents' Communicability, Acceptability and Accessibility Degree",
+              "authors": "Stefano Valtolina, Ricardo Anibal Matamoros, and Francesco Epifania",
+              "presenters": "Stefano Valtolina",
+              "contact": [
+                {
+                  "name": "Stefano, Valtolina",
+                  "email": "stefano.valtolina@unimi.it"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session G5: No data yet",
+          "location": "TBA",
+          "hasInfo": true,
+          "info": []
+        },
+        {
+          "text": "Course C - Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course C",
+              "title": "Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Chiara Natali",
+                  "email": "chiara.natali@unimib.it"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "time": "15:15 - 15:45",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "15:45 - 16:45",
+      "item": [
+        {
+          "text": "Closing keynote: Prof. Mike Evans, UX Research Lead, BBC Research and Development, UK",
+          "location": "Large Lecture Theatre (PZA/103)"
+        }
+      ]
+    },
+    {
+      "time": "16:45 - 17:30",
+      "item": [
+        {
+          "text": "Closing remarks - announcement of INTERACT 2025",
+          "location": "Large Lecture Theatre (PZA/103)"
+        }
+      ]
+    }
+  ]
+},{
+  "day": 4,
+  "date": "31th August",
+  "data": [
+    {
+      "time": "8:00 - 8:30",
+      "item": [
+        {
+          "text": "Registration"
+        }
+      ]
+    },
+    {
+      "time": "8:00 - 9:30",
+      "item": [
+        {
+          "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
+          "author": "Prof. Jonathan Lazar, University of Maryland, USA",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 13:30",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "14:15 - 15:45",
+      "or": true,
+      "item": [
+        {
+          "text": "Session C1: User Studies",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1207",
+              "title": "Assignment of a Vibration to a Graphical Object Induced by Resonant Frequency",
+              "authors": "Marco Kurzweg, Simon Linke, Yannick Weiss, Maximilian Letter, Albrecht Schmidt, and Katrin Wolf",
+              "presenters": "Marco Kurzweg",
+              "contact": [
+                {
+                  "name": "Kurzweg, Marco",
+                  "email": "marco.kurzweg@beuth-hochschule.de"
+                }
+              ]
+            },
+            {
+              "id": "FP1081",
+              "title": "GuidingBand: A Precise Tactile Hand Guidance System to Aid Visual Perception",
+              "authors": "Atish Waghwase and Anirudha Joshi",
+              "presenters": "Atish Waghwase",
+              "contact": [
+                {
+                  "name": "Waghwase, Atish",
+                  "email": "atishwaghwase@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "SP1161",
+              "title": "Mid-Air Haptic Cursor for Physical Objects",
+              "authors": "Miroslav Mac´ık and Meinhardt Branig",
+              "presenters": "Miroslav Macík",
+              "contact": [
+                {
+                  "name": "MacÃ­k, Miroslav",
+                  "email": "macikmir@fel.cvut.cz"
+                }
+              ]
+            },
+            {
+              "id": "SP1202",
+              "title": "Stress Embodied: Developing Multi-Sensory Experiences for VR Police Training",
+              "authors": "Jakob Carl Uhl, Georg Regal, Michael Gafert, Markus Murtinger, and Manfred Tscheligi",
+              "presenters": "Jakob Carl Uhl",
+              "contact": [
+                {
+                  "name": "Uhl, Jakob",
+                  "email": "jakob.uhl@ait.ac.at"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session C2: Accessibility",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1099",
+              "title": "Accessibility Inspections of Mobile Applications by Professionals with Different Expertise Levels: an Empirical Study Comparing with User Evaluations",
+              "authors": "Delvani Antônio Mateus, Simone Bacellar Leal Ferreira, Maurício Ronny de Almeida Souza, André Pimenta Freire",
+              "presenters": "André Pimenta Freire",
+              "contact": [
+                {
+                  "name": "Freire, AndrÃ©",
+                  "email": "apfreire@ufla.br"
+                }
+              ]
+            },
+            {
+              "id": "SP1168",
+              "title": "Evaluating the Acceptance of a Software Application Designed to Assist Communication for People with Parkinson’s Disease",
+              "authors": "Julia Greenfield, Káthia Marçal de Oliveira, Véronique Delcroix, Sophie Lepreux, Christophe Kolski, and Anne Blanchard-Dauphin",
+              "presenters": "Káthia Marçal de Oliveira",
+              "contact": [
+                {
+                  "name": "Oliveira, Kathia",
+                  "email": "kathia.oliveira@uphf.fr"
+                }
+              ]
+            },
+            {
+              "id": "SP1118",
+              "title": "“The Relief is Amazing”: An In-situ Short Field Evaluation of a Personal Voice Assistive Technology for a User Living with Dementia",
+              "authors": "Ana-Maria Salai, Glenda Cook, and Lars Erik Holmquist",
+              "presenters": "Lars Erik Holmquist",
+              "contact": [
+                {
+                  "name": "Salai, Ana-Maria",
+                  "email": "salaianamaria@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "FP1170",
+              "title": "Towards an Automatic Easy-to-Read Adaptation of Morphological Features in Spanish Texts",
+              "authors": "Mari Carmen Suárez-Figueroa, Isam Diab, Álvaro González, and Jesica Rivero-Espinosa",
+              "presenters": "Isam Diab",
+              "contact": [
+                {
+                  "name": "SuÃ¡rez-Figueroa, Mari Carmen",
+                  "email": "mcsuarez@fi.upm.es"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session C3: Model-Based UI Design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1214",
+              "title": "A Review on Mood Assessment using Smartphones",
+              "authors": "Zhanna Sarsenbayeva, Charlie Fleming, Benjamin Tag, Anusha Withana, Niels van Berkel, and Alistair McEwan",
+              "presenters": "Niels van Berkel",
+              "contact": [
+                {
+                  "name": "Sarsenbayeva, Zhanna",
+                  "email": "zhanna.sarsenbayeva@sydney.edu.au"
+                }
+              ]
+            },
+            {
+              "id": "FP1112",
+              "title": "A close look at Citizen Science through the HCI lens: a systematic literature review",
+              "authors": "Tommaso Zambon, Chiara Bassetti, and Catia Prandi",
+              "presenters": "Tommaso Zambon",
+              "contact": [
+                {
+                  "name": "Zambon, Tommaso",
+                  "email": "tommaso.zambon3@unibo.it"
+                }
+              ]
+            },
+            {
+              "id": "FP1163",
+              "title": "The Gap Between UX Literacy and UX Practices in agile-UX Settings: A Case Study",
+              "authors": "Daniela Azevedo , Luka Rukonić , and Suzanne Kieffer",
+              "presenters": "Daniela Azevedo, Luka Rukonic",
+              "contact": [
+                {
+                  "name": "Azevedo, Daniela",
+                  "email": "daniela.azevedo@uclouvain.be"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session C4: Interaction with Conversational agents I",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1077",
+              "title": "Blending Conversational Product Advisors and Faceted Filtering in a Graph-Based Approach",
+              "authors": "Timm Kleemann and Jürgen Ziegler",
+              "presenters": "Timm Kleemann",
+              "contact": [
+                {
+                  "name": "Kleemann, Timm",
+                  "email": "timm.kleemann@uni-due.de"
+                }
+              ]
+            },
+            {
+              "id": "SP1234",
+              "title": "Everyday-Inspired Movies: Towards the Design of Movie Recommender Systems based on Everyday Life through Personal Social Media",
+              "authors": "Abhishek Kulkarni, Larry Powell, Shaina Murphy, Nanjie Rao, and Sharon Lynn Chu",
+              "presenters": "Abhishek Kulkarni",
+              "contact": [
+                {
+                  "name": "Kulkarni, Abhishek",
+                  "email": "kulkarniabhishek@ufl.edu"
+                }
+              ]
+            },
+            {
+              "id": "FP1006",
+              "title": "Towards a practice-led research agenda for user interface design of recommender systems",
+              "authors": "Aletta Smits and Koen van Turnhout",
+              "presenters": "Aletta Smits",
+              "contact": [
+                {
+                  "name": "Smits, Aletta",
+                  "email": "aletta.smits@hu.nl"
+                }
+              ]
+            },
+            {
+              "id": "SP1122",
+              "title": "WeHeart: A Personalized Recommendation Device for Physical Activity Encouragement and Preventing “Cold Start” in Cardiac Rehabilitation",
+              "authors": "Rosa van Tuijn, Tianqin Lu, Emma Driesse, Koen Franken, Pratik Gajane, and Emilia Barakova",
+              "presenters": "Rosa van Tuijn",
+              "contact": [
+                {
+                  "name": "van Tuijn, Rosa",
+                  "email": "rosavantuijn@gmail.com"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session C5: 3D Interaction",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1136",
+              "title": "Eyes on teleporting: comparing locomotion techniques in Virtual Reality with respect to presence, sickness and spatial orientation",
+              "authors": "Ariel Caputo, Massimo Zancanaro, and Andrea Giachetti",
+              "presenters": "Massimo Zancanaro",
+              "contact": [
+                {
+                  "name": "Caputo, Ariel",
+                  "email": "ariel.caputo@univr.it"
+                }
+              ]
+            },
+            {
+              "id": "FP1266",
+              "title": "Sample-based Human Movement Detection for Interactive Videos Applied to Performing Arts",
+              "authors": "Rui Rodrigues, João Diogo, Stephan Jurgens, Carla Fernandes, Nuno Correia",
+              "presenters": "Rui Rodrigues",
+              "contact": [
+                {
+                  "name": "Rodrigues, Rui",
+                  "email": "ruifsr@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "FP1080",
+              "title": "Skillab - A Multimodal Augmented Reality Environment for Learning Manual Tasks",
+              "authors": "Ambika Shahu, Sonja Dorfbauer, Philipp Wintersberger, and Florian Michahelles",
+              "presenters": "Ambika Shahu",
+              "contact": [
+                {
+                  "name": "Shahu, Ambika",
+                  "email": "ambika.shahu@tuwien.ac.at"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Course D : Practical Ethics - Respecting Participants Contributions in HCI Research and Design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course D",
+              "title": "Practical Ethics: Respecting participants contributions in HCI research and design",
+              "authors": "Janet C Read",
+              "presenters": "Janet C Read",
+              "contact": [
+                {
+                  "name": "Janet C Read",
+                  "email": "jcread@uclan.ac.uk"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        },
+        {
+          "text": "Course E - Part 1: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course E",
+              "title": "Part 1: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Chiara Natali",
+                  "email": "chiara.natali@unimib.it"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session D1: User Studies, Eye-Tracking and Physiological data",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1252",
+              "title": "Electroencephalographic (EEG) correlates of Visually Induced Motion Sickness (VIMS) in the Virtual Reality (VR) based simulations",
+              "authors": "Jan K. Argasiński, and Natalia Lipp, and Szymon Mazurek",
+              "presenters": "Jan K. Argasiński",
+              "contact": [
+                {
+                  "name": "Argasiński JKA, Jan",
+                  "email": "j.argasinski@sanoscience.org"
+                }
+              ]
+            },
+            {
+              "id": "SP1205",
+              "title": "How Many Participants Do You Need for an Open Card Sort? A Case Study of E-commerce Websites",
+              "authors": "Christos Pechlevanoudis, Grigorios Zilidis, and Christos Katsanos1",
+              "presenters": "Christos Katsanos",
+              "contact": [
+                {
+                  "name": "Katsanos, Christos",
+                  "email": "ckatsanos@csd.auth.gr"
+                }
+              ]
+            },
+            {
+              "id": "SP1138",
+              "title": "Exploring Eye Expressions for Enhancing EOG-Based Interaction",
+              "authors": "Joshua Newn, Sophia Quesada, Baosheng James Hou, Anam Ahmad Khan, Florian Weidner, and Hans Gellersen",
+              "presenters": "Joshua Newn",
+              "contact": [
+                {
+                  "name": "Newn, Joshua",
+                  "email": "j.newn@lancaster.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1117",
+              "title": "Quantifying Device Usefulness - How Useful is an Obsolete Device?",
+              "authors": "Craig Goodwin, Sandra Woolley, Ed de Quincey, and Tim Collins",
+              "presenters": "Craig Goodwin",
+              "contact": [
+                {
+                  "name": "Goodwin, Craig",
+                  "email": "c.goodwin@keele.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1175",
+              "title": "Usability Evaluation of a Brazilian Dam Safety Data Exploration Platform: a Consolidation of Results from User Tests and Heuristic Evaluation",
+              "authors": "Bruna Santana Capeleti, Caroline Queiroz Santos, Jaqueline Isabel de Souza, and André Pimenta Freire",
+              "presenters": "André Pimenta Freire",
+              "contact": [
+                {
+                  "name": "Freire, AndrÃ©",
+                  "email": "apfreire@ufla.br"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session D2: Eye-Free, Gesture Interaction and Sign Language",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1133",
+              "title": "Developing and Evaluating a Novel Gamified Virtual Learning Environment for ASL",
+              "authors": "Jindi Wang, Ioannis Ivrissimtzis, Zhaoxing Li, Yunzhan Zhou, and Lei Shi",
+              "presenters": "Jindi Wang",
+              "contact": [
+                {
+                  "name": "Wang, Jindi",
+                  "email": "jindi.wang@durham.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1169",
+              "title": "Effects of Moving Speed and Phone Location on Eyes-Free Gesture Input with Mobile Devices",
+              "authors": "Milad Jamalzadeh, Yosra Rekik, Laurent Grisoni, Radu-Daniel Vatavu, Gualtiero Volpe, and Alexandru Dancu",
+              "presenters": "Milad Jamalzadeh",
+              "contact": [
+                {
+                  "name": "Jamalzadeh, Milad",
+                  "email": "milad.jamalzadeh@univ-lille.fr"
+                }
+              ]
+            },
+            {
+              "id": "FP1229",
+              "title": "Hap2Gest: An Eyes-free Interaction Concept with Smartphones Using Gestures and Haptic Feedback",
+              "authors": "Milad Jamalzadeh, Yosra Rekik, Alexandru Dancu, and Laurent Grisoni",
+              "presenters": "Milad Jamalzadeh",
+              "contact": [
+                {
+                  "name": "Jamalzadeh, Milad",
+                  "email": "mjamalzadeh17@ku.edu.tr"
+                }
+              ]
+            },
+            {
+              "id": "FP1256",
+              "title": "User-Centered Evaluation of Different Configurations of a Touchless Gestural Interface for Interactive Displays",
+              "authors": "Vito Gentile, Habiba Farzand, Simona Bonaccorso, Davide Rocchesso, Alessio Malizia, Mohamed Khamis, and Salvatore Sorce",
+              "presenters": "Salvatore Sorce, Mohamed Khamis, Habiba Farzand",
+              "contact": [
+                {
+                  "name": "Farzand, Habiba",
+                  "email": "habiba.farzand@gmail.com"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session D3: Co-design",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1019",
+              "title": "AdaptReview: Towards Effective Video Review using Text Summaries and Concept Maps",
+              "authors": "Shan Zhang, Yang Chen, Nuwan Janaka, Chloe Haigh, Shengdong Zhao, and Wei Tsang Ooi",
+              "presenters": "Shan Zhang",
+              "contact": [
+                {
+                  "name": "Zhang, Shan",
+                  "email": "shan_zhang@u.nus.edu"
+                }
+              ]
+            },
+            {
+              "id": "FP1073",
+              "title": "I perform my work with my body too: integrating body representations in and with task models",
+              "authors": "Axel Carayon, Célia Martinie, Philippe Palanque",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Martinie, CÃ©lia",
+                  "email": "celia.martinie@irit.fr"
+                }
+              ]
+            },
+            {
+              "id": "SP1178",
+              "title": "Prototyping with the IVY workbench: Bridging Formal Methods and User-Centred Design",
+              "authors": "Rafael Braga da Costa and José Creissac Campos",
+              "presenters": "José Creissac Campos",
+              "contact": [
+                {
+                  "name": "Campos, JosÃ©",
+                  "email": "jose.campos@acm.org"
+                }
+              ]
+            },
+            {
+              "id": "SP1231",
+              "title": "Towards automated load testing through the user interface",
+              "authors": "Bruno Teixeira and José Creissac Campos",
+              "presenters": "José Creissac Campos",
+              "contact": [
+                {
+                  "name": "Campos, JosÃ©",
+                  "email": "jose.campos@acm.org"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session D4: Social AI",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1225",
+              "title": "AI in the Human Loop: The Impact of Differences in Digital Assistant Roles on the Personal Values of Users",
+              "authors": "Shakila Shayan , Marlies van Steenbergen, Koen van Turnhout, Zelda Zeegers, Somaya Ben Allouch, Maaike Harbers, Guido Evertzen, Janna Bruijning, Wieke van Boxtel, and Katarina Jerkovich",
+              "presenters": "shakila shayan",
+              "contact": [
+                {
+                  "name": "Shayan, Shakila",
+                  "email": "shakila.shayan@hu.nl"
+                }
+              ]
+            },
+            {
+              "id": "FP1194",
+              "title": "“A solution to a problem that didn’t exist?”: Exploring Attitudes Towards Smart Streetlight Systems",
+              "authors": "Anna-Lena Theus and Sonia Chiasson",
+              "presenters": "Anna-Lena Theus",
+              "contact": [
+                {
+                  "name": "Theus, Anna-Lena",
+                  "email": "annatheus@cmail.carleton.ca"
+                }
+              ]
+            },
+            {
+              "id": "FP1189",
+              "title": "Evaluation of the Roles of Intelligent Technologies in Shared Activity Spaces of Neighborhood Communities",
+              "authors": "Jouko Makkonen, Rita Latikka, Rosana Rubio-Hernández, and Kaisa Väänänen",
+              "presenters": "Jouko Makkonen",
+              "contact": [
+                {
+                  "name": "Makkonen, Jouko",
+                  "email": "jouko.makkonen@tuni.fi"
+                }
+              ]
+            },
+            {
+              "id": "SP1150",
+              "title": "Problematizing “Empowerment” in HCAI",
+              "authors": "John S. Seberger, Hyesun Choung, and Prabu David",
+              "presenters": "John S. Seberger",
+              "contact": [
+                {
+                  "name": "Seberger, John",
+                  "email": "jss436@drexel.edu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Course B - Part 1: Disability, Design and Innovation for a Fairer World",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course B",
+              "title": "Part 1: Disability, Design and Innovation for a Fairer World",
+              "authors": "Catherine Holloway, Ben Oldfrey, Maryam Bandukda, Daniel Hajas, Tigmanshu Bhatnagar",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Tigmanshu Bhatnagar",
+                  "email": "t.bhatnagar.18@ucl.ac.uk"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        },
+        {
+          "text": "Course E - Part 2: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course E",
+              "title": "Part 2: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Chiara Natali",
+                  "email": "chiara.natali@unimib.it"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "time": "13:30 - 14:15",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session E1: Social Media and Digital Learning",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1073",
+              "title": "A Mixed-Methods Analysis of Women’s Health Misinformation on Social Media",
+              "authors": "Lisa Mekioussa Malki, Dilisha Patel, and Aneesha Singh",
+              "presenters": "Lisa Mekioussa Malki",
+              "contact": [
+                {
+                  "name": "Malki, Lisa",
+                  "email": "lisa@malkihome.co.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1130",
+              "title": "Evaluating the Effects of Culture and Relationship Strength on Misinformation Challenging Behaviours Within the UK",
+              "authors": "Lauren Scott, Marta E. Cecchinato, Lynne Coventry, and Mark Warner",
+              "presenters": "Lauren Scott",
+              "contact": [
+                {
+                  "name": "Scott, Lauren",
+                  "email": "lauren5.scott@northumbria.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1110",
+              "title": "Exploring Indigenous Knowledge through Virtual Reality: A Co-Design Approach with the Penan Community of Long Lamai",
+              "authors": "Bram Kreuger and Tariq Zaman",
+              "presenters": "Bram Kreuger",
+              "contact": [
+                {
+                  "name": "Kreuger, Bram",
+                  "email": "bramkreuger@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "FP1245",
+              "title": "Factors influencing social media forgiveness behavior and cyber violence tendency among Chinese youth: Moderating ef-fects of forgiveness climate and risk perception",
+              "authors": "Zhirui Chen, Wenchen Guo, and Qingxiang Zeng",
+              "presenters": "virtual",
+              "contact": [
+                {
+                  "name": "Chen, Zhirui",
+                  "email": "chenzhirui@ucass.edu.cn"
+                }
+              ]
+            },
+            {
+              "id": "SP1076",
+              "title": "Gender & Racism: Considerations for Digital Learning Among Young Refugees and Asylum Seekers",
+              "authors": "Denise Lengyel, Ahmed Kharrufa, James Stanfield, Haley Powers, Bridget Lara Stratford, and Reem Talhouk",
+              "presenters": "Denise Lengyel",
+              "contact": [
+                {
+                  "name": "Talhouk, Reem",
+                  "email": "reem.talhouk@northumbria.ac.uk"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session E2: Healthcare applications and Self-Monitoring",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1240",
+              "title": "Co-designing an eHealth Solution to Support Fibromyalgia Self-Management",
+              "authors": "Pedro Albuquerque Santos, Rui Neves Madeira, Hugo Ferreira, and Carmen Caeiro",
+              "presenters": "Rui Neves Madeira",
+              "contact": [
+                {
+                  "name": "Madeira, Rui",
+                  "email": "rui.madeira@estsetubal.ips.pt"
+                }
+              ]
+            },
+            {
+              "id": "FP1179",
+              "title": "Designing Remote Patient Monitoring Technologies for Post-Operative Home Cancer Recovery: The Role of Reassurance",
+              "authors": "Constantinos Timinis, Jeremy Opie, Simon Watt, Pramit Khetrapal, John Kelly, Manolis Mavrikis, Yvonne Rogers, and Ivana Drobnjak",
+              "presenters": "Constantinos Timinis",
+              "contact": [
+                {
+                  "name": "Timinis, Constantinos",
+                  "email": "ucabcti@ucl.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1180",
+              "title": "SELFI: Evaluation of Techniques to Reduce Self-report Fatigue by Using Facial Expression of Emotion",
+              "authors": "Salma Mandi, Surjya Ghosh, Pradipta De, and Bivas Mitra",
+              "presenters": "Salma Mandi",
+              "contact": [
+                {
+                  "name": "Mandi, Salma",
+                  "email": "salmamandi@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "SP1229",
+              "title": "Usability and Clinical Evaluation of a Wearable TENS device for Pain Management in Patients with Osteoarthritis of the Knee",
+              "authors": "Fatma Layas, Billy Woods, and Sean Jenkins",
+              "presenters": "Dr. Fatma Layas and/or Mr. Billy Woods",
+              "contact": [
+                {
+                  "name": "Layas, Fatma",
+                  "email": "f.layas@uwtsd.ac.uk"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session E3: Information Visualization and 3D Interaction",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1062",
+              "title": "Playing with Data: An Augmented Reality Approach to Interact with Visualizations of Industrial Process Tomography",
+              "authors": "Yuchong Zhang, Yueming Xuan, Rahul Yadav, Adel Omrani, and Morten Fjeld",
+              "presenters": "Yuchong Zhang",
+              "contact": [
+                {
+                  "name": "Zhang, Yuchong",
+                  "email": "yuchongz@kth.se"
+                }
+              ]
+            },
+            {
+              "id": "FP1268",
+              "title": "Supporting Construction and Architectural Visualization through BIM and AR/VR: A Systematic Literature Review",
+              "authors": "Enes Yigitbas, Alexander Nowosad, and Gregor Engels",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Yigitbas, Enes",
+                  "email": "enes@mail.upb.de"
+                }
+              ]
+            },
+            {
+              "id": "FP1074",
+              "title": "Through Space and Time: Spatio-Temporal Visualization of MOBA Matches",
+              "authors": "Adam Šufliarsky, Günter Walllner, and Simone Kriglstein",
+              "presenters": "Guenter Wallner",
+              "contact": [
+                {
+                  "name": "Wallner, GÃ¼nter",
+                  "email": "guenter.wallner@jku.at"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session E4: Social and Ubiquitous Computing I",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1036",
+              "title": "“Draw Fast, Guess Slow”: Characterizing Interactions in Cooperative Partially Observable Settings with Online Pictionary as a Case Study",
+              "authors": "Kiruthika Kannan, Anandhini Rajendran, Vinoo Alluri, and Ravi Kiran Sarvadevabhatla",
+              "presenters": "Kiruthika Kannan",
+              "contact": [
+                {
+                  "name": "Kannan, Kiruthika",
+                  "email": "kiruthika.k@research.iiit.ac.in"
+                }
+              ]
+            },
+            {
+              "id": "FP1131",
+              "title": "Experience by Cohabitation: Living in a Smart Home Initiated by Your Partner",
+              "authors": "Annika Sabrina Schulz, Johanna Müller, and Frank Beruscha",
+              "presenters": "Annika Schulz",
+              "contact": [
+                {
+                  "name": "Schulz, Annika",
+                  "email": "annikasabrina.schulz@de.bosch.com"
+                }
+              ]
+            },
+            {
+              "id": "FP1107",
+              "title": "Towards a Socio-technical Understanding of Police-citizen Interactions",
+              "authors": "Min Zhang, Arosha K. Bandara, Richard Philpot, Avelie Stuart, Zoe Walkington, Camilla Elphick, Lara Frumkin, Graham Pike, Blaine Price, Mark Levine, and Bashar Nuseibeh",
+              "presenters": "Min Zhang",
+              "contact": [
+                {
+                  "name": "Zhang, Min",
+                  "email": "min.zhang@open.ac.uk"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session E5: Virtual Reality and Training",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1225",
+              "title": "A Case Study Using Virtual Reality to Prime Knowledge for Procedural Medical Training",
+              "authors": "Paul W.L. Watson, Samuel House, Robert Hart, Jonathan Abbas, Sheena Asthana, and Swen E. Gaudl",
+              "presenters": "Paul Watson, Swen E. Gaudl",
+              "contact": [
+                {
+                  "name": "Watson, Paul",
+                  "email": "paulwatson456@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "FP1217",
+              "title": "Mind the Heart: Designing a Stress Dashboard Based on Physiological Data for Training Highly Stressful Situations in Virtual Reality",
+              "authors": "Olivia Zechner, Helmut Schrom-Feiertag, Jakob Uhl, Quynh Nguyen, Lisanne Kleygrewe, and Manfred Tscheligi",
+              "presenters": "Olivia Zechner",
+              "contact": [
+                {
+                  "name": "Zechner, Olivia",
+                  "email": "olivia.zechner@ait.ac.at"
+                }
+              ]
+            },
+            {
+              "id": "FP1030",
+              "title": "VR for HR – a Case Study of Human Resource Development Professionals using Virtual Reality for Social Skills Training in the Workplace",
+              "authors": "Britta Nordin Forsberg, Anders Lundström, and Jan Gulliksen",
+              "presenters": "Britta Nordin Forsberg",
+              "contact": [
+                {
+                  "name": "Nordin Forsberg, Britta",
+                  "email": "britta.nordin.forsberg@mdu.se"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Course B - Part 2: Disability, Design and Innovation for a Fairer World",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course B",
+              "title": "Part 2: Disability, Design and Innovation for a Fairer World",
+              "authors": "Catherine Holloway, Ben Oldfrey, Maryam Bandukda, Daniel Hajas, Tigmanshu Bhatnagar",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Tigmanshu Bhatnagar",
+                  "email": "t.bhatnagar.18@ucl.ac.uk"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        },
+        {
+          "text": "Panel 1: A Multi-Perspective Panel on User-centred Transparency, Explainability, and Controllability in Automations",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "15:45 - 16:15",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "16:15",
+      "item": [
+        {
+          "text": "Meetings and Networking"
+        }
+      ]
+    },
+    {
+      "time": "19:00",
+      "item": [
+        {
+          "text": "Conference Dinner",
+          "location":"Merchant Adventurers Hall, Central York"
+        }
+      ]
+    }
+  ]
 }]}

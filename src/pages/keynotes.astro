@@ -3,6 +3,9 @@ import Navbar from "@source/components/Navbar.astro";
 import Layout from "@source/layouts/Layout.astro";
 import Footer from "@source/components/Footer.astro";
 import TimelineItem from "@source/components/TimelineItem.astro";
+import KeynoteCard from "@source/components/KeynoteCard.astro";
+import PreFooterModular from "@source/components/PreFooterModular.astro";
+
 ---
 
 <Layout title='Interact 2023'>
@@ -12,94 +15,55 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 			<section class="programmes-section-1">
 				<div class='title'>
 					<h1>
-						PROGRAMMES
+						KEYNOTES
 					</h1>
 				</div>
+				<div class="keynote-container">
 
-			</section>
-            <section class="programmes-section-2">
-                
-                <div class="timetable">
-                    <h2 class="date">28 August</h2>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                </div>
-                <div class="timetable">
-                    <h2 class="date">28 August</h2>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                    <TimelineItem time="8:30 - 9:30AM" name="Registration"/>
-                </div>
-            </section>
-			<!-- <section class="popup">
-				<div class="info-card">
-					<article class="details" id="details">
-						<h2>
-							<span style="opacity: 0.6">Workshop:</span>
-						</h2>
-						<h1 id="workshop-title">
-							{title}
-						</h1>
-						<button class="exit" id="exit">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-						</button>
-						<p class="no-margin" id="workshop-description">
+					<KeynoteCard image="/MikeEvans.jpg" 
+					time="29th August"
+					title="Festivals, human values, & turning designers into newspapers: \n Lessons learnt doing people-centred research in the future of media"
+					name="Mike Evans"
+					association="Audience Research Lead, BBC Research and Development, London, UK"
+					href="/programme#Mike-Evans"
+					/>
 
-						</p>
-						<hr class="solid-line">
-						
-						<div class="items">
-							<strong>Website:</strong>
-							<a class="no-margin" id="workshop-website" target="_blank">
-
-							</a>
-						</div>
-
-						<div class="items">
-							<strong>Enquiries to:</strong>
-							<div class="no-margin" id="workshop-enquiries">
-
-							</div>
-						</div>
-
-						<div class="items">
-							<strong>Date:</strong>
-							<div id="workshop-period">
-							</div>
-						</div>
-						
-						<div class="items">
-							<strong>Mode:</strong> 
-							<p id="workshop-mode">
-								
-							</p>
-						</div>
-
-					</article>
+					<KeynoteCard image="/AnnBlandford.jpg" 
+					time="1st Sept"
+					title="Interactive healthcare technologies for complex contexts"
+					name="Ann Blandford"
+					association="Professor of Human–Computer Interaction, University College London, UK"
+					href="/programme#Ann-Blandford"/>
+					
+					<KeynoteCard image="/JanGulliksen.jpg"
+					time="30th August"
+					title="Why we do what we do – HCI and societal impact"
+					name="Jan Gulliksen"
+					association="Professor of Human-Computer Interaction, KTH Royal Institute of Technology, Stockholm, Sweden"
+					href="/programme#Jan-Gulliksen"/>
+					
+					<KeynoteCard image="/JonathanLazar.jpg" 
+					time="31th August"
+					title="A framework for born-accessible development of software and digital content"
+					name="Jonathan Lazar"
+					association="Professor, College of Information Studies, University of Maryland and Executive Director, Maryland Initiative for Digital Accessibility (MIDA), USA"
+					href="/programme#Jonathan-Lazar"/>
+					
 				</div>
-			</section> -->
+			</section>
+			<section class="programmes-section-2">
+				<PreFooterModular title="CHECK OUT:" buttons={[{text: "All Workshops", href: "/workshops/0"}, {text: "All Keynotes", href: "/keynotes"}]}/>
+			</section>
 		</content>
 		
 	</main>
-
-
-
-	
-
 	<Footer/>
 	
 </Layout>
 
 <script>
 	const popupEl = document.querySelector('.popup');
-	document.getElementById('exit').addEventListener('click', () => {
-		//document.querySelector('.popup').style.display = 'none';
-		// document.querySelector('.popup').style.opacity = '0';
-		// document.querySelector('.popup').style.pointerEvents = 'none';
-		// document.querySelector('.popup').style.top = '10%';
+		document.getElementById('exit').addEventListener('click', () => {
 		document.querySelector('.popup').classList.remove('popup-show');
 		document.querySelector('.info-card').classList.remove('info-card-show');
 	})
@@ -161,6 +125,17 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 		margin: 0%;
 	}
 
+	
+
+	
+	.keynote-container{
+		display: flex;
+		margin-top: 2em;
+		flex-wrap: wrap;
+		
+		max-width: 2000px;
+	}
+
     .timetable{
         margin-top: 2em;
         position: relative;
@@ -168,7 +143,6 @@ import TimelineItem from "@source/components/TimelineItem.astro";
         display: flex;
         flex-direction: column;
     }
-
     .date{
         margin-bottom: 0.5em;
     }
@@ -313,6 +287,7 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 
 	.programmes-section-1{
 		padding: 2em;
+		border-bottom: 1px solid #002C38;
 	}
 
     .programmes-section-2{
@@ -572,37 +547,11 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 		font-family: 'S-R';
 	}
 
-
-	
-	@media screen and (max-width:830px){
-		.popup{
-			padding: 0%;
-			position: fixed;
-			border-radius: 0px;
-			z-index: 10000;
-		}
-
-		.info-card{
-			border-radius: 0px;
-		}
-
-		.selection-grid{
-			display: grid;
-			width: 100%;
-			gap: 1em;
-			grid-template-columns: 1fr;
-			padding: 1em;
-			flex-wrap: wrap;
-		}
+	@media screen and (max-width: 830px) {
         .programmes-section-1{
-		    padding: 1em;
-	    }
-
-        .timetable{
-            width: 100%
+            padding: 0.5em;
         }
-	}
-
+}
 
     
     
