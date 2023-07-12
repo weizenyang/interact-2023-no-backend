@@ -163,10 +163,10 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 
 		document.addEventListener('scroll', (e) => {
 		// console.log("Scrolling")
-		timetables.forEach((e) => {
+		if(window.innerWidth < 1301){
+			timetables.forEach((e) => {
 			if(e.getBoundingClientRect().top < window.innerHeight / 4
 				&& e.getBoundingClientRect().bottom > window.innerHeight / 4){
-					console.log(e.getAttribute('id') + " Yes?")
 					if(!document.querySelector(`a[href="#${e.id}"]`).getAttribute('style')){
 						document.querySelectorAll("[style]").forEach((item) => {
 							item.removeAttribute('style')
@@ -178,6 +178,12 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 					
 			}
 		})
+		} else {
+			document.querySelectorAll("[style]").forEach((item) => {
+							item.removeAttribute('style')
+						})
+		}
+		
 	})
 
 
