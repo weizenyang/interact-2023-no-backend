@@ -301,7 +301,7 @@
                   "email": "jcread@uclan.ac.uk"
                 }
               ],
-              "href" : "title"
+              "href" : "courses"
             }
           ]
         },
@@ -321,7 +321,7 @@
                   "email": "chiara.natali@unimib.it"
                 }
               ],
-              "href" : "title"
+              "href" : "courses"
             }
           ]
         }
@@ -587,7 +587,7 @@
                   "email": "t.bhatnagar.18@ucl.ac.uk"
                 }
               ],
-              "href" : "title"
+              "href" : "courses"
             }
           ]
         },
@@ -607,7 +607,7 @@
                   "email": "chiara.natali@unimib.it"
                 }
               ],
-              "href" : "title"
+              "href" : "courses"
             }
           ]
         }
@@ -892,7 +892,7 @@
                   "email": "t.bhatnagar.18@ucl.ac.uk"
                 }
               ],
-              "href" : "title"
+              "href" : "courses"
             }
           ]
         },

@@ -163,7 +163,7 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 		e.addEventListener('click', () => {
 			console.log(e.getAttribute('data-title'));
 			const url = new URL(location);
-			url.searchParams.set("q", encodeURI(e.querySelector(".session-name").innerText));
+			url.searchParams.set("q", encodeURI(e.getAttribute('data-title')));
 			history.pushState({}, "", url)
 			// document.querySelector('.popup').style.top = '0%';
 			// popupEl.style.display = 'flex';
