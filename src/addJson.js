@@ -37,14 +37,17 @@ function getFileNames(){
                     const data = JSON.parse(content)
                     const itemData = data.data
                     itemData.map((i) => {
-                      // console.log(i.item)
                       i.item.map((f) => {
                         if(f.hasInfo){
                           if(f.info){
-                            console.log("Info found")
+                            // console.log("Info found")
+                            const stuff = f.info
+                            stuff.forEach((e) => {
+                              if(console.log())
+                            })
                           } else {
-                          f.info = []
-                          console.log("Added Property")
+                            console.log(f)
+                            console.log("No Info")
                         }
                       }
                       })
@@ -56,15 +59,15 @@ function getFileNames(){
                     // }
                     
                     
-                    const jsonStr = JSON.stringify(data, null, 2)
-                    // console.log(data)
-                    fs.writeFile(`${path.join(dirPathContent, e)}`, jsonStr, (err) => {
-                      if (err) {
-                        console.log(err);
-                      } else {
-                        console.log("JSON data is saved.");
-                      }
-                    });
+                    // const jsonStr = JSON.stringify(data, null, 2)
+                    // // console.log(data)
+                    // fs.writeFile(`${path.join(dirPathContent, e)}`, jsonStr, (err) => {
+                    //   if (err) {
+                    //     console.log(err);
+                    //   } else {
+                    //     console.log("JSON data is saved.");
+                    //   }
+                    // });
                     
             })
             })

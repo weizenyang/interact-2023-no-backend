@@ -332,19 +332,19 @@
           "hasInfo": true,
           "info": [
             {
-            "id": "Course A",
-            "title": "Part 1: Introduction to Information Visualisation",
-            "authors": "Keith Andrews",
-            "presenters": "Keith Andrews",
-            "contact": [
-              {
-                "name": "Andrews, Keith",
-                "email": "kandrews@tugraz.at"
-              }
-            ],
-            "href" : "courses"
-          }
-        ]
+              "id": "Course A",
+              "title": "Part 1: Introduction to Information Visualisation",
+              "authors": "Keith Andrews",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Andrews, Keith",
+                  "email": "kandrews@tugraz.at"
+                }
+              ],
+              "href": "courses"
+            }
+          ]
         },
         {
           "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
@@ -352,19 +352,19 @@
           "hasInfo": true,
           "info": [
             {
-            "id": "Course F",
-            "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
-            "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-            "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-            "contact": [
-              {
-                "name": "Marta Larusdottir",
-                "email": "marta@ru.is"
-              }
-            ],
-            "href" : "courses"
-          }
-        ]
+              "id": "Course F",
+              "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+              "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+              "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+              "contact": [
+                {
+                  "name": "Marta Larusdottir",
+                  "email": "marta@ru.is"
+                }
+              ],
+              "href": "courses"
+            }
+          ]
         }
       ]
     },
@@ -659,7 +659,7 @@
                   "email": "kandrews@tugraz.at"
                 }
               ],
-              "href" : "courses"
+              "href": "courses"
             }
           ]
         },
@@ -679,10 +679,10 @@
                   "email": "marta@ru.is"
                 }
               ],
-              "href" : "courses"
+              "href": "courses"
             }
           ],
-          "href" : "courses"
+          "href": "courses"
         },
         {
           "text": "Panel 2: Ethical Value Exchange in HCI",

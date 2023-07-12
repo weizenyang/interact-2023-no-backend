@@ -42,8 +42,7 @@ name.map((e) => {
         {
             name.map((e) =>
                 e.hasInfo ? (
-                    <div class="timetable-text hasInfo" id={e.id}>
-                        
+                    <div class={e.info.length < 1 ? "timetable-text hasInfo butNoInfo" : "timetable-text hasInfo"} id={e.id}>
                         {e.text && <p class="session-name bold">{e.text}</p>}
                         {e.location && (
                             <p
@@ -68,7 +67,7 @@ name.map((e) => {
                                         {i.contact != undefined && i.contact.map((contact) => 
                                             <a href={"mailto:" + contact.email}>Contact: {contact.email}</a>
                                         )}
-                                        {i.href == 'title' && <p>
+                                        {i.href == 'courses' && <p>
                                             <button class="bold">
                                                 <a href={`/courses?q=${encodeURI(i.title.split(":").length > 0 ? i.title.split(":")[1] : i.title)}`}>Read More ></a>
                                             </button>
@@ -144,6 +143,7 @@ name.map((e) => {
             position: absolute;
             top: -20px;
         }
+        
 
         .everything-centered{
             display: flex;
@@ -183,6 +183,17 @@ name.map((e) => {
         .hasInfo:hover {
             background-color: #ffffffdd;
             border-color: #00000033;
+        }
+
+        .butNoInfo{
+            background-color: #FFC22315;
+            pointer-events: none;
+            /* border-color: #00000033; */
+        }
+
+        .butNoInfo:hover{
+            background-color: #FFC223;
+            border-color: #00000000;
         }
 
         .time {

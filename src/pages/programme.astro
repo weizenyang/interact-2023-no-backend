@@ -16,14 +16,25 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				<div class="title">
 					<h1 id="programmes-nav-trigger">PROGRAMMES</h1>
 				</div>
+				<a class="hollow-button pdf-version" href="/INTERACT programme v1.pdf" target="_blank"><img src="/pdf.svg">PDF version</a>
 			</section>
 
 			<div class="programmes-nav" id="programmes-nav">
-				<a href="#day-1" class="programmes-nav-button">Day 1</a>
-				<a href="#day-2" class="programmes-nav-button">Day 2</a>
-				<a href="#day-3" class="programmes-nav-button">Day 3</a>
-				<a href="#day-4" class="programmes-nav-button">Day 4</a>
-				<a href="#day-5" class="programmes-nav-button">Day 5</a>
+				<a href="#day-1" class="programmes-nav-button" id="button-day-1"
+					>Day 1</a
+				>
+				<a href="#day-2" class="programmes-nav-button" id="button-day-2"
+					>Day 2</a
+				>
+				<a href="#day-3" class="programmes-nav-button" id="button-day-3"
+					>Day 3</a
+				>
+				<a href="#day-4" class="programmes-nav-button" id="button-day-4"
+					>Day 4</a
+				>
+				<a href="#day-5" class="programmes-nav-button" id="button-day-5"
+					>Day 5</a
+				>
 			</div>
 			<section class="programmes-section-2">
 				{
@@ -48,8 +59,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 												hasInfo: data.hasInfo,
 												info: data.info,
 												contact: data.contact,
-												href: data.href
-					
+												href: data.href,
 											}))}
 										/>
 									))}
@@ -72,14 +82,12 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			<section class="popup">
 				<div class="info-card">
 					<div class="info-card-top">
-						<button class="info-card-button prev-button"> < </button>
+						<button class="info-card-button prev-button"> <</button>
 						<div class="session-info">
 							<p class="session-title">
 								Some Text Here: Here Too
 							</p>
-							<p class="session-time">
-								Some Text Here: Here Too
-							</p>
+							<p class="session-time">Some Text Here: Here Too</p>
 						</div>
 						<button class="exit" id="exit">
 							<svg
@@ -150,18 +158,40 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			key++;
 		}
 	});
-	console.log(templates);
-	window.addEventListener('popstate', () => {
-		closePopup()
-});
+
+	const timetables = document.querySelectorAll('.timetable')
+
+		document.addEventListener('scroll', (e) => {
+		// console.log("Scrolling")
+		timetables.forEach((e) => {
+			if(e.getBoundingClientRect().top < window.innerHeight / 4
+				&& e.getBoundingClientRect().bottom > window.innerHeight / 4){
+					console.log(e.getAttribute('id') + " Yes?")
+					if(!document.querySelector(`a[href="#${e.id}"]`).getAttribute('style')){
+						document.querySelectorAll("[style]").forEach((item) => {
+							item.removeAttribute('style')
+						})
+						document.querySelector(`a[href="#${e.id}"]`).setAttribute('style', 'color: var(--color-bg) !important; background-color: #002c38')
+						
+					}
+
+					
+			}
+		})
+	})
+
+
+	// console.log(templates);
+	window.addEventListener("popstate", () => {
+		closePopup();
+	});
 
 	function highlight(target) {
-		
 		document.querySelectorAll(".animate-highlight").forEach((e) => {
 			e.classList.remove("animate-highlight");
 		});
-		if (target != 'a') {
-			console.log("Highlight")
+		if (target != "a") {
+			console.log("Highlight");
 			let url = window.location.href;
 			let getID = url.split("#")[1];
 			if (document.getElementById(getID) != null) {
@@ -176,7 +206,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				.classList.add("animate-highlight");
 		}
 	}
-	highlight();
+	// highlight();
 	window.addEventListener("hashchange", (e) => {
 		highlight();
 	});
@@ -192,6 +222,9 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				} else {
 					quickNav.classList.remove("detach");
 					quickNavTrigger.classList.remove("programmes-nav-trigger");
+					document.querySelectorAll("[style]").forEach((item) => {
+							item.removeAttribute('style')
+						})
 				}
 			} else {
 				if (quickNavTrigger.getBoundingClientRect().bottom <= 70) {
@@ -200,22 +233,19 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				} else {
 					quickNav.classList.remove("detach");
 					quickNavTrigger.classList.remove("programmes-nav-trigger");
+					document.querySelectorAll("[style]").forEach((item) => {
+							item.removeAttribute('style')
+						})
 				}
 			}
 		}
 	});
 
-	// document.querySelectorAll(".info-card-button").forEach((e) => {
-	// 	e.addEventListener('click', (e) => {
-	// 		e.stopPropagation()
-	// 	})
-	// })
-
 	document.getElementById("exit").addEventListener("click", () => {
-		closePopup()
+		closePopup();
 		highlight("a");
 	});
-	function closePopup(){
+	function closePopup() {
 		document.querySelector(".popup").classList.remove("popup-show");
 		document.querySelector(".info-card").classList.remove("info-card-show");
 	}
@@ -236,25 +266,29 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			//Enable popup
 			e.addEventListener("click", () => {
 				const url = new URL(location);
-				url.searchParams.set("q", encodeURI(e.querySelector(".session-name").innerText));
-				history.pushState({}, "", url)
+				url.searchParams.set(
+					"q",
+					encodeURI(e.querySelector(".session-name").innerText)
+				);
+				history.pushState({}, "", url);
 				document.querySelector(".session-title").innerText =
 					e.querySelector(".session-name").innerText;
 
 				document.querySelector(".session-time").innerText =
-					template.getAttribute('data-time');
+					template.getAttribute("data-time");
 
 				//Get Keys to update index
 				const findKey = Object.keys(templates).find(
-					(thiskey) => 
-						templates[thiskey].querySelector("template").dataset.session === e.querySelector(".session-name").innerText
+					(thiskey) =>
+						templates[thiskey].querySelector("template").dataset
+							.session ===
+						e.querySelector(".session-name").innerText
 				);
 
-				console.log(e.querySelector(".session-name").innerText)
+				// console.log(e.querySelector(".session-name").innerText)
 
 				currentIndex = parseInt(findKey);
-				console.log(currentIndex)
-				
+				console.log(currentIndex);
 
 				scrollToTarget(e.querySelector(".session-name").innerText);
 				document.querySelector(".popup").classList.add("popup-show");
@@ -276,17 +310,17 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 
 	document.querySelectorAll(".next-button").forEach((e) => {
 		e.addEventListener("click", () => {
-			console.log(currentIndex)
+			console.log(currentIndex);
 			if (templates[currentIndex + 1] != undefined) {
-				
-				currentIndex++
-				console.log(currentIndex)
-				const template = templates[currentIndex].querySelector("template");
+				currentIndex++;
+				console.log(currentIndex);
+				const template =
+					templates[currentIndex].querySelector("template");
 
 				document.querySelector(".session-title").innerText =
 					template.getAttribute("data-session");
 				document.querySelector(".session-time").innerText =
-					template.getAttribute('data-time');
+					template.getAttribute("data-time");
 				scrollToTarget(template.getAttribute("data-session"));
 				const content = template.content.cloneNode(true);
 				console.log(content);
@@ -294,7 +328,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				document.querySelector(".content-1").appendChild(content);
 				updateButtons();
 			} else {
-				console.log("Fail")
+				console.log("Fail");
 				console.log(templates[currentIndex + 1]);
 			}
 		});
@@ -303,65 +337,72 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	document.querySelectorAll(".prev-button").forEach((e) => {
 		e.addEventListener("click", () => {
 			if (templates[currentIndex - 1] != undefined) {
-				console.log("Prev")
+				console.log("Prev");
 				currentIndex--;
 				const template =
 					templates[currentIndex].querySelector("template");
 				document.querySelector(".session-title").innerText =
 					template.getAttribute("data-session");
 				document.querySelector(".session-time").innerText =
-					template.getAttribute('data-time');
+					template.getAttribute("data-time");
 				scrollToTarget(template.getAttribute("data-session"));
 				const content = template.content.cloneNode(true);
-				console.log(content);
+				// console.log(content);
 				document.querySelector(".content-1").innerHTML = "";
 				document.querySelector(".content-1").appendChild(content);
 				updateButtons();
 			} else {
-				console.log("Fail")
+				console.log("Fail");
 				console.log(currentIndex);
 			}
 		});
 	});
 
-	let timeoutId;
-	let intervalId;
-	document.querySelectorAll(".prev-button").forEach((e) => {
-			//Click and hold to cycle
+	//Long press and hold
 
-	element.addEventListener('mousedown', () => {
-	timeoutId = setTimeout(() => 
-		intervalId = setInterval(() => {
-			if (templates[currentIndex - 1] != undefined) {
-				console.log("Prev")
-				currentIndex--;
-				const template =
-					templates[currentIndex].querySelector("template");
-				document.querySelector(".session-title").innerText =
-					template.getAttribute("data-session");
-				document.querySelector(".session-time").innerText =
-					template.getAttribute('data-time');
-				scrollToTarget(template.getAttribute("data-session"));
-				const content = template.content.cloneNode(true);
-				console.log(content);
-				document.querySelector(".content-1").innerHTML = "";
-				document.querySelector(".content-1").appendChild(content);
-				updateButtons();
-			} else {
-				console.log("Fail")
-				console.log(currentIndex);
-			}
-		}, 200)
-	, 1000);
-	});
+	// let timeoutId;
+	// let intervalId;
+	// document.querySelectorAll(".prev-button").forEach((e) => {
+	// 	//Click and hold to cycle
 
-	element.addEventListener('mouseup', () => {
-	clearTimeout(timeoutId);
-	});
+	// 	element.addEventListener("mousedown", () => {
+	// 		timeoutId = setTimeout(
+	// 			() =>
+	// 				(intervalId = setInterval(() => {
+	// 					if (templates[currentIndex - 1] != undefined) {
+	// 						console.log("Prev");
+	// 						currentIndex--;
+	// 						const template =
+	// 							templates[currentIndex].querySelector(
+	// 								"template"
+	// 							);
+	// 						document.querySelector(".session-title").innerText =
+	// 							template.getAttribute("data-session");
+	// 						document.querySelector(".session-time").innerText =
+	// 							template.getAttribute("data-time");
+	// 						scrollToTarget(
+	// 							template.getAttribute("data-session")
+	// 						);
+	// 						const content = template.content.cloneNode(true);
+	// 						console.log(content);
+	// 						document.querySelector(".content-1").innerHTML = "";
+	// 						document
+	// 							.querySelector(".content-1")
+	// 							.appendChild(content);
+	// 						updateButtons();
+	// 					} else {
+	// 						console.log("Fail");
+	// 						console.log(currentIndex);
+	// 					}
+	// 				}, 200)),
+	// 			1000
+	// 		);
+	// 	});
 
-	});
-
-
+	// 	element.addEventListener("mouseup", () => {
+	// 		clearTimeout(timeoutId);
+	// 	});
+	// });
 
 	function updateButtons() {
 		//Lookup system
@@ -426,6 +467,21 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		margin: 0%;
 	}
 
+	.pdf-version{
+		padding: 0.5em 1em !important;
+		background-color: #FFC22300;
+		transition: background-color 0.2s;
+	}
+
+	.pdf-version:hover{
+		background-color: #FFC22399;
+	}
+
+	.pdf-version img{
+		height: 40px;
+		margin-right: 1em;
+	}
+
 	.popup {
 		position: fixed;
 		display: flex;
@@ -453,104 +509,101 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		pointer-events: auto;
 	}
 
-		.clamp {
-			color: #002c3822 !important;
-			pointer-events: none;
-		}
+	.clamp {
+		color: #002c3822 !important;
+		pointer-events: none;
+	}
 
+	.info-card {
+		position: fixed;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		display: flex;
+		flex-direction: column;
+		background-color: #fcf7eb;
+		max-width: 700px;
+		width: 100%;
+		height: 85%;
+		max-height: 1100px;
+		transition: opacity 0.1s, top 0.4s;
+		border-radius: 5px;
+	}
 
-		.info-card {
-			position: fixed;
-			top: 100%;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			display: flex;
-			flex-direction: column;
-			background-color: #fcf7eb;
-			max-width: 700px;
-			width: 100%;
-			height: 85%;
-			max-height: 1100px;
-			transition: opacity 0.1s, top 0.4s;
-			border-radius: 5px;
-			
-		}
+	.info-card {
+		padding: 0em;
+	}
 
-		.info-card {
-			padding: 0em;
-		}
+	.info-card-top {
+		display: flex;
+		width: 100%;
+		/* border: 1px solid #002c38; */
+	}
 
-		.info-card-top {
-			display: flex;
-			width: 100%;
-			/* border: 1px solid #002c38; */
-		}
+	.info-card-button {
+		padding: 1em;
+		color: #002c38;
+		/* border: #002c38 1px solid; */
+		border-radius: 2px;
+		background-color: #00000000;
+	}
 
-		.info-card-button {
-			padding: 1em;
-			color: #002c38;
-			/* border: #002c38 1px solid; */
-			border-radius: 2px;
-			background-color: #00000000;
-		}
+	.info-card-show {
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		scale: 1;
+		opacity: 1;
+		pointer-events: all;
+	}
 
-		.info-card-show {
-			top: 50%;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			scale: 1;
-			opacity: 1;
-			pointer-events: all;
-		}
+	.info-card-button:first-child {
+		border-right: 1px solid #002c38;
+		border-bottom: 1px solid #002c38;
+	}
+	.info-card-button:nth-child(4) {
+		border-left: 1px solid #002c38;
+		border-bottom: 1px solid #002c38;
+	}
 
-		.info-card-button:first-child {
-			border-right: 1px solid #002c38;
-			border-bottom: 1px solid #002c38;
-		}
-		.info-card-button:nth-child(4) {
-			border-left: 1px solid #002c38;
-			border-bottom: 1px solid #002c38;
-		}
+	.session-info {
+		display: flex;
+		flex-direction: column;
+		padding: 0.5em;
+		width: 100%;
+		border-left: 0px;
+		border-right: 0px;
+		align-items: center;
+		border-bottom: 1px solid #002c38;
+		pointer-events: all;
+	}
 
-		.session-info{
-			display: flex;
-			flex-direction: column;
-			padding: 0.5em;
-			width: 100%;
-			border-left: 0px;
-			border-right: 0px;
-			align-items: center;
-			border-bottom: 1px solid #002c38;
-			pointer-events: all;
+	.session-title {
+		width: 100%;
+		display: flex;
+		font-weight: 1000;
+		align-items: center;
+	}
 
-		}
+	.session-time {
+		width: 100%;
+		font-size: medium;
+		padding-top: 0.5em;
+	}
 
-		.session-title {
-			width: 100%;
-			display: flex;
-			font-weight: 1000;
-			align-items: center;
-		}
+	.exit {
+		border-bottom: 1px solid #002c38;
+		border-radius: 0px;
+	}
 
-		.session-time{
-			width: 100%;
-			font-size: medium;
-			padding-top: 0.5em;
-		}
-
-		.exit{
-			border-bottom: 1px solid #002c38;
-			border-radius: 0px;
-		}
-
-		.content-1 {
-			padding: 2em;
-			padding-top: 0%;
-			overflow-y: scroll;
-			height: 100%;
-			/* border: #002c38 1px solid; */
-			border-top: 0px;
-		}
+	.content-1 {
+		padding: 2em;
+		padding-top: 0%;
+		overflow-y: scroll;
+		height: 100%;
+		/* border: #002c38 1px solid; */
+		border-top: 0px;
+	}
 
 	.nav-offset {
 		position: relative;
@@ -595,14 +648,14 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		font-weight: bold;
 		font-size: 0.9em;
 		border-radius: 10px;
+		color: #002c38;
+		/* background-color: #fcf7eb; */
 		border: 2px solid #002c38;
 	}
 
 	.programmes-nav-button:focus {
 		background-color: #002c3844;
 	}
-
-	
 
 	.detach {
 		position: fixed;
@@ -759,8 +812,6 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		pointer-events: auto;
 	}
 
-
-
 	#workshop-description {
 		display: flex;
 		flex-direction: column;
@@ -792,6 +843,9 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 
 	.programmes-section-1 {
 		padding: 2em;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
 	}
 
 	.programmes-section-2 {
@@ -853,7 +907,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		flex-wrap: wrap;
 	}
 
-	.item-container{
+	.item-container {
 		width: 100%;
 	}
 
@@ -1046,6 +1100,23 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	}
 
 	@media screen and (max-width: 1300px) {
+		.programmes-section-1{
+			flex-direction: column;
+			justify-content: left;
+		}
+	
+		.pdf-version{
+			padding: 0.5em;
+			margin-top: 1em;
+			margin-right: auto;
+			width: auto;
+			margin-left: 0.3em;
+		}
+
+		.pdf-version img{
+			height: 30px;
+		}
+
 		.popup {
 			padding: 0%;
 			position: fixed;
@@ -1100,10 +1171,18 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			/* border: #002c38 1px solid; */
 			border-top: 0px;
 		}
-		
 	}
 
 	@media (max-width: 829px) {
+
+		.pdf-version{
+			padding: 0.5em;
+			margin-top: 1em;
+			margin-bottom: 0.5em;
+			margin-right: auto;
+			width: auto;
+		}
+
 		.info-card {
 			padding: 0em;
 			border-radius: 0px;
@@ -1192,6 +1271,8 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			/* border-right: 1px solid #002c38; */
 		}
 
+		
+
 		.clamp {
 			color: #002c3855;
 			pointer-events: none;
@@ -1201,6 +1282,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			padding-top: 0.2em;
 			padding-bottom: 1em;
 			position: fixed;
+			padding-top: 1em;
 			top: 76px;
 		}
 
