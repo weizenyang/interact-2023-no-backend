@@ -23,7 +23,7 @@
       ]
     },
     {
-      "time": "11:30 - 14:1 5",
+      "time": "11:00 - 13:30",
       "item": [
         {
           "text": "Lunch"
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "time": "13:45 - 15:15",
+      "time": "14:15 - 15:45",
       "or": true,
       "item": [
         {
@@ -286,16 +286,44 @@
           ]
         },
         {
-          "text": "Courses D - Practical Ethics: Respecting Participants Contributions in HCI Research and Design",
+          "text": "Course D : Practical Ethics - Respecting Participants Contributions in HCI Research and Design",
           "location": "CSE/082X",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "Course D",
+              "title": "Practical Ethics: Respecting participants contributions in HCI research and design",
+              "authors": "Janet C Read",
+              "presenters": "Janet C Read",
+              "contact": [
+                {
+                  "name": "Janet C Read",
+                  "email": "jcread@uclan.ac.uk"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
         },
         {
-          "text": "Courses E: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+          "text": "Course E - Part 1: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
           "location": "CSE/082X",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "Course E",
+              "title": "Part 1: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Chiara Natali",
+                  "email": "chiara.natali@unimib.it"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
         }
       ]
     },
@@ -323,7 +351,7 @@
               "presenters": "Jan K. Argasiński",
               "contact": [
                 {
-                  "name": "ArgasiÅ„ski JKA, Jan",
+                  "name": "Argasiński JKA, Jan",
                   "email": "j.argasinski@sanoscience.org"
                 }
               ]
@@ -544,10 +572,44 @@
           ]
         },
         {
-          "text": "Courses B - Part 1: Disability, Design and Innovation for a Fairer World - Part 1",
+          "text": "Course B - Part 1: Disability, Design and Innovation for a Fairer World",
           "location": "CSE/082X",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "Course B",
+              "title": "Part 1: Disability, Design and Innovation for a Fairer World",
+              "authors": "Catherine Holloway, Ben Oldfrey, Maryam Bandukda, Daniel Hajas, Tigmanshu Bhatnagar",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Tigmanshu Bhatnagar",
+                  "email": "t.bhatnagar.18@ucl.ac.uk"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
+        },
+        {
+          "text": "Course E - Part 2: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course E",
+              "title": "Part 2: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Chiara Natali",
+                  "email": "chiara.natali@unimib.it"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
         }
       ]
     },
@@ -815,10 +877,24 @@
           ]
         },
         {
-          "text": "Courses B - Part 2: Disability, Design and Innovation for a Fairer World - Part 2",
+          "text": "Course B - Part 2: Disability, Design and Innovation for a Fairer World",
           "location": "CSE/082X",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "Course B",
+              "title": "Part 2: Disability, Design and Innovation for a Fairer World",
+              "authors": "Catherine Holloway, Ben Oldfrey, Maryam Bandukda, Daniel Hajas, Tigmanshu Bhatnagar",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Tigmanshu Bhatnagar",
+                  "email": "t.bhatnagar.18@ucl.ac.uk"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
         },
         {
           "text": "Panel 1: A Multi-Perspective Panel on User-centred Transparency, Explainability, and Controllability in Automations",
@@ -829,7 +905,7 @@
       ]
     },
     {
-      "time": "13:30 - 14:15",
+      "time": "15:45 - 16:15",
       "item": [
         {
           "text": "Coffee Break"
@@ -837,12 +913,10 @@
       ]
     },
     {
-      "time": "16:15 - 17:15",
+      "time": "16:15",
       "item": [
         {
-          "text": "Keynote",
-          "author": "Rochelle Gold",
-          "location": "Large lecture theatre (PZA/103)"
+          "text": "Meetings and Networking"
         }
       ]
     },
@@ -850,7 +924,8 @@
       "time": "19:00",
       "item": [
         {
-          "text": "Conference Dinner"
+          "text": "Conference Dinner",
+          "location":"Merchant Adventurers Hall, Central York"
         }
       ]
     }

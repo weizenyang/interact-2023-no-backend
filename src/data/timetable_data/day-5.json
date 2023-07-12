@@ -278,16 +278,24 @@
           ]
         },
         {
-          "text": "Courses C - Part 1: Hacking the Brain: the risks and challenges of Cognitive Augmentation - Part 1",
+          "text": "Course C - Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
           "location": "LMB/036",
           "hasInfo": true,
-          "info": []
-        },
-        {
-          "text": "Course C - Part 2: Hacking the Brain: the risks and challenges of Cognitive Augmentation - Part 2",
-          "location": "LMB/036",
-          "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "Course C",
+              "title": "Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Chiara Natali",
+                  "email": "chiara.natali@unimib.it"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
         }
       ]
     },
@@ -316,7 +324,7 @@
       ]
     },
     {
-      "time": "14:15 - 15:45",
+      "time": "13:45 - 15:15",
       "or": true,
       "item": [
         {
@@ -540,16 +548,30 @@
           ]
         },
         {
-          "text": "Session G5: Hacking the Brain: the risks and challenges of Cognitive Augmentation - Part 2",
-          "location": "CSE/082X",
+          "text": "Session G5: No data yet",
+          "location": "TBA",
           "hasInfo": true,
           "info": []
         },
         {
-          "text": "Courses C - Part 2: Hacking the Brain: the risks and challenges of Cognitive Augmentation - Part 2",
+          "text": "Course C - Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
           "location": "CSE/082X",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "Course C",
+              "title": "Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Chiara Natali",
+                  "email": "chiara.natali@unimib.it"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
         }
       ]
     },
@@ -562,10 +584,11 @@
       ]
     },
     {
-      "time": "13:45 - 16:45",
+      "time": "15:45 - 16:45",
       "item": [
         {
-          "text": "Closing keynote: Prof. Mike Evans, UX Research Lead, BBC Research and Development, UK"
+          "text": "Closing keynote: Prof. Mike Evans, UX Research Lead, BBC Research and Development, UK",
+          "location": "Large Lecture Theatre (PZA/103)"
         }
       ]
     },
@@ -573,15 +596,8 @@
       "time": "16:45 - 17:30",
       "item": [
         {
-          "text": "Closing remarks - announcement of INTERACT 2025"
-        }
-      ]
-    },
-    {
-      "time": "19:00",
-      "item": [
-        {
-          "text": "Conference Dinner"
+          "text": "Closing remarks - announcement of INTERACT 2025",
+          "location": "Large Lecture Theatre (PZA/103)"
         }
       ]
     }

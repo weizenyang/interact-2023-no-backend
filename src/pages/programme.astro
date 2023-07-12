@@ -47,7 +47,9 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 												location: data.location,
 												hasInfo: data.hasInfo,
 												info: data.info,
-												contact: data.contact
+												contact: data.contact,
+												href: data.href
+					
 											}))}
 										/>
 									))}
@@ -149,6 +151,9 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		}
 	});
 	console.log(templates);
+	window.addEventListener('popstate', () => {
+		closePopup()
+});
 
 	function highlight(target) {
 		
@@ -207,10 +212,13 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	// })
 
 	document.getElementById("exit").addEventListener("click", () => {
-		document.querySelector(".popup").classList.remove("popup-show");
-		document.querySelector(".info-card").classList.remove("info-card-show");
+		closePopup()
 		highlight("a");
 	});
+	function closePopup(){
+		document.querySelector(".popup").classList.remove("popup-show");
+		document.querySelector(".info-card").classList.remove("info-card-show");
+	}
 
 	document.querySelector(".session-info").addEventListener("click", () => {
 		document.querySelector(".popup").classList.remove("popup-show");
@@ -227,6 +235,9 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		if (template) {
 			//Enable popup
 			e.addEventListener("click", () => {
+				const url = new URL(location);
+				url.searchParams.set("q", encodeURI(e.querySelector(".session-name").innerText));
+				history.pushState({}, "", url)
 				document.querySelector(".session-title").innerText =
 					e.querySelector(".session-name").innerText;
 
@@ -524,7 +535,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		.session-time{
 			width: 100%;
 			font-size: medium;
-			padding-left: 0.5em;
+			padding-top: 0.5em;
 		}
 
 		.exit{
@@ -1178,7 +1189,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			font-weight: bold;
 			font-size: 0.9em;
 			border-radius: 10px;
-			border-right: 1px solid #002c38;
+			/* border-right: 1px solid #002c38; */
 		}
 
 		.clamp {

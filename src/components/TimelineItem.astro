@@ -11,6 +11,7 @@ export interface Props {
         author?: string;
         location?: string;
         id?: string;
+        href? : string;
         info: {
             title?: string;
             authors?: string;
@@ -67,10 +68,17 @@ name.map((e) => {
                                         {i.contact != undefined && i.contact.map((contact) => 
                                             <a href={"mailto:" + contact.email}>Contact: {contact.email}</a>
                                         )}
+                                        {i.href == 'title' && <p>
+                                            <button class="bold">
+                                                <a href={`/courses?q=${encodeURI(i.title.split(":").length > 0 ? i.title.split(":")[1] : i.title)}`}>Read More ></a>
+                                            </button>
+                                        </p>}
+                                        
                                         
                                     </div>
                                     
                          )}
+                         
                         </template>}
                         
                         
@@ -178,15 +186,15 @@ name.map((e) => {
         }
 
         .time {
-            width: 65px;
+            width: 60px;
             margin: 0%;
             line-height: 1.1em;
             font-size: 0.9em;
             display: flex;
             height: auto;
             padding: 0.5em;
-            padding-left: 2em;
-            padding-right: 2em;
+            padding-left: 0em;
+            padding-right: 1em;
             border-right: 1px solid #002C3822;
             align-items: center;
             justify-content: center;

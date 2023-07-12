@@ -8,19 +8,22 @@ const converter = new showdown.Converter();
 // const htmlContent = converter.makeHtml(markdownContent);
 
 export interface Props {
-	title: MarkdownContent;
-	body: string;
-	href: string;
-	description: MarkdownContent;
-	event_period: MarkdownContent;
-	contacts: MarkdownContent;
-	website: string;
-	mode: string;
+	title?: MarkdownContent;
+	body?: string;
+	href?: string;
+	description?: MarkdownContent;
+	event_period?: MarkdownContent;
+	contacts?: MarkdownContent;
+	website?: string;
+	mode?: string;
+	keywords? : string;
+	time? : string;
+	authors?: {
+		name? : string;
+	};
 }
-
-
-
-const { href, title, body, mode, event_period, website } = Astro.props;
+console.log(Astro.props.contacts)
+const { href, title, body, mode, event_period, website, type, keywords, time, authors } = Astro.props;
 // const title = converter.makeHtml(Astro.props.title)
 const description = converter.makeHtml(Astro.props.description)
 // const website = converter.makeHtml(Astro.props.website)
@@ -44,7 +47,11 @@ data-contacts={contacts}
 data-title={title} 
 data-date={event_period} 
 data-website={website} 
-data-mode={mode}>
+data-mode={mode}
+data-type={type}
+data-authors={authors && authors.map((e) => (e.name + "|"))}
+data-keywords={keywords}
+data-time={time}>
 	<a class="inner-div-gradient" href={href}>
 		<div class="title-section">
 			<h3 class="card-title" set:html={title}></h3>

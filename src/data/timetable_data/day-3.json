@@ -34,7 +34,8 @@
           "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
           "location": "Large lecture theatre (PZA/103)",
           "hasInfo": true,
-          "info": []
+          "info": [],
+          "href": ""
         }
       ]
     },
@@ -52,7 +53,7 @@
       "item": [
         {
           "text": "Session A1: User Studies",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -119,7 +120,7 @@
         },
         {
           "text": "Session A2: Accessibility",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -186,7 +187,7 @@
         },
         {
           "text": "Session A3: Model-Based UI Design",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -241,7 +242,7 @@
         },
         {
           "text": "Session A4: Interaction with Conversational agents I",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -284,7 +285,7 @@
         },
         {
           "text": "Session A5: 3D Interaction",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -326,16 +327,44 @@
           ]
         },
         {
-          "text": "Courses A - Part 1: Introduction to Information Visualisation",
-          "location": "CSE/082X",
+          "text": "Course A - Part 1: Introduction to Information Visualisation",
+          "location": "TBA",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+            "id": "Course A",
+            "title": "Part 1: Introduction to Information Visualisation",
+            "authors": "Keith Andrews",
+            "presenters": "Keith Andrews",
+            "contact": [
+              {
+                "name": "Andrews, Keith",
+                "email": "kandrews@tugraz.at"
+              }
+            ],
+            "href" : "title"
+          }
+        ]
         },
         {
-          "text": "Courses F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
-          "location": "CSE/082X",
+          "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+          "location": "TBA",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+            "id": "Course F",
+            "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+            "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "contact": [
+              {
+                "name": "Marta Larusdottir",
+                "email": "marta@ru.is"
+              }
+            ],
+            "href" : "title"
+          }
+        ]
         }
       ]
     },
@@ -353,7 +382,7 @@
       "item": [
         {
           "text": "Session B1: User Studies",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -408,7 +437,7 @@
         },
         {
           "text": "Session B2: Accessibility",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -475,7 +504,7 @@
         },
         {
           "text": "Session B3: Model-Based UI Design",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -518,7 +547,7 @@
         },
         {
           "text": "Session B4: Interaction with Conversational agents I",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -573,7 +602,7 @@
         },
         {
           "text": "Session B5: 3D Interaction",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": [
             {
@@ -615,35 +644,68 @@
           ]
         },
         {
-          "text": "Courses A - Part 2: Introduction to Information Visualisation",
-          "location": "CSE/082X",
+          "text": "Course A - Part 2: Introduction to Information Visualisation",
+          "location": "TBA",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "Course A",
+              "title": "Part 2: Introduction to Information Visualisation",
+              "authors": "Keith Andrews",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Andrews, Keith",
+                  "email": "kandrews@tugraz.at"
+                }
+              ],
+              "href" : "title"
+            }
+          ]
         },
         {
-          "text": "Courses F - Part 2: The UCD Sprint: Bringing Users Along to Sprint",
-          "location": "CSE/082X",
+          "text": "Course F - Part 2: The UCD Sprint - Bringing Users Along to Sprint",
+          "location": "TBA",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "Course F",
+              "title": "Part 2: The UCD Sprint - Bringing Users Along to Sprint",
+              "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+              "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+              "contact": [
+                {
+                  "name": "Marta Larusdottir",
+                  "email": "marta@ru.is"
+                }
+              ],
+              "href" : "title"
+            }
+          ],
+          "href" : "title"
         },
         {
           "text": "Panel 2: Ethical Value Exchange in HCI",
-          "location": "CSE/082X",
+          "location": "TBA",
           "hasInfo": true,
           "info": []
         }
       ]
     },
     {
-      "time": "17:15 - 18:15",
+      "time": "17:15 - 18:30",
       "item": [
         {
-          "text": "Posters and Demonstrations"
+          "text": "Keynote",
+          "author": "Rochelle Gold, User Research, NHS England",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
     {
-      "time": "18:15 - 19:15",
+      "time": "18:30 - 19:15",
       "item": [
         {
           "text": "Welcome Reception"
