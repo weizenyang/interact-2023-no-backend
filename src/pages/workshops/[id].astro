@@ -129,12 +129,13 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 </Layout>
 
 <script>
+	window.addEventListener('popstate', (e) => {
+		document.querySelector('.popup').classList.remove('popup-show');
+		document.querySelector('.info-card').classList.remove('info-card-show');
+	})
+	
 	const popupEl = document.querySelector('.popup');
 	document.getElementById('exit').addEventListener('click', () => {
-		//document.querySelector('.popup').style.display = 'none';
-		// document.querySelector('.popup').style.opacity = '0';
-		// document.querySelector('.popup').style.pointerEvents = 'none';
-		// document.querySelector('.popup').style.top = '10%';
 		document.querySelector('.popup').classList.remove('popup-show');
 		document.querySelector('.info-card').classList.remove('info-card-show');
 	})
@@ -150,11 +151,12 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 	})
 
 	document.querySelector('.popup').addEventListener('scroll', (e) => {
-
+		
 		e.stopPropagation();
 	})
 
 	document.querySelector('.info-card').addEventListener('click', (e) => {
+		
 		e.stopPropagation();
 	})
 
@@ -165,6 +167,7 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 			const url = new URL(location);
 			url.searchParams.set("q", encodeURI(e.getAttribute('data-title')));
 			history.pushState({}, "", url)
+
 			// document.querySelector('.popup').style.top = '0%';
 			// popupEl.style.display = 'flex';
 			// document.querySelector('.popup').style.pointerEvents = 'auto';
