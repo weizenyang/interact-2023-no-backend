@@ -312,13 +312,13 @@
           ]
         },
         {
-          "text": "Course E - Part 1: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+          "text": "Course E: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
           "location": "CSE/082X",
           "hasInfo": true,
           "info": [
             {
               "id": "Course E",
-              "title": "Part 1: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+              "title": "How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
               "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
               "presenters": "Keith Andrews",
               "contact": [
@@ -578,6 +578,61 @@
           ]
         },
         {
+          "text": "Session D5: Virtual Reality",
+          "location": "CSE/082X",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1225",
+              "title": "AI in the Human Loop: The Impact of Differences in Digital Assistant Roles on the Personal Values of Users",
+              "authors": "Shakila Shayan , Marlies van Steenbergen, Koen van Turnhout, Zelda Zeegers, Somaya Ben Allouch, Maaike Harbers, Guido Evertzen, Janna Bruijning, Wieke van Boxtel, and Katarina Jerkovich",
+              "presenters": "shakila shayan",
+              "contact": [
+                {
+                  "name": "Shayan, Shakila",
+                  "email": "shakila.shayan@hu.nl"
+                }
+              ]
+            },
+            {
+              "id": "FP1194",
+              "title": "“A solution to a problem that didn’t exist?”: Exploring Attitudes Towards Smart Streetlight Systems",
+              "authors": "Anna-Lena Theus and Sonia Chiasson",
+              "presenters": "Anna-Lena Theus",
+              "contact": [
+                {
+                  "name": "Theus, Anna-Lena",
+                  "email": "annatheus@cmail.carleton.ca"
+                }
+              ]
+            },
+            {
+              "id": "FP1189",
+              "title": "Evaluation of the Roles of Intelligent Technologies in Shared Activity Spaces of Neighborhood Communities",
+              "authors": "Jouko Makkonen, Rita Latikka, Rosana Rubio-Hernández, and Kaisa Väänänen",
+              "presenters": "Jouko Makkonen",
+              "contact": [
+                {
+                  "name": "Makkonen, Jouko",
+                  "email": "jouko.makkonen@tuni.fi"
+                }
+              ]
+            },
+            {
+              "id": "SP1150",
+              "title": "Problematizing “Empowerment” in HCAI",
+              "authors": "John S. Seberger, Hyesun Choung, and Prabu David",
+              "presenters": "John S. Seberger",
+              "contact": [
+                {
+                  "name": "Seberger, John",
+                  "email": "jss436@drexel.edu"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "text": "Course B - Part 1: Disability, Design and Innovation for a Fairer World",
           "location": "CSE/082X",
           "hasInfo": true,
@@ -591,26 +646,6 @@
                 {
                   "name": "Tigmanshu Bhatnagar",
                   "email": "t.bhatnagar.18@ucl.ac.uk"
-                }
-              ],
-              "href": "courses"
-            }
-          ]
-        },
-        {
-          "text": "Course E - Part 2: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
-          "location": "CSE/082X",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "Course E",
-              "title": "Part 2: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
-              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
-              "presenters": "Keith Andrews",
-              "contact": [
-                {
-                  "name": "Chiara Natali",
-                  "email": "chiara.natali@unimib.it"
                 }
               ],
               "href": "courses"
@@ -891,7 +926,7 @@
               "id": "Course B",
               "title": "Part 2: Disability, Design and Innovation for a Fairer World",
               "authors": "Catherine Holloway, Ben Oldfrey, Maryam Bandukda, Daniel Hajas, Tigmanshu Bhatnagar",
-              "presenters": "Keith Andrews",
+              "presenters": "Tigmanshu Bhatnagar",
               "contact": [
                 {
                   "name": "Tigmanshu Bhatnagar",
