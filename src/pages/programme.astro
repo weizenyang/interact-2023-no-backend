@@ -189,7 +189,22 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 
 	// console.log(templates);
 	window.addEventListener("popstate", () => {
-		closePopup();
+		const urlParams = new URLSearchParams(window.location.search);
+		const qParam = urlParams.get('q');
+		const kParam = urlParams.get('k');
+		const wTitle = document.querySelectorAll(".hasInfo")
+
+		if(qParam){
+			wTitle.forEach((e) => {
+
+			if(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, '') == decodeURI(qParam).toLowerCase().replace(/\s/g, '')){
+				
+				console.log(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, ''))
+				console.log(decodeURI(qParam).toLowerCase().replace(/\s/g, ''))
+				checkUrl(e)
+			}
+		})
+		}
 	});
 
 	function highlight(target) {
@@ -267,11 +282,25 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	});
 
 	document.querySelectorAll(".hasInfo").forEach((e) => {
+
+		e.addEventListener("click", () => {
+			checkUrl(e);
+		})
+		
+	});
+
+	function showPopup(){
+		document.querySelector(".popup").classList.add("popup-show");
+				document
+					.querySelector(".info-card")
+					.classList.add("info-card-show");
+				document.querySelector(".details").scrollTop = 0;
+	}
+
+	function checkUrl(e){
 		const template = e.querySelector("template");
 		if (template) {
-			//Enable popup
-			e.addEventListener("click", () => {
-				const url = new URL(location);
+			const url = new URL(location);
 				url.searchParams.set(
 					"q",
 					encodeURI(e.querySelector(".session-name").innerText)
@@ -297,11 +326,8 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				console.log(currentIndex);
 
 				scrollToTarget(e.querySelector(".session-name").innerText);
-				document.querySelector(".popup").classList.add("popup-show");
-				document
-					.querySelector(".info-card")
-					.classList.add("info-card-show");
-				document.querySelector(".details").scrollTop = 0;
+				showPopup(e)
+
 
 				//Append template content to popup
 				const content = template.content.cloneNode(true);
@@ -310,9 +336,9 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				document.querySelector(".content-1").appendChild(content);
 
 				updateButtons();
-			});
 		}
-	});
+		
+	}
 
 	document.querySelectorAll(".next-button").forEach((e) => {
 		e.addEventListener("click", () => {
@@ -347,6 +373,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				currentIndex--;
 				const template =
 					templates[currentIndex].querySelector("template");
+					console.log(template);
 				document.querySelector(".session-title").innerText =
 					template.getAttribute("data-session");
 				document.querySelector(".session-time").innerText =
@@ -491,7 +518,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	.popup {
 		position: fixed;
 		display: flex;
-		top: 0;
+		top: 100%;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -522,7 +549,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 
 	.info-card {
 		position: fixed;
-		top: 100%;
+		top: 200vh;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 		display: flex;
@@ -534,6 +561,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		max-height: 1100px;
 		transition: opacity 0.1s, top 0.4s;
 		border-radius: 5px;
+		pointer-events: none;
 	}
 
 	.info-card {

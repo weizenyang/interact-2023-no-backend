@@ -1,0 +1,10 @@
+{
+    "author": "Jonathan Lazar",
+    "association": "Professor, College of Information Studies, University of Maryland and Executive Director, Maryland Initiative for Digital Accessibility (MIDA), USA",
+    "date": "31th August",
+    "title": "A framework for born-accessible development of software and digital content",
+    "day" : "4",
+    "time": "",
+    "bio" : "",
+    "abstract": "Digital technologies and content are often designed without considering the needs of people with disabilities. This means that people with disabilities may be excluded from education, employment, healthcare, and commerce which often require the use of digital technologies and content which are not accessible. If people with disabilities notify the developers or owners, or in some cases take legal action, those digital technologies and/or content are then sometimes retrofitted to become accessible. However, retrofitting for accessibility is problematic for a number of reasons. This keynote will focus on the born-accessible approach to design and development, where accessibility is considered as a primary design goal from the start, people with disabilities are included from the start, and nothing is released that is inaccessible. The born-accessible approach has at least three benefits: 1) When technology is built from scratch to be accessible, people with disabilities receive access to the technologies or content at the same time as everyone else, 2) When using the born-accessible approach, building for accessibility is inexpensive, and 3) Technologies and content that are born-accessible are inherently flexible and innovative, and are more usable by everyone. This keynote will describe the concepts of the born-accessible approach, present examples of the born-accessible approach, and describe a framework for future research into the born-accessible approach."
+}

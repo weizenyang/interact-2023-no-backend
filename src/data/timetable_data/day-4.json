@@ -15,10 +15,16 @@
       "item": [
         {
           "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
-          "author": "Prof. Jonathan Lazar, University of Maryland, USA",
+          "author": " Jonathan Lazar, University of Maryland, USA",
           "location": "Large lecture theatre (PZA/103)",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+            "title": "A Framework for Born-Accessible Development of Software and Digital Content",
+            "authors": "Jonathan Lazar, University of Maryland, USA",
+            "href": "keynote"
+          }
+          ]
         }
       ]
     },

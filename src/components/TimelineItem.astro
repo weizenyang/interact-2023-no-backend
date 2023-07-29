@@ -42,7 +42,7 @@ name.map((e) => {
         {
             name.map((e) =>
                 e.hasInfo ? (
-                    <div class={e.info.length < 1 ? "timetable-text hasInfo butNoInfo" : "timetable-text hasInfo"} id={e.id}>
+                    <div class={e.info.length < 1 ? "timetable-text hasInfo butNoInfo" : "timetable-text hasInfo"} id={e.text.toLowerCase().includes('keynote') ? e.author.replace(/\s/g, "").toLowerCase().split(",")[0] : e.id}>
                         {e.text && <p class="session-name bold">{e.text}</p>}
                         {e.location && (
                             <p
@@ -62,7 +62,7 @@ name.map((e) => {
                                         <p class="info-card-id">{i.id}</p>
                                         <h2 class="info-card-title">{i.title}</h2>
                                         <p class="info-card-authors">Authors: {i.authors}</p>
-                                        <p class="info-card-presenters">Presenters: {i.presenters}</p>
+                                        {i.presenters && <p class="info-card-presenters">Presenters: {i.presenters}</p>}
 
                                         {i.contact != undefined && i.contact.map((contact) => 
                                             <a href={"mailto:" + contact.email}>Contact: {contact.email}</a>
@@ -72,6 +72,12 @@ name.map((e) => {
                                                 <a href={`/courses?q=${encodeURI(i.title.split(":").length > 0 ? i.title.split(":")[1] : i.title)}`}>Read More ></a>
                                             </button>
                                         </p>}
+                                        {i.href == 'keynote' && <p>
+                                            <button class="bold">
+                                                <a href={`/keynotes?q=${encodeURI(i.authors.split(",").length > 0 ? i.authors.split(",")[0] : i.authors)}`}>Read Abstract ></a>
+                                            </button>
+                                        </p>}
+                                        
                                         
                                         
                                     </div>

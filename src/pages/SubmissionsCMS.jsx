@@ -192,6 +192,8 @@ const Content = ({ section }) => {
 									<img className="external" src="/download.svg" alt="External Page" />
 								</a>
 
+
+
 								{!fpItem && (
 
 									<a className="file" href="/INTERACT2023-Contract_Book_Contributor_Consent_to_Publish_IFIP_SIP.pdf" target="_blank">
@@ -223,11 +225,6 @@ const Content = ({ section }) => {
 									</a>
 
 								)}
-
-
-
-
-
 
 							</div>
 						</div>

@@ -30,12 +30,19 @@
       "time": "11:30 - 12:30",
       "item": [
         {
-          "text": "Opening Keynote",
-          "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+          "text": "Opening Keynote: Why we do what we do – HCI and societal impact",
+          "author": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
           "location": "Large lecture theatre (PZA/103)",
           "hasInfo": true,
-          "info": [],
-          "href": ""
+          "info": [
+            {
+            "title": "Why we do what we do – HCI and societal impact",
+            "authors": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+            "href": "keynote"
+            }
+          ]
+          
+          
         }
       ]
     },
@@ -332,19 +339,19 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "Course A",
-              "title": "Part 1: Introduction to Information Visualisation",
-              "authors": "Keith Andrews",
-              "presenters": "Keith Andrews",
-              "contact": [
-                {
-                  "name": "Andrews, Keith",
-                  "email": "kandrews@tugraz.at"
-                }
-              ],
-              "href": "courses"
-            }
-          ]
+            "id": "Course A",
+            "title": "Part 1: Introduction to Information Visualisation",
+            "authors": "Keith Andrews",
+            "presenters": "Keith Andrews",
+            "contact": [
+              {
+                "name": "Andrews, Keith",
+                "email": "kandrews@tugraz.at"
+              }
+            ],
+            "href" : "title"
+          }
+        ]
         },
         {
           "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
@@ -352,19 +359,19 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "Course F",
-              "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
-              "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-              "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-              "contact": [
-                {
-                  "name": "Marta Larusdottir",
-                  "email": "marta@ru.is"
-                }
-              ],
-              "href": "courses"
-            }
-          ]
+            "id": "Course F",
+            "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+            "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "contact": [
+              {
+                "name": "Marta Larusdottir",
+                "email": "marta@ru.is"
+              }
+            ],
+            "href" : "title"
+          }
+        ]
         }
       ]
     },
@@ -659,7 +666,7 @@
                   "email": "kandrews@tugraz.at"
                 }
               ],
-              "href": "courses"
+              "href" : "title"
             }
           ]
         },
@@ -679,10 +686,10 @@
                   "email": "marta@ru.is"
                 }
               ],
-              "href": "courses"
+              "href" : "title"
             }
           ],
-          "href": "courses"
+          "href" : "title"
         },
         {
           "text": "Panel 2: Ethical Value Exchange in HCI",
@@ -696,11 +703,17 @@
       "time": "17:15 - 18:30",
       "item": [
         {
-          "text": "Keynote",
+          "text": "Keynote: Inclusive design in the NHS - the practical reality of strategic inclusive design",
           "author": "Rochelle Gold, User Research, NHS England",
           "location": "Large lecture theatre (PZA/103)",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+            "title": "Inclusive design in the NHS: the practical reality of strategic inclusive design",
+            "authors": "Rochelle Gold, User Research, NHS England",
+            "href": "keynote"
+            }
+          ]
         }
       ]
     },
