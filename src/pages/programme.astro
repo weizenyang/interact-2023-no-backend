@@ -188,6 +188,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 
 
 	// console.log(templates);
+	var prevParam;
 	window.addEventListener("popstate", () => {
 		const urlParams = new URLSearchParams(window.location.search);
 		const qParam = urlParams.get('q');
@@ -198,7 +199,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			wTitle.forEach((e) => {
 
 			if(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, '') == decodeURI(qParam).toLowerCase().replace(/\s/g, '')){
-				
+				prevParam = decodeURI(qParam).toLowerCase().replace(/\s/g, '')
 				console.log(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, ''))
 				console.log(decodeURI(qParam).toLowerCase().replace(/\s/g, ''))
 				checkUrl(e)
@@ -280,6 +281,16 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		document.querySelector(".popup").classList.remove("popup-show");
 		document.querySelector(".info-card").classList.remove("info-card-show");
 	});
+
+	document.querySelectorAll(".programmes-nav-button").forEach((e) => {
+		e.addEventListener("click", () => {
+		const url = new URL(location);
+				url.searchParams.delete(
+					"q"
+				);
+				history.pushState({}, "", url);
+	})
+	})
 
 	document.querySelectorAll(".hasInfo").forEach((e) => {
 

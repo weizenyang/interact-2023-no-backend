@@ -41,7 +41,7 @@
       "or": true,
       "item": [
         {
-          "text": "Session C1: User Studies",
+          "text": "Session C1: Haptic Interaction",
           "location": "CSE/082X",
           "hasInfo": true,
           "info": [
@@ -96,7 +96,7 @@
           ]
         },
         {
-          "text": "Session C2: Accessibility",
+          "text": "Session C2: Accessibility & Aging",
           "location": "CSE/082X",
           "hasInfo": true,
           "info": [
@@ -151,7 +151,7 @@
           ]
         },
         {
-          "text": "Session C3: Model-Based UI Design",
+          "text": "Session C3: Methodology for HCI",
           "location": "CSE/082X",
           "hasInfo": true,
           "info": [
@@ -194,7 +194,7 @@
           ]
         },
         {
-          "text": "Session C4: Interaction with Conversational agents I",
+          "text": "Session C4: Recommendation systems & AI explainability",
           "location": "CSE/082X",
           "hasInfo": true,
           "info": [
@@ -249,7 +249,7 @@
           ]
         },
         {
-          "text": "Session C5: 3D Interaction",
+          "text": "Session C5: User Movements & 3D Environments",
           "location": "CSE/082X",
           "hasInfo": true,
           "info": [

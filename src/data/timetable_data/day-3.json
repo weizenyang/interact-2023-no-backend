@@ -193,7 +193,7 @@
           ]
         },
         {
-          "text": "Session A3: Model-Based UI Design",
+          "text": "Session A3: Model-Based UI Design and Testing",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -388,7 +388,7 @@
       "or": true,
       "item": [
         {
-          "text": "Session B1: User Studies",
+          "text": "Session B1: Data Physicalisation and Cross-Device",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -443,7 +443,7 @@
           ]
         },
         {
-          "text": "Session B2: Accessibility",
+          "text": "Session B2: Interacting with Children",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -510,7 +510,7 @@
           ]
         },
         {
-          "text": "Session B3: Model-Based UI Design",
+          "text": "Session B3: Information Visualization",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -553,7 +553,7 @@
           ]
         },
         {
-          "text": "Session B4: Interaction with Conversational agents I",
+          "text": "Session B4: Natural Language Processing and AI Explainability",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -608,7 +608,7 @@
           ]
         },
         {
-          "text": "Session B5: 3D Interaction",
+          "text": "Session B5: Motion Sickness, Stress ",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -704,7 +704,7 @@
       "item": [
         {
           "text": "Keynote: Inclusive design in the NHS - the practical reality of strategic inclusive design",
-          "author": "Rochelle Gold, User Research, NHS England",
+          "author": "Head of User Research, Transformation Directorate, NHS England",
           "location": "Large lecture theatre (PZA/103)",
           "hasInfo": true,
           "info": [
