@@ -917,30 +917,14 @@ flex-direction: row;
 	var containerTop = document.querySelector('.registration-content-1').getBoundingClientRect().top;
 	console.log(window.innerWidth);
 	if (containerTop <= 0 && window.innerWidth < 830) {
-
-		console.log("this should be displayed");
 			document.querySelector(".horizontal-list").style.display = "flex";
 
 	}
 	if (containerTop > 0 || window.innerWidth > 830) {
-		console.log("this should be hidden");
 		document.querySelector(".horizontal-list").style.display = "none";
 		
 	}
 	}, 1);
 
-	// gsap.fromTo(".horizontal-list", {
-	// 	y: -100,
 
-	// },
-	// {
-	// 	scrollTrigger: ".registration-content-1",
-	// 	y: 0
-	// });
-
-	// gsap.fromTo(".horizontal-list", 
-	// {
-	// 	// scrollTrigger: ".registration-content-1",
-	// 	y: 100
-	// });
 </script>
