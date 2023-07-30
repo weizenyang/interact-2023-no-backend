@@ -14,11 +14,17 @@
       "time": "8:30 - 9:30",
       "item": [
         {
-          "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
+          "text": "Keynote: Interactive Healthcare Technologies for Complex Contexts",
           "author": "Ann Blandford, University College London, UK",
           "location": "Large lecture theatre (PZA/103)",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "title": "Interactive Healthcare Technologies for Complex Contexts",
+              "authors": "Ann Blandford, University College London, UK",
+              "href": "keynote"
+            }
+          ]
         }
       ]
     },
@@ -82,7 +88,7 @@
           ]
         },
         {
-          "text": "Session F2: Accessibility for Auditory / Hearing disabilities",
+          "text": "Session F2: Accessibility for Hearing Disabilities",
           "location": "CSE/102X",
           "hasInfo": true,
           "info": [
@@ -587,8 +593,17 @@
       "time": "15:45 - 16:45",
       "item": [
         {
-          "text": "Closing keynote: Prof. Mike Evans, UX Research Lead, BBC Research and Development, UK",
-          "location": "Large Lecture Theatre (PZA/103)"
+          "text": "Closing keynote: Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
+          "author": " Mike Evans, UX Research Lead, BBC Research and Development, UK",
+          "location": "Large Lecture Theatre (PZA/103)",
+          "hasInfo" : true,
+          "info" : [
+            {
+              "title": "Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
+              "authors": "Mike Evans, UX Research Lead, BBC Research and Development, UK",
+              "href": "keynote"
+            }
+          ]
         }
       ]
     },

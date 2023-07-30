@@ -30,12 +30,19 @@
       "time": "11:30 - 12:30",
       "item": [
         {
-          "text": "Opening Keynote",
-          "author": "Prof. Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+          "text": "Opening Keynote: Why we do what we do – HCI and societal impact",
+          "author": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
           "location": "Large lecture theatre (PZA/103)",
           "hasInfo": true,
-          "info": [],
-          "href": ""
+          "info": [
+            {
+            "title": "Why we do what we do – HCI and societal impact",
+            "authors": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+            "href": "keynote"
+            }
+          ]
+          
+          
         }
       ]
     },
@@ -186,7 +193,7 @@
           ]
         },
         {
-          "text": "Session A3: Model-Based UI Design",
+          "text": "Session A3: Model-Based UI Design and Testing",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -332,19 +339,19 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "Course A",
-              "title": "Part 1: Introduction to Information Visualisation",
-              "authors": "Keith Andrews",
-              "presenters": "Keith Andrews",
-              "contact": [
-                {
-                  "name": "Andrews, Keith",
-                  "email": "kandrews@tugraz.at"
-                }
-              ],
-              "href": "courses"
-            }
-          ]
+            "id": "Course A",
+            "title": "Part 1: Introduction to Information Visualisation",
+            "authors": "Keith Andrews",
+            "presenters": "Keith Andrews",
+            "contact": [
+              {
+                "name": "Andrews, Keith",
+                "email": "kandrews@tugraz.at"
+              }
+            ],
+            "href" : "courses"
+          }
+        ]
         },
         {
           "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
@@ -352,19 +359,19 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "Course F",
-              "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
-              "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-              "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-              "contact": [
-                {
-                  "name": "Marta Larusdottir",
-                  "email": "marta@ru.is"
-                }
-              ],
-              "href": "courses"
-            }
-          ]
+            "id": "Course F",
+            "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+            "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "contact": [
+              {
+                "name": "Marta Larusdottir",
+                "email": "marta@ru.is"
+              }
+            ],
+            "href" : "courses"
+          }
+        ]
         }
       ]
     },
@@ -381,7 +388,7 @@
       "or": true,
       "item": [
         {
-          "text": "Session B1: User Studies",
+          "text": "Session B1: Data Physicalisation and Cross-Device",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -436,7 +443,7 @@
           ]
         },
         {
-          "text": "Session B2: Accessibility",
+          "text": "Session B2: Interacting with Children",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -503,7 +510,7 @@
           ]
         },
         {
-          "text": "Session B3: Model-Based UI Design",
+          "text": "Session B3: Information Visualization",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -546,7 +553,7 @@
           ]
         },
         {
-          "text": "Session B4: Interaction with Conversational agents I",
+          "text": "Session B4: Natural Language Processing and AI Explainability",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -601,7 +608,7 @@
           ]
         },
         {
-          "text": "Session B5: 3D Interaction",
+          "text": "Session B5: Motional Sickness, Stress & Risk Pereception in 3D Environments",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -659,7 +666,7 @@
                   "email": "kandrews@tugraz.at"
                 }
               ],
-              "href": "courses"
+              "href" : "courses"
             }
           ]
         },
@@ -679,10 +686,9 @@
                   "email": "marta@ru.is"
                 }
               ],
-              "href": "courses"
+              "href" : "courses"
             }
-          ],
-          "href": "courses"
+          ]
         },
         {
           "text": "Panel 2: Ethical Value Exchange in HCI",
@@ -696,16 +702,22 @@
       "time": "17:15 - 18:30",
       "item": [
         {
-          "text": "Keynote",
-          "author": "Rochelle Gold, User Research, NHS England",
+          "text": "Keynote: Inclusive design in the NHS - the practical reality of strategic inclusive design",
+          "author": "Rochelle Gold, Head of User Research, Transformation Directorate, NHS England",
           "location": "Large lecture theatre (PZA/103)",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+            "title": "Inclusive design in the NHS: the practical reality of strategic inclusive design",
+            "authors": "Rochelle Gold, Head of User Research, Transformation Directorate, NHS England",
+            "href": "keynote"
+            }
+          ]
         }
       ]
     },
     {
-      "time": "18:30 - 19:15",
+      "time": "18:30 - 20:00",
       "item": [
         {
           "text": "Welcome Reception"

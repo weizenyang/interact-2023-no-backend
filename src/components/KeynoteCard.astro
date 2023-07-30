@@ -2,21 +2,24 @@
 interface Props{
     image: string;
     title: string;
-    name: string;
     association: string;
+    bio?: string;
+    abstract?: string;
+    author?: string;
+    date?: string;
     time?: string;
     href?: string;
 }
 
-const { image, title, name, association, time, href } = Astro.props;
+const { abstract, image, title, author, association, time, href, bio, date} = Astro.props;
 ---
 
 <div class="keynote-card">
-    <img class="author-image desktop-author-info" src={image ? image : "/UOY.svg"} alt="" />
+    <img class="author-image desktop-author-info" src={image ? `/${image}` : "/UOY.svg"} alt="" />
     <div class="author-section">
-        <img class="author-image" src={image ? image : "/UOY.svg"} alt="" />
+        <img class="author-image" src={image ? `/${image}` : "/UOY.svg"} alt="" />
         <div class="author-info">
-            <h3 class="author-name">{name}</h3>
+            <h3 class="author-name">{author}</h3>
         <p>{association}</p>
         </div>
     </div>
@@ -24,9 +27,9 @@ const { image, title, name, association, time, href } = Astro.props;
     <div class="keynote-info">
         <div class="top">
             {
-                time && (
-                    <a class="keynote-time-container" href={href}>
-                        <p class="keynote-time">{time}</p>
+                date && (
+                    <a class="keynote-time-container"  href={author && "/programme#" +  author.toLowerCase().replace(/\s/g, '')}>
+                        <p class="keynote-time">{date}</p>
                     </a>
                 )
             }
@@ -34,10 +37,23 @@ const { image, title, name, association, time, href } = Astro.props;
         </div>
 
         <div class="desktop-author-info">
-            <h3 class="author-name">{name}</h3>
+            <h3 class="author-name">{author}</h3>
             <p>{association}</p>
         </div>
-        
+            <!-- Continue from here -->
+        <template data-title={title} data-author={author} data-image={image}>
+            {bio && <div class="item">
+                <h2>Bio:</h2>
+                <p>{bio}</p>
+            </div>}
+
+            {abstract && <div class="item">
+                <h2>Abstract:</h2>
+                <p>{abstract}</p>
+            </div>}
+            
+            
+        </template>
         
     </div>
 </div>
@@ -47,14 +63,37 @@ const { image, title, name, association, time, href } = Astro.props;
         margin: 0%;
     }
 
+    .item{
+        padding-top: 2em;
+    }
+
+    .item h2{
+        padding-bottom: 0.5em;
+        opacity: 0.75;
+    }
+
+    .project-title{
+        font-size: 1.25em;
+    }
+
     .keynote-card {
         display: flex;
         padding: 1em;
-        border: 1px solid #002c38;
+        border: 1px solid #002c3855;
         border-radius: 10px;
         margin-bottom: 1em;
         width: 49%;
         max-width: 900px;
+        
+        background-color: #ffffff99
+    }
+
+    .keynote-card h2{
+        cursor: pointer;
+    }
+
+    .keynote-card h2:hover {
+        text-decoration: underline;
     }
 
     .keynote-card:nth-child(odd){
@@ -77,6 +116,18 @@ const { image, title, name, association, time, href } = Astro.props;
         font-size: 0.8em;
         margin-left: 0%;
         border-radius: 15px;
+    }
+
+    .keynote-time:hover{
+        padding: 0.1em 0.6em;
+        color: var(--color-bg);
+        background-color: #002c38;
+        margin: auto;
+        margin-bottom: 0.4em;
+        font-size: 0.8em;
+        margin-left: 0%;
+        border-radius: 15px;
+        text-decoration: underline;
     }
 
 
@@ -121,6 +172,9 @@ const { image, title, name, association, time, href } = Astro.props;
     }
 
     @media screen and (max-width: 1399px) {
+        .keynote-container{
+            display: block;
+        }
         .keynote-card{
             width: 100%;
         }

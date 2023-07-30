@@ -122,7 +122,7 @@ courses.map((e) => {
 
 	
 
-	<Footer/>
+	<Footer client:visible/>
 	
 </Layout>
 
@@ -130,8 +130,8 @@ courses.map((e) => {
 	let params = new URLSearchParams(window.location.search);
 	let course = params.get('q');
 	const wTitle = document.querySelectorAll(`[data-title]`)
-
-	wTitle.forEach((e) => {
+	if(course){
+		wTitle.forEach((e) => {
 		console.log(e.getAttribute('data-title').toLowerCase().replace(/\s/g, ''))
 		console.log(course.toLowerCase().replace(/\s/g, ''))
 		if(e.getAttribute('data-title').toLowerCase().replace(/\s/g, '') == course.toLowerCase().replace(/\s/g, '')){
@@ -139,6 +139,8 @@ courses.map((e) => {
 			document.querySelector('#back').style.display = 'flex';
 		}
 	})
+	}
+	
 
 	document.querySelector('#back').addEventListener('click', (e) => {
 		window.history.back();
