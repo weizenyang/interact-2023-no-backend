@@ -666,7 +666,7 @@
                   "email": "kandrews@tugraz.at"
                 }
               ],
-              "href" : "title"
+              "href" : "courses"
             }
           ]
         },
@@ -686,10 +686,9 @@
                   "email": "marta@ru.is"
                 }
               ],
-              "href" : "title"
+              "href" : "courses"
             }
-          ],
-          "href" : "title"
+          ]
         },
         {
           "text": "Panel 2: Ethical Value Exchange in HCI",
