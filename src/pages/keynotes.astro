@@ -25,7 +25,7 @@ const sortedFiles = files.sort(({day : a}, {day : b}) =>
             sortedFiles.map((e) => (
               <KeynoteCard
                 date={e.date}
-                image={e.author.replace(/\s/g, "").concat(".jpg")}
+                image={e.author.toLowerCase().replace(/\s/g, "-").concat(".jpg")}
                 author={e.author}
                 association={e.association}
                 title={e.title}

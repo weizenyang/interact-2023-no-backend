@@ -12,6 +12,8 @@ export interface Props {
         location?: string;
         id?: string;
         href? : string;
+        link? : string;
+        button_text? : string;
         info: {
             title?: string;
             authors?: string;
@@ -58,10 +60,13 @@ name.map((e) => {
                         )}
                         {e.info.length > 0 && <template data-session={e.text} data-time={"Day " + day + ", " + time}>
                             {e.info.map((i) => 
+                                <div>
+                                    
                                     <div class="subject">
                                         <p class="info-card-id">{i.id}</p>
                                         <h2 class="info-card-title">{i.title}</h2>
-                                        <p class="info-card-authors">Authors: {i.authors}</p>
+                                        {i.authors && <p class="info-card-authors">Authors: {i.authors}</p>}
+                                        {i.text && <p class="info-card-authors">{i.text}</p>}
                                         {i.presenters && <p class="info-card-presenters">Presenters: {i.presenters}</p>}
 
                                         {i.contact != undefined && i.contact.map((contact) => 
@@ -77,10 +82,13 @@ name.map((e) => {
                                                 <a href={`/keynotes?q=${encodeURI(i.authors.split(",").length > 0 ? i.authors.split(",")[0] : i.authors)}`}>Read Abstract ></a>
                                             </button>
                                         </p>}
-                                        
-                                        
-                                        
+                                        {i.href == 'other' && <p>
+                                            <button class="bold">
+                                                <a href={i.link} target="_blank">{i.button_text} ></a>
+                                            </button>
+                                        </p>}
                                     </div>
+                                </div>
                                     
                          )}
                          
@@ -90,14 +98,17 @@ name.map((e) => {
                     </div>
                     )
                  : (
-                    <p class="timetable-text bold">{e.text}</p>
+                        <p class="timetable-text bold">{e.text} {or == false && <span class="and">&</span>}</p>
+                        
+
+                    
                 )
             )
         }
     </div>
 
     <div class="everything-centered">
-        {or && <p class="bold or">OR</p>}
+        {or == true && <p class="bold or">OR</p>}
     </div>
 
     <style>
@@ -143,6 +154,16 @@ name.map((e) => {
             border-left: solid 0px #000000;
             /* background-color: #002C38; */
             /* color: #FCF7EB */
+        }
+
+        .and{
+            display: flex;
+            padding: 1em;
+            padding-left: 0em;
+            font-family: "AH-R";
+            /* font-size: 0.8em; */
+            opacity: 0.9;
+            text-align: center;
         }
 
         .offset{

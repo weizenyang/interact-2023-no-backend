@@ -44,7 +44,11 @@
       },
       {
         "time": "13:30 - 15:00",
+        "or": false,
         "item": [
+          {
+            "text": "INTERACT Workshops / BCS Conference"
+          },
           {
             "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
             "location": "TBA",
@@ -77,7 +81,11 @@
       },
       {
         "time": "15:30 - 17:00",
+        "or": false,
         "item": [
+          {
+            "text": "INTERACT Workshops / BCS Conference"
+          },
           {
             "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
             "location": "TBA",

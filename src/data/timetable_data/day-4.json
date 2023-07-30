@@ -11,7 +11,7 @@
       ]
     },
     {
-      "time": "8:00 - 9:30",
+      "time": "8:30 - 9:30",
       "item": [
         {
           "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
@@ -29,15 +29,7 @@
       ]
     },
     {
-      "time": "11:00 - 13:30",
-      "item": [
-        {
-          "text": "Lunch"
-        }
-      ]
-    },
-    {
-      "time": "14:15 - 15:45",
+      "time": "9:30 - 11:00",
       "or": true,
       "item": [
         {
@@ -151,7 +143,7 @@
           ]
         },
         {
-          "text": "Session C3: Methodology for HCI",
+          "text": "Session C3: Methodologies for HCI",
           "location": "TBA",
           "hasInfo": true,
           "info": [
@@ -334,7 +326,7 @@
       ]
     },
     {
-      "time": "13:45 - 15:15",
+      "time": "11:00 - 11:30",
       "item": [
         {
           "text": "Coffee Break"
@@ -342,7 +334,7 @@
       ]
     },
     {
-      "time": "13:45 - 15:15",
+      "time": "11:30 - 13:30",
       "or": true,
       "item": [
         {
@@ -663,7 +655,7 @@
       ]
     },
     {
-      "time": "13:45 - 15:15",
+      "time": "14:15 - 15:45",
       "or": true,
       "item": [
         {
@@ -954,7 +946,7 @@
       ]
     },
     {
-      "time": "16:15",
+      "time": "16:15 - 19:00",
       "item": [
         {
           "text": "Meetings and Networking"
@@ -966,7 +958,21 @@
       "item": [
         {
           "text": "Conference Dinner",
-          "location": "Merchant Adventurers Hall, Central York"
+          "location": "Merchant Adventurers Hall, Central York",
+          "hasInfo" : true,
+          
+          "info" : [
+            {
+              "id": "Dinner",
+              "title": "Conference Dinner",
+              "href" : "other",
+              "text" : "Location: Merchant Adventurers Hall, Central York",
+              "link" : "https://www.merchantshallyork.org/",
+              "button_text": "Check Location"
+              
+              
+            }
+          ]
         }
       ]
     }
