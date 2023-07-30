@@ -17,7 +17,7 @@ const { abstract, image, title, author, association, time, href, bio, date} = As
 <div class="keynote-card">
     <img class="author-image desktop-author-info" src={image ? image : "/UOY.svg"} alt="" />
     <div class="author-section">
-        <img class="author-image" src={image ? "/" + image : "/UOY.svg"} alt="" />
+        <img class="author-image" src={image ? `/${image}` : "/UOY.svg"} alt="" />
         <div class="author-info">
             <h3 class="author-name">{author}</h3>
         <p>{association}</p>
