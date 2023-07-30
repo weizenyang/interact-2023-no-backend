@@ -109,7 +109,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 						<button class="info-card-button next-button"> ></button>
 					</div>
 					<article class="details">
-						<div class="content-1 sc" id="details">
+						<div class="content-1" id="details">
 							<button class="exit" id="exit">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -451,9 +451,12 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	function updateButtons() {
 		//Lookup system
 		const findKey = Object.keys(templates).find(
-			(key) =>
+			(key) =>{
 				templates[key].querySelector("template").dataset.session ===
 				document.querySelector(".session-title").innerText
+				document.querySelector("#details").scrollTop = 0;
+			}
+				
 		);
 
 		if (findKey < 1) {
