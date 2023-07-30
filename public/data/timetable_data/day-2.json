@@ -46,7 +46,24 @@
         "time": "13:30 - 15:00",
         "item": [
           {
-            "text": "Workshops"
+            "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+            "location": "TBA",
+            "hasInfo": true,
+            "info": [
+              {
+              "id": "Course A",
+              "title": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+              "authors": "Chris Rourke, John Goodall",
+              "presenters": "Chris Rourke",
+              "contact": [
+                {
+                  "name": "Rourke, Chris",
+                  "email": "chris@uservision.co.uk"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
           }
         ]
       },
@@ -62,7 +79,24 @@
         "time": "15:30 - 17:00",
         "item": [
           {
-            "text": "Workshops"
+            "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+            "location": "TBA",
+            "hasInfo": true,
+            "info": [
+              {
+              "id": "Course A",
+              "title": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+              "authors": "Chris Rourke, John Goodall",
+              "presenters": "Chris Rourke",
+              "contact": [
+                {
+                  "name": "Rourke, Chris",
+                  "email": "chris@uservision.co.uk"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
           }
         ]
       }
