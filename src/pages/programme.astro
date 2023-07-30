@@ -270,6 +270,8 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	function closePopup() {
 		document.querySelector(".popup").classList.remove("popup-show");
 		document.querySelector(".info-card").classList.remove("info-card-show");
+		const template = templates[currentIndex].querySelector("template");
+		scrollToTarget(template.getAttribute("data-session"));
 	}
 
 	document.querySelector(".session-info").addEventListener("click", () => {
@@ -305,7 +307,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 				document
 					.querySelector(".info-card")
 					.classList.add("info-card-show");
-				document.querySelector(".details").scrollTop = 0;
+				document.querySelector("#details").scrollTop = 0;
 	}
 
 	function checkUrl(e){
@@ -364,7 +366,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 					template.getAttribute("data-session");
 				document.querySelector(".session-time").innerText =
 					template.getAttribute("data-time");
-				scrollToTarget(template.getAttribute("data-session"));
+				
 				const content = template.content.cloneNode(true);
 				console.log(content);
 				document.querySelector(".content-1").innerHTML = "";
@@ -382,14 +384,15 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			if (templates[currentIndex - 1] != undefined) {
 				console.log("Prev");
 				currentIndex--;
+
 				const template =
 					templates[currentIndex].querySelector("template");
-					console.log(template);
+
 				document.querySelector(".session-title").innerText =
 					template.getAttribute("data-session");
 				document.querySelector(".session-time").innerText =
 					template.getAttribute("data-time");
-				scrollToTarget(template.getAttribute("data-session"));
+				
 				const content = template.content.cloneNode(true);
 				// console.log(content);
 				document.querySelector(".content-1").innerHTML = "";
