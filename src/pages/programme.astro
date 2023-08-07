@@ -36,6 +36,14 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 					>Day 5</a
 				>
 			</div>
+				<div class="updates">
+					<strong>Update:</strong> To find out when your paper is scheduled, search the list of sessions, papers and authors in the pdf below:
+					<br>
+					<a class="hollow-button pdf-version" href="/INTERACT programme v1.pdf" target="_blank"><img src="/pdf.svg">INTERACT sessions papers</a>
+				</div>
+
+
+			
 			<section class="programmes-section-2">
 				{
 					files.map((e) => (
@@ -517,6 +525,8 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		margin: 0%;
 	}
 
+
+
 	.pdf-version{
 		padding: 0.5em 1em !important;
 		background-color: #FFC22300;
@@ -763,6 +773,10 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 
 	content {
 		border-bottom: 1px solid #002c38;
+	}
+
+	.hollow-button{
+		background-color: var(--color-bg)
 	}
 
 	p a {
@@ -1120,7 +1134,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	}
 
 	.title {
-		font-family: "SYNCOPATE";
+		font-family: "S-B";
 		/* height: 50%; */
 		padding: 0em;
 		/* padding-bottom: 3em; */

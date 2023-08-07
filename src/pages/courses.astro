@@ -13,7 +13,7 @@ import PreFooterModular from '@source/components/PreFooterModular.astro';
 
 const courses = await Astro.glob('/src/data/courses_data/*.json')
 courses.map((e) => {
-	console.log(e.contacts)
+	console.log(e.buttons)
 })
 ---
 
@@ -36,7 +36,10 @@ courses.map((e) => {
 					time={course.event_period.split("|")[1]}
 					mode={course.type}
 					contacts={course.contacts}
-					authors={course.authors}/>)}
+					authors={course.authors}
+					buttons={course.buttons}/>)}
+
+
 				</div>
 
 
@@ -57,12 +60,16 @@ courses.map((e) => {
 						<h1 id="workshop-title">
 							<!-- {title} -->
 						</h1>
+						<div id="buttons-container">
+
+						</div>
 						<button class="exit" id="exit">
 							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000000" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
 						</button>
 						<p class="no-margin" id="workshop-description">
 							<!-- {description} -->
 						</p>
+						<br>
 						<hr class="solid-line">
 						
 						<!-- <div class="items">
@@ -194,6 +201,7 @@ courses.map((e) => {
 	})
 
 	function showPopup(e){
+		document.querySelector('#buttons-container').innerHTML = ""
 		document.querySelector('.popup').classList.add('popup-show');
 			document.querySelector('.info-card').classList.add('info-card-show');
 			document.querySelector('.details').scrollTop = 0;
@@ -206,6 +214,7 @@ courses.map((e) => {
 			document.querySelector('#workshop-enquiries').innerHTML = e.getAttribute('data-contacts');
 			document.querySelector('#workshop-period').innerHTML = e.getAttribute('data-date');
 			document.querySelector('#workshop-mode').innerHTML = e.getAttribute('data-mode');
+			document.querySelector('#buttons-container').appendChild(e.querySelector('template').content.cloneNode(true));
 			document.querySelector('#workshop-authors').innerHTML = ""
 			authors.forEach((e) => {
 				const paragraph = document.createElement('p')
