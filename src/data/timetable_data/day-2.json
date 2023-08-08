@@ -62,7 +62,7 @@
               "contact": [
                 {
                   "name": "Rourke, Chris",
-                  "email": "chris@uservision.co.uk"
+                  "email": "info@uxqb.org"
                 }
               ],
               "href" : "courses"
@@ -98,11 +98,12 @@
               "presenters": "Chris Rourke",
               "contact": [
                 {
-                  "name": "Rourke, Chris",
-                  "email": "chris@uservision.co.uk"
+                  "name": "UXQB",
+                  "email": "info@uxqb.org"
                 }
               ],
               "href" : "courses"
+              
             }
           ]
           }

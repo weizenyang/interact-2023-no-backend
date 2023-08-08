@@ -70,6 +70,29 @@ const { title } = Astro.props;
 		box-sizing: border-box;
 	}
 
+	code {
+		background-color: #002C38ee;
+		color: aliceblue;
+		font-family: monospace;
+		padding: 0.25em 0.35em;
+		margin: 0.1em 0.05em;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 0.9em;
+	}
+
+	.updates{
+		background: rgb(245,240,240);
+		/* background: radial-gradient(circle, rgba(245,240,240,1) 0%, rgba(255,194,35,1) 100%); */
+		/* color: var(--color-bg); */
+		box-shadow: inset 0px 0px 100px rgba(255,255, 255,1);
+		border-radius: 15px;
+		padding: 1em;
+		margin: 1em;
+		padding-bottom: 2em;
+	}
+
+
 	:root {
 		--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
@@ -141,7 +164,7 @@ const { title } = Astro.props;
 	}
 
 	em{
-		display: block;
+		/* display: block; */
 		font-family: 'AH-B';
 		font-style: normal;
 

@@ -9,9 +9,16 @@
     }
   ],
   "type": "Long course",
-  "contacts": "Chris Rourke [chris@uservision.co.uk](mailto:chris@uservision.co.uk)",
+  "contacts": "UXQB [info@uxqb.org](mailto:info@uxqb.org)",
   "title": "Crash course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-  "website": " https://matthiasbaldauf.com/smartconv23/",
-  "description": "The Certified Professional for Usability and User Experience (CPUX) is a qualification scheme for all people who are involved in projects where interactive systems (software, hardware, interactive services) are being designed and developed. The goal is to have a unified understanding among team members about usability, user experience (UX) and human-centred design (HCD) to enable effective, efficient and satisfactory collaboration in projects, whilst minimising the risk of failure from the users’ perspective. The UXQB (International Usability and User Experience Qualification board) has been developing and maintaining the scheme since 2013. More than 8,000 professionals around the globe have already been certified. For more details see www.uxqb.org. The UXQB offers certification exams for the following qualifications:\n - Foundation level (CPUX-F)\n - Advanced Level: User Requirements Engineering (CPUX-UR)\n - Advanced Level: Designing Solutions (CPUX-DS)\n - Advanced Level: Usability Testing and Evaluation (CPUX-UT)\n - Essentials in UX and HCD Management (CPUX-M)\n \nThis particular crash course will prepare you for the certification exam for the foundation level (CPUX-F).",
-  "keywords": ""
+  "website": " https://uxqb.org/en/",
+  "description": "The Certified Professional for Usability and User Experience (CPUX) is a qualification scheme for all people who are involved in projects where interactive systems (software, hardware, interactive services) are being designed and developed. \n\nThe goal is to have a unified understanding among team members about usability, user experience (UX) and human-centred design (HCD) to enable effective, efficient and satisfactory collaboration in projects, whilst minimising the risk of failure from the users’ perspective. The UXQB (International Usability and User Experience Qualification board) has been developing and maintaining the scheme since 2013. More than 8,000 professionals around the globe have already been certified. For more details see www.uxqb.org. The UXQB offers certification exams for the following qualifications:\n\n - Foundation level (CPUX-F)\n - Advanced Level: User Requirements Engineering (CPUX-UR)\n - Advanced Level: Designing Solutions (CPUX-DS)\n - Advanced Level: Usability Testing and Evaluation (CPUX-UT)\n - Essentials in UX and HCD Management (CPUX-M)\n \nThis particular crash course will prepare you for the certification exam for the foundation level (CPUX-F).",
+  "keywords": "",
+  "buttons": [
+    {
+      "type": "pdf",
+      "text": "More detailed information about the course",
+      "link": "/Crash Course CPUX-F.pdf"
+    }
+  ]
 }

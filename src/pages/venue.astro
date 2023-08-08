@@ -1,85 +1,73 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Footer from '../components/Footer.astro';
-import Prefooter from '../components/Pre-footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Prefooter from "../components/Pre-footer.astro";
 // import Transport from './transport.json.js';
 
-const transports = await Astro.glob('./transports/*.md');
+const transports = await Astro.glob("./transports/*.md");
 
-var transport = transports.map(item => {
+var transport = transports.map((item) => {
+  var wrapper = item.compiledContent();
 
-	var wrapper = item.compiledContent();
-	
-	return wrapper;
-
-})
-
+  return wrapper;
+});
 
 console.log(transport);
-
-
-
-
-
-
 
 // const {Transport} = Astro.props.transport.;
 
 // const { Content } = Astro.props.post
 ---
 
-<Layout title='Interact 2023'>
-	
-	<main>
-		<Navbar/>
-		<content>
-			<section class='venue-content-1'>
-						<h1 class="title">
-							VENUE
-						</h1>
+<Layout title="Interact 2023">
+  <main>
+    <Navbar />
+    <content>
+      <section class="venue-content-1">
+        <h1 class="title">VENUE</h1>
 
-						<p class="thin-text">
-							The conference will be held on the newly developed Heslington East Campus of the
-							University of York, on the edge of the city of York. The venue is easily accessible from the
-							centre of York by bus, taxi or bicycle.
-						</p>
-						<a href="#rch-map">
-						<div class="venue-card">
-							
-							<div class="venue-details">
-								
-								<div class="top">
-									<img src="/uoy-logo.webp" alt="" width="100%">
-									<h3>
-										Main Atrium @ <br> Ron Cooke Hub
-									</h3>
-									<tag class="less-emphasis">
-										Main Venue
-									</tag>
-								</div>
+        <p class="thin-text">
+          The conference will be held on the newly developed Heslington East
+          Campus of the University of York, on the edge of the city of York. The
+          venue is easily accessible from the centre of York by bus, taxi or
+          bicycle.
+			<div class="updates">
+				<strong>Update: </strong>The Conference will be spread around a number of buildings on Campus East: The Computer Science Building (now named the Ian Wand Building), the Law and Sociology Building and the Piazza Building.  
+				<br> <br>
+				This is because unfortunately the Ron Cooke Hub is closed for re-development. 
+				<br> <br>
+				The main registration and information desk for the conference will be in the <b><u>foyer of the Computer Science Building on Monday 28th August and Tuesday 29th August</u></b>, and in the <u><b>foyer of the Piazza Building for the rest of the week</u></b>. These buildings are all very close to each other, see the map at the bottom of the page.
+			</div>
+		  
+        </p>
+        <a href="#rch-map">
+          <div class="venue-card">
+            <div class="venue-details">
+              <div class="top">
+                <img src="/uoy-logo.webp" alt="" width="100%" />
+                <h3>
+                  Campus East
+                </h3>
+                <tag class="less-emphasis"> Main Venue</tag>
+              </div>
 
-								<div class="bottom">
-									<h4>
-										Address
-									</h4>
-									<p>
-										Ron Cooke Hub,
-										<br>133 Deramore Ln, 
-										<br>University of York,
-										<br>York, YO10 5GE
-									</p>
-								</div>
-							</div>
-							<div class="venue-image">
-
-									<img src="/RCH.webp" alt="" width='400px'>
-								
-							</div>
-							
-						</div>
-					</a>
-					<!-- <a href="#piazza-map">
+              <div class="bottom">
+                <h4>Address</h4>
+                <p>
+					Computer Science Building, <br/>
+					Deramore Lane, <br/>
+					University of York, <br/>
+					York YO10 5GH
+                </p>
+              </div>
+            </div>
+            <div class="venue-image">
+              <img src="/RCH.webp" alt="" width="400px" />
+            </div>
+          </div>
+        </a>
+        <!-- <a href="#piazza-map">
 						<div class="venue-card">
 							
 							<div class="venue-details">
@@ -114,128 +102,196 @@ console.log(transport);
 						</div>
 
 					</a> -->
-			</section>
+      </section>
 
-			<section class='venue-content-2'>
-				<!-- <div class="about-section"> -->
-					<h2 class="bold">
-						Accessibility of the facilities for disabled delegates
-					</h2>
-					
-					<p>
-						The facilities in the Ron Cooke Hub are fully accessible, with ramps to the lecture areas,
-						dedicated spaces for wheelchair users and hearing loops for hearing impaired delegates.
-						<br><br>
-						There is also a dedicated guide dog toilet just behind the Ron Cooke Hub. We will provide an
-						orientation session of the venue for any visually impaired delegates and student volunteers
-						will be available to assist visually impaired delegates if required.
-					</p>
+      <section class="venue-content-2">
+        <!-- <div class="about-section"> -->
+        <h2 class="bold">
+          Accessibility of the facilities for disabled delegates
+        </h2>
 
-					<h2 class="bold">
-						Accommodation
-					</h2>
-					
-					<p>
-						Accommodation for delegates will be available both on the university campus and in central
-						York.
-						<br><br>
-						For delegates who prefer to stay in central York, there are many options at all price points.
-						The University has discount arrangements with a number of hotels in York.
-						<br><br>
-						Information about discounted hotel accommodation and accommodation at the university is available <a class="underline" href="/accommodation">here</a>.
-						<br><br>
-						<a href="/accommodation">
-						<button>
-							Book Here >
-						</button>
-						</a>
-					</p>
+        <p>
+          The facilities in the Campus East buildings are fully accessible, with ramps
+          to the lecture areas, dedicated spaces for wheelchair users and
+          hearing loops for hearing impaired delegates.
+          <br /><br />
+          There is also a dedicated guide dog toilet just behind the Ron Cooke Hub. More locations will be revealed soon!
+		  <br /><br />
+          We will provide an orientation session of the venue for any visually impaired
+          delegates and student volunteers will be available to assist visually impaired
+          delegates if required.
+        </p>
 
-					<h2 class="bold">
-						Visa Information
-					</h2>
-					
-					<p>
-						Delegates from some countries will need a visa to visit the UK. You can attend a conference on a “Standard Visitor” visa. <span class="bold"> <a href="https://www.gov.uk/standard-visitor" target="_blank"> (https://www.gov.uk/standard-visitor)</a></span> <br><br> EU, EEA and Swiss citizens do not need a visa for a short stay.
-						<br><br>
-						Time to organize a visa seems very long in many countries at the moment, so please apply very early. If you need a letter of invitation please contact Helen.Petrie@york.ac.uk as early as possible.
-					</p>
+		<br />
 
-					
-					
-				<!-- </div> -->
-				
-			</section>
+        <h2 class="bold">Accommodation</h2>
 
-			<section class='venue-content-3'>
-				<h1 class="title">
-					AIRPORTS
-				</h1>
+        <p>
+          Accommodation for delegates will be available both on the university
+          campus and in central York.
+          <br /><br />
+          For delegates who prefer to stay in central York, there are many options
+          at all price points. The University has discount arrangements with a number
+          of hotels in York.
+          <br /><br />
+          Information about discounted hotel accommodation and accommodation at the
+          university is available <a class="underline" href="/accommodation"
+            >here</a
+          >.
+          <br /><br />
+          <a href="/accommodation">
+            <button> More Information ></button>
+          </a>
+        </p>
+		<br />
 
-				<div class="selections">
+	<h2 class="bold">Visa Information</h2>
 
-					<button class="selector leftmost active" id="1">Leeds Bradford</button>
-					
+	  <p>
+		Delegates from some countries will need a visa to visit the UK. You
+		can attend a conference on a “Standard Visitor” visa. <span
+		  class="bold"
+		>
+		  <a href="https://www.gov.uk/standard-visitor" target="_blank">
+			(https://www.gov.uk/standard-visitor)</a
+		  >
+		</span>
+		<br /><br /> EU, EEA and Swiss citizens do not need a visa for a short
+		stay.
+		<br /><br />
+		Time to organize a visa seems very long in many countries at the moment,
+		so please apply very early. If you need a letter of invitation please contact
+		Helen.Petrie@york.ac.uk as early as possible.
+	  </p>
 
-					<button class="selector" id="2">Manchester</button>
-					
+	  <h2 class="bold">Tourism in York and beyond</h2>
 
-					<button class="selector rightmost" id="3">London</button>
-				</div>
+        <p>
+          Looking for fun things to do in whilst in York? Check the page below!
+		  <br><br>
+          <a href="/tour">
+            <button> Things to do in & around York ></button>
+          </a>
+        </p>
+		<br />
 
-				<div class="directions">
-					<div class="selection" id="selection-1" set:html={transport[0]} ></div>
-					<div class="selection" id="selection-2" set:html={transport[1]} ></div>
-					<div class="selection" id="selection-3" set:html={transport[2]}></div>
-				</div>
-				
-				
-			</section>
 
-			<section class='venue-content-3'>
-				<h1 class="title">
-					TRAINS
-				</h1>
+        <!-- </div> -->
+      </section>
 
-				<div class="selections">
 
-					<button class="selector-train leftmost active" id="4">London / Edinburgh</button>
-					
+	  
 
-					<button class="selector-train" id="5">Paris / Brussels</button>
-					
+      <section class="venue-content-3">
+        <h1 class="title">AIRPORTS</h1>
 
-					<button class="selector-train rightmost" id="6">Interepid</button>
-				</div>
+        <div class="selections">
+          <button class="selector leftmost active" id="1">Leeds Bradford</button
+          >
 
-				<div class="directions">
-					<div class="selection-train" id="selection-4" set:html={transport[3]} ></div>
-					<div class="selection-train" id="selection-5" set:html={transport[4]} ></div>
-					<div class="selection-train" id="selection-6" set:html={transport[5]}></div>
-				</div>
-				
-				
-			</section>
+          <button class="selector" id="2">Manchester</button>
 
-			
+          <button class="selector rightmost" id="3">London</button>
+        </div>
 
-			<section class='venue-content-4'>
+        <div class="directions">
+          <div class="selection" id="selection-1" set:html={transport[0]}></div>
+          <div class="selection" id="selection-2" set:html={transport[1]}></div>
+          <div class="selection" id="selection-3" set:html={transport[2]}></div>
+        </div>
+      </section>
 
-				<div class="content-container" id="rch-map">
+      <section class="venue-content-3">
+        <h1 class="title">TRAINS</h1>
 
-					<div class='map-embed'>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.1262576267018!2d-1.0320876841881301!3d53.947265180109355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48792fd3ebc5bc65%3A0xacbab96a0b4b7a96!2sThe%20Ron%20Cooke%20Hub!5e0!3m2!1sen!2sfr!4v1664443801266!5m2!1sen!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
+        <div class="selections">
+          <button class="selector-train leftmost active" id="4"
+            >London / Edinburgh</button
+          >
 
-					<div class="direction-links">
-						<h3><span class="bold">Ron Cooke Hub</span> - Get Directions</h3>
-						<button> <a href="https://maps.app.goo.gl/4AQzqAby5peRDMM18" target="_blank"><img src="/google-maps.svg" alt=""> Google Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
-						<button> <a href="https://apple.co/3esDDDD" target="_blank"><img src="/apple-maps.webp" alt="">Apple Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
-						<button> <a href="https://bit.ly/3EFqEt0" target="_blank"><img src="/waze.svg" alt="">Waze Maps <img class="external" src="/external.svg" alt="External Page" /></a></button>
-					</div>
-					
-				</div>
-<!-- 
+          <button class="selector-train" id="5">Paris / Brussels</button>
+
+          <button class="selector-train rightmost" id="6">Interepid</button>
+        </div>
+
+        <div class="directions">
+          <div class="selection-train" id="selection-4" set:html={transport[3]}>
+          </div>
+          <div class="selection-train" id="selection-5" set:html={transport[4]}>
+          </div>
+          <div class="selection-train" id="selection-6" set:html={transport[5]}>
+          </div>
+        </div>
+      </section>
+
+	  <section class="venue-content-3">
+		<h2 class="bold">Transport from Central York to the University</h2>
+
+        <p>
+			<div class="selections">
+				<button class="selector-transport-central leftmost active" id="7">Buses</button>
+	  
+				<button class="selector-transport-central" id="8">e-Scooters and e-Bikes</button>
+	  
+				<button class="selector-transport-central rightmost" id="9">Taxis</button>
+			  </div>
+	  
+			  <div class="directions">
+				<div class="selection-transport-central" id="selection-7" set:html={transport[6]}></div>
+				<div class="selection-transport-central" id="selection-8" set:html={transport[7]}></div>
+				<div class="selection-transport-central" id="selection-9" set:html={transport[8]}></div>
+			  </div>
+        </p>
+	  </section>
+
+      <section class="venue-content-4">
+        <div class="content-container" id="rch-map">
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/d/embed?mid=164-O-DuHAgKln91K2d7aSdwUBKl3bMo&ehbc=2E312F"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen="true"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+          </div>
+
+          <div class="direction-links">
+            <h3><span class="bold">Campus East</span> - Get Directions</h3>
+            <button>
+              <a
+                href="https://goo.gl/maps/ACpAssp5Ho7sHD9R9"
+                target="_blank"
+                ><img src="/google-maps.svg" alt="" /> Google Maps <img
+                  class="external"
+                  src="/external.svg"
+                  alt="External Page"
+                />
+              </a>
+            </button>
+            <button>
+              <a href="https://maps.apple.com/?address=University%20of%20York%20-%20Campus%20West,%20Ron%20Cooke%20Hub,%20Deramore%20Lane,%20Heslington,%20York,%20YO10%205GE,%20England&auid=2931381728118719338&ll=53.947032,-1.031213&lsp=9902&q=Department%20of%20Computer%20Science%20(CSE)&t=m" target="_blank"
+                ><img src="/apple-maps.webp" alt="" />Apple Maps <img
+                  class="external"
+                  src="/external.svg"
+                  alt="External Page"
+                />
+              </a>
+            </button>
+            <button>
+              <a href="https://ul.waze.com/ul?place=ChIJ51p8V9QveUgRzSpZco2ViCI&ll=53.94681190%2C-1.03086580&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank"
+                ><img src="/waze.svg" alt="" />Waze Maps <img
+                  class="external"
+                  src="/external.svg"
+                  alt="External Page"
+                />
+              </a>
+            </button>
+          </div>
+        </div>
+        <!-- 
 				<div class="content-container" id="piazza-map">
 
 					<div class='map-embed'>
@@ -254,353 +310,351 @@ console.log(transport);
 					</div>
 					
 				</div> -->
-				
-			</section>
+      </section>
+    </content>
+  </main>
 
-		</content>
-		
-	</main>
-
-	<Footer/>
-	
+  <Footer />
 </Layout>
 
 <script is:inline>
+document.addEventListener("click", changeSection);
 
-	document.addEventListener('click', changeSection)
-
-	function changeSection(e){
-
-		// Flight section
-		if(e.target.classList.contains('selector')){
-		document.querySelectorAll('.selection').forEach(element => {
+function changeSection(e) {
+	// Flight section
+	if (e.target.classList.contains("selector")) {
+		document.querySelectorAll(".selection").forEach((element) => {
 			element.style.display = "none";
-			
-		})
+		});
 
-		document.querySelectorAll('.selector').forEach(element => {
+		document.querySelectorAll(".selector").forEach((element) => {
 			element.classList.remove("active");
 			console.log(e.targetid);
-			
-			
-		})
+		});
 
-				e.target.classList.add("active");
-				var string = "selection-"+e.target.id;
-				document.getElementById(string).style.display = "block";
+		e.target.classList.add("active");
+		var string = "selection-" + e.target.id;
+		document.getElementById(string).style.display = "block";
+	}
 
-		
-		}
-
-		// Trains section
-		if(e.target.classList.contains('selector-train')){
-		document.querySelectorAll('.selection-train').forEach(element => {
+	// Trains section
+	if (e.target.classList.contains("selector-train")) {
+		document.querySelectorAll(".selection-train").forEach((element) => {
 			element.style.display = "none";
-			
-		})
+		});
 
-		document.querySelectorAll('.selector-train').forEach(element => {
+		document.querySelectorAll(".selector-train").forEach((element) => {
 			element.classList.remove("active");
 			console.log(e.targetid);
-			
-			
-		})
+		});
 
-				e.target.classList.add("active");
-				var string = "selection-"+e.target.id;
-				document.getElementById(string).style.display = "block";
+		e.target.classList.add("active");
+		var string = "selection-" + e.target.id;
+		document.getElementById(string).style.display = "block";
+	}
 
-		
-		}
-		// console.log(document.getElementById(`"selection-${element.target.id}"`))
-		// document.getElementById(`selection-${document.getElementsByClassName("selection")}`).style.display = "block";
-		
-	
+	// Transport section
+	if (e.target.classList.contains("selector-transport-central")) {
+		document.querySelectorAll(".selection-transport-central").forEach((element) => {
+			element.style.display = "none";
+		});
 
-	
+		document.querySelectorAll(".selector-transport-central").forEach((element) => {
+			element.classList.remove("active");
+			console.log(e.targetid);
+		});
+
+		e.target.classList.add("active");
+		var string = "selection-" + e.target.id;
+		document.getElementById(string).style.display = "block";
+	}
+	// console.log(document.getElementById(`"selection-${element.target.id}"`))
+	// document.getElementById(`selection-${document.getElementsByClassName("selection")}`).style.display = "block";
 }
-		
-	
-		
-	
-	
 </script>
 
 <style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
 
-	:root {
-		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
+  p em{
+	display: inline;
+  }
 
-	main{
-		display: flex;
-		flex-direction: row;
-		overscroll-behavior: none;
-		/* overflow-y: scroll */
-		/* height: 300vh;
+  main {
+    display: flex;
+    flex-direction: row;
+    overscroll-behavior: none;
+    /* overflow-y: scroll */
+    /* height: 300vh;
 		padding-left: 14em; */
-		/* margin-left: 14em; */
-		/* position: absolute; */
+    /* margin-left: 14em; */
+    /* position: absolute; */
+  }
+
+  .updates{
+		margin: 0px !important;
 	}
 
-	
 
-	content{
-		width: 100%;
-	}
+  content {
+    width: 100%;
+  }
 
-	.venue-card{
-		display: flex;
-		margin: auto;
-		background-color: #fff;
-		border-radius: 30px;
-		margin-top: 2em;
-		width: 100%;
+  .venue-content-1 code{
+	background-color: #002c38;
+	padding: 0.5em;
+  }
 
-		/* padding-top: 2em; */
-		/* width: 70%; */
-		/* height: 500px; */
-	}
+  .venue-card {
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 2em;
+    width: 100%;
 
-	/* .image{
+    /* padding-top: 2em; */
+    /* width: 70%; */
+    /* height: 500px; */
+  }
+
+  /* .image{
 		width: 300px;
 	} */
 
-	button:hover{
-		text-decoration: underline;
-	}
-	
+  button:hover {
+    text-decoration: underline;
+  }
 
-	.venue-content-1{
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		/* width: 100%; */
-		/* justify-content: space-between; */
-		/* height: 100vh; */
-		/* width: 100%; */
-		padding: 3em;
-		border-bottom: 1px solid #002C38;
-		/* padding-left: 16em; */
-	}
+  .venue-content-1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+    /* height: 100vh; */
+    /* width: 100%; */
+    padding: 3em;
+    border-bottom: 1px solid #002c38;
+    /* padding-left: 16em; */
+  }
 
-	.venue-content-1 a .venue-card{
-		text-decoration: none;
-	}
+  .venue-content-1 a .venue-card {
+    text-decoration: none;
+  }
 
-	h1{
-		font-weight: 100;
-	}
+  h1 {
+    font-weight: 100;
+  }
 
-	.venue-content-2 h1{
-		margin: 0%;
-		padding: 0%;
-		font-size: 2em;
-	}
+  .venue-content-2 h1 {
+    margin: 0%;
+    padding: 0%;
+    font-size: 2em;
+  }
 
-	.about-section{
-		padding: 2em;
-	}
+  .about-section {
+    padding: 2em;
+  }
 
-	.venue-details{
-		display: flex;
-		flex-direction: column;
-		min-width: 20%;
-		padding: 1.5em;
-		padding-right: 1em;
-		border-radius: 30px;
-		background-color: #fff;
-		justify-content: space-between;
-	}
+  .venue-details {
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    padding: 1.5em;
+    padding-right: 1em;
+    border-radius: 30px;
+    background-color: #fff;
+    justify-content: space-between;
+  }
 
-	.venue-details img{
-		padding-bottom: 0.5em;
-		max-width: 180px;
-		/* width: 300px; */
-	}
+  .venue-details img {
+    padding-bottom: 0.5em;
+    max-width: 180px;
+    /* width: 300px; */
+  }
 
-	.venue-details h3{
-		font-family: 'AH-B';
-		font-weight: 100;
-		padding-top: 0.5em;
-		margin: 0%;
-		border-top: 2px solid #002C38;
-	}
+  .venue-details h3 {
+    font-family: "AH-B";
+    font-weight: 100;
+    padding-top: 0.5em;
+    margin: 0%;
+    border-top: 2px solid #002c38;
+  }
 
-	.venue-details p, .venue-details h4{
-		margin: 0%;
-	}
+  .venue-details p,
+  .venue-details h4 {
+    margin: 0%;
+  }
 
-	.venue-image{
-		display: flex;
-		width: 100%;
-		padding: 1em;
-	}
+  .venue-image {
+    display: flex;
+    width: 100%;
+    padding: 1em;
+  }
 
-	.venue-image img{
-		width: 100%;
-		object-fit: cover;
-		border-radius: 14px;
-	}
+  .venue-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+  }
 
-	.top{
-		display:flex;
-		flex-direction: column;
-	}
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
 
-	.bottom{
-		margin: 0%;
-		padding-top: 3em;
-	}
+  .bottom {
+    margin: 0%;
+    padding-top: 3em;
+  }
 
-	.center{
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
+  .center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-	.button-padding h2{
-		padding: 0.1em 1em;
-		border-radius: 50px;
-	}
+  .button-padding h2 {
+    padding: 0.1em 1em;
+    border-radius: 50px;
+  }
 
-	.center *{
-		margin: auto;
-	}
+  .center * {
+    margin: auto;
+  }
 
-	.sub-types{
-		background-color: #002C38;
-		color: #FCF7EB;
-		border-radius: 30px;
-		padding: 0.5em 0em 0.5em 0em ;
-		margin-bottom: 1em;
-		margin-top: 1em;
-		display: flex;
-		flex-direction: column;
-		/* width: max-content; */
-		/* height: 100%; */
-		/* width: 100%; */
-	}
+  .sub-types {
+    background-color: #002c38;
+    color: #fcf7eb;
+    border-radius: 30px;
+    padding: 0.5em 0em 0.5em 0em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    /* width: max-content; */
+    /* height: 100%; */
+    /* width: 100%; */
+  }
 
-	tag {
-		background-color: #002C38;
-		color: #FCF7EB;
-		margin-top: 0.5em;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-		border-radius: 5px;
-		width:fit-content
-	}
+  tag {
+    background-color: #002c38;
+    color: #fcf7eb;
+    margin-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 5px;
+    width: fit-content;
+  }
 
+  /* Click to select */
 
+  .selections, .selections-{
+    margin: auto;
+    margin-top: 0%;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
 
-	/* Click to select */
+    /* flex-wrap: wrap; */
+  }
 
-	.selections{
-		margin: auto;
-		margin-top: 0%;
-		width: 100%;
-		max-width: 1000px;
-		display: flex;
-		justify-content: space-between;
-		
-		
-		/* flex-wrap: wrap; */
-	}
+  .selections input {
+    display: none;
+    /* flex-wrap: wrap; */
+  }
+  .selection {
+    text-align: left;
+  }
 
-	.selections input{
-		display: none;
-		/* flex-wrap: wrap; */
-	}
-	.selection{
-		text-align: left;
-	}
+  .selection-train {
+    text-align: left;
+  }
 
-	.selection-train{
-		text-align: left;
-	}
+  #selection-2,
+  #selection-3,
+  #selection-5,
+  #selection-6,
+  #selection-8,
+  #selection-9 {
+    display: none;
+  }
 
-	#selection-2, #selection-3, #selection-5, #selection-6{
-		display: none;
-	}
-	
-	.selector{
-		background-color: var(--background-color);
-		color: #002C38;
-		caret-color: #ffffff00;
-		/* margin: 0.5em; */
-		width: 100%;
-		text-align: center;
-		align-content: center;
-		border-radius: 0%;
-		padding: 0.6em;
-		border: 2px solid #002C38;
-		/* border-radius: 50px; */
-		font-family: "AH-B";
-		
-	}
+  .selector, .selector-transport-central{
+    background-color: var(--background-color);
+    color: #002c38;
+    caret-color: #ffffff00;
+    /* margin: 0.5em; */
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    border-radius: 0%;
+    padding: 0.6em;
+    border: 2px solid #002c38;
+    /* border-radius: 50px; */
+    font-family: "AH-B";
+  }
 
-	.selector:hover{
-		text-decoration: underline;
-		transition: all 0.2s;
-		/* box-shadow: inset 0px 0px 10px #002C3855; */
-		text-decoration-color: #002C38;
-		
-	}
+  .selector:hover {
+    text-decoration: underline;
+    transition: all 0.2s;
+    /* box-shadow: inset 0px 0px 10px #002C3855; */
+    text-decoration-color: #002c38;
+  }
 
-	.selector-train{
-		background-color: var(--background-color);
-		color: #002C38;
-		caret-color: #ffffff00;
-		/* margin: 0.5em; */
-		width: 100%;
-		text-align: center;
-		align-content: center;
-		border-radius: 0%;
-		padding: 0.6em;
-		border: 2px solid #002C38;
-		/* border-radius: 50px; */
-		font-family: "AH-B";
-		transition: all 0.2s;
-		
-	}
+  .selector-train {
+    background-color: var(--background-color);
+    color: #002c38;
+    caret-color: #ffffff00;
+    /* margin: 0.5em; */
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    border-radius: 0%;
+    padding: 0.6em;
+    border: 2px solid #002c38;
+    /* border-radius: 50px; */
+    font-family: "AH-B";
+    transition: all 0.2s;
+  }
 
-	.selector-train:hover{
-		text-decoration: underline;
-		text-decoration-color: #002C38;
-		
-	}
+  .selector-train:hover {
+    text-decoration: underline;
+    text-decoration-color: #002c38;
+  }
 
-	.active{
-		color: #FCF7EB !important;
-		/* background-color: var(--color-bg); */
-		background-color: #002C38;
-		/* box-shadow: inset 0px 0px 1000px #002C38; */
-		text-decoration-color: #FCF7EB;
-	}
+  .active {
+    color: #fcf7eb !important;
+    /* background-color: var(--color-bg); */
+    background-color: #002c38;
+    /* box-shadow: inset 0px 0px 1000px #002C38; */
+    text-decoration-color: #fcf7eb;
+  }
 
-	button:hover{
-		cursor: pointer;
-	}
+  button:hover {
+    cursor: pointer;
+  }
 
-	.leftmost{
-		border-radius: 30px 0px 0px 0px;
-		border-right: 0px;
-	}
+  .leftmost {
+    border-radius: 30px 0px 0px 0px;
+    border-right: 0px;
+  }
 
-	.rightmost{
-		border-radius: 0px 30px 0px 0px;
-		border-left: 0px;
-	}
+  .rightmost {
+    border-radius: 0px 30px 0px 0px;
+    border-left: 0px;
+  }
 
-	
-
-	/* .active{
+  /* .active{
 		color: #FCF7EB;
 		background-color: #002C38;
 	} */
 
-	/* #selector-1:checked ~ #leeds-button{
+  /* #selector-1:checked ~ #leeds-button{
 		color: #FCF7EB;
 		background-color: #002C38;
 	}
@@ -615,482 +669,473 @@ console.log(transport);
 		background-color: #002C38;
 	} */
 
-	.directions{
-		max-width: 1000px;
-		border: 2px solid #002C38;
-		border-top: #002C38;
-		border-radius: 0px 0px 30px 30px;
-		padding: 1.5em;
-		margin: auto;
-	}
+  .directions {
+    max-width: 1000px;
+    border: 2px solid #002c38;
+    border-top: #002c38;
+    border-radius: 0px 0px 30px 30px;
+    padding: 1.5em;
+    margin: auto;
+	text-align: left;
+  }
 
-	.directions p{
-		align-items: flex-start;
-		text-align: left;
-	}
+  .directions p {
+    align-items: flex-start;
+    text-align: left;
+  }
 
-	.sub-types h3{
-		margin: 0px;
-		padding: 0.2em;
-		padding-left: 1em;
-		padding-bottom: 0.5em;
-		font-family: 'AH-B'
-	}
+  .sub-types h3 {
+    margin: 0px;
+    padding: 0.2em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    font-family: "AH-B";
+  }
 
+  .sub-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1em;
+  }
 
-	.sub-details{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding-left: 1em;
-	}
+  .submissions {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.submissions{
-		position: relative;
-		justify-content: center;
-		align-items: center;
-	}
+  .venue-content-2 {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    border-bottom: 1px solid #002c38;
+    height: max-content;
+    /* padding-left: 16em; */
+  }
 
-	.venue-content-2{
-		align-content: center;
-		justify-content: center;
-		display: flex;
-		flex-direction: column;
-		padding: 4em;
-		border-bottom: 1px solid #002C38;
-		height: max-content;
-		/* padding-left: 16em; */
-	}
+  .venue-content-2 h2 {
+    padding-top: 2em;
+    margin: 0%;
+  }
 
-	.venue-content-2 h2{
-		padding-top: 2em;
-		margin: 0%;
-	}
+  .venue-content-2 {
+    padding-right: 1em;
+  }
 
-	.venue-content-2{
-		padding-right: 1em;
-	}
+  .venue-content-3 {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border-bottom: 1px solid #002c38;
+    /* height: 100vh; */
+    /* padding-left: 16em; */
+  }
 
-	.venue-content-3{
-		justify-content: center;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		padding: 2em;
-		border-bottom: 1px solid #002C38;
-		/* height: 100vh; */
-		/* padding-left: 16em; */
-	}
+  .venue-content-4 {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    border-bottom: 1px solid #002c38;
+    height: 100vh;
+  }
 
-	.venue-content-4{
-		justify-content: center;
-		text-align: center;
-		display: flex;
-		flex-direction: row;
-		padding: 2em;
-		border-bottom: 1px solid #002C38;
-		height: 100vh;
-	}
+  .venue-content-3 h1,
+  .venue-content-4 h1 {
+    /* padding-top: 1em; */
+    padding-bottom: 1em;
+    margin: 0%;
+    /* font-family: 'S-B'; */
+    font-size: 2.5em;
+  }
 
+  .input-field {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
 
-	.venue-content-3 h1, .venue-content-4 h1{
-		/* padding-top: 1em; */
-		padding-bottom: 1em;
-		margin: 0%;
-		/* font-family: 'S-B'; */
-		font-size: 2.5em;
-	}
+  .input-field input,
+  .input-field textarea {
+    all: unset;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 2px solid #002c38;
+    font-family: sans-serif;
+  }
 
-	.input-field{
-		padding-top: 1em;
-		display: flex;
-		flex-direction: column;
-		width: 50%;
-	}
+  .input-field button {
+    padding-bottom: 0.2em;
+  }
 
-	.input-field input, .input-field textarea{
-		all: unset;
-		padding: 0.5em;
-		border-radius: 0.5em;
-		border: 2px solid #002C38;
-		font-family: sans-serif;
-	}
+  h2 {
+    font-weight: 100;
+    /* padding-top: 2em; */
+  }
 
-	.input-field button{
-		padding-bottom: 0.2em;
-		
-	}
+  .venue-details h4 {
+    margin: 0%;
+    font-family: "AH-B";
+  }
 
-	h2{
-		font-weight: 100;
-		/* padding-top: 2em; */
-	}
+  .venue-details p {
+    margin-top: 0%;
+  }
 
-	.venue-details h4{
-		margin: 0%;
-		font-family: 'AH-B';
-	}
+  .juries-details {
+    display: flex;
+  }
 
-	.venue-details p{
-		margin-top: 0%;
-	}
+  .juries-section {
+    display: flex;
+    display: block;
+    align-content: space-between;
+    padding-bottom: 4em;
+  }
 
-	.juries-details{
-		display: flex;
-	}
+  .juries-section:last-child {
+    display: flex;
+    display: block;
+    align-content: space-between;
+    padding-bottom: 0%;
+  }
 
-	.juries-section{
-		display: flex;
-		display: block;
-		align-content: space-between;
-		padding-bottom: 4em;
-	}
+  .text-details {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
 
-	.juries-section:last-child{
-		display: flex;
-		display: block;
-		align-content: space-between;
-		padding-bottom: 0%;
-	}
+  .nav-container {
+    width: 14em;
+  }
 
-	.text-details{
-		justify-content: center;
-		align-content: center;
-		text-align: center;
-	}
+  .img-mask {
+    max-height: 450px;
+    overflow: hidden;
+  }
 
-	.nav-container{
-		width: 14em;
-	}
+  .rch {
+    width: 100%;
+    /* max-height: 473px; */
+    object-fit: cover;
+  }
 
-	.img-mask{
-		max-height: 450px;
-		overflow: hidden;
-	}
+  .stretch {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+  }
 
-	.rch{
-		width: 100%;
-		/* max-height: 473px; */
-		object-fit: cover;
-	}
+  .pill {
+    font-family: "AH-B";
+    font-size: 1em;
+    margin: 0px;
+    display: flex;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    background-color: #002c38;
+    color: #fcf7eb;
+    border-radius: 50px;
+    align-items: center;
+    width: fit-content;
+  }
 
-	.stretch{
-		box-sizing: border-box;
-		display: flex;
-		width: 100%;
-		/* height: 100%; */
-	}
+  .pill img {
+    margin: 0%;
+    padding-right: 0.5em;
+    width: 1em;
+    height: 1em;
+  }
 
-	.pill{
-		font-family: 'AH-B';
-		font-size: 1em;
-		margin: 0px;
-		display: flex;
-		padding: 0.2em 0.5em 0.2em 0.5em ;
-		background-color: #002C38;
-		color: #FCF7EB;
-		border-radius: 50px;
-		align-items: center;
-		width: fit-content;
-	}
+  .location-detail {
+    align-items: flex-end;
+    margin-top: auto;
+    margin-bottom: 0%;
+    margin-left: 2em;
+    white-space: nowrap;
+    width: max-content;
+  }
 
-	.pill img{
-		margin: 0%;
-		padding-right: 0.5em;
-		width: 1em;
-		height: 1em;
-	}
+  .title {
+    font-family: "S-B";
+    font-size: 2.5em;
+    /* height: 50%; */
+    margin: 0%;
 
-	.location-detail{
-		align-items: flex-end;
-		margin-top: auto;
-		margin-bottom: 0%;
-		margin-left: 2em;
-		white-space: nowrap;
-		width: max-content;
-	}
+    overflow: hidden;
+    /* width: 200%; */
+  }
 
-	.title{
-		font-family: 'S-B';
-		font-size: 2.5em;
-		/* height: 50%; */
-		margin: 0%;
-		
-		overflow: hidden;
-		/* width: 200%; */
-	}
+  .title h3 {
+    font-family: "S-B";
+    font-size: 1.2em;
+    padding-bottom: 0.2em;
+    /* height: 50%; */
+    margin: 0%;
+  }
 
-	.title h3{
-		font-family: 'S-B';
-		font-size: 1.2em;
-		padding-bottom: 0.2em;
-		/* height: 50%; */
-		margin: 0%;
-	}
+  .venue-content-5 h1 {
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    font-family: "S-B";
+    font-size: 2.5em;
+  }
 
-	.venue-content-5 h1{
-		padding-top: 1em;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 0%;
-		font-family: 'S-B';
-		font-size: 2.5em;
-	}
+  .venue-content-2 h3 {
+    margin: 0%;
+    padding-top: 1em;
+    font-family: "AH-B";
+  }
 
-	.venue-content-2 h3{
-		margin: 0%;
-		padding-top: 1em;
-		font-family: 'AH-B';
-	}
-	
-	.conditions{
-		padding-top: 2em;
-	}
+  .conditions {
+    padding-top: 2em;
+  }
 
-	.content-container{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		margin: 2em;
-		/* height: 60%; */
-		border-radius: 30px;
-		border: solid 5px #002C38;
-		overflow: hidden;
-		
-	}
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2em;
+    /* height: 60%; */
+    border-radius: 30px;
+    border: solid 5px #002c38;
+    overflow: hidden;
+  }
+
+  .map-embed {
+    width: 100%;
+    height: 100%;
+	min-height: 400px;
+    justify-self: center;
+    border-bottom: 5px solid #002c38;
+  }
+
+  .direction-links {
+    width: 100%;
+    /* padding: 1em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .direction-links button {
+    /* margin: 0.5em; */
+    display: flex;
+    padding: 1em;
+    width: 100%;
+    background-color: var(--color-bg);
+    border-radius: 0px;
+    color: #002c38;
+    font-size: 100;
+    font-family: "AH-R";
+    caret-color: transparent;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .direction-links button a {
+    all: inherit;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  button img {
+    height: 35px;
+    margin-right: 1em;
+  }
+
+  .direction-links button:hover {
+    text-decoration: underline;
+    /* background-color: #002C38; */
+    /* color: #FCF7EB; */
+  }
+
+  .direction-links h3 {
+    font-family: "AH-R";
+    font-weight: 100;
+    /* padding: 100%; */
+    padding-top: 0.3em;
+    margin: auto;
+    height: 1em;
+  }
+
+  .direction-links h3 {
+    background-color: #002c38;
+    color: #fcf7eb;
+    height: 2em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0%; */
+    /* margin: 0%; */
+  }
+
+  a:hover {
+    all: unset;
+    text-decoration: none;
+  }
+
+  /* Presets */
+
+  .bold {
+    font-family: "AH-B";
+  }
+
+  .thin-text {
+    font-family: "AH-R";
+  }
+
+  .thin {
+    font-family: "S-R";
+  }
+
+  .no-border {
+    border: 0px solid #000;
+  }
+
+  .external {
+    padding-left: 0.5em;
+    transition: opacity 0.5s;
+    max-width: 1.5em;
+    opacity: 10%;
+  }
+
+  .direction-links button:hover .external {
+    opacity: 100%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .venue-content-4 {
+      display: flex;
+      flex-direction: column;
+      height: max-content;
+    }
+
+    .content-container {
+      margin: auto;
+      margin-bottom: 2em;
+    }
+
+    .venue-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .venue-details {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 0%;
+    }
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+    }
+
+    .bottom {
+      padding: 0%;
+    }
+
+    .top img {
+      padding-right: 0%;
+      padding-bottom: 1em;
+      width: 80%;
+    }
 
 	.map-embed{
-		width: 100%;
-		height: 100%;
-		justify-self: center;
-		border-bottom: 5px solid #002C38;
+		height: 450px;
 	}
+  }
 
-	.direction-links{
-		width: 100%;
-		/* padding: 1em; */
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		
-	}
+  @media screen and (max-width: 830px) {
+    .venue-content-1 {
+      padding: 1em;
+    }
 
+    .directions {
+      margin: 0%;
+      padding: 1em;
+    }
 
-	.direction-links button{
-		/* margin: 0.5em; */
-		display: flex;
-		padding: 1em;
-		width: 100%;
-		background-color: var(--color-bg);
-		border-radius: 0px;
-		color: #002C38;
-		font-size: 100;
-		font-family: 'AH-R';
-		caret-color: transparent;
-		transition: all 0.2s;
-		align-items: center;
-		justify-content: center;
-	}
+    .directions p {
+      margin: 0%;
+    }
 
-	.direction-links button a{
-		all: inherit;
-		padding: 0%;
-		margin: 0%;
-	}
+    .venue-content-2 {
+      padding: 2em;
+    }
+    .venue-card {
+      display: flex;
+      flex-direction: column;
+    }
 
-	button img{
-		
-		height: 35px;
-		margin-right: 1em;
-	}
+    .venue-details {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 0%;
+    }
 
-	.direction-links button:hover{
-		text-decoration: underline;
-		/* background-color: #002C38; */
-		/* color: #FCF7EB; */
-	}
+    .top {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+    }
 
-	.direction-links h3{
-		font-family: 'AH-R';
-		font-weight: 100;
-		/* padding: 100%; */
-		padding-top: 0.3em;
-		margin: auto;
-		height: 1em;
-	}
+    .bottom {
+      padding: 0%;
+    }
 
-	.direction-links h3{
-		background-color: #002C38;
-		color: #FCF7EB;
-		height: 2em;
-		width: 100%;
-		align-items: center;
-		justify-content: center;
-		/* padding: 0%; */
-		/* margin: 0%; */
-	}
+    .top img {
+      padding-right: 0%;
+      padding-bottom: 1em;
+      width: 80%;
+    }
 
-	
-	a:hover{
-		all: unset;
-		text-decoration: none;
-	}
-	
+    .venue-content-3 {
+      padding: 1em;
+      padding-top: 3em;
+    }
 
+    .venue-content-4 {
+      display: flex;
+      flex-direction: column;
+	  min-height: 60vh;
+      height: max-content;
+    }
 
-	/* Presets */
+    .directions {
+      margin: 0%;
+      padding: 1em;
+    }
 
-	.bold{
-		font-family: 'AH-B';
-	}
+    .directions p {
+      margin: 0%;
+    }
 
-	.thin-text{
-		font-family: 'AH-R';
-	}
+    .selector-train {
+      word-wrap: break-word;
+    }
 
-	.thin{
-		font-family: 'S-R';
-	}
-
-	.no-border{
-		border: 0px solid #000;
-	}
-
-	.external{
-		padding-left: 0.5em;
-		transition: opacity 0.5s;
-		max-width: 1.5em;
-		opacity: 10%;
-	}
-
-	.direction-links button:hover .external{
-		opacity: 100%
-	}
-
-	@media screen and (max-width:1200px){
-	
-
-		.venue-content-4{
-			display: flex;
-			flex-direction: column;
-			height: max-content;
-		}
-
-		.content-container{
-			margin: auto;
-			margin-bottom: 2em ;
-		}
-
-		.venue-card{
-			display: flex;
-			flex-direction: column;
-		}
-
-		.venue-details{
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			padding-bottom: 0%;
-		}
-
-		.top{
-			display: flex;
-			flex-direction: column;
-			width: fit-content;
-		}
-
-		.bottom{
-			padding: 0%;
-		}
-
-		.top img{
-			padding-right: 0%;
-			padding-bottom: 1em;
-			width: 80%;
-		}
-
-	}
-
-	@media screen and (max-width:830px){
-		.venue-content-1{
-			padding: 1em;
-		}
-
-		.directions{
-			margin: 0%;
-			padding: 1em;
-		}
-
-		.directions p{
-			margin: 0%;
-		}
-
-		.venue-content-2{
-			padding: 2em;
-		}
-		.venue-card{
-			display: flex;
-			flex-direction: column;
-		}
-
-		.venue-details{
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			padding-bottom: 0%;
-		}
-
-		.top{
-			display: flex;
-			flex-direction: column;
-			width: fit-content;
-		}
-
-		.bottom{
-			padding: 0%;
-		}
-
-		.top img{
-			padding-right: 0%;
-			padding-bottom: 1em;
-			width: 80%;
-		}
-
-		.venue-content-3{
-			padding: 1em;
-			padding-top: 3em;
-		}
-
-		.venue-content-4{
-			display: flex;
-			flex-direction: column;
-			height: max-content;
-		}
-
-		.directions{
-			margin: 0%;
-			padding: 1em;
-		}
-
-		.directions p{
-			margin: 0%;
-		}
-
-		.selector-train{
-			word-wrap: break-word;
-		}
-
-		.content-container{
-			margin: auto;
-			margin-bottom: 2em ;
-		}
-
-	}
-
-
-	
-
+    .content-container {
+      margin: auto;
+      margin-bottom: 2em;
+    }
+  }
 </style>

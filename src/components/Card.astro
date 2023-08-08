@@ -21,15 +21,22 @@ export interface Props {
 	authors?: {
 		name? : string;
 	};
+	buttons? : 
+		{
+			text : string;
+		};
+	
 }
-console.log(Astro.props.contacts)
-const { href, title, body, mode, event_period, website, type, keywords, time, authors } = Astro.props;
+// console.log(Astro.props.contacts)
+const { href, title, body, mode, event_period, website, type, keywords, time, authors, buttons} = Astro.props;
 // const title = converter.makeHtml(Astro.props.title)
 const description = converter.makeHtml(Astro.props.description)
 // const website = converter.makeHtml(Astro.props.website)
 const contacts = converter.makeHtml(Astro.props.contacts)
 const date_widget = Astro.props.date_widget ?? null;
 const dateWidgetPresent = date_widget != null;
+// const buttons = Astro.props.buttons;
+console.log(Astro.props.buttons)
 // if(date_widget == null){
 // 	dateWidgetPresent = false;
 // 	console.log(date_widget + " Null Detected")
@@ -63,7 +70,9 @@ data-time={time}>
 				{dateWidgetPresent ? date_widget : event_period}
 			</p>
 		</div>
-
+		<template>
+			{buttons && buttons.map((e) => <button style="background-color: var(--color-bg); color: var(--color-text); padding: 1em; text-align: center; border: solid 2px var(--color-text)"><a href={e.link} target="_blank" style="display: flex; text-align: center; justify-items: center; align-items: center;"><img src={"/" + e.type + ".svg"} style="width: 30px; margin-right: 1em;"> {e.text}</a></button>)}
+		</template>
 	</a>
 </li>
 <style>

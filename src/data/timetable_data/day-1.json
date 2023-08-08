@@ -65,6 +65,23 @@
           "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium"
         }
       ]
+    },{
+      "time": "19:00",
+      
+      "item": [
+        {
+          "text": "BCS Conference Dinner",
+          "location": "Rustique Restaurant, 28 Castlegate, York",
+          "hasInfo": true,
+          "info" : [{
+              "id": "BCS Conference Dinner",
+              "href" : "other",
+              "text" : "Rustique Restaurant, 28 Castlegate, York",
+              "link" : "https://www.rustiquerestaurants.co.uk/",
+              "button_text": "Check Location"
+          }]
+        }
+      ]
     }
   ]
 }
