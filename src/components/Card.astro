@@ -71,7 +71,7 @@ data-time={time}>
 			</p>
 		</div>
 		<template>
-			{buttons && buttons.map((e) => <button style="background-color: var(--color-bg); color: var(--color-text); padding: 1em; text-align: center; border: solid 2px var(--color-text)"><a href={e.link} target="_blank" style="display: flex; text-align: center; justify-items: center; align-items: center;"><img src={e.type.toUpperCase() + ".png"} style="width: 30px; margin-right: 1em;"> {e.text}</a></button>)}
+			{buttons && buttons.map((e) => <button style="background-color: var(--color-bg); color: var(--color-text); padding: 1em; text-align: center; border: solid 2px var(--color-text)"><a href={e.link} target="_blank" style="display: flex; text-align: center; justify-items: center; align-items: center;"><img src={"/" + e.type + ".svg"} style="width: 30px; margin-right: 1em;"> {e.text}</a></button>)}
 		</template>
 	</a>
 </li>
