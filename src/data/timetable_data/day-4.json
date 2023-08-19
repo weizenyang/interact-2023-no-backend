@@ -465,50 +465,50 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "FP1019",
-              "title": "AdaptReview: Towards Effective Video Review using Text Summaries and Concept Maps",
-              "authors": "Shan Zhang, Yang Chen, Nuwan Janaka, Chloe Haigh, Shengdong Zhao, and Wei Tsang Ooi",
-              "presenters": "Shan Zhang",
+              "id": "FP1012",
+              "title": "Common Objects for Programming Workshops in Non-Formal Learning Contexts",
+              "authors": "Nathalie Bressa, Susanne Bødker, Clemens N. Klokmose, and Eva Eriksson",
+              "presenters": "Nathalie Bressa",
               "contact": [
                 {
-                  "name": "Zhang, Shan",
-                  "email": "shan_zhang@u.nus.edu"
+                  "name": "Bressa, Nathalie",
+                  "email": "nathalie.bressa@gmail.com"
                 }
               ]
             },
             {
-              "id": "FP1073",
-              "title": "I perform my work with my body too: integrating body representations in and with task models",
-              "authors": "Axel Carayon, Célia Martinie, Philippe Palanque",
-              "presenters": "-",
+              "id": "SP1211",
+              "title": "Engaging a project consortium in ethics-aware design and research",
+              "authors": "Päivi Heikkilä, Hanna Lammi, and Susanna Aromaa",
+              "presenters": "Päivi Heikkilä and Hanna Lammi",
               "contact": [
                 {
-                  "name": "Martinie, CÃ©lia",
-                  "email": "celia.martinie@irit.fr"
+                  "name": "Heikkilä, Päivi",
+                  "email": "paivi.heikkila@vtt.fi"
                 }
               ]
             },
             {
-              "id": "SP1178",
-              "title": "Prototyping with the IVY workbench: Bridging Formal Methods and User-Centred Design",
-              "authors": "Rafael Braga da Costa and José Creissac Campos",
-              "presenters": "José Creissac Campos",
+              "id": "SP1256",
+              "title": "Exploring Emotions: Study of Five Design Workshops for Generating Ideas for Emotional Self-Report Interfaces",
+              "authors": "Carla Nave, Francisco Nunes, Teresa Romão, and Nuno Correia",
+              "presenters": "Carla Nave",
               "contact": [
                 {
-                  "name": "Campos, JosÃ©",
-                  "email": "jose.campos@acm.org"
+                  "name": "Nave, Carla",
+                  "email": "cd.saraiva@campus.fct.unl.pt"
                 }
               ]
             },
             {
-              "id": "SP1231",
-              "title": "Towards automated load testing through the user interface",
-              "authors": "Bruno Teixeira and José Creissac Campos",
-              "presenters": "José Creissac Campos",
+              "id": "FP1153",
+              "title": "Moving Away from the Blocks: Evaluating the Usability of EduBlocks for Supporting Children to Transition from Block-Based Programming",
+              "authors": "Gavin Sim, Mark Lochrie, Misbahu S Zubair, Oliver Kerr, and Matthew Bates",
+              "presenters": "Gavin Sim",
               "contact": [
                 {
-                  "name": "Campos, JosÃ©",
-                  "email": "jose.campos@acm.org"
+                  "name": "Sim, Gavin",
+                  "email": "grsim@uclan.ac.uk"
                 }
               ]
             }
@@ -575,50 +575,62 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "SP1225",
-              "title": "AI in the Human Loop: The Impact of Differences in Digital Assistant Roles on the Personal Values of Users",
-              "authors": "Shakila Shayan , Marlies van Steenbergen, Koen van Turnhout, Zelda Zeegers, Somaya Ben Allouch, Maaike Harbers, Guido Evertzen, Janna Bruijning, Wieke van Boxtel, and Katarina Jerkovich",
-              "presenters": "shakila shayan",
+              "id": "SP1254",
+              "title": "Asymmetric communication in virtual reality: designing for presence, effectiveness, and enjoyment",
+              "authors": "Markus Kirjonen and Mika P. Nieminen",
+              "presenters": "Markus Kirjonen",
               "contact": [
                 {
-                  "name": "Shayan, Shakila",
-                  "email": "shakila.shayan@hu.nl"
+                  "name": "Kirjonen, Markus",
+                  "email": "markus.kirjonen@aalto.fi"
                 }
               ]
             },
             {
-              "id": "FP1194",
-              "title": "“A solution to a problem that didn’t exist?”: Exploring Attitudes Towards Smart Streetlight Systems",
-              "authors": "Anna-Lena Theus and Sonia Chiasson",
-              "presenters": "Anna-Lena Theus",
+              "id": "FP1122",
+              "title": "Digital Modeling for Everyone: Exploring How Novices Approach Voice-Based 3D Modeling",
+              "authors": "Giuseppe Desolda, Andrea Esposito, Florian Müller, and Sebastian Feger",
+              "presenters": "Andrea Esposito",
               "contact": [
                 {
-                  "name": "Theus, Anna-Lena",
-                  "email": "annatheus@cmail.carleton.ca"
+                  "name": "Desolda, Giuseppe",
+                  "email": "giuseppe.desolda@uniba.it"
                 }
               ]
             },
             {
               "id": "FP1189",
-              "title": "Evaluation of the Roles of Intelligent Technologies in Shared Activity Spaces of Neighborhood Communities",
-              "authors": "Jouko Makkonen, Rita Latikka, Rosana Rubio-Hernández, and Kaisa Väänänen",
-              "presenters": "Jouko Makkonen",
+              "title": "Exploring the Potential of Metaverse Apps for Real-World Applications: A Case Study with CALEND AR",
+              "authors": "Konstantinos Tsomokos, Christos Sintoris, Christos Fidas, and Nikolaos Avouris",
+              "presenters": "Nikolaos Avouris",
               "contact": [
                 {
-                  "name": "Makkonen, Jouko",
-                  "email": "jouko.makkonen@tuni.fi"
+                  "name": "Tsomokos, Konstantinos",
+                  "email": "up1047010@upnet.gr"
                 }
               ]
             },
             {
-              "id": "SP1150",
-              "title": "Problematizing “Empowerment” in HCAI",
-              "authors": "John S. Seberger, Hyesun Choung, and Prabu David",
-              "presenters": "John S. Seberger",
+              "id": "SP1219",
+              "title": "PeriFocus - Training Peripheral Color - and Shape Detection in Virtual Reality",
+              "authors": "Mads Thomsen, Mathias Halilovic, Alexandru Giuran, and Markus Löchtefeld",
+              "presenters": "Markus Löchtefeld",
               "contact": [
                 {
-                  "name": "Seberger, John",
-                  "email": "jss436@drexel.edu"
+                  "name": "Löchtefeld, Markus",
+                  "email": "mloc@create.aau.dk"
+                }
+              ]
+            },
+            {
+              "id": "SP1083",
+              "title": "Supporting Resilience Through Virtual Reality: Design and Preliminary Evaluation of a VR Experience Based on Viktor Frankl’s Logotherapy",
+              "authors": "Quynh Nguyen, Rodrigo Gutierrez, Lukas Kr¨oninger, and Ulrike Kretzer",
+              "presenters": "Quynh Nguyen",
+              "contact": [
+                {
+                  "name": "Nguyen, Quynh",
+                  "email": "quynh-huong.nguyen@ait.ac.at"
                 }
               ]
             }
