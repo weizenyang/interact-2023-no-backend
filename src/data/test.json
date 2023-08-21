@@ -1,0 +1,625 @@
+[
+    {
+        "text": "Registration",
+        "time": "8:00 - 9:00",
+        "day": 1,
+        "location": null,
+        "date": "28th August"
+    },
+    {
+        "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium",
+        "time": "9:00 - 10:30",
+        "day": 1,
+        "location": null,
+        "date": "28th August"
+    },
+    {
+        "text": "Coffee / Tea Break",
+        "time": "10:30 - 11:00",
+        "day": 1,
+        "location": null,
+        "date": "28th August"
+    },
+    {
+        "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium",
+        "time": "11:00 - 12:30",
+        "day": 1,
+        "location": null,
+        "date": "28th August"
+    },
+    {
+        "text": "Lunch Break",
+        "time": "12:30 - 13:30",
+        "day": 1,
+        "location": null,
+        "date": "28th August"
+    },
+    {
+        "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium",
+        "time": "13:30 - 15:00",
+        "day": 1,
+        "location": null,
+        "date": "28th August"
+    },
+    {
+        "text": "Coffee / Tea Break",
+        "time": "15:00 - 15:30",
+        "day": 1,
+        "location": null,
+        "date": "28th August"
+    },
+    {
+        "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium",
+        "time": "15:30 - 17:00",
+        "day": 1,
+        "location": null,
+        "date": "28th August"
+    },
+    {
+        "text": "BCS Conference Dinner",
+        "time": "19:00",
+        "day": 1,
+        "location": "Rustique Restaurant, 28 Castlegate, York",
+        "date": "28th August"
+    },
+    {
+        "text": "Registration",
+        "time": "8:00 - 9:00",
+        "day": 2,
+        "location": null,
+        "date": "29th August"
+    },
+    {
+        "text": "INTERACT Workshops / BCS Conference",
+        "time": "9:00 - 10:30",
+        "day": 2,
+        "location": null,
+        "date": "29th August"
+    },
+    {
+        "text": "Coffee / Tea Break",
+        "time": "10:30 - 11:00",
+        "day": 2,
+        "location": null,
+        "date": "29th August"
+    },
+    {
+        "text": "INTERACT Workshops / BCS Conference",
+        "time": "11:00 - 12:30",
+        "day": 2,
+        "location": null,
+        "date": "29th August"
+    },
+    {
+        "text": "Lunch Break",
+        "time": "12:30 - 13:30",
+        "day": 2,
+        "location": null,
+        "date": "29th August"
+    },
+    {
+        "text": "INTERACT Workshops / BCS Conference",
+        "time": "13:30 - 15:00",
+        "day": 2,
+        "location": null,
+        "date": "29th August"
+    },
+    {
+        "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+        "time": "13:30 - 15:00",
+        "day": 2,
+        "location": "TBA",
+        "date": "29th August"
+    },
+    {
+        "text": "Coffee / Tea Break",
+        "time": "15:00 - 15:30",
+        "day": 2,
+        "location": null,
+        "date": "29th August"
+    },
+    {
+        "text": "INTERACT Workshops / BCS Conference",
+        "time": "15:30 - 17:00",
+        "day": 2,
+        "location": null,
+        "date": "29th August"
+    },
+    {
+        "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+        "time": "15:30 - 17:00",
+        "day": 2,
+        "location": "TBA",
+        "date": "29th August"
+    },
+    {
+        "text": "Registration",
+        "time": "8:30 - 9:30",
+        "day": 3,
+        "location": null,
+        "date": "30th August"
+    },
+    {
+        "text": "Opening Session / Awards",
+        "time": "9:30 - 11:00",
+        "day": 3,
+        "location": null,
+        "date": "30th August"
+    },
+    {
+        "text": "Coffee Break",
+        "time": "11:00 - 11:30",
+        "day": 3,
+        "location": null,
+        "date": "30th August"
+    },
+    {
+        "text": "Opening Keynote: Why we do what we do – HCI and societal impact",
+        "time": "11:30 - 12:30",
+        "day": 3,
+        "location": "Large lecture theatre (PZA/103)",
+        "date": "30th August"
+    },
+    {
+        "text": "Lunch",
+        "time": "12:30 - 13:45",
+        "day": 3,
+        "location": null,
+        "date": "30th August"
+    },
+    {
+        "text": "Session A1: User Studies",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Session A2: Accessibility",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Session A3: Model-Based UI Design and Testing",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Session A4: Interaction with Conversational agents I",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Session A5: 3D Interaction",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Course A - Part 1: Introduction to Information Visualisation",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Coffee Break",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": null,
+        "date": "30th August"
+    },
+    {
+        "text": "Session B1: Data Physicalisation and Cross-Device",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Session B2: Interacting with Children",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Session B3: Information Visualization",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Session B4: Natural Language Processing and AI Explainability",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Session B5: Motion Sickness, Stress & Risk Pereception in 3D Environments",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Course A - Part 2: Introduction to Information Visualisation",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Course F - Part 2: The UCD Sprint - Bringing Users Along to Sprint",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Panel 2: Ethical Value Exchange in HCI",
+        "time": "13:45 - 15:15",
+        "day": 3,
+        "location": "TBA",
+        "date": "30th August"
+    },
+    {
+        "text": "Keynote: Inclusive design in the NHS - the practical reality of strategic inclusive design",
+        "time": "17:15 - 18:30",
+        "day": 3,
+        "location": "Large lecture theatre (PZA/103)",
+        "date": "30th August"
+    },
+    {
+        "text": "Welcome Reception",
+        "time": "18:30 - 20:00",
+        "day": 3,
+        "location": null,
+        "date": "30th August"
+    },
+    {
+        "text": "Registration",
+        "time": "8:00 - 8:30",
+        "day": 4,
+        "location": null,
+        "date": "31th August"
+    },
+    {
+        "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
+        "time": "8:30 - 9:30",
+        "day": 4,
+        "location": "Large lecture theatre (PZA/103)",
+        "date": "31th August"
+    },
+    {
+        "text": "Session C1: Haptic Interaction",
+        "time": "9:30 - 11:00",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session C2: Accessibility & Aging",
+        "time": "9:30 - 11:00",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session C3: Methodologies for HCI",
+        "time": "9:30 - 11:00",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session C4: Recommendation systems & AI explainability",
+        "time": "9:30 - 11:00",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session C5: User Movements & 3D Environments",
+        "time": "9:30 - 11:00",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Course D : Practical Ethics - Respecting Participants Contributions in HCI Research and Design",
+        "time": "9:30 - 11:00",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Course E: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
+        "time": "9:30 - 11:00",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Coffee Break",
+        "time": "11:00 - 11:30",
+        "day": 4,
+        "location": null,
+        "date": "31th August"
+    },
+    {
+        "text": "Session D1: User Studies, Eye-Tracking and Physiological data",
+        "time": "11:30 - 13:30",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session D2: Eye-Free, Gesture Interaction and Sign Language",
+        "time": "11:30 - 13:30",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session D3: Co-design",
+        "time": "11:30 - 13:30",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session D4: Social AI",
+        "time": "11:30 - 13:30",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session D5: Virtual Reality",
+        "time": "11:30 - 13:30",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Course B - Part 1: Disability, Design and Innovation for a Fairer World",
+        "time": "11:30 - 13:30",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Lunch",
+        "time": "13:30 - 14:15",
+        "day": 4,
+        "location": null,
+        "date": "31th August"
+    },
+    {
+        "text": "Session E1: Social Media and Digital Learning",
+        "time": "14:15 - 15:45",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session E2: Healthcare applications and Self-Monitoring",
+        "time": "14:15 - 15:45",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session E3: Information Visualization and 3D Interaction",
+        "time": "14:15 - 15:45",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session E4: Social and Ubiquitous Computing I",
+        "time": "14:15 - 15:45",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Session E5: Virtual Reality and Training",
+        "time": "14:15 - 15:45",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Course B - Part 2: Disability, Design and Innovation for a Fairer World",
+        "time": "14:15 - 15:45",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Panel 1: A Multi-Perspective Panel on User-centred Transparency, Explainability, and Controllability in Automations",
+        "time": "14:15 - 15:45",
+        "day": 4,
+        "location": "TBA",
+        "date": "31th August"
+    },
+    {
+        "text": "Coffee Break",
+        "time": "15:45 - 16:15",
+        "day": 4,
+        "location": null,
+        "date": "31th August"
+    },
+    {
+        "text": "Meetings and Networking",
+        "time": "16:15 - 19:00",
+        "day": 4,
+        "location": null,
+        "date": "31th August"
+    },
+    {
+        "text": "Conference Dinner",
+        "time": "19:00",
+        "day": 4,
+        "location": "Merchant Adventurers Hall, Central York",
+        "date": "31th August"
+    },
+    {
+        "text": "Registration",
+        "time": "8:00 - 8:30",
+        "day": 5,
+        "location": null,
+        "date": "1st Sept"
+    },
+    {
+        "text": "Keynote: Interactive Healthcare Technologies for Complex Contexts",
+        "time": "8:30 - 9:30",
+        "day": 5,
+        "location": "Large lecture theatre (PZA/103)",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session F1: Understanding users and privacy issues",
+        "time": "9:30 - 11:00",
+        "day": 5,
+        "location": "CSE/082X",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session F2: Accessibility for Auditory / Hearing",
+        "time": "9:30 - 11:00",
+        "day": 5,
+        "location": "CSE/102X",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session F3: Multisensory interaction and VR experiences",
+        "time": "9:30 - 11:00",
+        "day": 5,
+        "location": "LMB/002",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session F4: Social and Ubiquitous Computing II",
+        "time": "9:30 - 11:00",
+        "day": 5,
+        "location": "LMB/002A",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session F5: Human-Robot Interaction",
+        "time": "9:30 - 11:00",
+        "day": 5,
+        "location": "LMB/030",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Course C - Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+        "time": "9:30 - 11:00",
+        "day": 5,
+        "location": "LMB/036",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Coffee Break",
+        "time": "11:00 - 11:30",
+        "day": 5,
+        "location": null,
+        "date": "1st Sept"
+    },
+    {
+        "text": "Posters and Demonstrations",
+        "time": "11:30 - 12:30",
+        "day": 5,
+        "location": null,
+        "date": "1st Sept"
+    },
+    {
+        "text": "Lunch",
+        "time": "12:30 - 13:45",
+        "day": 5,
+        "location": null,
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session G1: User Self-Report",
+        "time": "13:45 - 15:15",
+        "day": 5,
+        "location": "CSE/082X",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session G2: Cybersecurity and Trust",
+        "time": "13:45 - 15:15",
+        "day": 5,
+        "location": "CSE/082X",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session G3: Online collaboration and Cooperative work",
+        "time": "13:45 - 15:15",
+        "day": 5,
+        "location": "CSE/082X",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session G4: Interaction with Conversational agents II",
+        "time": "13:45 - 15:15",
+        "day": 5,
+        "location": "CSE/082X",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Session G5: No data yet",
+        "time": "13:45 - 15:15",
+        "day": 5,
+        "location": "TBA",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Course C - Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+        "time": "13:45 - 15:15",
+        "day": 5,
+        "location": "CSE/082X",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Coffee Break",
+        "time": "15:15 - 15:45",
+        "day": 5,
+        "location": null,
+        "date": "1st Sept"
+    },
+    {
+        "text": "Closing keynote: Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
+        "time": "15:45 - 16:45",
+        "day": 5,
+        "location": "Large Lecture Theatre (PZA/103)",
+        "date": "1st Sept"
+    },
+    {
+        "text": "Closing session - announcement of INTERACT 2025",
+        "time": "16:45 - 17:30",
+        "day": 5,
+        "location": "Large Lecture Theatre (PZA/103)",
+        "date": "1st Sept"
+    }
+]

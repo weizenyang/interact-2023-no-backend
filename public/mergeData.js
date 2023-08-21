@@ -308,3 +308,5 @@ getSubFolder()
 // appendJsonList(getPosts())
 
 // getPages()
+
+// Load the fs module to read and write files

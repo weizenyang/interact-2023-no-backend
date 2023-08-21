@@ -6,12 +6,83 @@ import TimelineItem from "@source/components/TimelineItem.astro";
 import PreFooterModular from "@source/components/PreFooterModular.astro";
 
 const files = await Astro.glob("/src/data/timetable_data/*.json");
+const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 ---
 
 <Layout title="Interact 2023">
 	<main>
 		<Navbar />
 		<content>
+			<!-- <astro-typewriter data-messages={algoliaKey} >
+				<div id="#writer" />
+			</astro-typewriter> -->
+			<div class="search-box input-field">
+				<input type="text" placeholder="Search" id="search">
+				<script>
+
+					import algoliasearch from 'algoliasearch'
+
+					const searchBox = document.getElementById("search");
+					const resultBox = document.getElementById("result");
+					var searchInstance
+					// const key = {algoliaKey}
+					const client = algoliasearch('IVW7HXZDVM', "0242aba5672be09c70dc2288d7b9ea5f");
+					searchBox.addEventListener('keydown', (e) => {
+						if(searchInstance){
+							clearTimeout(searchInstance);
+						}
+						const index = client.initIndex('timetable')
+						// const record = { objectID: 1, name: 'test_record' }
+						// index.saveObject(record).wait()
+
+						// Search the index and print the results
+						searchInstance = setTimeout(() => {
+							resultBox.innerHTML = "";
+							index
+							.search(searchBox.value)
+							.then(({ hits }) => 
+							hits.forEach((e) => {
+								console.log(e);
+								const container = document.createElement('div');
+								container.style = "display:flex; margin: 0px; flex-direction: column; padding: 1em 0.5em;";
+			
+
+								const id = document.createElement('p');
+								id.innerHTML = e._highlightResult.id.value;
+								id.style = "display:inline; margin: 0px;"
+								container.appendChild(id);
+
+								const title = document.createElement('h3');
+								title.style = "display:inline; margin: 0px; font-size: 1em; font-family: AH-R;"
+								if(e.title){
+									title.innerHTML = e._highlightResult.title.value
+									container.appendChild(title);
+								} else if(e.text){
+									title.innerHTML = e._highlightResult.text.value
+									container.appendChild(title);
+								}
+
+								
+								
+
+								// const id = document.createElement('p');
+								// id.textContent = e.id;
+
+								resultBox.appendChild(container);
+								container.querySelectorAll('em').forEach((e) => {
+									e.style.cssText = "font-size: 1em; font-family: AH-R; background-color: var(--color-text); color: var(--color-bg); opacity: 0.5"
+								})
+							})
+							)
+							console.log("Stroke");
+						}, 100);
+						
+					})
+					
+				</script>
+				<div id='result'></div>
+			</div>
+			<button class="search"><img src="/search.svg" width="30px" height="30px">Search</button>
 			<section class="programmes-section-1">
 				<div class="title">
 					<h1 id="programmes-nav-trigger">PROGRAMME</h1>
@@ -90,7 +161,7 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			<section class="popup">
 				<div class="info-card">
 					<div class="info-card-top">
-						<button class="info-card-button prev-button"> <</button>
+						<button class="info-card-button prev-button"> {"<"} </button>
 						<div class="session-info">
 							<p class="session-title">
 								Some Text Here: Here Too
@@ -459,6 +530,8 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 	// 	});
 	// });
 
+	
+
 	function updateButtons() {
 		//Lookup system
 		const findKey = Object.keys(templates).find(
@@ -525,6 +598,13 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		margin: 0%;
 	}
 
+	#result{
+		overflow-y: scroll;
+	}
+
+	.searchTitle{
+		margin: 0px;
+	}
 
 
 	.pdf-version{
@@ -589,6 +669,72 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		transition: opacity 0.1s, top 0.4s;
 		border-radius: 5px;
 		pointer-events: none;
+	}
+
+	.search{
+		position: fixed;
+		justify-content: center;
+		z-index: 10000;
+		right: 20px;
+		bottom: 15px;
+		width: 100px;
+		height: 45px;
+		transform: translate(0, 0);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		box-shadow: 0px 0px 10px #00000033;
+		transition: 0.3s all ease-in-out;
+	}
+
+	.search-box{
+		position: fixed;
+		justify-content: center;
+		z-index: 10000;
+		width: 92vw;
+		transform: translate(50%, 50%);
+		background-color: #fcf7ebfb;
+		color: var(--color-text);
+		height: 85vh;
+		right: 50%;
+		bottom: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: top;
+		border-radius: 20px;
+		box-shadow: 0px 0px 10px #00000033;
+		padding: 1em;
+	}
+
+
+	.input-field input, .input-field textarea{
+		all: unset;
+		padding: 0.5em;
+		border-radius: 9px;
+		border: 2px solid #002C38;
+		font-family: sans-serif;
+		width: auto;
+		color: #002C38;
+		height: 20px;
+		background: #ffffffcc !important;
+	}
+
+	input::placeholder{
+		color: #002C3899 !important;
+	}
+
+	.input-field label{
+		padding-bottom: 0.2em;
+	}
+
+
+
+	.search img{
+		margin-right: 5px;
+	}
+
+	.search:active img > path{
+		fill: var(--color-text);
 	}
 
 	.info-card {
@@ -1025,25 +1171,6 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 		align-items: center;
 	}
 
-	.input-field {
-		padding-top: 1em;
-		display: flex;
-		flex-direction: column;
-		width: 50%;
-	}
-
-	.input-field input,
-	.input-field textarea {
-		all: unset;
-		padding: 0.5em;
-		border-radius: 0.5em;
-		border: 2px solid #002c38;
-		font-family: sans-serif;
-	}
-
-	.input-field label {
-		padding-bottom: 0.2em;
-	}
 
 	.link-card p {
 		margin: 0%;
@@ -1365,6 +1492,11 @@ const files = await Astro.glob("/src/data/timetable_data/*.json");
 			height: 100%;
 			border: #002c38 1px solid;
 			border-top: 0px;
+		}
+
+		main {
+			display: flex;
+			flex-direction: column;
 		}
 	}
 </style>
