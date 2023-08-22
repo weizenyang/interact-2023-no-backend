@@ -41,13 +41,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				var resultCount;
 				// const key = {algoliaKey}
 				const client = algoliasearch('IVW7HXZDVM', "0242aba5672be09c70dc2288d7b9ea5f");
-				searchBox.addEventListener('input', (e) => {
-					if(searchInstance){
-						clearTimeout(searchInstance);
-					}
-					const index = client.initIndex('timetable')
-					// const record = { objectID: 1, name: 'test_record' }
-					// index.saveObject(record).wait()
+				const index = client.initIndex('timetable')
 			
 					const style = document.createElement("style");
 							style.textContent = `
@@ -56,10 +50,8 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 								text-decoration: none;
 							}
 							`;
-
-					
-					// Search the index and print the results
-					searchInstance = setTimeout(() => {
+				function searchFunction(){
+						{
 						
 						resultCount = 0;
 						resultBox.innerHTML = "";
@@ -68,7 +60,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 						.search(searchBox.value)
 						.then(({ hits }) => 
 						hits.forEach((e) => {
-							console.log(e);
+							// console.log(e);
 							resultCount++;
 							document.getElementById("resultCount").innerText = resultCount + " results";
 			
@@ -87,7 +79,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 								"q",
 								encodeURI(e.text)
 							);
-							console.log('clicked')
+							console.log(e.title)
 							history.pushState({}, "", url);
 							var popStateEvent = new PopStateEvent ('popstate', {});
 							dispatchEvent (popStateEvent);
@@ -149,7 +141,26 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			
 						})
 						)
-					}, 500);
+					}
+					}
+					//Start searching blanks upon click on search button
+					var searchInit = false;
+					document.getElementById("toggle-search").addEventListener('click', () => {
+						if(!searchInit){
+							searchInit = !searchInit
+							searchFunction()
+						}
+					})
+				// searchFunction();
+				searchBox.addEventListener('input', (e) => {
+					if(searchInstance){
+						clearTimeout(searchInstance);
+					}
+
+
+					
+					// Search the index and print the results
+					searchInstance = setTimeout(searchFunction(), 500);
 					
 				})
 				
@@ -368,12 +379,19 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		
 		if(qParam){
 			const wTitle = document.querySelectorAll(".hasInfo")
+			var count = 0;
 			wTitle.forEach((e) => {
 			if(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, '') == decodeURI(qParam).toLowerCase().replace(/\s/g, '')){
 				prevParam = decodeURI(qParam).toLowerCase().replace(/\s/g, '')
-				console.log(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, ''))
-				console.log(decodeURI(qParam).toLowerCase().replace(/\s/g, ''))
+				// console.log(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, ''))
+				// console.log(decodeURI(qParam).toLowerCase().replace(/\s/g, ''))
+				console.log(count)
 				checkUrl(e)
+			} else {
+				count++;
+				if(count >= 150){
+					console.log("Failed")
+				}
 			}
 		})
 		} else if(kParam){
@@ -386,6 +404,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			// console.log(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, ''))
 			console.log(decodeURI(qParam).toLowerCase().replace(/\s/g, ''))
 		}
+		
 	}
 
 
@@ -519,7 +538,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				// console.log(e.querySelector(".session-name").innerText)
 
 				currentIndex = parseInt(findKey);
-				console.log(currentIndex);
+				// console.log(currentIndex);
 
 				scrollToTarget(e.querySelector(".session-name").innerText);
 				showPopup(e)
@@ -527,7 +546,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 
 				//Append template content to popup
 				const content = template.content.cloneNode(true);
-				console.log("Content " + content);
+				// console.log("Content " + content);
 				document.querySelector(".content-1").innerHTML = "";
 				document.querySelector(".content-1").appendChild(content);
 
@@ -852,7 +871,15 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		
 	}
 
+	#exit-search{
+		opacity: 0;
+		transition: 0.2s all;
+	}
+
 	.search-active #search{
+		opacity: 1;
+	}
+	.search-active #exit-search{
 		opacity: 1;
 	}
 
@@ -873,7 +900,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		bottom: 15px;
 		width: 50px;
 		height: 40px;
-		transition: all 0.5s;
+		transition: all 0.4s, translate 0.2s;
 		overflow: hidden;
 		max-width: 1000px;
 	}
@@ -887,6 +914,14 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		right: 50%;
 		bottom: 50%;
 	}
+/* 
+	.item{
+		opacity: 1;
+	}
+
+	.search-active .item{
+		opacity: 0;
+	} */
 
 
 	input{
