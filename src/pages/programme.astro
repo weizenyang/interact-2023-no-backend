@@ -16,73 +16,143 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			<!-- <astro-typewriter data-messages={algoliaKey} >
 				<div id="#writer" />
 			</astro-typewriter> -->
-			<div class="search-box input-field">
-				<input type="text" placeholder="Search" id="search">
-				<script>
-
-					import algoliasearch from 'algoliasearch'
-
-					const searchBox = document.getElementById("search");
-					const resultBox = document.getElementById("result");
-					var searchInstance
-					// const key = {algoliaKey}
-					const client = algoliasearch('IVW7HXZDVM', "0242aba5672be09c70dc2288d7b9ea5f");
-					searchBox.addEventListener('keydown', (e) => {
-						if(searchInstance){
-							clearTimeout(searchInstance);
-						}
-						const index = client.initIndex('timetable')
-						// const record = { objectID: 1, name: 'test_record' }
-						// index.saveObject(record).wait()
-
-						// Search the index and print the results
-						searchInstance = setTimeout(() => {
-							resultBox.innerHTML = "";
-							index
-							.search(searchBox.value)
-							.then(({ hits }) => 
-							hits.forEach((e) => {
-								console.log(e);
-								const container = document.createElement('div');
-								container.style = "display:flex; margin: 0px; flex-direction: column; padding: 1em 0.5em;";
-			
-
-								const id = document.createElement('p');
-								id.innerHTML = e._highlightResult.id.value;
-								id.style = "display:inline; margin: 0px;"
-								container.appendChild(id);
-
-								const title = document.createElement('h3');
-								title.style = "display:inline; margin: 0px; font-size: 1em; font-family: AH-R;"
-								if(e.title){
-									title.innerHTML = e._highlightResult.title.value
-									container.appendChild(title);
-								} else if(e.text){
-									title.innerHTML = e._highlightResult.text.value
-									container.appendChild(title);
-								}
-
-								
-								
-
-								// const id = document.createElement('p');
-								// id.textContent = e.id;
-
-								resultBox.appendChild(container);
-								container.querySelectorAll('em').forEach((e) => {
-									e.style.cssText = "font-size: 1em; font-family: AH-R; background-color: var(--color-text); color: var(--color-bg); opacity: 0.5"
-								})
-							})
-							)
-							console.log("Stroke");
-						}, 100);
+			<div class="search-box input-field search-active">
+				<div style="display: flex;">
+					<div id="search" style="width: 100%">
+						<input type="text" placeholder="Search from 150 results" id="searchTextBox"></input>
+						<p id="resultCount"></p>
 						
-					})
-					
-				</script>
+					</div>
+					<button id="exit-search" style="padding: 0.5em; width: 40px; text-align: center; font-family: 'AH-R'; font-size: 1.2em; line-height: 1em; border-radius: 10px; margin-left: 10px;">X</button>
+				</div>
 				<div id='result'></div>
+
+				
 			</div>
-			<button class="search"><img src="/search.svg" width="30px" height="30px">Search</button>
+
+			<button class="search" id="toggle-search"><img src="/search.svg" width="30px" height="30px">Search</button>
+			
+			<script>
+				import algoliasearch from 'algoliasearch'
+			
+				const searchBox = document.getElementById("searchTextBox");
+				const resultBox = document.getElementById("result");
+				var searchInstance
+				var resultCount;
+				// const key = {algoliaKey}
+				const client = algoliasearch('IVW7HXZDVM', "0242aba5672be09c70dc2288d7b9ea5f");
+				searchBox.addEventListener('input', (e) => {
+					if(searchInstance){
+						clearTimeout(searchInstance);
+					}
+					const index = client.initIndex('timetable')
+					// const record = { objectID: 1, name: 'test_record' }
+					// index.saveObject(record).wait()
+			
+					const style = document.createElement("style");
+							style.textContent = `
+							.item:hover {
+								background-color: #FFC22322;
+								text-decoration: none;
+							}
+							`;
+
+					
+					// Search the index and print the results
+					searchInstance = setTimeout(() => {
+						
+						resultCount = 0;
+						resultBox.innerHTML = "";
+						resultBox.appendChild(style);
+						index
+						.search(searchBox.value)
+						.then(({ hits }) => 
+						hits.forEach((e) => {
+							console.log(e);
+							resultCount++;
+							document.getElementById("resultCount").innerText = resultCount + " results";
+			
+							const container = document.createElement('a');
+							container.className = "item"
+							container.style = "cursor:pointer; display:flex; margin: 0px; flex-direction: column; padding: 1em 0.5em; border-bottom: solid 1px #002C3855";
+							// container.href = "/programme?q=" + encodeURI(e.title)
+							container.addEventListener('click', () => {
+							
+							const url = new URL(window.location);
+							const urlParams = new URLSearchParams(url.search);
+							if(urlParams.get('q')){
+								urlParams.delete("q")
+							}
+							url.searchParams.set(
+								"q",
+								encodeURI(e.text)
+							);
+							console.log('clicked')
+							history.pushState({}, "", url);
+							var popStateEvent = new PopStateEvent ('popstate', {});
+							dispatchEvent (popStateEvent);
+							// findDataFromUrl();
+							})
+			
+			
+							
+			
+							const dataContainer = document.createElement('div');
+							dataContainer.style = "height: 30px; margin-bottom: 0.3em;";
+							if(e.id){
+							const id = document.createElement('p');
+							id.innerHTML = e._highlightResult.id.value;
+							id.style = "display:inline; margin-right: 0.5em; font-size: 0.8em; background-color: #002C38; color: var(--color-bg); padding: 0.3em 0.6em; border-radius: 20px; text-decoration: none;"
+							dataContainer.appendChild(id);
+							}
+			
+							const day = document.createElement('p');
+							day.innerHTML = "Day " + e._highlightResult.day.value + ", " + e._highlightResult.date.value
+							day.style = "display:inline; margin-right: 0.5em; font-size: 0.8em; background-color: #00000000; color: var(--color-text); border: solid 2px var(--color-text); padding: 0.3em 0.6em; border-radius: 20px; text-decoration: none !important;"
+							dataContainer.appendChild(day);
+			
+							const time = document.createElement('p');
+							time.innerHTML = e.time
+							time.style = "display:inline; margin: 0px; font-size: 0.8em; background-color: #00000000; color: var(--color-text); border: solid 2px var(--color-text); padding: 0.3em 0.6em; border-radius: 20px; text-decoration: none !important;"
+							dataContainer.appendChild(time);
+			
+							container.appendChild(dataContainer);
+			
+							const title = document.createElement('h3');
+							title.style = "display:inline; margin: 0px; font-size: 1.2em; font-family: AH-R;"
+							if(e.title){
+								title.innerHTML = e._highlightResult.title.value
+								container.appendChild(title);
+							} else if(e.text){
+								title.innerHTML = e._highlightResult.text.value
+								container.appendChild(title);
+							}
+							
+							if(e.authors){
+								const authors = document.createElement('p');
+								authors.style = "display:inline; font-size: 0.8em; border-radius: 20px;"
+								authors.innerHTML = "by " + e._highlightResult.authors.value;
+								container.appendChild(authors);
+							}
+			
+							
+							
+			
+							// const id = document.createElement('p');
+							// id.textContent = e.id;
+			
+							resultBox.appendChild(container);
+							container.querySelectorAll('em').forEach((e) => {
+								e.style.cssText = "font-size: 1em; font-family: AH-R; border-radius: 2px; text-decoration: underline; text-decoration-style: dotted;"
+							})
+			
+						})
+						)
+					}, 500);
+					
+				})
+				
+			</script>
 			<section class="programmes-section-1">
 				<div class="title">
 					<h1 id="programmes-nav-trigger">PROGRAMME</h1>
@@ -238,6 +308,21 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		}
 	});
 
+	//Toggle Search Box
+	document.getElementById("exit-search").addEventListener('click', () => {
+						document.querySelector(".search-box").classList.remove("search-active");
+					})
+
+					document.getElementById("toggle-search").addEventListener('click', () => {
+						console.log("clicked")
+						if(document.querySelector(".search-box").classList.contains("search-active")){
+							document.querySelector(".search-box").classList.remove("search-active");
+						} else {
+							document.querySelector(".search-box").classList.add("search-active");
+						}
+						
+					})
+
 	const timetables = document.querySelectorAll('.timetable')
 
 		document.addEventListener('scroll', (e) => {
@@ -247,7 +332,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			if(e.getBoundingClientRect().top < window.innerHeight / 4
 				&& e.getBoundingClientRect().bottom > window.innerHeight / 4){
 					if(!document.querySelector(`a[href="#${e.id}"]`).getAttribute('style')){
-						document.querySelectorAll("[style]").forEach((item) => {
+						document.querySelector(".programmes-nav").querySelectorAll("[style]").forEach((item) => {
 							item.removeAttribute('style')
 						})
 						document.querySelector(`a[href="#${e.id}"]`).setAttribute('style', 'color: var(--color-bg) !important; background-color: #002c38')
@@ -257,26 +342,29 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 					
 			}
 		})
-		} else {
-			document.querySelectorAll("[style]").forEach((item) => {
-							item.removeAttribute('style')
-						})
-		}
+		} 
+		// else {
+		// 	document.querySelector(".programmes-nav").querySelectorAll("[style]").forEach((item) => {
+		// 					item.removeAttribute('style')
+		// 				})
+		// }
 		
 	})
 
-
-	// console.log(templates);
-	var prevParam;
 	window.addEventListener("popstate", () => {
+		console.log("pop")
+		findDataFromUrl();
+	});
+
+	function findDataFromUrl(){
 		const urlParams = new URLSearchParams(window.location.search);
 		const qParam = urlParams.get('q');
 		const kParam = urlParams.get('k');
-		const wTitle = document.querySelectorAll(".hasInfo")
-
+		var prevParam
+		
 		if(qParam){
+			const wTitle = document.querySelectorAll(".hasInfo")
 			wTitle.forEach((e) => {
-
 			if(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, '') == decodeURI(qParam).toLowerCase().replace(/\s/g, '')){
 				prevParam = decodeURI(qParam).toLowerCase().replace(/\s/g, '')
 				console.log(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, ''))
@@ -284,8 +372,18 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				checkUrl(e)
 			}
 		})
+		} else if(kParam){
+			const wTitle = document.querySelectorAll(`.info-card-title`)
+			// const allSessions = document.querySelectorAll("template")
+			// const allProgrammes = allSessions.forEach((e) => {
+			// 	console.log(e.querySelector(`.info-card-title`))
+			// })
+			
+			// console.log(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, ''))
+			console.log(decodeURI(qParam).toLowerCase().replace(/\s/g, ''))
 		}
-	});
+	}
+
 
 	function highlight(target) {
 		document.querySelectorAll(".animate-highlight").forEach((e) => {
@@ -323,7 +421,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				} else {
 					quickNav.classList.remove("detach");
 					quickNavTrigger.classList.remove("programmes-nav-trigger");
-					document.querySelectorAll("[style]").forEach((item) => {
+					document.querySelector(".programmes-nav").querySelectorAll("[style]").forEach((item) => {
 							item.removeAttribute('style')
 						})
 				}
@@ -334,7 +432,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				} else {
 					quickNav.classList.remove("detach");
 					quickNavTrigger.classList.remove("programmes-nav-trigger");
-					document.querySelectorAll("[style]").forEach((item) => {
+					document.querySelector(".programmes-nav").querySelectorAll("[style]").forEach((item) => {
 							item.removeAttribute('style')
 						})
 				}
@@ -373,6 +471,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 	})
 	})
 
+	//Check for clickable elements then add checkURL function to query popup
 	document.querySelectorAll(".hasInfo").forEach((e) => {
 
 		e.addEventListener("click", () => {
@@ -389,6 +488,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				document.querySelector("#details").scrollTop = 0;
 	}
 
+	//check element then add query param to show popup
 	function checkUrl(e){
 		const template = e.querySelector("template");
 		if (template) {
@@ -428,7 +528,43 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				document.querySelector(".content-1").appendChild(content);
 
 				updateButtons();
-		}
+		} 
+		// else {
+			
+		// 		const urlParams = new URLSearchParams(window.location.search);
+		// 		const titleQuery = urlParams.get('q');
+		// 		const targetTemplate = document.querySelector(`[data-title=${titleQuery}]`);
+		// 		document.querySelector(".session-title").innerText =
+		// 			targetTemplate.querySelector(`data-title`).innerText;
+
+		// 		document.querySelector(".session-time").innerText =
+		// 			targetTemplate.getAttribute("data-time");
+
+		// 		//Get Keys to update index
+		// 		const findKey = Object.keys(templates).find(
+		// 			(thiskey) =>
+		// 				templates[thiskey].querySelector("template").dataset
+		// 					.session ===
+		// 				targetTemplate.querySelector(".session-name").innerText
+		// 		);
+
+		// 		// console.log(e.querySelector(".session-name").innerText)
+
+		// 		currentIndex = parseInt(findKey);
+		// 		console.log(currentIndex);
+
+		// 		scrollToTarget(e.querySelector(".session-name").innerText);
+		// 		showPopup(e)
+
+
+		// 		//Append template content to popup
+		// 		const content = template.content.cloneNode(true);
+		// 		console.log("Content " + content);
+		// 		document.querySelector(".content-1").innerHTML = "";
+		// 		document.querySelector(".content-1").appendChild(content);
+
+		// 		updateButtons();
+		// }
 		
 	}
 
@@ -591,7 +727,10 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			}
 		});
 	}
-</script>
+	
+	</script>
+
+
 
 <style>
 	* {
@@ -600,12 +739,19 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 
 	#result{
 		overflow-y: scroll;
+		width: calc(92vw - 1em);
+	}
+
+	#resultCount{
+		width: 100px;
+		font-size: 0.8em;
+		text-align: right;
+		opacity: 0.7;
 	}
 
 	.searchTitle{
 		margin: 0px;
 	}
-
 
 	.pdf-version{
 		padding: 0.5em 1em !important;
@@ -685,35 +831,68 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		align-items: center;
 		box-shadow: 0px 0px 10px #00000033;
 		transition: 0.3s all ease-in-out;
+
+	}
+
+
+	#search{
+		border-radius: 9px;
+		border: 2px solid #002C38;
+		background: #ffffffcc !important;
+		padding: 0.3em;
+		display: flex;
+		align-items: center;
+		opacity: 0;
+		transition: 0.2s all;
+		
+	}
+
+	.search-active #search{
+		opacity: 1;
 	}
 
 	.search-box{
 		position: fixed;
-		justify-content: center;
+		justify-content: top;
 		z-index: 10000;
-		width: 92vw;
-		transform: translate(50%, 50%);
-		background-color: #fcf7ebfb;
-		color: var(--color-text);
-		height: 85vh;
-		right: 50%;
-		bottom: 50%;
+
 		display: flex;
 		flex-direction: column;
 		align-items: top;
 		border-radius: 20px;
 		box-shadow: 0px 0px 10px #00000033;
 		padding: 1em;
+		background-color: #fcf7ebfb;
+		color: var(--color-text);
+		width: 0vw;
+		right: 20px;
+		bottom: 15px;
+		width: 100px;
+		height: 45px;
+		transition: all 0.5s;
+		overflow: hidden;
+	}
+
+	.search-active{
+		width: 92vw;
+		max-width: 1000px;
+		transform: translate(50%, 50%);
+
+		height: 85vh;
+		right: 50%;
+		bottom: 50%;
 	}
 
 
-	.input-field input, .input-field textarea{
+	input{
 		all: unset;
-		padding: 0.5em;
+		/* padding: 0.5em;
 		border-radius: 9px;
-		border: 2px solid #002C38;
+		border: 0px solid #002C38; */
+		/* border-radius: 9px;
+		border: 2px solid #002C38; */
 		font-family: sans-serif;
-		width: auto;
+		width: 100%;
 		color: #002C38;
 		height: 20px;
 		background: #ffffffcc !important;
