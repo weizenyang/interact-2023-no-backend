@@ -6,7 +6,8 @@
       "time": "8:00 - 8:30",
       "item": [
         {
-          "text": "Registration"
+          "text": "Registration",
+          "location": "Registration / Information Desk Open All Day"
         }
       ]
     },
@@ -88,7 +89,7 @@
           ]
         },
         {
-          "text": "Session F2: Accessibility for Hearing Disabilities",
+          "text": "Session F2: Accessibility for Auditory/Hearing Disabilities",
           "location": "CSE/102X",
           "hasInfo": true,
           "info": [
@@ -180,18 +181,6 @@
                 {
                   "name": "LÃ¶chtefeld, Markus",
                   "email": "mloc@create.aau.dk"
-                }
-              ]
-            },
-            {
-              "id": "industrial-1004",
-              "title": "Whose responsibility is accessibility in games anyway? Everyone",
-              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
-              "presenters": "",
-              "contact": [
-                {
-                  "name": "Power, Christopher",
-                  "email": "cdspower@upei.ca"
                 }
               ]
             }
@@ -554,10 +543,23 @@
           ]
         },
         {
-          "text": "Session G5: No data yet",
+          "text": "Session G5: The View From Industy",
           "location": "TBA",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "industrial-1004",
+              "title": "Whose responsibility is accessibility in games anyway? Everyone",
+              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
+              "presenters": "",
+              "contact": [
+                {
+                  "name": "Power, Christopher",
+                  "email": "cdspower@upei.ca"
+                }
+              ]
+            }
+          ]
         },
         {
           "text": "Course C - Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",

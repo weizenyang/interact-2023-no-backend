@@ -256,7 +256,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			<section class="popup">
 				<div class="info-card">
 					<div class="info-card-top">
-						<button class="info-card-button prev-button"> {"<"} </button>
+						<button class="info-card-button prev-button"> {"<"}</button>
 						<div class="session-info">
 							<p class="session-title">
 								Some Text Here: Here Too
@@ -280,7 +280,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 								></line></svg
 							>
 						</button>
-						<button class="info-card-button next-button"> ></button>
+						<button class="info-card-button next-button"> {`>`}</button>
 					</div>
 					<article class="details">
 						<div class="content-1" id="details">
@@ -1201,17 +1201,6 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		background: #555;
 	}
 
-	main {
-		display: flex;
-		flex-direction: row;
-		overscroll-behavior: none;
-		/* overflow-y: scroll */
-		/* height: 300vh;
-		padding-left: 14em; */
-		/* margin-left: 14em; */
-		/* position: absolute; */
-	}
-
 	label {
 		font-family: "AH-B";
 	}
@@ -1613,6 +1602,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 	}
 
 	@media (max-width: 829px) {
+		
 
 		.pdf-version{
 			padding: 0.5em;
