@@ -19,11 +19,14 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			<div class="search-box input-field">
 				<div style="display: flex;">
 					<div id="search" style="width: 100%">
-						<input type="text" placeholder="Search from 150 results" id="searchTextBox"></input>
+						<input type="text" placeholder="Search id, paper, author from 150 results" id="searchTextBox"></input>
 						<p id="resultCount"></p>
 						
 					</div>
-					<button id="exit-search" style="padding: 0.5em; width: 40px; text-align: center; font-family: 'AH-R'; font-size: 1.2em; line-height: 1em; border-radius: 10px; margin-left: 10px;">X</button>
+					<button id="exit-search" style="padding: 0.5em; width: 40px; text-align: center; font-family: 'AH-R'; font-size: 1.2em; line-height: 1em; border-radius: 10px; margin-left: 10px;">
+						<p id="cross">X</p>
+						<img id="backspace" width="20px" src="/backspace.svg" style="display: none">
+					</button>
 				</div>
 				<div id='result'></div>
 
@@ -153,8 +156,18 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 					})
 				// searchFunction();
 				searchBox.addEventListener('input', (e) => {
+					if(document.getElementById("searchTextBox").value){
+							console.log(document.getElementById("searchTextBox").value);
+							document.getElementById("cross").style.display = "none";
+							document.getElementById("backspace").style.display = "block";
+						} else {
+							document.getElementById("cross").style.display = "block";
+							document.getElementById("backspace").style.display = "none";
+						}
+
 					if(searchInstance){
 						clearTimeout(searchInstance);
+						
 					}
 
 
@@ -322,15 +335,30 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 
 	//Toggle Search Box
 	document.getElementById("exit-search").addEventListener('click', () => {
-						document.querySelector(".search-box").classList.remove("search-active");
+						if(document.getElementById("searchTextBox").value){
+							document.getElementById("searchTextBox").value = ""
+							document.getElementById("cross").style.display = "block";
+							document.getElementById("backspace").style.display = "none";
+							searchFunction()
+						} else {
+							document.querySelector(".search-box").classList.remove("search-active");
+							document.getElementById("cross").style.display = "none";
+							document.getElementById("backspace").style.display = "block";
+						}
+						
 					})
 
 					document.getElementById("toggle-search").addEventListener('click', () => {
 						console.log("clicked")
 						if(document.querySelector(".search-box").classList.contains("search-active")){
 							document.querySelector(".search-box").classList.remove("search-active");
+							//Toggle soft keyboard
+							document.querySelector("#searchTextBox").blur();
+							
 						} else {
 							document.querySelector(".search-box").classList.add("search-active");
+							//Toggle soft keyboard
+							document.querySelector("#searchTextBox").focus();
 						}
 						
 					})
