@@ -91,6 +91,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 							history.pushState({}, "", url);
 							var popStateEvent = new PopStateEvent ('popstate', {});
 							dispatchEvent (popStateEvent);
+
 							// findDataFromUrl();
 							})
 			
@@ -354,6 +355,9 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 	window.addEventListener("popstate", () => {
 		console.log("pop")
 		findDataFromUrl();
+		if(document.querySelector(".search-box").classList.contains("search-active")){
+			document.querySelector(".search-box").classList.remove("search-active");
+		}
 	});
 
 	function findDataFromUrl(){
@@ -740,6 +744,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 	#result{
 		overflow-y: scroll;
 		width: calc(92vw - 1em);
+		max-width: calc(1000px - 1em);
 	}
 
 	#resultCount{
@@ -864,17 +869,18 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		background-color: #fcf7ebfb;
 		color: var(--color-text);
 		width: 0vw;
-		right: 20px;
+		right: 25px;
 		bottom: 15px;
-		width: 100px;
-		height: 45px;
+		width: 50px;
+		height: 40px;
 		transition: all 0.5s;
 		overflow: hidden;
+		max-width: 1000px;
 	}
 
 	.search-active{
 		width: 92vw;
-		max-width: 1000px;
+		
 		transform: translate(50%, 50%);
 
 		height: 85vh;
