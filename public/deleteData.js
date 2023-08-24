@@ -19,7 +19,6 @@ fs.readFile(path.join(dirPath, "mergedtimetable_minified.json"), "utf8", (err, d
   for (let day of data) {
     for (let slot of day["data"]) {
       delete slot["or"];
-      delete slot["time"];
       for (let item of slot["item"]) {
         // Check if the item has info
         if (item["hasInfo"]) {

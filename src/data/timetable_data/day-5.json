@@ -558,6 +558,30 @@
                   "email": "cdspower@upei.ca"
                 }
               ]
+            },
+            {
+              "id": "unnamed-1",
+              "title": "TBA",
+              "authors": "TBA",
+              "presenters": "TBA",
+              "contact": [
+                {
+                  "name": "Jose, Abdelnour Nocera",
+                  "email": "Jose.Abdelnour-Nocera@uwl.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "unnamed-2",
+              "title": "User Research in The Real World",
+              "authors": "Lucy Buykx",
+              "presenters": "",
+              "contact": [
+                {
+                  "name": "Buykx, Lucy",
+                  "email": "lucy@buykx.com"
+                }
+              ]
             }
           ]
         },
@@ -607,6 +631,7 @@
             }
           ]
         }
+        
       ]
     },
     {

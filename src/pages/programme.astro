@@ -33,7 +33,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				
 			</div>
 
-			<button class="search" id="toggle-search"><img src="/search.svg" width="30px" height="30px">Search</button>
+			<button class="search" id="toggle-search"><img src="/search.svg" width="25px" height="25px">Search</button>
 			
 			<script>
 				import algoliasearch from 'algoliasearch'
@@ -103,7 +103,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 							}
 			
 							const day = document.createElement('p');
-							day.innerHTML = "Day " + e._highlightResult.day.value + ", " + e._highlightResult.date.value
+							day.innerHTML = e._highlightResult.day.value + ", " + e._highlightResult.date.value
 							day.style = "display:inline; margin-right: 0.5em; font-size: 0.8em; background-color: #00000000; color: var(--color-text); border: solid 2px var(--color-text); padding: 0.3em 0.6em; border-radius: 20px; text-decoration: none !important;"
 							dataContainer.appendChild(day);
 			
@@ -878,6 +878,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		width: 100px;
 		height: 45px;
 		transform: translate(0, 0);
+		font-size: medium;
 		display: flex;
 		flex-direction: row;
 		align-items: center;

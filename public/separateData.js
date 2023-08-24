@@ -6,7 +6,7 @@ const dirname = fileURLToPath(import.meta.url)
 const dirPath = path.join(dirname, "../../src/data")
 
 // Read the JSON file
-fs.readFile(path.join(dirPath, "merged_timetable.json"), "utf8", (err, data) => {
+fs.readFile(path.join(dirPath, "../../mergedProgrammeData.json"), "utf8", (err, data) => {
   // Handle any errors
   if (err) {
     console.error(err);
@@ -42,7 +42,7 @@ fs.readFile(path.join(dirPath, "merged_timetable.json"), "utf8", (err, data) => 
             let info_object = JSON.parse(JSON.stringify(info));
             // Add the time, day, location, date and text fields
             info_object["time"] = time;
-            info_object["day"] = day_number;
+            info_object["day"] = "Day " + day_number;
             info_object["location"] = location;
             info_object["date"] = date;
             info_object["text"] = text;
