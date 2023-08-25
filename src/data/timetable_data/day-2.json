@@ -6,16 +6,86 @@
         "time": "8:00 - 9:00",
         "item": [
           {
-            "text": "Registration",
+            "text": "Registration (CSE Foyer)",
             "location": "Registration / Information Desk Open All Day"
           }
         ]
       },
       {
         "time": "9:00 - 10:30",
+        "or": true,
         "item": [
           {
-            "text": "INTERACT Workshops / BCS Conference"
+            "text": "BCS Conference I",
+            "location": "CSE/082",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "BCS Conference II",
+            "location": "CSE/082",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "Re-contextualing the Built Environment",
+            "location": "CSE/102",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "SHWID",
+            "location": "LMB/047",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "HCSE@INTERACT",
+            "location": "LMB/020",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "HCI for Digital Democracy",
+            "location": "LMB/023",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "Algorithmic Affordance",
+            "location": "LMB/024",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "HCI Approaches to the Metaverse",
+            "location": "LMB/025",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "Designing for Neurodivergent",
+            "location": "CSE/102",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "IATech",
+            "location": "CSE/202",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "Playful, Curious",
+            "location": "CSE/103",
+            "hasInfo": "true",
+            "info":[{}]
+          },
+          {
+            "text": "CoDesigning AR & VR",
+            "location": "LMB/038",
+            "hasInfo": "true",
+            "info":[{}]
           }
         ]
       },
@@ -31,7 +101,7 @@
         "time": "11:00 - 12:30",
         "item": [
           {
-            "text": "INTERACT Workshops / BCS Conference"
+            "text": "[Same As Above]"
           }
         ]
       },
@@ -48,7 +118,7 @@
         "or": false,
         "item": [
           {
-            "text": "INTERACT Workshops / BCS Conference"
+            "text": "[Same As Above] "
           },
           {
             "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
@@ -85,7 +155,7 @@
         "or": false,
         "item": [
           {
-            "text": "INTERACT Workshops / BCS Conference"
+            "text": "[Same As Above]"
           },
           {
             "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",

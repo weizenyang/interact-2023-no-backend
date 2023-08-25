@@ -33,7 +33,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				
 			</div>
 
-			<button class="search" id="toggle-search"><img src="/search.svg" width="25px" height="25px">Search</button>
+			<button class="search" id="toggle-search"><img src="/search.svg" width="25px" height="25px" id="search-icon"><h1 id="exit-icon">X</h1>Search</button>
 			
 			<script>
 				import algoliasearch from 'algoliasearch'
@@ -55,7 +55,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 							`;
 				function searchFunction(){
 						{
-						
+						console.log("Search")
 						resultCount = 0;
 						resultBox.innerHTML = "";
 						resultBox.appendChild(style);
@@ -150,6 +150,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 					var searchInit = false;
 					document.getElementById("toggle-search").addEventListener('click', () => {
 						if(!searchInit){
+							console.log("searchInit is empty")
 							searchInit = !searchInit
 							searchFunction()
 						}
@@ -167,22 +168,62 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 
 					if(searchInstance){
 						clearTimeout(searchInstance);
+						console.log("cleared" + searchInstance)
 						
 					}
 
+					// Search the index and print the results
+					searchInstance = setTimeout(searchFunction, 500);
+					console.log(searchInstance)
+
 
 					
-					// Search the index and print the results
-					searchInstance = setTimeout(searchFunction(), 500);
+					
 					
 				})
+
+					//Toggle Search Box
+	document.getElementById("exit-search").addEventListener('click', () => {
+						if(document.getElementById("searchTextBox").value){
+							document.getElementById("searchTextBox").value = ""
+							document.getElementById("cross").style.display = "block";
+							document.getElementById("backspace").style.display = "none";
+							searchFunction()
+						} else {
+							document.querySelector(".search-box").classList.remove("search-active");
+							document.getElementById("cross").style.display = "none";
+							document.getElementById("backspace").style.display = "block";
+						}
+						
+					})
+
+					document.getElementById("toggle-search").addEventListener('click', () => {
+						console.log("clicked")
+						if(document.querySelector(".search-box").classList.contains("search-active")){
+							document.querySelector(".search-box").classList.remove("search-active");
+							if(document.getElementById("toggle-search").classList.contains("active")){
+								document.getElementById("toggle-search").classList.remove("active")
+							}
+							//Toggle soft keyboard
+							document.querySelector("#searchTextBox").blur();
+							
+						} else {
+							if(!document.getElementById("toggle-search").classList.contains("active")){
+								document.getElementById("toggle-search").classList.add("active")
+							}
+							document.querySelector(".search-box").classList.add("search-active");
+							//Toggle soft keyboard
+							document.querySelector("#searchTextBox").focus();
+						}
+						
+					})
 				
 			</script>
 			<section class="programmes-section-1">
 				<div class="title">
 					<h1 id="programmes-nav-trigger">PROGRAMME</h1>
 				</div>
-				<a class="hollow-button pdf-version" href="/INTERACT programme v1.pdf" target="_blank"><img src="/pdf.svg">PDF version</a>
+				<a class="hollow-button pdf-version" href="/INTERACT Programme V5.pdf" target="_blank"><img src="/pdf.svg">PDF version</a>
 			</section>
 
 			<div class="programmes-nav" id="programmes-nav">
@@ -333,35 +374,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		}
 	});
 
-	//Toggle Search Box
-	document.getElementById("exit-search").addEventListener('click', () => {
-						if(document.getElementById("searchTextBox").value){
-							document.getElementById("searchTextBox").value = ""
-							document.getElementById("cross").style.display = "block";
-							document.getElementById("backspace").style.display = "none";
-							searchFunction()
-						} else {
-							document.querySelector(".search-box").classList.remove("search-active");
-							document.getElementById("cross").style.display = "none";
-							document.getElementById("backspace").style.display = "block";
-						}
-						
-					})
 
-					document.getElementById("toggle-search").addEventListener('click', () => {
-						console.log("clicked")
-						if(document.querySelector(".search-box").classList.contains("search-active")){
-							document.querySelector(".search-box").classList.remove("search-active");
-							//Toggle soft keyboard
-							document.querySelector("#searchTextBox").blur();
-							
-						} else {
-							document.querySelector(".search-box").classList.add("search-active");
-							//Toggle soft keyboard
-							document.querySelector("#searchTextBox").focus();
-						}
-						
-					})
 
 	const timetables = document.querySelectorAll('.timetable')
 
@@ -396,6 +409,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		findDataFromUrl();
 		if(document.querySelector(".search-box").classList.contains("search-active")){
 			document.querySelector(".search-box").classList.remove("search-active");
+			document.getElementById("toggle-search").classList.remove("active");
 		}
 	});
 
@@ -884,7 +898,35 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		align-items: center;
 		box-shadow: 0px 0px 10px #00000033;
 		transition: 0.3s all ease-in-out;
+		background-color: #002c38;
+	}
 
+	.search.active{
+		background-color: #c23b22;
+		font-size: 0%;
+	}
+
+	#exit-icon{
+		text-decoration: none !important;
+		height: 25px;
+		width: 25px;
+		text-align: center;
+		align-self: stretch;
+		font-size: 25px;
+		display: none;
+	}
+	.active #exit-icon{
+		text-decoration: none !important;
+		display: flex;
+		height: 100%;
+		width: 25px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		font-size: 25px;
+	}
+	.active #search-icon{
+		display: none;
 	}
 
 
