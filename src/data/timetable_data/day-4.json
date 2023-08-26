@@ -6,8 +6,10 @@
       "time": "8:00 - 8:30",
       "item": [
         {
-          "text": "Registration",
-          "location": "Registration / Information Desk Open All Day"
+          "text": "Registration (Open All Day)",
+          "location": "Piazza Building",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
@@ -15,16 +17,17 @@
       "time": "8:30 - 9:30",
       "item": [
         {
-          "text": "Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
-          "author": " Jonathan Lazar, University of Maryland, USA",
-          "location": "Large lecture theatre (PZA/103)",
-          "hasInfo": true,
-          "info": [
+          "text": "Keynote: Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
+          "author": " Mike Evans, UX Research Lead, BBC Research and Development, UK",
+          "location": "Large Lecture Theatre (PZA/103)",
+          "hasInfo" : true,
+          "info" : [
             {
-            "title": "A Framework for Born-Accessible Development of Software and Digital Content",
-            "authors": "Jonathan Lazar, University of Maryland, USA",
-            "href": "keynote"
-          }
+              "id": "Keynote",
+              "title": "Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
+              "authors": "Mike Evans, UX Research Lead, BBC Research and Development, UK",
+              "href": "keynote"
+            }
           ]
         }
       ]
@@ -331,7 +334,9 @@
       "item": [
         {
           "text": "Coffee Break",
-          "location": "CSE / LMB"
+          "location": "CSE / LMB",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
@@ -661,11 +666,13 @@
       ]
     },
     {
-      "time": "13:30 - 14:15",
+      "time": "13:00 - 14:15",
       "item": [
         {
           "text": "Lunch",
-          "location": "CSE / LMB"
+          "location": "CSE / LMB",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
@@ -957,7 +964,9 @@
       "item": [
         {
           "text": "Coffee Break",
-          "location": "CSE / LMB"
+          "location": "CSE / LMB",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },

@@ -6,8 +6,10 @@
       "time": "8:00 - 8:30",
       "item": [
         {
-          "text": "Registration",
-          "location": "Registration / Information Desk Open All Day"
+          "text": "Registration (Open All Day)",
+          "location": "Piazza Building",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
@@ -299,7 +301,9 @@
       "item": [
         {
           "text": "Coffee Break",
-          "location": "CSE / LMB"
+          "location": "CSE / LMB",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
@@ -307,8 +311,10 @@
       "time": "11:30 - 12:30",
       "item": [
         {
-          "text": "Posters and Demonstrations",
-          "locations": "CSE/082"
+          "text": "Coffee Break",
+          "location": "CSE/082",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
@@ -317,7 +323,9 @@
       "item": [
         {
           "text": "Lunch",
-          "location": "CSE / LMB"
+          "location": "CSE / LMB",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
@@ -615,7 +623,9 @@
       "item": [
         {
           "text": "Coffee Break",
-          "location": "CSE / LMB"
+          "location": "CSE / LMB",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
@@ -623,19 +633,19 @@
       "time": "15:45 - 16:45",
       "item": [
         {
-          "text": "Closing keynote: Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
-          "author": " Mike Evans, UX Research Lead, BBC Research and Development, UK",
-          "location": "Large Lecture Theatre (PZA/103)",
-          "hasInfo" : true,
-          "info" : [
+          "text": "Closing Keynote: A Framework for Born-Accessible Development of Software and Digital Content",
+          "author": " Jonathan Lazar, University of Maryland, USA",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": [
             {
-              "id": "Closing Keynote",
-              "title": "Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
-              "authors": "Mike Evans, UX Research Lead, BBC Research and Development, UK",
-              "href": "keynote"
-            }
+            "title": "A Framework for Born-Accessible Development of Software and Digital Content",
+            "authors": "Jonathan Lazar, University of Maryland, USA",
+            "href": "keynote"
+          }
           ]
         }
+        
         
       ]
     },
@@ -643,8 +653,11 @@
       "time": "16:45 - 17:30",
       "item": [
         {
+
           "text": "Closing session - announcement of INTERACT 2025",
-          "location": "Large Lecture Theatre (PZA/103)"
+          "location": "Large Lecture Theatre (PZA/103)",
+          "hasInfo": true,
+          "info": []
         }
       ]
     }

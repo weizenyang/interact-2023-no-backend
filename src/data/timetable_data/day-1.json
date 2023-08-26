@@ -3,16 +3,18 @@
   "date": "28th August",
   "data": [
     {
-      "time": "8:00 - 9:00",
+      "time": "8:00 - 9:30",
       "item": [
         {
-          "text": "Registration (CSE Foyer)",
-          "location": "Registration / Information Desk Open All Day"
+          "text": "Registration (Open All Day)",
+          "location": "CSE Foyer",
+          "hasInfo": true,
+          "info": []
         }
       ]
     },
     {
-      "time": "9:00 - 10:30",
+      "time": "9:30 - 11:00",
       "or": true,
       "item": [
         {
@@ -128,38 +130,23 @@
           "text": "Doctoral Consortium",
           "location": "CSE/202",
           "hasInfo": "true",
-            "info":[{
-              "id": "No Data"
-            }]
+          "info":[]
         }
       ]
     },
     {
-      "time": "10:30 - 11:00",
+      "time": "11:00 - 11:30",
       "item": [
         {
-          "text": "Coffee / Tea Break"
+          "text": "Coffee Break",
+          "location": "CSE and LMB",
+          "hasInfo": true,
+          "info":[] 
         }
       ]
     },
     {
-      "time": "11:00 - 12:30",
-      "item": [
-        {
-          "text": "[Same As Above]"
-        }
-      ]
-    },
-    {
-      "time": "12:30 - 13:0",
-      "item": [
-        {
-          "text": "Lunch Break"
-        }
-      ]
-    },
-    {
-      "time": "13:30 - 15:00",
+      "time": "11:30 - 12:30",
       "item": [
         {
           "text": "[Same As Above]"
@@ -167,15 +154,37 @@
       ]
     },
     {
-      "time": "15:00 - 15:30",
+      "time": "12:30 - 13:45",
       "item": [
         {
-          "text": "Coffee / Tea Break"
+          "text": "Lunch Break",
+          "location": "CSE",
+          "hasInfo": true,
+          "info":[] 
         }
       ]
     },
     {
-      "time": "15:30 - 17:00",
+      "time": "13:45 - 15:15",
+      "item": [
+        {
+          "text": "[Same As Above]"
+        }
+      ]
+    },
+    {
+      "time": "15:15 - 15:45",
+      "item": [
+        {
+          "text": "Coffee Break",
+          "location": "CSE and LMB",
+          "hasInfo": true,
+          "info":[] 
+        }
+      ]
+    },
+    {
+      "time": "15:45 - 17:30",
       "item": [
         {
           "text": "[Same As Above]"
