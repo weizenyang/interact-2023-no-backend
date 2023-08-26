@@ -1,1017 +1,5 @@
 [
     {
-        "id": "BCS Conference",
-        "href": "other",
-        "text": "BCS Conference",
-        "link": "https://bcshci2023.org/",
-        "button_text": "British Computer Society Website",
-        "time": "9:00 - 10:30",
-        "day": "Day 1",
-        "location": "CSE/082",
-        "date": "28th August"
-    },
-    {
-        "id": "Workshops",
-        "title": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Linda Hirsch",
-                "email": "linda.hirsch@ifi.lmu.de"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 1",
-        "location": "CSE/102",
-        "date": "28th August",
-        "text": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage"
-    },
-    {
-        "id": "Workshops",
-        "title": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Lucio Davide Spano",
-                "email": "davide.spano@unica.it"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 1",
-        "location": "LMB/020",
-        "date": "28th August",
-        "text": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education"
-    },
-    {
-        "id": "Workshops",
-        "title": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Andrew Vargo",
-                "email": "awv@umich.edu"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 1",
-        "location": "LMB/023",
-        "date": "28th August",
-        "text": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI"
-    },
-    {
-        "id": "Workshops",
-        "title": "Designing for Map-based Interfaces and Interactions (MAPII 2023)",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Masood Masoodian",
-                "email": "masood.masoodian@aalto.fi"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 1",
-        "location": "LMB/024",
-        "date": "28th August",
-        "text": "Designing for Map-based Interfaces and Interactions (MAPII 2023)"
-    },
-    {
-        "id": "Workshops",
-        "title": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Tilo Mentler",
-                "email": "mentler@hochschule-trier.de"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 1",
-        "location": "CSE/203",
-        "date": "28th August",
-        "text": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control"
-    },
-    {
-        "id": "Workshops",
-        "title": "VR Accessibility in Distance Adult Education",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Bartosz Muczyński",
-                "email": "b.muczynski@pm.szczecin.pl"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 1",
-        "location": "CSE/204",
-        "date": "28th August",
-        "text": "VR Accessibility in Distance Adult Education"
-    },
-    {
-        "id": "No Data",
-        "time": "9:00 - 10:30",
-        "day": "Day 1",
-        "location": "CSE/202",
-        "date": "28th August",
-        "text": "Doctoral Consortium"
-    },
-    {
-        "id": "BCS Conference Dinner",
-        "href": "other",
-        "text": "BCS Conference Dinner",
-        "link": "https://www.rustiquerestaurants.co.uk/",
-        "button_text": "Check Location",
-        "time": "19:00",
-        "day": "Day 1",
-        "location": "Rustique Restaurant, 28 Castlegate, York",
-        "date": "28th August"
-    },
-    {
-        "id": "BCS Conference",
-        "href": "other",
-        "text": "BCS Conference I",
-        "link": "https://bcshci2023.org/",
-        "button_text": "British Computer Society Website",
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "CSE/082",
-        "date": "29th August"
-    },
-    {
-        "id": "BCS Conference",
-        "href": "other",
-        "text": "BCS Conference II",
-        "link": "https://bcshci2023.org/",
-        "button_text": "British Computer Society Website",
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "CSE/082",
-        "date": "29th August"
-    },
-    {
-        "id": "Workshops",
-        "title": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Hirsch, Linda",
-                "email": "linda.hirsch@ifi.lmu.de"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "CSE/102",
-        "date": "29th August",
-        "text": "Re-contextualing the Built Environment"
-    },
-    {
-        "id": "Workshops",
-        "title": "Sustainable Human-Work Interaction Design",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Elodie Bouzekri",
-                "email": "elodie.bouzekri@estia.fr"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "LMB/047",
-        "date": "29th August",
-        "text": "Sustainable Human-Work Interaction Design"
-    },
-    {
-        "id": "Workshops",
-        "title": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Hirsch, Linda",
-                "email": "linda.hirsch@ifi.lmu.de"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "LMB/020",
-        "date": "29th August",
-        "text": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation"
-    },
-    {
-        "id": "Workshops",
-        "title": "HCI for Digital Democracy and Citizen Participation",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "José Abdelnour Nocera",
-                "email": "jose.abdelnour-nocera@uwl.ac.uk"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "LMB/023",
-        "date": "29th August",
-        "text": "HCI for Digital Democracy and Citizen Participation"
-    },
-    {
-        "id": "Workshops",
-        "title": "Algorithmic affordances in recommender interfaces",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Aletta Smits",
-                "email": "aletta.smits@hu.nl"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "LMB/024",
-        "date": "29th August",
-        "text": "Algorithmic affordances in recommender interfaces"
-    },
-    {
-        "id": "Workshops",
-        "title": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Anmol Srivastava",
-                "email": "anmol@iiitd.ac.in"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "LMB/025",
-        "date": "29th August",
-        "text": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South"
-    },
-    {
-        "id": "Workshops",
-        "title": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "David Gollasch",
-                "email": "david.gollasch@tu-dresden.de"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "CSE/102",
-        "date": "29th August",
-        "text": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities"
-    },
-    {
-        "id": "Workshops",
-        "title": "Interacting with Assistive Technology (IATech) Workshop",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Hirsch, Linda",
-                "email": "linda.hirsch@ifi.lmu.de"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "CSE/202",
-        "date": "29th August",
-        "text": "Interacting with Assistive Technology (IATech) Workshop"
-    },
-    {
-        "id": "Workshops",
-        "title": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Aneesha Singh",
-                "email": "aneesha.singh@ucl.ac.uk"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "CSE/103",
-        "date": "29th August",
-        "text": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults"
-    },
-    {
-        "id": "Workshops",
-        "title": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
-        "href": "workshops",
-        "contact": [
-            {
-                "name": "Wiesław Kopeć",
-                "email": "w.kopec@pja.edu.pl"
-            }
-        ],
-        "time": "9:00 - 10:30",
-        "day": "Day 2",
-        "location": "LMB/038",
-        "date": "29th August",
-        "text": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research"
-    },
-    {
-        "id": "Course A",
-        "title": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-        "authors": "Chris Rourke, John Goodall",
-        "presenters": "Chris Rourke",
-        "contact": [
-            {
-                "name": "Rourke, Chris",
-                "email": "info@uxqb.org"
-            }
-        ],
-        "href": "courses",
-        "time": "13:30 - 15:00",
-        "day": "Day 2",
-        "location": "TBA",
-        "date": "29th August",
-        "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)"
-    },
-    {
-        "id": "Course A",
-        "title": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-        "authors": "Chris Rourke, John Goodall",
-        "presenters": "Chris Rourke",
-        "contact": [
-            {
-                "name": "UXQB",
-                "email": "info@uxqb.org"
-            }
-        ],
-        "href": "courses",
-        "time": "15:30 - 17:00",
-        "day": "Day 2",
-        "location": "TBA",
-        "date": "29th August",
-        "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)"
-    },
-    {
-        "title": "Interactive Healthcare Technologies for Complex Contexts",
-        "authors": "Ann Blandford, University College London, UK",
-        "href": "keynote",
-        "time": "8:30 - 9:30",
-        "day": "Day 5",
-        "location": "Large lecture theatre (PZA/103)",
-        "date": "1st Sept",
-        "text": "Keynote: Interactive Healthcare Technologies for Complex Contexts"
-    },
-    {
-        "id": "SP1171",
-        "title": "Concerns of Saudi higher education students about security and privacy of online digital technologies during the coronavirus pandemic",
-        "authors": "Basmah Almekhled and Helen Petrie",
-        "presenters": "Basmah Almekhled",
-        "contact": [
-            {
-                "name": "Petrie, Helen",
-                "email": "helen.petrie@york.ac.uk"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "CSE/082",
-        "date": "1st Sept",
-        "text": "Session F1: Understanding users and privacy issues"
-    },
-    {
-        "id": "FP1215",
-        "title": "Exploring the Experiences of People who Inherited Digital Assets from Deceased Users: a Search for Better Computing Solutions",
-        "authors": "Maria Fernanda Lira, Cristiano Maciel, Daniele Trevisan, Vinicius Carvalho Pereira, Simone Barbosa, and Flavia Beppu",
-        "presenters": "Simone Barbosa",
-        "contact": [
-            {
-                "name": "Lira, Maria Fernanda",
-                "email": "nandalira57@gmail.com"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "CSE/082",
-        "date": "1st Sept",
-        "text": "Session F1: Understanding users and privacy issues"
-    },
-    {
-        "id": "FP1061",
-        "title": "“Hello, Fellow Villager!”: Perceptions and Impact of Displaying Users’ Locations on Weibo",
-        "authors": "Ying Ma, Qiushi Zhou, Benjamin Tag, Zhanna Sarsenbayeva, Jarrod Knibbe, and Jorge Goncalves",
-        "presenters": "Ying Ma",
-        "contact": [
-            {
-                "name": "MA, YING",
-                "email": "yima3@student.unimelb.edu.au"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "CSE/082",
-        "date": "1st Sept",
-        "text": "Session F1: Understanding users and privacy issues"
-    },
-    {
-        "id": "SP1063",
-        "title": "Intimate Data: Exploring Perceptions of Privacy and Privacy-Seeking Behaviors through the Story Completion Method",
-        "authors": "Diana P. Moniz, Maryam Mehrnezhad, and Teresa Almeida",
-        "presenters": "Diana P. Moniz",
-        "contact": [
-            {
-                "name": "Almeida, Teresa",
-                "email": "teresa.almeida@umu.se"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "CSE/082",
-        "date": "1st Sept",
-        "text": "Session F1: Understanding users and privacy issues"
-    },
-    {
-        "id": "FP1087",
-        "title": "Challenges faced by the Employed Indian DHH Community",
-        "authors": "Advaith Sridhar, Roshni Poddar, Mohit Jain, and Pratyush Kumar",
-        "presenters": "Roshni Poddar",
-        "contact": [
-            {
-                "name": "Poddar, Roshni",
-                "email": "roshni.poddar28@gmail.com"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "CSE/102X",
-        "date": "1st Sept",
-        "text": "Session F2: Accessibility for Auditory/Hearing Disabilities"
-    },
-    {
-        "id": "FP1040",
-        "title": "Haptic Auditory Feedback for Enhanced Image Description: A Study of User Preferences and Performance",
-        "authors": "Mallak Alkhathlan, M. L. Tlachac, and Elke A Rundensteiner",
-        "presenters": "Mallak Alkhathlan",
-        "contact": [
-            {
-                "name": "Alkhathlan, Mallak",
-                "email": "malkhathlan@wpi.edu"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "CSE/102X",
-        "date": "1st Sept",
-        "text": "Session F2: Accessibility for Auditory/Hearing Disabilities"
-    },
-    {
-        "id": "FP1047",
-        "title": "Using Colour and Brightness for Sound Zone Feedback",
-        "authors": "Stine S. Johansen, Peter Axel Nielsen, Kashmiri Stec, and Jesper Kjeldskov",
-        "presenters": "Stine S. Johansen",
-        "contact": [
-            {
-                "name": "Johansen, Stine",
-                "email": "stinesl@cs.aau.dk"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "CSE/102X",
-        "date": "1st Sept",
-        "text": "Session F2: Accessibility for Auditory/Hearing Disabilities"
-    },
-    {
-        "id": "FP1018",
-        "title": "Augmenting Indigenous S´ami Exhibition - Interactive Digital Heritage in Museum Context",
-        "authors": "Siiri Paananen, Joo Chan Kim, Emma Kirjavainen, Matilda Kalving, Karan Mitra, and Jonna Häkkilä",
-        "presenters": "Siiri Paananen",
-        "contact": [
-            {
-                "name": "Paananen, Siiri",
-                "email": "siiri.paananen@ulapland.fi"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/020",
-        "date": "1st Sept",
-        "text": "Session F3: Multisensory interaction and VR experiences"
-    },
-    {
-        "id": "SP1070",
-        "title": "Design Paradigms of 3D User Interfaces for VR Exhibitions",
-        "authors": "Yunzhan Zhou, Lei Shi, Zexi He, Zhaoxing Li, and Jindi Wang",
-        "presenters": "Yunzhan Zhou",
-        "contact": [
-            {
-                "name": "Zhou, Yunzhan",
-                "email": "yunzhan.zhou@durham.ac.uk"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/020",
-        "date": "1st Sept",
-        "text": "Session F3: Multisensory interaction and VR experiences"
-    },
-    {
-        "id": "SP1189",
-        "title": "Multisensory Diorama: Enhancing Accessibility and Engagement in Museums",
-        "authors": "Leandro S. Guedes, Irene Zanardi, Stefania Span, and Monica Landoni",
-        "presenters": "Leandro S. Guedes",
-        "contact": [
-            {
-                "name": "S. Guedes, Leandro",
-                "email": "leandro.soares.guedes@usi.ch"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/020",
-        "date": "1st Sept",
-        "text": "Session F3: Multisensory interaction and VR experiences"
-    },
-    {
-        "id": "SP1149",
-        "title": "Museum Visitor Experiences based on Hyperspectral Image Data",
-        "authors": "Markus Löchtefeld, Eleftherios Papachristos, and Hilda Deborah",
-        "presenters": "Markus Löchtefeld",
-        "contact": [
-            {
-                "name": "LÃ¶chtefeld, Markus",
-                "email": "mloc@create.aau.dk"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/020",
-        "date": "1st Sept",
-        "text": "Session F3: Multisensory interaction and VR experiences"
-    },
-    {
-        "id": "FP1066",
-        "title": "A Survey of Computer-Supported Remote Collaboration on Physical Objects",
-        "authors": "Maximilian Letter, Ceenu George, and Katrin Wolf",
-        "presenters": "Maximilian Letter",
-        "contact": [
-            {
-                "name": "Letter, Maximilian",
-                "email": "maximilian.letter@beuth-hochschule.de"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/023",
-        "date": "1st Sept",
-        "text": "Session F4: Social and Ubiquitous Computing II"
-    },
-    {
-        "id": "FP1084",
-        "title": "Collaborative TV Control: Towards Co-Experience and Social Connectedness",
-        "authors": "Melanie Berger, Rutger Verstegen, Bahareh Barati, Harm van Essen, and Regina Bernhaupt",
-        "presenters": "Melanie Berger",
-        "contact": [
-            {
-                "name": "Berger, Melanie",
-                "email": "m.berger@tue.nl"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/023",
-        "date": "1st Sept",
-        "text": "Session F4: Social and Ubiquitous Computing II"
-    },
-    {
-        "id": "FP1083",
-        "title": "Introducing Sharemote: A Tangible Interface for Collaborative TV Control",
-        "authors": "Melanie Berger, Rutger Verstegen, Harm van Essen, and Regina Bernhaupt",
-        "presenters": "Melanie Berger and/or Rutger Verstegen",
-        "contact": [
-            {
-                "name": "Berger, Melanie",
-                "email": "m.berger@tue.nl"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/023",
-        "date": "1st Sept",
-        "text": "Session F4: Social and Ubiquitous Computing II"
-    },
-    {
-        "id": "FP1195",
-        "title": "Pedestrian Interaction with a Snow Clearing Robot",
-        "authors": "Ashley Colley, Marko Tiitto, Bastian Pfleging, and Jonna Häkkilä",
-        "presenters": "Ashley Colley",
-        "contact": [
-            {
-                "name": "Colley, Ashley",
-                "email": "ashley.colley@gmail.com"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/024",
-        "date": "1st Sept",
-        "text": "Session F5: Human-Robot Interaction"
-    },
-    {
-        "id": "FP1100",
-        "title": "Robot Collaboration and Model Reliance Based on its Trust in Human-Robot Interaction",
-        "authors": "Basel Alhaji, Michael Prilla, and Andreas Rausch",
-        "presenters": "Michael Prilla",
-        "contact": [
-            {
-                "name": "Alhaji, Basel",
-                "email": "basel.alhaji@uni-due.de"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/024",
-        "date": "1st Sept",
-        "text": "Session F5: Human-Robot Interaction"
-    },
-    {
-        "id": "FP1196",
-        "title": "User Experience in Large-Scale Robot Development: A Case Study of Mechanical and Software Teams",
-        "authors": "Sara Nielsen, Mikael B. Skov, and Anders Bruun",
-        "presenters": "Sara Nielsen",
-        "contact": [
-            {
-                "name": "Nielsen, Sara",
-                "email": "saranielsen0711@gmail.com"
-            }
-        ],
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/024",
-        "date": "1st Sept",
-        "text": "Session F5: Human-Robot Interaction"
-    },
-    {
-        "id": "Course C",
-        "title": "Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
-        "authors": "Sarah Clinch and Nigel Davies",
-        "presenters": "Sarah Clinch, Nigel Davies",
-        "contact": [
-            {
-                "name": "Sarah Clinch",
-                "email": "sarah.clinch@manchester.ac.uk"
-            }
-        ],
-        "href": "courses",
-        "time": "9:30 - 11:00",
-        "day": "Day 5",
-        "location": "LMB/025",
-        "date": "1st Sept",
-        "text": "Course C - Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation"
-    },
-    {
-        "id": "FP1002",
-        "title": "A Longitudinal Analysis of Real-World Self-Report Data",
-        "authors": "Niels van Berkel, Sujay Shalawadi, Madeleine R Evans, Aku Visuri, and Simo Hosio",
-        "presenters": "Niels van Berkel",
-        "contact": [
-            {
-                "name": "van Berkel, Niels",
-                "email": "nielsvanberkel@cs.aau.dk"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/082",
-        "date": "1st Sept",
-        "text": "Session G1: User Self-Report"
-    },
-    {
-        "id": "SP1253",
-        "title": "Awareness, Control and Impact in Digital Wellbeing - Results from Explorative Self-Experiments",
-        "authors": "Yavuz Inal, Frode Guribye, Lee Taber, and Steve Whittaker",
-        "presenters": "Yavuz Inal",
-        "contact": [
-            {
-                "name": "Inal, Yavuz",
-                "email": "yavuz.inal@ntnu.no"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/082",
-        "date": "1st Sept",
-        "text": "Session G1: User Self-Report"
-    },
-    {
-        "id": "FP1020",
-        "title": "Eliciting Meaningful Collaboration Metrics: Design Implications for Self-Tracking Technologies at Work",
-        "authors": "Alina Lushnikova, Kerstin Bongard-Blanchy, Vincent Koenig, and Carine Lallemand",
-        "presenters": "Alina Lushnikova",
-        "contact": [
-            {
-                "name": "Lushnikova, Alina",
-                "email": "alina.lushnikova@uni.lu"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/082",
-        "date": "1st Sept",
-        "text": "Session G1: User Self-Report"
-    },
-    {
-        "id": "SP1173",
-        "title": "Perception versus Reality: How User Self-Reflections Compare to Actual Data",
-        "authors": "Hannah R. Nolasco, Andrew Vargo, Yusuke Komatsu, Motoi Iwata, and Koichi Kise",
-        "presenters": "Hannah R. Nolasco",
-        "contact": [
-            {
-                "name": "Nolasco, Hannah",
-                "email": "df104001@st.osakafu-u.ac.jp"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/082",
-        "date": "1st Sept",
-        "text": "Session G1: User Self-Report"
-    },
-    {
-        "id": "SP1213",
-        "title": "Dark Finance: Exploring Deceptive Design in Investment Apps",
-        "authors": "Ivana Rakovic and Yavuz Inal",
-        "presenters": "Yavuz Inal",
-        "contact": [
-            {
-                "name": "Inal, Yavuz",
-                "email": "yavuz.inal@ntnu.no"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/102X",
-        "date": "1st Sept",
-        "text": "Session G2: Cybersecurity and Trust"
-    },
-    {
-        "id": "SP1207",
-        "title": "Elements that Influence Transparency in Artificial Intelligent Systems - A survey",
-        "authors": "Deepa Muralidhar, Rafik Belloum, Kathia Marçal de Oliveira, and Ashwin Ashok",
-        "presenters": "Deepa Muralidhar",
-        "contact": [
-            {
-                "name": "Muralidhar, Deepa",
-                "email": "deepa.muralidhar@gmail.com"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/102X",
-        "date": "1st Sept",
-        "text": "Session G2: Cybersecurity and Trust"
-    },
-    {
-        "id": "SP1098",
-        "title": "Empowering Users: Leveraging Interface Cues to Enhance Password Security",
-        "authors": "Yasmeen Abdrabou, Marco Asbeck, Ken Pfeuffer, Yomna Abdelrahman, Mariam Hassib, and Florian Alt",
-        "presenters": "Yasmeen Abdrabou",
-        "contact": [
-            {
-                "name": "Abdrabou, Yasmeen",
-                "email": "yasmeen.e.mahmoud@gmail.com"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/102X",
-        "date": "1st Sept",
-        "text": "Session G2: Cybersecurity and Trust"
-    },
-    {
-        "id": "SP1198",
-        "title": "Friendly Folk Advice: Exploring Cybersecurity Information Sharing in Nigeria",
-        "authors": "James Nicholson, Opeyemi Dele Ajayi, Kemi Fasae, abdBoniface Kayode Alese",
-        "presenters": "James Nicholson",
-        "contact": [
-            {
-                "name": "Nicholson, James",
-                "email": "james.nicholson@northumbria.ac.uk"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/102X",
-        "date": "1st Sept",
-        "text": "Session G2: Cybersecurity and Trust"
-    },
-    {
-        "id": "SP1078",
-        "title": "Trust in Facial Recognition Systems: A Perspective From the Users",
-        "authors": "Gabriela Beltrao, Sonia Sousa, and David Lamas",
-        "presenters": "Gabriela Beltrão",
-        "contact": [
-            {
-                "name": "Beltrão, Gabriela",
-                "email": "gbeltrao@tlu.ee"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/102X",
-        "date": "1st Sept",
-        "text": "Session G2: Cybersecurity and Trust"
-    },
-    {
-        "id": "FP1016",
-        "title": "A Systematic Literature Review of Online Collaborative Story Writing",
-        "authors": "Stefano Montanelli and Martin Ruskov",
-        "presenters": "Martin Ruskov",
-        "contact": [
-            {
-                "name": "Ruskov, Martin",
-                "email": "martin.ruskov@unimi.it"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "LMB/020",
-        "date": "1st Sept",
-        "text": "Session G3: Online collaboration and Cooperative work"
-    },
-    {
-        "id": "FP1249",
-        "title": "Algorithmic Management for Community Health Worker in Sub-Saharan Africa: Curse or Blessing?",
-        "authors": "Dario Staehelin, Mateusz Dolata, Nicolas Peyer, Felix Gerber, Gerhard Schwabe",
-        "presenters": "Dario Staehelin",
-        "contact": [
-            {
-                "name": "Staehelin, Dario",
-                "email": "staehelin@ifi.uzh.ch"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "LMB/020",
-        "date": "1st Sept",
-        "text": "Session G3: Online collaboration and Cooperative work"
-    },
-    {
-        "id": "FP1064",
-        "title": "Explorative Study of Perceived Social Loafing in VR Group Discussion: A Comparison between The Poster Presentation Environment and The Typical Conference Environment",
-        "authors": "Koutaro Kamada, Ryuya Watarai, Tzu-Yang Wang, Kentaro Takashima, Yasuyuki Sumi, and Takaya Yuizono",
-        "presenters": "Koutaro Kamada",
-        "contact": [
-            {
-                "name": "Kamada, Koutaro",
-                "email": "kamada@jaist.ac.jp"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "LMB/020",
-        "date": "1st Sept",
-        "text": "Session G3: Online collaboration and Cooperative work"
-    },
-    {
-        "id": "SP1124",
-        "title": "An AI chat-based solution aimed to screen Postpartum Depression",
-        "authors": "Bakhtawar Ahtisham, Seemal Tausif, Zoha Hayat Bhatti, Ayesha Masood, and Suleman Shahid",
-        "presenters": "Bakhtawar Ahtisham",
-        "contact": [
-            {
-                "name": "Ahtisham, Bakhtawar",
-                "email": "24100301@lums.edu.pk"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/023",
-        "date": "1st Sept",
-        "text": "Session G4: Interaction with Conversational agents II"
-    },
-    {
-        "id": "FP1128",
-        "title": "The Impact of Gender and Personality in Human-AI Teaming: the Case of Collaborative Question Answering",
-        "authors": "Frida Milella, Chiara Natali, Teresa Scantamburlo, Andrea Campagner, and Federico Cabitza",
-        "presenters": "Chiara Natali",
-        "contact": [
-            {
-                "name": "Milella, Frida",
-                "email": "frida.milella@unimib.it"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/023",
-        "date": "1st Sept",
-        "text": "Session G4: Interaction with Conversational agents II"
-    },
-    {
-        "id": "FP1132",
-        "title": "Empirical Grounding for the Interpretations of Natural User Interface: A Case Study on Smartpen",
-        "authors": "Baraa Alabdulwahab and Effie Lai-Chong Law",
-        "presenters": "-",
-        "contact": [
-            {
-                "name": "ALABDULWAHAB, BARAA",
-                "email": "ba184@leicester.ac.uk"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/023",
-        "date": "1st Sept",
-        "text": "Session G4: Interaction with Conversational agents II"
-    },
-    {
-        "id": "SP1157",
-        "title": "Methods for Evaluating Conversational Agents' Communicability, Acceptability and Accessibility Degree",
-        "authors": "Stefano Valtolina, Ricardo Anibal Matamoros, and Francesco Epifania",
-        "presenters": "Stefano Valtolina",
-        "contact": [
-            {
-                "name": "Stefano, Valtolina",
-                "email": "stefano.valtolina@unimi.it"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "CSE/023",
-        "date": "1st Sept",
-        "text": "Session G4: Interaction with Conversational agents II"
-    },
-    {
-        "id": "industrial-1004",
-        "title": "Whose responsibility is accessibility in games anyway? Everyone",
-        "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
-        "presenters": "",
-        "contact": [
-            {
-                "name": "Power, Christopher",
-                "email": "cdspower@upei.ca"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "LMB/024",
-        "date": "1st Sept",
-        "text": "Session G5: The View From Industy"
-    },
-    {
-        "id": "industrial-1005",
-        "title": "TBA",
-        "authors": "TBA",
-        "presenters": "TBA",
-        "contact": [
-            {
-                "name": "Jose, Abdelnour Nocera",
-                "email": "Jose.Abdelnour-Nocera@uwl.ac.uk"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "LMB/024",
-        "date": "1st Sept",
-        "text": "Session G5: The View From Industy"
-    },
-    {
-        "id": "industrial-1005",
-        "title": "User Research in The Real World",
-        "authors": "Lucy Buykx",
-        "presenters": "Lucy Buykx",
-        "contact": [
-            {
-                "name": "Buykx, Lucy",
-                "email": "lucy@buykx.com"
-            }
-        ],
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "LMB/024",
-        "date": "1st Sept",
-        "text": "Session G5: The View From Industy"
-    },
-    {
-        "id": "Course C",
-        "title": "Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
-        "authors": "Sarah Clinch and Nigel Davies",
-        "presenters": "Sarah Clinch, Nigel Davies",
-        "contact": [
-            {
-                "name": "Sarah Clinch",
-                "email": "sarah.clinch@manchester.ac.uk"
-            }
-        ],
-        "href": "courses",
-        "time": "13:45 - 15:15",
-        "day": "Day 5",
-        "location": "LMB/025",
-        "date": "1st Sept",
-        "text": "Course C - Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation"
-    },
-    {
-        "title": "Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
-        "authors": "Mike Evans, UX Research Lead, BBC Research and Development, UK",
-        "href": "keynote",
-        "time": "15:45 - 16:45",
-        "day": "Day 5",
-        "location": "Large Lecture Theatre (PZA/103)",
-        "date": "1st Sept",
-        "text": "Closing keynote: Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media"
-    },
-    {
         "title": "Why we do what we do – HCI and societal impact",
         "authors": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
         "href": "keynote",
@@ -1767,6 +755,208 @@
         "text": "Keynote: Inclusive design in the NHS - the practical reality of strategic inclusive design"
     },
     {
+        "id": "BCS Conference I",
+        "href": "other",
+        "text": "BCS Conference I",
+        "link": "https://bcshci2023.org/",
+        "button_text": "British Computer Society Website",
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "CSE/082",
+        "date": "29th August"
+    },
+    {
+        "id": "BCS Conference II",
+        "href": "other",
+        "text": "BCS Conference II",
+        "link": "https://bcshci2023.org/",
+        "button_text": "British Computer Society Website",
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "CSE/102",
+        "date": "29th August"
+    },
+    {
+        "id": "Workshops",
+        "title": "Sustainable Human-Work Interaction Design",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Elodie Bouzekri",
+                "email": "elodie.bouzekri@estia.fr"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "LMB/047",
+        "date": "29th August",
+        "text": "Sustainable Human-Work Interaction Design"
+    },
+    {
+        "id": "Workshops",
+        "title": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Hirsch, Linda",
+                "email": "linda.hirsch@ifi.lmu.de"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "LMB/020",
+        "date": "29th August",
+        "text": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation"
+    },
+    {
+        "id": "Workshops",
+        "title": "HCI for Digital Democracy and Citizen Participation",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "José Abdelnour Nocera",
+                "email": "jose.abdelnour-nocera@uwl.ac.uk"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "LMB/038X",
+        "date": "29th August",
+        "text": "HCI for Digital Democracy and Citizen Participation"
+    },
+    {
+        "id": "Workshops",
+        "title": "Algorithmic affordances in recommender interfaces",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Aletta Smits",
+                "email": "aletta.smits@hu.nl"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "LMB/024",
+        "date": "29th August",
+        "text": "Algorithmic affordances in recommender interfaces"
+    },
+    {
+        "id": "Workshops",
+        "title": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Anmol Srivastava",
+                "email": "anmol@iiitd.ac.in"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "LMB/025",
+        "date": "29th August",
+        "text": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South"
+    },
+    {
+        "id": "Workshops",
+        "title": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "David Gollasch",
+                "email": "david.gollasch@tu-dresden.de"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "CSE/202",
+        "date": "29th August",
+        "text": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities"
+    },
+    {
+        "id": "Workshops",
+        "title": "Interacting with Assistive Technology (IATech) Workshop",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Hirsch, Linda",
+                "email": "linda.hirsch@ifi.lmu.de"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "CSE/204",
+        "date": "29th August",
+        "text": "Interacting with Assistive Technology (IATech) Workshop"
+    },
+    {
+        "id": "Workshops",
+        "title": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Aneesha Singh",
+                "email": "aneesha.singh@ucl.ac.uk"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "CSE/203",
+        "date": "29th August",
+        "text": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults"
+    },
+    {
+        "id": "Workshops",
+        "title": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Wiesław Kopeć",
+                "email": "w.kopec@pja.edu.pl"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 2",
+        "location": "LMB/023",
+        "date": "29th August",
+        "text": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research"
+    },
+    {
+        "id": "Course A",
+        "title": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+        "authors": "Chris Rourke, John Goodall",
+        "presenters": "Chris Rourke",
+        "contact": [
+            {
+                "name": "Rourke, Chris",
+                "email": "info@uxqb.org"
+            }
+        ],
+        "href": "courses",
+        "time": "13:30 - 15:00",
+        "day": "Day 2",
+        "location": "CSE/103",
+        "date": "29th August",
+        "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)"
+    },
+    {
+        "id": "Course A",
+        "title": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+        "authors": "Chris Rourke, John Goodall",
+        "presenters": "Chris Rourke",
+        "contact": [
+            {
+                "name": "UXQB",
+                "email": "info@uxqb.org"
+            }
+        ],
+        "href": "courses",
+        "time": "15:30 - 17:00",
+        "day": "Day 2",
+        "location": "CSE/103",
+        "date": "29th August",
+        "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)"
+    },
+    {
         "title": "A Framework for Born-Accessible Development of Software and Digital Content",
         "authors": "Jonathan Lazar, University of Maryland, USA",
         "href": "keynote",
@@ -2131,7 +1321,7 @@
         ],
         "time": "11:30 - 13:00",
         "day": "Day 4",
-        "location": "CSE/102",
+        "location": "LMB/020",
         "date": "31th August",
         "text": "Session D1: User Studies, Eye-Tracking and Physiological data"
     },
@@ -2148,7 +1338,7 @@
         ],
         "time": "11:30 - 13:00",
         "day": "Day 4",
-        "location": "CSE/102",
+        "location": "LMB/020",
         "date": "31th August",
         "text": "Session D1: User Studies, Eye-Tracking and Physiological data"
     },
@@ -2165,7 +1355,7 @@
         ],
         "time": "11:30 - 13:00",
         "day": "Day 4",
-        "location": "CSE/102",
+        "location": "LMB/020",
         "date": "31th August",
         "text": "Session D1: User Studies, Eye-Tracking and Physiological data"
     },
@@ -2182,7 +1372,7 @@
         ],
         "time": "11:30 - 13:00",
         "day": "Day 4",
-        "location": "CSE/102",
+        "location": "LMB/020",
         "date": "31th August",
         "text": "Session D1: User Studies, Eye-Tracking and Physiological data"
     },
@@ -2193,13 +1383,13 @@
         "presenters": "André Pimenta Freire",
         "contact": [
             {
-                "name": "Freire, AndrÃ©",
+                "name": "Freire, André",
                 "email": "apfreire@ufla.br"
             }
         ],
         "time": "11:30 - 13:00",
         "day": "Day 4",
-        "location": "CSE/102",
+        "location": "LMB/020",
         "date": "31th August",
         "text": "Session D1: User Studies, Eye-Tracking and Physiological data"
     },
@@ -2828,5 +2018,800 @@
         "day": "Day 4",
         "location": "Merchant Adventurers Hall, Central York",
         "date": "31th August"
+    },
+    {
+        "title": "Interactive Healthcare Technologies for Complex Contexts",
+        "authors": "Ann Blandford, University College London, UK",
+        "href": "keynote",
+        "time": "8:30 - 9:30",
+        "day": "Day 5",
+        "location": "Large lecture theatre (PZA/103)",
+        "date": "1st Sept",
+        "text": "Keynote: Interactive Healthcare Technologies for Complex Contexts"
+    },
+    {
+        "id": "SP1171",
+        "title": "Concerns of Saudi higher education students about security and privacy of online digital technologies during the coronavirus pandemic",
+        "authors": "Basmah Almekhled and Helen Petrie",
+        "presenters": "Basmah Almekhled",
+        "contact": [
+            {
+                "name": "Petrie, Helen",
+                "email": "helen.petrie@york.ac.uk"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session F1: Understanding users and privacy issues"
+    },
+    {
+        "id": "FP1215",
+        "title": "Exploring the Experiences of People who Inherited Digital Assets from Deceased Users: a Search for Better Computing Solutions",
+        "authors": "Maria Fernanda Lira, Cristiano Maciel, Daniele Trevisan, Vinicius Carvalho Pereira, Simone Barbosa, and Flavia Beppu",
+        "presenters": "Simone Barbosa",
+        "contact": [
+            {
+                "name": "Lira, Maria Fernanda",
+                "email": "nandalira57@gmail.com"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session F1: Understanding users and privacy issues"
+    },
+    {
+        "id": "FP1061",
+        "title": "“Hello, Fellow Villager!”: Perceptions and Impact of Displaying Users’ Locations on Weibo",
+        "authors": "Ying Ma, Qiushi Zhou, Benjamin Tag, Zhanna Sarsenbayeva, Jarrod Knibbe, and Jorge Goncalves",
+        "presenters": "Ying Ma",
+        "contact": [
+            {
+                "name": "MA, YING",
+                "email": "yima3@student.unimelb.edu.au"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session F1: Understanding users and privacy issues"
+    },
+    {
+        "id": "SP1063",
+        "title": "Intimate Data: Exploring Perceptions of Privacy and Privacy-Seeking Behaviors through the Story Completion Method",
+        "authors": "Diana P. Moniz, Maryam Mehrnezhad, and Teresa Almeida",
+        "presenters": "Diana P. Moniz",
+        "contact": [
+            {
+                "name": "Almeida, Teresa",
+                "email": "teresa.almeida@umu.se"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session F1: Understanding users and privacy issues"
+    },
+    {
+        "id": "FP1087",
+        "title": "Challenges faced by the Employed Indian DHH Community",
+        "authors": "Advaith Sridhar, Roshni Poddar, Mohit Jain, and Pratyush Kumar",
+        "presenters": "Roshni Poddar",
+        "contact": [
+            {
+                "name": "Poddar, Roshni",
+                "email": "roshni.poddar28@gmail.com"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/047",
+        "date": "1st Sept",
+        "text": "Session F2: Accessibility for Auditory/Hearing Disabilities"
+    },
+    {
+        "id": "FP1040",
+        "title": "Haptic Auditory Feedback for Enhanced Image Description: A Study of User Preferences and Performance",
+        "authors": "Mallak Alkhathlan, M. L. Tlachac, and Elke A Rundensteiner",
+        "presenters": "Mallak Alkhathlan",
+        "contact": [
+            {
+                "name": "Alkhathlan, Mallak",
+                "email": "malkhathlan@wpi.edu"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/047",
+        "date": "1st Sept",
+        "text": "Session F2: Accessibility for Auditory/Hearing Disabilities"
+    },
+    {
+        "id": "FP1047",
+        "title": "Using Colour and Brightness for Sound Zone Feedback",
+        "authors": "Stine S. Johansen, Peter Axel Nielsen, Kashmiri Stec, and Jesper Kjeldskov",
+        "presenters": "Stine S. Johansen",
+        "contact": [
+            {
+                "name": "Johansen, Stine",
+                "email": "stinesl@cs.aau.dk"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/047",
+        "date": "1st Sept",
+        "text": "Session F2: Accessibility for Auditory/Hearing Disabilities"
+    },
+    {
+        "id": "FP1018",
+        "title": "Augmenting Indigenous S´ami Exhibition - Interactive Digital Heritage in Museum Context",
+        "authors": "Siiri Paananen, Joo Chan Kim, Emma Kirjavainen, Matilda Kalving, Karan Mitra, and Jonna Häkkilä",
+        "presenters": "Siiri Paananen",
+        "contact": [
+            {
+                "name": "Paananen, Siiri",
+                "email": "siiri.paananen@ulapland.fi"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/020",
+        "date": "1st Sept",
+        "text": "Session F3: Multisensory interaction and VR experiences"
+    },
+    {
+        "id": "SP1070",
+        "title": "Design Paradigms of 3D User Interfaces for VR Exhibitions",
+        "authors": "Yunzhan Zhou, Lei Shi, Zexi He, Zhaoxing Li, and Jindi Wang",
+        "presenters": "Yunzhan Zhou",
+        "contact": [
+            {
+                "name": "Zhou, Yunzhan",
+                "email": "yunzhan.zhou@durham.ac.uk"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/020",
+        "date": "1st Sept",
+        "text": "Session F3: Multisensory interaction and VR experiences"
+    },
+    {
+        "id": "SP1189",
+        "title": "Multisensory Diorama: Enhancing Accessibility and Engagement in Museums",
+        "authors": "Leandro S. Guedes, Irene Zanardi, Stefania Span, and Monica Landoni",
+        "presenters": "Leandro S. Guedes",
+        "contact": [
+            {
+                "name": "S. Guedes, Leandro",
+                "email": "leandro.soares.guedes@usi.ch"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/020",
+        "date": "1st Sept",
+        "text": "Session F3: Multisensory interaction and VR experiences"
+    },
+    {
+        "id": "SP1149",
+        "title": "Museum Visitor Experiences based on Hyperspectral Image Data",
+        "authors": "Markus Löchtefeld, Eleftherios Papachristos, and Hilda Deborah",
+        "presenters": "Markus Löchtefeld",
+        "contact": [
+            {
+                "name": "LÃ¶chtefeld, Markus",
+                "email": "mloc@create.aau.dk"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/020",
+        "date": "1st Sept",
+        "text": "Session F3: Multisensory interaction and VR experiences"
+    },
+    {
+        "id": "FP1066",
+        "title": "A Survey of Computer-Supported Remote Collaboration on Physical Objects",
+        "authors": "Maximilian Letter, Ceenu George, and Katrin Wolf",
+        "presenters": "Maximilian Letter",
+        "contact": [
+            {
+                "name": "Letter, Maximilian",
+                "email": "maximilian.letter@beuth-hochschule.de"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/023",
+        "date": "1st Sept",
+        "text": "Session F4: Social and Ubiquitous Computing II"
+    },
+    {
+        "id": "FP1084",
+        "title": "Collaborative TV Control: Towards Co-Experience and Social Connectedness",
+        "authors": "Melanie Berger, Rutger Verstegen, Bahareh Barati, Harm van Essen, and Regina Bernhaupt",
+        "presenters": "Melanie Berger",
+        "contact": [
+            {
+                "name": "Berger, Melanie",
+                "email": "m.berger@tue.nl"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/023",
+        "date": "1st Sept",
+        "text": "Session F4: Social and Ubiquitous Computing II"
+    },
+    {
+        "id": "FP1083",
+        "title": "Introducing Sharemote: A Tangible Interface for Collaborative TV Control",
+        "authors": "Melanie Berger, Rutger Verstegen, Harm van Essen, and Regina Bernhaupt",
+        "presenters": "Melanie Berger and/or Rutger Verstegen",
+        "contact": [
+            {
+                "name": "Berger, Melanie",
+                "email": "m.berger@tue.nl"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/023",
+        "date": "1st Sept",
+        "text": "Session F4: Social and Ubiquitous Computing II"
+    },
+    {
+        "id": "FP1195",
+        "title": "Pedestrian Interaction with a Snow Clearing Robot",
+        "authors": "Ashley Colley, Marko Tiitto, Bastian Pfleging, and Jonna Häkkilä",
+        "presenters": "Ashley Colley",
+        "contact": [
+            {
+                "name": "Colley, Ashley",
+                "email": "ashley.colley@gmail.com"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/024",
+        "date": "1st Sept",
+        "text": "Session F5: Human-Robot Interaction"
+    },
+    {
+        "id": "FP1100",
+        "title": "Robot Collaboration and Model Reliance Based on its Trust in Human-Robot Interaction",
+        "authors": "Basel Alhaji, Michael Prilla, and Andreas Rausch",
+        "presenters": "Michael Prilla",
+        "contact": [
+            {
+                "name": "Alhaji, Basel",
+                "email": "basel.alhaji@uni-due.de"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/024",
+        "date": "1st Sept",
+        "text": "Session F5: Human-Robot Interaction"
+    },
+    {
+        "id": "FP1196",
+        "title": "User Experience in Large-Scale Robot Development: A Case Study of Mechanical and Software Teams",
+        "authors": "Sara Nielsen, Mikael B. Skov, and Anders Bruun",
+        "presenters": "Sara Nielsen",
+        "contact": [
+            {
+                "name": "Nielsen, Sara",
+                "email": "saranielsen0711@gmail.com"
+            }
+        ],
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/024",
+        "date": "1st Sept",
+        "text": "Session F5: Human-Robot Interaction"
+    },
+    {
+        "id": "Course C",
+        "title": "Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+        "authors": "Sarah Clinch and Nigel Davies",
+        "presenters": "Sarah Clinch, Nigel Davies",
+        "contact": [
+            {
+                "name": "Sarah Clinch",
+                "email": "sarah.clinch@manchester.ac.uk"
+            }
+        ],
+        "href": "courses",
+        "time": "9:30 - 11:00",
+        "day": "Day 5",
+        "location": "LMB/025",
+        "date": "1st Sept",
+        "text": "Course C - Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation"
+    },
+    {
+        "id": "FP1002",
+        "title": "A Longitudinal Analysis of Real-World Self-Report Data",
+        "authors": "Niels van Berkel, Sujay Shalawadi, Madeleine R Evans, Aku Visuri, and Simo Hosio",
+        "presenters": "Niels van Berkel",
+        "contact": [
+            {
+                "name": "van Berkel, Niels",
+                "email": "nielsvanberkel@cs.aau.dk"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/047",
+        "date": "1st Sept",
+        "text": "Session G1: User Self-Report"
+    },
+    {
+        "id": "SP1253",
+        "title": "Awareness, Control and Impact in Digital Wellbeing - Results from Explorative Self-Experiments",
+        "authors": "Yavuz Inal, Frode Guribye, Lee Taber, and Steve Whittaker",
+        "presenters": "Yavuz Inal",
+        "contact": [
+            {
+                "name": "Inal, Yavuz",
+                "email": "yavuz.inal@ntnu.no"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/047",
+        "date": "1st Sept",
+        "text": "Session G1: User Self-Report"
+    },
+    {
+        "id": "FP1020",
+        "title": "Eliciting Meaningful Collaboration Metrics: Design Implications for Self-Tracking Technologies at Work",
+        "authors": "Alina Lushnikova, Kerstin Bongard-Blanchy, Vincent Koenig, and Carine Lallemand",
+        "presenters": "Alina Lushnikova",
+        "contact": [
+            {
+                "name": "Lushnikova, Alina",
+                "email": "alina.lushnikova@uni.lu"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/047",
+        "date": "1st Sept",
+        "text": "Session G1: User Self-Report"
+    },
+    {
+        "id": "SP1173",
+        "title": "Perception versus Reality: How User Self-Reflections Compare to Actual Data",
+        "authors": "Hannah R. Nolasco, Andrew Vargo, Yusuke Komatsu, Motoi Iwata, and Koichi Kise",
+        "presenters": "Hannah R. Nolasco",
+        "contact": [
+            {
+                "name": "Nolasco, Hannah",
+                "email": "df104001@st.osakafu-u.ac.jp"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/047",
+        "date": "1st Sept",
+        "text": "Session G1: User Self-Report"
+    },
+    {
+        "id": "SP1213",
+        "title": "Dark Finance: Exploring Deceptive Design in Investment Apps",
+        "authors": "Ivana Rakovic and Yavuz Inal",
+        "presenters": "Yavuz Inal",
+        "contact": [
+            {
+                "name": "Inal, Yavuz",
+                "email": "yavuz.inal@ntnu.no"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session G2: Cybersecurity and Trust"
+    },
+    {
+        "id": "SP1207",
+        "title": "Elements that Influence Transparency in Artificial Intelligent Systems - A survey",
+        "authors": "Deepa Muralidhar, Rafik Belloum, Kathia Marçal de Oliveira, and Ashwin Ashok",
+        "presenters": "Deepa Muralidhar",
+        "contact": [
+            {
+                "name": "Muralidhar, Deepa",
+                "email": "deepa.muralidhar@gmail.com"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session G2: Cybersecurity and Trust"
+    },
+    {
+        "id": "SP1098",
+        "title": "Empowering Users: Leveraging Interface Cues to Enhance Password Security",
+        "authors": "Yasmeen Abdrabou, Marco Asbeck, Ken Pfeuffer, Yomna Abdelrahman, Mariam Hassib, and Florian Alt",
+        "presenters": "Yasmeen Abdrabou",
+        "contact": [
+            {
+                "name": "Abdrabou, Yasmeen",
+                "email": "yasmeen.e.mahmoud@gmail.com"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session G2: Cybersecurity and Trust"
+    },
+    {
+        "id": "SP1198",
+        "title": "Friendly Folk Advice: Exploring Cybersecurity Information Sharing in Nigeria",
+        "authors": "James Nicholson, Opeyemi Dele Ajayi, Kemi Fasae, abdBoniface Kayode Alese",
+        "presenters": "James Nicholson",
+        "contact": [
+            {
+                "name": "Nicholson, James",
+                "email": "james.nicholson@northumbria.ac.uk"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session G2: Cybersecurity and Trust"
+    },
+    {
+        "id": "SP1078",
+        "title": "Trust in Facial Recognition Systems: A Perspective From the Users",
+        "authors": "Gabriela Beltrao, Sonia Sousa, and David Lamas",
+        "presenters": "Gabriela Beltrão",
+        "contact": [
+            {
+                "name": "Beltrão, Gabriela",
+                "email": "gbeltrao@tlu.ee"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "CSE/102",
+        "date": "1st Sept",
+        "text": "Session G2: Cybersecurity and Trust"
+    },
+    {
+        "id": "FP1016",
+        "title": "A Systematic Literature Review of Online Collaborative Story Writing",
+        "authors": "Stefano Montanelli and Martin Ruskov",
+        "presenters": "Martin Ruskov",
+        "contact": [
+            {
+                "name": "Ruskov, Martin",
+                "email": "martin.ruskov@unimi.it"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/020",
+        "date": "1st Sept",
+        "text": "Session G3: Online collaboration and Cooperative work"
+    },
+    {
+        "id": "FP1249",
+        "title": "Algorithmic Management for Community Health Worker in Sub-Saharan Africa: Curse or Blessing?",
+        "authors": "Dario Staehelin, Mateusz Dolata, Nicolas Peyer, Felix Gerber, Gerhard Schwabe",
+        "presenters": "Dario Staehelin",
+        "contact": [
+            {
+                "name": "Staehelin, Dario",
+                "email": "staehelin@ifi.uzh.ch"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/020",
+        "date": "1st Sept",
+        "text": "Session G3: Online collaboration and Cooperative work"
+    },
+    {
+        "id": "FP1064",
+        "title": "Explorative Study of Perceived Social Loafing in VR Group Discussion: A Comparison between The Poster Presentation Environment and The Typical Conference Environment",
+        "authors": "Koutaro Kamada, Ryuya Watarai, Tzu-Yang Wang, Kentaro Takashima, Yasuyuki Sumi, and Takaya Yuizono",
+        "presenters": "Koutaro Kamada",
+        "contact": [
+            {
+                "name": "Kamada, Koutaro",
+                "email": "kamada@jaist.ac.jp"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/020",
+        "date": "1st Sept",
+        "text": "Session G3: Online collaboration and Cooperative work"
+    },
+    {
+        "id": "SP1124",
+        "title": "An AI chat-based solution aimed to screen Postpartum Depression",
+        "authors": "Bakhtawar Ahtisham, Seemal Tausif, Zoha Hayat Bhatti, Ayesha Masood, and Suleman Shahid",
+        "presenters": "Bakhtawar Ahtisham",
+        "contact": [
+            {
+                "name": "Ahtisham, Bakhtawar",
+                "email": "24100301@lums.edu.pk"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/023",
+        "date": "1st Sept",
+        "text": "Session G4: Interaction with Conversational agents II"
+    },
+    {
+        "id": "FP1128",
+        "title": "The Impact of Gender and Personality in Human-AI Teaming: the Case of Collaborative Question Answering",
+        "authors": "Frida Milella, Chiara Natali, Teresa Scantamburlo, Andrea Campagner, and Federico Cabitza",
+        "presenters": "Chiara Natali",
+        "contact": [
+            {
+                "name": "Milella, Frida",
+                "email": "frida.milella@unimib.it"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/023",
+        "date": "1st Sept",
+        "text": "Session G4: Interaction with Conversational agents II"
+    },
+    {
+        "id": "FP1132",
+        "title": "Empirical Grounding for the Interpretations of Natural User Interface: A Case Study on Smartpen",
+        "authors": "Baraa Alabdulwahab and Effie Lai-Chong Law",
+        "presenters": "-",
+        "contact": [
+            {
+                "name": "ALABDULWAHAB, BARAA",
+                "email": "ba184@leicester.ac.uk"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/023",
+        "date": "1st Sept",
+        "text": "Session G4: Interaction with Conversational agents II"
+    },
+    {
+        "id": "SP1157",
+        "title": "Methods for Evaluating Conversational Agents' Communicability, Acceptability and Accessibility Degree",
+        "authors": "Stefano Valtolina, Ricardo Anibal Matamoros, and Francesco Epifania",
+        "presenters": "Stefano Valtolina",
+        "contact": [
+            {
+                "name": "Stefano, Valtolina",
+                "email": "stefano.valtolina@unimi.it"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/023",
+        "date": "1st Sept",
+        "text": "Session G4: Interaction with Conversational agents II"
+    },
+    {
+        "id": "industrial-1004",
+        "title": "Whose responsibility is accessibility in games anyway? Everyone",
+        "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
+        "presenters": "",
+        "contact": [
+            {
+                "name": "Power, Christopher",
+                "email": "cdspower@upei.ca"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/024",
+        "date": "1st Sept",
+        "text": "Session G5: The View From Industy"
+    },
+    {
+        "id": "industrial-1005",
+        "title": "TBA",
+        "authors": "TBA",
+        "presenters": "TBA",
+        "contact": [
+            {
+                "name": "Jose, Abdelnour Nocera",
+                "email": "Jose.Abdelnour-Nocera@uwl.ac.uk"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/024",
+        "date": "1st Sept",
+        "text": "Session G5: The View From Industy"
+    },
+    {
+        "id": "industrial-1005",
+        "title": "User Research in The Real World",
+        "authors": "Lucy Buykx",
+        "presenters": "Lucy Buykx",
+        "contact": [
+            {
+                "name": "Buykx, Lucy",
+                "email": "lucy@buykx.com"
+            }
+        ],
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/024",
+        "date": "1st Sept",
+        "text": "Session G5: The View From Industy"
+    },
+    {
+        "id": "Course C",
+        "title": "Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
+        "authors": "Sarah Clinch and Nigel Davies",
+        "presenters": "Sarah Clinch, Nigel Davies",
+        "contact": [
+            {
+                "name": "Sarah Clinch",
+                "email": "sarah.clinch@manchester.ac.uk"
+            }
+        ],
+        "href": "courses",
+        "time": "13:45 - 15:15",
+        "day": "Day 5",
+        "location": "LMB/025",
+        "date": "1st Sept",
+        "text": "Course C - Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation"
+    },
+    {
+        "id": "Closing Keynote",
+        "title": "Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
+        "authors": "Mike Evans, UX Research Lead, BBC Research and Development, UK",
+        "href": "keynote",
+        "time": "15:45 - 16:45",
+        "day": "Day 5",
+        "location": "Large Lecture Theatre (PZA/103)",
+        "date": "1st Sept",
+        "text": "Closing keynote: Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media"
+    },
+    {
+        "id": "BCS Conference",
+        "href": "other",
+        "text": "BCS Conference",
+        "link": "https://bcshci2023.org/",
+        "button_text": "British Computer Society Website",
+        "time": "9:00 - 10:30",
+        "day": "Day 1",
+        "location": "CSE/082",
+        "date": "28th August"
+    },
+    {
+        "id": "Workshops",
+        "title": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Linda Hirsch",
+                "email": "linda.hirsch@ifi.lmu.de"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 1",
+        "location": "CSE/102",
+        "date": "28th August",
+        "text": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage"
+    },
+    {
+        "id": "Workshops",
+        "title": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Lucio Davide Spano",
+                "email": "davide.spano@unica.it"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 1",
+        "location": "LMB/020",
+        "date": "28th August",
+        "text": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education"
+    },
+    {
+        "id": "Workshops",
+        "title": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Andrew Vargo",
+                "email": "awv@umich.edu"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 1",
+        "location": "LMB/023",
+        "date": "28th August",
+        "text": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI"
+    },
+    {
+        "id": "Workshops",
+        "title": "Designing for Map-based Interfaces and Interactions (MAPII 2023)",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Masood Masoodian",
+                "email": "masood.masoodian@aalto.fi"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 1",
+        "location": "LMB/024",
+        "date": "28th August",
+        "text": "Designing for Map-based Interfaces and Interactions (MAPII 2023)"
+    },
+    {
+        "id": "Workshops",
+        "title": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Tilo Mentler",
+                "email": "mentler@hochschule-trier.de"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 1",
+        "location": "CSE/203",
+        "date": "28th August",
+        "text": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control"
+    },
+    {
+        "id": "Workshops",
+        "title": "VR Accessibility in Distance Adult Education",
+        "href": "workshops",
+        "contact": [
+            {
+                "name": "Bartosz Muczyński",
+                "email": "b.muczynski@pm.szczecin.pl"
+            }
+        ],
+        "time": "9:00 - 10:30",
+        "day": "Day 1",
+        "location": "CSE/204",
+        "date": "28th August",
+        "text": "VR Accessibility in Distance Adult Education"
+    },
+    {
+        "id": "No Data",
+        "time": "9:00 - 10:30",
+        "day": "Day 1",
+        "location": "CSE/202",
+        "date": "28th August",
+        "text": "Doctoral Consortium"
+    },
+    {
+        "id": "BCS Conference Dinner",
+        "href": "other",
+        "text": "BCS Conference Dinner",
+        "link": "https://www.rustiquerestaurants.co.uk/",
+        "button_text": "Check Location",
+        "time": "19:00",
+        "day": "Day 1",
+        "location": "Rustique Restaurant, 28 Castlegate, York",
+        "date": "28th August"
     }
 ]

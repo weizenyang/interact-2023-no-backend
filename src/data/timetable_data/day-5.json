@@ -35,7 +35,7 @@
       "item": [
         {
           "text": "Session F1: Understanding users and privacy issues",
-          "location": "CSE/082",
+          "location": "CSE/102",
           "hasInfo": true,
           "info": [
             {
@@ -90,7 +90,7 @@
         },
         {
           "text": "Session F2: Accessibility for Auditory/Hearing Disabilities",
-          "location": "CSE/102X",
+          "location": "LMB/047",
           "hasInfo": true,
           "info": [
             {
@@ -327,7 +327,7 @@
       "item": [
         {
           "text": "Session G1: User Self-Report",
-          "location": "CSE/082",
+          "location": "LMB/047",
           "hasInfo": true,
           "info": [
             {
@@ -382,7 +382,7 @@
         },
         {
           "text": "Session G2: Cybersecurity and Trust",
-          "location": "CSE/102X",
+          "location": "CSE/102",
           "hasInfo": true,
           "info": [
             {
@@ -492,7 +492,7 @@
         },
         {
           "text": "Session G4: Interaction with Conversational agents II",
-          "location": "CSE/023",
+          "location": "LMB/023",
           "hasInfo": true,
           "info": [
             {
