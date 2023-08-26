@@ -20,7 +20,7 @@
             "location": "CSE/082",
             "hasInfo": "true",
             "info":[{
-              "id": "BCS Conference",
+              "id": "BCS Conference I",
               "href" : "other",
               "text" : "More details here:",
               "link" : "https://bcshci2023.org/",
@@ -29,30 +29,14 @@
           },
           {
             "text": "BCS Conference II",
-            "location": "CSE/082",
+            "location": "CSE/102",
             "hasInfo": "true",
             "info":[{
-              "id": "BCS Conference",
+              "id": "BCS Conference II",
               "href" : "other",
               "text" : "More details here:",
               "link" : "https://bcshci2023.org/",
               "button_text": "British Computer Society Website"
-            }]
-          },
-          {
-            "text": "Re-contextualing the Built Environment",
-            "location": "CSE/102",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Hirsch, Linda",
-                  "email": "linda.hirsch@ifi.lmu.de"
-                }
-              ]
             }]
           },
           {
@@ -89,7 +73,7 @@
           },
           {
             "text": "HCI for Digital Democracy and Citizen Participation",
-            "location": "LMB/023",
+            "location": "LMB/038X",
             "hasInfo": "true",
             "info":[{
               "id": "Workshops",
@@ -137,7 +121,7 @@
           },
           {
             "text": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
-            "location": "CSE/102",
+            "location": "CSE/202",
             "hasInfo": "true",
             "info":[{
               "id": "Workshops",
@@ -153,7 +137,7 @@
           },
           {
             "text": "Interacting with Assistive Technology (IATech) Workshop",
-            "location": "CSE/202",
+            "location": "CSE/204",
             "hasInfo": "true",
             "info":[{
               "id": "Workshops",
@@ -169,7 +153,7 @@
           },
           {
             "text": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
-            "location": "CSE/103",
+            "location": "CSE/203",
             "hasInfo": "true",
             "info":[{
               "id": "Workshops",
@@ -185,7 +169,7 @@
           },
           {
             "text": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
-            "location": "LMB/038",
+            "location": "LMB/023",
             "hasInfo": "true",
             "info":[{
               "id": "Workshops",
@@ -234,7 +218,7 @@
           },
           {
             "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-            "location": "TBA",
+            "location": "CSE/103",
             "hasInfo": true,
             "info": [
               {
@@ -271,7 +255,7 @@
           },
           {
             "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-            "location": "TBA",
+            "location": "CSE/103",
             "hasInfo": true,
             "info": [
               {

@@ -15,7 +15,8 @@
       "time": "9:30 - 11:00",
       "item": [
         {
-          "text": "Opening Session / Awards"
+          "text": "Opening Welcome / Awards",
+          "location": "Large lecture theatre (PZA/103)"
         }
       ]
     },
@@ -23,7 +24,7 @@
       "time": "11:00 - 11:30",
       "item": [
         {
-          "text": "Coffee Break"
+          "text": "Coffee Break in Piazza Building"
         }
       ]
     },
@@ -693,7 +694,7 @@
         },
         {
           "text": "Panel 2: Ethical Value Exchange in HCI",
-          "location": "TBA",
+          "location": "PZA/103",
           "hasInfo": true,
           "info": []
         }
