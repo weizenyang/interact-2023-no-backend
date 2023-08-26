@@ -551,22 +551,10 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "industrial-1004",
-              "title": "Whose responsibility is accessibility in games anyway? Everyone",
-              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
-              "presenters": "",
-              "contact": [
-                {
-                  "name": "Power, Christopher",
-                  "email": "cdspower@upei.ca"
-                }
-              ]
-            },
-            {
               "id": "industrial-1005",
-              "title": "TBA",
-              "authors": "TBA",
-              "presenters": "TBA",
+              "title": "Bridging the gap between HCI research and industry practice",
+              "authors": "Marta Rey-Babarro and Jose Abdelnour-Nocera ",
+              "presenters": "Marta Rey-Babarro, Jose Abdelnour-Nocera",
               "contact": [
                 {
                   "name": "Jose, Abdelnour Nocera",
@@ -583,6 +571,18 @@
                 {
                   "name": "Buykx, Lucy",
                   "email": "lucy@buykx.com"
+                }
+              ]
+            },
+            {
+              "id": "industrial-1004",
+              "title": "Whose responsibility is accessibility in games anyway? Everyone",
+              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
+              "presenters": "",
+              "contact": [
+                {
+                  "name": "Power, Christopher",
+                  "email": "cdspower@upei.ca"
                 }
               ]
             }
