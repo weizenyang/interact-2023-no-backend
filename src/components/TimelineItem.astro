@@ -175,6 +175,8 @@ name.map((e) => {
             position: absolute;
             top: -20px;
         }
+
+
         
 
         .everything-centered{
@@ -239,8 +241,8 @@ name.map((e) => {
             padding-left: 0em;
             padding-right: 1em;
             border-right: 1px solid #002C3822;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
             /* border-radius: 0px 10px 10px 0px;
             background-color: #002C38;
             color: #FCF7EB */
@@ -295,11 +297,36 @@ name.map((e) => {
         }
 
         @media screen and (max-width:829px){
+
+
             .time{
-                width: 55px;
+                width: 40px;
                 padding: 0.5em;
-                padding-left: 1em;
-                padding-right: 1em;
+                padding-left: 0em;
+                padding-right: 0.5em;
+                font-size: 0.8em;
+                text-align: center;
+                align-items: top;
+            }
+
+            .timetable-item{
+                padding-left: 0.5em;
+            }
+
+            .hasInfo{
+                margin-bottom: 0.5em !important;
+            }
+
+            .session-name{
+                font-size: 0.95em
+            }
+
+            .or{
+			    font-size: 0.8em;
+            }
+
+            .date{
+                padding-top: 1em;
             }
 		
 	    }

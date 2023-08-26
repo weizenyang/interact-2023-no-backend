@@ -1647,7 +1647,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		}
 
 		.programmes-section-2 {
-			padding: 1em;
+			padding: 0.5em;
 		}
 
 		.timetable {
@@ -1670,8 +1670,10 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		}
 	}
 
-	@media (max-width: 829px) {
-		
+	@media screen and (max-width: 829px) {
+		.timetable{
+            padding: 0.5em !important;
+         }
 
 		.pdf-version{
 			padding: 0.5em;
@@ -1727,8 +1729,8 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		}
 		.time {
 			padding: 0.5em;
-			padding-left: 0.5em;
-			padding-right: 0.5em;
+			padding-left: 0em !important;
+			padding-right: 0em !important;
 		}
 
 		.programmes-nav {
@@ -1803,6 +1805,22 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 		main {
 			display: flex;
 			flex-direction: column;
+		}
+
+		
+		.date{
+            padding: 0.4em;
+			background-color: #ffffff;
+			border-radius: 8.5px;
+        }
+	}
+
+	@media screen and (max-width: 429px) {
+		.programmes-nav{
+			
+			padding: 0%;
+			padding-bottom: 0.5em;
+			padding-top: 0.3em;
 		}
 	}
 </style>
