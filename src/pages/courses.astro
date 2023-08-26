@@ -10,8 +10,11 @@ import Navbar from '/src/components/Navbar.astro';
 import matter from 'gray-matter';
 import PreFooterModular from '@source/components/PreFooterModular.astro';
 
+const files = await Astro.glob('/src/data/courses_data/*.json')
+const courses = files.sort(({id : a}, {id : b}) => 
+	a === b ? 0 : a < b ? -1 : 1
+);
 
-const courses = await Astro.glob('/src/data/courses_data/*.json')
 courses.map((e) => {
 	console.log(e.buttons)
 })

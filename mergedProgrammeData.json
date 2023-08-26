@@ -1,1013 +1,4 @@
-[ {
-  "day": 3,
-  "date": "30th August",
-  "data": [
-    {
-      "time": "8:30 - 9:30",
-      "item": [
-        {
-          "text": "Registration",
-          "location": "Registration / Information Desk Open All Day"
-        }
-      ]
-    },
-    {
-      "time": "9:30 - 11:00",
-      "item": [
-        {
-          "text": "Opening Welcome / Awards",
-          "location": "Large lecture theatre (PZA/103)"
-        }
-      ]
-    },
-    {
-      "time": "11:00 - 11:30",
-      "item": [
-        {
-          "text": "Coffee Break in Piazza Building"
-        }
-      ]
-    },
-    {
-      "time": "11:30 - 12:30",
-      "item": [
-        {
-          "text": "Opening Keynote: Why we do what we do – HCI and societal impact",
-          "author": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
-          "location": "Large lecture theatre (PZA/103)",
-          "hasInfo": true,
-          "info": [
-            {
-            "title": "Why we do what we do – HCI and societal impact",
-            "authors": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
-            "href": "keynote"
-            }
-          ]
-          
-          
-        }
-      ]
-    },
-    {
-      "time": "12:30 - 13:45",
-      "item": [
-        {
-          "text": "Lunch"
-        }
-      ]
-    },
-    {
-      "time": "13:45 - 15:15",
-      "or": true,
-      "item": [
-        {
-          "text": "Session A1: User Studies",
-          "location": "CSE/102",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "SP1074",
-              "title": "“I miss going to that place”: The impact of watching nature videos on the well-being of informal caregivers",
-              "authors": "Beatriz Peres, Hildegardo Noronha, Daniel S. Lopes, Joaquim Jorge, and Pedro F. Campos",
-              "presenters": "Beatriz Peres",
-              "contact": [
-                {
-                  "name": "Peres, Beatriz",
-                  "email": "beatriz.peres@iti.larsys.pt"
-                }
-              ]
-            },
-            {
-              "id": "FP1082",
-              "title": "Comparing Perceived Restorativeness and Stress Reduction in Virtual Reality Environments using Abstract Fractal Geometries versus Realistic Natural Landscapes",
-              "authors": "Diana C. G. Mendes, and Mónica S Cameirão",
-              "presenters": "Diana Carolina Gonçalves Mendes",
-              "contact": [
-                {
-                  "name": "Mendes, Diana",
-                  "email": "diana.mendes@nlincs.uma.pt"
-                }
-              ]
-            },
-            {
-              "id": "SP1119",
-              "title": "Our Nudges, Our Selves: Tailoring Mobile User Engagement Using Personality",
-              "authors": "Nima Jamalian, Marios Constantinides, Sagar Joglekar, Xueni Pan, and Daniele Quercia",
-              "presenters": "Marios Constantinides",
-              "contact": [
-                {
-                  "name": "Constantinides, Marios",
-                  "email": "marios.constantinides@nokia-bell-labs.com"
-                }
-              ]
-            },
-            {
-              "id": "SP1091",
-              "title": "Turn & Slide: Designing a Puzzle Game to Elicit the Visualizer-Verbalizer Cognitive Style",
-              "authors": "Sotirios Petsas, George E. Raptis, and Christos Katsanos",
-              "presenters": "-",
-              "contact": [
-                {
-                  "name": "Raptis, George",
-                  "email": "graptis.ho@gmail.com"
-                }
-              ]
-            },
-            {
-              "id": "industrial-1000",
-              "title": "How to Bring Diversity into Industry: Industrial Experiences in Public Transport Repair & Maintenance",
-              "authors": "Rafael Vrecar, Markus Steinlechner, Patrick Rupprecht, Aaron Wedral, Marlies Negele, Maciej Palucki, Brigitte Ratzer, and Astrid Weiss1",
-              "presenters": "",
-              "contact": [
-                {
-                  "name": "Vrecar, Rafael",
-                  "email": "rafael@vrecar.eu"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Session A2: Accessibility",
-          "location": "CSE/082",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "FP1114",
-              "title": "Brilliance and Resilience: A New Perspective to the Challenges, Practices and Needs of University Students with Visual Impairments in India",
-              "authors": "Tigmanshu Bhatnagar, Vikas Upadhyay, PV Madhusudhan Rao, Nicolai Marquardt, Mark Mio-downik, and Catherine Holloway",
-              "presenters": "Tigmanshu Bhatnagar",
-              "contact": [
-                {
-                  "name": "Bhatnagar, Tigmanshu",
-                  "email": "t.bhatnagar.18@ucl.ac.uk"
-                }
-              ]
-            },
-            {
-              "id": "SP1120",
-              "title": "Mapping Virtual Reality Controls to Inform Design of Accessible User Experiences",
-              "authors": "Christopher Power, Paul Cairns, and Triskal DeHaven",
-              "presenters": "Christopher Power",
-              "contact": [
-                {
-                  "name": "Power, Christopher",
-                  "email": "cdspower@upei.ca"
-                }
-              ]
-            },
-            {
-              "id": "SP1180",
-              "title": "WAM-Studio: A Web-based Digital Audio Workstation To Empower Cochlear Implant Users",
-              "authors": "Michel Buffa, Antoine Vidal-Mazuy, Lloyd May, and Marco Winckler",
-              "presenters": "Marco Winckler",
-              "contact": [
-                {
-                  "name": "Buffa, Michel",
-                  "email": "michel.buffa@univ-cotedazur.fr"
-                }
-              ]
-            },
-            {
-              "id": "SP1160",
-              "title": "Web Accessibility in Higher Education in Norway: To What Extent are University Websites Accessible?",
-              "authors": "Yavuz Inal and Anne Britt Torkildsby",
-              "presenters": "Anne Britt Torkildsby",
-              "contact": [
-                {
-                  "name": "Inal, Yavuz",
-                  "email": "yavuz.inal@ntnu.no"
-                }
-              ]
-            },
-            {
-              "id": "SP1114",
-              "title": "Wesee: Digital Cultural Heritage Interpretation for Blind and Low Vision People",
-              "authors": "Yalan Luo, Weiyue Lin, Yuhan Liu, Xiaomei Nie, Xiang Qian, and Hanyu Guo",
-              "presenters": "Yalan Luo",
-              "contact": [
-                {
-                  "name": "Luo, Yalan",
-                  "email": "luoyl20@mails.tsinghua.edu.cn"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Session A3: Model-Based UI Design and Testing",
-          "location": "LMB/020",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "FP1012",
-              "title": "Common Objects for Programming Workshops in Non-Formal Learning Contexts",
-              "authors": "Nathalie Bressa, Susanne Bødker, Clemens N. Klokmose, and Eva Eriksson",
-              "presenters": "Nathalie Bressa",
-              "contact": [
-                {
-                  "name": "Bressa, Nathalie",
-                  "email": "nathalie.bressa@gmail.com"
-                }
-              ]
-            },
-            {
-              "id": "SP1211",
-              "title": "Engaging a project consortium in ethics-aware design and research",
-              "authors": "Päivi Heikkilä, Hanna Lammi, and Susanna Aromaa",
-              "presenters": "Päivi Heikkilä and Hanna Lammi",
-              "contact": [
-                {
-                  "name": "HeikkilÃ¤, PÃ¤ivi",
-                  "email": "paivi.heikkila@vtt.fi"
-                }
-              ]
-            },
-            {
-              "id": "SP1256",
-              "title": "Exploring Emotions: Study of Five Design Workshops for Generating Ideas for Emotional Self-Report Interfaces",
-              "authors": "Carla Nave, Francisco Nunes, Teresa Romão, and Nuno Correia",
-              "presenters": "Carla Nave",
-              "contact": [
-                {
-                  "name": "Nave, Carla",
-                  "email": "cd.saraiva@campus.fct.unl.pt"
-                }
-              ]
-            },
-            {
-              "id": "FP1153",
-              "title": "Moving Away from the Blocks: Evaluating the Usability of EduBlocks for Supporting Children to Transition from Block-Based Programming",
-              "authors": "Gavin Sim, Mark Lochrie, Misbahu S Zubair, Oliver Kerr, and Matthew Bates",
-              "presenters": "Gavin Sim",
-              "contact": [
-                {
-                  "name": "Sim, Gavin",
-                  "email": "grsim@uclan.ac.uk"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Session A4: Interaction with Conversational agents I",
-          "location": "LMB/047",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "FP1039",
-              "title": "Beyond Browser Online Shopping: Experience Attitude Towards Online 3D Shopping with Conversational Agents",
-              "authors": "Pedro Valente, Tiago Fornelos, Rafael Ferreira, Diog Silva, Diogo Tavares, Nuno Correia, João Magalhães, and Rui Nóbrega",
-              "presenters": "Pedro Valente",
-              "contact": [
-                {
-                  "name": "Valente, Pedro",
-                  "email": "pm.valente@campus.fct.unl.pt"
-                }
-              ]
-            },
-            {
-              "id": "FP1053",
-              "title": "Effects of Prior Experience, Gender, and Age on Trust in a Banking Chatbot with(out) Breakdown and Repair",
-              "authors": "Effie Lai-Chong Law, Nena van As, and Asbjørn Følstad",
-              "presenters": "Effie Lai-Chong Law",
-              "contact": [
-                {
-                  "name": "Law, Effie",
-                  "email": "lai-chong.law@durham.ac.uk"
-                }
-              ]
-            },
-            {
-              "id": "FP1121",
-              "title": "EaseOut: A Cross-Cultural Study of the Impact of a Conversation Agent on Leaving Video Meetings Early",
-              "authors": "Eureka Foong, Jack Jamieson, Hideaki Kuzuoka, Naomi Yamashita, and Tomoki Nishida",
-              "presenters": "Eureka Foong",
-              "contact": [
-                {
-                  "name": "Jamieson, Jack",
-                  "email": "jack@jackjamieson.net"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Session A5: 3D Interaction",
-          "location": "LMB/023",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "FP1034",
-              "title": "AHO-Guide: Automatically Guiding the Head Orientation of a Local User in Augmented Reality to Realign the Field of View With Remote Users",
-              "authors": "Lucas Pometti, Charles Bailly, and Julien Castet",
-              "presenters": "Lucas Pometti",
-              "contact": [
-                {
-                  "name": "Pometti, Lucas",
-                  "email": "lucas.pometti@immersion.fr"
-                }
-              ]
-            },
-            {
-              "id": "FP1010",
-              "title": "Point- and Volume-based Multi-Object Acquisition in VR",
-              "authors": "Zhiqing Wu, Difeng Yu, and Jorge Goncalves",
-              "presenters": "Zhiqing Wu",
-              "contact": [
-                {
-                  "name": "Yu, Difeng",
-                  "email": "diyu@di.ku.dk"
-                }
-              ]
-            },
-            {
-              "id": "FP1096",
-              "title": "Using Mid-Air Haptics to Guide Mid-Air Interactions",
-              "authors": "Timothy Neate, Sergio Alvares Maffra, William Frier, Zihao You, and Stephanie Wilson",
-              "presenters": "Timothy Neate",
-              "contact": [
-                {
-                  "name": "Neate, Timothy",
-                  "email": "tdjneate@gmail.com"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Course A - Part 1: Introduction to Information Visualisation",
-          "location": "LMB/024",
-          "hasInfo": true,
-          "info": [
-            {
-            "id": "Course A",
-            "title": "Part 1: Introduction to Information Visualisation",
-            "authors": "Keith Andrews",
-            "presenters": "Keith Andrews",
-            "contact": [
-              {
-                "name": "Andrews, Keith",
-                "email": "kandrews@tugraz.at"
-              }
-            ],
-            "href" : "courses"
-          }
-        ]
-        },
-        {
-          "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
-          "location": "LMB/025",
-          "hasInfo": true,
-          "info": [
-            {
-            "id": "Course F",
-            "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
-            "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-            "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-            "contact": [
-              {
-                "name": "Marta Larusdottir",
-                "email": "marta@ru.is"
-              }
-            ],
-            "href" : "courses"
-          }
-        ]
-        }
-      ]
-    },
-    {
-      "time": "13:45 - 15:15",
-      "item": [
-        {
-          "text": "Coffee Break"
-        }
-      ]
-    },
-    {
-      "time": "13:45 - 15:15",
-      "or": true,
-      "item": [
-        {
-          "text": "Session B1: Data Physicalisation and Cross-Device",
-          "location": "LMB/020",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "FP1103",
-              "title": "Comparing Screen-based Version Control to Augmented Artifact Version Control for Physical Objects",
-              "authors": "Maximilian Letter, Marco Kurzweg, and Katrin Wolf",
-              "presenters": "Maximilian Letter",
-              "contact": [
-                {
-                  "name": "Letter, Maximilian",
-                  "email": "maximilian.letter@beuth-hochschule.de"
-                }
-              ]
-            },
-            {
-              "id": "SP1200",
-              "title": "EmoClock: Communicating Real-Time Emotional States through Data Physicalizations",
-              "authors": "Dennis Peeters, Champika Ranasinghe, Auriol Degbelo, and Faizan Ahmed",
-              "presenters": "Champika Ranasinghe",
-              "contact": [
-                {
-                  "name": "Ranasinghe, Champika",
-                  "email": "c.m.eparanasinghe@utwente.nl"
-                }
-              ]
-            },
-            {
-              "id": "SP1186",
-              "title": "Extending User Interaction with Mixed Reality through a Smartphone-based Controller",
-              "authors": "Georgios Papadoulis, Christos Sintoris, Christos Fidas, and Nikolaos Avouris",
-              "presenters": "Georgios Papadoulis",
-              "contact": [
-                {
-                  "name": "Papadoulis, Georgios",
-                  "email": "g.papadoulis@upnet.gr"
-                }
-              ]
-            },
-            {
-              "id": "FP1098",
-              "title": "Fitts’ Throughput vs Empirical Throughput: A comparative study",
-              "authors": "Khyati Priya and Anirudha Joshi",
-              "presenters": "-",
-              "contact": [
-                {
-                  "name": "Priya, Khyati",
-                  "email": "khyatipriya@iitb.ac.in"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Session B2: Interacting with Children",
-          "location": "CSE/102",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "SP1143",
-              "title": "Awayvirus: A Playful and Tangible Approach to Improve Children’s Hygiene Habits in Family Education",
-              "authors": "Xiang Qi, Yaxiong Lei, Shijing He, and Shuxin Cheng",
-              "presenters": "Yaxiong Lei, Shijing He",
-              "contact": [
-                {
-                  "name": "Lei, Yaxiong",
-                  "email": "yl212@st-andrews.ac.uk"
-                }
-              ]
-            },
-            {
-              "id": "SP1057",
-              "title": "“Money from the Queen”: Exploring Children’s Ideas for Monetization in Free-to-Play Mobile Games",
-              "authors": "Dan Fitton and Janet C Read",
-              "presenters": "Dan Fitton",
-              "contact": [
-                {
-                  "name": "Fitton, Dan",
-                  "email": "dbfitton@uclan.ac.uk"
-                }
-              ]
-            },
-            {
-              "id": "SP1123",
-              "title": "Motivating Children’s Engagement with Sleep Diaries through Storytelling",
-              "authors": "Hannah C. van Iterson, Panos Markopoulos, and Leonardo E. Gerritsen",
-              "presenters": "Hannah van Iterson",
-              "contact": [
-                {
-                  "name": "van Iterson, Hannah",
-                  "email": "h.c.v.iterson@student.tue.nl"
-                }
-              ]
-            },
-            {
-              "id": "SP1251",
-              "title": "The Peer Data Labelling System (PDLS). A Participatory Approach to Classifying Engagement in the Classroom",
-              "authors": "Graham Parsonage, Matthew Horton, and Janet Read",
-              "presenters": "Graham Parsonage",
-              "contact": [
-                {
-                  "name": "Parsonage, Graham",
-                  "email": "gbparsonage1@uclan.ac.uk"
-                }
-              ]
-            },
-            {
-              "id": "FP1140",
-              "title": "WashWall: an Interactive Smart Mirror for Motivating Handwashing Among Primary School Children",
-              "authors": "Dees B.W. Postma, Champika M. Ranasinghe, Christos Constantinou, Vincent P.G. Diks, Younghun Rhee, Willem H.P. van Dijk, Amir Sassanian, and Dennis Reidsma",
-              "presenters": "Dees Postma",
-              "contact": [
-                {
-                  "name": "Postma, Dees",
-                  "email": "d.b.w.postma@utwente.nl"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Session B3: Information Visualization",
-          "location": "LMB/047",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "FP1219",
-              "title": "BiVis: Interactive and Progressive Visualization of Billions (and Counting) Items",
-              "authors": "Renaud Blanch",
-              "presenters": "Renaud Blanch",
-              "contact": [
-                {
-                  "name": "Blanch, Renaud",
-                  "email": "blanch@imag.fr"
-                }
-              ]
-            },
-            {
-              "id": "FP1097",
-              "title": "Modeling and Assessing User Interaction in Big Data Visualization Systems",
-              "authors": "Dario Benvenuti, Matteo Filosa, Tiziana Catarci, and Marco Angelini",
-              "presenters": "Dario Benvenuti",
-              "contact": [
-                {
-                  "name": "Benvenuti, Dario",
-                  "email": "d.benvenuti@diag.uniroma1.it"
-                }
-              ]
-            },
-            {
-              "id": "SP1097",
-              "title": "The Effect of Teleporting versus Room-scale Walking for Interacting with Immersive Visualizations",
-              "authors": "Alejandro Rey, Andrea Bellucci, Paloma Díaz, and Ignacio Aedo",
-              "presenters": "Alejandro Rey",
-              "contact": [
-                {
-                  "name": "Rey, Alejandro",
-                  "email": "alejandro.rey@uc3m.es"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Session B4: Natural Language Processing and AI Explainability",
-          "location": "CSE/082",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "FP1167",
-              "title": "Exploring Natural Language Processing Methods for Interactive Behaviour Modelling",
-              "authors": "Guanhua Zhang, Matteo Bortoletto, Zhiming Hu, Lei Shi, Mihai Bâce, and Andreas Bulling",
-              "presenters": "Guanhua Zhang",
-              "contact": [
-                {
-                  "name": "Zhang, Guanhua",
-                  "email": "guanhua.zhang@vis.uni-stuttgart.de"
-                }
-              ]
-            },
-            {
-              "id": "FP1065",
-              "title": "“Garbage In, Garbage Out”: Mitigating Human Biases in Data Entry by Means of Artificial Intelligence",
-              "authors": "Sven Eckhardt, Merlin Knaeble, Andreas Bucher, Dario Staehelin, Mateusz Dolata, Doris Agotai, and Gerhard Schwabe",
-              "presenters": "Sven Eckhardt",
-              "contact": [
-                {
-                  "name": "Eckhardt, Sven",
-                  "email": "eckhardt@ifi.uzh.ch"
-                }
-              ]
-            },
-            {
-              "id": "SP1068",
-              "title": "Is Overreliance on AI Provoked by Study Design?",
-              "authors": "Zelun Tony Zhang, Sven Tong, Yuanting Liu, and Andreas Butz",
-              "presenters": "Sven Tong",
-              "contact": [
-                {
-                  "name": "Zhang, Zelun Tony",
-                  "email": "zhang@fortiss.org"
-                }
-              ]
-            },
-            {
-              "id": "SP1080",
-              "title": "RePaLM: A Data-driven AI Assistant for Making Stronger Pattern Choices",
-              "authors": "Christina Milousi, George E. Raptis, Christina Katsini, and Christos Katsanos",
-              "presenters": "-",
-              "contact": [
-                {
-                  "name": "Raptis, George",
-                  "email": "graptis.ho@gmail.com"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Session B5: Motional Sickness, Stress & Risk Pereception in 3D Environments",
-          "location": "LMB/023",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "FP1203",
-              "title": "“Do I Run Away?”: Proximity, Stress and Discomfort in Human-Drone Interaction in Real and Virtual Environments",
-              "authors": "Robin Bretin, Mohamed Khamis, and Emily Cross",
-              "presenters": "Robin Bretin",
-              "contact": [
-                {
-                  "name": "Bretin, Robin",
-                  "email": "r.bretin.1@research.gla.ac.uk"
-                }
-              ]
-            },
-            {
-              "id": "FP1199",
-              "title": "Sick in the Car, Sick in VR? Understanding how Real-World Susceptibility to Dizziness, Nausea, and Eye Strain Influences VR Motion Sickness",
-              "authors": "Oliver Hein, Philipp Rauschnabel, Mariam Hassib, and Florian Alt",
-              "presenters": "Oliver Hein",
-              "contact": [
-                {
-                  "name": "Hein, Oliver",
-                  "email": "oliver.hein@unibw.de"
-                }
-              ]
-            },
-            {
-              "id": "FP1139",
-              "title": "Spatial Augmented Reality in the Factory: Can In-Situ Projections Be Used to Communicate Dangers and Health Risks?",
-              "authors": "Aaron Wedral, Rafael Vrecar, Gerhard Ebenhofer, Thomas Pönitz, Paul H. Wührer, Astrid Weiss, and Gernot Stübl",
-              "presenters": "Aaron Wedral, Rafael Vrecar",
-              "contact": [
-                {
-                  "name": "Wedral, Aaron",
-                  "email": "e1633070@student.tuwien.ac.at"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Course A - Part 2: Introduction to Information Visualisation",
-          "location": "LMB/024",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "Course A",
-              "title": "Part 2: Introduction to Information Visualisation",
-              "authors": "Keith Andrews",
-              "presenters": "Keith Andrews",
-              "contact": [
-                {
-                  "name": "Andrews, Keith",
-                  "email": "kandrews@tugraz.at"
-                }
-              ],
-              "href" : "courses"
-            }
-          ]
-        },
-        {
-          "text": "Course F - Part 2: The UCD Sprint - Bringing Users Along to Sprint",
-          "location": "LMB/025",
-          "hasInfo": true,
-          "info": [
-            {
-              "id": "Course F",
-              "title": "Part 2: The UCD Sprint - Bringing Users Along to Sprint",
-              "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-              "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
-              "contact": [
-                {
-                  "name": "Marta Larusdottir",
-                  "email": "marta@ru.is"
-                }
-              ],
-              "href" : "courses"
-            }
-          ]
-        },
-        {
-          "text": "Panel 2: Ethical Value Exchange in HCI",
-          "location": "PZA/103",
-          "hasInfo": true,
-          "info": []
-        }
-      ]
-    },
-    {
-      "time": "17:15 - 18:30",
-      "item": [
-        {
-          "text": "Keynote: Inclusive design in the NHS - the practical reality of strategic inclusive design",
-          "author": "Rochelle Gold, Head of User Research, Transformation Directorate, NHS England",
-          "location": "Large lecture theatre (PZA/103)",
-          "hasInfo": true,
-          "info": [
-            {
-            "title": "Inclusive design in the NHS: the practical reality of strategic inclusive design",
-            "authors": "Rochelle Gold, Head of User Research, Transformation Directorate, NHS England",
-            "href": "keynote"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "time": "18:30 - 20:00",
-      "item": [
-        {
-          "text": "Drinks Reception",
-          "location": "Piazza Building and Terrace"
-        }
-      ]
-    }
-  ]
-},{
-    "day": 2,
-    "date": "29th August",
-    "data": [
-      {
-        "time": "8:00 - 9:00",
-        "item": [
-          {
-            "text": "Registration (CSE Foyer)",
-            "location": "Registration / Information Desk Open All Day"
-          }
-        ]
-      },
-      {
-        "time": "9:00 - 10:30",
-        "or": true,
-        "item": [
-          {
-            "text": "BCS Conference I",
-            "location": "CSE/082",
-            "hasInfo": "true",
-            "info":[{
-              "id": "BCS Conference I",
-              "href" : "other",
-              "text" : "More details here:",
-              "link" : "https://bcshci2023.org/",
-              "button_text": "British Computer Society Website"
-            }]
-          },
-          {
-            "text": "BCS Conference II",
-            "location": "CSE/102",
-            "hasInfo": "true",
-            "info":[{
-              "id": "BCS Conference II",
-              "href" : "other",
-              "text" : "More details here:",
-              "link" : "https://bcshci2023.org/",
-              "button_text": "British Computer Society Website"
-            }]
-          },
-          {
-            "text": "Sustainable Human-Work Interaction Design",
-            "location": "LMB/047",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Sustainable Human-Work Interaction Design",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Elodie Bouzekri",
-                  "email": "elodie.bouzekri@estia.fr"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
-            "location": "LMB/020",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Hirsch, Linda",
-                  "email": "linda.hirsch@ifi.lmu.de"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "HCI for Digital Democracy and Citizen Participation",
-            "location": "LMB/038X",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "HCI for Digital Democracy and Citizen Participation",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "José Abdelnour Nocera",
-                  "email": "jose.abdelnour-nocera@uwl.ac.uk"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Algorithmic affordances in recommender interfaces",
-            "location": "LMB/024",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Algorithmic affordances in recommender interfaces",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Aletta Smits",
-                  "email": "aletta.smits@hu.nl"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
-            "location": "LMB/025",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Anmol Srivastava",
-                  "email": "anmol@iiitd.ac.in"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
-            "location": "CSE/202",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "David Gollasch",
-                  "email": "david.gollasch@tu-dresden.de"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Interacting with Assistive Technology (IATech) Workshop",
-            "location": "CSE/204",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Interacting with Assistive Technology (IATech) Workshop",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Hirsch, Linda",
-                  "email": "linda.hirsch@ifi.lmu.de"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
-            "location": "CSE/203",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Aneesha Singh",
-                  "email": "aneesha.singh@ucl.ac.uk"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
-            "location": "LMB/023",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Wiesław Kopeć",
-                  "email": "w.kopec@pja.edu.pl"
-                }
-              ]
-            }]
-          }
-        ]
-      },
-      {
-        "time": "10:30 - 11:00",
-        "item": [
-          {
-            "text": "Coffee / Tea Break"
-          }
-        ]
-      },
-      {
-        "time": "11:00 - 12:30",
-        "item": [
-          {
-            "text": "[Same As Above]"
-          }
-        ]
-      },
-      {
-        "time": "12:30 - 13:00",
-        "item": [
-          {
-            "text": "Lunch Break"
-          }
-        ]
-      },
-      {
-        "time": "13:30 - 15:00",
-        "or": false,
-        "item": [
-          {
-            "text": "[Same As Above] "
-          },
-          {
-            "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-            "location": "CSE/103",
-            "hasInfo": true,
-            "info": [
-              {
-              "id": "Course A",
-              "title": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-              "authors": "Chris Rourke, John Goodall",
-              "presenters": "Chris Rourke",
-              "contact": [
-                {
-                  "name": "Rourke, Chris",
-                  "email": "info@uxqb.org"
-                }
-              ],
-              "href" : "courses"
-            }
-          ]
-          }
-        ]
-      },
-      {
-        "time": "15:00 - 15:30",
-        "item": [
-          {
-            "text": "Coffee / Tea Break"
-          }
-        ]
-      },
-      {
-        "time": "15:30 - 17:00",
-        "or": false,
-        "item": [
-          {
-            "text": "[Same As Above]"
-          },
-          {
-            "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-            "location": "CSE/103",
-            "hasInfo": true,
-            "info": [
-              {
-              "id": "Course A",
-              "title": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-              "authors": "Chris Rourke, John Goodall",
-              "presenters": "Chris Rourke",
-              "contact": [
-                {
-                  "name": "UXQB",
-                  "email": "info@uxqb.org"
-                }
-              ],
-              "href" : "courses"
-              
-            }
-          ]
-          }
-        ]
-      }
-    ]
-  },{
+{"day-3.json":[ {
   "day": 4,
   "date": "31th August",
   "data": [
@@ -1322,7 +313,7 @@
               "id": "Course E",
               "title": "How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
               "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
-              "presenters": "Keith Andrews",
+              "presenters": "Chiara Natali",
               "contact": [
                 {
                   "name": "Chiara Natali",
@@ -1476,50 +467,50 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "FP1019",
-              "title": "AdaptReview: Towards Effective Video Review using Text Summaries and Concept Maps",
-              "authors": "Shan Zhang, Yang Chen, Nuwan Janaka, Chloe Haigh, Shengdong Zhao, and Wei Tsang Ooi",
-              "presenters": "Shan Zhang",
+              "id": "FP1012",
+              "title": "Common Objects for Programming Workshops in Non-Formal Learning Contexts",
+              "authors": "Nathalie Bressa, Susanne Bødker, Clemens N. Klokmose, and Eva Eriksson",
+              "presenters": "Nathalie Bressa",
               "contact": [
                 {
-                  "name": "Zhang, Shan",
-                  "email": "shan_zhang@u.nus.edu"
+                  "name": "Bressa, Nathalie",
+                  "email": "nathalie.bressa@gmail.com"
                 }
               ]
             },
             {
-              "id": "FP1073",
-              "title": "I perform my work with my body too: integrating body representations in and with task models",
-              "authors": "Axel Carayon, Célia Martinie, Philippe Palanque",
-              "presenters": "-",
+              "id": "SP1211",
+              "title": "Engaging a project consortium in ethics-aware design and research",
+              "authors": "Päivi Heikkilä, Hanna Lammi, and Susanna Aromaa",
+              "presenters": "Päivi Heikkilä and Hanna Lammi",
               "contact": [
                 {
-                  "name": "Martinie, CÃ©lia",
-                  "email": "celia.martinie@irit.fr"
+                  "name": "Heikkilä, Päivi",
+                  "email": "paivi.heikkila@vtt.fi"
                 }
               ]
             },
             {
-              "id": "SP1178",
-              "title": "Prototyping with the IVY workbench: Bridging Formal Methods and User-Centred Design",
-              "authors": "Rafael Braga da Costa and José Creissac Campos",
-              "presenters": "José Creissac Campos",
+              "id": "SP1256",
+              "title": "Exploring Emotions: Study of Five Design Workshops for Generating Ideas for Emotional Self-Report Interfaces",
+              "authors": "Carla Nave, Francisco Nunes, Teresa Romão, and Nuno Correia",
+              "presenters": "Carla Nave",
               "contact": [
                 {
-                  "name": "Campos, JosÃ©",
-                  "email": "jose.campos@acm.org"
+                  "name": "Nave, Carla",
+                  "email": "cd.saraiva@campus.fct.unl.pt"
                 }
               ]
             },
             {
-              "id": "SP1231",
-              "title": "Towards automated load testing through the user interface",
-              "authors": "Bruno Teixeira and José Creissac Campos",
-              "presenters": "José Creissac Campos",
+              "id": "FP1153",
+              "title": "Moving Away from the Blocks: Evaluating the Usability of EduBlocks for Supporting Children to Transition from Block-Based Programming",
+              "authors": "Gavin Sim, Mark Lochrie, Misbahu S Zubair, Oliver Kerr, and Matthew Bates",
+              "presenters": "Gavin Sim",
               "contact": [
                 {
-                  "name": "Campos, JosÃ©",
-                  "email": "jose.campos@acm.org"
+                  "name": "Sim, Gavin",
+                  "email": "grsim@uclan.ac.uk"
                 }
               ]
             }
@@ -1586,50 +577,62 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "SP1225",
-              "title": "AI in the Human Loop: The Impact of Differences in Digital Assistant Roles on the Personal Values of Users",
-              "authors": "Shakila Shayan , Marlies van Steenbergen, Koen van Turnhout, Zelda Zeegers, Somaya Ben Allouch, Maaike Harbers, Guido Evertzen, Janna Bruijning, Wieke van Boxtel, and Katarina Jerkovich",
-              "presenters": "shakila shayan",
+              "id": "SP1254",
+              "title": "Asymmetric communication in virtual reality: designing for presence, effectiveness, and enjoyment",
+              "authors": "Markus Kirjonen and Mika P. Nieminen",
+              "presenters": "Markus Kirjonen",
               "contact": [
                 {
-                  "name": "Shayan, Shakila",
-                  "email": "shakila.shayan@hu.nl"
+                  "name": "Kirjonen, Markus",
+                  "email": "markus.kirjonen@aalto.fi"
                 }
               ]
             },
             {
-              "id": "FP1194",
-              "title": "“A solution to a problem that didn’t exist?”: Exploring Attitudes Towards Smart Streetlight Systems",
-              "authors": "Anna-Lena Theus and Sonia Chiasson",
-              "presenters": "Anna-Lena Theus",
+              "id": "FP1122",
+              "title": "Digital Modeling for Everyone: Exploring How Novices Approach Voice-Based 3D Modeling",
+              "authors": "Giuseppe Desolda, Andrea Esposito, Florian Müller, and Sebastian Feger",
+              "presenters": "Andrea Esposito",
               "contact": [
                 {
-                  "name": "Theus, Anna-Lena",
-                  "email": "annatheus@cmail.carleton.ca"
+                  "name": "Desolda, Giuseppe",
+                  "email": "giuseppe.desolda@uniba.it"
                 }
               ]
             },
             {
               "id": "FP1189",
-              "title": "Evaluation of the Roles of Intelligent Technologies in Shared Activity Spaces of Neighborhood Communities",
-              "authors": "Jouko Makkonen, Rita Latikka, Rosana Rubio-Hernández, and Kaisa Väänänen",
-              "presenters": "Jouko Makkonen",
+              "title": "Exploring the Potential of Metaverse Apps for Real-World Applications: A Case Study with CALEND AR",
+              "authors": "Konstantinos Tsomokos, Christos Sintoris, Christos Fidas, and Nikolaos Avouris",
+              "presenters": "Nikolaos Avouris",
               "contact": [
                 {
-                  "name": "Makkonen, Jouko",
-                  "email": "jouko.makkonen@tuni.fi"
+                  "name": "Tsomokos, Konstantinos",
+                  "email": "up1047010@upnet.gr"
                 }
               ]
             },
             {
-              "id": "SP1150",
-              "title": "Problematizing “Empowerment” in HCAI",
-              "authors": "John S. Seberger, Hyesun Choung, and Prabu David",
-              "presenters": "John S. Seberger",
+              "id": "SP1219",
+              "title": "PeriFocus - Training Peripheral Color - and Shape Detection in Virtual Reality",
+              "authors": "Mads Thomsen, Mathias Halilovic, Alexandru Giuran, and Markus Löchtefeld",
+              "presenters": "Markus Löchtefeld",
               "contact": [
                 {
-                  "name": "Seberger, John",
-                  "email": "jss436@drexel.edu"
+                  "name": "Löchtefeld, Markus",
+                  "email": "mloc@create.aau.dk"
+                }
+              ]
+            },
+            {
+              "id": "SP1083",
+              "title": "Supporting Resilience Through Virtual Reality: Design and Preliminary Evaluation of a VR Experience Based on Viktor Frankl’s Logotherapy",
+              "authors": "Quynh Nguyen, Rodrigo Gutierrez, Lukas Kr¨oninger, and Ulrike Kretzer",
+              "presenters": "Quynh Nguyen",
+              "contact": [
+                {
+                  "name": "Nguyen, Quynh",
+                  "email": "quynh-huong.nguyen@ait.ac.at"
                 }
               ]
             }
@@ -1644,7 +647,7 @@
               "id": "Course B",
               "title": "Part 1: Disability, Design and Innovation for a Fairer World",
               "authors": "Catherine Holloway, Ben Oldfrey, Maryam Bandukda, Daniel Hajas, Tigmanshu Bhatnagar",
-              "presenters": "Keith Andrews",
+              "presenters": "Catherine Holloway",
               "contact": [
                 {
                   "name": "Tigmanshu Bhatnagar",
@@ -1930,7 +933,7 @@
               "id": "Course B",
               "title": "Part 2: Disability, Design and Innovation for a Fairer World",
               "authors": "Catherine Holloway, Ben Oldfrey, Maryam Bandukda, Daniel Hajas, Tigmanshu Bhatnagar",
-              "presenters": "Tigmanshu Bhatnagar",
+              "presenters": "Catherine",
               "contact": [
                 {
                   "name": "Tigmanshu Bhatnagar",
@@ -1986,6 +989,736 @@
               
             }
           ]
+        }
+      ]
+    }
+  ]
+},{
+  "day": 3,
+  "date": "30th August",
+  "data": [
+    {
+      "time": "8:30 - 9:30",
+      "item": [
+        {
+          "text": "Registration",
+          "location": "Registration / Information Desk Open All Day"
+        }
+      ]
+    },
+    {
+      "time": "9:30 - 11:00",
+      "item": [
+        {
+          "text": "Opening Welcome / Awards",
+          "location": "Large lecture theatre (PZA/103)"
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 11:30",
+      "item": [
+        {
+          "text": "Coffee Break in Piazza Building"
+        }
+      ]
+    },
+    {
+      "time": "11:30 - 12:30",
+      "item": [
+        {
+          "text": "Opening Keynote: Why we do what we do – HCI and societal impact",
+          "author": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": [
+            {
+            "title": "Why we do what we do – HCI and societal impact",
+            "authors": "Jan Gulliksen, KTH Royal Institute of Technology, Sweden",
+            "href": "keynote"
+            }
+          ]
+          
+          
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:45",
+      "item": [
+        {
+          "text": "Lunch"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session A1: User Studies",
+          "location": "CSE/102",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1074",
+              "title": "“I miss going to that place”: The impact of watching nature videos on the well-being of informal caregivers",
+              "authors": "Beatriz Peres, Hildegardo Noronha, Daniel S. Lopes, Joaquim Jorge, and Pedro F. Campos",
+              "presenters": "Beatriz Peres",
+              "contact": [
+                {
+                  "name": "Peres, Beatriz",
+                  "email": "beatriz.peres@iti.larsys.pt"
+                }
+              ]
+            },
+            {
+              "id": "FP1082",
+              "title": "Comparing Perceived Restorativeness and Stress Reduction in Virtual Reality Environments using Abstract Fractal Geometries versus Realistic Natural Landscapes",
+              "authors": "Diana C. G. Mendes, and Mónica S Cameirão",
+              "presenters": "Diana Carolina Gonçalves Mendes",
+              "contact": [
+                {
+                  "name": "Mendes, Diana",
+                  "email": "diana.mendes@nlincs.uma.pt"
+                }
+              ]
+            },
+            {
+              "id": "SP1119",
+              "title": "Our Nudges, Our Selves: Tailoring Mobile User Engagement Using Personality",
+              "authors": "Nima Jamalian, Marios Constantinides, Sagar Joglekar, Xueni Pan, and Daniele Quercia",
+              "presenters": "Marios Constantinides",
+              "contact": [
+                {
+                  "name": "Constantinides, Marios",
+                  "email": "marios.constantinides@nokia-bell-labs.com"
+                }
+              ]
+            },
+            {
+              "id": "SP1091",
+              "title": "Turn & Slide: Designing a Puzzle Game to Elicit the Visualizer-Verbalizer Cognitive Style",
+              "authors": "Sotirios Petsas, George E. Raptis, and Christos Katsanos",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Raptis, George",
+                  "email": "graptis.ho@gmail.com"
+                }
+              ]
+            },
+            {
+              "id": "industrial-1000",
+              "title": "How to Bring Diversity into Industry: Industrial Experiences in Public Transport Repair & Maintenance",
+              "authors": "Rafael Vrecar, Markus Steinlechner, Patrick Rupprecht, Aaron Wedral, Marlies Negele, Maciej Palucki, Brigitte Ratzer, and Astrid Weiss1",
+              "presenters": "",
+              "contact": [
+                {
+                  "name": "Vrecar, Rafael",
+                  "email": "rafael@vrecar.eu"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session A2: Accessibility",
+          "location": "CSE/082",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1114",
+              "title": "Brilliance and Resilience: A New Perspective to the Challenges, Practices and Needs of University Students with Visual Impairments in India",
+              "authors": "Tigmanshu Bhatnagar, Vikas Upadhyay, PV Madhusudhan Rao, Nicolai Marquardt, Mark Mio-downik, and Catherine Holloway",
+              "presenters": "Tigmanshu Bhatnagar",
+              "contact": [
+                {
+                  "name": "Bhatnagar, Tigmanshu",
+                  "email": "t.bhatnagar.18@ucl.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1120",
+              "title": "Mapping Virtual Reality Controls to Inform Design of Accessible User Experiences",
+              "authors": "Christopher Power, Paul Cairns, and Triskal DeHaven",
+              "presenters": "Christopher Power",
+              "contact": [
+                {
+                  "name": "Power, Christopher",
+                  "email": "cdspower@upei.ca"
+                }
+              ]
+            },
+            {
+              "id": "SP1180",
+              "title": "WAM-Studio: A Web-based Digital Audio Workstation To Empower Cochlear Implant Users",
+              "authors": "Michel Buffa, Antoine Vidal-Mazuy, Lloyd May, and Marco Winckler",
+              "presenters": "Marco Winckler",
+              "contact": [
+                {
+                  "name": "Buffa, Michel",
+                  "email": "michel.buffa@univ-cotedazur.fr"
+                }
+              ]
+            },
+            {
+              "id": "SP1160",
+              "title": "Web Accessibility in Higher Education in Norway: To What Extent are University Websites Accessible?",
+              "authors": "Yavuz Inal and Anne Britt Torkildsby",
+              "presenters": "Anne Britt Torkildsby",
+              "contact": [
+                {
+                  "name": "Inal, Yavuz",
+                  "email": "yavuz.inal@ntnu.no"
+                }
+              ]
+            },
+            {
+              "id": "SP1114",
+              "title": "Wesee: Digital Cultural Heritage Interpretation for Blind and Low Vision People",
+              "authors": "Yalan Luo, Weiyue Lin, Yuhan Liu, Xiaomei Nie, Xiang Qian, and Hanyu Guo",
+              "presenters": "Yalan Luo",
+              "contact": [
+                {
+                  "name": "Luo, Yalan",
+                  "email": "luoyl20@mails.tsinghua.edu.cn"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session A3: Model-Based UI Design and Testing",
+          "location": "LMB/020",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1019",
+              "title": "AdaptReview: Towards Effective Video Review using Text Summaries and Concept Maps",
+              "authors": "Shan Zhang, Yang Chen, Nuwan Janaka, Chloe Haigh, Shengdong Zhao, and Wei Tsang Ooi",
+              "presenters": "Shan Zhang",
+              "contact": [
+                {
+                  "name": "Zhang, Shan",
+                  "email": "shan_zhang@u.nus.edu"
+                }
+              ]
+            },
+            {
+              "id": "FP1073",
+              "title": "I perform my work with my body too: integrating body representations in and with task models",
+              "authors": "Axel Carayon, Célia Martinie, Philippe Palanque",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Martinie, Célia",
+                  "email": "celia.martinie@irit.fr"
+                }
+              ]
+            },
+            {
+              "id": "SP1178",
+              "title": "Prototyping with the IVY workbench: Bridging Formal Methods and User-Centred Design",
+              "authors": "Rafael Braga da Costa and José Creissac Campos",
+              "presenters": "José Creissac Campos",
+              "contact": [
+                {
+                  "name": "Campos, José",
+                  "email": "jose.campos@acm.org"
+                }
+              ]
+            },
+            {
+              "id": "SP1231",
+              "title": "Towards automated load testing through the user interface",
+              "authors": "Bruno Teixeira and José Creissac Campos",
+              "presenters": "José Creissac Campos",
+              "contact": [
+                {
+                  "name": "Campos, José",
+                  "email": "jose.campos@acm.org"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session A4: Interaction with Conversational agents I",
+          "location": "LMB/047",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1039",
+              "title": "Beyond Browser Online Shopping: Experience Attitude Towards Online 3D Shopping with Conversational Agents",
+              "authors": "Pedro Valente, Tiago Fornelos, Rafael Ferreira, Diog Silva, Diogo Tavares, Nuno Correia, João Magalhães, and Rui Nóbrega",
+              "presenters": "Pedro Valente",
+              "contact": [
+                {
+                  "name": "Valente, Pedro",
+                  "email": "pm.valente@campus.fct.unl.pt"
+                }
+              ]
+            },
+            {
+              "id": "FP1053",
+              "title": "Effects of Prior Experience, Gender, and Age on Trust in a Banking Chatbot with(out) Breakdown and Repair",
+              "authors": "Effie Lai-Chong Law, Nena van As, and Asbjørn Følstad",
+              "presenters": "Effie Lai-Chong Law",
+              "contact": [
+                {
+                  "name": "Law, Effie",
+                  "email": "lai-chong.law@durham.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1121",
+              "title": "EaseOut: A Cross-Cultural Study of the Impact of a Conversation Agent on Leaving Video Meetings Early",
+              "authors": "Eureka Foong, Jack Jamieson, Hideaki Kuzuoka, Naomi Yamashita, and Tomoki Nishida",
+              "presenters": "Eureka Foong",
+              "contact": [
+                {
+                  "name": "Jamieson, Jack",
+                  "email": "jack@jackjamieson.net"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session A5: 3D Interaction",
+          "location": "LMB/023",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1034",
+              "title": "AHO-Guide: Automatically Guiding the Head Orientation of a Local User in Augmented Reality to Realign the Field of View With Remote Users",
+              "authors": "Lucas Pometti, Charles Bailly, and Julien Castet",
+              "presenters": "Lucas Pometti",
+              "contact": [
+                {
+                  "name": "Pometti, Lucas",
+                  "email": "lucas.pometti@immersion.fr"
+                }
+              ]
+            },
+            {
+              "id": "FP1010",
+              "title": "Point- and Volume-based Multi-Object Acquisition in VR",
+              "authors": "Zhiqing Wu, Difeng Yu, and Jorge Goncalves",
+              "presenters": "Zhiqing Wu",
+              "contact": [
+                {
+                  "name": "Yu, Difeng",
+                  "email": "diyu@di.ku.dk"
+                }
+              ]
+            },
+            {
+              "id": "FP1096",
+              "title": "Using Mid-Air Haptics to Guide Mid-Air Interactions",
+              "authors": "Timothy Neate, Sergio Alvares Maffra, William Frier, Zihao You, and Stephanie Wilson",
+              "presenters": "Timothy Neate",
+              "contact": [
+                {
+                  "name": "Neate, Timothy",
+                  "email": "tdjneate@gmail.com"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Course A - Part 1: Introduction to Information Visualisation",
+          "location": "LMB/024",
+          "hasInfo": true,
+          "info": [
+            {
+            "id": "Course A",
+            "title": "Part 1: Introduction to Information Visualisation",
+            "authors": "Keith Andrews",
+            "presenters": "Keith Andrews",
+            "contact": [
+              {
+                "name": "Andrews, Keith",
+                "email": "kandrews@tugraz.at"
+              }
+            ],
+            "href" : "courses"
+          }
+        ]
+        },
+        {
+          "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+          "location": "LMB/025",
+          "hasInfo": true,
+          "info": [
+            {
+            "id": "Course F",
+            "title": "Part 1: The UCD Sprint: Bringing Users Along to Sprint",
+            "authors": "Marta Kristin Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+            "contact": [
+              {
+                "name": "Marta Kristin Larusdottir",
+                "email": "marta@ru.is"
+              }
+            ],
+            "href" : "courses"
+          }
+        ]
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "item": [
+        {
+          "text": "Coffee Break"
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "or": true,
+      "item": [
+        {
+          "text": "Session B1: Data Physicalisation and Cross-Device",
+          "location": "LMB/020",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1103",
+              "title": "Comparing Screen-based Version Control to Augmented Artifact Version Control for Physical Objects",
+              "authors": "Maximilian Letter, Marco Kurzweg, and Katrin Wolf",
+              "presenters": "Maximilian Letter",
+              "contact": [
+                {
+                  "name": "Letter, Maximilian",
+                  "email": "maximilian.letter@beuth-hochschule.de"
+                }
+              ]
+            },
+            {
+              "id": "SP1200",
+              "title": "EmoClock: Communicating Real-Time Emotional States through Data Physicalizations",
+              "authors": "Dennis Peeters, Champika Ranasinghe, Auriol Degbelo, and Faizan Ahmed",
+              "presenters": "Champika Ranasinghe",
+              "contact": [
+                {
+                  "name": "Ranasinghe, Champika",
+                  "email": "c.m.eparanasinghe@utwente.nl"
+                }
+              ]
+            },
+            {
+              "id": "SP1186",
+              "title": "Extending User Interaction with Mixed Reality through a Smartphone-based Controller",
+              "authors": "Georgios Papadoulis, Christos Sintoris, Christos Fidas, and Nikolaos Avouris",
+              "presenters": "Georgios Papadoulis",
+              "contact": [
+                {
+                  "name": "Papadoulis, Georgios",
+                  "email": "g.papadoulis@upnet.gr"
+                }
+              ]
+            },
+            {
+              "id": "FP1098",
+              "title": "Fitts’ Throughput vs Empirical Throughput: A comparative study",
+              "authors": "Khyati Priya and Anirudha Joshi",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Priya, Khyati",
+                  "email": "khyatipriya@iitb.ac.in"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session B2: Interacting with Children",
+          "location": "CSE/102",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "SP1143",
+              "title": "Awayvirus: A Playful and Tangible Approach to Improve Children’s Hygiene Habits in Family Education",
+              "authors": "Xiang Qi, Yaxiong Lei, Shijing He, and Shuxin Cheng",
+              "presenters": "Yaxiong Lei, Shijing He",
+              "contact": [
+                {
+                  "name": "Lei, Yaxiong",
+                  "email": "yl212@st-andrews.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1057",
+              "title": "“Money from the Queen”: Exploring Children’s Ideas for Monetization in Free-to-Play Mobile Games",
+              "authors": "Dan Fitton and Janet C Read",
+              "presenters": "Dan Fitton",
+              "contact": [
+                {
+                  "name": "Fitton, Dan",
+                  "email": "dbfitton@uclan.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "SP1123",
+              "title": "Motivating Children’s Engagement with Sleep Diaries through Storytelling",
+              "authors": "Hannah C. van Iterson, Panos Markopoulos, and Leonardo E. Gerritsen",
+              "presenters": "Hannah van Iterson",
+              "contact": [
+                {
+                  "name": "van Iterson, Hannah",
+                  "email": "h.c.v.iterson@student.tue.nl"
+                }
+              ]
+            },
+            {
+              "id": "SP1251",
+              "title": "The Peer Data Labelling System (PDLS). A Participatory Approach to Classifying Engagement in the Classroom",
+              "authors": "Graham Parsonage, Matthew Horton, and Janet Read",
+              "presenters": "Graham Parsonage",
+              "contact": [
+                {
+                  "name": "Parsonage, Graham",
+                  "email": "gbparsonage1@uclan.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1140",
+              "title": "WashWall: an Interactive Smart Mirror for Motivating Handwashing Among Primary School Children",
+              "authors": "Dees B.W. Postma, Champika M. Ranasinghe, Christos Constantinou, Vincent P.G. Diks, Younghun Rhee, Willem H.P. van Dijk, Amir Sassanian, and Dennis Reidsma",
+              "presenters": "Dees Postma",
+              "contact": [
+                {
+                  "name": "Postma, Dees",
+                  "email": "d.b.w.postma@utwente.nl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session B3: Information Visualization",
+          "location": "LMB/047",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1219",
+              "title": "BiVis: Interactive and Progressive Visualization of Billions (and Counting) Items",
+              "authors": "Renaud Blanch",
+              "presenters": "Renaud Blanch",
+              "contact": [
+                {
+                  "name": "Blanch, Renaud",
+                  "email": "blanch@imag.fr"
+                }
+              ]
+            },
+            {
+              "id": "FP1097",
+              "title": "Modeling and Assessing User Interaction in Big Data Visualization Systems",
+              "authors": "Dario Benvenuti, Matteo Filosa, Tiziana Catarci, and Marco Angelini",
+              "presenters": "Dario Benvenuti",
+              "contact": [
+                {
+                  "name": "Benvenuti, Dario",
+                  "email": "d.benvenuti@diag.uniroma1.it"
+                }
+              ]
+            },
+            {
+              "id": "SP1097",
+              "title": "The Effect of Teleporting versus Room-scale Walking for Interacting with Immersive Visualizations",
+              "authors": "Alejandro Rey, Andrea Bellucci, Paloma Díaz, and Ignacio Aedo",
+              "presenters": "Alejandro Rey",
+              "contact": [
+                {
+                  "name": "Rey, Alejandro",
+                  "email": "alejandro.rey@uc3m.es"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session B4: Natural Language Processing and AI Explainability",
+          "location": "CSE/082",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1167",
+              "title": "Exploring Natural Language Processing Methods for Interactive Behaviour Modelling",
+              "authors": "Guanhua Zhang, Matteo Bortoletto, Zhiming Hu, Lei Shi, Mihai Bâce, and Andreas Bulling",
+              "presenters": "Guanhua Zhang",
+              "contact": [
+                {
+                  "name": "Zhang, Guanhua",
+                  "email": "guanhua.zhang@vis.uni-stuttgart.de"
+                }
+              ]
+            },
+            {
+              "id": "FP1065",
+              "title": "“Garbage In, Garbage Out”: Mitigating Human Biases in Data Entry by Means of Artificial Intelligence",
+              "authors": "Sven Eckhardt, Merlin Knaeble, Andreas Bucher, Dario Staehelin, Mateusz Dolata, Doris Agotai, and Gerhard Schwabe",
+              "presenters": "Sven Eckhardt",
+              "contact": [
+                {
+                  "name": "Eckhardt, Sven",
+                  "email": "eckhardt@ifi.uzh.ch"
+                }
+              ]
+            },
+            {
+              "id": "SP1068",
+              "title": "Is Overreliance on AI Provoked by Study Design?",
+              "authors": "Zelun Tony Zhang, Sven Tong, Yuanting Liu, and Andreas Butz",
+              "presenters": "Sven Tong",
+              "contact": [
+                {
+                  "name": "Zhang, Zelun Tony",
+                  "email": "zhang@fortiss.org"
+                }
+              ]
+            },
+            {
+              "id": "SP1080",
+              "title": "RePaLM: A Data-driven AI Assistant for Making Stronger Pattern Choices",
+              "authors": "Christina Milousi, George E. Raptis, Christina Katsini, and Christos Katsanos",
+              "presenters": "-",
+              "contact": [
+                {
+                  "name": "Raptis, George",
+                  "email": "graptis.ho@gmail.com"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Session B5: Motion Sickness, Stress & Risk Pereception in 3D Environments",
+          "location": "LMB/023",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "FP1203",
+              "title": "“Do I Run Away?”: Proximity, Stress and Discomfort in Human-Drone Interaction in Real and Virtual Environments",
+              "authors": "Robin Bretin, Mohamed Khamis, and Emily Cross",
+              "presenters": "Robin Bretin",
+              "contact": [
+                {
+                  "name": "Bretin, Robin",
+                  "email": "r.bretin.1@research.gla.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "FP1199",
+              "title": "Sick in the Car, Sick in VR? Understanding how Real-World Susceptibility to Dizziness, Nausea, and Eye Strain Influences VR Motion Sickness",
+              "authors": "Oliver Hein, Philipp Rauschnabel, Mariam Hassib, and Florian Alt",
+              "presenters": "Oliver Hein",
+              "contact": [
+                {
+                  "name": "Hein, Oliver",
+                  "email": "oliver.hein@unibw.de"
+                }
+              ]
+            },
+            {
+              "id": "FP1139",
+              "title": "Spatial Augmented Reality in the Factory: Can In-Situ Projections Be Used to Communicate Dangers and Health Risks?",
+              "authors": "Aaron Wedral, Rafael Vrecar, Gerhard Ebenhofer, Thomas Pönitz, Paul H. Wührer, Astrid Weiss, and Gernot Stübl",
+              "presenters": "Aaron Wedral, Rafael Vrecar",
+              "contact": [
+                {
+                  "name": "Wedral, Aaron",
+                  "email": "e1633070@student.tuwien.ac.at"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Course A - Part 2: Introduction to Information Visualisation",
+          "location": "LMB/024",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course A",
+              "title": "Part 2: Introduction to Information Visualisation",
+              "authors": "Keith Andrews",
+              "presenters": "Keith Andrews",
+              "contact": [
+                {
+                  "name": "Andrews, Keith",
+                  "email": "kandrews@tugraz.at"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        },
+        {
+          "text": "Course F - Part 2: The UCD Sprint - Bringing Users Along to Sprint",
+          "location": "LMB/025",
+          "hasInfo": true,
+          "info": [
+            {
+              "id": "Course F",
+              "title": "Part 2: The UCD Sprint - Bringing Users Along to Sprint",
+              "authors": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+              "presenters": "Marta Larusdottir, Virpi Roto, Rosa Lanzilotti, and Ioana Visescu",
+              "contact": [
+                {
+                  "name": "Marta Larusdottir",
+                  "email": "marta@ru.is"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+        },
+        {
+          "text": "Panel 2: Ethical Value Exchange in HCI",
+          "location": "PZA/103",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "17:15 - 18:30",
+      "item": [
+        {
+          "text": "Keynote: Inclusive design in the NHS - the practical reality of strategic inclusive design",
+          "author": "Rochelle Gold, Head of User Research, Transformation Directorate, NHS England",
+          "location": "Large lecture theatre (PZA/103)",
+          "hasInfo": true,
+          "info": [
+            {
+            "title": "Inclusive design in the NHS: the practical reality of strategic inclusive design",
+            "authors": "Rochelle Gold, Head of User Research, Transformation Directorate, NHS England",
+            "href": "keynote"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "time": "18:30 - 20:00",
+      "item": [
+        {
+          "text": "Drinks Reception",
+          "location": "Piazza Building and Terrace"
         }
       ]
     }
@@ -2543,22 +2276,10 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "industrial-1004",
-              "title": "Whose responsibility is accessibility in games anyway? Everyone",
-              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
-              "presenters": "",
-              "contact": [
-                {
-                  "name": "Power, Christopher",
-                  "email": "cdspower@upei.ca"
-                }
-              ]
-            },
-            {
               "id": "industrial-1005",
-              "title": "TBA",
-              "authors": "TBA",
-              "presenters": "TBA",
+              "title": "Bridging the gap between HCI research and industry practice",
+              "authors": "Marta Rey-Babarro and Jose Abdelnour-Nocera ",
+              "presenters": "Marta Rey-Babarro, Jose Abdelnour-Nocera",
               "contact": [
                 {
                   "name": "Jose, Abdelnour Nocera",
@@ -2575,6 +2296,18 @@
                 {
                   "name": "Buykx, Lucy",
                   "email": "lucy@buykx.com"
+                }
+              ]
+            },
+            {
+              "id": "industrial-1004",
+              "title": "Whose responsibility is accessibility in games anyway? Everyone",
+              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
+              "presenters": "",
+              "contact": [
+                {
+                  "name": "Power, Christopher",
+                  "email": "cdspower@upei.ca"
                 }
               ]
             }
@@ -2635,7 +2368,7 @@
       "time": "16:45 - 17:30",
       "item": [
         {
-          "text": "Closing remarks - announcement of INTERACT 2025",
+          "text": "Closing session - announcement of INTERACT 2025",
           "location": "Large Lecture Theatre (PZA/103)"
         }
       ]
@@ -2843,4 +2576,283 @@
       ]
     }
   ]
-}]
+},{
+    "day": 2,
+    "date": "29th August",
+    "data": [
+      {
+        "time": "8:00 - 9:00",
+        "item": [
+          {
+            "text": "Registration (CSE Foyer)",
+            "location": "Registration / Information Desk Open All Day"
+          }
+        ]
+      },
+      {
+        "time": "9:00 - 10:30",
+        "or": true,
+        "item": [
+          {
+            "text": "BCS Conference I",
+            "location": "CSE/082",
+            "hasInfo": "true",
+            "info":[{
+              "id": "BCS Conference I",
+              "href" : "other",
+              "text" : "More details here:",
+              "link" : "https://bcshci2023.org/",
+              "button_text": "British Computer Society Website"
+            }]
+          },
+          {
+            "text": "BCS Conference II",
+            "location": "CSE/102",
+            "hasInfo": "true",
+            "info":[{
+              "id": "BCS Conference II",
+              "href" : "other",
+              "text" : "More details here:",
+              "link" : "https://bcshci2023.org/",
+              "button_text": "British Computer Society Website"
+            }]
+          },
+          {
+            "text": "Sustainable Human-Work Interaction Design",
+            "location": "LMB/047",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Sustainable Human-Work Interaction Design",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Elodie Bouzekri",
+                  "email": "elodie.bouzekri@estia.fr"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
+            "location": "LMB/020",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Hirsch, Linda",
+                  "email": "linda.hirsch@ifi.lmu.de"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "HCI for Digital Democracy and Citizen Participation",
+            "location": "LMB/038X",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "HCI for Digital Democracy and Citizen Participation",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "José Abdelnour Nocera",
+                  "email": "jose.abdelnour-nocera@uwl.ac.uk"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Algorithmic affordances in recommender interfaces",
+            "location": "LMB/024",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Algorithmic affordances in recommender interfaces",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Aletta Smits",
+                  "email": "aletta.smits@hu.nl"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
+            "location": "LMB/025",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Anmol Srivastava",
+                  "email": "anmol@iiitd.ac.in"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
+            "location": "CSE/202",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "David Gollasch",
+                  "email": "david.gollasch@tu-dresden.de"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Interacting with Assistive Technology (IATech) Workshop",
+            "location": "CSE/204",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Interacting with Assistive Technology (IATech) Workshop",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Hirsch, Linda",
+                  "email": "linda.hirsch@ifi.lmu.de"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
+            "location": "CSE/203",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Aneesha Singh",
+                  "email": "aneesha.singh@ucl.ac.uk"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
+            "location": "LMB/023",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Wiesław Kopeć",
+                  "email": "w.kopec@pja.edu.pl"
+                }
+              ]
+            }]
+          }
+        ]
+      },
+      {
+        "time": "10:30 - 11:00",
+        "item": [
+          {
+            "text": "Coffee / Tea Break"
+          }
+        ]
+      },
+      {
+        "time": "11:00 - 12:30",
+        "item": [
+          {
+            "text": "[Same As Above]"
+          }
+        ]
+      },
+      {
+        "time": "12:30 - 13:00",
+        "item": [
+          {
+            "text": "Lunch Break"
+          }
+        ]
+      },
+      {
+        "time": "13:30 - 15:00",
+        "or": false,
+        "item": [
+          {
+            "text": "[Same As Above] "
+          },
+          {
+            "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+            "location": "CSE/103",
+            "hasInfo": true,
+            "info": [
+              {
+              "id": "Course A",
+              "title": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+              "authors": "Chris Rourke, John Goodall",
+              "presenters": "Chris Rourke",
+              "contact": [
+                {
+                  "name": "Rourke, Chris",
+                  "email": "info@uxqb.org"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+          }
+        ]
+      },
+      {
+        "time": "15:00 - 15:30",
+        "item": [
+          {
+            "text": "Coffee / Tea Break"
+          }
+        ]
+      },
+      {
+        "time": "15:30 - 17:00",
+        "or": false,
+        "item": [
+          {
+            "text": "[Same As Above]"
+          },
+          {
+            "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+            "location": "CSE/103",
+            "hasInfo": true,
+            "info": [
+              {
+              "id": "Course A",
+              "title": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+              "authors": "Chris Rourke, John Goodall",
+              "presenters": "Chris Rourke",
+              "contact": [
+                {
+                  "name": "UXQB",
+                  "email": "info@uxqb.org"
+                }
+              ],
+              "href" : "courses"
+              
+            }
+          ]
+          }
+        ]
+      }
+    ]
+  }]}
