@@ -183,8 +183,8 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 				})
 
 					//Toggle Search Box
-	document.getElementById("exit-search").addEventListener('click', () => {
-						if(document.getElementById("searchTextBox").value){
+					document.getElementById("exit-search").addEventListener('click', () => {
+						if(document.getElementById("searchTextBox").value  != ""){
 							document.getElementById("searchTextBox").value = ""
 							document.getElementById("cross").style.display = "block";
 							document.getElementById("backspace").style.display = "none";
@@ -193,7 +193,13 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 							document.querySelector(".search-box").classList.remove("search-active");
 							document.getElementById("cross").style.display = "none";
 							document.getElementById("backspace").style.display = "block";
+							document.getElementById("toggle-search").classList.remove("active");
+							if(document.getElementById("toggle-search").classList.contains("active")){
+								document.getElementById("toggle-search").classList.remove("active")
+							}
 						}
+
+						
 						
 					})
 
@@ -204,6 +210,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 							if(document.getElementById("toggle-search").classList.contains("active")){
 								document.getElementById("toggle-search").classList.remove("active")
 							}
+
 							//Toggle soft keyboard
 							document.querySelector("#searchTextBox").blur();
 							
@@ -212,8 +219,27 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 								document.getElementById("toggle-search").classList.add("active")
 							}
 							document.querySelector(".search-box").classList.add("search-active");
+							const url = new URL(window.location);
+							url.searchParams.delete('q')
+							url.searchParams.delete('h')
+							history.pushState({}, "", url);
+							url.searchParams.set(
+								"h",
+								encodeURI("search")
+							);
+							history.pushState({}, "", url);
 							//Toggle soft keyboard
 							document.querySelector("#searchTextBox").focus();
+						}
+
+						if(document.getElementById("searchTextBox").value == ""){
+							document.getElementById("cross").style.display = "block";
+							document.getElementById("backspace").style.display = "none";
+						} else {
+							document.getElementById("cross").style.display = "none";
+							document.getElementById("backspace").style.display = "block";
+							document.getElementById("toggle-search").classList.remove("active");
+							
 						}
 						
 					})
