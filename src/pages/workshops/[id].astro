@@ -67,6 +67,11 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 			<section class="popup">
 				<div class="info-card">
 					<article class="details" id="details">
+						<div id="back" style="display: none"> 
+							<button>
+								{`< Back`}
+							</button>
+						</div>
 						<h2>
 							<span style="opacity: 0.6">Workshop:</span>
 						</h2>
@@ -84,7 +89,6 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 						<div class="items">
 							<strong>Website:</strong>
 							<a class="no-margin" id="workshop-website" target="_blank">
-								 
 								<!-- {website} -->
 							</a>
 						</div>
@@ -129,6 +133,57 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 </Layout>
 
 <script>
+	let params = new URLSearchParams(window.location.search);
+	let workshops = params.get('q');
+	const wTitle = document.querySelectorAll(`[data-title]`)
+	if(workshops){
+		wTitle.forEach((e) => {
+			const dataTitle = e.getAttribute('data-title').toLowerCase().replace(/\s/g, '')
+			console.log(dataTitle.split(":").length > 1 ? dataTitle.split(":")[1] : dataTitle)
+			console.log(decodeURI(workshops.split(":").length > 1 ? workshops.split(":")[1] : workshops))
+			
+			if((dataTitle.split(":").length > 1 ? dataTitle.split(":")[1] : dataTitle) == decodeURI(workshops.split(":").length > 1 ? workshops.split(":")[1] : workshops)){
+
+				showPopup(e)
+				document.querySelector('#back').style.display = 'flex';
+			}
+		})
+	}
+
+	function showPopup(e){
+		console.log("Show Popup")
+	//   const content = template.content.cloneNode(true);
+	  document.querySelector('.popup').classList.add('popup-show');
+			document.querySelector('.info-card').classList.add('info-card-show');
+			document.querySelector('.details').scrollTop = 0;
+			document.querySelector('#workshop-title').innerHTML = e.getAttribute('data-title');
+			document.querySelector('#workshop-description').innerHTML = e.getAttribute('data-description');
+			document.querySelector('#workshop-website').innerHTML = e.getAttribute('data-website');
+			document.querySelector('#workshop-website').href = e.getAttribute('data-website');
+			document.querySelector('#workshop-enquiries').innerHTML = e.getAttribute('data-contacts');
+			document.querySelector('#workshop-period').innerHTML = e.getAttribute('data-date');
+			document.querySelector('#workshop-mode').innerHTML = e.getAttribute('data-mode');
+
+      document.querySelector(".popup").classList.add("popup-show");
+      document.querySelector(".info-card").classList.add("info-card-show");
+      document.querySelector(".details").scrollTop = 0;
+      
+	  setTimeout(() => {
+        popupEl.querySelectorAll("a").forEach((e) => {
+          e.style.textDecoration = "underline";
+        });
+        document.querySelectorAll(".items").forEach((e) => {
+          e.querySelectorAll("p").forEach((e) => {
+            e.style.margin = "0px";
+          });
+        });
+      }, 100);
+  }
+
+  document.querySelector('#back').addEventListener('click', (e) => {
+		window.history.back();
+	})
+
 	window.addEventListener('popstate', (e) => {
 		document.querySelector('.popup').classList.remove('popup-show');
 		document.querySelector('.info-card').classList.remove('info-card-show');
@@ -138,6 +193,7 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 	document.getElementById('exit').addEventListener('click', () => {
 		document.querySelector('.popup').classList.remove('popup-show');
 		document.querySelector('.info-card').classList.remove('info-card-show');
+		document.querySelector('#back').style.display = 'none';
 	})
 
 	document.querySelector('.popup').addEventListener('click', (e) => {
@@ -224,6 +280,11 @@ const {file: {title, description, contacts, date, date_widget, event_period, web
 	#details::-webkit-scrollbar {
 		width: 5px;
 	}
+
+	#back{
+	margin-bottom: 1em;
+  }
+
 
 	/* Track */
 	#details::-webkit-scrollbar-track {

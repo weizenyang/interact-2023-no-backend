@@ -19,73 +19,185 @@
             "text": "BCS Conference I",
             "location": "CSE/082",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "BCS Conference",
+              "href" : "other",
+              "text" : "More details here:",
+              "link" : "https://bcshci2023.org/",
+              "button_text": "British Computer Society Website"
+            }]
           },
           {
             "text": "BCS Conference II",
             "location": "CSE/082",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "BCS Conference",
+              "href" : "other",
+              "text" : "More details here:",
+              "link" : "https://bcshci2023.org/",
+              "button_text": "British Computer Society Website"
+            }]
           },
           {
             "text": "Re-contextualing the Built Environment",
             "location": "CSE/102",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Hirsch, Linda",
+                  "email": "linda.hirsch@ifi.lmu.de"
+                }
+              ]
+            }]
           },
           {
-            "text": "SHWID",
+            "text": "Sustainable Human-Work Interaction Design",
             "location": "LMB/047",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "Sustainable Human-Work Interaction Design",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Elodie Bouzekri",
+                  "email": "elodie.bouzekri@estia.fr"
+                }
+              ]
+            }]
           },
           {
-            "text": "HCSE@INTERACT",
+            "text": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
             "location": "LMB/020",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Hirsch, Linda",
+                  "email": "linda.hirsch@ifi.lmu.de"
+                }
+              ]
+            }]
           },
           {
-            "text": "HCI for Digital Democracy",
+            "text": "HCI for Digital Democracy and Citizen Participation",
             "location": "LMB/023",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "HCI for Digital Democracy and Citizen Participation",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "José Abdelnour Nocera",
+                  "email": "jose.abdelnour-nocera@uwl.ac.uk"
+                }
+              ]
+            }]
           },
           {
-            "text": "Algorithmic Affordance",
+            "text": "Algorithmic affordances in recommender interfaces",
             "location": "LMB/024",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "Algorithmic affordances in recommender interfaces",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Aletta Smits",
+                  "email": "aletta.smits@hu.nl"
+                }
+              ]
+            }]
           },
           {
-            "text": "HCI Approaches to the Metaverse",
+            "text": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
             "location": "LMB/025",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Anmol Srivastava",
+                  "email": "anmol@iiitd.ac.in"
+                }
+              ]
+            }]
           },
           {
-            "text": "Designing for Neurodivergent",
+            "text": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
             "location": "CSE/102",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "David Gollasch",
+                  "email": "david.gollasch@tu-dresden.de"
+                }
+              ]
+            }]
           },
           {
-            "text": "IATech",
+            "text": "Interacting with Assistive Technology (IATech) Workshop",
             "location": "CSE/202",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "Interacting with Assistive Technology (IATech) Workshop",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Hirsch, Linda",
+                  "email": "linda.hirsch@ifi.lmu.de"
+                }
+              ]
+            }]
           },
           {
-            "text": "Playful, Curious",
+            "text": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
             "location": "CSE/103",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Aneesha Singh",
+                  "email": "aneesha.singh@ucl.ac.uk"
+                }
+              ]
+            }]
           },
           {
-            "text": "CoDesigning AR & VR",
+            "text": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
             "location": "LMB/038",
             "hasInfo": "true",
-            "info":[{}]
+            "info":[{
+              "id": "Workshops",
+              "title": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Wiesław Kopeć",
+                  "email": "w.kopec@pja.edu.pl"
+                }
+              ]
+            }]
           }
         ]
       },

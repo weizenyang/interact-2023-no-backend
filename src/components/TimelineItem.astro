@@ -77,6 +77,11 @@ name.map((e) => {
                                                 <a href={`/courses?q=${encodeURI(i.title.split(":").length > 0 ? i.title.split(":")[1] : i.title)}`}>Read More ></a>
                                             </button>
                                         </p>}
+                                        {i.href == 'workshops' && <p>
+                                            <button class="bold">
+                                                <a href={`/workshops/0?q=${encodeURI(i.title.replace(/[\s&]+/g, "").toLowerCase())}`}>Read More ></a>
+                                            </button>
+                                        </p>}
                                         {i.href == 'keynote' && <p>
                                             <button class="bold">
                                                 <a href={`/keynotes?q=${encodeURI(i.authors.split(",").length > 0 ? i.authors.split(",")[0] : i.authors)}`}>Read Abstract ></a>
