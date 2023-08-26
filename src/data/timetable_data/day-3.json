@@ -15,7 +15,7 @@
       "time": "9:30 - 11:00",
       "item": [
         {
-          "text": "Opening Welcome / Awards"
+          "text": "Opening Session / Awards"
         }
       ]
     },
@@ -199,50 +199,50 @@
           "hasInfo": true,
           "info": [
             {
-              "id": "FP1012",
-              "title": "Common Objects for Programming Workshops in Non-Formal Learning Contexts",
-              "authors": "Nathalie Bressa, Susanne Bødker, Clemens N. Klokmose, and Eva Eriksson",
-              "presenters": "Nathalie Bressa",
+              "id": "FP1019",
+              "title": "AdaptReview: Towards Effective Video Review using Text Summaries and Concept Maps",
+              "authors": "Shan Zhang, Yang Chen, Nuwan Janaka, Chloe Haigh, Shengdong Zhao, and Wei Tsang Ooi",
+              "presenters": "Shan Zhang",
               "contact": [
                 {
-                  "name": "Bressa, Nathalie",
-                  "email": "nathalie.bressa@gmail.com"
+                  "name": "Zhang, Shan",
+                  "email": "shan_zhang@u.nus.edu"
                 }
               ]
             },
             {
-              "id": "SP1211",
-              "title": "Engaging a project consortium in ethics-aware design and research",
-              "authors": "Päivi Heikkilä, Hanna Lammi, and Susanna Aromaa",
-              "presenters": "Päivi Heikkilä and Hanna Lammi",
+              "id": "FP1073",
+              "title": "I perform my work with my body too: integrating body representations in and with task models",
+              "authors": "Axel Carayon, Célia Martinie, Philippe Palanque",
+              "presenters": "-",
               "contact": [
                 {
-                  "name": "HeikkilÃ¤, PÃ¤ivi",
-                  "email": "paivi.heikkila@vtt.fi"
+                  "name": "Martinie, Célia",
+                  "email": "celia.martinie@irit.fr"
                 }
               ]
             },
             {
-              "id": "SP1256",
-              "title": "Exploring Emotions: Study of Five Design Workshops for Generating Ideas for Emotional Self-Report Interfaces",
-              "authors": "Carla Nave, Francisco Nunes, Teresa Romão, and Nuno Correia",
-              "presenters": "Carla Nave",
+              "id": "SP1178",
+              "title": "Prototyping with the IVY workbench: Bridging Formal Methods and User-Centred Design",
+              "authors": "Rafael Braga da Costa and José Creissac Campos",
+              "presenters": "José Creissac Campos",
               "contact": [
                 {
-                  "name": "Nave, Carla",
-                  "email": "cd.saraiva@campus.fct.unl.pt"
+                  "name": "Campos, José",
+                  "email": "jose.campos@acm.org"
                 }
               ]
             },
             {
-              "id": "FP1153",
-              "title": "Moving Away from the Blocks: Evaluating the Usability of EduBlocks for Supporting Children to Transition from Block-Based Programming",
-              "authors": "Gavin Sim, Mark Lochrie, Misbahu S Zubair, Oliver Kerr, and Matthew Bates",
-              "presenters": "Gavin Sim",
+              "id": "SP1231",
+              "title": "Towards automated load testing through the user interface",
+              "authors": "Bruno Teixeira and José Creissac Campos",
+              "presenters": "José Creissac Campos",
               "contact": [
                 {
-                  "name": "Sim, Gavin",
-                  "email": "grsim@uclan.ac.uk"
+                  "name": "Campos, José",
+                  "email": "jose.campos@acm.org"
                 }
               ]
             }
