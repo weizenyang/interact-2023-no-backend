@@ -6,7 +6,8 @@
       "time": "8:00 - 8:30",
       "item": [
         {
-          "text": "Registration"
+          "text": "Registration",
+          "location": "Registration / Information Desk Open All Day"
         }
       ]
     },
@@ -34,7 +35,7 @@
       "item": [
         {
           "text": "Session F1: Understanding users and privacy issues",
-          "location": "CSE/082X",
+          "location": "CSE/082",
           "hasInfo": true,
           "info": [
             {
@@ -88,7 +89,7 @@
           ]
         },
         {
-          "text": "Session F2: Accessibility for Auditory / Hearing",
+          "text": "Session F2: Accessibility for Auditory/Hearing Disabilities",
           "location": "CSE/102X",
           "hasInfo": true,
           "info": [
@@ -132,7 +133,7 @@
         },
         {
           "text": "Session F3: Multisensory interaction and VR experiences",
-          "location": "LMB/002",
+          "location": "LMB/020",
           "hasInfo": true,
           "info": [
             {
@@ -182,24 +183,12 @@
                   "email": "mloc@create.aau.dk"
                 }
               ]
-            },
-            {
-              "id": "industrial-1004",
-              "title": "Whose responsibility is accessibility in games anyway? Everyone",
-              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
-              "presenters": "",
-              "contact": [
-                {
-                  "name": "Power, Christopher",
-                  "email": "cdspower@upei.ca"
-                }
-              ]
             }
           ]
         },
         {
           "text": "Session F4: Social and Ubiquitous Computing II",
-          "location": "LMB/002A",
+          "location": "LMB/023",
           "hasInfo": true,
           "info": [
             {
@@ -242,7 +231,7 @@
         },
         {
           "text": "Session F5: Human-Robot Interaction",
-          "location": "LMB/030",
+          "location": "LMB/024",
           "hasInfo": true,
           "info": [
             {
@@ -285,18 +274,18 @@
         },
         {
           "text": "Course C - Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
-          "location": "LMB/036",
+          "location": "LMB/025",
           "hasInfo": true,
           "info": [
             {
               "id": "Course C",
               "title": "Part 1: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
-              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
-              "presenters": "Keith Andrews",
+              "authors": "Sarah Clinch and Nigel Davies",
+              "presenters": "Sarah Clinch, Nigel Davies",
               "contact": [
                 {
-                  "name": "Chiara Natali",
-                  "email": "chiara.natali@unimib.it"
+                  "name": "Sarah Clinch",
+                  "email": "sarah.clinch@manchester.ac.uk"
                 }
               ],
               "href": "courses"
@@ -309,7 +298,8 @@
       "time": "11:00 - 11:30",
       "item": [
         {
-          "text": "Coffee Break"
+          "text": "Coffee Break",
+          "location": "CSE / LMB"
         }
       ]
     },
@@ -317,7 +307,8 @@
       "time": "11:30 - 12:30",
       "item": [
         {
-          "text": "Posters and Demonstrations"
+          "text": "Posters and Demonstrations",
+          "locations": "CSE/082"
         }
       ]
     },
@@ -325,7 +316,8 @@
       "time": "12:30 - 13:45",
       "item": [
         {
-          "text": "Lunch"
+          "text": "Lunch",
+          "location": "CSE / LMB"
         }
       ]
     },
@@ -335,7 +327,7 @@
       "item": [
         {
           "text": "Session G1: User Self-Report",
-          "location": "CSE/082X",
+          "location": "CSE/082",
           "hasInfo": true,
           "info": [
             {
@@ -390,7 +382,7 @@
         },
         {
           "text": "Session G2: Cybersecurity and Trust",
-          "location": "CSE/082X",
+          "location": "CSE/102X",
           "hasInfo": true,
           "info": [
             {
@@ -457,7 +449,7 @@
         },
         {
           "text": "Session G3: Online collaboration and Cooperative work",
-          "location": "CSE/082X",
+          "location": "LMB/020",
           "hasInfo": true,
           "info": [
             {
@@ -500,7 +492,7 @@
         },
         {
           "text": "Session G4: Interaction with Conversational agents II",
-          "location": "CSE/082X",
+          "location": "CSE/023",
           "hasInfo": true,
           "info": [
             {
@@ -554,25 +546,62 @@
           ]
         },
         {
-          "text": "Session G5: No data yet",
-          "location": "TBA",
+          "text": "Session G5: The View From Industy",
+          "location": "LMB/024",
           "hasInfo": true,
-          "info": []
+          "info": [
+            {
+              "id": "industrial-1004",
+              "title": "Whose responsibility is accessibility in games anyway? Everyone",
+              "authors": "Christopher Power, Paul Cairns, Mark Barlet, and Steven Weitz",
+              "presenters": "",
+              "contact": [
+                {
+                  "name": "Power, Christopher",
+                  "email": "cdspower@upei.ca"
+                }
+              ]
+            },
+            {
+              "id": "industrial-1005",
+              "title": "TBA",
+              "authors": "TBA",
+              "presenters": "TBA",
+              "contact": [
+                {
+                  "name": "Jose, Abdelnour Nocera",
+                  "email": "Jose.Abdelnour-Nocera@uwl.ac.uk"
+                }
+              ]
+            },
+            {
+              "id": "industrial-1005",
+              "title": "User Research in The Real World",
+              "authors": "Lucy Buykx",
+              "presenters": "Lucy Buykx",
+              "contact": [
+                {
+                  "name": "Buykx, Lucy",
+                  "email": "lucy@buykx.com"
+                }
+              ]
+            }
+          ]
         },
         {
           "text": "Course C - Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
-          "location": "CSE/082X",
+          "location": "LMB/025",
           "hasInfo": true,
           "info": [
             {
               "id": "Course C",
               "title": "Part 2: Hacking the Brain - the risks and challenges of Cognitive Augmentation",
-              "authors": "Chiara Natali, Andrea Campagner, Federico Cabitza",
-              "presenters": "Keith Andrews",
+              "authors": "Sarah Clinch and Nigel Davies",
+              "presenters": "Sarah Clinch, Nigel Davies",
               "contact": [
                 {
-                  "name": "Chiara Natali",
-                  "email": "chiara.natali@unimib.it"
+                  "name": "Sarah Clinch",
+                  "email": "sarah.clinch@manchester.ac.uk"
                 }
               ],
               "href": "courses"
@@ -585,7 +614,8 @@
       "time": "15:15 - 15:45",
       "item": [
         {
-          "text": "Coffee Break"
+          "text": "Coffee Break",
+          "location": "CSE / LMB"
         }
       ]
     },
@@ -599,12 +629,14 @@
           "hasInfo" : true,
           "info" : [
             {
+              "id": "Closing Keynote",
               "title": "Festivals, human values, & turning designers into newspapers: Lessons learnt doing people-centred research in the future of media",
               "authors": "Mike Evans, UX Research Lead, BBC Research and Development, UK",
               "href": "keynote"
             }
           ]
         }
+        
       ]
     },
     {

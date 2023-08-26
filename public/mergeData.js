@@ -4,14 +4,15 @@ import {fileURLToPath} from 'url';
 
 const dirname = fileURLToPath(import.meta.url)
 
-const dirPath = path.join(dirname, "../data")
-const dirPathContent = path.join(dirname, "../")
+const dirPath = path.join(dirname, "../../src/data/timetable_data")
+const dirPathContent = path.join(dirname, "../../")
 // const dirPathS = path.join(dirname, "../data")
 // const dirPathSF = path.join(dirname, "../data")
 var _subfolder;
 var _fileNames = {};
 var subfolderName = ""
 var dataList = "";
+var prevReadFilePath;
 // var jsonSnippet;
 // var subfolder;
 
@@ -20,12 +21,18 @@ function getSubFolder() {
     //Get subfolder from /data folder
     fs.readdir(dirPath, (err, subfolder) => {
         if (err) {
+            
             return console.log("Failed to list contents of directory: " + err)
-        }
-        console.log(subfolder)
+        } 
 
-        _subfolder = subfolder;
-        getFileNames()
+            console.log(subfolder)
+            _subfolder = subfolder;
+            getFileNames()
+        
+            
+        
+        
+        
 
     })
 }
@@ -33,13 +40,52 @@ function getSubFolder() {
 function getFileNames(){
     _subfolder.forEach((sfolder) => {
             var dirPathS = path.join(dirPath, sfolder)
+            
             fs.readdir(dirPathS, (err, files) => {
                  
                 if (err) {
-                    return console.log("Failed to list contents of directory: " + err)
-                }
+                    console.log("getFileNames: Failed to list contents of directory: " + err)
+                    if(prevReadFilePath != path.join(dirPathS, "../")){
+                        prevReadFilePath = path.join(dirPathS, "../");
+                        console.log("Trying to read parent directory: " + prevReadFilePath);
+                        //Get data from files
+                        fs.readdir(prevReadFilePath, (err, files) => {
+                            //Log Reading Parent Dir
+                            if(err) {
+                                return console.log("Parent Dir Read Failed: " + err);
+                            }
+                            console.log("Success");
+                            files.forEach((file) => {
 
-                //Get data from files
+                                var dirPathF = path.join(dirPath, file)
+                                fs.readFile(`${dirPathF}`, "utf8", (err, content) => {
+                                    if(err) {
+                                        return console.log("Content Read Failed: " + err);
+                                    }
+                                    console.log("Success");
+                                        //Merge JSON data
+                                        // mergeData(content)
+                                        if(sfolder != undefined){
+                                            console.log(dirPathF)
+                                            var key = sfolder
+                                            if(_fileNames[key] == undefined){
+                                                _fileNames[key] = ""
+                                                _fileNames[key] += content;
+                                            } else {
+                                                _fileNames[key] += "," + content;
+                                            }
+    
+                                            console.log(Object.keys(_fileNames))
+                                        }
+                                        appendJsonList();
+                                })
+                            })
+                            
+                        })
+
+                    }
+                } else {
+                    //Get data from files
                 files.forEach(file =>{
                     var dirPathSF = path.join(dirPathS, file)
                     console.log("filepath: "+ dirPathSF)
@@ -66,6 +112,9 @@ function getFileNames(){
                 }
 
                 )
+                }
+
+                
                        
             })
         })
@@ -170,7 +219,7 @@ function getFileNames(){
 // }
 
 function appendJsonList(){
-    fs.writeFileSync(path.join(dirPathContent, "content-copy.json"), "")
+    fs.writeFileSync(path.join(dirPathContent, "mergedProgrammeData.json"), "")
     var jsonSnippet = ""
     var dataSnippet = ""
 
@@ -189,7 +238,7 @@ function appendJsonList(){
         jsonSnippet = "{" + dataSnippet + "}"
         // jsonSnippet = '{"' + key + '":[ ' + _fileNames[key] + "]}"
         // jsonSnippet = '{"'+ Object.entries(_fileNames)+"}"
-        fs.writeFileSync(path.join(dirPathContent, "content-copy.json"), jsonSnippet)
+        fs.writeFileSync(path.join(dirPathContent, "mergedProgrammeData.json"), jsonSnippet)
 
         
         
@@ -308,3 +357,5 @@ getSubFolder()
 // appendJsonList(getPosts())
 
 // getPages()
+
+// Load the fs module to read and write files

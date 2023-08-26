@@ -6,15 +6,131 @@
       "time": "8:00 - 9:00",
       "item": [
         {
-          "text": "Registration"
+          "text": "Registration (CSE Foyer)",
+          "location": "Registration / Information Desk Open All Day"
         }
       ]
     },
     {
       "time": "9:00 - 10:30",
+      "or": true,
       "item": [
         {
-          "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium"
+          "text": "BCS Conference",
+          "location": "CSE/082",
+          "hasInfo": "true",
+            "info":[{
+              "id": "BCS Conference",
+              "href" : "other",
+              "text" : "More details here:",
+              "link" : "https://bcshci2023.org/",
+              "button_text": "British Computer Society Website"
+            }]
+        },
+        {
+          
+          "text": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
+          "location": "CSE/102",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Linda Hirsch",
+                "email": "linda.hirsch@ifi.lmu.de"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education",
+          "location": "LMB/020",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Lucio Davide Spano",
+                "email": "davide.spano@unica.it"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI",
+          "location": "LMB/023",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Andrew Vargo",
+                "email": "awv@umich.edu"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "Designing for Map-based Interfaces and Interactions (MAPII 2023)",
+          "location": "LMB/024",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "Designing for Map-based Interfaces and Interactions (MAPII 2023)",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Masood Masoodian",
+                "email": "masood.masoodian@aalto.fi"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
+          "location": "CSE/203",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Tilo Mentler",
+                "email": "mentler@hochschule-trier.de"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "VR Accessibility in Distance Adult Education",
+          "location": "CSE/204",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "VR Accessibility in Distance Adult Education",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Bartosz Muczyński",
+                "email": "b.muczynski@pm.szczecin.pl"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "Doctoral Consortium",
+          "location": "CSE/202",
+          "hasInfo": "true",
+            "info":[{
+              "id": "No Data"
+            }]
         }
       ]
     },
@@ -30,12 +146,12 @@
       "time": "11:00 - 12:30",
       "item": [
         {
-          "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium"
+          "text": "[Same As Above]"
         }
       ]
     },
     {
-      "time": "12:30 - 13:30",
+      "time": "12:30 - 13:0",
       "item": [
         {
           "text": "Lunch Break"
@@ -46,7 +162,7 @@
       "time": "13:30 - 15:00",
       "item": [
         {
-          "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium"
+          "text": "[Same As Above]"
         }
       ]
     },
@@ -62,7 +178,7 @@
       "time": "15:30 - 17:00",
       "item": [
         {
-          "text": "INTERACT Workshops / BCS Conference / Doctoral Consortium"
+          "text": "[Same As Above]"
         }
       ]
     },{

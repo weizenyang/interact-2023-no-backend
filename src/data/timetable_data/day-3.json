@@ -6,7 +6,8 @@
       "time": "8:30 - 9:30",
       "item": [
         {
-          "text": "Registration"
+          "text": "Registration",
+          "location": "Registration / Information Desk Open All Day"
         }
       ]
     },
@@ -60,7 +61,7 @@
       "item": [
         {
           "text": "Session A1: User Studies",
-          "location": "TBA",
+          "location": "CSE/102",
           "hasInfo": true,
           "info": [
             {
@@ -127,7 +128,7 @@
         },
         {
           "text": "Session A2: Accessibility",
-          "location": "TBA",
+          "location": "CSE/082",
           "hasInfo": true,
           "info": [
             {
@@ -194,7 +195,7 @@
         },
         {
           "text": "Session A3: Model-Based UI Design and Testing",
-          "location": "TBA",
+          "location": "LMB/020",
           "hasInfo": true,
           "info": [
             {
@@ -249,7 +250,7 @@
         },
         {
           "text": "Session A4: Interaction with Conversational agents I",
-          "location": "TBA",
+          "location": "LMB/047",
           "hasInfo": true,
           "info": [
             {
@@ -292,7 +293,7 @@
         },
         {
           "text": "Session A5: 3D Interaction",
-          "location": "TBA",
+          "location": "LMB/023",
           "hasInfo": true,
           "info": [
             {
@@ -335,7 +336,7 @@
         },
         {
           "text": "Course A - Part 1: Introduction to Information Visualisation",
-          "location": "TBA",
+          "location": "LMB/024",
           "hasInfo": true,
           "info": [
             {
@@ -355,7 +356,7 @@
         },
         {
           "text": "Course F - Part 1: The UCD Sprint: Bringing Users Along to Sprint",
-          "location": "TBA",
+          "location": "LMB/025",
           "hasInfo": true,
           "info": [
             {
@@ -389,7 +390,7 @@
       "item": [
         {
           "text": "Session B1: Data Physicalisation and Cross-Device",
-          "location": "TBA",
+          "location": "LMB/020",
           "hasInfo": true,
           "info": [
             {
@@ -444,7 +445,7 @@
         },
         {
           "text": "Session B2: Interacting with Children",
-          "location": "TBA",
+          "location": "CSE/102",
           "hasInfo": true,
           "info": [
             {
@@ -511,7 +512,7 @@
         },
         {
           "text": "Session B3: Information Visualization",
-          "location": "TBA",
+          "location": "LMB/047",
           "hasInfo": true,
           "info": [
             {
@@ -554,7 +555,7 @@
         },
         {
           "text": "Session B4: Natural Language Processing and AI Explainability",
-          "location": "TBA",
+          "location": "CSE/082",
           "hasInfo": true,
           "info": [
             {
@@ -608,8 +609,8 @@
           ]
         },
         {
-          "text": "Session B5: Motion Sickness, Stress & Risk Pereception in 3D Environments",
-          "location": "TBA",
+          "text": "Session B5: Motional Sickness, Stress & Risk Pereception in 3D Environments",
+          "location": "LMB/023",
           "hasInfo": true,
           "info": [
             {
@@ -652,7 +653,7 @@
         },
         {
           "text": "Course A - Part 2: Introduction to Information Visualisation",
-          "location": "TBA",
+          "location": "LMB/024",
           "hasInfo": true,
           "info": [
             {
@@ -672,7 +673,7 @@
         },
         {
           "text": "Course F - Part 2: The UCD Sprint - Bringing Users Along to Sprint",
-          "location": "TBA",
+          "location": "LMB/025",
           "hasInfo": true,
           "info": [
             {
@@ -720,7 +721,8 @@
       "time": "18:30 - 20:00",
       "item": [
         {
-          "text": "Welcome Reception"
+          "text": "Drinks Reception",
+          "location": "Piazza Building and Terrace"
         }
       ]
     }

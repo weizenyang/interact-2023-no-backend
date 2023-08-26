@@ -6,7 +6,8 @@
       "time": "8:00 - 8:30",
       "item": [
         {
-          "text": "Registration"
+          "text": "Registration",
+          "location": "Registration / Information Desk Open All Day"
         }
       ]
     },
@@ -34,7 +35,7 @@
       "item": [
         {
           "text": "Session C1: Haptic Interaction",
-          "location": "TBA",
+          "location": "LMB/020",
           "hasInfo": true,
           "info": [
             {
@@ -89,7 +90,7 @@
         },
         {
           "text": "Session C2: Accessibility & Aging",
-          "location": "TBA",
+          "location": "CSE/102",
           "hasInfo": true,
           "info": [
             {
@@ -144,7 +145,7 @@
         },
         {
           "text": "Session C3: Methodologies for HCI",
-          "location": "TBA",
+          "location": "LMB/047",
           "hasInfo": true,
           "info": [
             {
@@ -187,7 +188,7 @@
         },
         {
           "text": "Session C4: Recommendation systems & AI explainability",
-          "location": "TBA",
+          "location": "CSE/082",
           "hasInfo": true,
           "info": [
             {
@@ -242,7 +243,7 @@
         },
         {
           "text": "Session C5: User Movements & 3D Environments",
-          "location": "TBA",
+          "location": "LMB/023",
           "hasInfo": true,
           "info": [
             {
@@ -285,7 +286,7 @@
         },
         {
           "text": "Course D : Practical Ethics - Respecting Participants Contributions in HCI Research and Design",
-          "location": "TBA",
+          "location": "LMB/024",
           "hasInfo": true,
           "info": [
             {
@@ -305,7 +306,7 @@
         },
         {
           "text": "Course E: How to Assess Human Reliance on Artificial Intelligence in Hybrid Decision-Making",
-          "location": "TBA",
+          "location": "LMB/025",
           "hasInfo": true,
           "info": [
             {
@@ -329,17 +330,18 @@
       "time": "11:00 - 11:30",
       "item": [
         {
-          "text": "Coffee Break"
+          "text": "Coffee Break",
+          "location": "CSE / LMB"
         }
       ]
     },
     {
-      "time": "11:30 - 13:30",
+      "time": "11:30 - 13:00",
       "or": true,
       "item": [
         {
           "text": "Session D1: User Studies, Eye-Tracking and Physiological data",
-          "location": "TBA",
+          "location": "CSE/102",
           "hasInfo": true,
           "info": [
             {
@@ -406,7 +408,7 @@
         },
         {
           "text": "Session D2: Eye-Free, Gesture Interaction and Sign Language",
-          "location": "TBA",
+          "location": "LMB/023",
           "hasInfo": true,
           "info": [
             {
@@ -461,7 +463,7 @@
         },
         {
           "text": "Session D3: Co-design",
-          "location": "TBA",
+          "location": "LMB/047",
           "hasInfo": true,
           "info": [
             {
@@ -516,7 +518,7 @@
         },
         {
           "text": "Session D4: Social AI",
-          "location": "TBA",
+          "location": "CSE/082",
           "hasInfo": true,
           "info": [
             {
@@ -571,7 +573,7 @@
         },
         {
           "text": "Session D5: Virtual Reality",
-          "location": "TBA",
+          "location": "CSE/102",
           "hasInfo": true,
           "info": [
             {
@@ -638,7 +640,7 @@
         },
         {
           "text": "Course B - Part 1: Disability, Design and Innovation for a Fairer World",
-          "location": "TBA",
+          "location": "LMB/024",
           "hasInfo": true,
           "info": [
             {
@@ -662,7 +664,8 @@
       "time": "13:30 - 14:15",
       "item": [
         {
-          "text": "Lunch"
+          "text": "Lunch",
+          "location": "CSE / LMB"
         }
       ]
     },
@@ -672,7 +675,7 @@
       "item": [
         {
           "text": "Session E1: Social Media and Digital Learning",
-          "location": "TBA",
+          "location": "LMB/020",
           "hasInfo": true,
           "info": [
             {
@@ -739,7 +742,7 @@
         },
         {
           "text": "Session E2: Healthcare applications and Self-Monitoring",
-          "location": "TBA",
+          "location": "LMB/023",
           "hasInfo": true,
           "info": [
             {
@@ -794,7 +797,7 @@
         },
         {
           "text": "Session E3: Information Visualization and 3D Interaction",
-          "location": "TBA",
+          "location": "LMB/047",
           "hasInfo": true,
           "info": [
             {
@@ -837,7 +840,7 @@
         },
         {
           "text": "Session E4: Social and Ubiquitous Computing I",
-          "location": "TBA",
+          "location": "CSE/082",
           "hasInfo": true,
           "info": [
             {
@@ -880,7 +883,7 @@
         },
         {
           "text": "Session E5: Virtual Reality and Training",
-          "location": "TBA",
+          "location": "CSE/102",
           "hasInfo": true,
           "info": [
             {
@@ -923,7 +926,7 @@
         },
         {
           "text": "Course B - Part 2: Disability, Design and Innovation for a Fairer World",
-          "location": "TBA",
+          "location": "LMB/024",
           "hasInfo": true,
           "info": [
             {
@@ -943,7 +946,7 @@
         },
         {
           "text": "Panel 1: A Multi-Perspective Panel on User-centred Transparency, Explainability, and Controllability in Automations",
-          "location": "TBA",
+          "location": "PZA/103",
           "hasInfo": true,
           "info": []
         }
@@ -953,7 +956,8 @@
       "time": "15:45 - 16:15",
       "item": [
         {
-          "text": "Coffee Break"
+          "text": "Coffee Break",
+          "location": "CSE / LMB"
         }
       ]
     },
