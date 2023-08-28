@@ -19,7 +19,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			<div class="search-box input-field">
 				<div style="display: flex;">
 					<div id="search" style="width: 100%">
-						<input type="text" placeholder="Search id, paper, author, date, day from 150 results" id="searchTextBox"></input>
+						<input type="text" placeholder="Search id, paper, author, date, day from 170 results" id="searchTextBox"></input>
 						<p id="resultCount"></p>
 						
 					</div>
@@ -435,7 +435,7 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 	})
 
 	window.addEventListener("popstate", () => {
-		console.log("pop")
+
 		findDataFromUrl();
 		if(document.querySelector(".search-box").classList.contains("search-active")){
 			document.querySelector(".search-box").classList.remove("search-active");
@@ -475,6 +475,9 @@ const algoliaKey = await import.meta.env.ALGOLIA_API_KEY;
 			
 			// console.log(e.querySelector(".session-name").innerText.toLowerCase().replace(/\s/g, ''))
 			console.log(decodeURI(qParam).toLowerCase().replace(/\s/g, ''))
+		} else {
+			closePopup();
+			highlight("a");
 		}
 		
 	}
