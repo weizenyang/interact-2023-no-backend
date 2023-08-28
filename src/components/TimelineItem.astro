@@ -44,7 +44,7 @@ name.map((e) => {
         {
             name.map((e) =>
                 e.hasInfo ? (
-                    <div class={e.info.length < 1 ? "timetable-text hasInfo butNoInfo" : "timetable-text hasInfo"} id={e.text.toLowerCase().includes('keynote') ? e.author.replace(/\s/g, "").toLowerCase().split(",")[0] : e.id}>
+                    <button class={e.info.length < 1 ? "timetable-text hasInfo butNoInfo" : "timetable-text hasInfo"} id={e.text.toLowerCase().includes('keynote') ? e.author.replace(/\s/g, "").toLowerCase().split(",")[0] : e.id}>
                         {e.text && <p class="session-name bold">{e.text}</p>}
                         {e.location && (
                             <p
@@ -100,7 +100,7 @@ name.map((e) => {
                         </template>}
                         
                         
-                    </div>
+                    </button>
                     )
                  : (
                         <p class="timetable-text bold">{e.text} {or == false && <span class="and">&</span>}</p>
@@ -269,6 +269,10 @@ name.map((e) => {
             scroll-margin-top: 30vh;
             padding-top: 0%;
             line-break: strict;
+            color: var(--color-text);
+            font-family: 'AH-R';
+            text-align: left;
+
         }
 
         .timetable-text p {
