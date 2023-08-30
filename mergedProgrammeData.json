@@ -1,4 +1,215 @@
-{"day-4.json":[ {
+{"day-3.json":[ {
+  "day": 1,
+  "date": "28th August",
+  "data": [
+    {
+      "time": "8:30 - 9:30",
+      "item": [
+        {
+          "text": "Registration (Open All Day)",
+          "location": "CSE Foyer",
+          "hasInfo": true,
+          "info": []
+        }
+      ]
+    },
+    {
+      "time": "9:30 - 11:00",
+      "or": true,
+      "item": [
+        {
+          "text": "BCS Conference",
+          "location": "CSE/082",
+          "hasInfo": "true",
+            "info":[{
+              "id": "BCS Conference",
+              "href" : "other",
+              "text" : "More details here:",
+              "link" : "https://bcshci2023.org/",
+              "button_text": "British Computer Society Website"
+            }]
+        },
+        {
+          
+          "text": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
+          "location": "CSE/102",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Linda Hirsch",
+                "email": "linda.hirsch@ifi.lmu.de"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education",
+          "location": "LMB/020",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Lucio Davide Spano",
+                "email": "davide.spano@unica.it"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI",
+          "location": "LMB/023",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Andrew Vargo",
+                "email": "awv@umich.edu"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "Designing for Map-based Interfaces and Interactions (MAPII 2023)",
+          "location": "LMB/024",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "Designing for Map-based Interfaces and Interactions (MAPII 2023)",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Masood Masoodian",
+                "email": "masood.masoodian@aalto.fi"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
+          "location": "CSE/203",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Tilo Mentler",
+                "email": "mentler@hochschule-trier.de"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "VR Accessibility in Distance Adult Education",
+          "location": "CSE/204",
+          "hasInfo": "true",
+          "info":[{
+            "id": "Workshops",
+            "title": "VR Accessibility in Distance Adult Education",
+            "href": "workshops",
+            "contact": [
+              {
+                "name": "Bartosz Muczyński",
+                "email": "b.muczynski@pm.szczecin.pl"
+              }
+            ]
+          }]
+        },
+        {
+          "text": "Doctoral Consortium",
+          "location": "CSE/202",
+          "hasInfo": "true",
+          "info":[]
+        }
+      ]
+    },
+    {
+      "time": "11:00 - 11:30",
+      "item": [
+        {
+          "text": "Coffee Break",
+          "location": "CSE and LMB",
+          "hasInfo": true,
+          "info":[] 
+        }
+      ]
+    },
+    {
+      "time": "11:30 - 12:30",
+      "item": [
+        {
+          "text": "[Same As Above]"
+        }
+      ]
+    },
+    {
+      "time": "12:30 - 13:45",
+      "item": [
+        {
+          "text": "Lunch Break",
+          "location": "CSE",
+          "hasInfo": true,
+          "info":[] 
+        }
+      ]
+    },
+    {
+      "time": "13:45 - 15:15",
+      "item": [
+        {
+          "text": "[Same As Above]"
+        }
+      ]
+    },
+    {
+      "time": "15:15 - 15:45",
+      "item": [
+        {
+          "text": "Coffee Break",
+          "location": "CSE and LMB",
+          "hasInfo": true,
+          "info":[] 
+        }
+      ]
+    },
+    {
+      "time": "15:45 - 17:30",
+      "item": [
+        {
+          "text": "[Same As Above]"
+        }
+      ]
+    },{
+      "time": "19:00",
+      
+      "item": [
+        {
+          "text": "BCS Conference Dinner",
+          "location": "Rustique Restaurant, 28 Castlegate, York",
+          "hasInfo": true,
+          "info" : [{
+              "id": "BCS Conference Dinner",
+              "href" : "other",
+              "text" : "Rustique Restaurant, 28 Castlegate, York",
+              "link" : "https://www.rustiquerestaurants.co.uk/",
+              "button_text": "Check Location"
+          }]
+        }
+      ]
+    }
+  ]
+},{
   "day": 3,
   "date": "30th August",
   "data": [
@@ -745,6 +956,296 @@
     }
   ]
 },{
+    "day": 2,
+    "date": "29th August",
+    "data": [
+      {
+        "time": "8:30 - 9:30",
+        "item": [
+          {
+            "text": "Registration (Open All Day)",
+            "location": "CSE Foyer",
+            "hasInfo": true,
+            "info": []
+          }
+        ]
+      },
+      {
+        "time": "9:30 - 11:00",
+        "or": true,
+        "item": [
+          {
+            "text": "BCS Conference I",
+            "location": "CSE/082",
+            "hasInfo": "true",
+            "info":[{
+              "id": "BCS Conference I",
+              "href" : "other",
+              "text" : "More details here:",
+              "link" : "https://bcshci2023.org/",
+              "button_text": "British Computer Society Website"
+            }]
+          },
+          {
+            "text": "BCS Conference II",
+            "location": "CSE/102",
+            "hasInfo": "true",
+            "info":[{
+              "id": "BCS Conference II",
+              "href" : "other",
+              "text" : "More details here:",
+              "link" : "https://bcshci2023.org/",
+              "button_text": "British Computer Society Website"
+            }]
+          },
+          {
+            "text": "Sustainable Human-Work Interaction Design",
+            "location": "LMB/047",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Sustainable Human-Work Interaction Design",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Elodie Bouzekri",
+                  "email": "elodie.bouzekri@estia.fr"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
+            "location": "LMB/020",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Hirsch, Linda",
+                  "email": "linda.hirsch@ifi.lmu.de"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "HCI for Digital Democracy and Citizen Participation",
+            "location": "LMB/038X",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "HCI for Digital Democracy and Citizen Participation",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "José Abdelnour Nocera",
+                  "email": "jose.abdelnour-nocera@uwl.ac.uk"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Algorithmic affordances in recommender interfaces",
+            "location": "LMB/024",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Algorithmic affordances in recommender interfaces",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Aletta Smits",
+                  "email": "aletta.smits@hu.nl"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
+            "location": "LMB/025",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Anmol Srivastava",
+                  "email": "anmol@iiitd.ac.in"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
+            "location": "CSE/202",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "David Gollasch",
+                  "email": "david.gollasch@tu-dresden.de"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Interacting with Assistive Technology (IATech) Workshop",
+            "location": "CSE/204",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Interacting with Assistive Technology (IATech) Workshop",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Hirsch, Linda",
+                  "email": "linda.hirsch@ifi.lmu.de"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
+            "location": "CSE/203",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Aneesha Singh",
+                  "email": "aneesha.singh@ucl.ac.uk"
+                }
+              ]
+            }]
+          },
+          {
+            "text": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
+            "location": "LMB/023",
+            "hasInfo": "true",
+            "info":[{
+              "id": "Workshops",
+              "title": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
+              "href": "workshops",
+              "contact": [
+                {
+                  "name": "Wiesław Kopeć",
+                  "email": "w.kopec@pja.edu.pl"
+                }
+              ]
+            }]
+          }
+        ]
+      },
+      {
+        "time": "11:00 - 11:30",
+        "item": [
+          {
+            "text": "Coffee Break",
+            "location": "CSE and LMB",
+            "hasInfo": true,
+            "info":[] 
+          }
+        ]
+      },
+      {
+        "time": "11:30 - 12:30",
+        "item": [
+          {
+            "text": "[Same As Above]"
+          }
+        ]
+      },
+      {
+        "time": "12:30 - 13:45",
+        "item": [
+          {
+            "text": "Lunch Break",
+            "location": "CSE and LMB",
+            "hasInfo": true,
+            "info":[] 
+          }
+        ]
+      },
+      {
+        "time": "13:45 - 15:15",
+        "or": false,
+        "item": [
+          {
+            "text": "[Same As Above] "
+          },
+          {
+            "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+            "location": "CSE/103",
+            "hasInfo": true,
+            "info": [
+              {
+              "id": "Course A",
+              "title": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+              "authors": "Chris Rourke, John Goodall",
+              "presenters": "Chris Rourke",
+              "contact": [
+                {
+                  "name": "Rourke, Chris",
+                  "email": "info@uxqb.org"
+                }
+              ],
+              "href" : "courses"
+            }
+          ]
+          }
+        ]
+      },
+      {
+        "time": "15:15 - 15:45",
+        "item": [
+          {
+            "text": "Coffee Break",
+            "location": "CSE and LMB",
+            "hasInfo": true,
+            "info":[] 
+          }
+        ]
+      },
+      {
+        "time": "15:45 - 17:30",
+        "or": false,
+        "item": [
+          {
+            "text": "[Same As Above]"
+          },
+          {
+            "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+            "location": "CSE/103",
+            "hasInfo": true,
+            "info": [
+              {
+              "id": "Course A",
+              "title": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+              "authors": "Chris Rourke, John Goodall",
+              "presenters": "Chris Rourke",
+              "contact": [
+                {
+                  "name": "UXQB",
+                  "email": "info@uxqb.org"
+                }
+              ],
+              "href" : "courses"
+              
+            }
+          ]
+          }
+        ]
+      }
+    ]
+  },{
   "day": 5,
   "date": "1st Sept",
   "data": [
@@ -2408,507 +2909,6 @@
               
             }
           ]
-        }
-      ]
-    }
-  ]
-},{
-    "day": 2,
-    "date": "29th August",
-    "data": [
-      {
-        "time": "8:30 - 9:30",
-        "item": [
-          {
-            "text": "Registration (Open All Day)",
-            "location": "CSE Foyer",
-            "hasInfo": true,
-            "info": []
-          }
-        ]
-      },
-      {
-        "time": "9:30 - 11:00",
-        "or": true,
-        "item": [
-          {
-            "text": "BCS Conference I",
-            "location": "CSE/082",
-            "hasInfo": "true",
-            "info":[{
-              "id": "BCS Conference I",
-              "href" : "other",
-              "text" : "More details here:",
-              "link" : "https://bcshci2023.org/",
-              "button_text": "British Computer Society Website"
-            }]
-          },
-          {
-            "text": "BCS Conference II",
-            "location": "CSE/102",
-            "hasInfo": "true",
-            "info":[{
-              "id": "BCS Conference II",
-              "href" : "other",
-              "text" : "More details here:",
-              "link" : "https://bcshci2023.org/",
-              "button_text": "British Computer Society Website"
-            }]
-          },
-          {
-            "text": "Sustainable Human-Work Interaction Design",
-            "location": "LMB/047",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Sustainable Human-Work Interaction Design",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Elodie Bouzekri",
-                  "email": "elodie.bouzekri@estia.fr"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
-            "location": "LMB/020",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "HCSE@INTERACT 2023 - Human-Centered Software Engineering: Rethinking the Interplay of Human–Computer Interaction and Software Engineering in the Age of Digital Transformation",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Hirsch, Linda",
-                  "email": "linda.hirsch@ifi.lmu.de"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "HCI for Digital Democracy and Citizen Participation",
-            "location": "LMB/038X",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "HCI for Digital Democracy and Citizen Participation",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "José Abdelnour Nocera",
-                  "email": "jose.abdelnour-nocera@uwl.ac.uk"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Algorithmic affordances in recommender interfaces",
-            "location": "LMB/024",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Algorithmic affordances in recommender interfaces",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Aletta Smits",
-                  "email": "aletta.smits@hu.nl"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
-            "location": "LMB/025",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Understanding HCI approaches for the Metaverse in Education applications for in the Global South",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Anmol Srivastava",
-                  "email": "anmol@iiitd.ac.in"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
-            "location": "CSE/202",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Designing Technology for Neurodivergent Self-Determination: Challenges and Opportunities",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "David Gollasch",
-                  "email": "david.gollasch@tu-dresden.de"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Interacting with Assistive Technology (IATech) Workshop",
-            "location": "CSE/204",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Interacting with Assistive Technology (IATech) Workshop",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Hirsch, Linda",
-                  "email": "linda.hirsch@ifi.lmu.de"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
-            "location": "CSE/203",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Playful, Curious, Creative, Equitable: Exploring Opportunities for AI Technologies with Older Adults",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Aneesha Singh",
-                  "email": "aneesha.singh@ucl.ac.uk"
-                }
-              ]
-            }]
-          },
-          {
-            "text": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
-            "location": "LMB/023",
-            "hasInfo": "true",
-            "info":[{
-              "id": "Workshops",
-              "title": "Co-Designing Immersive Virtual and Extended Reality Systems for Remote and Unsupervised Interaction, Intervention, Training and Research",
-              "href": "workshops",
-              "contact": [
-                {
-                  "name": "Wiesław Kopeć",
-                  "email": "w.kopec@pja.edu.pl"
-                }
-              ]
-            }]
-          }
-        ]
-      },
-      {
-        "time": "11:00 - 11:30",
-        "item": [
-          {
-            "text": "Coffee Break",
-            "location": "CSE and LMB",
-            "hasInfo": true,
-            "info":[] 
-          }
-        ]
-      },
-      {
-        "time": "11:30 - 12:30",
-        "item": [
-          {
-            "text": "[Same As Above]"
-          }
-        ]
-      },
-      {
-        "time": "12:30 - 13:45",
-        "item": [
-          {
-            "text": "Lunch Break",
-            "location": "CSE and LMB",
-            "hasInfo": true,
-            "info":[] 
-          }
-        ]
-      },
-      {
-        "time": "13:45 - 15:15",
-        "or": false,
-        "item": [
-          {
-            "text": "[Same As Above] "
-          },
-          {
-            "text": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-            "location": "CSE/103",
-            "hasInfo": true,
-            "info": [
-              {
-              "id": "Course A",
-              "title": "Part 1 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-              "authors": "Chris Rourke, John Goodall",
-              "presenters": "Chris Rourke",
-              "contact": [
-                {
-                  "name": "Rourke, Chris",
-                  "email": "info@uxqb.org"
-                }
-              ],
-              "href" : "courses"
-            }
-          ]
-          }
-        ]
-      },
-      {
-        "time": "15:15 - 15:45",
-        "item": [
-          {
-            "text": "Coffee Break",
-            "location": "CSE and LMB",
-            "hasInfo": true,
-            "info":[] 
-          }
-        ]
-      },
-      {
-        "time": "15:45 - 17:30",
-        "or": false,
-        "item": [
-          {
-            "text": "[Same As Above]"
-          },
-          {
-            "text": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-            "location": "CSE/103",
-            "hasInfo": true,
-            "info": [
-              {
-              "id": "Course A",
-              "title": "Part 2 : Crash Course - Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-              "authors": "Chris Rourke, John Goodall",
-              "presenters": "Chris Rourke",
-              "contact": [
-                {
-                  "name": "UXQB",
-                  "email": "info@uxqb.org"
-                }
-              ],
-              "href" : "courses"
-              
-            }
-          ]
-          }
-        ]
-      }
-    ]
-  },{
-  "day": 1,
-  "date": "28th August",
-  "data": [
-    {
-      "time": "8:30 - 9:30",
-      "item": [
-        {
-          "text": "Registration (Open All Day)",
-          "location": "CSE Foyer",
-          "hasInfo": true,
-          "info": []
-        }
-      ]
-    },
-    {
-      "time": "9:30 - 11:00",
-      "or": true,
-      "item": [
-        {
-          "text": "BCS Conference",
-          "location": "CSE/082",
-          "hasInfo": "true",
-            "info":[{
-              "id": "BCS Conference",
-              "href" : "other",
-              "text" : "More details here:",
-              "link" : "https://bcshci2023.org/",
-              "button_text": "British Computer Society Website"
-            }]
-        },
-        {
-          
-          "text": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
-          "location": "CSE/102",
-          "hasInfo": "true",
-          "info":[{
-            "id": "Workshops",
-            "title": "Re-Contextualizing Built Environments: Critical & Inclusive HCI Approaches for Cultural Heritage",
-            "href": "workshops",
-            "contact": [
-              {
-                "name": "Linda Hirsch",
-                "email": "linda.hirsch@ifi.lmu.de"
-              }
-            ]
-          }]
-        },
-        {
-          "text": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education",
-          "location": "LMB/020",
-          "hasInfo": "true",
-          "info":[{
-            "id": "Workshops",
-            "title": "HCI-E²-2023: Second IFIP WG 2.7/13.4 Workshop on HCI Engineering Education",
-            "href": "workshops",
-            "contact": [
-              {
-                "name": "Lucio Davide Spano",
-                "email": "davide.spano@unica.it"
-              }
-            ]
-          }]
-        },
-        {
-          "text": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI",
-          "location": "LMB/023",
-          "hasInfo": "true",
-          "info":[{
-            "id": "Workshops",
-            "title": "Intelligence Augmentation: Future Directions and Ethical Implications in HCI",
-            "href": "workshops",
-            "contact": [
-              {
-                "name": "Andrew Vargo",
-                "email": "awv@umich.edu"
-              }
-            ]
-          }]
-        },
-        {
-          "text": "Designing for Map-based Interfaces and Interactions (MAPII 2023)",
-          "location": "LMB/024",
-          "hasInfo": "true",
-          "info":[{
-            "id": "Workshops",
-            "title": "Designing for Map-based Interfaces and Interactions (MAPII 2023)",
-            "href": "workshops",
-            "contact": [
-              {
-                "name": "Masood Masoodian",
-                "email": "masood.masoodian@aalto.fi"
-              }
-            ]
-          }]
-        },
-        {
-          "text": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
-          "location": "CSE/203",
-          "hasInfo": "true",
-          "info":[{
-            "id": "Workshops",
-            "title": "On Land, at Sea, and in the Air: Human-Computer Interaction in Safety-Critical Spaces of Control",
-            "href": "workshops",
-            "contact": [
-              {
-                "name": "Tilo Mentler",
-                "email": "mentler@hochschule-trier.de"
-              }
-            ]
-          }]
-        },
-        {
-          "text": "VR Accessibility in Distance Adult Education",
-          "location": "CSE/204",
-          "hasInfo": "true",
-          "info":[{
-            "id": "Workshops",
-            "title": "VR Accessibility in Distance Adult Education",
-            "href": "workshops",
-            "contact": [
-              {
-                "name": "Bartosz Muczyński",
-                "email": "b.muczynski@pm.szczecin.pl"
-              }
-            ]
-          }]
-        },
-        {
-          "text": "Doctoral Consortium",
-          "location": "CSE/202",
-          "hasInfo": "true",
-          "info":[]
-        }
-      ]
-    },
-    {
-      "time": "11:00 - 11:30",
-      "item": [
-        {
-          "text": "Coffee Break",
-          "location": "CSE and LMB",
-          "hasInfo": true,
-          "info":[] 
-        }
-      ]
-    },
-    {
-      "time": "11:30 - 12:30",
-      "item": [
-        {
-          "text": "[Same As Above]"
-        }
-      ]
-    },
-    {
-      "time": "12:30 - 13:45",
-      "item": [
-        {
-          "text": "Lunch Break",
-          "location": "CSE",
-          "hasInfo": true,
-          "info":[] 
-        }
-      ]
-    },
-    {
-      "time": "13:45 - 15:15",
-      "item": [
-        {
-          "text": "[Same As Above]"
-        }
-      ]
-    },
-    {
-      "time": "15:15 - 15:45",
-      "item": [
-        {
-          "text": "Coffee Break",
-          "location": "CSE and LMB",
-          "hasInfo": true,
-          "info":[] 
-        }
-      ]
-    },
-    {
-      "time": "15:45 - 17:30",
-      "item": [
-        {
-          "text": "[Same As Above]"
-        }
-      ]
-    },{
-      "time": "19:00",
-      
-      "item": [
-        {
-          "text": "BCS Conference Dinner",
-          "location": "Rustique Restaurant, 28 Castlegate, York",
-          "hasInfo": true,
-          "info" : [{
-              "id": "BCS Conference Dinner",
-              "href" : "other",
-              "text" : "Rustique Restaurant, 28 Castlegate, York",
-              "link" : "https://www.rustiquerestaurants.co.uk/",
-              "button_text": "Check Location"
-          }]
         }
       ]
     }
